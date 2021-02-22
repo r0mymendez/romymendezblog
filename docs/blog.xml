@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:distill="https://distill.pub/journal/" version="2.0">
+  <channel>
+    <title>Romy Mendez's Blog</title>
+    <link>https://www.rominamendezblog.com</link>
+    <atom:link href="https://www.rominamendezblog.com/blog.xml" rel="self" type="application/rss+xml"/>
+    <description>Romina Mendez's personal blog/ site. Some  posts
+on software, agile methodologies , data science and the professor life.
+</description>
+    <generator>Distill</generator>
+    <lastBuildDate>Sun, 21 Feb 2021 00:00:00 +0000</lastBuildDate>
+    <item>
+      <title>14 Apps Gratuitas para Proyectos</title>
+      <dc:creator>Romina Mendez</dc:creator>
+      <dc:creator/>
+      <link>https://www.rominamendezblog.com/posts/2021-02-21-apps-gratuitas-para-proyectos</link>
+      <description>En el siguiente articulo te cuento sobre algunas aplicaciones free para utilizar en tus proyectos.</description>
+      <category>Proyectos</category>
+      <category>Metodologias</category>
+      <guid>https://www.rominamendezblog.com/posts/2021-02-21-apps-gratuitas-para-proyectos</guid>
+      <pubDate>Sun, 21 Feb 2021 00:00:00 +0000</pubDate>
+      <media:content url="https://i.ibb.co/8cggRCg/Dev-Ops-team-abstract-concept-vector-illustration-Software-development-team-member-agile-workflow-De.jpg" medium="image" type="image/jpeg"/>
+    </item>
+    <item>
+      <title>CheatSheet SQL</title>
+      <dc:creator>Romina Mendez</dc:creator>
+      <dc:creator/>
+      <link>https://www.rominamendezblog.com/posts/2021-02-21-cheatsheet-sql</link>
+      <description>En el siguiente post puedes encontrar una cheetsheet de SQ, en la cual puedes encontrar un resumen y ejemplos de la sintaxis de SQL.</description>
+      <category>Base de datos</category>
+      <category>SQL</category>
+      <guid>https://www.rominamendezblog.com/posts/2021-02-21-cheatsheet-sql</guid>
+      <pubDate>Sun, 21 Feb 2021 00:00:00 +0000</pubDate>
+      <media:content url="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Cheating.JPG/1200px-Cheating.JPG" medium="image" type="image/jpeg"/>
+    </item>
+    <item>
+      <title>Introducción a Visualizaciones con R</title>
+      <dc:creator>Romina Mendez</dc:creator>
+      <dc:creator/>
+      <link>https://www.rominamendezblog.com/posts/2021-02-21-introduccin-a-visualizaciones-con-r</link>
+      <description>Primeros pasos para comenzar a realizar tus primeras visualizaciones en R.</description>
+      <category>DataViz</category>
+      <category>R</category>
+      <category>Data</category>
+      <category>Pprogramacion</category>
+      <category>Workshop</category>
+      <guid>https://www.rominamendezblog.com/posts/2021-02-21-introduccin-a-visualizaciones-con-r</guid>
+      <pubDate>Sun, 21 Feb 2021 00:00:00 +0000</pubDate>
+      <media:content url="https://i.ibb.co/HqsbFFg/linear-infographic-vector-elements.jpg" medium="image" type="image/jpeg"/>
+    </item>
+  </channel>
+</rss>

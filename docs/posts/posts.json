@@ -1,0 +1,77 @@
+[
+  {
+    "path": "posts/2021-02-21-apps-gratuitas-para-proyectos/",
+    "title": "14 Apps Gratuitas para Proyectos",
+    "description": "En el siguiente articulo te cuento sobre algunas aplicaciones free para utilizar en tus proyectos.",
+    "author": [
+      {
+        "name": "Romina Mendez",
+        "url": {}
+      },
+      {
+        "name": "",
+        "url": "https://example.com/norajones"
+      }
+    ],
+    "date": "2021-02-21",
+    "categories": [
+      "Proyectos",
+      "Metodologias"
+    ],
+    "contents": "\n\nContents\nMetodologíasTrello\nMiro\nQuire\nAsana\nClikup\nScrumblr\nGitmind\nHabitica\n\nDiagramasDraw.io\nMindmup\n\nEstimación de tiemposPlanning poker\n\nDiseñoCanva\n\nMensajeriaSlack\nDiscord\n\n\nLa pandemia de coronavirus impulso el home office y muchos empleados se vieron obligados a transformar su forma de trabajar. Este contexto genero un cambio en la forma en la que nos relacionamos y desempeñamos nuestras tareas diarias.\n\nA continuación te recopilo un listado de herramientas y recursos que puedes utilizar para poder desarrollar tu tareas y gestionar tus proyectos.\nMetodologías\nTrello\nTrello es una aplicación basada en la metodología Kanban y permite gestionar tu trabajo de forma colaborativa. Su version gratuita tiene tableros personales ilimitados, tarjetas ilimitadas al igual que listas y hasta 10MB por archivo adjunto. \nMiro\nMiro es una aplicación que te permite tener pizarras, en las cuales los integrantes de los equipos puedan colaborar y modificarlas en tiempo real. Asimismo posee múltiples plantillas que pueden ser utilizadas para realizar la planificación de un proyecto. En su version gratuita permite principalmente tener: 3 tableros editables, espectadores anónimos y plantillas.\n\nQuire\nQuire es una aplicación que implementa el tablero Kanban, en su sitio web mencionan que hasta la primera mitad del 2020 no tiene precios definidos y que puedes tener una cuenta gratuita con hasta 35 organizaciones, 80 proyectos y 30 miembros.\n source image : imagen obtenida en https://quire.io/\nAsana\nAsana es una aplicación que permite organizar proyectos utilizando tableros Kanban en linea. En su version free permite hasta 15 miembros y vistas de calendarios, asignación de responsables y fechas de entregas.\n imagen obtenida en https://asana.com/es\nClikup\nClikup es una aplicación para gestionar tus proyectos, la cual permite generar documentos, notificaciones y administrar tu bandeja de entrada. Adicionalmente permite realizar dashboard para ver el avance de los proyectos. Lo más importante es que su version free tiene 100MB Storage e ilimitadas tareas y usuarios.\n imagen obtenida en https://clickup.com/welcome\nScrumblr\nScrumblr es una aplicación que permite generar un tablero de Kanban y su colaboración en tiempo real. Lo más destacable de esta aplicación es que no necesitas generar un usuario, ya que el único dato que solicita es el nombre de tu tablero.\n\nGitmind\nGitmind es una herramienta para realizar diagramas de mapas mentales y la misma es gratuita \nimagen obtenida en gitmind\nHabitica\nHabitica es una aplicación para gestionar proyectos de manera más divertida, ya que puedes administrar tus tareas por medio de un juego de rol. Si completas todos las tareas pendientes puedes progresar en el juego, pero si fallamos nuestro personaje va retroceder en este juego.\n imagen obtenida de mi perfil de habitica\nDiagramas\nDraw.io\nDraw.io es una aplicación gratuita que permite la creación y edición de diagramas. La misma permite a los usuarios compartir sus diagramas y posee integraciones con Google Drive y Dropbox. Esta aplicación tiene varios templates reutilizables tales como diagramas de Venn, wireframes, network, flowcharts, UML, entre otros.\n Imagen obtenida de mi cuenta de https://www.draw.io/\nMindmup\nMindmup es una aplicación gratuita que permite crear mapas mentales de forma ilimitada y guardarlo en la nube.\n\nEstimación de tiempos\nPlanning poker\nPlanning poker es una técnica que permite realizar la estimación del tiempo de una tarea en un equipo para la planificación del sprint. Esta técnica se realiza utilizando cartas numeradas con las secuencia de Fibonacci. Si quieres desarrollar esta técnica en forma online, puede utilizar la aplicación www.planningpoker.com. En su version gratuita permite hasta 5 usuarios en un juego.\n\nDiseño\nCanva\nCanva es una aplicación online de diseño gráfico simplificado, en el cual puedes crear una pieza de diseño utilizando los cientos de templates tiene disponibles. Puedes utilizar la cuenta gratuita y solo pagas para obtener algunas opciones avanzadas de diseño.\n\nMensajeria\nSlack\nSlack es una herramienta de mensajería en tiempo real que permite gestionar la comunicaciones con los equipos de trabajo o comunidades. Cuando utilizas un espacio en slack puedes generar canales en los cuales se pueden comunicar mensajes basados en algún tópico.\n\nDiscord\nDiscord es otra plataforma para crear grupo de chats, en el cual también puedes organizar las conversaciones en canales por temas \nimagen obtenida en https://discord.com/new\nEstas son las aplicaciones que te recomiendo utilizar para la gestión de tus tareas y proyectos. Recuerda que cualquiera de esta herramientas te puedo ayudar a realizar tus proyectos o gestion de tareas diarias de una maneras más ordenadas. Si tienes alguna otra herramienta que conoces y no esta en este articulo, puedes dejar un comentario en este post.\n\n\n\n",
+    "preview": "https://i.ibb.co/8cggRCg/Dev-Ops-team-abstract-concept-vector-illustration-Software-development-team-member-agile-workflow-De.jpg",
+    "last_modified": "2021-02-21T16:22:49-03:00",
+    "input_file": {}
+  },
+  {
+    "path": "posts/2021-02-21-cheatsheet-sql/",
+    "title": "CheatSheet SQL",
+    "description": "En el siguiente post puedes encontrar una cheetsheet de SQ, en la cual puedes encontrar un resumen y ejemplos de la sintaxis de SQL.",
+    "author": [
+      {
+        "name": "Romina Mendez",
+        "url": {}
+      },
+      {
+        "name": "",
+        "url": "https://example.com/norajones"
+      }
+    ],
+    "date": "2021-02-21",
+    "categories": [
+      "Base de datos",
+      "SQL"
+    ],
+    "contents": "\nLas cheetsheet son un conjunto de notas 🗒 que se utilizan como referencia rápida sobre alguna tematica. También son conocidos como los machetes en los cuales se registraban pequeños conceptos a recordar 😎.\n\n\nEn el siguiente pdf podes encontrar la sintaxis basica para poder realizar consultas en sql\n\n\n\n\n\n",
+    "preview": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Cheating.JPG/1200px-Cheating.JPG",
+    "last_modified": "2021-02-21T18:51:04-03:00",
+    "input_file": {}
+  },
+  {
+    "path": "posts/2021-02-21-introduccin-a-visualizaciones-con-r/",
+    "title": "Introducción a Visualizaciones con R",
+    "description": "Primeros pasos para comenzar a realizar tus primeras visualizaciones en R.",
+    "author": [
+      {
+        "name": "Romina Mendez",
+        "url": {}
+      },
+      {
+        "name": "",
+        "url": "https://example.com/norajones"
+      }
+    ],
+    "date": "2021-02-21",
+    "categories": [
+      "DataViz",
+      "R",
+      "Data",
+      "Pprogramacion",
+      "Workshop"
+    ],
+    "contents": "\n\nContents\n¿Que es ?\n¿Que es Rstudio ?Rstudio Cloud ☁️\n\nTemario¿Estas preparado para comenzar 🏃🏃?\nRecursos\n\n\nLa programación es una habilidad que puede ser adquirida de manera autodidacta, pero a veces uno no sabe como empezar. Por lo cual te dejo este curso online realizado en el 2020 📆 en conjunto con EANT, el cual en solo 3 horas ⏱️ podes dar tus primeros pasos en el desarrollo de visualizaciónes con R.\n¿Que es ?\nR es uno de los lenguajes más populares que se utiliza para el procesamiento y analisis estadístico de datos. Este lenguaje es una reimplementación de otro lenguaje denominado S, aunque tambien tiene bases de lenguajes como C, C++ o Fortran. R es muy popular debido a que actualmente se lo utiliza para el desarrollo de modelos de machine learning, pero tambien con este lenguaje se puede realizar desarrollo de: sitio webs, APIs, procesamiento de datos y hasta puedes desarrollar tu CV.\nMás información sobre R\n¿Que es Rstudio ?\n\n\n\n\n\nRstudio es una IDE (Entorno de desarrollo integrado) para poder progrmar en R, aunque actualmente soporta otros lenguajes tales como Python y Javascript.\n Esta IDE esta en constante evolución y es la más utilizada para desarrollar en R debido que posee una interfaz con ayuda en linea, autocompletado de codigo, la posibilidad de realizar una depuración del codigo de manera sencilla, visualización de directorios, entre otras.\nA continuación puede ver una linea de tiempo con la evolución de esta IDE en los ultimos años.[Un poco de historia sobre rstudio y su evolución. 1 \n\n\nRstudio Cloud ☁️\nRstudio cloud es una version basada en la nube que permite realizar el desarrollo sin necesidad de realizar ninguna instalación utilizando solo un navegador.\nEl plan free te permite:\nGenerar hasta 15 proyectos.\nUn espacio compartido con 5 miembros y 10 proyectos como maximo.\n15 horas de proyectos por mes.\nHasta 1 GB de RAM por proyecto.\nHasta 1 CPU por proyecto\nHasta 1 hora de tiempo en ejecución en segundo plano.\nTemario\nEn este workshop online vas a poder aprender sobre:\n✏️ Qué es Data Analytics y sus etapas de trabajo.\n✏️ El concepto del análisis exploratorio de datos (EDA).\n✏️ Qué es R y por qué es una de las herramientas más utilizadas en los ámbitos de trabajo de Data Science.\n✏️ Utilizar la interfaz de Rstudio.\n✏️ Dar primeros pasos en programación para la manipulación y exploración de Datos.\n✏️ Qué son y cómo utilizar librerías de código para realizar operaciones de análisis.\n✏️ Cómo realizar distintos análisis mediante gráficos y visualizaciones (dataviz).\n✏️ Tips, recomendaciones y recursos útiles para seguir aprendiendo!\n¿Estas preparado para comenzar 🏃🏃?\nA continuación tienes todos los recursos para comenzar y hacer tus primeras visualización con datos 💪.\n\nRecursos\nAcceso al curso Online: Workshop EANT\nPresentación:\n\n\nRstudio TimeLine\n\n↩︎\n",
+    "preview": "https://i.ibb.co/HqsbFFg/linear-infographic-vector-elements.jpg",
+    "last_modified": "2021-02-21T17:03:15-03:00",
+    "input_file": {}
+  }
+]

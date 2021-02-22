@@ -1,0 +1,151 @@
+---
+title: "14 Apps Gratuitas para Proyectos"
+description: |
+  En el siguiente articulo te cuento sobre algunas aplicaciones free para utilizar en tus proyectos.
+categories:
+  - Proyectos
+  - Metodologias
+preview: "https://i.ibb.co/8cggRCg/Dev-Ops-team-abstract-concept-vector-illustration-Software-development-team-member-agile-workflow-De.jpg"
+
+author:
+  - name: Romina Mendez
+  - url: https://example.com/norajones
+date: 02-21-2021
+output:
+  distill::distill_article:
+    self_contained: yes
+    toc: yes
+---
+
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+La pandemia de coronavirus impulso el home office y muchos empleados se vieron obligados a transformar su forma de trabajar.
+Este contexto genero un cambio en la forma en la que nos relacionamos y desempeñamos nuestras tareas diarias.
+
+![](https://i.ibb.co/8cggRCg/Dev-Ops-team-abstract-concept-vector-illustration-Software-development-team-member-agile-workflow-De.jpg)
+
+
+A continuación te recopilo un listado de herramientas y recursos que puedes utilizar para poder desarrollar tu tareas y gestionar tus proyectos.
+
+# Metodologías 
+
+## [Trello](https://trello.com/es)
+Trello es una aplicación basada en la metodología Kanban y permite gestionar tu trabajo de forma colaborativa. Su version gratuita tiene tableros personales ilimitados, tarjetas ilimitadas al igual que listas y hasta 10MB por archivo adjunto.
+![](https://cdn-images-1.medium.com/max/1600/1*9okP8Tt4RBWfKsiKctz31w.jpeg)
+
+
+## [Miro](https://miro.com/)
+Miro es una aplicación que te permite tener pizarras, en las cuales los integrantes de los equipos puedan colaborar y modificarlas en tiempo real. Asimismo posee múltiples plantillas que pueden ser utilizadas para realizar la planificación de un proyecto.
+En su version gratuita permite principalmente tener: 3 tableros editables, espectadores anónimos y plantillas.
+
+
+![](https://cdn-images-1.medium.com/max/1600/1*DudlMVVIM-b3cJyn6kVPaA.png)
+
+## [Quire](https://quire.io/)
+
+Quire es una aplicación que implementa el tablero Kanban, en su sitio web mencionan que hasta la primera mitad del 2020 no tiene precios definidos y que puedes tener una cuenta gratuita con hasta 35 organizaciones, 80 proyectos y 30 miembros.
+
+
+![](https://cdn-images-1.medium.com/max/1600/1*glnYc_G2fDzgIWxwjNsqZg.png)
+source image : imagen obtenida en https://quire.io/
+
+
+## [Asana](https://asana.com/)
+
+Asana es una aplicación que permite organizar proyectos utilizando tableros Kanban en linea.
+En su version free permite hasta 15 miembros y vistas de calendarios, asignación de responsables y fechas de entregas.
+
+
+![](https://cdn-images-1.medium.com/max/1600/1*yPW-DVfORD5WWEu7yvy_IA.png)
+imagen obtenida en https://asana.com/es
+
+
+## [Clikup](https://clickup.com/)
+Clikup es una aplicación para gestionar tus proyectos, la cual permite generar documentos, notificaciones y administrar tu bandeja de entrada. Adicionalmente permite realizar dashboard para ver el avance de los proyectos.
+Lo más importante es que su version free tiene 100MB Storage e ilimitadas tareas y usuarios.
+
+
+
+![](https://cdn-images-1.medium.com/max/1600/1*sYLAXPKHKFFt8IvgSVSbAw.png)
+imagen obtenida en https://clickup.com/welcome
+
+## [Scrumblr](http://scrumblr.ca/)
+
+Scrumblr es una aplicación que permite generar un tablero de Kanban y su colaboración en tiempo real.
+Lo más destacable de esta aplicación es que no necesitas generar un usuario, ya que el único dato que solicita es el nombre de tu tablero.
+
+![](https://cdn-images-1.medium.com/max/1600/1*Z9UuyR1DwB9NEucai-FYBw.png)
+
+
+## Gitmind
+
+Gitmind es una herramienta para realizar diagramas de mapas mentales y la misma es gratuita
+![](https://cdn-images-1.medium.com/max/1600/1*b-qnKf5hXnVlfpGRdJgomA.png)
+
+imagen obtenida en gitmind
+
+
+## [Habitica](https://gitmind.com/)
+Habitica es una aplicación para gestionar proyectos de manera más divertida, ya que puedes administrar tus tareas por medio de un juego de rol.
+Si completas todos las tareas pendientes puedes progresar en el juego, pero si fallamos nuestro personaje va retroceder en este juego.
+
+![](https://cdn-images-1.medium.com/max/1600/1*smMXTJQqmYN-3qhMdlWtPQ.png)
+imagen obtenida de mi perfil de habitica
+
+# Diagramas
+
+## [Draw.io](https://www.draw.io/)
+Draw.io es una aplicación gratuita que permite la creación y edición de diagramas. La misma permite a los usuarios compartir sus diagramas y posee integraciones con Google Drive y Dropbox.
+Esta aplicación tiene varios templates reutilizables tales como diagramas de Venn, wireframes, network, flowcharts, UML, entre otros.
+
+![](https://cdn-images-1.medium.com/max/1600/1*ThDeyU6M_760bo79HARHSw.png)
+Imagen obtenida de mi cuenta de https://www.draw.io/
+
+
+## [Mindmup](https://www.mindmup.com/)
+Mindmup es una aplicación gratuita que permite crear mapas mentales de forma ilimitada y guardarlo en la nube.
+
+![](https://cdn-images-1.medium.com/max/1600/1*77xR-vtUJw6g7gY6ewc36A.png)
+
+# Estimación de tiempos
+
+## [Planning poker](https://planningpokeronline.com/)
+
+Planning poker es una técnica que permite realizar la estimación del tiempo de una tarea en un equipo para la planificación del sprint.
+Esta técnica se realiza utilizando cartas numeradas con las secuencia de Fibonacci.
+Si quieres desarrollar esta técnica en forma online, puede utilizar la aplicación www.planningpoker.com.
+En su version gratuita permite hasta 5 usuarios en un juego.
+
+![](https://cdn-images-1.medium.com/max/1600/1*Wxn7YpKYh59roNF7YUP5Ww.png)
+
+# Diseño
+
+## [Canva](https://www.canva.com/es_419/)
+
+Canva es una aplicación online de diseño gráfico simplificado, en el cual puedes crear una pieza de diseño utilizando los cientos de templates tiene disponibles.
+Puedes utilizar la cuenta gratuita y solo pagas para obtener algunas opciones avanzadas de diseño.
+
+![](https://cdn-images-1.medium.com/max/1600/1*a0R_x9Wyir7Dm0slDWktJw.jpeg)
+
+# Mensajeria
+## [Slack](https://slack.com/intl/es-ar/)
+Slack es una herramienta de mensajería en tiempo real que permite gestionar la comunicaciones con los equipos de trabajo o comunidades.
+Cuando utilizas un espacio en slack puedes generar canales en los cuales se pueden comunicar mensajes basados en algún tópico.
+
+![](https://cdn-images-1.medium.com/max/1600/1*uPmdUW_5fBArWStfxwFqLg.png)
+
+
+## [Discord](https://discord.com/)
+Discord es otra plataforma para crear grupo de chats, en el cual también puedes organizar las conversaciones en canales por temas
+![](https://cdn-images-1.medium.com/max/1600/1*RNly5iWJiU6xclQEO60IgQ.png)
+
+imagen obtenida en https://discord.com/new
+
+Estas son las aplicaciones que te recomiendo utilizar para la gestión de tus tareas y proyectos.
+Recuerda que cualquiera de esta herramientas te puedo ayudar a realizar tus proyectos o gestion de tareas diarias de una maneras más ordenadas.
+Si tienes alguna otra herramienta que conoces y no esta en este articulo, puedes dejar un comentario en este post.
+
+

@@ -1,0 +1,39 @@
+---
+title: "CheatSheet SQL"
+description: |
+  En el siguiente post puedes encontrar una cheetsheet de SQ, en la cual puedes encontrar un resumen y ejemplos de la sintaxis de SQL. 
+author:
+  - name: Romina Mendez
+    url: {}
+  - name: ''
+    url: https://example.com/norajones
+preview: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Cheating.JPG/1200px-Cheating.JPG"
+date: 02-21-2021
+categories:
+  - Base de datos
+  - SQL
+output:
+  distill::distill_article:
+    self_contained: False
+    toc: yes
+---
+
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+Las cheetsheet son un conjunto de notas 🗒 que se utilizan como referencia rápida sobre alguna tematica.
+También son conocidos como los machetes en los cuales se registraban pequeños conceptos a recordar 😎.
+
+<center>
+![](https://media.giphy.com/media/IqFH0yMll9wl2/giphy.gif)
+</center>
+---
+
+En el siguiente **pdf** podes encontrar la sintaxis basica para poder realizar consultas en **sql**
+
+<iframe src="https://drive.google.com/file/d/1uB3UQRuZDP05Rqa2TcPGMWMzOOsuKIig/preview" width="640" height="480"></iframe>
+
+
+
