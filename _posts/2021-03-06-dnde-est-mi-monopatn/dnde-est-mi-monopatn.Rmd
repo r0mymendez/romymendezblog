@@ -58,11 +58,15 @@ https://www.buenosaires.gob.ar/form/formulario-de-registro-api-transporte
 
   * Para ver la documentación de la [API](https://www.buenosaires.gob.ar/desarrollourbano/transporte/apitransporte/api-doc)
 
-📺 **Para ver el taller nuevamente**
+----
+
+## Recursos
+
+📺 **Video del Workshop:**
 
 En este 🔗 [link](https://www.youtube.com/watch?time_continue=326&v=F9enHwvJkZQ&feature=emb_logo) puedes encontrar el video con la resolución del taller.
 
-Aqui puedes encontrar las notebooks 🔗[link](https://github.com/r0mymendez/Workshop-Mapas-Apis)
+📝 Aqui puedes encontrar las notebooks: 🔗[link](https://github.com/r0mymendez/Workshop-Mapas-Apis)
 
 ![](https://i.ibb.co/df4Xqr9/mapa.png")
 

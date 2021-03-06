@@ -68,7 +68,35 @@ on software, agile methodologies , data science and the professor life.
       <dc:creator>Romina Mendez</dc:creator>
       <dc:creator/>
       <link>https://www.rominamendezblog.com/posts/2021-03-06-dnde-est-mi-monopatn</link>
-      <description>Recursos del evento IWD2020 (International Womens Day) de Women Techmakers, en el cual utilizamos python para encontrar monopatines en la Ciudad Autonoma de Buenos Aires📍.</description>
+      <description>
+
+
+&lt;h1 id="gdg-buenos-aires-women-techmakers-buenos-aires"&gt;GDG Buenos Aires: Women Techmakers Buenos Aires&lt;/h1&gt;
+&lt;p&gt;&lt;strong&gt;Women Techmakers&lt;/strong&gt; es el programa global de &lt;strong&gt;Google&lt;/strong&gt; que promueve un espacio de visibilidad, comunidad y recursos para fomentar la diversidad en tecnología.&lt;/p&gt;
+&lt;center&gt;
+&lt;p&gt;&lt;img src="https://secure.meetupstatic.com/photos/event/4/f/1/highres_489001265.jpeg" alt="Girl in a jacket" width="70%" height="70%"&gt;&lt;/p&gt;
+&lt;/center&gt;
+&lt;p&gt;En el encuentro &lt;strong&gt;IWD2020&lt;/strong&gt; 👭 (International Womens Day), realizamos un Hands-on Labs online con &lt;a href="https://github.com/karbartolome/"&gt;Kari Bartolome&lt;/a&gt; y &lt;a href="https://github.com/AidinRodriguez"&gt;Aidin Rodriguez&lt;/a&gt; para enseñar a utilizar Google Colab con Python🐍 utilizando datos publicos, el problema resolver es: ¿Dónde está mi monopatín?&lt;/p&gt;
+&lt;center&gt;
+&lt;img src="https://media.giphy.com/media/kfuaMpvpElQP7ZQOCy/giphy.gif" /&gt;
+&lt;/center&gt;
+&lt;p&gt;🔎 Si queres conocer más sobre &lt;strong&gt;Google Colab&lt;/strong&gt; y &lt;strong&gt;Python&lt;/strong&gt; podes ver el siguiente post: &lt;a href="https://r0mymendez.github.io/romymendezblog/posts/2021-02-21-introduccin-a-visualizaciones-con-python/"&gt;“Introducción a visualizaciones con python”&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;API DE TRANSPORTE&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;Para realizar esta actividad es necesario contar con las credenciales de la API de transporte del Gobierno de la Ciudad de Buenos Aires, las mismas se pueden obtener las credenciales se debe ingresar a este link: &lt;a href="https://www.buenosaires.gob.ar/form/formulario-de-registro-api-transporte" class="uri"&gt;https://www.buenosaires.gob.ar/form/formulario-de-registro-api-transporte&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Una vez finalizada la carga del formulario, en unos minutos va recibir un correo con sus credenciales (controle si las mismas no llegan a su correo SPAM).&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Para ver la documentación de la &lt;a href="https://www.buenosaires.gob.ar/desarrollourbano/transporte/apitransporte/api-doc"&gt;API&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr /&gt;
+&lt;h2 id="recursos"&gt;Recursos&lt;/h2&gt;
+&lt;p&gt;📺 &lt;strong&gt;Video del Workshop:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;En este 🔗 &lt;a href="https://www.youtube.com/watch?time_continue=326&amp;amp;v=F9enHwvJkZQ&amp;amp;feature=emb_logo"&gt;link&lt;/a&gt; puedes encontrar el video con la resolución del taller.&lt;/p&gt;
+&lt;p&gt;📝 Aqui puedes encontrar las notebooks: 🔗&lt;a href="https://github.com/r0mymendez/Workshop-Mapas-Apis"&gt;link&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://i.ibb.co/df4Xqr9/mapa.png%22" /&gt;&lt;/p&gt;
+&lt;pre class="r distill-force-highlighting-css"&gt;&lt;code&gt;&lt;/code&gt;&lt;/pre&gt;</description>
+      <distill:md5>ba52180caf2e09b197c9a151182f1cac</distill:md5>
       <category>DataViz</category>
       <category>Python</category>
       <category>Data</category>
