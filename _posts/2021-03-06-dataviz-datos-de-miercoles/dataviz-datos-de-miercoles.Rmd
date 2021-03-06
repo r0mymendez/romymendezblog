@@ -8,7 +8,7 @@ categories:
   - Data
   - Programacion
   - Workshop
-preview: "https://analyticsindiamag.com/wp-content/uploads/2020/09/How-to-use-data-visualization-report-design.png"
+preview: "https://www.binaryfountain.com/wp-content/uploads/2019/12/iStock-1069206352.jpg"
 author:
   - name: Romina Mendez
     url: {}

@@ -10,7 +10,7 @@ categories:
   - Mapas
   - Programacion
   - Workshop
-preview: "https://i.pinimg.com/474x/73/c1/12/73c112b17867018cc6f384248300d3ab.jpg"
+preview: "https://img.freepik.com/vector-gratis/hombre-montando-patinete-electrico-otono-concepto-transporte-ecologico_254685-275.jpg?size=626&ext=jpg"
 
 author:
   - name: Romina Mendez
