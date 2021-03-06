@@ -8,7 +8,7 @@ categories:
   - Data
   - Programacion
   - Workshop
-preview: "https://i.ibb.co/HqsbFFg/linear-infographic-vector-elements.jpg"
+preview: "https://www.binaryfountain.com/wp-content/uploads/2019/12/iStock-1069206352.jpg"
 author:
   - name: Romina Mendez
     url: {}

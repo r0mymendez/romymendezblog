@@ -53,7 +53,67 @@ on software, agile methodologies , data science and the professor life.
       <dc:creator>Romina Mendez</dc:creator>
       <dc:creator/>
       <link>https://www.rominamendezblog.com/posts/2021-02-21-introduccin-a-visualizaciones-con-r</link>
-      <description>Primeros pasos para comenzar a realizar tus primeras visualizaciones en R.</description>
+      <description>
+
+
+&lt;p&gt;La programación es una habilidad que puede ser adquirida de manera autodidacta, pero a veces uno no sabe como empezar. Por lo cual te dejo este curso online realizado en el 2020 📆 en conjunto con &lt;a href="https://eant.tech/escuela-de-ciencias-de-datos"&gt;EANT&lt;/a&gt;, el cual en solo &lt;strong&gt;3 horas&lt;/strong&gt; ⏱️ podes dar tus primeros pasos en el desarrollo de visualizaciónes con &lt;strong&gt;R&lt;/strong&gt;.&lt;/p&gt;
+&lt;h1 id="que-es"&gt;¿Que es &lt;a href="https://www.r-project.org/"&gt;&lt;img src="https://www.r-project.org/logo/Rlogo.svg" alt="R" width="40" height="40"&gt;&lt;/a&gt;?&lt;/h1&gt;
+&lt;p&gt;&lt;strong&gt;R&lt;/strong&gt; es uno de los lenguajes más populares que se utiliza para el procesamiento y analisis estadístico de datos. Este lenguaje es una reimplementación de otro lenguaje denominado S, aunque tambien tiene bases de lenguajes como C, C++ o Fortran. &lt;strong&gt;R&lt;/strong&gt; es muy popular debido a que actualmente se lo utiliza para el desarrollo de modelos de machine learning, pero tambien con este lenguaje se puede realizar desarrollo de: sitio webs, APIs, procesamiento de datos y hasta puedes desarrollar tu CV.&lt;/p&gt;
+&lt;p&gt;Más información sobre &lt;a href="https://www.r-project.org/"&gt;R&lt;/a&gt;&lt;/p&gt;
+&lt;h1 id="que-es-rstudio"&gt;¿Que es Rstudio ?&lt;/h1&gt;
+&lt;p&gt;&lt;br/&gt;&lt;/p&gt;
+&lt;center&gt;
+&lt;a href="https://rstudio.com/"&gt;&lt;img src="https://i.ibb.co/BgQ3S89/images-1.png" alt="rstudiovlogo"&gt;&lt;/a&gt;
+&lt;/center&gt;
+&lt;p&gt;&lt;br/&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Rstudio&lt;/strong&gt; es una &lt;strong&gt;IDE&lt;/strong&gt; (Entorno de desarrollo integrado) para poder progrmar en R, aunque actualmente soporta otros lenguajes tales como &lt;strong&gt;Python&lt;/strong&gt; y &lt;strong&gt;Javascript&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;br/&gt; Esta IDE esta en constante evolución y es la más utilizada para desarrollar en R debido que posee una interfaz con ayuda en linea, autocompletado de codigo, la posibilidad de realizar una depuración del codigo de manera sencilla, visualización de directorios, entre otras.&lt;/p&gt;
+&lt;p&gt;A continuación puede ver una linea de tiempo con la evolución de esta IDE en los ultimos años.[Un poco de historia sobre rstudio y su evolución. &lt;a href="#fn1" class="footnote-ref" id="fnref1"&gt;&lt;sup&gt;1&lt;/sup&gt;&lt;/a&gt; &lt;br/&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://d33wubrfki0l68.cloudfront.net/db11a793584a9307185b4925aa17c966d04ba211/cdfee/assets/img/2020-timeline.png" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;br/&gt;&lt;/p&gt;
+&lt;h2 id="rstudio-cloud-️"&gt;Rstudio Cloud ☁️&lt;/h2&gt;
+&lt;p&gt;&lt;a href="https://rstudio.cloud/"&gt;Rstudio cloud&lt;/a&gt; es una version basada en la nube que permite realizar el desarrollo sin necesidad de realizar ninguna instalación utilizando solo un navegador.&lt;/p&gt;
+&lt;p&gt;El &lt;a href="https://rstudio.cloud/plans/free"&gt;plan free&lt;/a&gt; te permite:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Generar hasta 15 proyectos.&lt;/li&gt;
+&lt;li&gt;Un espacio compartido con 5 miembros y 10 proyectos como maximo.&lt;/li&gt;
+&lt;li&gt;15 horas de proyectos por mes.&lt;/li&gt;
+&lt;li&gt;Hasta 1 GB de RAM por proyecto.&lt;/li&gt;
+&lt;li&gt;Hasta 1 CPU por proyecto&lt;/li&gt;
+&lt;li&gt;Hasta 1 hora de tiempo en ejecución en segundo plano.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id="temario"&gt;Temario&lt;/h1&gt;
+&lt;p&gt;En este workshop online vas a poder aprender sobre:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;✏️ Qué es &lt;strong&gt;Data Analytics&lt;/strong&gt; y sus etapas de trabajo.&lt;/li&gt;
+&lt;li&gt;✏️ El concepto del análisis exploratorio de datos (&lt;strong&gt;EDA&lt;/strong&gt;).&lt;/li&gt;
+&lt;li&gt;✏️ Qué es &lt;strong&gt;R&lt;/strong&gt; y por qué es una de las herramientas más utilizadas en los ámbitos de trabajo de Data Science.&lt;/li&gt;
+&lt;li&gt;✏️ Utilizar la interfaz de &lt;strong&gt;Rstudio&lt;/strong&gt;.&lt;/li&gt;
+&lt;li&gt;✏️ Dar primeros pasos en programación para la &lt;strong&gt;manipulación&lt;/strong&gt; y &lt;strong&gt;exploración&lt;/strong&gt; de Datos.&lt;/li&gt;
+&lt;li&gt;✏️ Qué son y cómo utilizar &lt;strong&gt;librerías&lt;/strong&gt; de código para realizar operaciones de análisis.&lt;/li&gt;
+&lt;li&gt;✏️ Cómo realizar distintos análisis mediante gráficos y visualizaciones (&lt;strong&gt;dataviz&lt;/strong&gt;).&lt;/li&gt;
+&lt;li&gt;✏️ &lt;strong&gt;Tips&lt;/strong&gt;, &lt;strong&gt;recomendaciones&lt;/strong&gt; y &lt;strong&gt;recursos útiles&lt;/strong&gt; para seguir aprendiendo!&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="estas-preparado-para-comenzar"&gt;¿Estas preparado para comenzar 🏃🏃?&lt;/h2&gt;
+&lt;p&gt;A continuación tienes todos los recursos para comenzar y hacer tus primeras visualización con datos 💪.&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://media.giphy.com/media/S8ToH7Zt8gZ4u2iClh/giphy.gif" /&gt;&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h2 id="recursos"&gt;Recursos&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;Acceso al curso Online: &lt;a href="https://eant.tech/escuela-de-ciencias-de-datos/cursos/taller-introduccion-a-data-analytics-r"&gt;Workshop EANT&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Presentación:&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;iframe src="https://docs.google.com/presentation/d/e/2PACX-1vRU23HJSUH9zRJq6jOmmtSKJqUYnkaRTnk4tjVpxza0uzDSmClEKcWdojeo0Zj_uA/embed?start=false&amp;amp;loop=false&amp;amp;delayms=60000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"&gt;
+&lt;/iframe&gt;
+&lt;div class="footnotes"&gt;
+&lt;hr /&gt;
+&lt;ol&gt;
+&lt;li id="fn1"&gt;&lt;p&gt;&lt;a href="https://rstudio.com/about/"&gt;Rstudio TimeLine&lt;/a&gt;&lt;/p&gt;
+&lt;pre class="r distill-force-highlighting-css"&gt;&lt;code&gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;a href="#fnref1" class="footnote-back"&gt;↩︎&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;</description>
+      <distill:md5>7ba7b82c9fc40466e05c721475536d1f</distill:md5>
       <category>DataViz</category>
       <category>R</category>
       <category>Data</category>
@@ -61,7 +121,7 @@ on software, agile methodologies , data science and the professor life.
       <category>Workshop</category>
       <guid>https://www.rominamendezblog.com/posts/2021-02-21-introduccin-a-visualizaciones-con-r</guid>
       <pubDate>Sun, 21 Feb 2021 00:00:00 +0000</pubDate>
-      <media:content url="https://i.ibb.co/HqsbFFg/linear-infographic-vector-elements.jpg" medium="image" type="image/jpeg"/>
+      <media:content url="https://www.binaryfountain.com/wp-content/uploads/2019/12/iStock-1069206352.jpg" medium="image" type="image/jpeg"/>
     </item>
     <item>
       <title>¿Dónde está mi monopatín?🛹</title>
