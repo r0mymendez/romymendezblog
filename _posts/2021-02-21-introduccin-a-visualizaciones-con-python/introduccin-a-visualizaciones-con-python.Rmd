@@ -8,7 +8,7 @@ categories:
   - Data
   - Programacion
   - Workshop
-preview: "https://i.ibb.co/HqsbFFg/linear-infographic-vector-elements.jpg"
+preview: "https://image.freepik.com/vector-gratis/ilustracion-analisis-mercado-valores_23-2148588123.jpg"
 author:
   - name: Romina Mendez
     url: {}
