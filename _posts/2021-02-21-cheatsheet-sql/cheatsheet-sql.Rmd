@@ -7,7 +7,7 @@ author:
     url: {}
   - name: ''
     url: https://example.com/norajones
-preview: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Cheating.JPG/1200px-Cheating.JPG"
+preview: "https://image.freepik.com/free-vector/cloud-hosting-concept-illustration_114360-730.jpg"
 date: 02-21-2021
 categories:
   - Base de datos

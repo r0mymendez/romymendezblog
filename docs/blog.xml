@@ -26,12 +26,24 @@ on software, agile methodologies , data science and the professor life.
       <dc:creator>Romina Mendez</dc:creator>
       <dc:creator/>
       <link>https://www.rominamendezblog.com/posts/2021-02-21-cheatsheet-sql</link>
-      <description>En el siguiente post puedes encontrar una cheetsheet de SQ, en la cual puedes encontrar un resumen y ejemplos de la sintaxis de SQL.</description>
+      <description>
+
+
+&lt;p&gt;Las cheetsheet son un conjunto de notas 🗒 que se utilizan como referencia rápida sobre alguna tematica. También son conocidos como los machetes en los cuales se registraban pequeños conceptos a recordar 😎.&lt;/p&gt;
+&lt;center&gt;
+&lt;img src="https://media.giphy.com/media/IqFH0yMll9wl2/giphy.gif" /&gt;
+&lt;/center&gt;
+&lt;hr /&gt;
+&lt;p&gt;En el siguiente &lt;strong&gt;pdf&lt;/strong&gt; podes encontrar la sintaxis basica para poder realizar consultas en &lt;strong&gt;sql&lt;/strong&gt;&lt;/p&gt;
+&lt;iframe src="https://drive.google.com/file/d/1uB3UQRuZDP05Rqa2TcPGMWMzOOsuKIig/preview" width="640" height="480"&gt;
+&lt;/iframe&gt;
+&lt;pre class="r distill-force-highlighting-css"&gt;&lt;code&gt;&lt;/code&gt;&lt;/pre&gt;</description>
+      <distill:md5>ccf28a513215a10894ad171c2878bb05</distill:md5>
       <category>Base de datos</category>
       <category>SQL</category>
       <guid>https://www.rominamendezblog.com/posts/2021-02-21-cheatsheet-sql</guid>
       <pubDate>Sun, 21 Feb 2021 00:00:00 +0000</pubDate>
-      <media:content url="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Cheating.JPG/1200px-Cheating.JPG" medium="image" type="image/jpeg"/>
+      <media:content url="https://image.freepik.com/free-vector/cloud-hosting-concept-illustration_114360-730.jpg" medium="image" type="image/jpeg"/>
     </item>
     <item>
       <title>Introducción a Visualizaciones con Python</title>

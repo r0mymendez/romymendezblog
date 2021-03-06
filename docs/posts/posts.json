@@ -43,9 +43,9 @@
       "SQL"
     ],
     "contents": "\nLas cheetsheet son un conjunto de notas 🗒 que se utilizan como referencia rápida sobre alguna tematica. También son conocidos como los machetes en los cuales se registraban pequeños conceptos a recordar 😎.\n\n\nEn el siguiente pdf podes encontrar la sintaxis basica para poder realizar consultas en sql\n\n\n\n\n\n",
-    "preview": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Cheating.JPG/1200px-Cheating.JPG",
-    "last_modified": "2021-02-21T18:51:04-03:00",
-    "input_file": {}
+    "preview": "https://image.freepik.com/free-vector/cloud-hosting-concept-illustration_114360-730.jpg",
+    "last_modified": "2021-03-06T16:29:25-03:00",
+    "input_file": "cheatsheet-sql.utf8.md"
   },
   {
     "path": "posts/2021-02-21-introduccin-a-visualizaciones-con-python/",
