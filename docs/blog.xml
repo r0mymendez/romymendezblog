@@ -107,5 +107,73 @@ on software, agile methodologies , data science and the professor life.
       <pubDate>Sun, 21 Feb 2021 00:00:00 +0000</pubDate>
       <media:content url="https://i.pinimg.com/474x/73/c1/12/73c112b17867018cc6f384248300d3ab.jpg" medium="image" type="image/jpeg"/>
     </item>
+    <item>
+      <title>Dataviz: Datos de Miercoles</title>
+      <dc:creator>Romina Mendez</dc:creator>
+      <dc:creator/>
+      <link>https://www.rominamendezblog.com/posts/2021-03-06-dataviz-datos-de-miercoles</link>
+      <description>
+
+
+&lt;h1 id="que-es-datos-de-miercoles"&gt;¿Que es datos de Miercoles?&lt;/h1&gt;
+&lt;p&gt;Datos de miércoles es el primo latinoamericano de #tidytuesday, un proyecto semanal de datos organizado por la comunidad de R, que busca que sus participantes desarrollen sus habilidades procesando datos para crear gráficos significativos usando ggplot2, tidyr, dplyr y otras herramientas del tidyverse. El proyecto original surgió en el marco de la comunidad de aprendizaje online R4DS y desde abril de 2019 la comunidad sudamericana de R impulsa una versión local en español. &lt;a href="#fn1" class="footnote-ref" id="fnref1"&gt;&lt;sup&gt;1&lt;/sup&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h1 id="dataviz"&gt;DATAVIZ 📊&lt;/h1&gt;
+&lt;p&gt;&lt;strong&gt;R&lt;/strong&gt; es uno de los lenguajes más populares para el desarrollo de visualizaciones y su paquete más popular en los ultimos años es &lt;strong&gt;GGPLOT&lt;/strong&gt;. Para poder aprender a desarrollar visualizaciones comence a practicar en base a los desafios que se publicaban semana a semana en &lt;strong&gt;&lt;code&gt;Datos de Miércoles&lt;/code&gt;&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;Si quieres dar tus primeros pasos para el desarrollo de visualizaciones en R, te dejo este &lt;a href="https://r0mymendez.github.io/romymendezblog/posts/2021-02-21-introduccin-a-visualizaciones-con-r/"&gt;post&lt;/a&gt; que realice con un curso gratis de 3 horas ⌛.&lt;/p&gt;
+&lt;p&gt;Algunas de las visualizaciones que realice para esta comunidad son las siguientes 🎉.&lt;/p&gt;
+&lt;h2 id="rankings-musicales---spotify"&gt;&lt;a href="https://github.com/r0mymendez/R/tree/master/DatosDeMiercoles/20190515"&gt;Rankings Musicales - SPOTIFY&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;img src="https://github.com/r0mymendez/R/raw/master/DatosDeMiercoles/20190515/plot.jpg?raw=true" /&gt;&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h2 id="capitulos-de-rladies"&gt;&lt;a href="https://github.com/r0mymendez/R/tree/master/DatosDeMiercoles/20190625"&gt;Capitulos de RLadies&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;img src="https://github.com/r0mymendez/R/raw/master/DatosDeMiercoles/20190625/plot.jpg?raw=true" /&gt;&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h2 id="pokemon"&gt;&lt;a href="https://github.com/r0mymendez/R/tree/master/DatosDeMiercoles/20190713"&gt;Pokemon&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;img src="https://github.com/r0mymendez/R/raw/master/DatosDeMiercoles/20190713/plot0.jpg?raw=true" /&gt;&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h2 id="datos-de-la-oms-sobre-tuberculosis"&gt;&lt;a href="https://github.com/r0mymendez/R/tree/master/DatosDeMiercoles/20190521"&gt;Datos de la OMS sobre tuberculosis&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;img src="https://github.com/r0mymendez/R/raw/master/DatosDeMiercoles/20190521/plot.jpg?raw=true" /&gt;&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h2 id="reseñas-de-vinos"&gt;&lt;a href="https://github.com/r0mymendez/R/blob/master/DatosDeMiercoles/20190612"&gt;Reseñas de Vinos&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;Datos sobre reseñas de vinos publicadas en la revista WineEnthusiast 🍷🍷🍷&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://github.com/r0mymendez/R/raw/master/DatosDeMiercoles/20190612/plot1.jpg?raw=true" /&gt;&lt;/p&gt;
+&lt;p&gt;Los datos de los quesos fueron tomados de los siguientes sitios: * 🍷 &lt;a href="https://www.bonvivir.com/2013/01/17/quesos-vinos/"&gt;Club bonvivir&lt;/a&gt; * 🍷 &lt;a href="https://www.vix.com/es/imj/gourmet/2008/03/26/guia-de-vinos-y-quesos"&gt;Vix&lt;/a&gt; * 🍷 &lt;a href="https://vinepair.com/wine-blog/an-illustrated-guide-to-pairing-wine-and-cheese/"&gt;Vinepair&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://github.com/r0mymendez/R/raw/master/DatosDeMiercoles/20190612/plot2.jpg?raw=true" /&gt;&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h2 id="gapminder"&gt;&lt;a href="https://github.com/r0mymendez/R/blob/master/DatosDeMiercoles/20190410/"&gt;Gapminder&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;img src="https://github.com/r0mymendez/R/blob/master/DatosDeMiercoles/20190410/plot.jpg?raw=true" /&gt;&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h2 id="comercio-hispanoamérica-mundo"&gt;&lt;a href="https://github.com/r0mymendez/R/tree/master/DatosDeMiercoles/20190502/"&gt;Comercio Hispanoamérica-Mundo&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;Analisis de exportaciones Argentina del año 2017.&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://github.com/r0mymendez/R/raw/master/DatosDeMiercoles/20190502/exportaciones.png?raw=true" /&gt;&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h2 id="datos-sobre-el-índice-de-libertad"&gt;&lt;a href="https://github.com/r0mymendez/R/tree/master/DatosDeMiercoles/20190819"&gt;Datos sobre el Índice de Libertad&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;img src="https://github.com/r0mymendez/R/raw/master/DatosDeMiercoles/20190819/plot.jpg?raw=true" /&gt;&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h2 id="imdb--ranking-de-películas"&gt;&lt;a href="https://github.com/r0mymendez/R/tree/master/DatosDeMiercoles/20200221"&gt;IMDB- Ranking de películas&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;img src="https://github.com/r0mymendez/R/raw/master/DatosDeMiercoles/20200221/plot.png?raw=true" /&gt;&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h2 id="días-de-gráficos"&gt;&lt;a href="https://github.com/r0mymendez/R/tree/master/DatosDeMiercoles/20200608"&gt;30 días de gráficos&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;Para esta entrega realice un gif con las cantidad de TvShow por año que se encuentran en las plataformas Disney, Hulu, Prime Video y Netflix Data Source: &lt;a href="https://www.kaggle.com/ruchi798/tv-shows-on-netflix-prime-video-hulu-and-disney" class="uri"&gt;https://www.kaggle.com/ruchi798/tv-shows-on-netflix-prime-video-hulu-and-disney&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://github.com/r0mymendez/R/raw/master/DatosDeMiercoles/20200608/animation.gif" alt="Girl in a jacket" height="80%"&gt;&lt;/p&gt;
+&lt;hr /&gt;
+&lt;div class="footnotes"&gt;
+&lt;hr /&gt;
+&lt;ol&gt;
+&lt;li id="fn1"&gt;&lt;p&gt;&lt;a href="https://github.com/cienciadedatos/datos-de-miercoles"&gt;GitHub Datos de miercoles&lt;/a&gt;&lt;/p&gt;
+&lt;pre class="r distill-force-highlighting-css"&gt;&lt;code&gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;a href="#fnref1" class="footnote-back"&gt;↩︎&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;</description>
+      <distill:md5>49d7d3b01e95f7564a80c7198fd16462</distill:md5>
+      <category>DataViz</category>
+      <category>R</category>
+      <category>Data</category>
+      <category>Programacion</category>
+      <category>Workshop</category>
+      <guid>https://www.rominamendezblog.com/posts/2021-03-06-dataviz-datos-de-miercoles</guid>
+      <pubDate>Sun, 21 Feb 2021 00:00:00 +0000</pubDate>
+      <media:content url="https://analyticsindiamag.com/wp-content/uploads/2020/09/How-to-use-data-visualization-report-design.png" medium="image" type="image/png"/>
+    </item>
   </channel>
 </rss>

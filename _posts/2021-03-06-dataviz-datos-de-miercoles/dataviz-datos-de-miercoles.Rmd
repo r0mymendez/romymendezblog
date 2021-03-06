@@ -1,0 +1,129 @@
+---
+title: "Dataviz: Datos de Miercoles"
+description: |
+   En este contiene las visualizaciones que realice para Datos de Miercoles.
+categories:
+  - DataViz
+  - R
+  - Data
+  - Programacion
+  - Workshop
+preview: "https://analyticsindiamag.com/wp-content/uploads/2020/09/How-to-use-data-visualization-report-design.png"
+author:
+  - name: Romina Mendez
+    url: {}
+  - name: ''
+    url: https://example.com/norajones
+date: 02-21-2021
+output:
+  distill::distill_article:
+    self_contained: yes
+    toc: yes
+
+---
+
+
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+# ¿Que es datos de Miercoles?
+Datos de miércoles es el primo latinoamericano de #tidytuesday, un proyecto semanal de datos organizado por la comunidad de R, que busca que sus participantes desarrollen sus habilidades procesando datos para crear gráficos significativos usando ggplot2, tidyr, dplyr y otras herramientas del tidyverse. El proyecto original surgió en el marco de la comunidad de aprendizaje online R4DS y desde abril de 2019 la comunidad sudamericana de R impulsa una versión local en español. [^1]
+
+
+---
+
+# DATAVIZ 📊
+**R** es uno de los lenguajes más populares para el desarrollo de visualizaciones y su paquete más popular en los ultimos años es **GGPLOT**.
+Para poder aprender a desarrollar visualizaciones comence a practicar en base a los desafios que se publicaban semana a semana en **`Datos de Miércoles`**.
+
+Si quieres dar tus primeros pasos para el desarrollo de visualizaciones en R, te dejo este [post](https://r0mymendez.github.io/romymendezblog/posts/2021-02-21-introduccin-a-visualizaciones-con-r/) que realice con un curso gratis de 3 horas ⌛.
+
+
+Algunas de las visualizaciones que realice para esta comunidad son las siguientes 🎉.
+
+
+## [Rankings Musicales - SPOTIFY](https://github.com/r0mymendez/R/tree/master/DatosDeMiercoles/20190515)
+
+![](https://github.com/r0mymendez/R/raw/master/DatosDeMiercoles/20190515/plot.jpg?raw=true)
+
+
+-----
+
+## [Capitulos de RLadies](https://github.com/r0mymendez/R/tree/master/DatosDeMiercoles/20190625)
+
+![](https://github.com/r0mymendez/R/raw/master/DatosDeMiercoles/20190625/plot.jpg?raw=true)
+
+----
+
+
+## [Pokemon](https://github.com/r0mymendez/R/tree/master/DatosDeMiercoles/20190713)
+
+![](https://github.com/r0mymendez/R/raw/master/DatosDeMiercoles/20190713/plot0.jpg?raw=true)
+
+----
+
+## [Datos de la OMS sobre tuberculosis](https://github.com/r0mymendez/R/tree/master/DatosDeMiercoles/20190521)
+
+![](https://github.com/r0mymendez/R/raw/master/DatosDeMiercoles/20190521/plot.jpg?raw=true)
+
+----
+
+## [Reseñas de Vinos](https://github.com/r0mymendez/R/blob/master/DatosDeMiercoles/20190612)
+
+Datos sobre reseñas de vinos publicadas en la revista WineEnthusiast 🍷🍷🍷
+
+![](https://github.com/r0mymendez/R/raw/master/DatosDeMiercoles/20190612/plot1.jpg?raw=true)
+
+Los datos de los quesos fueron tomados de los siguientes sitios:
+* 🍷 [Club bonvivir](https://www.bonvivir.com/2013/01/17/quesos-vinos/) 
+* 🍷 [Vix](https://www.vix.com/es/imj/gourmet/2008/03/26/guia-de-vinos-y-quesos) 
+* 🍷 [Vinepair](https://vinepair.com/wine-blog/an-illustrated-guide-to-pairing-wine-and-cheese/)
+
+![](https://github.com/r0mymendez/R/raw/master/DatosDeMiercoles/20190612/plot2.jpg?raw=true)
+
+----
+
+## [Gapminder](https://github.com/r0mymendez/R/blob/master/DatosDeMiercoles/20190410/)
+
+![](https://github.com/r0mymendez/R/blob/master/DatosDeMiercoles/20190410/plot.jpg?raw=true)
+
+----
+
+## [Comercio Hispanoamérica-Mundo](https://github.com/r0mymendez/R/tree/master/DatosDeMiercoles/20190502/)
+Analisis de exportaciones Argentina del año 2017.
+
+![](https://github.com/r0mymendez/R/raw/master/DatosDeMiercoles/20190502/exportaciones.png?raw=true)
+
+
+----
+
+
+## [Datos sobre el Índice de Libertad](https://github.com/r0mymendez/R/tree/master/DatosDeMiercoles/20190819)
+
+![](https://github.com/r0mymendez/R/raw/master/DatosDeMiercoles/20190819/plot.jpg?raw=true)
+
+
+-----
+
+## [IMDB- Ranking de películas](https://github.com/r0mymendez/R/tree/master/DatosDeMiercoles/20200221)
+
+![](https://github.com/r0mymendez/R/raw/master/DatosDeMiercoles/20200221/plot.png?raw=true)
+
+----
+
+
+## [30 días de gráficos](https://github.com/r0mymendez/R/tree/master/DatosDeMiercoles/20200608)
+Para esta entrega realice un gif con las cantidad de TvShow por año que se encuentran en las plataformas Disney, Hulu, Prime Video y Netflix Data Source: https://www.kaggle.com/ruchi798/tv-shows-on-netflix-prime-video-hulu-and-disney
+
+<img src="https://github.com/r0mymendez/R/raw/master/DatosDeMiercoles/20200608/animation.gif" alt="Girl in a jacket" height="80%">
+
+----
+
+
+
+
+
+
+[^1]: [GitHub Datos de miercoles](https://github.com/cienciadedatos/datos-de-miercoles)

@@ -128,5 +128,32 @@
     "preview": "https://i.pinimg.com/474x/73/c1/12/73c112b17867018cc6f384248300d3ab.jpg",
     "last_modified": "2021-03-06T14:10:25-03:00",
     "input_file": "dnde-est-mi-monopatn.utf8.md"
+  },
+  {
+    "path": "posts/2021-03-06-dataviz-datos-de-miercoles/",
+    "title": "Dataviz: Datos de Miercoles",
+    "description": "En este contiene las visualizaciones que realice para Datos de Miercoles.",
+    "author": [
+      {
+        "name": "Romina Mendez",
+        "url": {}
+      },
+      {
+        "name": "",
+        "url": "https://example.com/norajones"
+      }
+    ],
+    "date": "2021-02-21",
+    "categories": [
+      "DataViz",
+      "R",
+      "Data",
+      "Programacion",
+      "Workshop"
+    ],
+    "contents": "\n\nContents\n¿Que es datos de Miercoles?\nDATAVIZ 📊Rankings Musicales - SPOTIFY\nCapitulos de RLadies\nPokemon\nDatos de la OMS sobre tuberculosis\nReseñas de Vinos\nGapminder\nComercio Hispanoamérica-Mundo\nDatos sobre el Índice de Libertad\nIMDB- Ranking de películas\n30 días de gráficos\n\n\n¿Que es datos de Miercoles?\nDatos de miércoles es el primo latinoamericano de #tidytuesday, un proyecto semanal de datos organizado por la comunidad de R, que busca que sus participantes desarrollen sus habilidades procesando datos para crear gráficos significativos usando ggplot2, tidyr, dplyr y otras herramientas del tidyverse. El proyecto original surgió en el marco de la comunidad de aprendizaje online R4DS y desde abril de 2019 la comunidad sudamericana de R impulsa una versión local en español. 1\nDATAVIZ 📊\nR es uno de los lenguajes más populares para el desarrollo de visualizaciones y su paquete más popular en los ultimos años es GGPLOT. Para poder aprender a desarrollar visualizaciones comence a practicar en base a los desafios que se publicaban semana a semana en Datos de Miércoles.\nSi quieres dar tus primeros pasos para el desarrollo de visualizaciones en R, te dejo este post que realice con un curso gratis de 3 horas ⌛.\nAlgunas de las visualizaciones que realice para esta comunidad son las siguientes 🎉.\nRankings Musicales - SPOTIFY\n\nCapitulos de RLadies\n\nPokemon\n\nDatos de la OMS sobre tuberculosis\n\nReseñas de Vinos\nDatos sobre reseñas de vinos publicadas en la revista WineEnthusiast 🍷🍷🍷\n\nLos datos de los quesos fueron tomados de los siguientes sitios: * 🍷 Club bonvivir * 🍷 Vix * 🍷 Vinepair\n\nGapminder\n\nComercio Hispanoamérica-Mundo\nAnalisis de exportaciones Argentina del año 2017.\n\nDatos sobre el Índice de Libertad\n\nIMDB- Ranking de películas\n\n30 días de gráficos\nPara esta entrega realice un gif con las cantidad de TvShow por año que se encuentran en las plataformas Disney, Hulu, Prime Video y Netflix Data Source: https://www.kaggle.com/ruchi798/tv-shows-on-netflix-prime-video-hulu-and-disney\n\nGitHub Datos de miercoles\n\n↩︎\n",
+    "preview": "https://analyticsindiamag.com/wp-content/uploads/2020/09/How-to-use-data-visualization-report-design.png",
+    "last_modified": "2021-03-06T16:09:20-03:00",
+    "input_file": "dataviz-datos-de-miercoles.utf8.md"
   }
 ]
