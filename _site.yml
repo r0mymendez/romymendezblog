@@ -1,4 +1,4 @@
-name: "RomyMendez"
+name: "."
 title: "Romy Mendez's Blog"
 description: |
   Romina Mendez's personal blog/ site. Some  posts
@@ -15,13 +15,12 @@ collections:
       shortname: romimendezblog
       hidden: true
       share: [twitter, linkedin]
-
 navbar:
   right:
     - text: "Home"
       href: index.html
     - text: "Blog: Post"
-      href: Blog.html
+      href: blog.html
     - icon: fab fa-github
       href: https://github.com/r0mymendez
     - icon: fab fa-twitter

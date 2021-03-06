@@ -1,0 +1,68 @@
+---
+title: "¿Dónde está mi monopatín?🛹"
+description: |
+  Recursos del evento IWD2020 (International Womens Day) de Women Techmakers, en el cual utilizamos python para encontrar monopatines en la Ciudad Autonoma de Buenos Aires📍.
+  
+categories:
+  - DataViz
+  - Python
+  - Data
+  - Mapas
+  - Programacion
+  - Workshop
+preview: "https://i.pinimg.com/474x/73/c1/12/73c112b17867018cc6f384248300d3ab.jpg"
+
+author:
+  - name: Romina Mendez
+  - url: https://example.com/norajones
+date: 02-21-2021
+output:
+  distill::distill_article:
+    self_contained: yes
+    toc: yes
+---
+
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+## ¿Dónde está mi monopatín? Encontralo con Python 🐍
+##### GDG Buenos Aires: Women Techmakers Buenos Aires
+
+**Women Techmakers** es el programa global de Google que promueve un espacio de visibilidad, comunidad y recursos para fomentar la diversidad en tecnología.
+
+<center>
+<img src="https://secure.meetupstatic.com/photos/event/4/f/1/highres_489001265.jpeg" alt="Girl in a jacket" width="70%" height="70%">
+
+</center>
+
+
+En el encuentro  **IWD2020** 👭 (International Womens Day), realizamos un Hands-on Labs online con [Kari Bartolome](https://github.com/karbartolome/) y [Aidin Rodriguez](https://github.com/AidinRodriguez) para enseñar a utilizar Google Colab con Python🐍 utilizando datos publicos, el problema resolver es: ¿Dónde está mi monopatín?
+
+<center>
+![](https://media.giphy.com/media/kfuaMpvpElQP7ZQOCy/giphy.gif)
+</center>
+
+
+🔎 Si queres conocer más sobre **Google Colab** y **Python** podes ver el siguiente post:
+["Introducción a visualizaciones con python"](posts/2021-02-21-introduccin-a-visualizaciones-con-python/)
+
+
+* **API DE TRANSPORTE**
+
+  * Para realizar esta actividad es necesario contar con las credenciales de la API de transporte del Gobierno de la Ciudad de Buenos Aires, las mismas se pueden obtener las credenciales se debe ingresar a este link:
+https://www.buenosaires.gob.ar/form/formulario-de-registro-api-transporte
+
+  * Una vez finalizada la carga del formulario, en unos minutos va recibir un correo con sus credenciales (controle si las mismas no llegan a su correo SPAM).
+
+  * Para ver la documentación de la [API](https://www.buenosaires.gob.ar/desarrollourbano/transporte/apitransporte/api-doc)
+
+📺* **Para ver el taller nuevamente**
+
+En este 🔗 [link](https://www.youtube.com/watch?time_continue=326&v=F9enHwvJkZQ&feature=emb_logo) puedes encontrar el video con la resolución del taller.
+
+Aqui puedes encontrar las notebooks 🔗[link](https://github.com/r0mymendez/Workshop-Mapas-Apis)
+
+![](https://i.ibb.co/df4Xqr9/mapa.png")
+

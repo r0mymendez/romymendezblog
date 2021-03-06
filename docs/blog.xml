@@ -34,6 +34,21 @@ on software, agile methodologies , data science and the professor life.
       <media:content url="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Cheating.JPG/1200px-Cheating.JPG" medium="image" type="image/jpeg"/>
     </item>
     <item>
+      <title>Introducción a Visualizaciones con Python</title>
+      <dc:creator>Romina Mendez</dc:creator>
+      <dc:creator/>
+      <link>https://www.rominamendezblog.com/posts/2021-02-21-introduccin-a-visualizaciones-con-python</link>
+      <description>Primeros pasos para comenzar a realizar tus primeras visualizaciones en Python.</description>
+      <category>DataViz</category>
+      <category>Python</category>
+      <category>Data</category>
+      <category>Programacion</category>
+      <category>Workshop</category>
+      <guid>https://www.rominamendezblog.com/posts/2021-02-21-introduccin-a-visualizaciones-con-python</guid>
+      <pubDate>Sun, 21 Feb 2021 00:00:00 +0000</pubDate>
+      <media:content url="https://i.ibb.co/HqsbFFg/linear-infographic-vector-elements.jpg" medium="image" type="image/jpeg"/>
+    </item>
+    <item>
       <title>Introducción a Visualizaciones con R</title>
       <dc:creator>Romina Mendez</dc:creator>
       <dc:creator/>
@@ -42,11 +57,27 @@ on software, agile methodologies , data science and the professor life.
       <category>DataViz</category>
       <category>R</category>
       <category>Data</category>
-      <category>Pprogramacion</category>
+      <category>Programacion</category>
       <category>Workshop</category>
       <guid>https://www.rominamendezblog.com/posts/2021-02-21-introduccin-a-visualizaciones-con-r</guid>
       <pubDate>Sun, 21 Feb 2021 00:00:00 +0000</pubDate>
       <media:content url="https://i.ibb.co/HqsbFFg/linear-infographic-vector-elements.jpg" medium="image" type="image/jpeg"/>
+    </item>
+    <item>
+      <title>¿Dónde está mi monopatín?🛹</title>
+      <dc:creator>Romina Mendez</dc:creator>
+      <dc:creator/>
+      <link>https://www.rominamendezblog.com/posts/2021-03-06-dnde-est-mi-monopatn</link>
+      <description>Recursos del evento IWD2020 (International Womens Day) de Women Techmakers, en el cual utilizamos python para encontrar monopatines en la Ciudad Autonoma de Buenos Aires📍.</description>
+      <category>DataViz</category>
+      <category>Python</category>
+      <category>Data</category>
+      <category>Mapas</category>
+      <category>Programacion</category>
+      <category>Workshop</category>
+      <guid>https://www.rominamendezblog.com/posts/2021-03-06-dnde-est-mi-monopatn</guid>
+      <pubDate>Sun, 21 Feb 2021 00:00:00 +0000</pubDate>
+      <media:content url="https://i.pinimg.com/474x/73/c1/12/73c112b17867018cc6f384248300d3ab.jpg" medium="image" type="image/jpeg"/>
     </item>
   </channel>
 </rss>

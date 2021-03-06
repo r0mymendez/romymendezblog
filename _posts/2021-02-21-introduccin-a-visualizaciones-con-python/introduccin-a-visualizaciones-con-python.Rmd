@@ -1,7 +1,14 @@
 ---
 title: "Introducción a Visualizaciones con Python"
 description: |
-  A short description of the post.
+  Primeros pasos para comenzar a realizar tus primeras visualizaciones en Python.
+categories:
+  - DataViz
+  - Python
+  - Data
+  - Programacion
+  - Workshop
+preview: "https://i.ibb.co/HqsbFFg/linear-infographic-vector-elements.jpg"
 author:
   - name: Romina Mendez
     url: {}
@@ -10,7 +17,8 @@ author:
 date: 02-21-2021
 output:
   distill::distill_article:
-    self_contained: false
+    self_contained: yes
+    toc: yes
 ---
 
 
@@ -18,49 +26,49 @@ output:
 knitr::opts_chunk$set(echo = FALSE)
 ```
 
-
 La programación es una habilidad que puede ser adquirida de manera autodidacta, pero a veces uno no sabe como empezar.
-Por lo cual te dejo este curso online realizado en el 2020 📆 en conjunto con [EANT](https://eant.tech/escuela-de-ciencias-de-datos), el cual en solo **3 horas** ⏱️ podes dar tus primeros pasos en el desarrollo de visualizaciónes con **R**.
+Por lo cual te dejo este curso online realizado en el 2020 📆 en conjunto con [EANT](https://eant.tech/escuela-de-ciencias-de-datos), el cual en solo **3 horas** ⏱️ podes dar tus primeros pasos en el desarrollo de visualizaciónes con **Python**🐍.
 
-## ¿Que es [<img src="https://www.r-project.org/logo/Rlogo.svg" alt="R" width="40" height="40">](https://www.r-project.org/)?
+# ¿Que es Python [<img src="https://i1.wp.com/www.inferencelab.com/wp-content/uploads/Python-logo-notext.svg_.png" alt="python" width="40" height="40">](https://www.python.org/)?
 
-**R** es uno de los lenguajes más populares que se utiliza para el procesamiento y analisis estadístico de datos.
-Este lenguaje es una reimplementación de otro lenguaje denominado S, aunque tambien tiene bases de lenguajes como C, C++ o Fortran.
-**R** es muy popular debido a que actualmente se lo utiliza para el desarrollo de modelos de machine learning, pero tambien con este lenguaje se puede realizar desarrollo de: sitio webs, APIs, procesamiento de datos y hasta puedes desarrollar tu CV.
+**Python** es un lenguaje de programación de código abierto, orientado a objetos, muy simple y fácil de entender. 
+Tiene una sintaxis sencilla que cuenta con una vasta biblioteca de herramientas, que hacen de **Python** un lenguaje de programación único.
+La primera publicación de **Python** se produce hace ya 30 años, ya que en 1989 Guido Van Rossum comenzó el desarrollo de un nuevo lenguaje de programación casi por hobby y tomando su nombre de el grupo humorístico británico Monty Python.
 
-Más información sobre [R](https://www.r-project.org/)
+Actualmente es uno de los lenguajes más utilizados para análisis de datos, pero también es considerado un lenguaje multi-proposito debido a gran cantidad de aplicaciónes que se pueden desarrollar con **Python**.
 
-## ¿Que es [<img src="https://i.ibb.co/BgQ3S89/images-1.png" alt="RStudio" width="100" height="40">](https://rstudio.cloud/)?
+<center>
+![](https://i.ibb.co/Gx99sbS/apps.png)
+</center>
 
-**Rstudio** es una **IDE** (Entorno de desarrollo integrado) para poder progrmar en R, aunque actualmente soporta otros lenguajes tales como **Python** y **Javascript**.
-Asimismo existe una version online, en la que puedes crear una cuenta y generar codificar tus propios proyectos en la nube.
+Más información sobre [Python](https://www.python.org/)
 
-El [plan free](https://rstudio.cloud/plans/free) te permite:
 
-* Generar hasta 15 proyectos.
-* Un espacio compartido con 5 miembros y 10 proyectos como maximo.
-* 15 horas de proyectos por mes.
-* Hasta 1 GB de RAM por proyecto.
-* Hasta 1 CPU por proyecto
-* Hasta 1 hora de tiempo en ejecución en segundo plano.
 
-## Temario
-En este workshop online vas a poder aprender sobre:
+# ¿Que es Google Colab ?
+<br/>
 
-* ✏️ Qué es Data Analytics y sus etapas de trabajo.
-* ✏️ El concepto del análisis exploratorio de datos.
-* ✏️ La importancia de la visualización tanto como herramienta de presentación como de descubrimiento de ideas.
-* ✏️ Qué es R y por qué es una de las herramientas más utilizadas en los ámbitos de trabajo de Data Science.
-* ✏️ Utilizar la interfaz de Rstudio.
-* ✏️ Dar primeros pasos en programación para la manipulación y exploración de Datos.
-* ✏️ Qué son y cómo utilizar librerías de código para realizar operaciones de análisis.
-* ✏️ Cómo realizar distintos análisis mediante gráficos y visualizaciones.
-* ✏️ Tips, recomendaciones y recursos útiles para seguir aprendiendo!
+<center>
+[<img src="https://colab.research.google.com/img/colab_favicon_256px.png">](https://colab.research.google.com/)
+</center>
 
-## ¿Estas preparado para comenzar 🏃🏃? 
-A continuación tienes todos los recursos para comenzar y hacer tus primeras visualización con datos 💪.
+<br/>
 
-![](https://media.giphy.com/media/S8ToH7Zt8gZ4u2iClh/giphy.gif)
+**Google Colab** es una **IDE** (Entorno de desarrollo integrado) para poder progrmar en Python utilizando google drive.
+
+<br/>
+Es un marco de desarrollo amigable, el cual permite:
+
+* Autocompletado
+* Reconocimiento de sintaxis de programación
+* Depurador de errores 
+* Tiene librerias preinstaladas
+* Se utiliza desde drive lo cual permite versionar tu codigo y trabajar en conjunto con otros colaboradoes.
+
+Para conocer más sobre **Colab** puedes copiar esta notebook: [Notebook](https://colab.research.google.com/notebooks/intro.ipynb)
+<br/>
+
+![](https://i.ibb.co/KjsrKT9/colab.png)
 
 ----
 
@@ -68,9 +76,9 @@ A continuación tienes todos los recursos para comenzar y hacer tus primeras vis
 
 * Presentación:
 
-<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vRU23HJSUH9zRJq6jOmmtSKJqUYnkaRTnk4tjVpxza0uzDSmClEKcWdojeo0Zj_uA/embed?start=false&loop=false&delayms=60000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vQZ1badJKYERwWsBVhWUb-3wJ1_6lFXd-MT743nytlAIX5M9ALqFGm1IGQUrf0BbjiAPRIeSTxKdEBl/embed?start=true&loop=true&delayms=60000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
 
 
-* Acceso al curso Online: [Workshop EANT](https://eant.tech/escuela-de-ciencias-de-datos/cursos/taller-introduccion-a-data-analytics-r)
+* Acceso al curso Online: [Workshop EANT](https://eant.tech/escuela-de-ciencias-de-datos/cursos/taller-introduccion-a-data-analytics-python)
 
 

@@ -6,7 +6,7 @@ categories:
   - DataViz
   - R
   - Data
-  - Pprogramacion
+  - Programacion
   - Workshop
 preview: "https://i.ibb.co/HqsbFFg/linear-infographic-vector-elements.jpg"
 author:
