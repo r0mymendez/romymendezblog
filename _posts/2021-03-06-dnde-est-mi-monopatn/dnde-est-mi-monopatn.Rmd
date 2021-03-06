@@ -27,10 +27,10 @@ output:
 knitr::opts_chunk$set(echo = FALSE)
 ```
 
-## ¿Dónde está mi monopatín? Encontralo con Python 🐍
-##### GDG Buenos Aires: Women Techmakers Buenos Aires
 
-**Women Techmakers** es el programa global de Google que promueve un espacio de visibilidad, comunidad y recursos para fomentar la diversidad en tecnología.
+# GDG Buenos Aires: Women Techmakers Buenos Aires
+
+**Women Techmakers** es el programa global de **Google** que promueve un espacio de visibilidad, comunidad y recursos para fomentar la diversidad en tecnología.
 
 <center>
 <img src="https://secure.meetupstatic.com/photos/event/4/f/1/highres_489001265.jpeg" alt="Girl in a jacket" width="70%" height="70%">
@@ -46,7 +46,7 @@ En el encuentro  **IWD2020** 👭 (International Womens Day), realizamos un Hand
 
 
 🔎 Si queres conocer más sobre **Google Colab** y **Python** podes ver el siguiente post:
-["Introducción a visualizaciones con python"](posts/2021-02-21-introduccin-a-visualizaciones-con-python/)
+["Introducción a visualizaciones con python"](https://r0mymendez.github.io/romymendezblog/posts/2021-02-21-introduccin-a-visualizaciones-con-python/)
 
 
 * **API DE TRANSPORTE**
