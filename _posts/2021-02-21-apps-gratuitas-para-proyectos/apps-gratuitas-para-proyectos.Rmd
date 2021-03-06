@@ -5,7 +5,7 @@ description: |
 categories:
   - Proyectos
   - Metodologias
-preview: "https://i.ibb.co/8cggRCg/Dev-Ops-team-abstract-concept-vector-illustration-Software-development-team-member-agile-workflow-De.jpg"
+preview: "https://image.freepik.com/free-vector/tiny-people-developers-laptop-customer-requirements-software-requirement-description-user-case-agile-tool-business-analysis-concept_335657-2433.jpg"
 
 author:
   - name: Romina Mendez
@@ -25,7 +25,7 @@ knitr::opts_chunk$set(echo = FALSE)
 La pandemia de coronavirus impulso el home office y muchos empleados se vieron obligados a transformar su forma de trabajar.
 Este contexto genero un cambio en la forma en la que nos relacionamos y desempeñamos nuestras tareas diarias.
 
-![](https://i.ibb.co/8cggRCg/Dev-Ops-team-abstract-concept-vector-illustration-Software-development-team-member-agile-workflow-De.jpg)
+![](https://image.freepik.com/free-vector/tiny-people-developers-laptop-customer-requirements-software-requirement-description-user-case-agile-tool-business-analysis-concept_335657-2433.jpg)
 
 
 A continuación te recopilo un listado de herramientas y recursos que puedes utilizar para poder desarrollar tu tareas y gestionar tus proyectos.
