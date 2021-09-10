@@ -1,0 +1,15 @@
+name: "."
+title: "Romy Mendez"
+description: |
+  Romina Mendez's personal blog/ site. Some  posts
+  on software, agile methodologies , data science and the professor life.
+output_dir: "docs"
+base_url: https://www.rominamendezblog.com
+navbar:
+  search: true
+  right:
+    - text: "Home"
+      href: index.html
+    - text: "Blog: Post"
+      href: blog.html
+output: distill::distill_article

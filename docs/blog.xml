@@ -1,12 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:distill="https://distill.pub/journal/" version="2.0">
   <channel>
-    <title>Romy Mendez's Blog</title>
+    <title>Romy Mendez</title>
     <link>https://www.rominamendezblog.com</link>
     <atom:link href="https://www.rominamendezblog.com/blog.xml" rel="self" type="application/rss+xml"/>
     <description>Romina Mendez's personal blog/ site. Some  posts
 on software, agile methodologies , data science and the professor life.
 </description>
+    <image>
+      <title>Romy Mendez</title>
+      <url>https://www.rominamendezblog.com/image/favicon.ico</url>
+      <link>https://www.rominamendezblog.com</link>
+    </image>
     <generator>Distill</generator>
     <lastBuildDate>Sun, 21 Feb 2021 00:00:00 +0000</lastBuildDate>
     <item>
@@ -14,61 +19,7 @@ on software, agile methodologies , data science and the professor life.
       <dc:creator>Romina Mendez</dc:creator>
       <dc:creator/>
       <link>https://www.rominamendezblog.com/posts/2021-02-21-apps-gratuitas-para-proyectos</link>
-      <description>
-
-
-&lt;p&gt;La pandemia de coronavirus impulso el home office y muchos empleados se vieron obligados a transformar su forma de trabajar. Este contexto genero un cambio en la forma en la que nos relacionamos y desempeñamos nuestras tareas diarias.&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://image.freepik.com/free-vector/tiny-people-developers-laptop-customer-requirements-software-requirement-description-user-case-agile-tool-business-analysis-concept_335657-2433.jpg" /&gt;&lt;/p&gt;
-&lt;p&gt;A continuación te recopilo un listado de herramientas y recursos que puedes utilizar para poder desarrollar tu tareas y gestionar tus proyectos.&lt;/p&gt;
-&lt;h1 id="metodologías"&gt;Metodologías&lt;/h1&gt;
-&lt;h2 id="trello"&gt;&lt;a href="https://trello.com/es"&gt;Trello&lt;/a&gt;&lt;/h2&gt;
-&lt;p&gt;Trello es una aplicación basada en la metodología Kanban y permite gestionar tu trabajo de forma colaborativa. Su version gratuita tiene tableros personales ilimitados, tarjetas ilimitadas al igual que listas y hasta 10MB por archivo adjunto. &lt;img src="https://cdn-images-1.medium.com/max/1600/1*9okP8Tt4RBWfKsiKctz31w.jpeg" /&gt;&lt;/p&gt;
-&lt;h2 id="miro"&gt;&lt;a href="https://miro.com/"&gt;Miro&lt;/a&gt;&lt;/h2&gt;
-&lt;p&gt;Miro es una aplicación que te permite tener pizarras, en las cuales los integrantes de los equipos puedan colaborar y modificarlas en tiempo real. Asimismo posee múltiples plantillas que pueden ser utilizadas para realizar la planificación de un proyecto. En su version gratuita permite principalmente tener: 3 tableros editables, espectadores anónimos y plantillas.&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://cdn-images-1.medium.com/max/1600/1*DudlMVVIM-b3cJyn6kVPaA.png" /&gt;&lt;/p&gt;
-&lt;h2 id="quire"&gt;&lt;a href="https://quire.io/"&gt;Quire&lt;/a&gt;&lt;/h2&gt;
-&lt;p&gt;Quire es una aplicación que implementa el tablero Kanban, en su sitio web mencionan que hasta la primera mitad del 2020 no tiene precios definidos y que puedes tener una cuenta gratuita con hasta 35 organizaciones, 80 proyectos y 30 miembros.&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://cdn-images-1.medium.com/max/1600/1*glnYc_G2fDzgIWxwjNsqZg.png" /&gt; source image : imagen obtenida en &lt;a href="https://quire.io/" class="uri"&gt;https://quire.io/&lt;/a&gt;&lt;/p&gt;
-&lt;h2 id="asana"&gt;&lt;a href="https://asana.com/"&gt;Asana&lt;/a&gt;&lt;/h2&gt;
-&lt;p&gt;Asana es una aplicación que permite organizar proyectos utilizando tableros Kanban en linea. En su version free permite hasta 15 miembros y vistas de calendarios, asignación de responsables y fechas de entregas.&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://cdn-images-1.medium.com/max/1600/1*yPW-DVfORD5WWEu7yvy_IA.png" /&gt; imagen obtenida en &lt;a href="https://asana.com/es" class="uri"&gt;https://asana.com/es&lt;/a&gt;&lt;/p&gt;
-&lt;h2 id="clikup"&gt;&lt;a href="https://clickup.com/"&gt;Clikup&lt;/a&gt;&lt;/h2&gt;
-&lt;p&gt;Clikup es una aplicación para gestionar tus proyectos, la cual permite generar documentos, notificaciones y administrar tu bandeja de entrada. Adicionalmente permite realizar dashboard para ver el avance de los proyectos. Lo más importante es que su version free tiene 100MB Storage e ilimitadas tareas y usuarios.&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://cdn-images-1.medium.com/max/1600/1*sYLAXPKHKFFt8IvgSVSbAw.png" /&gt; imagen obtenida en &lt;a href="https://clickup.com/welcome" class="uri"&gt;https://clickup.com/welcome&lt;/a&gt;&lt;/p&gt;
-&lt;h2 id="scrumblr"&gt;&lt;a href="http://scrumblr.ca/"&gt;Scrumblr&lt;/a&gt;&lt;/h2&gt;
-&lt;p&gt;Scrumblr es una aplicación que permite generar un tablero de Kanban y su colaboración en tiempo real. Lo más destacable de esta aplicación es que no necesitas generar un usuario, ya que el único dato que solicita es el nombre de tu tablero.&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://cdn-images-1.medium.com/max/1600/1*Z9UuyR1DwB9NEucai-FYBw.png" /&gt;&lt;/p&gt;
-&lt;h2 id="gitmind"&gt;Gitmind&lt;/h2&gt;
-&lt;p&gt;Gitmind es una herramienta para realizar diagramas de mapas mentales y la misma es gratuita &lt;img src="https://cdn-images-1.medium.com/max/1600/1*b-qnKf5hXnVlfpGRdJgomA.png" /&gt;&lt;/p&gt;
-&lt;p&gt;imagen obtenida en gitmind&lt;/p&gt;
-&lt;h2 id="habitica"&gt;&lt;a href="https://gitmind.com/"&gt;Habitica&lt;/a&gt;&lt;/h2&gt;
-&lt;p&gt;Habitica es una aplicación para gestionar proyectos de manera más divertida, ya que puedes administrar tus tareas por medio de un juego de rol. Si completas todos las tareas pendientes puedes progresar en el juego, pero si fallamos nuestro personaje va retroceder en este juego.&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://cdn-images-1.medium.com/max/1600/1*smMXTJQqmYN-3qhMdlWtPQ.png" /&gt; imagen obtenida de mi perfil de habitica&lt;/p&gt;
-&lt;h1 id="diagramas"&gt;Diagramas&lt;/h1&gt;
-&lt;h2 id="draw.io"&gt;&lt;a href="https://www.draw.io/"&gt;Draw.io&lt;/a&gt;&lt;/h2&gt;
-&lt;p&gt;Draw.io es una aplicación gratuita que permite la creación y edición de diagramas. La misma permite a los usuarios compartir sus diagramas y posee integraciones con Google Drive y Dropbox. Esta aplicación tiene varios templates reutilizables tales como diagramas de Venn, wireframes, network, flowcharts, UML, entre otros.&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://cdn-images-1.medium.com/max/1600/1*ThDeyU6M_760bo79HARHSw.png" /&gt; Imagen obtenida de mi cuenta de &lt;a href="https://www.draw.io/" class="uri"&gt;https://www.draw.io/&lt;/a&gt;&lt;/p&gt;
-&lt;h2 id="mindmup"&gt;&lt;a href="https://www.mindmup.com/"&gt;Mindmup&lt;/a&gt;&lt;/h2&gt;
-&lt;p&gt;Mindmup es una aplicación gratuita que permite crear mapas mentales de forma ilimitada y guardarlo en la nube.&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://cdn-images-1.medium.com/max/1600/1*77xR-vtUJw6g7gY6ewc36A.png" /&gt;&lt;/p&gt;
-&lt;h1 id="estimación-de-tiempos"&gt;Estimación de tiempos&lt;/h1&gt;
-&lt;h2 id="planning-poker"&gt;&lt;a href="https://planningpokeronline.com/"&gt;Planning poker&lt;/a&gt;&lt;/h2&gt;
-&lt;p&gt;Planning poker es una técnica que permite realizar la estimación del tiempo de una tarea en un equipo para la planificación del sprint. Esta técnica se realiza utilizando cartas numeradas con las secuencia de Fibonacci. Si quieres desarrollar esta técnica en forma online, puede utilizar la aplicación www.planningpoker.com. En su version gratuita permite hasta 5 usuarios en un juego.&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://cdn-images-1.medium.com/max/1600/1*Wxn7YpKYh59roNF7YUP5Ww.png" /&gt;&lt;/p&gt;
-&lt;h1 id="diseño"&gt;Diseño&lt;/h1&gt;
-&lt;h2 id="canva"&gt;&lt;a href="https://www.canva.com/es_419/"&gt;Canva&lt;/a&gt;&lt;/h2&gt;
-&lt;p&gt;Canva es una aplicación online de diseño gráfico simplificado, en el cual puedes crear una pieza de diseño utilizando los cientos de templates tiene disponibles. Puedes utilizar la cuenta gratuita y solo pagas para obtener algunas opciones avanzadas de diseño.&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://cdn-images-1.medium.com/max/1600/1*a0R_x9Wyir7Dm0slDWktJw.jpeg" /&gt;&lt;/p&gt;
-&lt;h1 id="mensajeria"&gt;Mensajeria&lt;/h1&gt;
-&lt;h2 id="slack"&gt;&lt;a href="https://slack.com/intl/es-ar/"&gt;Slack&lt;/a&gt;&lt;/h2&gt;
-&lt;p&gt;Slack es una herramienta de mensajería en tiempo real que permite gestionar la comunicaciones con los equipos de trabajo o comunidades. Cuando utilizas un espacio en slack puedes generar canales en los cuales se pueden comunicar mensajes basados en algún tópico.&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://cdn-images-1.medium.com/max/1600/1*uPmdUW_5fBArWStfxwFqLg.png" /&gt;&lt;/p&gt;
-&lt;h2 id="discord"&gt;&lt;a href="https://discord.com/"&gt;Discord&lt;/a&gt;&lt;/h2&gt;
-&lt;p&gt;Discord es otra plataforma para crear grupo de chats, en el cual también puedes organizar las conversaciones en canales por temas &lt;img src="https://cdn-images-1.medium.com/max/1600/1*RNly5iWJiU6xclQEO60IgQ.png" /&gt;&lt;/p&gt;
-&lt;p&gt;imagen obtenida en &lt;a href="https://discord.com/new" class="uri"&gt;https://discord.com/new&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;Estas son las aplicaciones que te recomiendo utilizar para la gestión de tus tareas y proyectos. Recuerda que cualquiera de esta herramientas te puedo ayudar a realizar tus proyectos o gestion de tareas diarias de una maneras más ordenadas. Si tienes alguna otra herramienta que conoces y no esta en este articulo, puedes dejar un comentario en este post.&lt;/p&gt;
-&lt;pre class="r distill-force-highlighting-css"&gt;&lt;code&gt;&lt;/code&gt;&lt;/pre&gt;</description>
-      <distill:md5>73d598f6717177512d2d63e79937cf83</distill:md5>
+      <description>En el siguiente articulo te cuento sobre algunas aplicaciones free para utilizar en tus proyectos.</description>
       <category>Proyectos</category>
       <category>Metodologias</category>
       <guid>https://www.rominamendezblog.com/posts/2021-02-21-apps-gratuitas-para-proyectos</guid>
@@ -80,19 +31,7 @@ on software, agile methodologies , data science and the professor life.
       <dc:creator>Romina Mendez</dc:creator>
       <dc:creator/>
       <link>https://www.rominamendezblog.com/posts/2021-02-21-cheatsheet-sql</link>
-      <description>
-
-
-&lt;p&gt;Las cheetsheet son un conjunto de notas 🗒 que se utilizan como referencia rápida sobre alguna tematica. También son conocidos como los machetes en los cuales se registraban pequeños conceptos a recordar 😎.&lt;/p&gt;
-&lt;center&gt;
-&lt;img src="https://media.giphy.com/media/IqFH0yMll9wl2/giphy.gif" /&gt;
-&lt;/center&gt;
-&lt;hr /&gt;
-&lt;p&gt;En el siguiente &lt;strong&gt;pdf&lt;/strong&gt; podes encontrar la sintaxis basica para poder realizar consultas en &lt;strong&gt;sql&lt;/strong&gt;&lt;/p&gt;
-&lt;iframe src="https://drive.google.com/file/d/1uB3UQRuZDP05Rqa2TcPGMWMzOOsuKIig/preview" width="640" height="480"&gt;
-&lt;/iframe&gt;
-&lt;pre class="r distill-force-highlighting-css"&gt;&lt;code&gt;&lt;/code&gt;&lt;/pre&gt;</description>
-      <distill:md5>ccf28a513215a10894ad171c2878bb05</distill:md5>
+      <description>En el siguiente post puedes encontrar una cheetsheet de SQ, en la cual puedes encontrar un resumen y ejemplos de la sintaxis de SQL.</description>
       <category>Base de datos</category>
       <category>SQL</category>
       <guid>https://www.rominamendezblog.com/posts/2021-02-21-cheatsheet-sql</guid>
@@ -104,46 +43,7 @@ on software, agile methodologies , data science and the professor life.
       <dc:creator>Romina Mendez</dc:creator>
       <dc:creator/>
       <link>https://www.rominamendezblog.com/posts/2021-02-21-introduccin-a-visualizaciones-con-python</link>
-      <description>
-
-
-&lt;p&gt;La programación es una habilidad que puede ser adquirida de manera autodidacta, pero a veces uno no sabe como empezar. Por lo cual te dejo este curso online realizado en el 2020 📆 en conjunto con &lt;a href="https://eant.tech/escuela-de-ciencias-de-datos"&gt;EANT&lt;/a&gt;, el cual en solo &lt;strong&gt;3 horas&lt;/strong&gt; ⏱️ podes dar tus primeros pasos en el desarrollo de visualizaciónes con &lt;strong&gt;Python&lt;/strong&gt;🐍.&lt;/p&gt;
-&lt;h1 id="que-es-python"&gt;¿Que es Python &lt;a href="https://www.python.org/"&gt;&lt;img src="https://i1.wp.com/www.inferencelab.com/wp-content/uploads/Python-logo-notext.svg_.png" alt="python" width="40" height="40"&gt;&lt;/a&gt;?&lt;/h1&gt;
-&lt;p&gt;&lt;strong&gt;Python&lt;/strong&gt; es un lenguaje de programación de código abierto, orientado a objetos, muy simple y fácil de entender. Tiene una sintaxis sencilla que cuenta con una vasta biblioteca de herramientas, que hacen de &lt;strong&gt;Python&lt;/strong&gt; un lenguaje de programación único. La primera publicación de &lt;strong&gt;Python&lt;/strong&gt; se produce hace ya 30 años, ya que en 1989 Guido Van Rossum comenzó el desarrollo de un nuevo lenguaje de programación casi por hobby y tomando su nombre de el grupo humorístico británico Monty Python.&lt;/p&gt;
-&lt;p&gt;Actualmente es uno de los lenguajes más utilizados para análisis de datos, pero también es considerado un lenguaje multi-proposito debido a gran cantidad de aplicaciónes que se pueden desarrollar con &lt;strong&gt;Python&lt;/strong&gt;.&lt;/p&gt;
-&lt;center&gt;
-&lt;img src="https://i.ibb.co/Gx99sbS/apps.png" /&gt;
-&lt;/center&gt;
-&lt;p&gt;Más información sobre &lt;a href="https://www.python.org/"&gt;Python&lt;/a&gt;&lt;/p&gt;
-&lt;h1 id="que-es-google-colab"&gt;¿Que es Google Colab ?&lt;/h1&gt;
-&lt;p&gt;&lt;br/&gt;&lt;/p&gt;
-&lt;center&gt;
-&lt;a href="https://colab.research.google.com/"&gt;&lt;img src="https://colab.research.google.com/img/colab_favicon_256px.png"&gt;&lt;/a&gt;
-&lt;/center&gt;
-&lt;p&gt;&lt;br/&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Google Colab&lt;/strong&gt; es una &lt;strong&gt;IDE&lt;/strong&gt; (Entorno de desarrollo integrado) para poder progrmar en Python utilizando google drive.&lt;/p&gt;
-&lt;p&gt;&lt;br/&gt; Es un marco de desarrollo amigable, el cual permite:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Autocompletado&lt;/li&gt;
-&lt;li&gt;Reconocimiento de sintaxis de programación&lt;/li&gt;
-&lt;li&gt;Depurador de errores&lt;/li&gt;
-&lt;li&gt;Tiene librerias preinstaladas&lt;/li&gt;
-&lt;li&gt;Se utiliza desde drive lo cual permite versionar tu codigo y trabajar en conjunto con otros colaboradoes.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Para conocer más sobre &lt;strong&gt;Colab&lt;/strong&gt; puedes copiar esta notebook: &lt;a href="https://colab.research.google.com/notebooks/intro.ipynb"&gt;Notebook&lt;/a&gt; &lt;br/&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://i.ibb.co/KjsrKT9/colab.png" /&gt;&lt;/p&gt;
-&lt;hr /&gt;
-&lt;h2 id="recursos"&gt;Recursos&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;Presentación:&lt;/li&gt;
-&lt;/ul&gt;
-&lt;iframe src="https://docs.google.com/presentation/d/e/2PACX-1vQZ1badJKYERwWsBVhWUb-3wJ1_6lFXd-MT743nytlAIX5M9ALqFGm1IGQUrf0BbjiAPRIeSTxKdEBl/embed?start=true&amp;amp;loop=true&amp;amp;delayms=60000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"&gt;
-&lt;/iframe&gt;
-&lt;ul&gt;
-&lt;li&gt;Acceso al curso Online: &lt;a href="https://eant.tech/escuela-de-ciencias-de-datos/cursos/taller-introduccion-a-data-analytics-python"&gt;Workshop EANT&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;pre class="r distill-force-highlighting-css"&gt;&lt;code&gt;&lt;/code&gt;&lt;/pre&gt;</description>
-      <distill:md5>9c49cb7f420e14ba74a7da6068eafa8e</distill:md5>
+      <description>Primeros pasos para comenzar a realizar tus primeras visualizaciones en Python.</description>
       <category>DataViz</category>
       <category>Python</category>
       <category>Data</category>
@@ -158,67 +58,7 @@ on software, agile methodologies , data science and the professor life.
       <dc:creator>Romina Mendez</dc:creator>
       <dc:creator/>
       <link>https://www.rominamendezblog.com/posts/2021-02-21-introduccin-a-visualizaciones-con-r</link>
-      <description>
-
-
-&lt;p&gt;La programación es una habilidad que puede ser adquirida de manera autodidacta, pero a veces uno no sabe como empezar. Por lo cual te dejo este curso online realizado en el 2020 📆 en conjunto con &lt;a href="https://eant.tech/escuela-de-ciencias-de-datos"&gt;EANT&lt;/a&gt;, el cual en solo &lt;strong&gt;3 horas&lt;/strong&gt; ⏱️ podes dar tus primeros pasos en el desarrollo de visualizaciónes con &lt;strong&gt;R&lt;/strong&gt;.&lt;/p&gt;
-&lt;h1 id="que-es"&gt;¿Que es &lt;a href="https://www.r-project.org/"&gt;&lt;img src="https://www.r-project.org/logo/Rlogo.svg" alt="R" width="40" height="40"&gt;&lt;/a&gt;?&lt;/h1&gt;
-&lt;p&gt;&lt;strong&gt;R&lt;/strong&gt; es uno de los lenguajes más populares que se utiliza para el procesamiento y analisis estadístico de datos. Este lenguaje es una reimplementación de otro lenguaje denominado S, aunque tambien tiene bases de lenguajes como C, C++ o Fortran. &lt;strong&gt;R&lt;/strong&gt; es muy popular debido a que actualmente se lo utiliza para el desarrollo de modelos de machine learning, pero tambien con este lenguaje se puede realizar desarrollo de: sitio webs, APIs, procesamiento de datos y hasta puedes desarrollar tu CV.&lt;/p&gt;
-&lt;p&gt;Más información sobre &lt;a href="https://www.r-project.org/"&gt;R&lt;/a&gt;&lt;/p&gt;
-&lt;h1 id="que-es-rstudio"&gt;¿Que es Rstudio ?&lt;/h1&gt;
-&lt;p&gt;&lt;br/&gt;&lt;/p&gt;
-&lt;center&gt;
-&lt;a href="https://rstudio.com/"&gt;&lt;img src="https://i.ibb.co/BgQ3S89/images-1.png" alt="rstudiovlogo"&gt;&lt;/a&gt;
-&lt;/center&gt;
-&lt;p&gt;&lt;br/&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Rstudio&lt;/strong&gt; es una &lt;strong&gt;IDE&lt;/strong&gt; (Entorno de desarrollo integrado) para poder progrmar en R, aunque actualmente soporta otros lenguajes tales como &lt;strong&gt;Python&lt;/strong&gt; y &lt;strong&gt;Javascript&lt;/strong&gt;.&lt;/p&gt;
-&lt;p&gt;&lt;br/&gt; Esta IDE esta en constante evolución y es la más utilizada para desarrollar en R debido que posee una interfaz con ayuda en linea, autocompletado de codigo, la posibilidad de realizar una depuración del codigo de manera sencilla, visualización de directorios, entre otras.&lt;/p&gt;
-&lt;p&gt;A continuación puede ver una linea de tiempo con la evolución de esta IDE en los ultimos años.[Un poco de historia sobre rstudio y su evolución. &lt;a href="#fn1" class="footnote-ref" id="fnref1"&gt;&lt;sup&gt;1&lt;/sup&gt;&lt;/a&gt; &lt;br/&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://d33wubrfki0l68.cloudfront.net/db11a793584a9307185b4925aa17c966d04ba211/cdfee/assets/img/2020-timeline.png" /&gt;&lt;/p&gt;
-&lt;p&gt;&lt;br/&gt;&lt;/p&gt;
-&lt;h2 id="rstudio-cloud-️"&gt;Rstudio Cloud ☁️&lt;/h2&gt;
-&lt;p&gt;&lt;a href="https://rstudio.cloud/"&gt;Rstudio cloud&lt;/a&gt; es una version basada en la nube que permite realizar el desarrollo sin necesidad de realizar ninguna instalación utilizando solo un navegador.&lt;/p&gt;
-&lt;p&gt;El &lt;a href="https://rstudio.cloud/plans/free"&gt;plan free&lt;/a&gt; te permite:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Generar hasta 15 proyectos.&lt;/li&gt;
-&lt;li&gt;Un espacio compartido con 5 miembros y 10 proyectos como maximo.&lt;/li&gt;
-&lt;li&gt;15 horas de proyectos por mes.&lt;/li&gt;
-&lt;li&gt;Hasta 1 GB de RAM por proyecto.&lt;/li&gt;
-&lt;li&gt;Hasta 1 CPU por proyecto&lt;/li&gt;
-&lt;li&gt;Hasta 1 hora de tiempo en ejecución en segundo plano.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h1 id="temario"&gt;Temario&lt;/h1&gt;
-&lt;p&gt;En este workshop online vas a poder aprender sobre:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;✏️ Qué es &lt;strong&gt;Data Analytics&lt;/strong&gt; y sus etapas de trabajo.&lt;/li&gt;
-&lt;li&gt;✏️ El concepto del análisis exploratorio de datos (&lt;strong&gt;EDA&lt;/strong&gt;).&lt;/li&gt;
-&lt;li&gt;✏️ Qué es &lt;strong&gt;R&lt;/strong&gt; y por qué es una de las herramientas más utilizadas en los ámbitos de trabajo de Data Science.&lt;/li&gt;
-&lt;li&gt;✏️ Utilizar la interfaz de &lt;strong&gt;Rstudio&lt;/strong&gt;.&lt;/li&gt;
-&lt;li&gt;✏️ Dar primeros pasos en programación para la &lt;strong&gt;manipulación&lt;/strong&gt; y &lt;strong&gt;exploración&lt;/strong&gt; de Datos.&lt;/li&gt;
-&lt;li&gt;✏️ Qué son y cómo utilizar &lt;strong&gt;librerías&lt;/strong&gt; de código para realizar operaciones de análisis.&lt;/li&gt;
-&lt;li&gt;✏️ Cómo realizar distintos análisis mediante gráficos y visualizaciones (&lt;strong&gt;dataviz&lt;/strong&gt;).&lt;/li&gt;
-&lt;li&gt;✏️ &lt;strong&gt;Tips&lt;/strong&gt;, &lt;strong&gt;recomendaciones&lt;/strong&gt; y &lt;strong&gt;recursos útiles&lt;/strong&gt; para seguir aprendiendo!&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id="estas-preparado-para-comenzar"&gt;¿Estas preparado para comenzar 🏃🏃?&lt;/h2&gt;
-&lt;p&gt;A continuación tienes todos los recursos para comenzar y hacer tus primeras visualización con datos 💪.&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://media.giphy.com/media/S8ToH7Zt8gZ4u2iClh/giphy.gif" /&gt;&lt;/p&gt;
-&lt;hr /&gt;
-&lt;h2 id="recursos"&gt;Recursos&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;Acceso al curso Online: &lt;a href="https://eant.tech/escuela-de-ciencias-de-datos/cursos/taller-introduccion-a-data-analytics-r"&gt;Workshop EANT&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;Presentación:&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;iframe src="https://docs.google.com/presentation/d/e/2PACX-1vRU23HJSUH9zRJq6jOmmtSKJqUYnkaRTnk4tjVpxza0uzDSmClEKcWdojeo0Zj_uA/embed?start=false&amp;amp;loop=false&amp;amp;delayms=60000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"&gt;
-&lt;/iframe&gt;
-&lt;div class="footnotes"&gt;
-&lt;hr /&gt;
-&lt;ol&gt;
-&lt;li id="fn1"&gt;&lt;p&gt;&lt;a href="https://rstudio.com/about/"&gt;Rstudio TimeLine&lt;/a&gt;&lt;/p&gt;
-&lt;pre class="r distill-force-highlighting-css"&gt;&lt;code&gt;&lt;/code&gt;&lt;/pre&gt;
-&lt;a href="#fnref1" class="footnote-back"&gt;↩︎&lt;/a&gt;&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/div&gt;</description>
-      <distill:md5>7ba7b82c9fc40466e05c721475536d1f</distill:md5>
+      <description>Primeros pasos para comenzar a realizar tus primeras visualizaciones en R.</description>
       <category>DataViz</category>
       <category>R</category>
       <category>Data</category>
@@ -229,39 +69,26 @@ on software, agile methodologies , data science and the professor life.
       <media:content url="https://www.binaryfountain.com/wp-content/uploads/2019/12/iStock-1069206352.jpg" medium="image" type="image/jpeg"/>
     </item>
     <item>
+      <title>Dataviz: Datos de Miercoles</title>
+      <dc:creator>Romina Mendez</dc:creator>
+      <dc:creator/>
+      <link>https://www.rominamendezblog.com/posts/2021-03-06-dataviz-datos-de-miercoles</link>
+      <description>En este contiene las visualizaciones que realice para Datos de Miercoles.</description>
+      <category>DataViz</category>
+      <category>R</category>
+      <category>Data</category>
+      <category>Programacion</category>
+      <category>Workshop</category>
+      <guid>https://www.rominamendezblog.com/posts/2021-03-06-dataviz-datos-de-miercoles</guid>
+      <pubDate>Sun, 21 Feb 2021 00:00:00 +0000</pubDate>
+      <media:content url="https://www.binaryfountain.com/wp-content/uploads/2019/12/iStock-1069206352.jpg" medium="image" type="image/jpeg"/>
+    </item>
+    <item>
       <title>¿Dónde está mi monopatín?🛹</title>
       <dc:creator>Romina Mendez</dc:creator>
       <dc:creator/>
       <link>https://www.rominamendezblog.com/posts/2021-03-06-dnde-est-mi-monopatn</link>
-      <description>
-
-
-&lt;h1 id="gdg-buenos-aires-women-techmakers-buenos-aires"&gt;GDG Buenos Aires: Women Techmakers Buenos Aires&lt;/h1&gt;
-&lt;p&gt;&lt;strong&gt;Women Techmakers&lt;/strong&gt; es el programa global de &lt;strong&gt;Google&lt;/strong&gt; que promueve un espacio de visibilidad, comunidad y recursos para fomentar la diversidad en tecnología.&lt;/p&gt;
-&lt;center&gt;
-&lt;p&gt;&lt;img src="https://secure.meetupstatic.com/photos/event/4/f/1/highres_489001265.jpeg" alt="Girl in a jacket" width="70%" height="70%"&gt;&lt;/p&gt;
-&lt;/center&gt;
-&lt;p&gt;En el encuentro &lt;strong&gt;IWD2020&lt;/strong&gt; 👭 (International Womens Day), realizamos un Hands-on Labs online con &lt;a href="https://github.com/karbartolome/"&gt;Kari Bartolome&lt;/a&gt; y &lt;a href="https://github.com/AidinRodriguez"&gt;Aidin Rodriguez&lt;/a&gt; para enseñar a utilizar Google Colab con Python🐍 utilizando datos publicos, el problema resolver es: ¿Dónde está mi monopatín?&lt;/p&gt;
-&lt;center&gt;
-&lt;img src="https://media.giphy.com/media/kfuaMpvpElQP7ZQOCy/giphy.gif" /&gt;
-&lt;/center&gt;
-&lt;p&gt;🔎 Si queres conocer más sobre &lt;strong&gt;Google Colab&lt;/strong&gt; y &lt;strong&gt;Python&lt;/strong&gt; podes ver el siguiente post: &lt;a href="https://r0mymendez.github.io/romymendezblog/posts/2021-02-21-introduccin-a-visualizaciones-con-python/"&gt;“Introducción a visualizaciones con python”&lt;/a&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;&lt;strong&gt;API DE TRANSPORTE&lt;/strong&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;Para realizar esta actividad es necesario contar con las credenciales de la API de transporte del Gobierno de la Ciudad de Buenos Aires, las mismas se pueden obtener las credenciales se debe ingresar a este link: &lt;a href="https://www.buenosaires.gob.ar/form/formulario-de-registro-api-transporte" class="uri"&gt;https://www.buenosaires.gob.ar/form/formulario-de-registro-api-transporte&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;Una vez finalizada la carga del formulario, en unos minutos va recibir un correo con sus credenciales (controle si las mismas no llegan a su correo SPAM).&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;Para ver la documentación de la &lt;a href="https://www.buenosaires.gob.ar/desarrollourbano/transporte/apitransporte/api-doc"&gt;API&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;hr /&gt;
-&lt;h2 id="recursos"&gt;Recursos&lt;/h2&gt;
-&lt;p&gt;📺 &lt;strong&gt;Video del Workshop:&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;En este 🔗 &lt;a href="https://www.youtube.com/watch?time_continue=326&amp;amp;v=F9enHwvJkZQ&amp;amp;feature=emb_logo"&gt;link&lt;/a&gt; puedes encontrar el video con la resolución del taller.&lt;/p&gt;
-&lt;p&gt;📝 Aqui puedes encontrar las notebooks: 🔗&lt;a href="https://github.com/r0mymendez/Workshop-Mapas-Apis"&gt;link&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://i.ibb.co/df4Xqr9/mapa.png%22" /&gt;&lt;/p&gt;
-&lt;pre class="r distill-force-highlighting-css"&gt;&lt;code&gt;&lt;/code&gt;&lt;/pre&gt;</description>
-      <distill:md5>ba52180caf2e09b197c9a151182f1cac</distill:md5>
+      <description>Recursos del evento IWD2020 (International Womens Day) de Women Techmakers, en el cual utilizamos python para encontrar monopatines en la Ciudad Autonoma de Buenos Aires📍.</description>
       <category>DataViz</category>
       <category>Python</category>
       <category>Data</category>
@@ -273,72 +100,19 @@ on software, agile methodologies , data science and the professor life.
       <media:content url="https://img.freepik.com/vector-gratis/hombre-montando-patinete-electrico-otono-concepto-transporte-ecologico_254685-275.jpg?size=626&amp;ext=jpg" medium="image" type="text/plain"/>
     </item>
     <item>
-      <title>Dataviz: Datos de Miercoles</title>
+      <title>Fundamentos de Testing</title>
       <dc:creator>Romina Mendez</dc:creator>
       <dc:creator/>
-      <link>https://www.rominamendezblog.com/posts/2021-03-06-dataviz-datos-de-miercoles</link>
-      <description>
-
-
-&lt;h1 id="que-es-datos-de-miercoles"&gt;¿Que es datos de Miercoles?&lt;/h1&gt;
-&lt;p&gt;Datos de miércoles es el primo latinoamericano de #tidytuesday, un proyecto semanal de datos organizado por la comunidad de R, que busca que sus participantes desarrollen sus habilidades procesando datos para crear gráficos significativos usando ggplot2, tidyr, dplyr y otras herramientas del tidyverse. El proyecto original surgió en el marco de la comunidad de aprendizaje online R4DS y desde abril de 2019 la comunidad sudamericana de R impulsa una versión local en español. &lt;a href="#fn1" class="footnote-ref" id="fnref1"&gt;&lt;sup&gt;1&lt;/sup&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;hr /&gt;
-&lt;h1 id="dataviz"&gt;DATAVIZ 📊&lt;/h1&gt;
-&lt;p&gt;&lt;strong&gt;R&lt;/strong&gt; es uno de los lenguajes más populares para el desarrollo de visualizaciones y su paquete más popular en los ultimos años es &lt;strong&gt;GGPLOT&lt;/strong&gt;. Para poder aprender a desarrollar visualizaciones comence a practicar en base a los desafios que se publicaban semana a semana en &lt;strong&gt;&lt;code&gt;Datos de Miércoles&lt;/code&gt;&lt;/strong&gt;.&lt;/p&gt;
-&lt;p&gt;Si quieres dar tus primeros pasos para el desarrollo de visualizaciones en R, te dejo este &lt;a href="https://r0mymendez.github.io/romymendezblog/posts/2021-02-21-introduccin-a-visualizaciones-con-r/"&gt;post&lt;/a&gt; que realice con un curso gratis de 3 horas ⌛.&lt;/p&gt;
-&lt;p&gt;Algunas de las visualizaciones que realice para esta comunidad son las siguientes 🎉.&lt;/p&gt;
-&lt;h2 id="rankings-musicales---spotify"&gt;&lt;a href="https://github.com/r0mymendez/R/tree/master/DatosDeMiercoles/20190515"&gt;Rankings Musicales - SPOTIFY&lt;/a&gt;&lt;/h2&gt;
-&lt;p&gt;&lt;img src="https://github.com/r0mymendez/R/raw/master/DatosDeMiercoles/20190515/plot.jpg?raw=true" /&gt;&lt;/p&gt;
-&lt;hr /&gt;
-&lt;h2 id="capitulos-de-rladies"&gt;&lt;a href="https://github.com/r0mymendez/R/tree/master/DatosDeMiercoles/20190625"&gt;Capitulos de RLadies&lt;/a&gt;&lt;/h2&gt;
-&lt;p&gt;&lt;img src="https://github.com/r0mymendez/R/raw/master/DatosDeMiercoles/20190625/plot.jpg?raw=true" /&gt;&lt;/p&gt;
-&lt;hr /&gt;
-&lt;h2 id="pokemon"&gt;&lt;a href="https://github.com/r0mymendez/R/tree/master/DatosDeMiercoles/20190713"&gt;Pokemon&lt;/a&gt;&lt;/h2&gt;
-&lt;p&gt;&lt;img src="https://github.com/r0mymendez/R/raw/master/DatosDeMiercoles/20190713/plot0.jpg?raw=true" /&gt;&lt;/p&gt;
-&lt;hr /&gt;
-&lt;h2 id="datos-de-la-oms-sobre-tuberculosis"&gt;&lt;a href="https://github.com/r0mymendez/R/tree/master/DatosDeMiercoles/20190521"&gt;Datos de la OMS sobre tuberculosis&lt;/a&gt;&lt;/h2&gt;
-&lt;p&gt;&lt;img src="https://github.com/r0mymendez/R/raw/master/DatosDeMiercoles/20190521/plot.jpg?raw=true" /&gt;&lt;/p&gt;
-&lt;hr /&gt;
-&lt;h2 id="reseñas-de-vinos"&gt;&lt;a href="https://github.com/r0mymendez/R/blob/master/DatosDeMiercoles/20190612"&gt;Reseñas de Vinos&lt;/a&gt;&lt;/h2&gt;
-&lt;p&gt;Datos sobre reseñas de vinos publicadas en la revista WineEnthusiast 🍷🍷🍷&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://github.com/r0mymendez/R/raw/master/DatosDeMiercoles/20190612/plot1.jpg?raw=true" /&gt;&lt;/p&gt;
-&lt;p&gt;Los datos de los quesos fueron tomados de los siguientes sitios: * 🍷 &lt;a href="https://www.bonvivir.com/2013/01/17/quesos-vinos/"&gt;Club bonvivir&lt;/a&gt; * 🍷 &lt;a href="https://www.vix.com/es/imj/gourmet/2008/03/26/guia-de-vinos-y-quesos"&gt;Vix&lt;/a&gt; * 🍷 &lt;a href="https://vinepair.com/wine-blog/an-illustrated-guide-to-pairing-wine-and-cheese/"&gt;Vinepair&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://github.com/r0mymendez/R/raw/master/DatosDeMiercoles/20190612/plot2.jpg?raw=true" /&gt;&lt;/p&gt;
-&lt;hr /&gt;
-&lt;h2 id="gapminder"&gt;&lt;a href="https://github.com/r0mymendez/R/blob/master/DatosDeMiercoles/20190410/"&gt;Gapminder&lt;/a&gt;&lt;/h2&gt;
-&lt;p&gt;&lt;img src="https://github.com/r0mymendez/R/blob/master/DatosDeMiercoles/20190410/plot.jpg?raw=true" /&gt;&lt;/p&gt;
-&lt;hr /&gt;
-&lt;h2 id="comercio-hispanoamérica-mundo"&gt;&lt;a href="https://github.com/r0mymendez/R/tree/master/DatosDeMiercoles/20190502/"&gt;Comercio Hispanoamérica-Mundo&lt;/a&gt;&lt;/h2&gt;
-&lt;p&gt;Analisis de exportaciones Argentina del año 2017.&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://github.com/r0mymendez/R/raw/master/DatosDeMiercoles/20190502/exportaciones.png?raw=true" /&gt;&lt;/p&gt;
-&lt;hr /&gt;
-&lt;h2 id="datos-sobre-el-índice-de-libertad"&gt;&lt;a href="https://github.com/r0mymendez/R/tree/master/DatosDeMiercoles/20190819"&gt;Datos sobre el Índice de Libertad&lt;/a&gt;&lt;/h2&gt;
-&lt;p&gt;&lt;img src="https://github.com/r0mymendez/R/raw/master/DatosDeMiercoles/20190819/plot.jpg?raw=true" /&gt;&lt;/p&gt;
-&lt;hr /&gt;
-&lt;h2 id="imdb--ranking-de-películas"&gt;&lt;a href="https://github.com/r0mymendez/R/tree/master/DatosDeMiercoles/20200221"&gt;IMDB- Ranking de películas&lt;/a&gt;&lt;/h2&gt;
-&lt;p&gt;&lt;img src="https://github.com/r0mymendez/R/raw/master/DatosDeMiercoles/20200221/plot.png?raw=true" /&gt;&lt;/p&gt;
-&lt;hr /&gt;
-&lt;h2 id="días-de-gráficos"&gt;&lt;a href="https://github.com/r0mymendez/R/tree/master/DatosDeMiercoles/20200608"&gt;30 días de gráficos&lt;/a&gt;&lt;/h2&gt;
-&lt;p&gt;Para esta entrega realice un gif con las cantidad de TvShow por año que se encuentran en las plataformas Disney, Hulu, Prime Video y Netflix Data Source: &lt;a href="https://www.kaggle.com/ruchi798/tv-shows-on-netflix-prime-video-hulu-and-disney" class="uri"&gt;https://www.kaggle.com/ruchi798/tv-shows-on-netflix-prime-video-hulu-and-disney&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://github.com/r0mymendez/R/raw/master/DatosDeMiercoles/20200608/animation.gif" alt="Girl in a jacket" height="80%"&gt;&lt;/p&gt;
-&lt;hr /&gt;
-&lt;div class="footnotes"&gt;
-&lt;hr /&gt;
-&lt;ol&gt;
-&lt;li id="fn1"&gt;&lt;p&gt;&lt;a href="https://github.com/cienciadedatos/datos-de-miercoles"&gt;GitHub Datos de miercoles&lt;/a&gt;&lt;/p&gt;
-&lt;pre class="r distill-force-highlighting-css"&gt;&lt;code&gt;&lt;/code&gt;&lt;/pre&gt;
-&lt;a href="#fnref1" class="footnote-back"&gt;↩︎&lt;/a&gt;&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/div&gt;</description>
-      <distill:md5>49d7d3b01e95f7564a80c7198fd16462</distill:md5>
-      <category>DataViz</category>
-      <category>R</category>
-      <category>Data</category>
+      <link>https://www.rominamendezblog.com/posts/2021-03-06-fundamentos-de-testing</link>
+      <description>El testing es uno de los procesos de la ingeniería de software que permite identificar defectos en el software
+En este post podes encontrar los fundamentos para poder realizalo de manera practica en cualquier proyecto de desarrollo.</description>
+      <category>Python</category>
+      <category>Tesing</category>
       <category>Programacion</category>
       <category>Workshop</category>
-      <guid>https://www.rominamendezblog.com/posts/2021-03-06-dataviz-datos-de-miercoles</guid>
+      <guid>https://www.rominamendezblog.com/posts/2021-03-06-fundamentos-de-testing</guid>
       <pubDate>Sun, 21 Feb 2021 00:00:00 +0000</pubDate>
-      <media:content url="https://www.binaryfountain.com/wp-content/uploads/2019/12/iStock-1069206352.jpg" medium="image" type="image/jpeg"/>
+      <media:content url="https://image.freepik.com/free-vector/tiny-people-testing-quality-assurance-software-isolated-flat-vector-illustration-cartoon-character-fixing-bugs-hardware-device-application-test-it-service-concept_74855-10172.jpg" medium="image" type="image/jpeg"/>
     </item>
   </channel>
 </rss>

@@ -1,11 +1,12 @@
 name: "."
-title: "Romy Mendez's Blog"
+title: "Romy Mendez"
 description: |
   Romina Mendez's personal blog/ site. Some  posts
   on software, agile methodologies , data science and the professor life.
 output_dir: "docs"
-theme: postcards.css
 base_url: https://www.rominamendezblog.com
+google_analytics: "G-5SJDD4RKCW"
+
 rss:
   full_content: true
 collections:
@@ -16,6 +17,10 @@ collections:
       hidden: true
       share: [twitter, linkedin]
 navbar:
+  logo:
+    image: image/tree.png
+    href: index.html
+  search: true
   right:
     - text: "Home"
       href: index.html
@@ -31,5 +36,10 @@ navbar:
       href: https://www.linkedin.com/in/mendezromina/
     - icon: fa fa-rss
       href: blog.xml
-  search: true
-output: distill::distill_article
+output:
+  distill::distill_article:
+    css: theme.css
+    includes:
+      in_header: utterances.html
+favicon: image/favicon.ico
+creative_commons: CC BY

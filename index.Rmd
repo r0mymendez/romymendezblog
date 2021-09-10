@@ -16,46 +16,33 @@ output:
 ---
 
 <center>
-### Bienvenidos a mi Blog 📖
+### About me 
 </center>
 <br/>
-  Soy **r0mymendez 🥑** , Data Scientist 👩🔬 + Profesora en la [`Universidad de Belgrano`](http://www.ub.edu.ar/) + Coordinadora académica en [`EANT`](https://eant.tech/).
-  
-  En este blog 🗒 vas a encontrar posts sobre 🔭ciencia de datos, ⚒️ arquitectura e infraestructura cloud ☁️, tips 💡 para dar tus primeros pasos en la programación 💻, metodologias para tener las mejores practicas de desarrollo y algunas cuestiones basadas en mi experiencia en la docencia 📚.
-
-<br/>
-<center>
- 🤷Soy Amateur en todo lo demas!
-</center>
-<br/>
+  Soy **r0mymendez** , Data Scientist & Data Engineer 👩🔬 **+** Profesora en la [`Universidad de Belgrano`](http://www.ub.edu.ar/) y en [`EANT`](https://eant.tech/).
 
 ---
 
 <br/>
+<center>
 **Languages / Tools con los que trabajo** 🙃
-
+</center>
 <br/>
 [<img src="https://www.r-project.org/logo/Rlogo.svg" alt="R" width="40" height="40">
 ](https://www.r-project.org/)
-[<img src="https://tidyverse.tidyverse.org/logo.png" alt="tidyverse" width="40" height="40">
-](https://www.tidyverse.org/)
-[<img src="https://github.com/rstudio/hex-stickers/raw/master/SVG/tidymodels.svg" alt="tidymodels" width="40" height="40">
-](https://www.tidymodels.org/)
-[<img src="https://image.flaticon.com/icons/png/512/226/226777.png" alt="Java" width="40" height="40">
-](https://www.java.com/es/)
 [<img src="https://cursosdedesarrollo.com/wp-content/uploads/2019/08/Moby-logo.png" alt="docker" width="40" height="40">
 ](https://www.docker.com/)
 [<img src="https://dist.neo4j.com/wp-content/uploads/neo4j_logo_globe1.png" alt="neo4j" width="40" height="40">
 ](https://neo4j.com/)
 [<img src="https://cdn.iconscout.com/icon/free/png-512/hadoop-226007.png" alt="hadoop" width="40" height="40">
 ](https://hadoop.apache.org/)
-[<img src="https://www.devexhub.com/wp-content/uploads/2019/12/javascript-icon-png-23.png" alt="javascript" width="40" height="40">
+[<img src="https://i.ibb.co/ZHPxSf1/80-803501-javascript-logo-logo-de-java-script-png.png" alt="javascript" width="40" height="40">
 ](https://developer.mozilla.org/es/docs/Web/JavaScript)
 [<img src="https://i1.wp.com/www.inferencelab.com/wp-content/uploads/Python-logo-notext.svg_.png" alt="python" width="40" height="40">
 ](https://www.python.org/)
 [<img src="https://upload.wikimedia.org/wikipedia/commons/0/05/Scikit_learn_logo_small.svg" alt="scikit_learn" width="40" height="40">
 ](https://scikit-learn.org/stable/#)
-[<img src="https://pbs.twimg.com/profile_images/1257774158357901312/NKtA9vyy.jpg" alt="dash plotly" width="40" height="40">
+[<img src="https://avatars.githubusercontent.com/u/5997976?s=200&v=4" alt="dash plotly" width="40" height="40">
 ](https://plotly.com/dash/)
 [<img src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg" alt="git" width="40" height="40">
 ](https://git-scm.com/)
@@ -63,8 +50,6 @@ output:
 ](https://aws.amazon.com/es/)
 [<img src="https://cdn.iconscout.com/icon/free/png-512/google-cloud-platform-2-569356.png" alt="google cloud" width="40" height="40">
 ](https://cloud.google.com/?hl=es)
-[<img src="https://content.geneticliteracyproject.org/wp-content/uploads/2017/11/m5xbsgp3zxjvkztcxo4o.png" alt="ibm watson" width="40" height="40">
-](https://www.ibm.com/ar-es/watson)
 [<img src="https://www.vhv.rs/dpng/d/518-5188627_apache-airflow-documentation-airflow-documentation-apache-airflow-logo.png" alt="airflow" width="40" height="40">
 ](https://airflow.apache.org/docs/)
 [<img src="https://media.glassdoor.com/sqll/433703/mongodb-squarelogo-1564695792753.png" alt="mongodb" width="40" height="40">
@@ -75,7 +60,5 @@ output:
 ](https://www.postgresql.org/)
 [<img src="https://image.flaticon.com/icons/png/512/888/888879.png" alt="Ubuntu" width="40" height="40">
 ](https://ubuntu.com/)
-[<img src="https://es.cloudera.com/content/dam/www/marketing/images/icons/h02/h02-icon-any-cloud.png" alt="Cloudera" width="40" height="40">
-](https://www.cloudera.com/)  
 
 

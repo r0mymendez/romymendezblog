@@ -1,0 +1,600 @@
+---
+title: "Fundamentos de Testing"
+description: |
+  El testing es uno de los procesos de la ingeniería de software que permite identificar defectos en el software
+  En este post podes encontrar los fundamentos para poder realizalo de manera practica en cualquier proyecto de desarrollo.
+categories:
+  - Python
+  - Tesing
+  - Programacion
+  - Workshop
+preview: "https://image.freepik.com/free-vector/tiny-people-testing-quality-assurance-software-isolated-flat-vector-illustration-cartoon-character-fixing-bugs-hardware-device-application-test-it-service-concept_74855-10172.jpg"
+author:
+  - name: Romina Mendez
+  - url: https://example.com/norajones
+date: 02-21-2021
+output:
+  distill::distill_article:
+    self_contained: yes
+    toc: yes
+editor_options: 
+  markdown: 
+    wrap: sentence
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+library("reticulate")
+knitr::opts_chunk$set(python.reticulate=FALSE)
+```
+
+# Que es Testing?
+
+El proceso de testing es la realización de pruebas tecnicas con el objetivo de poder conocer cual es la calidad de los artefactos o piezas de software.
+Estos procesos son una disciplina de la ingenieria de software y nos permiten realizar la validación y verificación de un software.
+
+La validación y la verificación muchas veces se lo asocia a terminos similares, pero existen diferencias entre los mismos:
+
+-   🔍Validaciòn: ¿estamos construyendo el producto correcto?
+    Esta pregunta la realizamos para conocer si el producto satisface los requerimientos del usuario.
+
+-   🔍Verificación: ¿estamos construyendo el producto correctamente?
+    Esta pregunta la realizarmos para conocer si estamos cumpliendo con los requisitos funcionales y no funcionales que se especificaron.
+
+Es importante destacar que a pesar de ejecutar un plan de testing no es posible demostrar que el software esta libre de defectos.
+Pero realizando el mismo si podemos asegurar que se van a eliminar gran parte de ellos y mitigar los riesgos que pueden producir los mismos en producción.
+
+# Por qué el testing es importante...
+
+Un software es un recurso que permite a la industias poder gestionar, controlar y automatizar sus procesos.
+La industria 4.0 nos impulsa a cambios, en el cual las organizaciones utilizan sistemas para la produccion y la gestión de sus recursos.
+En los ultimos años los sistemas utilizados se basan en la aplicación de tecnologías y servicios tales como: machine learning, big data, Cloud Computing y IOT.
+
+![](https://www.mixtrategy.com/wp-content/uploads/2020/04/industrial_revolution_1.jpg)[^1]
+
+[^1]: [GitHub Datos de miercoles](https://github.com/cienciadedatos/datos-de-miercoles)
+
+Actualmente los sistemas estan en cada una de las industrias, como se pueden ver en la siguiente imagen:
+
+<center>
+
+![](https://i.ibb.co/vvks7gQ/sistemas.png)
+
+</center>
+
+Actualmente la mayoria de las industrias utilizan sistemas para su producción, debido a esto la calidad del software en la automatización industrial es un factor clave y el mismo debe ser abordado para evitar tener daños o perdidas economicas para las empresas.
+
+# Que es la calidad de software?
+
+Según la definición que se encuentra en el Glosario estándar de terminología de ingeniería de software de IEEE:
+
+"La calidad del softare es el grado en que un sistema, componente o proceso cumple con los requisitos especificados."
+
+# Error -Defectos - Fallos
+
+Muchas veces cuando hablamos de calidad de software y testing lo relacionamos con terminos tales como error, defectos y fallos.
+Aunque dichos terminos nos parecen similares es necesario conocer que cada uno de ellos tiene un significado diferente.
+Por lo cual podriamos definirlo como:
+
+Un **`Error`** de un desarrollador 👤, causa un **`Defecto`** en el software 💻, lo cual provoca un **`Fallo`** en el momento en el que la prueba se ejecuta🔀.
+
+<center>
+
+![](https://i.ibb.co/YNVgtqt/error.png)
+
+</center>
+
+# Pruebas
+
+Otro termino que tenemos que definir son las pruebas, y este termino lo podemos definir de la siguiente manera:
+
+-   Las pruebas de software son una estrategia de gestión del riesgo, en las mismas se evalúan si se cumplieron los requisitos.
+
+-   Las pruebas tambien las podemos definir como un el proceso por el cual se verifica si un componente de software con el fin de detectar la diferencia entre las condiciones existentes y las requeridas.
+
+------------------------------------------------------------------------
+
+# 7 principios del proceso de testing
+
+International Software Testing Qualifications Board (ISTQB) es el comité Internacional de Certificaciones de Pruebas de Software.
+Este comite desarrollo los 7 principios básicos de la ingeniería de software, los cuales son:
+
+-   🔍Las pruebas muestran la presencia de los defectos.
+-   ❌️No es posible realizar pruebas exhaustiva.
+-   📅Pruebas tempranas.
+-   🎛️Agrupamiento de los defectos.
+-   🐛Paradoja de los pesticidas.
+-   🏠Las pruebas dependen del contexto.
+-   ❌️La Falacia de la Ausencia de errores.
+
+## 1️⃣ Las pruebas muestran la presencia de los defectos.
+
+La unica manera de poder demostrar que **NO** hay defectos en un software es realizando testing.
+Muchas veces durante el testing descubrimos defectos que nunca pensamos que podrian existir o ya estaban supuestamente resueltos.
+
+## 2️⃣️ No es posible realizar pruebas exhaustiva
+
+Es imposible realizar todas las combinaciónes posibles para hacer pruebas, debido a esto es importante asumir un nivel de riesgo para poder priorizar las pruebas.
+Este punto es importante evaluarlo cuando se realizar la estrategia del plan de pruebas.
+
+## 3️⃣ Pruebas temprana
+
+Es importante poder detectar las incidencias en las fases más tempranas de desarrollo.
+"Un defecto es más costoso de arreglar, cuanto más tarde es hallado."
+
+<center>
+
+![](https://i.ibb.co/jTztRVk/temprano.png)
+
+**Image**: Best Strategies for Managing Bugs and Feature Requests [^2]
+
+[^2]: Best Strategies for Managing Bugs and Feature Requests: <https://brainhub.eu/blog/strategies-for-managing-bugs/>
+
+</center>
+
+## 4️⃣ Agrupamiento de los defectos.
+
+Este principio significa que muchas veces los defectos pueden concentrarse en un determinado modulo del producto.
+
+Esto nos permite concentrar las pruebas en estos modulos que son claves para el release, por lo cual es importante conocer cual son estos modulos en el momento que se diseña el plan de pruebas.
+
+## 5️⃣ Paradoja de los pesticidas.
+
+Si siempre realizamos los mismos test no vamos a encontrar nuevos defectos, por este motivo es importante realizar una actualización de las pruebas a efectuar.
+
+Este principio refiere a la importancia de mantener actualizado el plan de pruebas ya que el software siempre esta en constante evolución.
+
+<center>
+
+![](https://image.freepik.com/free-vector/sanitary-domestic-disinfection-chemical-treatment-insects-home-pest-insects-control-vermin-exterminator-service-insect-thrips-equipment-concept-bright-vibrant-violet-isolated-illustration_335657-460.jpg){width="450"}
+
+Image: QA Automation and the Pesticide Paradox
+
+</center>
+
+## 6️⃣ Las pruebas dependen del contexto.
+
+Si bien pueden haber software similares, la estrategia de testing se debe adaptar al contexto en el cual ese software se va utilizar.
+
+## 7️⃣ La Falacia de la Ausencia de errores.
+
+Si un conjunto de pruebas tiene ausencia de error no significa que el software no los tenga, sino lo que significa es que esas pruebas en un determinado contexto no los detectaron.
+
+# Testing vs. Debugging
+
+<center>
+
+![](https://i.ibb.co/MS22yBB/testingvsdeb.png)
+
+</center>
+
+# Pruebas Funcionales
+
+Las `pruebas funcionales` tienen como objetivo comprobar que los sistemas desarrollados funcionen en base a las especificaciones funcionales y requisitos definidos.
+
+A continuación se detallan diferentes tipos de pruebas que se pueden realizar.
+
+## **Pruebas unitarias:**
+
+La primeras pruebas realizadas son denominadas **`“pruebas unitarias”`** en las cuales se realiza la verificación de la funcionalidad de los componentes de software de manera aislada.
+
+## **Pruebas integración:**
+
+Son las pruebas que deben hacer por medio del testeo de todos los componentes en conjunto, por lo cual a partir de las mimas se pueden conocer cómo se integran los componentes en un sistema.
+
+Existen diferentes enfoques para las pruebas de integración, tales como:
+
+-   **`Top - Down:`** Las pruebas se realiza partiendo del componente principal en jerarquia, y posteriormente se van incorporando hacia abajo por la jerarquía de control.
+
+-   **`Bottom down:`** Las pruebas se realiza partiendo primero de los componentes de más bajo nive ly se crean componentes para simular a los componentes que los invocan.
+
+-   **`Integración Funcional:`** Las pruebas parten de los componentes necesarios para poder ver el funcionamiento de una función elegida del sistema.
+
+-   **`Big bang:`** Todos los componentes o sistemas están integrados simultáneamente, teniendo como la principal desventaja: es difícil rastrear la causa de las fallas.
+
+-   **`Incremental:`** Las pruebas incrementales se realizan teniendo en cuenta que los componentes se prueban uno o algunos a la vez, y se van agregando el restante de los componentes hasta que esten todos integrados y probados.
+
+## **Pruebas de sistemas:**
+
+Estas pruebas se realiza en función de los riesgos y especificaciones de los requisitos, procesos de negocio, casos de uso, historias de usuarios u otras descripciones realizadas.
+Las mismas tienen como objetivo probar el sistema en su conjunto y verificar si se cumplen todas las especificaciones funcionales y tecnicos.
+
+## **Pruebas de aceptación:**
+
+Este es el último nivel, en el cual el cliente valida si el desarrollo realizado cumple con lo solicitado y satisface las necesidades documentadas.
+Pero existen algunas variantes sobre este tipo de pruebas, tales como:
+
+-   **✅Aceptación de usuarios:** Las realizan los usuarios y gestores del aplicativo.
+    Su objetivo es probar su funcionalidad.
+
+-   **✅Aceptación operacional:** En estas pruebas se comprueba por ejemplo: la facilidad de instalación, la seguridad, la recuperación de fallos, las tareas de mantenimiento y se realiza una comprobación de las vulnerabilidades de seguridad.
+
+-   **✅Aceptación contractual:** Se controla los criterios que se definieron en el contrato, el cumplimiento con estándares legales y de seguridad.
+
+-   **✅Alpha & beta:** Muchas veces las pruebas de aceptación del usuario no son posible ya que un software puede ser desarrollado para su posterior venta.
+    En este caso existen dos tipos de pruebas:
+
+    -   **✔️Alpha:** En este tipo de pruebas se realiza con usuarios potenciales y desarrolladores para que prueben el software.
+    -   **✔️Beta:** El software una vez construido se envia a un conjunto de usuarios a fin de que lo prueben bajo condiciones reales, y en el caso detectar incidencias puedan enviarlas para poder ser corregidas. .Estos usuarios no tienen ningún contacto con los desarrolladores, a diferencia de las "alpha" que son desarrollados con el equipo de desarrollo.
+
+------------------------------------------------------------------------
+
+# Pruebas No Funcionales
+
+## 🏃Performance
+
+Son las pruebas que permiten ver el rendimiento, carga y estrés.
+Aquí se evalúa como se comporta un sistema bajo una carga creciente y se documenta los tiempo de respuestas.
+Esta prueba intenta encontrar la falla ante una carga que excede lo permitido por el sistema procesar.
+
+## 🛡️Seguridad
+
+Las pruebas de seguridad evalúan la CIA TRIAD (confidencialidad, integridad y disponibilidad) del software.
+Se realizan diferentes pruebas para evitar cualquier acceso no autorizado al código del software.
+
+<center>
+
+![](https://security6132.files.wordpress.com/2018/05/ciatriad-copy1.png){width="256"}
+
+</center>
+
+## 👥 Usabilidad
+
+La parte de prueba de usabilidad de una metodología de prueba analiza el aspecto de usabilidad del software para el usuario final .
+La facilidad con la que un usuario puede acceder al producto constituye el principal punto de prueba.
+
+La usabilidad de se define como la facilidad de las personas a interactuar con un software con el fin de alcanzar un objetivo con el mínimo esfuerzo requerido.
+
+## 💻 Compatibilidad
+
+La prueba de compatibilidad es una metodología que permite la prueba del software en diferentes sistemas operativos, plataformas de hardware, navegadores web, dispositivos móviles y otros software.
+Las pruebas deben validar el correcto funcionamiento como se espera en todas las diferentes combinaciones de hardware y software especificadas.
+
+------------------------------------------------------------------------
+
+# Plan de pruebas
+
+Un **`plan de prueba`** es un documento detallado que describe la estrategia de prueba, los objetivos, los recursos necesarios, el cronograma y los criterios de éxito una pieza de software específica.
+El objetivo principal, por supuesto, **`es descubrir defectos`** que pueda hacer que el software no actúe como se esperaba o que brinde una mala experiencia a sus usuarios.
+
+<center>
+
+![](https://image.freepik.com/vector-gratis/gestion-tiempo-metodo-calendario-planificacion-citas-organizador-negocios-gente-dibujando-marca-personajes-dibujos-animados-horario-trabajo-trabajo-equipo-colegas_335657-2096.jpg){width="549"}
+
+</center>
+
+## ¿Cuales son los beneficios de realizar un plan de pruebas?
+
+-   📍 Entender cómo se **realizará** el proceso de pruebas y cómo se **controlan** o **mitigan** los riesgos.
+
+-   ⌛Permite que el resto del equipo del proyecto pueda **conocer** cuáles son el **alcance** de las pruebas y el **tiempo** que se desarrollaran las mismas.
+
+-   👥 Definir cuales son las **funciones y responsabilidades** de cada miembro del equipo, también proporciona cuales son los requisitos que son esenciales para llevar a cabo el proceso de prueba.
+
+-   📆 El plan de prueba permite proporcionar un **cronograma para las actividades** de prueba, definiendo una estimación aproximada del tiempo.
+
+-   📣La planificación permite una **mejor comunicación con otros miembros** del equipo del proyecto y otras partes interesadas
+
+-   ✔️Asegurar la calidad del entregable a realizar al cliente.
+
+## Que + Como + Cuales
+
+El plan de pruebas debe poder respondernos tres preguntas:
+
+-   ⚒️¿Que vamos a testear?
+
+    Esta pregunta refiere a definir cual es el objetivo, alcance y el cronograma de las pruebas a realizar.
+
+-   🔍¿Como vamos a realizarlo?
+
+    Esta pregunta refiere a explicar cual es la estrategia del plan de pruebas.
+    Algunas preguntas que nos pueden ayudar de guia pueden ser las siguientes:
+
+    -   ¿ Como es el proceso que se va realizar para hacer pruebas ?
+
+    -   ¿ Cuales son las metricas que se van a recopilar y analizar ?
+
+    -   ¿ Cuales son las configuraciones a realizar ?
+
+    -   ¿ Hay requisitos especiales o procedimientos a tener en cuenta ?
+
+    -   ¿ Cuales son los criterios de salida, suspension y reanudación?
+
+-   💡¿Cuales son los resultados deseados?
+
+    Esta pregunta refiere a conocer cual o cuales son los entregables que se deben generar.
+
+## Datos para registrar en un plan de pruebas
+
+A continuación se detalla cuales son los conceptos basicos que deberiamos tener para realizar un plan de pruebas y un template que puede ser utilizado para desarrollar un plan de prueba.
+
+| Concepto | Descripción                                                                                                  |
+|----------|--------------------------------------------------------------------------------------------------------------|
+| 1\.      | **iD Plan de prueba:** Identifica de forma única el plan de prueba y puede incluir el número de versión.     |
+| 2\.      | **Introducción:** Establece objetivos, alcance, metas, recursos y restricciones presupuestarias.             |
+| 3\.      | **Elementos de prueba:** Enumera los sistemas y subsistemas que se van a probar.                             |
+| 4\.      | **Alcance:** Todas las características y funcionalidades que se probarán se enumeran aquí.                   |
+| 5\.      | **Fuera del alcance:** Enumera cuales son las características que no deben testear.                          |
+| 6\.      | **Criterio de aceptación:** Ver cual es el criterio de éxito.                                                |
+| 7\.      | **Calendario:** Se enumeran los detalles sobre cuándo se realizarán las actividades de pruebas.              |
+| 8\.      | **Criterio de suspensión:** Cuales son los criterios por los que se puede suspender las pruebas.             |
+| 9\.      | **Entregables:** Incluye casos de prueba, datos de muestra, informe de prueba, registro de problemas.        |
+| 10\.     | **Tarea de pruebas:** Describe las dependencias entre las tareas y los recursos necesario.                   |
+| 11\.     | **Ambientes:** Enumera los requisitos de prueba de software, hardware u otros.                               |
+| 12\.     | **Responsabilidades:** Enumera las funciones y responsabilidades asignadas al equipo de pruebas.             |
+| 13\.     | **Recursos:** Describe las necesidades, dedicación en tiempo y conocimientos necesarios del grupo de testing |
+| 14\.     | **Riesgos:** Se enumeran los riesgos generales del proyecto en lo que respecta a las pruebas.                |
+
+## **Casos de prueba**
+
+Los `casos de pruebas` o `test case` es un conjunto de condiciones previas (requisitos previos), procedimientos (entradas/acciones) y condiciones posteriores (resultados esperados) que un evaluador utiliza para determinar si un sistema bajo prueba satisface los requisitos o funciona correctamente.[^3]
+
+[^3]: Software testing fundamentals: <https://softwaretestingfundamentals.com/test-case/>
+
+Estos casos deben estar documentados y algunos conceptos que se deberian dejar documentado son los siguientes:
+
+| Concepto | Descripción                                                                                                                                                                |
+|----------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| 1\.      | **iD Caso de prueba:** Número de identificación de caso de prueba único.                                                                                                   |
+| 2\.      | **Requisito Previo:** Condiciones que deben cumplirse antes que pueda ejecutarse el caso de prueba.                                                                        |
+| 3\.      | **Pasos de prueba:** Pasos detallados para la ejecución del caso de prueba, la misma debe contener: acción, resultado esperado y datos de entrada.                         |
+| 4\.      | **Resultados esperados:** Cual es el ouput que debería generarse cuando se ejecuta los pasos de pruebas anteriores.                                                        |
+| 5\.      | **Resultados reales:** Cual es el output que finalmente se generó después de ejecutar los pasos de pruebas anteriores.                                                     |
+| 6\.      | **Resultados Final:** Definir si pasa o no pasa.                                                                                                                           |
+| 7\.      | **Comentarios:** Agregar información útil tal como capturas de pantallas y descripciones.                                                                                  |
+| 8\.      | **Prioridad:** Definir una escala de la prioridad que se le asigna a esta prueba (alto, media, baja o no establecida.                                                      |
+| 9\.      | **Vencimiento:** Fecha límite en la que debe realizarse esta prueba.                                                                                                       |
+| 10\.     | **Modulo:** Cual es el modulo o componente sobre el que se va realizar la prueba.                                                                                          |
+| 11\.     | **Tipo:** Tipo de prueba que se va realizar la misma puede ser por ejemplo: usabilidad, seguridad, funcionalidad, integración, aceptación, performance, exploratorio, etc. |
+| 12\.     | **Responsable:** Persona que realiza la prueba.                                                                                                                            |
+
+------------------------------------------------------------------------
+
+# RBT - Pruebas basadas en Riesgos
+
+RBT o Pruebas basadas en riesgos (Risk-based testing) son evaluaciones que se realizan para planificar todas las pruebas y tienen las siguientes caracteristcas:
+
+1.  Identificar los riesgos.
+2.  Determinar cuál es la probabilidad.
+3.  Priorizar los módulos de software.
+4.  Planificar, diseñar y ejecutar actividades de prueba de acuerdo con la priorización de los módulos.
+5.  Supervisar y revisar los riesgos
+
+Este tipo de enfoque establece que el esfuerzo y la priorizacion de las pruebas se va a basar proporcionalmente al nivel de riesgo.
+
+Los riesgos más importantes se prueban lo más pronto posible teniendo en cuenta de que se pueda realizar y tener todos los componentes entregados para sus pruebas.
+
+Una de las maneras de poder clasificar los riesgos es utilizando la siguiente matriz.
+
+<center>
+
+![](https://i.ibb.co/s63xLHs/rgt.png){width="430"}
+
+</center>
+
+# Tecnicas de testing
+
+<center>
+
+El siguiente grafico define la clasificación de las pruebas de testing y realiza una clasificación en dos grupos denominado **`estatico` y `dinamico`.**
+
+![](https://i.ibb.co/0Y0ydHY/tecnicas.png)
+
+</center>
+
+## Testing Estatico
+
+El testing estatico son aquellas técnicas que se utilizan para detectar defectos sin ejecutar código.
+
+Dentro de esta técnica tenemos el examen de artefactos de software para buscar errores tales como características faltantes, requisitos ambiguos o fallas de diseño.
+
+Realizar estas tecnicas trae como beneficio el ahorro de tiempo en fases posteriores del desarrollo, debido a que permite esto permite disminuir los costos .
+
+## Testing Dinamico
+
+El análisis dinámico requiere la ejecución del código y permite observar el funcionamiento del software y comparar los resultados.
+
+## Testing Funcional
+
+El testing funcional tambien denominado **`"caja negra"`** esta dentro del analisis dinamico, y como anteriormente las definicmos son las pruebas que permiten comprobar si los componentes desarrollados cumplen con las funcionalidades documentadas en requisito funcionales.
+
+<center>
+
+![](https://i.ibb.co/kQkgT3q/testingfuncional.png)
+
+</center>
+
+## Testing No Funcional
+
+Son las pruebas no funcionales que permiten medir las características de los sistemas, tales como tiempos de respuesta para las pruebas de rendimiento.
+Estas pruebas nos permiten conocer si existe algún riesgo o acción no esperada en un entorno productivo.
+
+## Testing estructural
+
+El testing estructural tambien denominado **`"caja blanca"`** es la prueba que valida el funcionamiento interno y la estructura de una pieza de software.
+Este tipo de testing se basa en el diseño interno y la implementación del software.
+
+<center>
+
+![](https://i.ibb.co/7JsVhnH/structural.png)
+
+</center>
+
+## Basado en la experiencia
+
+El testing basado en la experiencia son pruebas que derivan de las habilidades y conocimiento que posee el tester, este tipo de pruebas permite que bajo la experiencia de la persona se pueda predecir cuales son los errores que pueden encontrarse.
+
+El proceso para realizar este tipo de pruebas es poder realizar una lista con los posibles defectos y a partir de los esta lista poder diseñar las pruebas.
+
+Estas pruebas pueden ser:
+
+\* **Pruebas intuitivas:** están pruebas estan basadas en solo en la experiencia previa.
+
+\* **Pruebas exploratorias:** estas pruebas permiten explorar posibles errores basado en el conocimiento previo que tienen con sistemas o funcionalidades similares.
+
+## Basado en defectos
+
+Esta técnica de prueba es basada en defectos, y los casos de prueba se diseñan a partir de una categoría de defecto específica conocida como taxonomía de defectos.
+
+Las taxonomías de defectos son listas categorizadas de defectos, las mismas contienen datos sobre tipos de defectos, causas raíz y otros datos relacionados con defectos.
+
+Algunos ejemplos pueden ser:
+
+\* 🔍Largo de los input no esta validado
+
+\* 🔍Caracteres especiales no fueron validados
+
+\* 🔍Fechas inválidas no fueron alertadas
+
+\* 🔍URLs invalidas.
+
+## Pruebas de regresión
+
+Las pruebas de regresión o regression testing se utilizan para validar si la aplicación existente todavía funciona como se esperaba después de haber sido actualizada o modificada.
+
+Estas pruebas son fundamentales cuando se realiza una implementación de nuevas piezas de software y debido a esto es necesario conocer si algo que anteriormente funcionaba, continua funcionando si fallas despues de haber implmentado un nuevo release de la aplicación.
+
+Este tipo de pruebas se pueden realizar de forma manual siguiendo el caso de prueba, aunque debido a que estas pruebas suelen ser repetitivas puede realizarse la atuomatizacion de las mismas .
+
+# Testing Automation
+
+> La **automatización de pruebas** consiste en el uso de software para ejecutar pruebas.
+> Por lo cual La automatización de pruebas permite incluir pruebas repetitivas.
+
+Los beneficios de automatizar pruebas son:
+
+1.  ⬇️ Se reduce el trabajo repetitivo
+2.  ↘️Ahorro de costos.
+3.  🔄Cada caso de prueba se puede automatizar y posteriormente reutilizar.
+4.  ⬆️Con L¡la automatización de pruebas se pueden ejecutar más casos de prueba.
+5.  ⏭️Respuesta rápida a los desarrolladores sobre defectos.
+6.  🔀Automatizar un formato de Informe de defectos.
+7.  ⤴️Encontrar defectos omitidos por pruebas manuales.
+
+Estas pruebas se suelen desarrollar en distintos lenguajes de programación como java, c\# , PHP o python y se utiliza un framework denominado **`Selenium`**.
+
+## ¿Qué es Selenium?
+
+**Selenium** es un framework de automatización web de codigo abierto que te permite ejecutar test en navegadores web.
+A continuación se va a desarrollar un ejemplo con **Python.**
+
+Algunas ventajas que tenemos al utilzar Selenium:
+
+-   Los script se pueden generar en varios lenguajes de programación como Java, C\#, PHP y **Python**
+
+<!-- -->
+
+-   Estas pruebas se pueden ejecutar en diferentes navegadores como firefox, chorme, safari y opera.
+
+<!-- -->
+
+-   Permite ejecutar una prueba en diferentes sistemas operativos como: Windows, Mac o Linux.
+
+<!-- -->
+
+-   Selenium se puede utilizar para:
+
+    -   Aceptación / pruebas funcionales
+
+    -   Reproducir errores
+
+    -   Pruebas de regresión
+
+<center>
+
+<img src="https://d33wubrfki0l68.cloudfront.net/c8827c80d7162a7eeb8a071d9a0c884e3a105a36/a2b46/blog/selenium-python/header_selenium_python.png" width="50%" height="80%"/>
+
+</center>
+
+## Pasos para ejecutar **Selenium** en python 🐍
+
+1.  Vamos a instalar el paquete de **Selenium**
+
+    ``` {.python}
+    !pip install selenium
+    ```
+
+<!-- -->
+
+2.  Para ejecutar **Selenium** necesitamos instalar el ejecutable denominado **`chromedriver`**, este ejecutable va a variar en base al sistema operativo y la version de chrome que tengamos instalado, en el siguiente link podra encontrar cual es la version para el sistema operativo en el cual va desarrollar el script de python.
+
+    -   Link: <https://chromedriver.chromium.org/downloads>
+
+3.  Para ejecutar la prueba es necesario correr el siguiente codigo que va abrir chome y va a navegar a la pagina **google,** posteriormente es necesario poder identificar los elementos de la pagina que se quieren analizar.
+
+``` {.python}
+from selenium import webdriver
+
+# Ubicación del ejecutable
+driver = webdriver.Chrome("/chromedriver")
+
+# Ejecutamos una pagina de inicio
+driver.get("https://google.com")
+```
+
+### Formas de identificar a un elemento en el DOM
+
+Selenium Webdriver API admite múltiples formas de identificar elemento
+
+| Identificación | Sintaxis                            |
+|----------------|-------------------------------------|
+| ID             | driver.find_element_by_id()         |
+| nombre         | driver.find_element_by_name()       |
+| ClassName      | driver.find_element_by_class_name() |
+| TagName        | driver.find_element_by_tag_name()   |
+| XPath          | driver.find_element_by_xpath()      |
+| CSS Selector   | driver.find_element_by_class_name() |
+
+Qué es XPath?
+
+**XPath** se define como XML path (Ruta XML).
+Esta estcutructar permite encontrar un elemento de la pagina web.
+
+La sintaxis estándar para crear XPath es:
+
+-   Xpath=//nombreEtiqueta[@atributo='valor']
+
+    -   **//:** Selecciona el nodo actual
+
+    -   **Nombre Etiqueta:** Nombre de la etiqueta del nodo en particular
+
+    -   **\@:** Seleccionar atributo.
+
+    -   **atributo:** nombre de atributo del nodo.
+
+    -   **valor:** valor del atributo.
+
+-   Tipos de path
+
+    -   **XPath absoluto**: Ejemplo de xpath absoluto `/html/body/div[4]/div/div[3]/article[1]/div[2]/a`
+
+    -   **XPath relativo**: Ejemplo de xpath absoluto `//*[@id="1442737"]/div[2]/a`
+
+Realicemos un ejemplo simulando una prueba de sobre un sitio web, para poder simularlo vamos vamos a ingresar al sitio \`<https://tuquejasuma.com/> que es un sitio popular de reclamos en Argentina.
+
+En este sitio vamos a ingresar en el buscador el termino `"banco nacion"` y hagamos click en el boton buscar para retorna todos los reclamos asociados a esta entidad bancaria.
+
+``` {.python}
+driver.get("https://tuquejasuma.com/")
+element = driver.find_element_by_id("searcher")
+element.send_keys("Banco Nacion")
+driver.find_element_by_xpath('//*[@id="breadcrum-search"]/form/button').click()
+```
+
+El script completo es el siguiente:
+
+``` {.python}
+from selenium import webdriver
+
+# Ubicación del ejecutable
+driver = webdriver.Chrome("/chromedriver")
+
+# Ejecutamos una pagina de inicio
+driver.get("https://google.com")
+
+# Ingresamos a la pagina tu queja suma
+driver.get("https://tuquejasuma.com/")
+element = driver.find_element_by_id("searcher")
+element.send_keys("Banco Nacion")
+driver.find_element_by_xpath('//*[@id="breadcrum-search"]/form/button').click()
+```
