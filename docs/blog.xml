@@ -13,7 +13,19 @@ on software, agile methodologies , data science and the professor life.
       <link>https://www.rominamendezblog.com</link>
     </image>
     <generator>Distill</generator>
-    <lastBuildDate>Sun, 21 Feb 2021 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 10 Sep 2021 00:00:00 +0000</lastBuildDate>
+    <item>
+      <title>RabbitMQ-Pika</title>
+      <dc:creator>Romina Mendez</dc:creator>
+      <link>https://www.rominamendezblog.com/posts/2021-09-10-rabbitmq-pika</link>
+      <description>RabbitMQ permite gestionar colas de mensajes entre emisores y destinatarios, en el siguiente post vamos a utilizar en python **Pika** para su implementación.</description>
+      <category>Python</category>
+      <category>Programacion</category>
+      <category>Tutorial</category>
+      <guid>https://www.rominamendezblog.com/posts/2021-09-10-rabbitmq-pika</guid>
+      <pubDate>Fri, 10 Sep 2021 00:00:00 +0000</pubDate>
+      <media:content url="https://image.freepik.com/free-vector/landing-page-send-message-illustration_126608-31.jpg" medium="image" type="image/jpeg"/>
+    </item>
     <item>
       <title>14 Apps Gratuitas para Proyectos</title>
       <dc:creator>Romina Mendez</dc:creator>

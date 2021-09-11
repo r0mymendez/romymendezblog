@@ -1,0 +1,172 @@
+---
+title: "RabbitMQ-Pika"
+description: |
+  RabbitMQ permite gestionar colas de mensajes entre emisores y destinatarios, en el siguiente post vamos a utilizar en python **Pika** para su implementación.
+categories:
+  - Python
+  - Programacion
+  - Tutorial
+preview: "https://image.freepik.com/free-vector/landing-page-send-message-illustration_126608-31.jpg"
+author:
+  - name: Romina Mendez
+    url: https://example.com/norajones
+date: 09-10-2021
+output:
+  distill::distill_article:
+    self_contained: yes
+    toc: yes
+editor_options: 
+  markdown: 
+    wrap: sentence
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+![](https://upload.wikimedia.org/wikipedia/commons/thumb/7/71/RabbitMQ_logo.svg/1200px-RabbitMQ_logo.svg.png)
+
+### Introducción: ¿Que es RabbitMQ?
+
+**RabbitMQ** es un intermediario que envia mensajes 📩 entre un productor y un consumidor por medio de la utilización de una cola.
+
+Los principales conceptos que se deben tener en cuenta son:
+
+1.  **Productor**: Es el que envía mensajes.
+2.  **Cola**: Es el buffer en donde se almacenan los mensajes.
+3.  **Consumidor**: El que recibe los mensajes.
+
+![](https://i.ibb.co/PxTdMbG/rabbit.png){style="margin: auto; display: block;" width="380"}
+
+### Implementación
+
+Para la implementación en \`Python 🐍 utilizaremos pika y vamos a desarrollar dos programas: **productor** y **consumidor**.
+
+Pika tiene un set de objetos para la comunicación con RabbitMQ.
+
+En nuestro ejemplo vamos a imaginar que un productor es un app que tiene como objetivo tomar pedidos de delivery 🛵de comida, la misma necesita enviar multiples mensajes📝 relacionados a los pedidos que realizar usuarios 📱.
+
+Por lo cual vamos a realizar los siguientes pasos:
+
+1.  Instalar pika
+
+``` {.python}
+!pip install pika
+```
+
+2.  Generar el script **send.py** 📄
+
+``` {.python}
+import pika
+from datetime import datetime
+
+connection = pika.BlockingConnection(
+    pika.ConnectionParameters(host='localhost'))
+channel = connection.channel()
+
+channel.queue_declare(queue='delivery')
+
+pedidos=['🍕🍕🍕','🍔🍔🍔','🍰🍰🍰','🍺🍺🍺']
+
+for i in pedidos:
+    channel.basic_publish(exchange='', routing_key='delivery', body=i)
+    print(" [x] Se envia pedido!'"+ i)
+
+connection.close()
+```
+
+3.  Generar el script **receive.py** 📄
+
+``` {.python}
+import pika, sys, os
+from datetime import datetime
+
+
+def main(queue='delivery'):
+    connection = pika.BlockingConnection(pika.ConnectionParameters(host='localhost'))
+    channel = connection.channel()
+    channel.queue_declare(queue=queue)
+
+    def callback(ch, method, properties, body):
+        print(" [x] Received %r" % body.decode())
+
+    channel.basic_consume(queue='delivery', on_message_callback=callback, auto_ack=True)
+
+    print(' [*] Waiting for messages. To exit press CTRL+C')
+    channel.start_consuming()
+
+if __name__ == '__main__':
+    try:
+        main(queue=queue)
+    except KeyboardInterrupt:
+        print('Interrupted')
+        try:
+            sys.exit(0)
+        except SystemExit:
+            os._exit(0)
+```
+
+``` {.python}
+Resultados:
+ [x] Received '🍕🍕🍕'
+ [x] Received '🍕🍕🍕'
+ [x] Received '☕☕☕'
+ [x] Received '🍰🍰🍰'
+ [x] Received '🍺🍺🍺'
+ [x] Received '🍕🍕🍕'
+ [x] Received '🍔🍔🍔'
+ [x] Received '🍰🍰🍰'
+ [x] Received '🍺🍺🍺'
+```
+
+------------------------------------------------------------------------
+
+### Mongodb + Pika 
+
+A continuación vamos a modificar el script para que pueda conectarse a un [mongodb atlas](https://www.mongodb.com/es/cloud/atlas) y realice el insert de los mensajes recibidos.
+
+``` {.python}
+import pymongo
+import pika, sys, os
+from datetime import datetime
+
+# Crear una conexion con MongoClient
+client = pymongo.MongoClient("mongodb+srv://NombreUser:PasswordUser@clusterName.moczg.mongodb.net/rabbit?retryWrites=true&w=majority")
+
+# Database
+db = client["rabbit"]
+
+# Collection
+collection= db["mensajes"]
+
+def main(queue='delivery'):
+    connection = pika.BlockingConnection(pika.ConnectionParameters(host='localhost'))
+    channel = connection.channel()
+    channel.queue_declare(queue=queue)
+
+    def callback(ch, method, properties, body):
+        print(" [x] Received %r" % body.decode())
+        body_indsert={'fecha':datetime.now(),'queue':queue,'message':body.decode()}
+        db["mensajes"].insert_one(body_indsert)
+
+    channel.basic_consume(queue='hello', on_message_callback=callback, auto_ack=True)
+
+    print(' [*] Waiting for messages. To exit press CTRL+C')
+    channel.start_consuming()
+
+if __name__ == '__main__':
+    try:
+        main(queue=queue)
+    except KeyboardInterrupt:
+        print('Interrupted')
+        try:
+            sys.exit(0)
+        except SystemExit:
+            os._exit(0)
+```
+
+Para conocer más de Rabbitmq puedes ver los siguientes sitios:
+
+-   📄 [Documentacion Oficial](https://www.rabbitmq.com/documentation.html) con el [Tutorial](https://www.rabbitmq.com/getstarted.html)
+
+-   🐍 [Pika](https://pika.readthedocs.io/en/stable/)
