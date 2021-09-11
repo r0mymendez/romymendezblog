@@ -24,7 +24,7 @@ editor_options:
 knitr::opts_chunk$set(echo = FALSE)
 ```
 
-![](https://upload.wikimedia.org/wikipedia/commons/thumb/7/71/RabbitMQ_logo.svg/1200px-RabbitMQ_logo.svg.png)
+![](https://i.ibb.co/4ZyFbqH/1200px-Rabbit-MQ-logo-svg.png)
 
 ### Introducción: ¿Que es RabbitMQ?
 
