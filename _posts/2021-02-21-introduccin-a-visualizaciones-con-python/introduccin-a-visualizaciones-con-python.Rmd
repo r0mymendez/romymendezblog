@@ -1,7 +1,7 @@
 ---
-title: "Introducción a Visualizaciones con Python"
+title: "Introducción a DataViz con Python"
 description: |
-  Primeros pasos para comenzar a realizar tus primeras visualizaciones en Python.
+  Da tus primeros pasos en el desarrollo de visualizaciones con Python.
 categories:
   - DataViz
   - Python
@@ -21,64 +21,52 @@ output:
     toc: yes
 ---
 
-
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = FALSE)
 ```
 
-La programación es una habilidad que puede ser adquirida de manera autodidacta, pero a veces uno no sabe como empezar.
-Por lo cual te dejo este curso online realizado en el 2020 📆 en conjunto con [EANT](https://eant.tech/escuela-de-ciencias-de-datos), el cual en solo **3 horas** ⏱️ podes dar tus primeros pasos en el desarrollo de visualizaciónes con **Python**🐍.
+La programación es una habilidad que puede ser adquirida de manera autodidacta, pero a veces uno no sabe como empezar. Por lo cual te dejo este curso online realizado en el 2020 📆 en conjunto con [EANT](https://eant.tech/escuela-de-ciencias-de-datos), el cual en solo **3 horas** ⏱️ podes dar tus primeros pasos en el desarrollo de visualizaciónes con **Python**🐍.
 
-# ¿Que es Python [<img src="https://i1.wp.com/www.inferencelab.com/wp-content/uploads/Python-logo-notext.svg_.png" alt="python" width="40" height="40">](https://www.python.org/)?
+# ¿Que es Python [<img src="https://i1.wp.com/www.inferencelab.com/wp-content/uploads/Python-logo-notext.svg_.png" alt="python" width="40" height="40"/>](https://www.python.org/)?
 
-**Python** es un lenguaje de programación de código abierto, orientado a objetos, muy simple y fácil de entender. 
-Tiene una sintaxis sencilla que cuenta con una vasta biblioteca de herramientas, que hacen de **Python** un lenguaje de programación único.
-La primera publicación de **Python** se produce hace ya 30 años, ya que en 1989 Guido Van Rossum comenzó el desarrollo de un nuevo lenguaje de programación casi por hobby y tomando su nombre de el grupo humorístico británico Monty Python.
+**Python** es un lenguaje de programación de código abierto, orientado a objetos, muy simple y fácil de entender. Tiene una sintaxis sencilla que cuenta con una vasta biblioteca de herramientas, que hacen de **Python** un lenguaje de programación único. La primera publicación de **Python** se produce hace ya 30 años, ya que en 1989 Guido Van Rossum comenzó el desarrollo de un nuevo lenguaje de programación casi por hobby y tomando su nombre de el grupo humorístico británico Monty Python.
 
 Actualmente es uno de los lenguajes más utilizados para análisis de datos, pero también es considerado un lenguaje multi-proposito debido a gran cantidad de aplicaciónes que se pueden desarrollar con **Python**.
 
-<center>
-![](https://i.ibb.co/Gx99sbS/apps.png)
-</center>
+![](https://i.ibb.co/Gx99sbS/apps.png){style="margin: auto; display: block;"}
 
 Más información sobre [Python](https://www.python.org/)
 
-
-
 # ¿Que es Google Colab ?
-<br/>
 
-<center>
-[<img src="https://colab.research.google.com/img/colab_favicon_256px.png">](https://colab.research.google.com/)
-</center>
-
-<br/>
+[![](https://colab.research.google.com/img/colab_favicon_256px.png){style="margin: auto; display: block;"}](https://colab.research.google.com/)
 
 **Google Colab** es una **IDE** (Entorno de desarrollo integrado) para poder progrmar en Python utilizando google drive.
 
-<br/>
-Es un marco de desarrollo amigable, el cual permite:
+<br/> Es un marco de desarrollo amigable, el cual permite:
 
-* Autocompletado
-* Reconocimiento de sintaxis de programación
-* Depurador de errores 
-* Tiene librerias preinstaladas
-* Se utiliza desde drive lo cual permite versionar tu codigo y trabajar en conjunto con otros colaboradoes.
+-   Autocompletado
+-   Reconocimiento de sintaxis de programación
+-   Depurador de errores
+-   Tiene librerias preinstaladas
+-   Se utiliza desde drive lo cual permite versionar tu codigo y trabajar en conjunto con otros colaboradoes.
 
-Para conocer más sobre **Colab** puedes copiar esta notebook: [Notebook](https://colab.research.google.com/notebooks/intro.ipynb)
-<br/>
+Para conocer más sobre **Colab** puedes copiar esta notebook: [Notebook](https://colab.research.google.com/notebooks/intro.ipynb) <br/>
 
-![](https://i.ibb.co/KjsrKT9/colab.png)
+![](https://i.ibb.co/KjsrKT9/colab.png){style="margin: auto; display: block;"}
 
-----
+En este workshop utilizamos 🐼pandas + 📊 seaborn + 📊 Plotly y podras realizar visualizaciones interactivas como la siguiente...
+
+![](https://github.com/r0mymendez/Workshop-Eant-Data-Analytics-Python/raw/master/plot.png){style="margin: auto; display: block;"}
+
+------------------------------------------------------------------------
 
 ## Recursos
 
-* Presentación:
+-   Presentación:
 
-<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vQZ1badJKYERwWsBVhWUb-3wJ1_6lFXd-MT743nytlAIX5M9ALqFGm1IGQUrf0BbjiAPRIeSTxKdEBl/embed?start=true&loop=true&delayms=60000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vQZ1badJKYERwWsBVhWUb-3wJ1_6lFXd-MT743nytlAIX5M9ALqFGm1IGQUrf0BbjiAPRIeSTxKdEBl/embed?start=true&amp;loop=true&amp;delayms=60000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
 
+-   🙀 [Github Repo](https://github.com/r0mymendez/Workshop-Eant-Data-Analytics-Python)
 
-* Acceso al curso Online: [Workshop EANT](https://eant.tech/escuela-de-ciencias-de-datos/cursos/taller-introduccion-a-data-analytics-python)
-
-
+-   Acceso al curso Online: [Workshop EANT](https://eant.tech/escuela-de-ciencias-de-datos/cursos/taller-introduccion-a-data-analytics-python)

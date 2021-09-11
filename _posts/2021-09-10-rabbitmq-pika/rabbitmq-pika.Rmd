@@ -29,7 +29,7 @@ knitr::opts_chunk$set(echo = FALSE)
 
 ![](https://i.ibb.co/4ZyFbqH/1200px-Rabbit-MQ-logo-svg.png)
 
-``` {r, include=FALSE, results='asis'}
+```{r, include=FALSE, results='asis'}
 library(metathis)
 
 meta() %>%

@@ -51,11 +51,11 @@ on software, agile methodologies , data science and the professor life.
       <media:content url="https://image.freepik.com/free-vector/cloud-hosting-concept-illustration_114360-730.jpg" medium="image" type="image/jpeg"/>
     </item>
     <item>
-      <title>Introducción a Visualizaciones con Python</title>
+      <title>Introducción a DataViz con Python</title>
       <dc:creator>Romina Mendez</dc:creator>
       <dc:creator/>
       <link>https://r0mymendez.github.io/posts/2021-02-21-introduccin-a-visualizaciones-con-python</link>
-      <description>Primeros pasos para comenzar a realizar tus primeras visualizaciones en Python.</description>
+      <description>Da tus primeros pasos en el desarrollo de visualizaciones con Python.</description>
       <category>DataViz</category>
       <category>Python</category>
       <category>Data</category>
