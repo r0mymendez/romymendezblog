@@ -4,7 +4,7 @@ description: |
   Romina Mendez's personal blog/ site. Some  posts
   on software, agile methodologies , data science and the professor life.
 output_dir: "docs"
-base_url: https://www.rominamendezblog.com
+base_url: https://r0mymendez.github.io/
 google_analytics: "G-5SJDD4RKCW"
 
 rss:

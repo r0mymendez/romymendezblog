@@ -29,6 +29,17 @@ knitr::opts_chunk$set(echo = FALSE)
 
 ![](https://i.ibb.co/4ZyFbqH/1200px-Rabbit-MQ-logo-svg.png)
 
+``` {r, include=FALSE, results='asis'}
+library(metathis)
+
+meta() %>%
+  meta_social(
+    image = "https://image.freepik.com/free-vector/landing-page-send-message-illustration_126608-31.jpg",
+    image_alt = "RabbitmMQ"
+  )
+
+```
+
 ### Introducción: ¿Que es RabbitMQ?
 
 **RabbitMQ** es un intermediario que envia mensajes 📩 entre un productor y un consumidor por medio de la utilización de una cola.
@@ -124,7 +135,7 @@ Resultados:
 
 ------------------------------------------------------------------------
 
-### Mongodb + Pika 
+### Mongodb + Pika
 
 A continuación vamos a modificar el script para que pueda conectarse a un [mongodb atlas](https://www.mongodb.com/es/cloud/atlas) y realice el insert de los mensajes recibidos.
 

@@ -2,27 +2,27 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:distill="https://distill.pub/journal/" version="2.0">
   <channel>
     <title>Romy Mendez</title>
-    <link>https://www.rominamendezblog.com</link>
-    <atom:link href="https://www.rominamendezblog.com/blog.xml" rel="self" type="application/rss+xml"/>
+    <link>https://r0mymendez.github.io/</link>
+    <atom:link href="https://r0mymendez.github.io/blog.xml" rel="self" type="application/rss+xml"/>
     <description>Romina Mendez's personal blog/ site. Some  posts
 on software, agile methodologies , data science and the professor life.
 </description>
     <image>
       <title>Romy Mendez</title>
-      <url>https://www.rominamendezblog.com/image/favicon.ico</url>
-      <link>https://www.rominamendezblog.com</link>
+      <url>https://r0mymendez.github.io/image/favicon.ico</url>
+      <link>https://r0mymendez.github.io/</link>
     </image>
     <generator>Distill</generator>
     <lastBuildDate>Fri, 10 Sep 2021 00:00:00 +0000</lastBuildDate>
     <item>
       <title>RabbitMQ-Pika</title>
       <dc:creator>Romina Mendez</dc:creator>
-      <link>https://www.rominamendezblog.com/posts/2021-09-10-rabbitmq-pika</link>
+      <link>https://r0mymendez.github.io/posts/2021-09-10-rabbitmq-pika</link>
       <description>RabbitMQ permite gestionar colas de mensajes entre emisores y destinatarios, en el siguiente post vamos a utilizar en python **Pika** para su implementación.</description>
       <category>Python</category>
       <category>Programacion</category>
       <category>Tutorial</category>
-      <guid>https://www.rominamendezblog.com/posts/2021-09-10-rabbitmq-pika</guid>
+      <guid>https://r0mymendez.github.io/posts/2021-09-10-rabbitmq-pika</guid>
       <pubDate>Fri, 10 Sep 2021 00:00:00 +0000</pubDate>
       <media:content url="https://image.freepik.com/free-vector/landing-page-send-message-illustration_126608-31.jpg" medium="image" type="image/jpeg"/>
     </item>
@@ -30,11 +30,11 @@ on software, agile methodologies , data science and the professor life.
       <title>14 Apps Gratuitas para Proyectos</title>
       <dc:creator>Romina Mendez</dc:creator>
       <dc:creator/>
-      <link>https://www.rominamendezblog.com/posts/2021-02-21-apps-gratuitas-para-proyectos</link>
+      <link>https://r0mymendez.github.io/posts/2021-02-21-apps-gratuitas-para-proyectos</link>
       <description>En el siguiente articulo te cuento sobre algunas aplicaciones free para utilizar en tus proyectos.</description>
       <category>Proyectos</category>
       <category>Metodologias</category>
-      <guid>https://www.rominamendezblog.com/posts/2021-02-21-apps-gratuitas-para-proyectos</guid>
+      <guid>https://r0mymendez.github.io/posts/2021-02-21-apps-gratuitas-para-proyectos</guid>
       <pubDate>Sun, 21 Feb 2021 00:00:00 +0000</pubDate>
       <media:content url="https://image.freepik.com/free-vector/tiny-people-developers-laptop-customer-requirements-software-requirement-description-user-case-agile-tool-business-analysis-concept_335657-2433.jpg" medium="image" type="image/jpeg"/>
     </item>
@@ -42,11 +42,11 @@ on software, agile methodologies , data science and the professor life.
       <title>CheatSheet SQL</title>
       <dc:creator>Romina Mendez</dc:creator>
       <dc:creator/>
-      <link>https://www.rominamendezblog.com/posts/2021-02-21-cheatsheet-sql</link>
+      <link>https://r0mymendez.github.io/posts/2021-02-21-cheatsheet-sql</link>
       <description>En el siguiente post puedes encontrar una cheetsheet de SQ, en la cual puedes encontrar un resumen y ejemplos de la sintaxis de SQL.</description>
       <category>Base de datos</category>
       <category>SQL</category>
-      <guid>https://www.rominamendezblog.com/posts/2021-02-21-cheatsheet-sql</guid>
+      <guid>https://r0mymendez.github.io/posts/2021-02-21-cheatsheet-sql</guid>
       <pubDate>Sun, 21 Feb 2021 00:00:00 +0000</pubDate>
       <media:content url="https://image.freepik.com/free-vector/cloud-hosting-concept-illustration_114360-730.jpg" medium="image" type="image/jpeg"/>
     </item>
@@ -54,14 +54,14 @@ on software, agile methodologies , data science and the professor life.
       <title>Introducción a Visualizaciones con Python</title>
       <dc:creator>Romina Mendez</dc:creator>
       <dc:creator/>
-      <link>https://www.rominamendezblog.com/posts/2021-02-21-introduccin-a-visualizaciones-con-python</link>
+      <link>https://r0mymendez.github.io/posts/2021-02-21-introduccin-a-visualizaciones-con-python</link>
       <description>Primeros pasos para comenzar a realizar tus primeras visualizaciones en Python.</description>
       <category>DataViz</category>
       <category>Python</category>
       <category>Data</category>
       <category>Programacion</category>
       <category>Workshop</category>
-      <guid>https://www.rominamendezblog.com/posts/2021-02-21-introduccin-a-visualizaciones-con-python</guid>
+      <guid>https://r0mymendez.github.io/posts/2021-02-21-introduccin-a-visualizaciones-con-python</guid>
       <pubDate>Sun, 21 Feb 2021 00:00:00 +0000</pubDate>
       <media:content url="https://image.freepik.com/vector-gratis/ilustracion-analisis-mercado-valores_23-2148588123.jpg" medium="image" type="image/jpeg"/>
     </item>
@@ -69,14 +69,14 @@ on software, agile methodologies , data science and the professor life.
       <title>Introducción a Visualizaciones con R</title>
       <dc:creator>Romina Mendez</dc:creator>
       <dc:creator/>
-      <link>https://www.rominamendezblog.com/posts/2021-02-21-introduccin-a-visualizaciones-con-r</link>
+      <link>https://r0mymendez.github.io/posts/2021-02-21-introduccin-a-visualizaciones-con-r</link>
       <description>Primeros pasos para comenzar a realizar tus primeras visualizaciones en R.</description>
       <category>DataViz</category>
       <category>R</category>
       <category>Data</category>
       <category>Programacion</category>
       <category>Workshop</category>
-      <guid>https://www.rominamendezblog.com/posts/2021-02-21-introduccin-a-visualizaciones-con-r</guid>
+      <guid>https://r0mymendez.github.io/posts/2021-02-21-introduccin-a-visualizaciones-con-r</guid>
       <pubDate>Sun, 21 Feb 2021 00:00:00 +0000</pubDate>
       <media:content url="https://www.binaryfountain.com/wp-content/uploads/2019/12/iStock-1069206352.jpg" medium="image" type="image/jpeg"/>
     </item>
@@ -84,14 +84,14 @@ on software, agile methodologies , data science and the professor life.
       <title>Dataviz: Datos de Miercoles</title>
       <dc:creator>Romina Mendez</dc:creator>
       <dc:creator/>
-      <link>https://www.rominamendezblog.com/posts/2021-03-06-dataviz-datos-de-miercoles</link>
+      <link>https://r0mymendez.github.io/posts/2021-03-06-dataviz-datos-de-miercoles</link>
       <description>En este contiene las visualizaciones que realice para Datos de Miercoles.</description>
       <category>DataViz</category>
       <category>R</category>
       <category>Data</category>
       <category>Programacion</category>
       <category>Workshop</category>
-      <guid>https://www.rominamendezblog.com/posts/2021-03-06-dataviz-datos-de-miercoles</guid>
+      <guid>https://r0mymendez.github.io/posts/2021-03-06-dataviz-datos-de-miercoles</guid>
       <pubDate>Sun, 21 Feb 2021 00:00:00 +0000</pubDate>
       <media:content url="https://www.binaryfountain.com/wp-content/uploads/2019/12/iStock-1069206352.jpg" medium="image" type="image/jpeg"/>
     </item>
@@ -99,7 +99,7 @@ on software, agile methodologies , data science and the professor life.
       <title>¿Dónde está mi monopatín?🛹</title>
       <dc:creator>Romina Mendez</dc:creator>
       <dc:creator/>
-      <link>https://www.rominamendezblog.com/posts/2021-03-06-dnde-est-mi-monopatn</link>
+      <link>https://r0mymendez.github.io/posts/2021-03-06-dnde-est-mi-monopatn</link>
       <description>Recursos del evento IWD2020 (International Womens Day) de Women Techmakers, en el cual utilizamos python para encontrar monopatines en la Ciudad Autonoma de Buenos Aires📍.</description>
       <category>DataViz</category>
       <category>Python</category>
@@ -107,7 +107,7 @@ on software, agile methodologies , data science and the professor life.
       <category>Mapas</category>
       <category>Programacion</category>
       <category>Workshop</category>
-      <guid>https://www.rominamendezblog.com/posts/2021-03-06-dnde-est-mi-monopatn</guid>
+      <guid>https://r0mymendez.github.io/posts/2021-03-06-dnde-est-mi-monopatn</guid>
       <pubDate>Sun, 21 Feb 2021 00:00:00 +0000</pubDate>
       <media:content url="https://img.freepik.com/vector-gratis/hombre-montando-patinete-electrico-otono-concepto-transporte-ecologico_254685-275.jpg?size=626&amp;ext=jpg" medium="image" type="text/plain"/>
     </item>
@@ -115,14 +115,14 @@ on software, agile methodologies , data science and the professor life.
       <title>Fundamentos de Testing</title>
       <dc:creator>Romina Mendez</dc:creator>
       <dc:creator/>
-      <link>https://www.rominamendezblog.com/posts/2021-03-06-fundamentos-de-testing</link>
+      <link>https://r0mymendez.github.io/posts/2021-03-06-fundamentos-de-testing</link>
       <description>El testing es uno de los procesos de la ingeniería de software que permite identificar defectos en el software
 En este post podes encontrar los fundamentos para poder realizalo de manera practica en cualquier proyecto de desarrollo.</description>
       <category>Python</category>
       <category>Tesing</category>
       <category>Programacion</category>
       <category>Workshop</category>
-      <guid>https://www.rominamendezblog.com/posts/2021-03-06-fundamentos-de-testing</guid>
+      <guid>https://r0mymendez.github.io/posts/2021-03-06-fundamentos-de-testing</guid>
       <pubDate>Sun, 21 Feb 2021 00:00:00 +0000</pubDate>
       <media:content url="https://image.freepik.com/free-vector/tiny-people-testing-quality-assurance-software-isolated-flat-vector-illustration-cartoon-character-fixing-bugs-hardware-device-application-test-it-service-concept_74855-10172.jpg" medium="image" type="image/jpeg"/>
     </item>
