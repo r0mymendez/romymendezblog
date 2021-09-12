@@ -63,10 +63,8 @@ En este workshop utilizamos 🐼pandas + 📊 seaborn + 📊 Plotly y podras rea
 
 ## Recursos
 
--   Presentación:
-
-<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vQZ1badJKYERwWsBVhWUb-3wJ1_6lFXd-MT743nytlAIX5M9ALqFGm1IGQUrf0BbjiAPRIeSTxKdEBl/embed?start=true&amp;loop=true&amp;delayms=60000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+-   ✏️ [Presentación](https://github.com/r0mymendez/Workshop-Eant-Data-Analytics-Python/blob/master/Data%20Analytics%20con%20Python.pdf)
 
 -   🙀 [Github Repo](https://github.com/r0mymendez/Workshop-Eant-Data-Analytics-Python)
 
--   Acceso al curso Online: [Workshop EANT](https://eant.tech/escuela-de-ciencias-de-datos/cursos/taller-introduccion-a-data-analytics-python)
+-   🔗 Acceso al curso Online: [Workshop EANT](https://eant.tech/escuela-de-ciencias-de-datos/cursos/taller-introduccion-a-data-analytics-python)
