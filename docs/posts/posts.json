@@ -16,7 +16,7 @@
     "contents": "\n\nContents\nEl rol del Data Scientist\nEl análisis de datos es uno de los trabajos del futuro (y necesita más mujeres)\n\nEl rol del Data Scientist\nsource('Blog de Uala - 📅 Julio 2020')\n“Ante el avance tecnológico que estamos viviendo, los datos son uno de los activos más valiosos para cualquier organización.”\n\nEl análisis de datos es uno de los trabajos del futuro (y necesita más mujeres)\nsource('Revista Parati - 📅 Octubre 2020')\n“En el mundo digital el Data Science es clave, y para leer mejor todo lo que pasa en las redes, en la web y en todo el universo virtual, es necesario una mirada diversa y con más presencia femenina. El análisis de una especialista.”\n\n\n\n\n",
     "preview": "https://img.freepik.com/vector-gratis/concepto-landing-page-noticias_52683-20522.jpg?size=626&ext=jpg",
     "last_modified": "2021-09-22T22:30:30-03:00",
-    "input_file": "notas-en-medios.knit.md"
+    "input_file": {}
   },
   {
     "path": "posts/2021-09-10-rabbitmq-pika/",
@@ -112,7 +112,7 @@
     "contents": "\n\nContents\n¿Que es Python ?\n¿Que es Google Colab ?\nRecursos\n\n\nLa programación es una habilidad que puede ser adquirida de manera autodidacta, pero a veces uno no sabe como empezar. Por lo cual te dejo este curso online realizado en el 2020 📆 en conjunto con EANT, el cual en solo 3 horas ⏱️ podes dar tus primeros pasos en el desarrollo de visualizaciónes con Python🐍.\n¿Que es Python ?\nPython es un lenguaje de programación de código abierto, orientado a objetos, muy simple y fácil de entender. Tiene una sintaxis sencilla que cuenta con una vasta biblioteca de herramientas, que hacen de Python un lenguaje de programación único. La primera publicación de Python se produce hace ya 30 años, ya que en 1989 Guido Van Rossum comenzó el desarrollo de un nuevo lenguaje de programación casi por hobby y tomando su nombre de el grupo humorístico británico Monty Python.\nActualmente es uno de los lenguajes más utilizados para análisis de datos, pero también es considerado un lenguaje multi-proposito debido a gran cantidad de aplicaciónes que se pueden desarrollar con Python.\n\nMás información sobre Python\n¿Que es Google Colab ?\n\nGoogle Colab es una IDE (Entorno de desarrollo integrado) para poder progrmar en Python utilizando google drive.\n Es un marco de desarrollo amigable, el cual permite:\nAutocompletado\nReconocimiento de sintaxis de programación\nDepurador de errores\nTiene librerias preinstaladas\nSe utiliza desde drive lo cual permite versionar tu codigo y trabajar en conjunto con otros colaboradoes.\nPara conocer más sobre Colab puedes copiar esta notebook: Notebook \n\nEn este workshop utilizamos 🐼pandas + 📊 seaborn + 📊 Plotly y podras realizar visualizaciones interactivas como la siguiente…\n\nRecursos\n✏️ Presentación\n🙀 Github Repo\n🔗 Acceso al curso Online: Workshop EANT\n\n\n\n",
     "preview": "https://image.freepik.com/vector-gratis/ilustracion-analisis-mercado-valores_23-2148588123.jpg",
     "last_modified": "2021-09-22T22:28:14-03:00",
-    "input_file": "introduccin-a-visualizaciones-con-python.knit.md"
+    "input_file": {}
   },
   {
     "path": "posts/2021-02-21-introduccin-a-visualizaciones-con-r/",
