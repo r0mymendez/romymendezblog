@@ -45,6 +45,18 @@ source('Blog de Uala - 📅 Julio 2020')
 
 ![](https://d3e9yfb80c0w6e.cloudfront.net/wp-content/uploads/imagen-nota-interior-1.jpg)
 
+### [Historias con datos](https://www.buenosaires.gob.ar/datosabiertos/historias/movilidad-y-transporte/denuncias-de-transito-2018)
+
+``` {.r}
+source('Infografia - 📅 Octubre 2019')
+```
+
+"Análisis sobre las diferentes denuncias realizadas durante 2018 utilizando datos abiertos que aporta SUACI."
+
+[Link Infografia](https://infogram.com/report-dark-1ho16vwq9p982nq?live)
+
+![](https://www.buenosaires.gob.ar/sites/gcaba/files/denuncias_de_transito_2018_hcd.jpeg){width="598"}\
+
 ### [**El análisis de datos es uno de los trabajos del futuro (y necesita más mujeres)**](https://www.parati.com.ar/el-analisis-de-datos-es-uno-de-los-trabajos-del-futuro-y-necesita-mas-mujeres/)
 
 ``` {.r}
