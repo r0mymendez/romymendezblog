@@ -13,7 +13,17 @@ on software, agile methodologies , data science and the professor life.
       <link>https://r0mymendez.github.io/</link>
     </image>
     <generator>Distill</generator>
-    <lastBuildDate>Fri, 10 Sep 2021 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 22 Sep 2021 00:00:00 +0000</lastBuildDate>
+    <item>
+      <title>Notas en Medios</title>
+      <dc:creator>Romina Mendez</dc:creator>
+      <link>https://r0mymendez.github.io/posts/2021-09-22-notas-en-medios</link>
+      <description>Este post contiene algunas de las notas que pude realizar en algunos portales de noticias en Argentina</description>
+      <category>Data</category>
+      <guid>https://r0mymendez.github.io/posts/2021-09-22-notas-en-medios</guid>
+      <pubDate>Wed, 22 Sep 2021 00:00:00 +0000</pubDate>
+      <media:content url="https://img.freepik.com/vector-gratis/concepto-landing-page-noticias_52683-20522.jpg?size=626&amp;ext=jpg" medium="image" type="text/plain"/>
+    </item>
     <item>
       <title>RabbitMQ-Pika</title>
       <dc:creator>Romina Mendez</dc:creator>

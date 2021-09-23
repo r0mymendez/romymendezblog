@@ -1,0 +1,56 @@
+---
+title: "Notas en Medios"
+description: |
+  Este post contiene algunas de las notas que pude realizar en algunos portales de noticias en Argentina
+categories:
+  - Data
+preview: "https://img.freepik.com/vector-gratis/concepto-landing-page-noticias_52683-20522.jpg?size=626&ext=jpg"
+twitter:
+  site: "@r0mymendez"
+  creator: "@r0mymendez"
+author:
+  - name: Romina Mendez
+    url: https://example.com/norajones
+date: 09-22-2021
+output:
+  distill::distill_article:
+    self_contained: yes
+    toc: yes
+editor_options: 
+  markdown: 
+    wrap: sentence
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+```{r, include=FALSE, results='asis'}
+library(metathis)
+
+meta() %>%
+  meta_social(
+    image = "https://d3e9yfb80c0w6e.cloudfront.net/wp-content/uploads/imagen-nota-interior-1.jpg",
+    image_alt = "El rol del Data Scientist"
+  )
+```
+
+### [El rol del Data Scientist](https://blog.uala.com.ar/equipo-uala/el-rol-del-data-scientist/)
+
+``` {.r}
+source('Blog de Uala - 📅 Julio 2020')
+```
+
+"Ante el avance tecnológico que estamos viviendo, los datos son uno de los activos más valiosos para cualquier organización."
+
+![](https://d3e9yfb80c0w6e.cloudfront.net/wp-content/uploads/imagen-nota-interior-1.jpg)
+
+### [**El análisis de datos es uno de los trabajos del futuro (y necesita más mujeres)**](https://www.parati.com.ar/el-analisis-de-datos-es-uno-de-los-trabajos-del-futuro-y-necesita-mas-mujeres/)
+
+``` {.r}
+source('Revista Parati - 📅 Octubre 2020')
+```
+
+"En el mundo digital el Data Science es clave, y para leer mejor todo lo que pasa en las redes, en la web y en todo el universo virtual, es necesario una mirada diversa y con más presencia femenina. El análisis de una especialista."
+
+![](https://www.parati.com.ar/wp-content/uploads/2020/10/MUJER-DATOS-.jpg)
