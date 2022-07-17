@@ -78,6 +78,8 @@ Esta actividad tiene como objetivo realizar un recordatorio rápido de por qué 
 
 Una técnica que podemos utilizar es "el círculo dorado de Simon Sinek" que permite conocer que objetivos tiene y cómo hacerlo.
 
+![](https://miro.medium.com/max/1400/1*3uORl2TQZSFVr9nLtpcpoQ.png)
+
 Estas preguntas a realizar son:
 
 1.  ✏️ ¿Por qué?
@@ -99,8 +101,9 @@ La técnica se asimila a un viaje en un ascensor que llega al último piso de un
 
 En el siguiente video realizado por [eduCaixa](https://educaixa.org/es/home) puedes ver una representación de que hay que tener en cuenta para realizar un elevator pitch,
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/2b3xG_YjgvI" frameborder="0" data-external= "1" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/2b3xG_YjgvI" frameborder="0" data-external="1" allowfullscreen>
 
+</iframe>
 
 #### Elementos:
 
@@ -180,9 +183,9 @@ Para implementar esta dinámica es necesario saber cual es el MVP (Producto mín
 El objetivo es identificar los riesgos y poder resolverlos.
 Un ejemplo puede ser el siguiente:
 
-Problemática: Necesitamos trabajar en un proyecto que se desarrolle en GO, pero no hay desarrolladores que conozcan cómo programar en este lenguaje.
-
-Solución: Planificar capacitaciones para mitigar el riesgo.
+> **Problemática**: Necesitamos trabajar en un proyecto que se desarrolle en GO, pero no hay desarrolladores que conozcan cómo programar en este lenguaje.
+>
+> **Solución**: Planificar capacitaciones para mitigar el riesgo.
 
 Algunas problemáticas no podrán ser resueltas tan fácilmente ya que pueden ser restricciones regulatorias de alguna industria, por lo cual es necesario que las mismas sean informadas al equipo y ver que acciones tomar.
 
@@ -204,6 +207,8 @@ El Planning Poker es una técnica para la estimación de tareas y fue utilizado 
 
 #### Cartas de planning poker
 
+![](https://cdn-images-1.medium.com/max/1600/1*DWQKREFjoUIIU701YE-84Q.png)
+
 El sistema utiliza un rango de valores basado en la secuencia Fibonacci, pero también existen las cartas 0 (tarea ya realizada), ½ (tarea sencilla), ?
 (se requiere mayor información para poder estimar) , infinito (tarea muy grande y requiere separarse en tareas más pequeñas) y un café (el equipo requiere un break) como se visualizan en la imagen.
 
@@ -218,20 +223,26 @@ Esto se repite con cada historia de usuario que haya que estimar.
 
 Algunas paginas para poder realizar esta dinámica de forma online:
 
--   Planning poker agile App: Esta aplicación es open source y permite estimar las historias de usuarios.
+-   [Planning poker agile App](https://planning-poker-agile.web.app/): Esta aplicación es open source y permite estimar las historias de usuarios.
 
--   Planning-poker: Es una aplicación que permite también hacer partidas pero en su plan free es solo para cinco usuarios.
+-   [Planning-poker](https://www.planningpoker.com/): Es una aplicación que permite también hacer partidas pero en su plan free es solo para cinco usuarios.
 
 ------------------------------------------------------------------------
 
 ### 9. Restricciones
 
-Los proyectos tienen factores clave de ejecución tales como : tiempo, alcance, dinero y, por supuesto, calidad.
-Es fundamental saber cuáles de estos factores son inamovibles y en cuáles hay flexibilidad.
+Los proyectos tienen factores clave de ejecución tales como : ⌛tiempo, 🔍 alcance, 💰costes y, por supuesto, 👏calidad.
+Es fundamental saber cuáles de estos factores son **inamovibles** y en cuáles hay **flexibilidad**.
 
 Otros factores que también se pueden tener en cuenta son:
 
-Facilidad de uso Sin defectos Primero en el mercado Seguridad Velocidad, entre otras.
+-   🔍 Facilidad de uso
+
+-   🔍 Seguridad
+
+-   🔍 Velocidad
+
+-   🔍 Time to market, entre otras.
 
 ------------------------------------------------------------------------
 
@@ -239,8 +250,19 @@ Facilidad de uso Sin defectos Primero en el mercado Seguridad Velocidad, entre o
 
 Aquí definimos cuál es el entregable a realizar en el roadmap y cuales son los costos asociados.
 
-Para la estimación es necesario tener en cuenta los siguientes puntos: \* Estimar el equipo de proyecto.
-\* Tiempo de duración Presupuesto.
+Para la estimación es necesario tener en cuenta los siguientes puntos:
+
+-   Estimar el equipo de proyecto.
+
+```{=html}
+<!-- -->
+```
+-   Tiempo de duración
+
+```{=html}
+<!-- -->
+```
+-   Presupuesto.
 
 ------------------------------------------------------------------------
 
