@@ -6,6 +6,7 @@ create_post("Introducción a Visualizaciones con R")
 create_post("Introducción a Visualizaciones con Python")
 create_post("CheatSheet SQL")
 create_post("Agile inception")
+create_post("adalab workshop python")
 file.create(".nojekyll")
 
 

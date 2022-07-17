@@ -26,6 +26,20 @@ on software, agile methodologies , data science and the professor life.
       <media:content url="https://img.freepik.com/free-vector/happy-united-business-team_74855-6520.jpg?" medium="image" type="text/plain"/>
     </item>
     <item>
+      <title>Conviértete en una data analyst de película</title>
+      <dc:creator>Romina Mendez</dc:creator>
+      <link>https://r0mymendez.github.io/posts/2022-07-17-adalab-workshop-python</link>
+      <description>Este es el workshop de python en el cual analizamos un conjunto de datos de Neflix  y el mismo fue realizado de forma online para la comunidad de Adalab</description>
+      <category>DataViz</category>
+      <category>Python</category>
+      <category>Data</category>
+      <category>Programacion</category>
+      <category>Workshop</category>
+      <guid>https://r0mymendez.github.io/posts/2022-07-17-adalab-workshop-python</guid>
+      <pubDate>Sun, 17 Jul 2022 00:00:00 +0000</pubDate>
+      <media:content url="https://img.freepik.com/free-vector/people-watching-movie-home_23-2148568229.jpg" medium="image" type="image/jpeg"/>
+    </item>
+    <item>
       <title>Notas en Medios</title>
       <dc:creator>Romina Mendez</dc:creator>
       <link>https://r0mymendez.github.io/posts/2021-09-22-notas-en-medios</link>

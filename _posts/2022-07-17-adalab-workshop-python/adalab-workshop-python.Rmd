@@ -1,0 +1,62 @@
+---
+title: "Conviértete en una data analyst de película"
+description: |
+  Este es el workshop de python en el cual analizamos un conjunto de datos de Neflix  y el mismo fue realizado de forma online para la comunidad de Adalab
+categories:
+  - DataViz
+  - Python
+  - Data
+  - Programacion
+  - Workshop
+preview: "https://img.freepik.com/free-vector/people-watching-movie-home_23-2148568229.jpg"
+author:
+  - name: Romina Mendez
+    url: https://r0mymendez.github.io/romymendezblog/
+date: 07-17-2022
+output:
+  distill::distill_article:
+    self_contained: yes
+    toc: yes
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+La programación es una habilidad que puede ser adquirida de manera autodidacta, pero a veces uno no sabe como empezar. Por lo cual realice un workshop de Python🐍 para la comunidad de [Adalab](https://adalab.es/) y el mismo fue realizado 📆26 de mayo de 2022 de forma online.
+
+## Adalab
+
+Adalab es una escuela especializada en formación tecnológica para mujeres, en formato online y en directo. Su objetivo es trabajar para formar y acompañar a mujeres que buscan un giro profesional adaptado a las nuevas necesidades de las empresas. Fórmate desde cero en una profesión con futuro e inicia una carrera en el sector tech con nuestros bootcamps de 12 semanas de Programación Web o Data Analytics.
+
+## Workshop
+
+El workshop fue realizado utilizando un conjunto de datos de Netflix, el cual el mismo fue descargado de [Kaggle](https://www.kaggle.com/datasets/shivamb/netflix-shows)
+
+> Kaggle, una subsidiaria de **Google LLC**, es una comunidad en línea de científicos de datos y profesionales del aprendizaje automático. Kaggle permite a los usuarios encontrar y publicar conjuntos de datos, explorar y crear modelos en un entorno de ciencia de datos basado en la web; trabajar con otros científicos de datos e ingenieros de aprendizaje automático y participar en concursos para resolver desafíos de ciencia de datos.
+>
+> Ref: [wikipedia](https://es.wikipedia.org/wiki/Kaggle)
+
+El objetivo principal fue realizar una serie de ejercicio utilizando las librerias más populares de python tales como: 🐼pandas + 📊 seaborn + 📊 Plotly. De forma tal de poder realizar una introducción por medio de la resolución de un analisis de un caso relacionado a contenidos publicados en [Netflix](https://www.netflix.com/).
+
+Si quieres conocer más acerca de python, puedes leer el siguiente [post](https://r0mymendez.github.io/romymendezblog/posts/2021-02-21-introduccin-a-visualizaciones-con-python/).
+
+## Comunicación
+
+### Conviértete en una data analyst de película
+
+Alguna vez te has preguntado en qué consiste ser data analyst? ¿Te gustaría probarlo pero no te atreves o no lo tienes claro? ¡No te montes películas y aprende análisis de datos!
+
+Con este taller online de 2hs te iniciarás en los misterios del análisis de datos y descubrirás que no se trata de ciencia ficción ni de misterio. Aprenderás a extraer y visualizar datos sobre las películas más vistas de Netflix como una profesional.
+
+¿Te atreves a probar?
+
+-   El taller tendrá lugar el jueves 26 de mayo de 2022 a las 17:30 h.
+-   La duración será de aproximadamente 2 hs.
+-   No necesitas ningún programa específico en tu ordenador ni configuración previa. ¡Así de fácil!
+
+![img](https://github.com/r0mymendez/adalab-workshop-python/raw/main/Taller%20Data%20Analytics%20Netflix%20banner.png)
+
+### Recursos
+
+-   🙀 [Github Repo](https://github.com/r0mymendez/adalab-workshop-python)
