@@ -58,7 +58,7 @@ output:
 ](https://www.postgresql.org/)
 [<img src="https://pbs.twimg.com/profile_images/1123557710191001600/oMQc_xqN_400x400.png" alt="Red Hat" width="40" height="40">
 ](https://www.postgresql.org/)
-[<img src="https://image.flaticon.com/icons/png/512/888/888879.png" alt="Ubuntu" width="40" height="40">
+[<img src="https://cdn-icons-png.flaticon.com/512/888/888879.png" alt="Ubuntu" width="40" height="40">
 ](https://ubuntu.com/)
 
 

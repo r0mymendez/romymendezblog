@@ -1,0 +1,334 @@
+---
+title: "Agile inception"
+description: |
+  En el siguiente artículo te cuento sobre un conjunto de actividades que te permiten reducir la incertidumbre y alinear a todas las personas de un equipo de producto para que se puedan tener objetivos comunes.
+categories:
+  - Proyectos
+  - Metodologias
+preview: "https://img.freepik.com/free-vector/happy-united-business-team_74855-6520.jpg?"
+twitter:
+  site: "@r0mymendez"
+  creator: "@r0mymendez"
+author:
+  - name: Romina Mendez
+    url: https://r0mymendez.github.io/romymendezblog/
+date: 08-17-2022
+output:
+  distill::distill_article:
+    self_contained: yes
+    toc: yes
+editor_options: 
+  markdown: 
+    wrap: sentence
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+# Agile inception
+
+## ¿Que es agile inception?
+
+Se denomina **"agile inception"** a un conjunto de actividades que
+permite alinear a todas las personas de un equipo de producto para que
+se puedan tener objetivos comunes.
+
+Este concepto fue introducido por Jonathan Rasmusson en el libro **"The
+Agile Samurai"** y el conjunto de dinámicas permiten reducir la
+incertidumbre y los riesgos que pueden existir en un proyecto. Las
+aplicación de estas técnicas permiten poner objetivos comunes, mejorar
+la comunicación y eliminar miedos que pueden existir en los integrantes
+del equipo
+
+Hay que tener en cuenta que no es necesario realizar todas las
+dinámicas, sino llevar a cabo las necesarias que permitan reducir la
+incertidumbre que puede existir en el proyecto.
+
+Muchas veces se piensa que la incertidumbre es al inicio del proyecto,
+pero como se puede visualizar en la siguiente imagen del libro "The
+Agile Samurai" durante varias etapas del proyecto pueden aparecer los
+cambios y esto significa que se requieran dinámicas que permitan que el
+equipo puedan llegar a tener objetivos comunes y lograr acuerdos.
+
+![Source image: The agile
+samurai](https://miro.medium.com/max/1400/1*TXF1eB7s34aoWyBYh4y3eQ.png){style="margin: auto; display: block;"}
+
+------------------------------------------------------------------------
+
+## Dinámicas
+
+Como comentamos anteriormente **"agile inception"** tiene un conjunto de
+10 dinámicas que permiten disminuir la incertidumbre, mitigar riesgos y
+generar objetivos comunes en el equipo de desarrollo de producto.
+
+## ¿Porque implementar agile inception?
+
+Al inicio de un proyecto es necesario tomar decisiones en la
+incertidumbre y para poder realizarlo es necesario:
+
+-   ✏️ Definir y comunicar objetivos, visión y contexto del proyecto del
+    equipo.
+-   ✏️ Divulgar a las partes interesadas la información que necesitan
+    para ayudar a tomar decisiones de cómo proceder en el proyecto.
+
+Estas tareas son necesarias realizarlas de forma ordenada y lograr que
+todos los integrantes estén de acuerdo con el propósito del proyecto,
+como se va ejecutar y cuales son los resultados esperados.
+
+## ¿ Cuáles son los beneficios de Agile inception?
+
+-   📌 Unificar la visión y definir el alcance
+
+-   📌 Poner de acuerdo a todos los interesados (stakeholders) en la
+    visión conjunta del proyecto
+
+-   📌 Reducir la incertidumbre
+
+-   📌 Entender cuáles son los riesgos existen que puedan poner en
+    peligro el proyecto.
+
+A continuación se van a detallar cuál es el objetivo de las 10 dinámicas y
+como llevar a cabo las mismas.
+
+![](https://miro.medium.com/max/1400/1*XxNnAWzr18FjhvWf2POyWA.png){style="margin: auto; display: block;"}
+
+------------------------------------------------------------------------
+
+### 1. Para que estamos aquí
+
+Esta actividad tiene como objetivo realizar un recordatorio rápido de
+por qué estamos aquí, quiénes son nuestros clientes, y por qué
+decidimos hacer este proyecto.
+
+Una técnica que podemos utilizar es "el círculo dorado de Simon Sinek"
+que permite conocer que objetivos tiene y cómo hacerlo.
+
+Estas preguntas a realizar son:
+
+1.  ✏️ ¿Por qué? Son los motivos o el propósito por el que estamos
+    realizando este proyecto.
+
+2.  ✏️ ¿Cómo? Es el proceso o los procesos que son necesarios tener para
+    poder realizar el propósito del proyecto.
+
+3.  ✏️ ¿Qué? Es el resultado que queremos generar, puede ser el producto
+    o el servicio a desarrollar.
+
+------------------------------------------------------------------------
+
+### 2. Elevator Pitch
+
+Esta técnica permite poder conseguir el interés de un inversor para un
+proyecto, para lo cual es necesario poder contar sobre el objetivo del
+mismo en aproximadamente⌛ 30 segundos.
+
+La técnica se asimila a un viaje en un ascensor que llega al último piso
+de un edificio demorando aproximadamente 30 segundos.
+
+En el siguiente video realizado por
+[eduCaixa](https://educaixa.org/es/home) puedes ver una representación
+de que hay que tener en cuenta para realizar un elevator pitch
+
+\<iframe width="560" height="315"
+src="<https://www.youtube.com/embed/2b3xG_YjgvI%22> title="YouTube video
+player" frameborder="0" allow="accelerometer; autoplay; clipboard-write;
+encrypted-media; gyroscope; picture-in-picture"
+allowfullscreen\>\</iframe\>
+
+#### Elementos:
+
+| Elementos      | Preguntas                                  |
+|----------------|--------------------------------------------|
+| Necesidad      | ¿Qué problemática resuelves?               |
+| Solución       | ¿Cómo lo resuelves? Breve descripción.     |
+| Mercado        | ¿Cuál es el mercado al que está destinado? |
+| Equipo         | ¿Cual es tu equipo?                        |
+| Call to action | ¿Que le pides al inversor?                 |
+
+Algunas características:
+
+-   ⏳ Tiempo de 30 a 90 segundos.
+
+-   💬 Explicar tu proyecto en una frase
+
+-   ⚠️ No utilizar muchos detalles
+
+-   ⚠️ No utilizar vocabulario técnico, el inversor debe entender
+    fácilmente tu proyecto.
+
+-   ✨Debe impactar al receptor con detalles que realicen énfasis en el
+    mercado o la solución.
+
+-   💥 Lograr que el receptor del mensaje quiera conocer más de la
+    solución.
+
+------------------------------------------------------------------------
+
+### 3. Lista de lo que no es
+
+Está centrado en definir los alcances de nuestro proyecto, la cual
+consiste en realizar un detalle de las limitaciones que tiene el
+proyecto.
+
+Puede ser todo lo que se desea pero por ahora es inviable debido al
+tiempo, costo ó el alcance definido.
+
+------------------------------------------------------------------------
+
+### 4. Product Box o Visual Box
+
+Si tu producto o servicio debería estar empaquetado podrías definir qué
+imágenes, mensajes o detalles debería tener.
+
+Es una tarea que debe realizarse en equipo y algunas preguntas que se
+deberían realizar es:
+
+-   💬¿Cómo construir un slogan para mi producto o servicio?
+
+-   💬 ¿Cuales son las principales razones por la que un cliente quiere
+    comprar mi producto?
+
+------------------------------------------------------------------------
+
+### 5. Conoce a tus vecinos
+
+Esta dinámica tiene como objetivo poder identificar a cuántas y cuáles
+son las personas necesitamos para que nuestro proyecto sea exitoso. Esto
+significa poder conocer a los actores claves que necesitamos para
+nuestro proyecto.
+
+Al conocer quienes son estos vecinos, podemos construir relaciones y
+generar confianza para el éxito del proyecto.
+
+Para implementar este punto sugiero hacer una matriz de stakeholders que
+permita conocer anticipadamente quienes son los key player con los
+cuales necesito generar vínculos para el éxito del proyecto.
+
+![matiz](https://miro.medium.com/max/966/0*XPzKk4BIwwgiUd7p.png){style="margin: auto; display: block;"}
+
+Source image:<https://www.stakeholdermap.com/stakeholder-matrix.html>
+
+------------------------------------------------------------------------
+
+![](https://miro.medium.com/max/1400/1*mujmmRfk3ApbD67gbKHtNQ.png){style="margin: auto; display: block;"}
+
+### 6. Muestra la solución
+
+En esta actividad debemos realizar los diagramas de arquitectura para
+asegurarnos que todos estamos pensando y conceptualizando la misma
+solución.
+
+Es ideal conocer las herramientas y la arquitectura para poder entender
+si los integrantes del equipo de desarrollo tienen los skills necesarios
+para poder desarrollar la solución.
+
+Para implementar esta dinámica es necesario saber cual es el MVP
+(Producto mínimo viable) que se puede desarrollar para poder mostrar
+cual es la solución y entender si la misma es factible y si es de
+interés para los usuarios finales del producto.
+
+------------------------------------------------------------------------
+
+### 7. ¿Qué te quita el sueño?
+
+El objetivo es identificar los riesgos y poder resolverlos. Un ejemplo
+puede ser el siguiente:
+
+Problemática: Necesitamos trabajar en un proyecto que se desarrolle en
+GO, pero no hay desarrolladores que conozcan cómo programar en este
+lenguaje.
+
+Solución: Planificar capacitaciones para mitigar el riesgo.
+
+Algunas problemáticas no podrán ser resueltas tan fácilmente ya que
+pueden ser restricciones regulatorias de alguna industria, por lo cual
+es necesario que las mismas sean informadas al equipo y ver que acciones
+tomar.
+
+------------------------------------------------------------------------
+
+### 8. Estimar tamaños
+
+Necesitamos poder estimar a alto nivel cuál es la duración del proyecto y
+el esfuerzo que puede tener.
+
+Es difícil poder estimar fechas exactas, más aún cuando estamos en el
+inicio del proyecto.
+
+Una de las dinámicas que se puede aplicar es realizar un planning poker
+
+### 8.1. Planning poker
+
+#### ¿Que es el planning poker?
+
+El Planning Poker es una técnica para la estimación de tareas y fue
+utilizado por James Grenning en un equipo ágil utilizando XP en 2002.
+
+#### Cartas de planning poker
+
+El sistema utiliza un rango de valores basado en la secuencia Fibonacci,
+pero también existen las cartas 0 (tarea ya realizada), ½ (tarea
+sencilla), ? (se requiere mayor información para poder estimar) ,
+infinito (tarea muy grande y requiere separarse en tareas más pequeñas)
+y un café (el equipo requiere un break) como se visualizan en la imagen.
+
+#### ¿Cómo se realiza la estimación?
+
+Cada miembro del equipo de desarrollo selecciona una carta. Una vez que
+todos tengan seleccionada una carta, se ponen boca arriba todas a la
+vez.
+
+Posteriormente nos quedamos con la estimación media más elegida, o se
+debate hasta conseguir la unanimidad.
+
+Esto se repite con cada historia de usuario que haya que estimar.
+
+Algunas paginas para poder realizar esta dinámica de forma online:
+
+-   Planning poker agile App: Esta aplicación es open source y permite
+    estimar las historias de usuarios.
+
+-   Planning-poker: Es una aplicación que permite también hacer partidas
+    pero en su plan free es solo para cinco usuarios.
+
+------------------------------------------------------------------------
+
+### 9. Restricciones
+
+Los proyectos tienen factores clave de ejecución tales como : tiempo,
+alcance, dinero y, por supuesto, calidad. Es fundamental saber cuáles de
+estos factores son inamovibles y en cuáles hay flexibilidad.
+
+Otros factores que también se pueden tener en cuenta son:
+
+Facilidad de uso Sin defectos Primero en el mercado Seguridad Velocidad,
+entre otras.
+
+------------------------------------------------------------------------
+
+### 10. ¿Cuánto cuesta?
+
+Aquí definimos cuál es el entregable a realizar en el roadmap y cuales
+son los costos asociados.
+
+Para la estimación es necesario tener en cuenta los siguientes puntos:
+\* Estimar el equipo de proyecto. \* Tiempo de duración Presupuesto.
+
+------------------------------------------------------------------------
+
+#### Referencias:
+
+1.  James Grenning (2002). Planning Poker or How to avoid analysis
+    paralysis while release planning, Link:
+    <https://wingman-sw.com/papers/PlanningPoker-v1.1.pdf>
+2.  Elleithy, S. & Sidky, A. (2014). The mindset behind estimating and
+    planning for agile. Paper presented at PMI® Global Congress 2014 ---
+    North America, Phoenix, AZ. Newtown Square, PA: Project Management
+    Institute, Link:
+    <https://www.pmi.org/learning/library/mindset-estimating-planning-agile-9340>
+3.  Amit Maimon ( 2017).How Self-Managed Teams Can Resolve Conflict.
+    Link:
+    <https://hbr.org/2017/04/how-self-managed-teams-can-resolve-conflict>
+    4.Jonathan Rasmusson (2010). The Agile Samurai. How Agile Masters
+    Deliver Great Software.
