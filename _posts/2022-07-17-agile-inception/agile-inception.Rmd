@@ -1,7 +1,7 @@
 ---
 title: "Agile inception"
 description: |
-  En el siguiente artículo te cuento sobre un conjunto de actividades que te permiten reducir la incertidumbre y alinear a todas las personas de un equipo de producto para que se puedan tener objetivos comunes.
+  En el siguiente artículo te cuento sobre un conjunto de actividades que te permiten reducir la incertidumbre y alinear a todas las personas de un equipo de producto para que puedan tener objetivos comunes.
 categories:
   - Proyectos
   - Metodologias
@@ -254,14 +254,12 @@ Para la estimación es necesario tener en cuenta los siguientes puntos:
 
 -   Estimar el equipo de proyecto.
 
-```{=html}
 <!-- -->
-```
+
 -   Tiempo de duración
 
-```{=html}
 <!-- -->
-```
+
 -   Presupuesto.
 
 ------------------------------------------------------------------------
