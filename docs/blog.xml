@@ -13,17 +13,17 @@ on software, agile methodologies , data science and the professor life.
       <link>https://r0mymendez.github.io/</link>
     </image>
     <generator>Distill</generator>
-    <lastBuildDate>Wed, 17 Aug 2022 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 23 Jul 2022 00:00:00 +0000</lastBuildDate>
     <item>
-      <title>Agile inception</title>
+      <title>10 sitios para aprender [gratis] Git!</title>
       <dc:creator>Romina Mendez</dc:creator>
-      <link>https://r0mymendez.github.io/posts/2022-07-17-agile-inception</link>
-      <description>En el siguiente artículo te cuento sobre un conjunto de actividades que te permiten reducir la incertidumbre y alinear a todas las personas de un equipo de producto para que puedan tener objetivos comunes.</description>
+      <link>https://r0mymendez.github.io/posts/2022-07-23-aprender-git</link>
+      <description>Si quieres aprender Git aquí te dejo recursos para poder lograr este objetivo.</description>
       <category>Proyectos</category>
       <category>Metodologias</category>
-      <guid>https://r0mymendez.github.io/posts/2022-07-17-agile-inception</guid>
-      <pubDate>Wed, 17 Aug 2022 00:00:00 +0000</pubDate>
-      <media:content url="https://img.freepik.com/free-vector/happy-united-business-team_74855-6520.jpg?" medium="image" type="text/plain"/>
+      <guid>https://r0mymendez.github.io/posts/2022-07-23-aprender-git</guid>
+      <pubDate>Sat, 23 Jul 2022 00:00:00 +0000</pubDate>
+      <media:content url="https://img.freepik.com/free-vector/file-bundle-concept-illustration_114360-2288.jpg" medium="image" type="image/jpeg"/>
     </item>
     <item>
       <title>Conviértete en una data analyst de película</title>
@@ -38,6 +38,17 @@ on software, agile methodologies , data science and the professor life.
       <guid>https://r0mymendez.github.io/posts/2022-07-17-adalab-workshop-python</guid>
       <pubDate>Sun, 17 Jul 2022 00:00:00 +0000</pubDate>
       <media:content url="https://img.freepik.com/free-vector/people-watching-movie-home_23-2148568229.jpg" medium="image" type="image/jpeg"/>
+    </item>
+    <item>
+      <title>Agile inception</title>
+      <dc:creator>Romina Mendez</dc:creator>
+      <link>https://r0mymendez.github.io/posts/2022-07-17-agile-inception</link>
+      <description>En el siguiente artículo te cuento sobre un conjunto de actividades que te permiten reducir la incertidumbre y alinear a todas las personas de un equipo de producto para que puedan tener objetivos comunes.</description>
+      <category>Proyectos</category>
+      <category>Metodologias</category>
+      <guid>https://r0mymendez.github.io/posts/2022-07-17-agile-inception</guid>
+      <pubDate>Sun, 17 Jul 2022 00:00:00 +0000</pubDate>
+      <media:content url="https://img.freepik.com/free-vector/happy-united-business-team_74855-6520.jpg?" medium="image" type="text/plain"/>
     </item>
     <item>
       <title>Notas en Medios</title>

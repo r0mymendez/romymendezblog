@@ -12,7 +12,7 @@ twitter:
 author:
   - name: Romina Mendez
     url: https://r0mymendez.github.io/romymendezblog/
-date: 08-17-2022
+date: 07-17-2022
 output:
   distill::distill_article:
     self_contained: yes

@@ -1,0 +1,118 @@
+---
+title: "10 sitios para aprender [gratis] Git!"
+description: |
+ Si quieres aprender Git aquí te dejo recursos para poder lograr este objetivo.
+categories:
+  - Proyectos
+  - Metodologias
+preview: "https://img.freepik.com/free-vector/file-bundle-concept-illustration_114360-2288.jpg"
+twitter:
+  site: "@r0mymendez"
+  creator: "@r0mymendez"
+author:
+  - name: Romina Mendez
+    url: https://r0mymendez.github.io/romymendezblog/
+date: 07-23-2022
+output:
+  distill::distill_article:
+    self_contained: yes
+    toc: yes
+editor_options: 
+  markdown: 
+    wrap: sentence
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+# 10 sitios para aprender [gratis] Git!
+
+Si quieres aprender Git aquí te dejo recursos para poder lograr este objetivo.
+
+## ¿Que es Git?
+
+**Git** es un sistema de control de versiones de código abierto que permite manejar y realizar control de versiones en proyectos de desarrollo de software.
+Fue desarrollado en 2005 por **Linus Torvalds**, el creador de del kernel de sistema operativo de Linux.
+
+![](https://miro.medium.com/max/1400/1*JE5XKhWTnNsLpD01p6KhQA.png){style="margin: auto; display: block;"}
+
+## **Control de versiones.**
+
+En la siguiente imagen se puede ver un simple ejemplo de un documento que fue modificado varias veces y cada version nueva tiene una nueva denominación.
+
+Este mismo ejemplo se puede reproducir en un equipo, donde varios desarrolladores modifican un mismo documento.
+Esto trae como consecuencia la dificultad de gestionar los cambios y problemas para documentar el porque de las modificaciones.
+
+Debido a esto Git es una herramienta que nos permite trabajar de forma ordenada, con un equipo de desarrollo y sin preocuparnos de tener multiples versiones del mismo documento.
+
+![Phdcomics.com: <https://twitter.com/phdcomics/status/1306536945980383232>](https://miro.medium.com/max/1400/1*NMAV92NJ57q3QNFH67dl4A.jpeg){style="margin: auto; display: block;" width="472"}
+
+# **Como aprender Git**
+
+A continuación te dejo 10 sitios para poder aprender Git de manera gratuita.
+
+## [**1. Codeacademy**](https://www.codecademy.com/learn/learn-git)
+
+Codeacademy es una plataforma de cursos de desarrollo y uno de ellos permite aprender git con una consola online y contiene 12 capítulos con ejercicios para realizar.
+
+![](https://miro.medium.com/max/1400/1*34VoOaqwi7kWDE8LeU3MNQ.png){style="margin: auto; display: block;"}
+
+## [**2. Git Documentation**](https://git-scm.com/doc)
+
+En el sitio web oficial de git existe la documentación disponible con video y tutoriales para poder aprender fácilmente.
+
+## [**3. Oh my git**](https://ohmygit.org/)
+
+Es un juego interactivo, el cual es un desarrollo de código abierto y tiene como objetivo realizar diferentes desafios y aprender como trabajar con git.
+
+![<https://ohmygit.org/>](https://miro.medium.com/max/1400/1*vpipQMVuEDffV81mmK52WA.png){style="margin: auto; display: block;" width="575"}
+
+## [4. Git cheat sheet](https://training.github.com/downloads/github-git-cheat-sheet.pdf)
+
+Esta es una cheet sheet en pdf que te permite recordar los comando básicos y una breve explicación de como utilizarlos .
+
+Este documento lo puedes descargar en varios idiomas incluyendo español e ingles.
+
+![](https://miro.medium.com/max/1400/1*hTAlQIImD_GCzz1hBufmQA.jpeg){style="margin: auto; display: block;"}
+
+## [**5. Atlassian Tutorial**](https://www.atlassian.com/git/tutorials/learn-git-with-bitbucket-cloud)
+
+Atlassian tiene varios libros online en ingles y español que permite aprender git y como implementarlo utilizando bitbucket cloud.
+
+## [**6. Rstudio Git:**](https://ecodatasci-tlv.github.io/git-rmd/pres.html#1)
+
+Rstudio que es una IDE que permite el desarrollo principalmente en lenguaje R, aunque actualmente soporta varios lenguajes adicionales tales como python, permite versionar codigo con git.
+
+![](https://miro.medium.com/max/1200/1*gz_MdIAku3Id0cYXzJnHxw.png){style="margin: auto; display: block;" width="450"}
+
+## [**7. Happy git with r**](https://happygitwithr.com/)
+
+Para desarrolladores de R también tenemos este sitio con más de 40 capítulos en cual muestra como implementar git en un proyecto de R.
+
+## [**8. Learn Git Branching**](https://learngitbranching.js.org/?locale=es_AR)
+
+Esta aplicación te permite aprender de manera interactiva a trabajar con ramas en git
+
+![](https://miro.medium.com/max/1400/1*jnEyB292vBxl6x9B0V4aqA.png){style="margin: auto; display: block;" width="476"}
+
+## [**9. Git Tower Book**](https://www.git-tower.com/learn/git/ebook)
+
+Es un libro online con varios capítulos desde los introductorios hasta los más avanzados para aprender como implementar la git en un proyecto de desarrollo.
+
+![https://www.git-tower.com/learn/git/ebook/en/desktop-gui/basics/what-is-version-control](https://miro.medium.com/max/1400/1*_6QIBpkS2AofGa03RkRQZg.png){style="margin: auto; display: block;" width="554"}
+
+## [**10. W3shcools**](https://www.w3schools.com/git/)
+
+Es una plataforma para aprender a programar en varios lenguajes, pero también posee ejercicios que se pueden resolver desde una consola desde la misma web y aprender de forma interactiva.
+
+Adicionalmente posee un examen para con varias preguntas para evaluar tu conocimiento sobre Git.
+
+### Otras referencias:
+
+1.  GIT: <https://git-scm.com/>
+
+2.  What is GIT?:
+    <https://www.atlassian.com/es/git/tutorials/what-is-git>
+
+\
