@@ -37,7 +37,7 @@ Fue desarrollado en 2005 por **Linus Torvalds**, el creador de del kernel de sis
 
 ![](https://miro.medium.com/max/1400/1*JE5XKhWTnNsLpD01p6KhQA.png){style="margin: auto; display: block;"}
 
-## **Control de versiones.**
+## **Control de versiones**
 
 En la siguiente imagen se puede ver un simple ejemplo de un documento que fue modificado varias veces y cada version nueva tiene una nueva denominación.
 
@@ -80,7 +80,7 @@ Este documento lo puedes descargar en varios idiomas incluyendo español e ingle
 
 Atlassian tiene varios libros online en ingles y español que permite aprender git y como implementarlo utilizando bitbucket cloud.
 
-## [**6. Rstudio Git:**](https://ecodatasci-tlv.github.io/git-rmd/pres.html#1)
+## [**6. Rstudio Git**](https://ecodatasci-tlv.github.io/git-rmd/pres.html#1)
 
 Rstudio que es una IDE que permite el desarrollo principalmente en lenguaje R, aunque actualmente soporta varios lenguajes adicionales tales como python, permite versionar codigo con git.
 

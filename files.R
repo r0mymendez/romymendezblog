@@ -12,7 +12,7 @@ file.create(".nojekyll")
 
 
 
-
+`r fontawesome::fa("linkedin", height = "25px")`
 
 ---
   title: "Romy Mendez"

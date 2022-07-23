@@ -2,14 +2,16 @@
 title: "Romy Mendez"
 image: "image/profile/romi_profile.jpg"
 links:
-  - label: LinkedIn
+  - label: '`r fontawesome::fa("linkedin", height = "25px")`'
     url: "https://www.linkedin.com/in/mendezromina/"
-  - label: Twitter
+  - label: '`r fontawesome::fa("twitter", height = "25px")`'
     url: "https://twitter.com/r0mymendez"
-  - label: GitHub
+  - label: '`r fontawesome::fa("github", height = "25px")`'
     url: "https://github.com/r0mymendez"
-  - label: Instagram
+  - label: '`r fontawesome::fa("instagram", height = "25px")`'
     url: "https://www.instagram.com/r0mymendez/?hl=es-la"
+  - label: '`r fontawesome::fa("dev", height = "25px")`'
+    url: "https://dev.to/r0mymendez"
 site: distill::distill_website
 output:
   postcards::trestles
