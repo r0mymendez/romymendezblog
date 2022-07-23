@@ -5,7 +5,7 @@ description: |
 categories:
   - Proyectos
   - Metodologias
-preview: "https://img.freepik.com/free-vector/file-bundle-concept-illustration_114360-2288.jpg"
+preview: "https://img.freepik.com/free-vector/team-programmers-working-program-code-with-laptops-teamwork-male-female-professional-testers-coders-flat-vector-illustration-software-development-programming-lesson-concept_74855-22051.jpg"
 twitter:
   site: "@r0mymendez"
   creator: "@r0mymendez"
@@ -100,7 +100,7 @@ Esta aplicación te permite aprender de manera interactiva a trabajar con ramas 
 
 Es un libro online con varios capítulos desde los introductorios hasta los más avanzados para aprender como implementar la git en un proyecto de desarrollo.
 
-![https://www.git-tower.com/learn/git/ebook/en/desktop-gui/basics/what-is-version-control](https://miro.medium.com/max/1400/1*_6QIBpkS2AofGa03RkRQZg.png){style="margin: auto; display: block;" width="554"}
+![<https://www.git-tower.com/learn/git/ebook/en/desktop-gui/basics/what-is-version-control>](https://miro.medium.com/max/1400/1*_6QIBpkS2AofGa03RkRQZg.png){style="margin: auto; display: block;" width="554"}
 
 ## [**10. W3shcools**](https://www.w3schools.com/git/)
 
