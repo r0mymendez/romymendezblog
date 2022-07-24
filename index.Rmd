@@ -8,6 +8,8 @@ links:
     url: "https://twitter.com/r0mymendez"
   - label: '`r fontawesome::fa("github", height = "25px")`'
     url: "https://github.com/r0mymendez"
+  - label: '`r fontawesome::fa("blog", height = "25px")`'
+    url: "https://r0mymendez.github.io/romymendezblog/blog.html"
   - label: '`r fontawesome::fa("instagram", height = "25px")`'
     url: "https://www.instagram.com/r0mymendez/?hl=es-la"
   - label: '`r fontawesome::fa("dev", height = "25px")`'
