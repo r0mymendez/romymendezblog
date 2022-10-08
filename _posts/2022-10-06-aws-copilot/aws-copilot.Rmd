@@ -5,7 +5,7 @@ description: |
 categories:
   - AWS
   - Cloud Computing
-preview: "https://img.freepik.com/free-vector/cloud-sync-electronic-device-illustration_529539-67.jpg"
+preview: "https://img.freepik.com/free-vector/two-users-searchig-big-data-cloud-computing-storage-technology-large-database-data-analysis-digital-information-concept-vector-isolated-illustration_335657-2200.jpg"
 twitter:
   site: "@r0mymendez"
   creator: "@r0mymendez"
