@@ -13,7 +13,18 @@ on software, agile methodologies , data science and the professor life.
       <link>https://r0mymendez.github.io/</link>
     </image>
     <generator>Distill</generator>
-    <lastBuildDate>Sat, 23 Jul 2022 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 06 Oct 2022 00:00:00 +0000</lastBuildDate>
+    <item>
+      <title>AWS Copilot</title>
+      <dc:creator>Romina Mendez</dc:creator>
+      <link>https://r0mymendez.github.io/posts/2022-10-06-aws-copilot</link>
+      <description>En el siguiente artículo te cuento que es AWS Copilot, como se utiliza este proyecto y la facilidad de implementarlo.</description>
+      <category>AWS</category>
+      <category>Cloud Computing</category>
+      <guid>https://r0mymendez.github.io/posts/2022-10-06-aws-copilot</guid>
+      <pubDate>Thu, 06 Oct 2022 00:00:00 +0000</pubDate>
+      <media:content url="https://img.freepik.com/free-vector/cloud-sync-electronic-device-illustration_529539-67.jpg" medium="image" type="image/jpeg"/>
+    </item>
     <item>
       <title>10 sitios para aprender [gratis] Git!</title>
       <dc:creator>Romina Mendez</dc:creator>
