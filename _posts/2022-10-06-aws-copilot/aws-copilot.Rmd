@@ -82,7 +82,7 @@ Simplemente es necesario seleccionar la combinación de CPU y memoria que necesi
 Esta herramienta administra los componentes que son necesarios para el despliegue y el funcionamiento de una aplicación tales como VPC, balanceadores de carga, flujos de implementación y almacenamiento.
 Por lo cual solo es necesario proporcionar un contenedor de la aplicación y mínimas configuraciones necesarias, dando como resultado una implementación más rápida y haciendo foco en el desarrollo de aplicación.
 
-## 🔎Comparativa de tareas a realizar 
+## 🔎 Comparativa de tareas a realizar 
 
 Ver como los servicios se van a comunicar entre sí, por lo cual hay que tener en cuenta los siguientes escenarios:
 
@@ -137,14 +137,14 @@ Los pasos como se ven en el flujo son los siguientes:
 4.  Al ejecutar el init posteriormente van aparecer algunas preguntas para responder tales como: el <font style="background-color:#CDFECF;">`nombre de la aplicación`</font> , <font style="background-color:#CDFECF;">`tipo de servicio`</font> , <font style="background-color:#CDFECF;">`nombre del servicio`</font> y <font style="background-color:#CDFECF;">`la ubicación del dockerfile`</font>
 5.  En este ultimo paso se va a retorna una <font style="background-color:#CDFECF;">URL</font> para poder acceder a la aplicación.
 
-## 🔎Logs
+## 🔎 Logs
 
 Para obtener los logs de los contenedores desplegados, es necesario ejecutar el siguiente comando:
 
 | \$ copilot svc logs- follow |
 |-----------------------------|
 
-## 📉Tráfico a producción
+## 📉 Tráfico a producción
 
 Para hacer el despliegue en producción es necesario poder generar diferentes ambientes, por lo cual para generarlos es necesario ejecutar el siguiente comando**.**
 
