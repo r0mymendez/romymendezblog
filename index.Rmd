@@ -23,7 +23,8 @@ output:
 ### About me 
 </center>
 <br/>
-  Soy **r0mymendez** , Data Scientist & Data Engineer 👩🔬 **+** Profesora en la [`Universidad de Belgrano`](http://www.ub.edu.ar/) y en [`EANT`](https://eant.tech/).
+  Soy **r0mymendez** , Data Architect & Data Engineer 👩🔬 **+** Profesora en la [`Universidad de Belgrano`](http://www.ub.edu.ar/) y en [`EANT`](https://eant.tech/).
+Disfruto trabajando en proyectos durante mis momentos libres 🚀. Si estás buscando colaboración en algún proyecto específico o necesitas orientación sobre cómo abordar un nuevo proyecto, no dudes en ponerte en contacto conmigo a través de cualquiera de mis redes sociales.
 
 ---
 

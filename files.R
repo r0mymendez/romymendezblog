@@ -9,6 +9,8 @@ create_post("CheatSheet SQL")
 create_post("Agile inception")
 create_post("adalab workshop python")
 create_post("AWS Copilot")
+create_post("Data Quality")
+
 file.create(".nojekyll")
 
 

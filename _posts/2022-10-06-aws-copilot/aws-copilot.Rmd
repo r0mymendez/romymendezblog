@@ -86,37 +86,25 @@ Por lo cual solo es necesario proporcionar un contenedor de la aplicación y mí
 
 Ver como los servicios se van a comunicar entre sí, por lo cual hay que tener en cuenta los siguientes escenarios:
 
-+--------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------+---------------------------------------------------------------------+
 | Actividades                                                                                                  | SIN AWS-copilot                                                     | CON AWS-copilot                                                     |
-+==============================================================================================================+=====================================================================+=====================================================================+
+|--------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------|---------------------------------------------------------------------|
 | <strong><font style="background-color:#FAFAFA;">Desarrollo de la aplicación</font></strong>                  | <font style="background-color:#CDFECF;">Equipo de desarrollo</font> | <font style="background-color:#CDFECF;">Equipo de desarrollo</font> |
-+--------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------+---------------------------------------------------------------------+
 | <strong><font style="background-color:#FAFAFA;">Generación del contenedor</font></strong>                    | <font style="background-color:#CDFECF;">Equipo de desarrollo</font> | <font style="background-color:#CDFECF;">Equipo de desarrollo</font> |
-+--------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------+---------------------------------------------------------------------+
 | <strong><font style="background-color:#FAFAFA;">Subredes de Virtual Private Cloud (VPC)</font></strong>      | <font style="background-color:#CDFECF;">Equipo de desarrollo</font> | <font style="background-color:#FFEDC4;">AWS-Copilot</font>          |
-+--------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------+---------------------------------------------------------------------+
 | <strong><font style="background-color:#FAFAFA;">Balanceadores de carga</font></strong>                       | <font style="background-color:#CDFECF;">Equipo de desarrollo</font> | <font style="background-color:#FFEDC4;">AWS-Copilot</font>          |
-+--------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------+---------------------------------------------------------------------+
 | <strong><font style="background-color:#FAFAFA;">Flujos de implementación (ci/cd)</font></strong>             | <font style="background-color:#CDFECF;">Equipo de desarrollo</font> | <font style="background-color:#FFEDC4;">AWS-Copilot</font>          |
-+--------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------+---------------------------------------------------------------------+
 | <strong><font style="background-color:#FAFAFA;">Almacenamiento persistente de su aplicación.</font></strong> | <font style="background-color:#CDFECF;">Equipo de desarrollo</font> | <font style="background-color:#FFEDC4;">AWS-Copilot</font>          |
-+--------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------+---------------------------------------------------------------------+
 | <strong><font style="background-color:#FAFAFA;">Sincronizar el despliegue en ambientes</font></strong>       | <font style="background-color:#CDFECF;">Equipo de desarrollo</font> | <font style="background-color:#FFEDC4;">AWS-Copilot</font>          |
-+--------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------+---------------------------------------------------------------------+
 
 ## 🧩 Componentes
 
 La siguiente tabla contiene los componentes que se configuran al utilizar el servicio de aws copilot.
 
-+----------------------------------------------------------------------------+-----------------------------------------------------------------------------------------+
 | **Componente**                                                             | **Descripción**                                                                         |
-+============================================================================+=========================================================================================+
+|----------------------------------------------------------------------------|-----------------------------------------------------------------------------------------|
 | <strong><font style="background-color:#CDFECF;">Aplicación</font></strong> | \| Una aplicación es un mecanismo de agrupación de las piezas de su sistema.            |
-+----------------------------------------------------------------------------+-----------------------------------------------------------------------------------------+
 | <strong><font style="background-color:#FFFFBC;">Ambiente</font></strong>   | Un ambiente es una etapa del despliegue de una aplicación.                              |
-+----------------------------------------------------------------------------+-----------------------------------------------------------------------------------------+
 | <strong><font style="background-color:#D7EFFF;">Servicio</font></strong>   | Un servicio es un proceso único de código de larga ejecución dentro de un contenedor.   |
-+----------------------------------------------------------------------------+-----------------------------------------------------------------------------------------+
 
 ## ⚒️ Instalación y utilización 
 

@@ -911,7 +911,7 @@ response = context.run_checkpoint(checkpoint_name=checkpoint_name)
  context.open_data_docs()
 ```
 
-> Al ejecutar este chunck de codigo se va abrir un archivo html con el resultado de las validaciones que esta en \`\`
+> Al ejecutar este chunck de codigo se va abrir un archivo html con el resultado de las validaciones que esta en `gx/uncommitted/data_docs/local_site/validations/tips_expectation_suite/__none__/20231112T192529.002401Z/722b2e93e32fd7222c8ad9339f3e0e1d.html`
 
 ![](https://i.ibb.co/YfzkPPb/gx-1.png){width="684"}
 
