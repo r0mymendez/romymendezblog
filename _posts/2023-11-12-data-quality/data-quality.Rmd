@@ -5,7 +5,7 @@ description: |
 categories:
   - Data
   - Python
-preview: "https://i.ibb.co/mNPYPwy/data-analysis-concept-illustration-114360-8013.jpg"
+preview: "https://img.freepik.com/free-vector/statistics-concept-illustration_114360-4254.jpg"
 twitter:
   site: "@r0mymendez"
   creator: "@r0mymendez"
