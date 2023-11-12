@@ -3,7 +3,6 @@ title: "Agile inception"
 description: |
   En el siguiente artículo te cuento sobre un conjunto de actividades que te permiten reducir la incertidumbre y alinear a todas las personas de un equipo de producto para que puedan tener objetivos comunes.
 categories:
-  - Proyectos
   - Metodologias
 preview: "https://img.freepik.com/free-vector/happy-united-business-team_74855-6520.jpg?"
 twitter:

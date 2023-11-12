@@ -3,7 +3,6 @@ title: "10 sitios para aprender [gratis] Git!"
 description: |
  Si quieres aprender Git aquí te dejo recursos para poder lograr este objetivo.
 categories:
-  - Proyectos
   - Metodologias
 preview: "https://img.freepik.com/free-vector/team-programmers-working-program-code-with-laptops-teamwork-male-female-professional-testers-coders-flat-vector-illustration-software-development-programming-lesson-concept_74855-22051.jpg"
 twitter:

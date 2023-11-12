@@ -6,8 +6,6 @@ description: |
 categories:
   - Python
   - Tesing
-  - Programacion
-  - Workshop
 preview: "https://image.freepik.com/free-vector/tiny-people-testing-quality-assurance-software-isolated-flat-vector-illustration-cartoon-character-fixing-bugs-hardware-device-application-test-it-service-concept_74855-10172.jpg"
 author:
   - name: Romina Mendez
@@ -308,22 +306,37 @@ El plan de pruebas debe poder respondernos tres preguntas:
 
 A continuación se detalla cuales son los conceptos basicos que deberiamos tener para realizar un plan de pruebas y un template que puede ser utilizado para desarrollar un plan de prueba.
 
++----------+--------------------------------------------------------------------------------------------------------------+
 | Concepto | Descripción                                                                                                  |
-|----------|--------------------------------------------------------------------------------------------------------------|
++==========+==============================================================================================================+
 | 1\.      | **iD Plan de prueba:** Identifica de forma única el plan de prueba y puede incluir el número de versión.     |
++----------+--------------------------------------------------------------------------------------------------------------+
 | 2\.      | **Introducción:** Establece objetivos, alcance, metas, recursos y restricciones presupuestarias.             |
++----------+--------------------------------------------------------------------------------------------------------------+
 | 3\.      | **Elementos de prueba:** Enumera los sistemas y subsistemas que se van a probar.                             |
++----------+--------------------------------------------------------------------------------------------------------------+
 | 4\.      | **Alcance:** Todas las características y funcionalidades que se probarán se enumeran aquí.                   |
++----------+--------------------------------------------------------------------------------------------------------------+
 | 5\.      | **Fuera del alcance:** Enumera cuales son las características que no deben testear.                          |
++----------+--------------------------------------------------------------------------------------------------------------+
 | 6\.      | **Criterio de aceptación:** Ver cual es el criterio de éxito.                                                |
++----------+--------------------------------------------------------------------------------------------------------------+
 | 7\.      | **Calendario:** Se enumeran los detalles sobre cuándo se realizarán las actividades de pruebas.              |
++----------+--------------------------------------------------------------------------------------------------------------+
 | 8\.      | **Criterio de suspensión:** Cuales son los criterios por los que se puede suspender las pruebas.             |
++----------+--------------------------------------------------------------------------------------------------------------+
 | 9\.      | **Entregables:** Incluye casos de prueba, datos de muestra, informe de prueba, registro de problemas.        |
++----------+--------------------------------------------------------------------------------------------------------------+
 | 10\.     | **Tarea de pruebas:** Describe las dependencias entre las tareas y los recursos necesario.                   |
++----------+--------------------------------------------------------------------------------------------------------------+
 | 11\.     | **Ambientes:** Enumera los requisitos de prueba de software, hardware u otros.                               |
++----------+--------------------------------------------------------------------------------------------------------------+
 | 12\.     | **Responsabilidades:** Enumera las funciones y responsabilidades asignadas al equipo de pruebas.             |
++----------+--------------------------------------------------------------------------------------------------------------+
 | 13\.     | **Recursos:** Describe las necesidades, dedicación en tiempo y conocimientos necesarios del grupo de testing |
++----------+--------------------------------------------------------------------------------------------------------------+
 | 14\.     | **Riesgos:** Se enumeran los riesgos generales del proyecto en lo que respecta a las pruebas.                |
++----------+--------------------------------------------------------------------------------------------------------------+
 
 ## **Casos de prueba**
 
@@ -333,20 +346,33 @@ Los `casos de pruebas` o `test case` es un conjunto de condiciones previas (requ
 
 Estos casos deben estar documentados y algunos conceptos que se deberian dejar documentado son los siguientes:
 
++----------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 | Concepto | Descripción                                                                                                                                                                |
-|----------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
++==========+============================================================================================================================================================================+
 | 1\.      | **iD Caso de prueba:** Número de identificación de caso de prueba único.                                                                                                   |
++----------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 | 2\.      | **Requisito Previo:** Condiciones que deben cumplirse antes que pueda ejecutarse el caso de prueba.                                                                        |
++----------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 | 3\.      | **Pasos de prueba:** Pasos detallados para la ejecución del caso de prueba, la misma debe contener: acción, resultado esperado y datos de entrada.                         |
++----------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 | 4\.      | **Resultados esperados:** Cual es el ouput que debería generarse cuando se ejecuta los pasos de pruebas anteriores.                                                        |
++----------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 | 5\.      | **Resultados reales:** Cual es el output que finalmente se generó después de ejecutar los pasos de pruebas anteriores.                                                     |
++----------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 | 6\.      | **Resultados Final:** Definir si pasa o no pasa.                                                                                                                           |
++----------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 | 7\.      | **Comentarios:** Agregar información útil tal como capturas de pantallas y descripciones.                                                                                  |
++----------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 | 8\.      | **Prioridad:** Definir una escala de la prioridad que se le asigna a esta prueba (alto, media, baja o no establecida.                                                      |
++----------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 | 9\.      | **Vencimiento:** Fecha límite en la que debe realizarse esta prueba.                                                                                                       |
++----------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 | 10\.     | **Modulo:** Cual es el modulo o componente sobre el que se va realizar la prueba.                                                                                          |
++----------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 | 11\.     | **Tipo:** Tipo de prueba que se va realizar la misma puede ser por ejemplo: usabilidad, seguridad, funcionalidad, integración, aceptación, performance, exploratorio, etc. |
++----------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 | 12\.     | **Responsable:** Persona que realiza la prueba.                                                                                                                            |
++----------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 ------------------------------------------------------------------------
 

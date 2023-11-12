@@ -6,8 +6,6 @@ categories:
   - DataViz
   - Python
   - Data
-  - Programacion
-  - Workshop
 preview: "https://img.freepik.com/free-vector/people-watching-movie-home_23-2148568229.jpg"
 author:
   - name: Romina Mendez

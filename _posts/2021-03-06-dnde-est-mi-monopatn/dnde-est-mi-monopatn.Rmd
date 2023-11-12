@@ -7,9 +7,6 @@ categories:
   - DataViz
   - Python
   - Data
-  - Mapas
-  - Programacion
-  - Workshop
 preview: "https://img.freepik.com/vector-gratis/hombre-montando-patinete-electrico-otono-concepto-transporte-ecologico_254685-275.jpg?size=626&ext=jpg"
 
 author:

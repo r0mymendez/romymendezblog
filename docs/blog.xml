@@ -19,8 +19,8 @@ on software, agile methodologies , data science and the professor life.
       <dc:creator>Romina Mendez</dc:creator>
       <link>https://r0mymendez.github.io/posts/2023-11-12-data-quality</link>
       <description>En el siguiente artículo te encontraras la definción de data quality, cuales son los dominios y como implementar una solución rapidamente.</description>
-      <category>AWS</category>
-      <category>Cloud Computing</category>
+      <category>Data</category>
+      <category>Python</category>
       <guid>https://r0mymendez.github.io/posts/2023-11-12-data-quality</guid>
       <pubDate>Sun, 12 Nov 2023 00:00:00 +0000</pubDate>
       <media:content url="https://i.ibb.co/mNPYPwy/data-analysis-concept-illustration-114360-8013.jpg" medium="image" type="image/jpeg"/>
@@ -30,7 +30,6 @@ on software, agile methodologies , data science and the professor life.
       <dc:creator>Romina Mendez</dc:creator>
       <link>https://r0mymendez.github.io/posts/2022-10-06-aws-copilot</link>
       <description>En el siguiente artículo te cuento que es AWS Copilot, como se utiliza este proyecto y la facilidad de implementarlo.</description>
-      <category>AWS</category>
       <category>Cloud Computing</category>
       <guid>https://r0mymendez.github.io/posts/2022-10-06-aws-copilot</guid>
       <pubDate>Thu, 06 Oct 2022 00:00:00 +0000</pubDate>
@@ -41,7 +40,6 @@ on software, agile methodologies , data science and the professor life.
       <dc:creator>Romina Mendez</dc:creator>
       <link>https://r0mymendez.github.io/posts/2022-07-23-aprender-git</link>
       <description>Si quieres aprender Git aquí te dejo recursos para poder lograr este objetivo.</description>
-      <category>Proyectos</category>
       <category>Metodologias</category>
       <guid>https://r0mymendez.github.io/posts/2022-07-23-aprender-git</guid>
       <pubDate>Sat, 23 Jul 2022 00:00:00 +0000</pubDate>
@@ -55,8 +53,6 @@ on software, agile methodologies , data science and the professor life.
       <category>DataViz</category>
       <category>Python</category>
       <category>Data</category>
-      <category>Programacion</category>
-      <category>Workshop</category>
       <guid>https://r0mymendez.github.io/posts/2022-07-17-adalab-workshop-python</guid>
       <pubDate>Sun, 17 Jul 2022 00:00:00 +0000</pubDate>
       <media:content url="https://img.freepik.com/free-vector/people-watching-movie-home_23-2148568229.jpg" medium="image" type="image/jpeg"/>
@@ -66,7 +62,6 @@ on software, agile methodologies , data science and the professor life.
       <dc:creator>Romina Mendez</dc:creator>
       <link>https://r0mymendez.github.io/posts/2022-07-17-agile-inception</link>
       <description>En el siguiente artículo te cuento sobre un conjunto de actividades que te permiten reducir la incertidumbre y alinear a todas las personas de un equipo de producto para que puedan tener objetivos comunes.</description>
-      <category>Proyectos</category>
       <category>Metodologias</category>
       <guid>https://r0mymendez.github.io/posts/2022-07-17-agile-inception</guid>
       <pubDate>Sun, 17 Jul 2022 00:00:00 +0000</pubDate>
@@ -88,8 +83,6 @@ on software, agile methodologies , data science and the professor life.
       <link>https://r0mymendez.github.io/posts/2021-09-10-rabbitmq-pika</link>
       <description>RabbitMQ permite gestionar colas de mensajes entre emisores y destinatarios, en el siguiente post vamos a utilizar en python **Pika** para su implementación.</description>
       <category>Python</category>
-      <category>Programacion</category>
-      <category>Tutorial</category>
       <guid>https://r0mymendez.github.io/posts/2021-09-10-rabbitmq-pika</guid>
       <pubDate>Fri, 10 Sep 2021 00:00:00 +0000</pubDate>
       <media:content url="https://image.freepik.com/free-vector/landing-page-send-message-illustration_126608-31.jpg" medium="image" type="image/jpeg"/>
@@ -100,7 +93,6 @@ on software, agile methodologies , data science and the professor life.
       <dc:creator/>
       <link>https://r0mymendez.github.io/posts/2021-02-21-apps-gratuitas-para-proyectos</link>
       <description>En el siguiente articulo te cuento sobre algunas aplicaciones free para utilizar en tus proyectos.</description>
-      <category>Proyectos</category>
       <category>Metodologias</category>
       <guid>https://r0mymendez.github.io/posts/2021-02-21-apps-gratuitas-para-proyectos</guid>
       <pubDate>Sun, 21 Feb 2021 00:00:00 +0000</pubDate>
@@ -127,8 +119,6 @@ on software, agile methodologies , data science and the professor life.
       <category>DataViz</category>
       <category>Python</category>
       <category>Data</category>
-      <category>Programacion</category>
-      <category>Workshop</category>
       <guid>https://r0mymendez.github.io/posts/2021-02-21-introduccin-a-visualizaciones-con-python</guid>
       <pubDate>Sun, 21 Feb 2021 00:00:00 +0000</pubDate>
       <media:content url="https://image.freepik.com/vector-gratis/ilustracion-analisis-mercado-valores_23-2148588123.jpg" medium="image" type="image/jpeg"/>
@@ -142,11 +132,9 @@ on software, agile methodologies , data science and the professor life.
       <category>DataViz</category>
       <category>R</category>
       <category>Data</category>
-      <category>Programacion</category>
-      <category>Workshop</category>
       <guid>https://r0mymendez.github.io/posts/2021-02-21-introduccin-a-visualizaciones-con-r</guid>
       <pubDate>Sun, 21 Feb 2021 00:00:00 +0000</pubDate>
-      <media:content url="https://www.binaryfountain.com/wp-content/uploads/2019/12/iStock-1069206352.jpg" medium="image" type="image/jpeg"/>
+      <media:content url="https://i.ibb.co/v1FjcLs/6151069.jpg" medium="image" type="image/jpeg"/>
     </item>
     <item>
       <title>Dataviz: Datos de Miercoles</title>
@@ -157,11 +145,9 @@ on software, agile methodologies , data science and the professor life.
       <category>DataViz</category>
       <category>R</category>
       <category>Data</category>
-      <category>Programacion</category>
-      <category>Workshop</category>
       <guid>https://r0mymendez.github.io/posts/2021-03-06-dataviz-datos-de-miercoles</guid>
       <pubDate>Sun, 21 Feb 2021 00:00:00 +0000</pubDate>
-      <media:content url="https://www.binaryfountain.com/wp-content/uploads/2019/12/iStock-1069206352.jpg" medium="image" type="image/jpeg"/>
+      <media:content url="https://i.ibb.co/TtmWkhn/3156627.jpg" medium="image" type="image/jpeg"/>
     </item>
     <item>
       <title>¿Dónde está mi monopatín?🛹</title>
@@ -172,9 +158,6 @@ on software, agile methodologies , data science and the professor life.
       <category>DataViz</category>
       <category>Python</category>
       <category>Data</category>
-      <category>Mapas</category>
-      <category>Programacion</category>
-      <category>Workshop</category>
       <guid>https://r0mymendez.github.io/posts/2021-03-06-dnde-est-mi-monopatn</guid>
       <pubDate>Sun, 21 Feb 2021 00:00:00 +0000</pubDate>
       <media:content url="https://img.freepik.com/vector-gratis/hombre-montando-patinete-electrico-otono-concepto-transporte-ecologico_254685-275.jpg?size=626&amp;ext=jpg" medium="image" type="text/plain"/>
@@ -188,8 +171,6 @@ on software, agile methodologies , data science and the professor life.
 En este post podes encontrar los fundamentos para poder realizalo de manera practica en cualquier proyecto de desarrollo.</description>
       <category>Python</category>
       <category>Tesing</category>
-      <category>Programacion</category>
-      <category>Workshop</category>
       <guid>https://r0mymendez.github.io/posts/2021-03-06-fundamentos-de-testing</guid>
       <pubDate>Sun, 21 Feb 2021 00:00:00 +0000</pubDate>
       <media:content url="https://image.freepik.com/free-vector/tiny-people-testing-quality-assurance-software-isolated-flat-vector-illustration-cartoon-character-fixing-bugs-hardware-device-application-test-it-service-concept_74855-10172.jpg" medium="image" type="image/jpeg"/>

@@ -6,9 +6,7 @@ categories:
   - DataViz
   - R
   - Data
-  - Programacion
-  - Workshop
-preview: "https://www.binaryfountain.com/wp-content/uploads/2019/12/iStock-1069206352.jpg"
+preview: "https://i.ibb.co/TtmWkhn/3156627.jpg"
 author:
   - name: Romina Mendez
     url: {}

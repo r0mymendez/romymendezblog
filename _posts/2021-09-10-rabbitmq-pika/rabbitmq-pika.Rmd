@@ -4,8 +4,6 @@ description: |
   RabbitMQ permite gestionar colas de mensajes entre emisores y destinatarios, en el siguiente post vamos a utilizar en python **Pika** para su implementación.
 categories:
   - Python
-  - Programacion
-  - Tutorial
 preview: "https://image.freepik.com/free-vector/landing-page-send-message-illustration_126608-31.jpg"
 twitter:
   site: "@r0mymendez"
