@@ -50,41 +50,27 @@ source: [DataCamp cheat sheet](https://www.datacamp.com/cheat-sheet/data-quality
 
 En la siguiente tabla destaca los distintos dominios de calidad de datos, desde la precisión hasta la aptitud, proporcionando una guía esencial para evaluar y mejorar la robustez de los conjuntos de datos.
 
-+---------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 | **Dimensión**                   | **Descripción**                                                                                                                                                                                                             |
-+=================================+=============================================================================================================================================================================================================================+
+|---------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | **🎯 Precisión (Accuracy)**      | Exactitud de los datos, es decir, qué tan cerca están de la realidad o la verdad. Datos precisos son aquellos que reflejan con precisión la información que intentan representar.                                           |
-+---------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 | **🧩 Integridad (Completeness)** | Mide la totalidad de los datos. Un conjunto de datos completo es aquel que no tiene valores faltantes o huecos significativos. La integridad de los datos es crucial para obtener una visión completa y precisa.            |
-+---------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 | **✅ Validez (Validity)**        | Indica si los datos están en conformidad con las reglas y estándares definidos. Los datos válidos cumplen con las restricciones y criterios establecidos para un conjunto de datos específico.                              |
-+---------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 | **🔄 Coherencia (Consistency)**  | Se refiere a la uniformidad de los datos a lo largo del tiempo y entre diferentes conjuntos de datos. Datos coherentes no presentan contradicciones o discrepancias cuando se comparan entre sí.                            |
-+---------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 | **📇 Unicidad (Uniqueness)**     | Evalúa si no hay duplicados en los datos. Los datos únicos garantizan que cada entidad o elemento esté representado solo una vez en un conjunto de datos.                                                                   |
-+---------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 | **⌛ Oportunidad (Timeliness)**  | Se refiere a la actualidad de los datos. La información oportuna es aquella que está disponible cuando se necesita, sin demoras innecesarias.                                                                               |
-+---------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 | **🏋️ Aptitud (Fitness)**        | Este aspecto evalúa la relevancia y utilidad de los datos para el propósito previsto. Los datos deben ser adecuados y aplicables a los objetivos específicos de la organización o del análisis que se esté llevando a cabo. |
-+---------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 # Data quality dimensions- caso de uso
 
 A continuación colocamos un ejemplo en el que se puede observar algunos problemas que tiene un caso de uso basado en eccommerce
 
-+--------------------+----------------+--------------------------+--------------+---------------------+-----------+
 | **ID Transacción** | **ID Cliente** | **Producto**             | **Cantidad** | **Precio Unitario** | **Total** |
-+====================+================+==========================+==============+=====================+===========+
+|--------------------|----------------|--------------------------|--------------|---------------------|-----------|
 | ⚪ 1                | 10234          | Laptop HP                | 1            | \$800               | \$800     |
-+--------------------+----------------+--------------------------+--------------+---------------------+-----------+
 | 🟣 2                |                | Auriculares Inalámbricos | 2            | \$50                | \$100     |
-+--------------------+----------------+--------------------------+--------------+---------------------+-----------+
 | 🔵 3                | 10235          | Teléfono Inteligente     | -1           | \$1000              | -\$1000   |
-+--------------------+----------------+--------------------------+--------------+---------------------+-----------+
 | 🟢 4                | 10236          | Ratón Inalámbrico        | 3            | \$30                | \$90      |
-+--------------------+----------------+--------------------------+--------------+---------------------+-----------+
 | 🟢 4                | 10237          | Teclado Inalámbrico      | 2            | \$40                | \$80      |
-+--------------------+----------------+--------------------------+--------------+---------------------+-----------+
 
 1.  **🟣 Fila 2 (Completeness):** La fila 2 no cumple con la integridad de los datos (Completeness) ya que falta el ID del cliente.
     La información sobre el cliente está incompleta, lo que dificulta el seguimiento de la transacción hasta un cliente específico.
@@ -101,15 +87,11 @@ A continuación colocamos un ejemplo en el que se puede observar algunos problem
 
 Los siguientes son algunas de las implementaciones realizadas en python para poder realizar validaciones de la calidad de los datos
 
-+------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 | **Framework**                                                                      | **Descripción**                                                                                                                                                                                                                                 |
-+====================================================================================+=================================================================================================================================================================================================================================================+
+|------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | [**Great Expectations**](https://github.com/great-expectations/great_expectations) | Great Expectations es una biblioteca open-source para la validación de datos. Permite definir, documentar y validar expectativas sobre los datos, garantizando la calidad y consistencia en proyectos de ciencia de datos y análisis.           |
-+------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 | [**Pandera**](https://github.com/unionai-oss/pandera)                              | Pandera es una biblioteca de validación de datos para estructuras de datos en Python, especialmente diseñada para trabajar con DataFrames de pandas. Permite definir esquemas y reglas de validación para asegurar la conformidad de los datos. |
-+------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 | [**Dora**](https://github.com/NathanEpstein/Dora)                                  | Dora es una libreria python diseñada para automatizar exploración de datos y realizar analisis de datos exploratorios                                                                                                                           |
-+------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 Anlicemos algunas de las metricas que se pueden observar en sus repositorios de github, teniendo en cuenta que las metricas fueron obtenidas el `2023-11-12`
 
@@ -183,23 +165,15 @@ Para el desarrollo de este ejemplo utilizaremos el conjunto de datos denominado 
 
 El conjunto de datos "tips" que contiene información sobre las propinas dadas en un restaurante, junto con detalles sobre la factura total, el sexo de la persona que pagó la factura, si el cliente es fumador, el día de la semana y la hora de la comida.
 
-+--------------+-------------------------------------------------------+
-| **Columna**  | **Descripción**                                       |
-+==============+=======================================================+
-| total_bill   | El monto total de la factura (incluida la propina).   |
-+--------------+-------------------------------------------------------+
-| tip          | La cantidad de propina dada.                          |
-+--------------+-------------------------------------------------------+
-| sex          | El género del pagador de la factura (hombre o mujer). |
-+--------------+-------------------------------------------------------+
-| smoker       | Si el cliente es fumador o no.                        |
-+--------------+-------------------------------------------------------+
-| day          | El día de la semana en que se realizó la comida.      |
-+--------------+-------------------------------------------------------+
-| time         | El momento del día (almuerzo o cena).                 |
-+--------------+-------------------------------------------------------+
-| size         | El tamaño del grupo que compartió la comida           |
-+--------------+-------------------------------------------------------+
+| **Columna** | **Descripción**                                       |
+|-------------|-------------------------------------------------------|
+| total_bill  | El monto total de la factura (incluida la propina).   |
+| tip         | La cantidad de propina dada.                          |
+| sex         | El género del pagador de la factura (hombre o mujer). |
+| smoker      | Si el cliente es fumador o no.                        |
+| day         | El día de la semana en que se realizó la comida.      |
+| time        | El momento del día (almuerzo o cena).                 |
+| size        | El tamaño del grupo que compartió la comida           |
 
 A continuación una tabla con las primeras 5 filas del conjunto de datos:
 

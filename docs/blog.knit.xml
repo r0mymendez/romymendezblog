@@ -3,7 +3,7 @@
   <channel>
     <title>Romina Mendez</title>
     <link>https://r0mymendez.github.io/</link>
-    <atom:link href="https://r0mymendez.github.io/blog.xml" rel="self" type="application/rss+xml"/>
+    <atom:link href="https://r0mymendez.github.io/blog.knit.xml" rel="self" type="application/rss+xml"/>
     <description>Romina Mendez's personal blog/ site. Some  posts
 on software, agile methodologies , data science and the professor life.
 </description>
