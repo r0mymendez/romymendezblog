@@ -26,6 +26,79 @@ on software, agile methodologies , data science and the professor life.
       <media:content url="https://r0mymendez.github.io/posts/2023-11-13-spotify-methodology/spotify-illustration.jpeg" medium="image" type="image/jpeg"/>
     </item>
     <item>
+      <title>Introducción a la Cultura de Spotify - Parte II</title>
+      <dc:creator>Romina Mendez</dc:creator>
+      <dc:creator/>
+      <link>https://r0mymendez.github.io/posts/2023-11-14-spotify-methodology-2</link>
+      <description>
+
+
+&lt;h1 id="introducción-a-la-cultura-de-spotify---parte-ii"&gt;Introducción a la Cultura de Spotify - Parte II&lt;/h1&gt;
+&lt;p&gt;En el contexto actual del desarrollo de software, emergen nuevos paradigmas en torno a la agilidad y la colaboración en equipos de desarrollo como elementos cruciales para alcanzar el éxito en los proyectos. En este contexto, la metodología de Spotify se ha destacado como un enfoque innovador y altamente efectivo para la gestión de proyectos y el desarrollo de software.&lt;/p&gt;
+&lt;p&gt;Esta metodologia esta inspirada en la &lt;strong&gt;cultura&lt;/strong&gt; de &lt;strong&gt;colaboración&lt;/strong&gt; y &lt;strong&gt;creatividad&lt;/strong&gt; que caracteriza a la compañía de streaming de música líder en el mundo, donde este modelo ofrece una visión fresca y transformadora de cómo los equipos pueden trabajar juntos armoniosamente para lograr objetivos propuestos.&lt;/p&gt;
+&lt;p&gt;En esta introducción, exploraremos los conceptos fundamentales detrás de la cultura de Spotify, sus principios clave y cómo ha revolucionado la forma en que se abordan los proyectos ágiles.&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://r0mymendez.github.io//posts/2023-11-14-spotify-methodology-2/Spotify-2.png" /&gt;&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h2 id="team-organization"&gt;🟢 Team Organization&lt;/h2&gt;
+&lt;p&gt;Dentro de la metodología adoptada para la organización de equipos, se introducen conceptos clave que definen la estructura y dinámica colaborativa. A continuación, se detallan algunas de estas definiciones:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;📗&lt;strong&gt;Squad:&lt;/strong&gt; Un squad representa un grupo de individuos, enfocados en objetivos comunes y especificos.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;!-- --&gt;
+&lt;ul&gt;
+&lt;li&gt;📗&lt;strong&gt;Chapter:&lt;/strong&gt; Es una agrupación de personas con habilidades y roles similares, pero que trabajan en diferentes equipos o “Squads”. Los Chapters están diseñados para fomentar el desarrollo profesional, el intercambio de conocimientos y la colaboración entre personas que comparten áreas de experiencia específicas.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;!-- --&gt;
+&lt;ul&gt;
+&lt;li&gt;📗&lt;strong&gt;Tribu:&lt;/strong&gt; La tribu abarca múltiples squads y chapters que comparten objetivos y propósitos similares.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;!-- --&gt;
+&lt;ul&gt;
+&lt;li&gt;📗&lt;strong&gt;Gremio:&lt;/strong&gt; Un gremio se configura como una comunidad temática donde miembros de diferentes squads y chapters se reúnen para discutir y promover intereses comunes. Esta iniciativa ayuda a generar un sentido de comunidad y facilita la sinergia entre individuos con afinidades específicas.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src="https://r0mymendez.github.io//posts/2023-11-14-spotify-methodology-2/Spotify-2-1.png" /&gt;&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h2 id="experiment-friendly"&gt;🟢 Experiment Friendly&lt;/h2&gt;
+&lt;p&gt;En Spotify, se impulsa la creatividad no solo como un medio para generar nuevos productos, sino como un proceso de aprendizaje continuo. Se asigna aproximadamente el 10% del tiempo para que cada persona pueda dedicarse a proyectos creativos, fomentando así la innovación y el desarrollo individual.&lt;/p&gt;
+&lt;p&gt;Además, se alienta a las personas a unirse a gremios para compartir conocimientos, mientras siguen siendo parte de squads y chapters asignados. Esta cultura promueve la formación de comunidades y la expresión creativa dentro de una estructura menos rígida en comparación con organizaciones más jerárquicas.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Este enfoque flexible fomenta la colaboración, la comunidad y el desarrollo personal en un entorno que valora la experimentación y la creatividad.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;img src="https://r0mymendez.github.io//posts/2023-11-14-spotify-methodology-2/Spotify-2-2.png" /&gt;&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h2 id="lean-startup"&gt;🟢 Lean Startup&lt;/h2&gt;
+&lt;p&gt;En la búsqueda constante de la innovación, Spotify adopta la metodología “Lean Startup”, y por lo cual existen las siguientes fases:&lt;/p&gt;
+&lt;ol style="list-style-type: decimal"&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;Planteamiento de una Idea o Problema:&lt;/strong&gt; Se inicia identificando una idea o un problema que sirva como punto de partida.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;Diseño de un Prototipo:&lt;/strong&gt; La metodología impulsa la creación de un prototipo que ayuda a definir hipótesis, métricas y estrategias.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;Construcción del MVP (Producto Mínimo Viable):&lt;/strong&gt; A través de la selección del prototipo final, se procede a la construcción del MVP, una versión inicial del producto.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;Release y Ajustes Iterativos:&lt;/strong&gt; Una vez construido el MVP, se lanza para su implementación en grupos de usuarios, permitiendo la recopilación de datos y ajustes iterativos basados en el feedback. Este proceso se repite hasta alcanzar un producto deseado con una creciente base de usuarios.&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;blockquote&gt;
+&lt;p&gt;En este enfoque, se da prioridad al impacto sobre la velocidad de implementación, destacando la innovación y valorizando la entrega continua en lugar de seguir un plan predefinido.&lt;/p&gt;
+&lt;p&gt;Esta metodología fomenta la adaptabilidad y la mejora continua en la búsqueda de productos que resuelvan necesidades con la mayor eficacia.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;img src="https://r0mymendez.github.io//posts/2023-11-14-spotify-methodology-2/Spotify-2-3.png" /&gt;&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h2 id="minimizando-la-necesidad-de-grandes-proyectos"&gt;🟢 &lt;strong&gt;Minimizando la Necesidad de Grandes Proyectos&lt;/strong&gt;&lt;/h2&gt;
+&lt;p&gt;En línea con la metodología adoptada por Spotify, se implementa la estrategia de “divide y vencerás”, que implica descomponer proyectos extensos en tareas más manejables para mitigar riesgos.&lt;/p&gt;
+&lt;p&gt;En el cual un gran proyecto implica grandes riesgos, por lo cual esta estrategia permite reducir estos riesgos realizando proyectos más pequeños.&lt;/p&gt;
+&lt;p&gt;Aunque es necesario mantener una visión integral de la empresa, por lo cual se establecen controles a través de demos, donde se presenta la funcionalidad desarrollada a otros equipos. Además, se emplean metodologías como el “user story map” para visualizar el camino que los usuarios siguen al interactuar con la aplicación y comprender cómo se entrelazan diferentes productos. Estos controles a menudo involucran a líderes técnicos y líderes de producto que colaboran para asegurar una visión unificada del producto y evitar pérdidas de perspectiva.&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://r0mymendez.github.io//posts/2023-11-14-spotify-methodology-2/Spotify-2-4.png" /&gt;&lt;/p&gt;
+&lt;h1 id="referencias"&gt;📚 Referencias&lt;/h1&gt;
+&lt;p&gt;Este articulo esta basado en los videos y la publicaciones realizadas en los siguientes articulos.&lt;/p&gt;
+&lt;ol style="list-style-type: decimal"&gt;
+&lt;li&gt;&lt;strong&gt;Spotify engineering culture (part 1)&lt;/strong&gt;, publicado: March 27, 2014, autor: Henrik Kniberg , Consultado: 2023-11-10 Link: &lt;a href="https://engineering.atspotify.com/2014/03/spotify-engineering-culture-part-1/" class="uri"&gt;&amp;lt;https://engineering.atspotify.com/2014/03/spotify-engineering-culture-part-1/&amp;gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Spotify engineering culture (part 2)&lt;/strong&gt; , publicado: March 27, 2014, autor: Henrik Kniberg , Consultado: 2023-11-10 Link: &lt;a href="https://engineering.atspotify.com/2014/09/spotify-engineering-culture-part-2/" class="uri"&gt;&amp;lt;https://engineering.atspotify.com/2014/09/spotify-engineering-culture-part-2/&amp;gt;&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre class="r distill-force-highlighting-css"&gt;&lt;code&gt;&lt;/code&gt;&lt;/pre&gt;</description>
+      <distill:md5>6c9f0d9e6a249ce1579448d95e8ed9bd</distill:md5>
+      <category>Metodologias</category>
+      <guid>https://r0mymendez.github.io/posts/2023-11-14-spotify-methodology-2</guid>
+      <pubDate>Mon, 13 Nov 2023 00:00:00 +0000</pubDate>
+      <media:content url="https://r0mymendez.github.io/posts/2023-11-14-spotify-methodology-2/spotify-illustration.jpeg" medium="image" type="image/jpeg"/>
+    </item>
+    <item>
       <title>Data Quality</title>
       <dc:creator>Romina Mendez</dc:creator>
       <link>https://r0mymendez.github.io/posts/2023-11-12-data-quality</link>
