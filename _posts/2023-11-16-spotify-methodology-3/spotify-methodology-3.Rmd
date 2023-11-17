@@ -4,7 +4,7 @@ description: |
   En este articulo podras analiza la primera parte de la cultura spotify y cuales son las mejores practicas y metodologías.
 categories:
   - Metodologias
-preview: "spotify-illustration.jpeg"
+preview: https://i.ibb.co/rkLJddX/spotify-illustration.jpg
 author:
   - name: Romina Mendez
   - url: https://example.com/norajones

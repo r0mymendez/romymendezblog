@@ -4,7 +4,7 @@ description: |
   En este articulo podras analiza la primera parte de la cultura spotify y cuales son las mejores practicas y metodologías.
 categories:
   - Metodologias
-preview: "spotify-illustration.jpeg"
+preview: https://i.ibb.co/rkLJddX/spotify-illustration.jpg
 author:
   - name: Romina Mendez
   - url: https://example.com/norajones
@@ -39,19 +39,16 @@ Dentro de la metodología adoptada para la organización de equipos, se introduc
 
 -   📗**Squad:** Un squad representa un grupo de individuos, enfocados en objetivos comunes y especificos.
 
-```{=html}
 <!-- -->
-```
+
 -   📗**Chapter:** Es una agrupación de personas con habilidades y roles similares, pero que trabajan en diferentes equipos o "Squads". Los Chapters están diseñados para fomentar el desarrollo profesional, el intercambio de conocimientos y la colaboración entre personas que comparten áreas de experiencia específicas.
 
-```{=html}
 <!-- -->
-```
+
 -   📗**Tribu:** La tribu abarca múltiples squads y chapters que comparten objetivos y propósitos similares.
 
-```{=html}
 <!-- -->
-```
+
 -   📗**Gremio:** Un gremio se configura como una comunidad temática donde miembros de diferentes squads y chapters se reúnen para discutir y promover intereses comunes. Esta iniciativa ayuda a generar un sentido de comunidad y facilita la sinergia entre individuos con afinidades específicas.
 
 ![](Spotify-2-1.png)
@@ -104,5 +101,5 @@ Aunque es necesario mantener una visión integral de la empresa, por lo cual se 
 
 Este articulo esta basado en los videos y la publicaciones realizadas en los siguientes articulos.
 
-1.  **Spotify engineering culture (part 1)**, publicado: March 27, 2014, autor: Henrik Kniberg , Consultado: 2023-11-10 Link: [<https://engineering.atspotify.com/2014/03/spotify-engineering-culture-part-1/>](https://engineering.atspotify.com/2014/03/spotify-engineering-culture-part-1/){.uri}
-2.  **Spotify engineering culture (part 2)** , publicado: March 27, 2014, autor: Henrik Kniberg , Consultado: 2023-11-10 Link: [<https://engineering.atspotify.com/2014/09/spotify-engineering-culture-part-2/>](https://engineering.atspotify.com/2014/09/spotify-engineering-culture-part-2/){.uri}
+1.  **Spotify engineering culture (part 1)**, publicado: March 27, 2014, autor: Henrik Kniberg , Consultado: 2023-11-10 Link: [\<https://engineering.atspotify.com/2014/03/spotify-engineering-culture-part-1/\>](https://engineering.atspotify.com/2014/03/spotify-engineering-culture-part-1/){.uri}
+2.  **Spotify engineering culture (part 2)** , publicado: March 27, 2014, autor: Henrik Kniberg , Consultado: 2023-11-10 Link: [\<https://engineering.atspotify.com/2014/09/spotify-engineering-culture-part-2/\>](https://engineering.atspotify.com/2014/09/spotify-engineering-culture-part-2/){.uri}
