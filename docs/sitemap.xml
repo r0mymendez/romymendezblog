@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" version="1.0">
   <url>
+    <loc>https://r0mymendez.github.io/blog_en.html</loc>
+    <lastmod>2023-11-17T00:50:19+01:00</lastmod>
+  </url>
+  <url>
     <loc>https://r0mymendez.github.io/blog.html</loc>
     <lastmod>2023-11-12T22:46:09+01:00</lastmod>
   </url>
@@ -75,5 +79,9 @@
   <url>
     <loc>https://r0mymendez.github.io/posts/2021-03-06-fundamentos-de-testing/</loc>
     <lastmod>2023-11-12T23:51:34+01:00</lastmod>
+  </url>
+  <url>
+    <loc>https://r0mymendez.github.io/posts_en/2023-11-17-data-quality/</loc>
+    <lastmod>2023-11-17T21:19:52+01:00</lastmod>
   </url>
 </urlset>

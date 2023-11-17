@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:distill="https://distill.pub/journal/" version="2.0">
+  <channel>
+    <title>Romy Mendez</title>
+    <link>https://r0mymendez.github.io/</link>
+    <atom:link href="https://r0mymendez.github.io/blog_en.xml" rel="self" type="application/rss+xml"/>
+    <description>Romina Mendez's personal blog/ site. Some  posts
+on software, agile methodologies , data science and the professor life.
+</description>
+    <image>
+      <title>Romy Mendez</title>
+      <url>https://r0mymendez.github.io/image/favicon.ico</url>
+      <link>https://r0mymendez.github.io/</link>
+    </image>
+    <generator>Distill</generator>
+    <lastBuildDate>Sun, 12 Nov 2023 00:00:00 +0000</lastBuildDate>
+    <item>
+      <title>Data Quality</title>
+      <dc:creator>Romina Mendez</dc:creator>
+      <link>https://r0mymendez.github.io/posts_en/2023-11-17-data-quality</link>
+      <description>In the following article you will find the definition of data quality, what the domains are and how to quickly implement a solution.</description>
+      <category>Data</category>
+      <category>Python</category>
+      <guid>https://r0mymendez.github.io/posts_en/2023-11-17-data-quality</guid>
+      <pubDate>Sun, 12 Nov 2023 00:00:00 +0000</pubDate>
+      <media:content url="https://img.freepik.com/free-vector/statistics-concept-illustration_114360-4254.jpg" medium="image" type="image/jpeg"/>
+    </item>
+  </channel>
+</rss>

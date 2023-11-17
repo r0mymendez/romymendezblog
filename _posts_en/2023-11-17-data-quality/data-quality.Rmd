@@ -1,0 +1,919 @@
+---
+title: "Data Quality"
+description: |
+  In the following article you will find the definition of data quality, what the domains are and how to quickly implement a solution.
+categories:
+  - Data
+  - Python
+preview: "https://img.freepik.com/free-vector/statistics-concept-illustration_114360-4254.jpg"
+twitter:
+  site: "@r0mymendez"
+  creator: "@r0mymendez"
+author:
+  - name: Romina Mendez
+    url: https://r0mymendez.github.io/romymendezblog/
+date: 11-12-2023
+output:
+  distill::distill_article:
+    self_contained: yes
+    toc: yes
+editor_options: 
+  markdown: 
+    wrap: sentence
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+# Introducción
+
+In the current digital environment, the amount of available data is overwhelming.
+However, the true cornerstone for making informed decisions lies in the quality of this data.
+In this article, we will explore the crucial importance of data quality, analyzing the inherent challenges that organizations face in managing information.
+Although often overlooked, data quality plays a fundamental role in the reliability and usefulness of the information that underpins our strategic decisions.
+
+# What is `Data quality`?
+
+Data quality measures how well a dataset complies with the criteria of accuracy, completeness, validity, consistency, uniqueness, timeliness, and fitness for purpose, and is fundamental for all data governance initiatives within an organization.
+Data quality standards ensure that companies make decisions based on data to achieve their business objectives.
+
+source: [IBM](https://www.ibm.com/topics/data-quality)
+
+![](https://images.datacamp.com/image/upload/v1678809340/Data_Quality_Dimensions_33eb1d29b9.png)
+
+source: [DataCamp cheat sheet](https://www.datacamp.com/cheat-sheet/data-quality-dimensions-cheat-sheet)
+
+------------------------------------------------------------------------
+
+The following table highlights the various domains of data quality, from accuracy to fitness, providing an essential guide for assessing and enhancing the robustness of datasets:
+
++--------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| **Dimensions**     | **Description**                                                                                                                                                                                         |
++====================+=========================================================================================================================================================================================================+
+| **🎯 Accuracy**     | Data accuracy, or how close data is to reality or truth. Accurate data is that which faithfully reflects the information it seeks to represent.                                                         |
++--------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| **🧩 Completeness** | Measures the entirety of the data. A complete dataset is one that has no missing values or significant gaps. Data integrity is crucial for gaining a comprehensive and accurate understanding.          |
++--------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| **✅ Validity**     | Indicates whether the data conforms to defined rules and standards. Valid data complies with the established constraints and criteria for a specific dataset..                                          |
++--------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| **🔄 Consistency**  | Refers to the uniformity of data over time and across different datasets. Consistent data does not exhibit contradictions or discrepancies when compared with each other                                |
++--------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| **📇 Uniqueness**   | Evaluates whether there are no duplicates in the data. Unique data ensures that each entity or element is represented only once in a dataset                                                            |
++--------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| **⌛Timeliness**    | Refers to the timeliness of data. Timely information is that which is available when needed, without unnecessary delays.                                                                                |
++--------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| **🏋️ Fitness**     | This aspect evaluates the relevance and usefulness of data for the intended purpose. Data should be suitable and applicable to the specific objectives of the organization or analysis being conducted. |
++--------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+# Data quality dimensions - Use case
+
+Next, we provide an example where some issues with an e-commerce-based use case can be observed.
+
+| **ID Transacción** | **ID Cliente** | **Producto**        | **Cantidad** | **Precio Unitario** | **Total** |
+|--------------------|----------------|---------------------|--------------|---------------------|-----------|
+| ⚪ 1                | 10234          | Laptop HP           | 1            | \$800               | \$800     |
+| 🟣 2                |                | Wireless Headphones | 2            | \$50                | \$100     |
+| 🔵 3                | 10235          | Smartphone          | -1           | \$1000              | -\$1000   |
+| 🟢 4                | 10236          | Wireless Mouse      | 3            | \$30                | \$90      |
+| 🟢 4                | 10237          | Wireless Keyboard   | 2            | \$40                | \$80      |
+
+-   🟣 **Row 2 (Completeness)**: Row 2 does not comply with data integrity (Completeness) as the customer ID is missing.
+    Customer information is incomplete, making it challenging to trace the transaction back to a specific customer.
+
+-   🔵 **Row 3 (Accuracy and Consistency)**: Row 3 exhibits accuracy (Accuracy) and consistency (Consistency) issues.
+    The quantity of products is negative, which is inaccurate and goes against the expected consistency in a transaction dataset.
+
+-   🟢 **Row 4 (Uniqueness):** The introduction of a second row with the same transaction ID (Transaction ID = 4) violates the uniqueness principle.
+    Each transaction should have a unique identifier, and having two rows with the same Transaction ID creates duplicates, affecting the uniqueness of transactions.
+
+    ------------------------------------------------------------------------
+
+# Python Frameworks
+
+The following are some of the Python implementations carried out to perform data quality validations:
+
++------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| **Framework**                                                                      | **Descripción**                                                                                                                                                                                                               |
++====================================================================================+===============================================================================================================================================================================================================================+
+| [**Great Expectations**](https://github.com/great-expectations/great_expectations) | Great Expectations is an open-source library for data validation. It enables the definition, documentation, and validation of expectations about data, ensuring quality and consistency in data science and analysis projects |
++------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| [**Pandera**](https://github.com/unionai-oss/pandera)                              | Pandera is a data validation library for data structures in Python, specifically designed to work with pandas DataFrames. It allows you to define schemas and validation rules to ensure data conformity                      |
++------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| [**Dora**](https://github.com/NathanEpstein/Dora)                                  | Dora is a Python library designed to automate data exploration and perform exploratory data analysis.                                                                                                                         |
++------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+Let's analyze some of the metrics that can be observed in their GitHub repositories, taking into account that the metrics were obtained on 2023-11-12.
+
++---------------------+------------------------------------------------------------------------------------+-------------------------------------------------------+---------------------------------------------------+
+| Metricas            | [**Great Expectations**](https://github.com/great-expectations/great_expectations) | [**Pandera**](https://github.com/unionai-oss/pandera) | [**Dora**](https://github.com/NathanEpstein/Dora) |
++=====================+====================================================================================+=======================================================+===================================================+
+| 👥 Members           | 399                                                                                | 109                                                   | 106                                               |
++---------------------+------------------------------------------------------------------------------------+-------------------------------------------------------+---------------------------------------------------+
+| ⚠️ Issues: Open     | 112                                                                                | 273                                                   | 1                                                 |
++---------------------+------------------------------------------------------------------------------------+-------------------------------------------------------+---------------------------------------------------+
+| 🟢 Issues: Close     | 1642                                                                               | 419                                                   | 7                                                 |
++---------------------+------------------------------------------------------------------------------------+-------------------------------------------------------+---------------------------------------------------+
+| ⭐ Stars             | 9000                                                                               | 2700                                                  | 623                                               |
++---------------------+------------------------------------------------------------------------------------+-------------------------------------------------------+---------------------------------------------------+
+| 📺 Watching          | 78                                                                                 | 17                                                    | 42                                                |
++---------------------+------------------------------------------------------------------------------------+-------------------------------------------------------+---------------------------------------------------+
+| 🔎 Forks             | 1400                                                                               | 226                                                   | 63                                                |
++---------------------+------------------------------------------------------------------------------------+-------------------------------------------------------+---------------------------------------------------+
+| 📬 Open PR           | 43                                                                                 | 19                                                    | 0                                                 |
++---------------------+------------------------------------------------------------------------------------+-------------------------------------------------------+---------------------------------------------------+
+| 🐍 Version Python    | \>=3.8                                                                             | \>=3.7                                                | No especificada                                   |
++---------------------+------------------------------------------------------------------------------------+-------------------------------------------------------+---------------------------------------------------+
+| 📄 Version Number    | 233                                                                                | 76                                                    | 3                                                 |
++---------------------+------------------------------------------------------------------------------------+-------------------------------------------------------+---------------------------------------------------+
+| 📄 Last Version      | 0.18.2                                                                             | 0.17.2                                                | 0.0.3                                             |
++---------------------+------------------------------------------------------------------------------------+-------------------------------------------------------+---------------------------------------------------+
+| 📆 Last Date Version | 9 Nov 2023                                                                         | 30 sep 2023                                           | 30 jun 2020                                       |
++---------------------+------------------------------------------------------------------------------------+-------------------------------------------------------+---------------------------------------------------+
+| 📄 Licence type      | Apache-2.0 license                                                                 | MIT                                                   | MIT                                               |
++---------------------+------------------------------------------------------------------------------------+-------------------------------------------------------+---------------------------------------------------+
+| 📄 Languages         | -   Python 95.1%                                                                   | -   Python 99.9%                                      | -   Python100%                                    |
+|                     |                                                                                    |                                                       |                                                   |
+|                     | -   Jupyter Notebook 4.3%                                                          | -   Makefile 0.1%                                     |                                                   |
+|                     |                                                                                    |                                                       |                                                   |
+|                     | -   Jinja 0.4%                                                                     |                                                       |                                                   |
+|                     |                                                                                    |                                                       |                                                   |
+|                     | -   JavaScript 0.1%                                                                |                                                       |                                                   |
+|                     |                                                                                    |                                                       |                                                   |
+|                     | -   CSS 0.1%                                                                       |                                                       |                                                   |
+|                     |                                                                                    |                                                       |                                                   |
+|                     | -   HTML 0.0%                                                                      |                                                       |                                                   |
++---------------------+------------------------------------------------------------------------------------+-------------------------------------------------------+---------------------------------------------------+
+
+## Differences between Licencia Apache 2.0 y MIT
+
+-   **Notification of Changes:**
+
+    -   **Apache 2.0:** Requires notification of changes made to the source code when distributing the software.
+
+    -   **MIT:** Does not require specific notification of changes.
+
+-   **Compatibility:**
+
+    -   **Apache 2.0:** Known to be compatible with more licenses compared to MIT.
+
+    -   **MIT:** Also quite compatible with various licenses, but Apache 2.0 License is often chosen in projects seeking greater interoperability with other licenses.
+
+-   **Attribution:**
+
+    -   **Apache 2.0:** Requires attribution and the inclusion of a copyright notice.
+
+    -   **MIT:** Requires attribution to the original authorship but may have less strict requirements in terms of how that attribution is displayed.
+
+    > Considering these currently analyzed metrics, let's proceed with an example implementation using Pandera and Great Expectations.
+
+## Dataset
+
+For the development of this example, we will use the dataset named 'Tips.' You can download the dataset from the followinge [link](https://raw.githubusercontent.com/mwaskom/seaborn-data/master/tips.csv).
+
+The 'tips' dataset contains information about tips given in a restaurant, along with details about the total bill, the gender of the person who paid the bill, whether the customer is a smoker, the day of the week, and the meal's time.
+
+| Column     | Description                                       |
+|------------|---------------------------------------------------|
+| total_bill | The total amount of the bill (including the tip). |
+| tip        | The amount of tip given.                          |
+| sex        | The gender of the bill payer (male or female).    |
+| smoker     | Whether the customer is a smoker or not.          |
+| day        | The day of the week when the meal was made.       |
+| time       | The time of day (lunch or dinner).                |
+| size       | The size of the group that shared the meal.       |
+
+Below is a table with the first 5 rows of the dataset:
+
+| total_bill | tip  | sex    | smoker | day | time   | size |
+|------------|------|--------|--------|-----|--------|------|
+| 16.99      | 1.01 | Female | No     | Sun | Dinner | 2    |
+| 10.34      | 1.66 | Male   | No     | Sun | Dinner | 3    |
+| 21.01      | 3.50 | Male   | No     | Sun | Dinner | 3    |
+| 23.68      | 3.31 | Male   | No     | Sun | Dinner | 2    |
+| 24.59      | 3.61 | Female | No     | Sun | Dinner | 4    |
+
+------------------------------------------------------------------------
+
+## 🟢 Pandera
+
+Next, we will provide an example of implementing Pandera using the dataset described earlier.
+
+### Install pandera
+
+``` {.bash}
+pip install pandas pandera 
+```
+
+### Implementation Example
+
+1.  Import pandas and pandera
+
+    ``` {.python}
+    import pandas as pd
+    import pandera as pa
+    ```
+
+2.  Import the dataframe file
+
+    ``` {.python}
+    path = 'data/tips.csv'
+    data = pd.read_csv(path)
+
+    print(f"Numero de columnas: {data.shape[1]}, Numero de filas: {data.shape[0]}")
+    print(f"Nombre de columnas: {list(data.columns)}")
+    ```
+
+    ``` {.python}
+    data.info()
+    ```
+
+    ``` {.bash}
+    <class 'pandas.core.frame.DataFrame'>
+    RangeIndex: 244 entries, 0 to 243
+    Data columns (total 7 columns):
+     #   Column      Non-Null Count  Dtype  
+    ---  ------      --------------  -----  
+     0   total_bill  244 non-null    float64
+     1   tip         244 non-null    float64
+     2   sex         244 non-null    object 
+     3   smoker      244 non-null    object 
+     4   day         244 non-null    object 
+     5   time        244 non-null    object 
+     6   size        244 non-null    int64  
+    dtypes: float64(2), int64(1), object(4)
+    memory usage: 13.5+ KB
+    ```
+
+3.  Now, let's create the schema object that contains all the validations we want to perform.
+
+    You can find additional validations that can be performed at the following link: [<https://pandera.readthedocs.io/en/stable/dtype_validation.html>](https://pandera.readthedocs.io/en/stable/dtype_validation.html){.uri}
+
+``` {.python}
+schema = pa.DataFrameSchema({
+  "total_bill": pa.Column(float, checks=pa.Check.le(50)),
+  "tip"       : pa.Column(float, checks=pa.Check.between(0,30)),
+  "sex"       : pa.Column(str, checks=[pa.Check.isin(['Female','Male'])]),
+  "smoker"    : pa.Column(str, checks=[pa.Check.isin(['No','Yes'])]),
+  "day"       : pa.Column(str, checks=[pa.Check.isin(['Sun','Sat'])]),
+  "time"      : pa.Column(str, checks=[pa.Check.isin(['Dinner','Lunch'])]),
+  "size"      : pa.Column(int, checks=[pa.Check.between(1,4)])
+})
+```
+
+4.  To capture the error and subsequently analyze the output, it is necessary to catch it using an exception.
+
+``` {.python}
+try:
+    schema(data).validate()
+except Exception as e:
+    print(e)
+    error = e
+```
+
+``` {.bash}
+Schema None: A total of 3 schema errors were found.
+
+Error Counts
+------------
+- SchemaErrorReason.SCHEMA_COMPONENT_CHECK: 3
+
+Schema Error Summary
+--------------------
+schema_context column     check                     failure_cases  n_failure_cases
+                                                   
+Column         day        isin(['Sun', 'Sat'])      [Thur, Fri]             2
+               size       in_range(1, 4)              [5, 6]                2
+               total_bill less_than_or_equal_to(50)   [50.81]               1
+```
+
+5.  Below is a function that allows you to transform the output into a dictionary or a pandas dataframe
+
+``` {.python}
+def get_errors(error, dtype_dict=True):
+    response = []
+
+ 
+    for item in range(len(error.schema_errors)):
+        error_item = error.schema_errors[item]
+        response.append(
+        {
+            'column'     :error_item.schema.name,
+            'check_error':error_item.schema.checks[0].error,
+            'num_cases'  :error_item.failure_cases.index.shape[0],
+            'check_rows' :error_item.failure_cases.to_dict()
+        })
+    
+    if dtype_dict:
+        return response
+    else:
+        return pd.DataFrame(response)
+```
+
+``` {.python}
+get_errors(error,dtype_dict=True)
+```
+
+``` {.bash}
+[{'column': 'total_bill',
+  'check_error': 'less_than_or_equal_to(50)',
+  'num_cases': 1,
+  'check_rows': {'index': {0: 170}, 'failure_case': {0: 50.81}}},
+ {'column': 'day',
+  'check_error': "isin(['Sun', 'Sat'])",
+  'num_cases': 81,
+  'check_rows': {'index': {0: 77,
+    1: 78,
+    2: 79,
+    3: 80,
+    4: 81,
+    5: 82,
+    6: 83,
+    7: 84,
+...
+    5: 156,
+    6: 185,
+    7: 187,
+    8: 216},
+   'failure_case': {0: 6, 1: 6, 2: 5, 3: 6, 4: 5, 5: 6, 6: 5, 7: 5, 8: 5}}}]
+```
+
+------------------------------------------------------------------------
+
+## 🟠 Great Expectations
+
+Great Expectations is an open-source Python-based library for validating, documenting, and profiling your data.
+It helps maintain data quality and improve communication about data across teams.
+
+![](https://i.ibb.co/xHMwVmW/gx.png){width="694"}
+
+source : [<https://docs.greatexpectations.io/docs/>](https://docs.greatexpectations.io/docs/){.uri}
+
+Therefore, we can describe Great Expectations as an open source tool designed to guarantee the quality and reliability of data in various sources, such as databases, tables, files and dataframes.
+Its operation is based on the creation of validation groups that specify the expectations or rules that the data must comply with.
+
+The following are the steps that we must define when using this framework:
+
+1.  **Definition of Expectations:** Specify the expectations you have for the data.
+    These expectations can include simple constraints, such as value ranges, or more complex rules about data coherence and quality.
+
+2.  **Connecting to Data Sources:** In this step, define the connections you need to make to various data sources, such as databases, tables, files, or dataframes.
+
+3.  **Generation of Validation Suites:** Based on the defined expectations, Great Expectations generates validation suites, which are organized sets of rules to be applied to the data.
+
+4.  **Execution of Validations:** Validation suites are applied to the data to verify if they meet the defined expectations.
+    This can be done automatically in a scheduled workflow or interactively as needed.
+
+5.  **Generation of Analysis and Reports:** Great Expectations provides advanced analysis and reporting capabilities.
+    This includes detailed data quality profiles and reports summarizing the overall health of the data based on expectations.
+
+6.  **Alerts and Notifications:** If the data does not meet the defined expectations, Great Expectations can generate alerts or notifications, allowing users to take immediate action to address data quality issues.
+
+Together, Great Expectations offers a comprehensive solution to ensure data quality over time, facilitating early detection of problems and providing confidence in the integrity and usefulness of data used in analysis and decision-making
+
+------------------------------------------------------------------------
+
+### Install great expectation
+
+``` {.python}
+!pip install great_expectations==0.17.22 seaborn matplotlib numpy pandas
+```
+
+### Implementation example
+
+``` {.ptyhon}
+import pandas as pd
+import numpy as np
+import seaborn as sns
+import matplotlib.pyplot as plt
+import os
+import re 
+
+import great_expectations as gx
+from ruamel.yaml import YAML
+from great_expectations.cli.datasource import sanitize_yaml_and_save_datasource
+from great_expectations.core.expectation_configuration import ExpectationConfiguration
+
+print(f"* great expectations version:{gx.__version__}")
+print(f"* seaborn version:{sns.__version__}")
+print(f"* numpy version:{np.__version__}")
+print(f"* pandas:{pd.__version__}")
+```
+
+``` {.bash}
+* great expectations version:0.17.22
+* seaborn version:0.13.0
+* numpy version:1.26.1
+* pandas:2.1.3
+```
+
+1.  Import dataset using great expectation
+
+``` {.python}
+path = 'data/tips.csv'
+data_gx = gx.read_csv(path)
+```
+
+2.  List all available expectations by type
+
+``` {.python}
+list_expectations = pd.DataFrame([item for item in dir(data_gx) if item.find('expect_')==0],columns=['expectation'])
+list_expectations['expectation_type'] = np.select( [
+        list_expectations.expectation.str.find('_table_')>0, 
+        list_expectations.expectation.str.find('_column_')>0,  
+        list_expectations.expectation.str.find('_multicolumn_')>0,
+    ],['table','column','multicolumn'],
+    default='other'
+)
+
+plt.figure(figsize=(20,6))
+sns.countplot(x=list_expectations.expectation_type)
+plt.show()
+```
+
+![](https://i.ibb.co/M8D2pyf/gx-output.png){width="712"}
+
+> In the image, it can be observed that the available expectations are mainly applied to columns (for example: **`expect_column_max_to_be_between`**) and tables (for example: **`expect_table_columns_to_match_set`**), although an expectation based on the values of multiple columns can also be applied (for example: **`expect_multicolumn_values_to_be_unique`**).
+
+#### Expectations: Tables
+
+``` {.python}
+# The following list contains the columns that the dataframe must have:
+columns = ['total_bill', 'tip', 'sex', 'smoker', 'day', 'time', 'size']
+data_gx.expect_table_columns_to_match_set(column_set = columns)
+```
+
+``` {.bash}
+{
+  "success": true,
+  "result": {
+    "observed_value": [
+      "total_bill",
+      "tip",
+      "sex",
+      "smoker",
+      "day",
+      "time",
+      "size"
+    ]
+  },
+  "meta": {},
+  "exception_info": {
+    "raised_exception": false,
+    "exception_traceback": null,
+    "exception_message": null
+  }
+}
+```
+
+``` {.python}
+# Now, we delete two columns, 'time' and 'size,' to validate the outcome
+
+columns = = ['total_bill', 'tip', 'sex', 'smoker', 'day']
+data_gx.expect_table_columns_to_match_set(column_set = columns)
+```
+
+If we observe, the result is False, and in the details, they provide information about the columns that the dataframe has in addition to those expected.
+
+``` {.python}
+{
+  "success": false,
+  "result": {
+    "observed_value": [
+      "day",
+      "sex",
+      "size",
+      "smoker",
+      "time",
+      "tip",
+      "total_bill"
+    ],
+    "details": {
+      "mismatched": {
+        "unexpected": [
+          "size",
+          "time"
+        ]
+      }
+    }
+  },
+  "meta": {},
+  "exception_info": {
+    "raised_exception": false,
+    "exception_traceback": null,
+    "exception_message": null
+  }
+}
+```
+
+#### Expectations: Columns
+
+1.  Let's validate that there is a categorical value within a column
+
+``` {.python}
+data_gx['total_bill_group'] = pd.cut(data_gx['total_bill'],
+                              bins=[0,10,20,30,40,50,float('inf')], 
+                              labels=['0-10', '10-20', '20-30', '30-40', '40-50', '>50'],
+                              right=False, 
+                              include_lowest=True)
+
+# Now, let's validate if 3 categories exist within the dataset
+
+data_gx.expect_column_distinct_values_to_contain_set(column='total_bill_group',
+                                                      value_set=['0-10','10-20', '20-30'],
+                                                      result_format='BASIC') 
+```
+
+``` {.python}
+{
+  "success": true,
+  "result": {
+    "observed_value": [
+      "0-10",
+      "10-20",
+      "20-30",
+      "30-40",
+      "40-50",
+      ">50"
+    ],
+    "element_count": 244,
+    "missing_count": null,
+    "missing_percent": null
+  },
+  "meta": {},
+  "exception_info": {
+    "raised_exception": false,
+    "exception_traceback": null,
+    "exception_message": null
+  }
+}
+```
+
+2.  Let's validate that the column does not have null values
+
+``` {.python}
+data_gx.expect_column_values_to_not_be_null('sex')
+```
+
+``` {.python}
+{
+  "success": true,
+  "result": {
+    "element_count": 244,
+    "unexpected_count": 0,
+    "unexpected_percent": 0.0,
+    "unexpected_percent_total": 0.0,
+    "partial_unexpected_list": []
+  },
+  "meta": {},
+  "exception_info": {
+    "raised_exception": false,
+    "exception_traceback": null,
+    "exception_message": null
+  }
+}
+```
+
+#### Great Expectation Project
+
+Now, let's generate a Great Expectations project to run a group of validations based on one or more datasets.
+
+1.  Initialize the Great Expectations project:
+
+``` {.bash}
+ !yes Y | great_expectations init
+```
+
+``` {.bash}
+ ___              _     ___                  _        _   _
+ / __|_ _ ___ __ _| |_  | __|_ ___ __  ___ __| |_ __ _| |_(_)___ _ _  ___
+| (_ | '_/ -_) _` |  _| | _|\ \ / '_ \/ -_) _|  _/ _` |  _| / _ \ ' \(_-<
+ \___|_| \___\__,_|\__| |___/_\_\ .__/\___\__|\__\__,_|\__|_\___/_||_/__/
+                                |_|
+             ~ Always know what to expect from your data ~
+
+Let's create a new Data Context to hold your project configuration.
+
+Great Expectations will create a new directory with the following structure:
+
+    great_expectations
+    |-- great_expectations.yml
+    |-- expectations
+    |-- checkpoints
+    |-- plugins
+    |-- .gitignore
+    |-- uncommitted
+        |-- config_variables.yml
+        |-- data_docs
+        |-- validations
+
+OK to proceed? [Y/n]: 
+================================================================================
+
+Congratulations! You are now ready to customize your Great Expectations configuration.
+
+You can customize your configuration in many ways. Here are some examples:
+
+  Use the CLI to:
+    - Run `great_expectations datasource new` to connect to your data.
+    - Run `great_expectations checkpoint new <checkpoint_name>` to bundle data with Expectation Suite(s) in a Checkpoint for later re-validation.
+    - Run `great_expectations suite --help` to create, edit, list, profile Expectation Suites.
+    - Run `great_expectations docs --help` to build and manage Data Docs sites.
+
+  Edit your configuration in great_expectations.yml to:
+    - Move Stores to the cloud
+    - Add Slack notifications, PagerDuty alerts, etc.
+    - Customize your Data Docs
+
+Please see our documentation for more configuration options!
+```
+
+2.  Copy data into the 'great_expectations' folder generated from the project initialization
+
+``` {.bash}
+!cp -r data gx
+```
+
+``` {.python}
+# Let's print the contents of the folder
+
+def print_directory_structure(directory_path, indent=0):
+    current_dir = os.path.basename(directory_path)
+    print("    |" + "    " * indent + f"-- {current_dir}")
+    indent += 1
+    with os.scandir(directory_path) as entries:
+        for entry in entries:
+            if entry.is_dir():
+                print_directory_structure(entry.path, indent)
+            else:
+                print("    |" + "    " * indent + f"-- {entry.name}")
+
+
+print_directory_structure('gx')
+```
+
+``` {.bash}
+    |-- gx
+    |    -- great_expectations.yml
+    |    -- plugins
+    |        -- custom_data_docs
+    |            -- renderers
+    |            -- styles
+    |                -- data_docs_custom_styles.css
+    |            -- views
+    |    -- checkpoints
+    |    -- expectations
+    |        -- .ge_store_backend_id
+    |    -- profilers
+    |    -- .gitignore
+    |    -- data
+    |        -- tips.csv
+    |    -- uncommitted
+    |        -- data_docs
+    |        -- config_variables.yml
+    |        -- validations
+    |            -- .ge_store_backend_id
+```
+
+Here are some clarifications about the files and folders generated in this directory:
+
++------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Files/Folders                | Description                                                                                                                                                       |
++==============================+===================================================================================================================================================================+
+| **📄 great_expectations.yml** | This file contains the main configuration of the project. Details such as storage locations and other configuration parameters are specified here                 |
++------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| **📂 plugins**                | **custom_data_docs:**                                                                                                                                             |
+|                              |                                                                                                                                                                   |
+|                              | -   **📄renderers:** It contains custom renderers for data documents.                                                                                              |
+|                              |                                                                                                                                                                   |
+|                              | -   **📄 styles:** It includes custom styles for data documents, such as CSS style sheets (**`data_docs_custom_styles.css`**).                                     |
+|                              |                                                                                                                                                                   |
+|                              | -   **📄 views:** It can contain custom views for data documents.                                                                                                  |
++------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| **📂 checkpoints**            | This folder could contain definitions of checkpoints, which are points in the data flow where specific validations can be performed.                              |
++------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| **📂 expectations**           | This is where the expectations defined for the data are stored. This directory may contain various subfolders and files, depending on the project's organization. |
++------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| **📂 profilers**              | It can contain configurations for data profiles, which are detailed analyses of data statistics.                                                                  |
++------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| **📄 .gitignore**             | It is a Git configuration file that specifies files and folders to be ignored when performing tracking and commit operations. (commit)                            |
++------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| **📂 data**                   | It contains the data used in the project, in this case, the file **`tips.csv`**.                                                                                  |
++------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| **📂 uncommitted**            | -   **📂data_docs:** Folder where data documents are generated.                                                                                                    |
+|                              |                                                                                                                                                                   |
+|                              | -   **📄config_variables.yml:** Configuration file that can contain project-specific variables                                                                     |
+|                              |                                                                                                                                                                   |
+|                              | -   **📂validations:** It can contain results of validations performed on the data.                                                                                |
++------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+3.  Configuration of datasource and data connectors:
+
+    -   **DataSource:** It is the data source used (can be a file, API, database, etc.).
+
+    -   **Data Connectors:** These are the connectors that facilitate the connection to data sources and where access credentials, location, etc., should be defined.
+
+``` {.python}
+datasource_name_file = 'tips.csv'
+datasource_name = 'datasource_tips'
+dataconnector_name = 'connector_tips'
+```
+
+``` {.python}
+# Let's create the configuration for the datasource
+
+context = gx.data_context.DataContext()
+my_datasource_config = f"""
+    name: {datasource_name}
+    class_name: Datasource
+    execution_engine:
+      class_name: PandasExecutionEngine
+    data_connectors:
+      {dataconnector_name}:
+        class_name: InferredAssetFilesystemDataConnector
+        base_directory: data
+        default_regex:
+          group_names:
+            - data_asset_name
+          pattern: (.*)
+      default_runtime_data_connector_name:
+        class_name: RuntimeDataConnector
+        assets:
+          my_runtime_asset_name:
+            batch_identifiers:
+              - runtime_batch_identifier_name
+"""
+
+yaml = YAML()
+context.add_datasource(**yaml.load(my_datasource_config))
+sanitize_yaml_and_save_datasource(context, my_datasource_config, overwrite_existing=True)
+```
+
+4.  Configuration of the expectations
+
+> In the following code snippet, the configuration of three expectations is presented.
+>
+> In particular, the last one includes a parameter called 'mostly' with a value of 0.75.
+> This parameter indicates that the expectation can fail in up to 25% of cases, as by default, 100% compliance is expected unless specified otherwise.
+>
+> Additionally, an error message can be specified in markdown format, as shown in the last expectation.
+
+``` {.python}
+expectation_configuration_table =  ExpectationConfiguration(
+   expectation_type="expect_table_columns_to_match_set",
+      kwargs= {
+        "column_set": ['total_bill', 'tip', 'sex', 'smoker', 'day', 'time', 'size']
+      },
+      meta= {}
+)
+
+expectation_configuration_total_bill = ExpectationConfiguration(
+      expectation_type= "expect_column_values_to_be_between",
+      kwargs= {
+        "column": "total_bill",
+        "min_value": 0,
+        "max_value": 100
+      },
+      meta= {}
+)
+
+
+expectation_configuration_size = ExpectationConfiguration(
+   expectation_type="expect_column_values_to_not_be_null",
+   kwargs={
+      "column": "size",
+      "mostly": 0.75,
+   },
+   meta={
+      "notes": {
+         "format": "markdown",
+         "content": "Expectation to validate column `size` does not have null values."
+      }
+   }
+)
+```
+
+5.  Creation of the expectation suite
+
+``` {.python}
+expectation_suite_name = "tips_expectation_suite"
+expectation_suite = context.create_expectation_suite(
+    expectation_suite_name=expectation_suite_name, 
+    overwrite_existing=True
+)
+
+# Add expectations
+expectation_suite.add_expectation(expectation_configuration=expectation_configuration_table)
+expectation_suite.add_expectation(expectation_configuration=expectation_configuration_total_bill)
+expectation_suite.add_expectation(expectation_configuration=expectation_configuration_size)
+
+# save expectation_suite
+context.save_expectation_suite(expectation_suite=expectation_suite, 
+                               expectation_suite_name=expectation_suite_name)
+```
+
+``` {.python}
+data-quality/gx/expectations/tips_expectation_suite.json
+```
+
+> Within the 'expectations' folder, a JSON file is created with all the expectations generated earlier.
+
+6.  Configuration of the checkpoints
+
+``` {.python}
+checkpoint_name ='tips_checkpoint'
+
+config_checkpoint = f"""
+    name: {checkpoint_name}
+    config_version: 1
+    class_name: SimpleCheckpoint
+    expectation_suite_name: {expectation_suite_name}
+    validations:
+      - batch_request:
+          datasource_name: {datasource_name}
+          data_connector_name: {dataconnector_name}
+          data_asset_name: {datasource_name_file}
+          batch_spec_passthrough:
+            reader_method: read_csv
+            reader_options: 
+              sep: ","
+          data_connector_query:
+            index: -1
+        expectation_suite_name: {expectation_suite_name}
+"""
+
+# Validate if the YAML structure is correct
+context.test_yaml_config(config_checkpoint)
+
+# Add the checkpoint to the generated context
+context.add_checkpoint(**yaml.load(config_checkpoint)) 
+```
+
+7.  Execute the checkpoint to validate all the configured expectations on the dataset
+
+```{=html}
+<!-- -->
+```
+    response = context.run_checkpoint(checkpoint_name=checkpoint_name)
+
+8.  To observe the result obtained from the validations, it can be converted to JSON
+
+``` {.python}
+ response.to_json_dict()
+```
+
+``` {.python}
+{'run_id': {'run_name': None, 'run_time': '2023-11-12T20:39:23.346946+01:00'},
+ 'run_results': {'ValidationResultIdentifier::tips_expectation_suite/__none__/20231112T193923.346946Z/722b2e93e32fd7222c8ad9339f3e0e1d': {'validation_result': {'success': True,
+    'results': [{'success': True,
+      'expectation_config': {'expectation_type': 'expect_table_columns_to_match_set',
+       'kwargs': {'column_set': ['total_bill',
+         'tip',
+         'sex',
+         'smoker',
+         'day',
+         'time',
+         'size'],
+        'batch_id': '722b2e93e32fd7222c8ad9339f3e0e1d'},
+       'meta': {}},
+      'result': {'observed_value': ['total_bill',
+        'tip',
+        'sex',
+        'smoker',
+        'day',
+        'time',
+        'size']},
+      'meta': {},
+      'exception_info': {'raised_exception': False,
+       'exception_traceback': None,
+       'exception_message': None}},
+     {'success': True,
+...
+  'notify_on': None,
+  'default_validation_id': None,
+  'site_names': None,
+  'profilers': []},
+ 'success': True}
+```
+
+#### Now, let's obtain the results
+
+``` {.python}
+ context.open_data_docs()
+```
+
+> By executing this code chunk, an HTML file with the results of the validations will open at `gx/uncommitted/data_docs/local_site/validations/tips_expectation_suite/__none__/20231112T192529.002401Z/722b2e93e32fd7222c8ad9339f3e0e1d.html`
+
+![](https://i.ibb.co/YfzkPPb/gx-1.png){width="684"}
+
+![](https://i.ibb.co/SrmjBcM/gx-2.png){width="684"}
+
+![](https://i.ibb.co/Bs0LWjF/gx-3.png){width="683" height="258"}
+
+## If you want to learn...
+
+1.  [Pandera Documentación Oficial](https://pandera.readthedocs.io)
+2.  [Pandera: Statistical Data Validation of Pandas Dataframes - Researchgate](https://www.researchgate.net/publication/343231859_pandera_Statistical_Data_Validation_of_Pandas_Dataframes)
+3.  [Great Expectation Documentación Oficial](https://docs.greatexpectations.io/docs/)
+4.  [Data Quality Fundamentals Book O'relly](https://www.oreilly.com/library/view/data-quality-fundamentals/9781098112035/)
+5.  [Great Expectation Yoututbe Channel](https://www.youtube.com/@GreatExpectationsData)

@@ -1,5 +1,5 @@
 name: "."
-title: "Romina Mendez"
+title: "Romy Mendez"
 description: |
   Romina Mendez's personal blog/ site. Some  posts
   on software, agile methodologies , data science and the professor life.
@@ -16,6 +16,12 @@ collections:
       shortname: romimendezblog
       hidden: true
       share: [twitter, linkedin]
+  posts_en:
+    feed_items_max: 50
+    disqus:
+      shortname: romimendezblog
+      hidden: true
+      share: [twitter, linkedin]
 navbar:
   logo:
     image: image/tree.png
@@ -24,8 +30,10 @@ navbar:
   right:
     - text: "Home"
       href: index.html
-    - text: "Blog: Post"
+    - text: "🇪🇸 Posts"
       href: blog.html
+    - text: "🇬🇧 Posts"
+      href: blog_en.html
     - icon: fab fa-github
       href: https://github.com/r0mymendez
     - icon: fab fa-twitter
