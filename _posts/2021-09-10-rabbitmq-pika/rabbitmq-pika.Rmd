@@ -27,46 +27,52 @@ knitr::opts_chunk$set(echo = FALSE)
 
 ![](https://i.ibb.co/4ZyFbqH/1200px-Rabbit-MQ-logo-svg.png)
 
-```{r, include=FALSE, results='asis'}
-library(metathis)
+## Introducción: ¿Que es RabbitMQ?
 
-meta() %>%
-  meta_social(
-    image = "https://image.freepik.com/free-vector/landing-page-send-message-illustration_126608-31.jpg",
-    image_alt = "RabbitmMQ"
-  )
+[RabbitMQ](https://www.rabbitmq.com/) es un sistema intermediario diseñado para facilitar la transferencia de mensajes entre productores y consumidores a través de la implementación de colas.
 
-```
+Este componente, esencial en la arquitectura de sistemas distribuidos, se basa en conceptos clave:
 
-### Introducción: ¿Que es RabbitMQ?
+1.  **Productor:** La entidad encargada de originar y enviar mensajes.
+2.  **Cola:** Un reservorio donde los mensajes se almacenan temporalmente.
+3.  **Consumidor:** La instancia receptora que procesa los mensajes según la necesidad del sistema.
 
-**RabbitMQ** es un intermediario que envia mensajes 📩 entre un productor y un consumidor por medio de la utilización de una cola.
+Esta introducción busca proporcionar una visión clara y concisa de los elementos fundamentales de RabbitMQ, allanando el camino para una comprensión más profunda de su funcionamiento en entornos de mensajería.
 
-Los principales conceptos que se deben tener en cuenta son:
+![](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/vz2hrw3kb99b4b6bof5q.png)
 
-1.  **Productor**: Es el que envía mensajes.
-2.  **Cola**: Es el buffer en donde se almacenan los mensajes.
-3.  **Consumidor**: El que recibe los mensajes.
+------------------------------------------------------------------------
 
-![](https://i.ibb.co/PxTdMbG/rabbit.png){style="margin: auto; display: block;" width="380"}
+## Implementación con Pika en Python 🐍
 
-### Implementación
+La implementación en Python con la librería Pika implica la creación de dos programas esenciales: el **productor** y el **consumidor**.
 
-Para la implementación en \`Python 🐍 utilizaremos pika y vamos a desarrollar dos programas: **productor** y **consumidor**.
+**`Pika`** proporciona una interfaz eficaz para la comunicación con RabbitMQ, aprovechando un conjunto de objetos cuidadosamente diseñados para este propósito.
 
-Pika tiene un set de objetos para la comunicación con RabbitMQ.
+En nuestro ejemplo práctico, imaginemos el productor como una aplicación diseñada para gestionar pedidos de entrega de alimentos 🛵.
+Esta aplicación, cuyo objetivo es optimizar el proceso de entrega, se encarga de enviar múltiples mensajes📝 relacionados con los pedidos realizados por los usuarios 📱.
 
-En nuestro ejemplo vamos a imaginar que un productor es un app que tiene como objetivo tomar pedidos de delivery 🛵de comida, la misma necesita enviar multiples mensajes📝 relacionados a los pedidos que realizar usuarios 📱.
+Para lograr esta implementación, abordaremos los siguientes pasos:
 
-Por lo cual vamos a realizar los siguientes pasos:
++-----------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Pasos                 | Descripción                                                                                                                                                                                                                                            |
++=======================+========================================================================================================================================================================================================================================================+
+| **Productor:**        | Desarrollar un programa que, como un eficiente tomador de pedidos, genere y envíe mensajes📝 a la cola de RabbitMQ. Estos mensajes contendrán información valiosa sobre los pedidos de comida.                                                          |
++-----------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| **Consumidor:**       | Crear un programa que actúe como el receptor de estos mensajes en la cola. El consumidor estará encargado de procesar estos mensajes según las necesidades del sistema, realizando las acciones pertinentes, como gestionar la entrega de los pedidos. |
++-----------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-1.  Instalar pika
+Este enfoque estructurado y eficiente garantiza una implementación clara y funcional, proporcionando una base sólida para sistemas que gestionan flujos de información en entornos dinámicos.
 
-``` {.python}
-!pip install pika
-```
+------------------------------------------------------------------------
 
-2.  Generar el script **send.py** 📄
+### 1. Instalar pika
+
+`!pip install pika`
+
+------------------------------------------------------------------------
+
+### 2. Generar el script `send.py` 📄
 
 ``` {.python}
 import pika
@@ -87,7 +93,9 @@ for i in pedidos:
 connection.close()
 ```
 
-3.  Generar el script **receive.py** 📄
+------------------------------------------------------------------------
+
+### 3. Generar el script `receive.py` 📄
 
 ``` {.python}
 import pika, sys, os
@@ -118,24 +126,15 @@ if __name__ == '__main__':
             os._exit(0)
 ```
 
-``` {.python}
-Resultados:
- [x] Received '🍕🍕🍕'
- [x] Received '🍕🍕🍕'
- [x] Received '☕☕☕'
- [x] Received '🍰🍰🍰'
- [x] Received '🍺🍺🍺'
- [x] Received '🍕🍕🍕'
- [x] Received '🍔🍔🍔'
- [x] Received '🍰🍰🍰'
- [x] Received '🍺🍺🍺'
-```
+------------------------------------------------------------------------
+
+![Image description](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/q1ag2ri7ygsv2vgf1r6z.png)
 
 ------------------------------------------------------------------------
 
-### Mongodb + Pika
+## Mongodb + Pika
 
-A continuación vamos a modificar el script para que pueda conectarse a un [mongodb atlas](https://www.mongodb.com/es/cloud/atlas) y realice el insert de los mensajes recibidos.
+A continuación vamos a modificar el script para que pueda conectarse a un mongodb atlas y realice el insert de los mensajes recibidos.
 
 ``` {.python}
 import pymongo
@@ -177,8 +176,14 @@ if __name__ == '__main__':
             os._exit(0)
 ```
 
+------------------------------------------------------------------------
+
+Para descargar el código de estos dos archivos puedes hacerlo desde el siguiente [link](https://gist.github.com/r0mymendez/3ae8a0c63b1d624e438ba472ff68c3aa)
+
+------------------------------------------------------------------------
+
 Para conocer más de Rabbitmq puedes ver los siguientes sitios:
 
--   📄 [Documentacion Oficial](https://www.rabbitmq.com/documentation.html) con el [Tutorial](https://www.rabbitmq.com/getstarted.html)
+-   📄 [Documentación Oficial](https://www.rabbitmq.com/documentation.html) con el [Tutorial](https://www.rabbitmq.com/getstarted.html)
 
 -   🐍 [Pika](https://pika.readthedocs.io/en/stable/)

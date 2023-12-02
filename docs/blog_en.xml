@@ -13,7 +13,17 @@ on software, agile methodologies , data science and the professor life.
       <link>https://r0mymendez.github.io/</link>
     </image>
     <generator>Distill</generator>
-    <lastBuildDate>Tue, 14 Nov 2023 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 02 Dec 2023 00:00:00 +0000</lastBuildDate>
+    <item>
+      <title>RabbitMQ-Pika</title>
+      <dc:creator>Romina Mendez</dc:creator>
+      <link>https://r0mymendez.github.io/posts_en/2023-12-02-rabbitmq-pika</link>
+      <description>RabbitMQ permite gestionar colas de mensajes entre emisores y destinatarios, en el siguiente post vamos a utilizar en python **Pika** para su implementación.</description>
+      <category>Python</category>
+      <guid>https://r0mymendez.github.io/posts_en/2023-12-02-rabbitmq-pika</guid>
+      <pubDate>Sat, 02 Dec 2023 00:00:00 +0000</pubDate>
+      <media:content url="https://image.freepik.com/free-vector/landing-page-send-message-illustration_126608-31.jpg" medium="image" type="image/jpeg"/>
+    </item>
     <item>
       <title>AWS Copilot</title>
       <dc:creator>Romina Mendez</dc:creator>
