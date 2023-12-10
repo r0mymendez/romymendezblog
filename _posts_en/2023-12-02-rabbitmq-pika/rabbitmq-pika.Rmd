@@ -1,10 +1,10 @@
 ---
 title: "RabbitMQ-Pika"
 description: |
-  RabbitMQ permite gestionar colas de mensajes entre emisores y destinatarios, en el siguiente post vamos a utilizar en python **Pika** para su implementación.
+  RabbitMQ allows you to manage message queues between senders and recipients. In the next post we are going to use **Pika** in python for its implementation.
 categories:
   - Python
-preview: "https://image.freepik.com/free-vector/landing-page-send-message-illustration_126608-31.jpg"
+preview: "preview.jpg"
 twitter:
   site: "@r0mymendez"
   creator: "@r0mymendez"
@@ -66,13 +66,13 @@ This application, geared towards optimizing the delivery process, is responsible
 
 To achieve this implementation, we will undertake the following steps:
 
-+-----------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| Steps                 | Descriptions                                                                                                                                                                                                                                     |
-+=======================+==================================================================================================================================================================================================================================================+
-| **Producer:**         | Develop a program that, like an efficient order-taker, generates and sends messages📝 to the RabbitMQ queue. These messages will contain valuable information about food orders.                                                                  |
-+-----------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| **Consumer:**         | Create a program that acts as the receiver of these messages in the queue. The consumer will be responsible for processing these messages according to the system's needs, performing relevant actions, such as managing the delivery of orders. |
-+-----------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
++---------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Steps         | Descriptions                                                                                                                                                                                                                                     |
++===============+==================================================================================================================================================================================================================================================+
+| **Producer:** | Develop a program that, like an efficient order-taker, generates and sends messages📝 to the RabbitMQ queue. These messages will contain valuable information about food orders.                                                                  |
++---------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| **Consumer:** | Create a program that acts as the receiver of these messages in the queue. The consumer will be responsible for processing these messages according to the system's needs, performing relevant actions, such as managing the delivery of orders. |
++---------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 This structured and efficient approach ensures a clear and functional implementation, providing a robust foundation for systems managing information flows in dynamic environments.
 
@@ -194,8 +194,12 @@ To download the code for these two files, you can do so from the following [link
 
 To learn more about RabbitMQ, you can visit the following sites:
 
--    📄 [Oficial Documentation](https://www.rabbitmq.com/documentation.html)
+-   📄 [Oficial Documentation](https://www.rabbitmq.com/documentation.html)
 
 -   📄 [Rabbit Tutorial](https://www.rabbitmq.com/getstarted.html)
 
 -   🐍 [Pika](https://pika.readthedocs.io/en/stable/)
+
+------------------------------------------------------------------------
+
+-   Image preview reference: [Imagen de rawpixel.com en Freepik](https://www.freepik.es/vector-gratis/ilustracion-personaje-personas-iconos-mensaje-internet_3585192.htm#query=message%20emails%20illustration&position=26&from_view=search&track=ais&uuid=ed485b26-a6b3-46a6-878f-71680e5e64b4)

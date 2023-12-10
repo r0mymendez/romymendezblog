@@ -4,7 +4,7 @@ description: |
   En el siguiente artículo te cuento que es AWS Copilot, como se utiliza este proyecto y la facilidad de implementarlo.
 categories:
   - Cloud Computing
-preview: "https://img.freepik.com/free-vector/two-users-searchig-big-data-cloud-computing-storage-technology-large-database-data-analysis-digital-information-concept-vector-isolated-illustration_335657-2200.jpg"
+preview: "preview.jpg"
 twitter:
   site: "@r0mymendez"
   creator: "@r0mymendez"
@@ -198,3 +198,7 @@ Realizando un breve resumen de AWS copilot podemos destacar las siguientes carac
 3.  📚**Titulo:** AWS Copilot**, Sitio:** AWS**, Autor:** AWS, **url**: <https://aws.amazon.com/es/containers/copilot/>, **Fecha de consulta**: 2022-09-17
 
 4.  📚**Titulo**: Gentle Introduction to How AWS ECS Works with Example Tutorial, **Sitio:** Medium**, Autor:** [Tung Nguyen](https://medium.com/@tongueroo?source=post_page-----cea3d27ce63d--------------------------------) **, Url:** <https://medium.com/boltops/gentle-introduction-to-how-aws-ecs-works-with-example-tutorial-cea3d27ce63d>, **Fecha de consulta**: 2022-09-17
+
+----
+
+* Image preview reference: [Image by vectorjuice on Freepik](https://www.freepik.com/free-vector/engineer-developer-with-laptop-tablet-code-cross-platform-development-cross-platform-operating-systems-software-environments-concept-pinkish-coral-bluevector-isolated-illustration_11669400.htm#query=develop%20illustration&position=28&from_view=search&track=ais&uuid=60430892-2126-4b0b-8e3c-8cd2b277ecab)

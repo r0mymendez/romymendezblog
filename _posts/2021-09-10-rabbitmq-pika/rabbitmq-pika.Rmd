@@ -4,7 +4,7 @@ description: |
   RabbitMQ permite gestionar colas de mensajes entre emisores y destinatarios, en el siguiente post vamos a utilizar en python **Pika** para su implementación.
 categories:
   - Python
-preview: "https://image.freepik.com/free-vector/landing-page-send-message-illustration_126608-31.jpg"
+preview: "preview.jpg"
 twitter:
   site: "@r0mymendez"
   creator: "@r0mymendez"
@@ -54,13 +54,13 @@ Esta aplicación, cuyo objetivo es optimizar el proceso de entrega, se encarga d
 
 Para lograr esta implementación, abordaremos los siguientes pasos:
 
-+-----------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| Pasos                 | Descripción                                                                                                                                                                                                                                            |
-+=======================+========================================================================================================================================================================================================================================================+
-| **Productor:**        | Desarrollar un programa que, como un eficiente tomador de pedidos, genere y envíe mensajes📝 a la cola de RabbitMQ. Estos mensajes contendrán información valiosa sobre los pedidos de comida.                                                          |
-+-----------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| **Consumidor:**       | Crear un programa que actúe como el receptor de estos mensajes en la cola. El consumidor estará encargado de procesar estos mensajes según las necesidades del sistema, realizando las acciones pertinentes, como gestionar la entrega de los pedidos. |
-+-----------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
++-----------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Pasos           | Descripción                                                                                                                                                                                                                                            |
++=================+========================================================================================================================================================================================================================================================+
+| **Productor:**  | Desarrollar un programa que, como un eficiente tomador de pedidos, genere y envíe mensajes📝 a la cola de RabbitMQ. Estos mensajes contendrán información valiosa sobre los pedidos de comida.                                                          |
++-----------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| **Consumidor:** | Crear un programa que actúe como el receptor de estos mensajes en la cola. El consumidor estará encargado de procesar estos mensajes según las necesidades del sistema, realizando las acciones pertinentes, como gestionar la entrega de los pedidos. |
++-----------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 Este enfoque estructurado y eficiente garantiza una implementación clara y funcional, proporcionando una base sólida para sistemas que gestionan flujos de información en entornos dinámicos.
 
@@ -187,3 +187,7 @@ Para conocer más de Rabbitmq puedes ver los siguientes sitios:
 -   📄 [Documentación Oficial](https://www.rabbitmq.com/documentation.html) con el [Tutorial](https://www.rabbitmq.com/getstarted.html)
 
 -   🐍 [Pika](https://pika.readthedocs.io/en/stable/)
+
+------------------------------------------------------------------------
+
+-   Image preview reference: [Imagen de rawpixel.com en Freepik](https://www.freepik.es/vector-gratis/ilustracion-personaje-personas-iconos-mensaje-internet_3585192.htm#query=message%20emails%20illustration&position=26&from_view=search&track=ais&uuid=ed485b26-a6b3-46a6-878f-71680e5e64b4)

@@ -5,7 +5,7 @@ description: |
 categories:
   - Data
   - Python
-preview: "https://img.freepik.com/free-vector/statistics-concept-illustration_114360-4254.jpg"
+preview: "preview.jpg"
 twitter:
   site: "@r0mymendez"
   creator: "@r0mymendez"
@@ -917,3 +917,8 @@ context.add_checkpoint(**yaml.load(config_checkpoint))
 3.  [Great Expectation Documentación Oficial](https://docs.greatexpectations.io/docs/)
 4.  [Data Quality Fundamentals Book O'relly](https://www.oreilly.com/library/view/data-quality-fundamentals/9781098112035/)
 5.  [Great Expectation Yoututbe Channel](https://www.youtube.com/@GreatExpectationsData)
+
+---
+
+* Image preview reference: [Image by jcomp on Freepik](https://www.freepik.com/free-vector/big-isolated-employee-working-office-workplace-flat-illustration_13744784.htm#query=data%20illustration&position=18&from_view=keyword&track=ais&uuid=4f2852ad-8219-4c30-b366-2c92005bba7b)
+

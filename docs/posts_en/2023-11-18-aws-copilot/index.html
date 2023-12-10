@@ -106,14 +106,16 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <meta property="og:type" content="article"/>
 <meta property="og:description" content="In the following article, I explain what AWS Copilot is, how to use this project, and the ease of implementing it."/>
 <meta property="og:url" content="https://r0mymendez.github.io/posts_en/2023-11-18-aws-copilot/"/>
+<meta property="og:image" content="https://r0mymendez.github.io/posts_en/2023-11-18-aws-copilot/preview.jpg"/>
 <meta property="og:locale" content="en_US"/>
 <meta property="og:site_name" content="Romy Mendez"/>
 
 <!--  https://dev.twitter.com/cards/types/summary -->
-<meta property="twitter:card" content="summary"/>
+<meta property="twitter:card" content="summary_large_image"/>
 <meta property="twitter:title" content="Romy Mendez: AWS Copilot"/>
 <meta property="twitter:description" content="In the following article, I explain what AWS Copilot is, how to use this project, and the ease of implementing it."/>
 <meta property="twitter:url" content="https://r0mymendez.github.io/posts_en/2023-11-18-aws-copilot/"/>
+<meta property="twitter:image" content="https://r0mymendez.github.io/posts_en/2023-11-18-aws-copilot/preview.jpg"/>
 <meta property="twitter:site" content="@r0mymendez"/>
 <meta property="twitter:creator" content="@r0mymendez"/>
 
@@ -128,7 +130,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   <!--radix_placeholder_rmarkdown_metadata-->
 
 <script type="text/json" id="radix-rmarkdown-metadata">
-{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["creative_commons","title","description","categories","preview","twitter","author","date","output","editor_options","citation_url","canonical_url"]}},"value":[{"type":"character","attributes":{},"value":["CC BY"]},{"type":"character","attributes":{},"value":["AWS Copilot"]},{"type":"character","attributes":{},"value":["In the following article, I explain what AWS Copilot is, how to use this project, and the ease of implementing it."]},{"type":"character","attributes":{},"value":["Cloud Computing"]},{"type":"character","attributes":{},"value":["https://img.freepik.com/free-vector/two-users-searchig-big-data-cloud-computing-storage-technology-large-database-data-analysis-digital-information-concept-vector-isolated-illustration_335657-2200.jpg"]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["site","creator"]}},"value":[{"type":"character","attributes":{},"value":["@r0mymendez"]},{"type":"character","attributes":{},"value":["@r0mymendez"]}]},{"type":"list","attributes":{},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["name","url"]}},"value":[{"type":"character","attributes":{},"value":["Romina Mendez"]},{"type":"character","attributes":{},"value":["https://r0mymendez.github.io/romymendezblog/"]}]}]},{"type":"character","attributes":{},"value":["11-14-2023"]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["distill::distill_article"]}},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["self_contained","toc"]}},"value":[{"type":"logical","attributes":{},"value":[true]},{"type":"logical","attributes":{},"value":[true]}]}]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["markdown"]}},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["wrap"]}},"value":[{"type":"character","attributes":{},"value":["sentence"]}]}]},{"type":"character","attributes":{},"value":["https://r0mymendez.github.io/posts_en/2023-11-18-aws-copilot/"]},{"type":"character","attributes":{},"value":["https://r0mymendez.github.io/posts_en/2023-11-18-aws-copilot/"]}]}
+{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["creative_commons","title","description","categories","preview","twitter","author","date","output","editor_options","citation_url","canonical_url"]}},"value":[{"type":"character","attributes":{},"value":["CC BY"]},{"type":"character","attributes":{},"value":["AWS Copilot"]},{"type":"character","attributes":{},"value":["In the following article, I explain what AWS Copilot is, how to use this project, and the ease of implementing it."]},{"type":"character","attributes":{},"value":["Cloud Computing"]},{"type":"character","attributes":{},"value":["preview.jpg"]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["site","creator"]}},"value":[{"type":"character","attributes":{},"value":["@r0mymendez"]},{"type":"character","attributes":{},"value":["@r0mymendez"]}]},{"type":"list","attributes":{},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["name","url"]}},"value":[{"type":"character","attributes":{},"value":["Romina Mendez"]},{"type":"character","attributes":{},"value":["https://r0mymendez.github.io/romymendezblog/"]}]}]},{"type":"character","attributes":{},"value":["11-14-2023"]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["distill::distill_article"]}},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["self_contained","toc"]}},"value":[{"type":"logical","attributes":{},"value":[true]},{"type":"logical","attributes":{},"value":[true]}]}]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["markdown"]}},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["wrap"]}},"value":[{"type":"character","attributes":{},"value":["sentence"]}]}]},{"type":"character","attributes":{},"value":["https://r0mymendez.github.io/posts_en/2023-11-18-aws-copilot/"]},{"type":"character","attributes":{},"value":["https://r0mymendez.github.io/posts_en/2023-11-18-aws-copilot/"]}]}
 </script>
 <!--/radix_placeholder_rmarkdown_metadata-->
   
@@ -2334,7 +2336,7 @@ li::marker {
 </ul></li>
 <li><a href="#aws-copilot">💡<strong>AWS Copilot</strong></a>
 <ul>
-<li><a href="#comparison-of-tasks-to-be-performed">🔎 Comparison of tasks to be performed </a></li>
+<li><a href="#comparison-of-task-responsibilities">🔎 Comparison of Task Responsibilities</a></li>
 <li><a href="#components">🧩 Components</a></li>
 <li><a href="#deployment-with-aws-copilot-a-5-step-guide">🚀 Deployment with AWS Copilot: A 5-Step Guide</a></li>
 <li><a href="#logs">🔎 Logs</a></li>
@@ -2425,7 +2427,7 @@ It is designed to run, stop, and manage containers in a cluster.</p>
 <p>This tool manages the components required for the deployment and operation of an application, such as VPC, load balancers, deployment pipelines, and storage.
 Therefore, it’s only necessary to provide an application container and minimal configurations, resulting in a faster deployment and focusing on application development.</p>
 <hr />
-<h2 id="comparison-of-tasks-to-be-performed">🔎 Comparison of tasks to be performed </h2>
+<h2 id="comparison-of-task-responsibilities">🔎 Comparison of Task Responsibilities</h2>
 <p>The services will communicate with each other, so it is necessary to consider the following scenarios:</p>
 <table>
 <colgroup>
@@ -2591,8 +2593,12 @@ This allows the development team to only focus on development and not so much on
 <li>📚<strong>Title</strong>: Presentamos AWS Copilot, <strong>Site</strong>: Blog de Amazon Web Services (AWS), <strong>Author</strong>: Nathan Peck,Gabriel Gasca Torres y José Lorenzo Cuéncar, <strong>url</strong>: <a href="https://aws.amazon.com/es/blogs/aws-spanish/presentamos-aws-copilot/">&lt;https://aws.amazon.com/es/blogs/aws-spanish/presentamos-aws-copilot/&gt;</a>,</li>
 <li>📚<strong>Title</strong>: Introducción a Amazon ECS mediante AWS Copilot, <strong>Site</strong>: Documentación oficical de AWS, <strong>Author</strong>: AWS, <strong>url</strong>: <a href="https://docs.aws.amazon.com/es_es/AmazonECS/latest/userguide/getting-started-aws-copilot-cli.html">&lt;https://docs.aws.amazon.com/es_es/AmazonECS/latest/userguide/getting-started-aws-copilot-cli.html&gt;</a></li>
 <li>📚<strong>Title:</strong> AWS Copilot<strong>, Site:</strong> AWS<strong>, Author:</strong> AWS, <strong>url</strong>: <a href="https://aws.amazon.com/es/containers/copilot/">&lt;https://aws.amazon.com/es/containers/copilot/&gt;</a></li>
-<li>📚<strong>Title</strong>: Gentle Introduction to How AWS ECS Works with Example Tutorial, <strong>Site:</strong> Medium<strong>, Author:</strong> <a href="https://medium.com/@tongueroo?source=post_page-----cea3d27ce63d--------------------------------">Tung Nguyen</a> <strong>, Url:</strong> <a href="https://medium.com/boltops/gentle-introduction-to-how-aws-ecs-works-with-example-tutorial-cea3d27ce63d">&lt;https://medium.com/boltops/gentle-introduction-to-how-aws-ecs-works-with-example-tutorial-cea3d27ce63d&gt;</a>,</li>
+<li>📚<strong>Title</strong>: Gentle Introduction to How AWS ECS Works with Example Tutorial, <strong>Site:</strong> Medium<strong>, Author:</strong> <a href="https://medium.com/@tongueroo?source=post_page-----cea3d27ce63d--------------------------------">Tung Nguyen</a> <strong>, Url:</strong> <a href="https://medium.com/boltops/gentle-introduction-to-how-aws-ecs-works-with-example-tutorial-cea3d27ce63d">&lt;https://medium.com/boltops/gentle-introduction-to-how-aws-ecs-works-with-example-tutorial-cea3d27ce63d&gt;</a></li>
 </ol>
+<hr />
+<ul>
+<li>Image preview reference: <a href="https://www.freepik.com/free-vector/engineer-developer-with-laptop-tablet-code-cross-platform-development-cross-platform-operating-systems-software-environments-concept-pinkish-coral-bluevector-isolated-illustration_11669400.htm#query=develop%20illustration&amp;position=28&amp;from_view=search&amp;track=ais&amp;uuid=60430892-2126-4b0b-8e3c-8cd2b277ecab">Image by vectorjuice on Freepik</a></li>
+</ul>
 <div class="sourceCode" id="cb1"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
 <!--radix_placeholder_article_footer-->
 <div class="article-footer">

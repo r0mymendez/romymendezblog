@@ -103,3 +103,7 @@ Este articulo esta basado en los videos y la publicaciones realizadas en los sig
 
 1.  **Spotify engineering culture (part 1)**, publicado: March 27, 2014, autor: Henrik Kniberg , Consultado: 2023-11-10 Link: [\<https://engineering.atspotify.com/2014/03/spotify-engineering-culture-part-1/\>](https://engineering.atspotify.com/2014/03/spotify-engineering-culture-part-1/){.uri}
 2.  **Spotify engineering culture (part 2)** , publicado: March 27, 2014, autor: Henrik Kniberg , Consultado: 2023-11-10 Link: [\<https://engineering.atspotify.com/2014/09/spotify-engineering-culture-part-2/\>](https://engineering.atspotify.com/2014/09/spotify-engineering-culture-part-2/){.uri}
+
+---
+
+\* Image preview reference: [Image by storyset on Freepik]([https://www.freepik.com/free-vector/voice-chat-concept-illustration_20173782.htm\#query=spotify%20illustration&position=9&from_view=search&track=ais&uuid=381e3533-158a-448b-959a-1100d4288ec1)](https://www.freepik.com/free-vector/voice-chat-concept-illustration_20173782.htm#query=spotify%20illustration&position=9&from_view=search&track=ais&uuid=381e3533-158a-448b-959a-1100d4288ec1))

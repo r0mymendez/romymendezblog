@@ -1,0 +1,639 @@
+---
+title: "Code Quality - SonarQube"
+description: |
+ Code Quality, crucial for robust software, is upheld by tools like SonarQube.  This article explores its significance, implementation, and management.
+categories:
+  - Python
+preview: "preview.jpg"
+twitter:
+  site: "@r0mymendez"
+  creator: "@r0mymendez"
+author:
+  - name: Romina Mendez
+    url: https://example.com/norajones
+date: 2023-12-10
+output:
+  distill::distill_article:
+    self_contained: yes
+    toc: yes
+editor_options: 
+  markdown: 
+    wrap: sentence
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+# 🟣 Code Quality: SonarQube
+
+## What is a `code quality`?
+
+Code quality measures the accuracy and reliability of code---but being bug-free and portable is not the only measure of code quality.
+It also includes how developer-friendly the code is.
+Code quality also describes how easy it is to understand, modify, and reuse the code if necessary.
+
+-   **Testable:** A piece of code should be easy to develop tests for and run tests on.
+-   **Portable:** You might want it to be easy to take the code from one environment the make it work again in another environment. If so, you can measure portability.
+-   **Reusable:** High-quality code is modular and designed for reuse.
+
+source: [`Amazon: What is code quality?`](https://aws.amazon.com/es/what-is/code-quality/)
+
+------------------------------------------------------------------------
+
+> Improving code quality involves addressing these factors to create code that is not only technically robust but also user-friendly and conducive to collaborative development.
+
+------------------------------------------------------------------------
+
+## What is Clean Code?
+
+> **"Clean Code"** is code that's easy to read, maintain, understand and change through structure and consistency yet remains robust and secure to withstand performance demands."
+>
+> source: [clean code ]([https://www.sonarsource.com/solutions/clean-code/)](https://www.sonarsource.com/solutions/clean-code/))
+
+------------------------------------------------------------------------
+
+**🧹 Clean Code** refers to the practice of writing code in a clear, readable and efficient manner, placing a strong emphasis on the understandability and maintainability of the code.
+The main premise is that the code must not only work correctly, but it must also be easy to understand for any developer who reads it so that it can be reused quickly.
+To achieve this, it is important to follow good programming practices and adopt conventions that promote clarity.
+
+Aspects to consider:
+
+-   **📖 Readability:** Code should be written in a way that is easily understandable.
+    Descriptive names should be used for variables and functions, and confusing abbreviations should be avoided.
+
+-   **🚀 Simplicity:** Simplicity is sought in the design and structure of the code.
+    Avoiding unnecessary complexity and keeping functions and methods concise helps facilitate understanding.
+
+-   **🛠️ Maintainability:** The code must be easy to maintain over time.
+    This involves minimizing code duplication, following sound design principles, and documenting effectively.
+
+-   **🔄 Consistency:** Consistent coding conventions should be followed throughout the project to improve consistency and make the code easier to read.
+
+------------------------------------------------------------------------
+
+## What is a `SonarQube`?
+
+SonarQube is a self-managed, automatic code review tool that systematically helps you deliver Clean Code.
+As a core element of our Sonar solution, SonarQube integrates into your existing workflow and detects issues in your code to help you perform continuous code inspections of your projects.
+
+source: [SonarQube](https://docs.sonarsource.com/sonarqube/latest/?_gl=1*j9gbjq*_up*MQ..&gclid=CjwKCAjwp8OpBhAFEiwAG7NaEtNAiw6MwXNgGZyJnDyFe8cc6MH2VF6CRpucNdcJTyIrrQf0tDE1hxoC5swQAvD_BwE)
+
+------------------------------------------------------------------------
+
+## What is a `SonarLindt`?
+
+SonarLint is a free IDE extension that can be used in Visual Code, Visual studio or eclipse.
+This plugin allows you to identify coding problems in real time, in order to avoid errors, vulnerabilities and code smells while you write your code.
+SonarLint can perform code analysis in JS/TS, Python, PHP, Java, C, C++, Go and IaC.
+
+------------------------------------------------------------------------
+
+## SonarQube vs SonarLindt
+
+The following is a comparative table in which we compare the functionality and the context in which each of these tools is applied
+
+![SonarQube - SonarLindt](https://assets-eu-01.kc-usercontent.com/b98b0e99-a92d-0140-c108-93833c7e1e31/f284da48-cd09-4c3b-83b4-9d9787d7845c/sonar-development-workflow.png?w=2912&h=1658&auto=format&fit=crop)
+
+image source:[sonarsource docs](https://docs.sonarsource.com/sonarqube/9.7/)
+
+------------------------------------------------------------------------
+
++----------------------------+-------------------------------------------------------------+--------------------------------------------------------------+
+| Feature                    | SonarQube                                                   | SonarLint                                                    |
++============================+=============================================================+==============================================================+
+| **Scope**                  | Server-based code analysis for entire projects/repositories | IDE-based code analysis for individual developers            |
++----------------------------+-------------------------------------------------------------+--------------------------------------------------------------+
+| **Deployment**             | Requires a centralized server installation                  | Integrated directly into the developer's IDE                 |
++----------------------------+-------------------------------------------------------------+--------------------------------------------------------------+
+| **Real-time Feedback**     | Provides feedback during continuous integration             | Offers real-time feedback within the developer's IDE         |
++----------------------------+-------------------------------------------------------------+--------------------------------------------------------------+
+| **Code Analysis Depth**    | Offers in-depth static code analysis and metrics            | Provides on-the-fly code analysis with immediate feedback    |
++----------------------------+-------------------------------------------------------------+--------------------------------------------------------------+
+| **Integration with CI/CD** | Integrates with CI/CD pipelines for automated analysis      | Supports local analysis as well as CI/CD integration         |
++----------------------------+-------------------------------------------------------------+--------------------------------------------------------------+
+| **Rule Configurability**   | Highly configurable rules for code quality and security     | Limited rule configuration options within the IDE            |
++----------------------------+-------------------------------------------------------------+--------------------------------------------------------------+
+| **Collaboration**          | Facilitates collaboration among development teams           | Focuses on individual developer experience and collaboration |
++----------------------------+-------------------------------------------------------------+--------------------------------------------------------------+
+| **Use Case**               | Suitable for larger projects with centralized management    | Ideal for individual developers or smaller development teams |
++----------------------------+-------------------------------------------------------------+--------------------------------------------------------------+
+
+------------------------------------------------------------------------
+
+## SonarQube Features
+
+### 📜 Rules
+
+In SonarQube, **"rules"** are definitions that describe code patterns that indicate potential problems, security vulnerabilities, or areas for improvement in code quality.
+The SonarQube analysis engine uses these rules to scan the source code and highlight potential problems.
+Each rule has a definition that allows a specific pattern to be identified and covers aspects such as: good practices, errors, vulnerability, security, among others.
+
+![](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/yxzg2g4whqkadbems25u.png)
+
+------------------------------------------------------------------------
+
+### 📜 Quality Profiles
+
+**Quality profiles** are a set of specific and organized rules that apply to specific projects.
+These profiles allow you to customize the rules you want to use to evaluate code quality based on your specific needs and standards.
+Therefore, profiles allow you to customize which rules apply to a project and provide predefined profiles for different programming languages.
+
+![](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/rnkg16xmraap8dcxet5j.png)
+
+![](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/kwfcvmjczkljl9vkv1h1.png)
+
+------------------------------------------------------------------------
+
+### 📜 Quality Gates
+
+**Quality Gates** are sets of conditions that are applied to a project after running a static analysis of the code and applying the rules defined in the quality profiles.
+These conditions allow you to quantify and evaluate whether a project meets specific quality criteria, helping to determine if the code is acceptable for implementation.
+
++----------------------------+---------------------------------------------------------------------------------------------------------------------------------+
+| Metric                     | Description                                                                                                                     |
++============================+=================================================================================================================================+
+| Reliability Rating         | This indicator evaluates the reliability of the code, which means how prone the code is to contain errors or defects.           |
++----------------------------+---------------------------------------------------------------------------------------------------------------------------------+
+| Security Rating            | This indicator evaluates the security level of the code, which means how prone the code is to contain security vulnerabilities. |
++----------------------------+---------------------------------------------------------------------------------------------------------------------------------+
+| Security Hotspots Reviewed | This indicator evaluates whether all security points identified in the code have been reviewed.                                 |
++----------------------------+---------------------------------------------------------------------------------------------------------------------------------+
+| Maintainability Rating     | This indicator evaluates the ease with which the code can be maintained and improved in the future                              |
++----------------------------+---------------------------------------------------------------------------------------------------------------------------------+
+| Coverage                   | This indicator examines the % of code that has been executed.                                                                   |
++----------------------------+---------------------------------------------------------------------------------------------------------------------------------+
+| Duplicated Lines (%)       | This flag checks for duplicate lines in the code                                                                                |
++----------------------------+---------------------------------------------------------------------------------------------------------------------------------+
+
+![](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/hj24kse5lryifxgduvxc.png)
+
+------------------------------------------------------------------------
+
+# 🟣 Using SonarQube with Docker: A Step-by-Step Guide
+
+------------------------------------------------------------------------
+
+### 🐳 Install Docker:
+
+Ensure that Docker is installed on your machine.
+You can download and install Docker from the official website: [Docker](https://docs.docker.com/engine/install/)
+
+------------------------------------------------------------------------
+
+### 🐳 Pull the SonarQube Image
+
+Open a terminal and run the following command to pull the official SonarQube Docker image from Docker Hub:
+
+``` {.bash}
+docker pull sonarqube
+```
+
+------------------------------------------------------------------------
+
+### 🐳 Run SonarQube Container:
+
+Execute the following command in a terminal to run the sonarqube container.
+
+``` {.bash}
+docker run 
+   -d --name sonarqube 
+   -e SONAR_ES_BOOTSTRAP_CHECKS_DISABLE=true 
+   -p 9000:9000 
+   sonarqube:latest
+```
+
++---------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Command                                     | Description                                                                                                                                                                                    |
++=============================================+================================================================================================================================================================================================+
+| `docker run`                                | This is the command used to run a Docker container.                                                                                                                                            |
++---------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| `-d`                                        | This is a Docker run option that stands for "detached." It runs the container in the background, which means you get your terminal prompt back immediately after starting the container.       |
++---------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| `--name sonarqube`                          | This option allows you to specify a name for the container. In this case, the name "sonarqube" is given to the container, which makes it easier to reference the container later.              |
++---------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| `-e SONAR_ES_BOOTSTRAP_CHECKS_DISABLE=true` | This option is used to set an environment variable within the container. It disables Elasticsearch bootstrap checks when starting SonarQube.                                                   |
++---------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| `-p 9000:9000`                              | This option is used to map ports between the host and the container. It specifies that port 9000 on the host should be mapped to port 9000 inside the container, allowing access to SonarQube. |
++---------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| `sonarqube:latest`                          | This is the Docker image to run. It specifies the image named "sonarqube" and the "latest" tag, pulling the latest version from Docker Hub and creating a container from that image.           |
++---------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+------------------------------------------------------------------------
+
+### 🐳 Check if the container is running
+
+``` {.bash}
+$ docker ps
+CONTAINER ID   IMAGE              COMMAND                  CREATED          STATUS         PORTS                                       NAMES
+d8e576b6039e   sonarqube:latest   "/opt/sonarqube/dock…"   13 seconds ago   Up 8 seconds   0.0.0.0:9000->9000/tcp, :::9000->9000/tcp   sonarqube
+```
+
+### 🚀 Open the sonarqube web application
+
+['🔗 Link: localhost:9000 '](localhost:9000)
+
+> 🔐 Initial user and password login: admin password: admin
+
+![](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/7ps9dtmq54tuvqgj5iar.png)
+
+------------------------------------------------------------------------
+
+### 📄 Create the script in python
+
+This Python🐍 code was created using **chat-gpt** intentionally includes some practices that may violate default SonarQube configurations.
+
+In addition, we will duplicate this file in the same folder to be able to generate an alert for duplicate code by generating the same file with the name `main_bk`
+
+`main.py`
+
+``` {.python}
+# Code Smell: Unused variable
+unused_variable = 42
+
+# Code Smell: Unused function
+def unused_function():
+    pass
+
+# Code Smell: Redundant parentheses
+result = (5 * 3)
+
+# Code Smell: Unused import
+import unused_module
+
+# Code Smell: Print statement (considered a bad practice)
+print("Hello, World!")
+
+# Code Smell: Hardcoded values
+magic_number = 42
+
+# Code Smell: Unused loop variable
+for _ in range(5):
+    pass
+
+# Code Smell: Assignment in a condition
+if (result == 0):  # Fix the equality check
+    pass
+
+# Code Smell: Using a single underscore as a variable name
+_ = "Unused variable"
+
+# Code Smell: Using a mutable default argument in a function
+def append_item(item, my_list=None):
+    if my_list is None:
+        my_list = []
+    my_list.append(item)
+    return my_list
+
+# Code Smell: Unused variable in an exception block
+try:
+    value = int("text")
+except ValueError as e:
+    unused_exception_variable = e
+
+# Code Smell: Complex lambda function
+square = lambda x: x**2 + 2*x + 1
+```
+
+### 📄 Create a configuration file
+
+The following file contains the properties for execute the code quality processes in sonarqube.
+It is necesary to change the projectkey and the project name, in my case the both name is "test", this parameters is config when you create the projects in SonarQube web application.
+
+**Filename:** "sonar-project.properties"
+
+``` {.bash}
+# must be unique in a given SonarQube instance
+sonar.projectKey=test
+
+# --- optional properties ---
+
+# defaults to project key
+sonar.projectName=test
+
+# defaults to 'not provided'
+sonar.projectVersion=1.0
+ 
+# Path is relative to the sonar-project.properties file. Defaults to .
+sonar.sources=.
+sonar.language=python
+
+#----- Default SonarQube server
+sonar.host.url=http://localhost:9000 
+
+# Encoding of the source code. Default is default system encoding
+sonar.sourceEncoding=UTF-8
+```
+
+### 📄 Code folder
+
+In summary, the folder that should contain the following files
+
+-   📄 `main.py`
+-   📄 `main_bk.py`
+-   📄 `sonar-project.properties`
+
+------------------------------------------------------------------------
+
+### 📁 Create sonarqube project
+
+The images below illustrate all the steps necessary to create the project and obtain the token for the scanner later.
+
+![](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/qpxjr9w2vn59qzszbbbu.png)
+
+![](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/ish73z1c4ymoc9z2zlqm.png)
+
+![](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/an6h7b40qifhx21699fn.png)
+
+![](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/va9ptjplcukfooy9yjiq.png)
+
+![](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/rmndodzl6hduead6bsmx.png)
+
+------------------------------------------------------------------------
+
+### 🔍 Create a quality gate
+
+1.  Click on `"Create"` and define the name of the quality gate.
+
+![](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/f00lgaf5o09kppjptmxm.png)
+
+![](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/pijbfamgcd516r7t8h9i.png)
+
+2.  Click on `"Unlock Editing"` to update the condition metrics.
+
+![](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/6t76lfo5k5ym594povcu.png)
+
+3.  Set the current quality gate as the `default`
+
+![](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/0u6rrdslspewgevjkc6m.png)
+
+------------------------------------------------------------------------
+
+### 🔍 Start the scanning 
+
+To start the scanning process using the SonarQube CLI, execute the following command after replacing placeholders with your specific information.
+Ensure that this command is run in the terminal where the source path, containing the 'sonar-project.properties' file, is located.
+
+It's crucial to set your token as an environment variable using the following syntax: -e SONAR_LOGIN="your_token_here".
+
+For example, if your token is **"sqp_08ad32fcb385e8192b1a4e0aabdc54be3b1ad946"** the corresponding command to be executed would be:
+
+``` {.bash}
+docker run --network=host 
+ -e SONAR_HOST_URL=http://host.docker.internal:9000 
+ -e SONAR_LOGIN="sqp_08ad32fcb385e8192b1a4e0aabdc54be3b1ad946" 
+ -e SONAR_PROJECT_KEY=data-quality 
+ -it -v "$(pwd):/usr/src" 
+ sonarsource/sonar-scanner-cli
+```
+
+> In the terminal you will see the following log
+
+``` {.bash}
+Digest: sha256:494ecc3b5b1ee1625bd377b3905c4284e4f0cc155cff397805a244dee1c7d575
+Status: Downloaded newer image for sonarsource/sonar-scanner-cli:latest
+INFO: Scanner configuration file: /opt/sonar-scanner/conf/sonar-scanner.properties
+INFO: Project root configuration file: /usr/src/sonar-project.properties
+INFO: SonarScanner 5.0.1.3006
+INFO: Java 17.0.8 Alpine (64-bit)
+INFO: Linux 5.10.25-linuxkit amd64
+INFO: User cache: /opt/sonar-scanner/.sonar/cache
+INFO: Analyzing on SonarQube server 10.3.0.82913
+INFO: Default locale: "en_US", source code encoding: "UTF-8"
+INFO: Load global settings
+INFO: Load global settings (done) | time=624ms
+INFO: Server id: 147B411E-AYxB7bsnEO8aoeQvN3oK
+INFO: User cache: /opt/sonar-scanner/.sonar/cache
+INFO: Load/download plugins
+INFO: Load plugins index
+INFO: Load plugins index (done) | time=453ms
+INFO: Load/download plugins (done) | time=5843ms
+INFO: Process project properties
+INFO: Process project properties (done) | time=42ms
+INFO: Execute project builders
+INFO: Execute project builders (done) | time=10ms
+INFO: Project key: data-quality
+INFO: Base dir: /usr/src
+INFO: Working dir: /usr/src/.scannerwork
+INFO: Load project settings for component key: 'data-quality'
+WARN: SCM provider autodetection failed. Please use "sonar.scm.provider" to define SCM of your project, or disable the SCM Sensor in the project settings.
+INFO: Load quality profiles
+INFO: Load quality profiles (done) | time=3356ms
+INFO: Load active rules
+```
+
+when the process finish you can see the following log
+
+``` {.bash}
+INFO: ------------- Run sensors on project
+INFO: Sensor Analysis Warnings import [csharp]
+INFO: Sensor Analysis Warnings import [csharp] (done) | time=3ms
+INFO: Sensor Zero Coverage Sensor
+INFO: Sensor Zero Coverage Sensor (done) | time=14ms
+INFO: SCM Publisher No SCM system was detected. You can use the 'sonar.scm.provider' property to explicitly specify it.
+INFO: CPD Executor Calculating CPD for 0 files
+INFO: CPD Executor CPD calculation finished (done) | time=0ms
+INFO: Analysis report generated in 273ms, dir size=137.8 kB
+INFO: Analysis report compressed in 306ms, zip size=17.4 kB
+INFO: Analysis report uploaded in 412ms
+INFO: ANALYSIS SUCCESSFUL, you can find the results at: http://localhost:9000/dashboard?id=test
+INFO: Note that you will be able to access the updated dashboard once the server has processed the submitted analysis report
+INFO: More about the report processing at http://localhost:9000/api/ce/task?id=AYxTnq5AFtsPP8-M5c1w
+INFO: Analysis total time: 18.832 s
+INFO: ------------------------------------------------------------------------
+INFO: EXECUTION SUCCESS
+INFO: ------------------------------------------------------------------------
+INFO: Total time: 27.819s
+INFO: Final Memory: 21M/80M
+INFO: --------------------------------------------------------
+```
+
+------------------------------------------------------------------------
+
+### 🔍 Scan Results
+
+Upon completion of the code scan, you can view the results of the code analysis on the web application at [localhost:9000](localhost:9000)
+
+------------------------------------------------------------------------
+
+### 📊 Sonarqube Metrics
+
+The following table presents the metrics defined by SonarQube, which are objective indicators designed to evaluate the quality of the source code.
+These metrics allow a quantitative evaluation of various critical aspects of the code.
+
++---------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Metric                    | Description                                                                                                                                                                                         |
++===========================+=====================================================================================================================================================================================================+
+| **Reliability**           | The "Reliability" metric refers to the reliability of the code. It measures the number of issues related to software reliability, such as errors and failures.                                      |
++---------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| **Maintainability**       | The "Maintainability" metric in SonarQube assesses how easy it is to maintain and enhance the code over time. It measures code quality in terms of structure, readability, and ease of maintenance. |
++---------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| **New Code Smells**       | This metric indicates the number of new "code smells" introduced in the code recently. "Code smells" are design patterns or coding practices that may indicate issues with code quality.            |
++---------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| **Security**              | The "Security" metric in SonarQube evaluates code security for potential vulnerabilities. It measures the code's ability to resist attacks and protect data and systems.                            |
++---------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| **New Vulnerabilities**   | It indicates the number of new security vulnerabilities introduced in the code recently. Vulnerabilities are weaknesses that can be exploited by attackers.                                         |
++---------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| **Security Review**       | This metric in SonarQube assesses the quality of security reviews conducted on the code. It measures the effectiveness of reviews in detecting and correcting security issues.                      |
++---------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| **New Security Hotspots** | It signifies the number of new "security hotspots" introduced in the code recently. Security hotspots are areas of the code that require special attention due to potential security issues.        |
++---------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| **Coverage**              | The "Coverage" metric in SonarQube refers to code coverage. It measures the proportion of code that has been tested through unit tests or automated tests.                                          |
++---------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| **Duplications**          | This metric in SonarQube identifies sections of code that are duplicated in multiple places. Identifying and reducing duplications can improve code quality and maintainability.                    |
++---------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+The result of the scan is the following
+
+![](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/cxcn4mnspv52eb3m66ue.png)
+
+------------------------------------------------------------------------
+
+### 🚧 SonarQube Issues
+
+"SonarQube Issues" refer to issues identified by the SonarQube static code analysis process.
+Each issue provides:
+
+-   **📍 Location of the Issue:** Enables identification of where the problem exists in the code.
+
+-   **🤔 Reason for the Issue:** Offers a detailed explanation of why it is considered a problem.
+
+-   **💬 Activity:** Facilitates collaboration by allowing the addition of comments and discussions about potential solutions.
+
+-   **👤 Assignment:** Permits the assignment of the issue to a registered user in SonarQube for tracking and resolution.
+
+-   **📊 Status:** Initiates with the "Open" status upon creation but may transition to other statuses such as:
+
+    -   "Resolved as Fixed": Indicates that the problem identified in the issue has been fixed in the source code.
+    -   "Resolved as False Positive": Initiates that the problem initially identified as an "issue" is not actually a problem or does not require correction.
+    -   "Resolved as Won't Fix": Indicates that a decision has been made not to address or correct the problem noted in the issue.
+
+-   **🏷️ Tags:** Allows the addition of tags to enhance the identification and categorization of issues.
+
+![](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/4zln5uy164v28y29myrz.png)
+
+![](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/dkt1s9tq1rclmp8huner.png)
+
+------------------------------------------------------------------------
+
+# 🟣 Sonarqube API
+
+The **SonarQube API** empowers users to interact with and extract information programmatically from a SonarQube instance.
+These APIs serve as a tool for developers, administrators, and integrators, enabling the automation of tasks, retrieval of project metrics, and seamless integration of SonarQube data into various workflows.
+
+------------------------------------------------------------------------
+
+## Key Features of the SonarQube API:
+
+-   **🤖 Automation:** The SonarQube API allows for the automation of various tasks related to project analysis, configuration, and management.
+    This includes triggering analyses, retrieving analysis results, and managing quality profiles.
+
+-   **📊 Data Retrieval:** Users can extract a wide range of data from SonarQube, including project metrics, issues, code smells, duplications, and more.
+    This information can be used for reporting, analytics, and custom dashboards.
+
+-   **🔗 Integration:** The API facilitates integration with other development tools, continuous integration (CI) systems, and external applications.
+    This enables seamless incorporation of SonarQube's code quality and security analysis into existing development pipelines.
+
+-   **⚙️ Configuration Management:** The API allows users to manage SonarQube configurations programmatically.
+    This includes creating and updating quality profiles, setting project configurations, and managing global settings.
+
+------------------------------------------------------------------------
+
+## Common Use Cases:
+
+-   🤖 **Automated Analysis:** Integrate SonarQube analysis into your CI/CD pipeline by triggering analyses automatically after code commits or builds.
+
+-   📊 **Custom Reporting:** Extract specific metrics and data from SonarQube to generate custom reports tailored to your team or organization's needs.
+
+-   🐛 **Issue Tracking:** Retrieve information about code issues, security vulnerabilities, and code smells to integrate SonarQube data into your issue tracking or project management system.
+
+-   🚦 **Quality Gate Status:** Monitor and retrieve the status of Quality Gates for projects to ensure that code meets predefined quality criteria.
+
+-   🛠️ **Configuration as Code:** Manage SonarQube configurations using scripts or code, making it easier to replicate configurations across different instances.
+
+------------------------------------------------------------------------
+
+# 🟣 SonarQube API: A Step-by-Step Guide
+
+------------------------------------------------------------------------
+
+### Install SonarQubeClient
+
+``` {.bash}
+pip install python-sonarqube-api
+```
+
+### Config the `sonarqube client`
+
+``` {.python}
+from sonarqube import SonarQubeClient
+import pandas as pd
+
+sonar = SonarQubeClient(sonarqube_url="http://localhost:9000", username='admin', password='admin123')
+```
+
+### Get sonarqube client projects
+
+``` {.python}
+projects = sonar.projects.search_projects()
+projects
+```
+
+``` {.bash}
+{'paging': {'pageIndex': 1, 'pageSize': 100, 'total': 1},
+ 'components': [
+  {'key': 'test',
+   'name': 'test',
+   'qualifier': 'TRK',
+   'visibility': 'public',
+   'lastAnalysisDate': '2023-12-10T13:47:32+0000',
+   'managed': False}]}
+```
+
+### Get the project events
+
+``` {.python}
+project_analyses_and_events = sonar.project_analyses.search_project_analyses_and_events(project="test")
+project_analyses_and_events = pd.json_normalize(project_analyses_and_events['analyses'])
+```
+
+![](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/i4c1g3c6hebqd9uhbs6p.png)
+
+``` {.python}
+[item for item in project_analyses_and_events['events'] if item!=[]]```
+
+```bash
+[[{'key': 'AYxT_AnVJaFOvYeUMXMa', 'category': 'VERSION', 'name': '1.0'}],
+ [{'key': 'AYxT-xvhJaFOvYeUMXIe',
+   'category': 'QUALITY_GATE',
+   'name': 'Failed',
+   'description': 'Coverage on New Code < 80, New Code Smells > 0'}],
+ [{'key': 'AYxT-cgDJaFOvYeUMXFb',
+   'category': 'QUALITY_GATE',
+   'name': 'Passed',
+   'description': ''}],
+ [{'key': 'AYxT7MvDJaFOvYeUMW5W',
+   'category': 'QUALITY_GATE',
+   'name': 'Failed',
+   'description': 'Coverage on New Code < 80'}]]
+```
+
+------------------------------------------------------------------------
+
+# 📚 References
+
+If you want to learn...
+
+-   [Sonarqube: Documentation](https://docs.sonarsource.com/sonarqube/9.9/)
+
+-   [SonarLint: IDE](https://www.sonarsource.com/products/sonarlint/ide-login/)
+
+-   [SonarLint: Documentation](https://docs.sonarsource.com/sonarlint/intellij/)
+
+-   [Sonarqube: API](https://docs.sonarsource.com/sonarqube/9.8/extension-guide/web-api/)
+
+-   [Sonarqube: Python](https://pypi.org/project/python-sonarqube-api/)
+
+Other references:
+
+-   Image preview reference: [[Imagen de storyset en Freepik]](https://www.freepik.es/vector-gratis/ilustracion-concepto-prueba-codigo-software_21864174.htm#query=CODE%20QUALITY&position=1&from_view=search&track=ais&uuid=5c0a9de1-b1e0-42c6-9792-c82e6e6012c3)
