@@ -17,3 +17,6 @@ create_post("AWS Copilot",collection ="posts_en")
 create_post("Agile inception",collection ="posts_en")
 create_post("rabbitmq-pika",collection ="posts_en")
 create_post("Code Quality - SonarQube",collection ="posts_en")
+create_post("SQL to Python Pandas: A SQL User's Quick Guide",collection ="posts_en")
+
+

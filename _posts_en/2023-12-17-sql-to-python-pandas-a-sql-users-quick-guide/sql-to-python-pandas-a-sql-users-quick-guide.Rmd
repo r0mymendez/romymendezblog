@@ -510,7 +510,10 @@ select
   year,
   month,
   max(dep_delay) as dep_delay,
-  from flights
+from flights
+group by 
+  year,
+  month;
 ```
 
 🐍`python`
@@ -534,8 +537,11 @@ select
   year,
   month,
   max(dep_delay) as dep_delay,
-  from flights
-  having max(dep_delay)>1000
+from flights
+group by 
+  year,
+  month
+having max(dep_delay)>1000
 ```
 
 🐍`python`
@@ -572,6 +578,9 @@ select
   min(arr_delay)  as arr_delay_min,
   sum(arr_delay)  as arr_delay_sum
 from flights
+group by 
+  year,
+  month
 ```
 
 > This query retrieves aggregated information from the "flights" dataset, calculating various statistics like maximum, minimum, mean, count, and sum for both "dep_delay" and "arr_delay" columns.
