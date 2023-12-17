@@ -331,7 +331,10 @@ from flights
   year,
   month,
   max(dep_delay) as dep_delay,
-  from flights&lt;/code&gt;&lt;/pre&gt;
+from flights
+group by 
+  year,
+  month;&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;🐍&lt;code&gt;python&lt;/code&gt;&lt;/p&gt;
 &lt;pre class="python"&gt;&lt;code&gt;(
     flights
@@ -345,8 +348,11 @@ from flights
   year,
   month,
   max(dep_delay) as dep_delay,
-  from flights
-  having max(dep_delay)&amp;gt;1000&lt;/code&gt;&lt;/pre&gt;
+from flights
+group by 
+  year,
+  month
+having max(dep_delay)&amp;gt;1000&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;🐍&lt;code&gt;python&lt;/code&gt;&lt;/p&gt;
 &lt;pre class="python"&gt;&lt;code&gt;(
     flights
@@ -369,7 +375,10 @@ from flights
   max(arr_delay)  as arr_delay_max,
   min(arr_delay)  as arr_delay_min,
   sum(arr_delay)  as arr_delay_sum
-from flights&lt;/code&gt;&lt;/pre&gt;
+from flights
+group by 
+  year,
+  month&lt;/code&gt;&lt;/pre&gt;
 &lt;blockquote&gt;
 &lt;p&gt;This query retrieves aggregated information from the “flights” dataset, calculating various statistics like maximum, minimum, mean, count, and sum for both “dep_delay” and “arr_delay” columns. To achieve a similar result in pandas, we use the agg function, which allows us to specify these calculations concisely and efficiently. The resulting DataFrame provides a clear summary of the specified metrics for each combination of “year” and “month.”&lt;/p&gt;
 &lt;/blockquote&gt;
