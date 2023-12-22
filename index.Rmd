@@ -23,14 +23,13 @@ output:
 ### About me 
 </center>
 <br/>
-  Soy **r0mymendez** , Data Architect & Data Engineer 👩🔬 **+** Profesora en la [`Universidad de Belgrano`](http://www.ub.edu.ar/) y en [`EANT`](https://eant.tech/).
-Disfruto trabajando en proyectos durante mis momentos libres 🚀. Si estás buscando colaboración en algún proyecto específico o necesitas orientación sobre cómo abordar un nuevo proyecto, no dudes en ponerte en contacto conmigo a través de cualquiera de mis redes sociales.
+I'm **r0mymendez** , a Data Architect & Data Engineer 👩🔬, also serving as a lecturer at the [`Universidad de Belgrano`](http://www.ub.edu.ar/) and [`EANT`](https://eant.tech/). I find joy in contributing to projects during my free moments 🚀. If you're seeking collaboration on a specific project or need guidance on approaching a new venture, feel free to reach out to me through any of my social channels.
 
 ---
 
 <br/>
 <center>
-**Languages / Tools con los que trabajo** 🙃
+**Languages / Tools I Work With** 🙃
 </center>
 <br/>
 [<img src="https://www.r-project.org/logo/Rlogo.svg" alt="R" width="40" height="40">
