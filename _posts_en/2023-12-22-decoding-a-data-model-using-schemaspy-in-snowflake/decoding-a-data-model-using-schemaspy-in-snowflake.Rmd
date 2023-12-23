@@ -33,7 +33,7 @@ Understanding the life cycle of a data model is crucial for efficiently designin
 
 Furthermore, in real-world scenarios, existing databases often necessitate reverse engineering to unveil and comprehend their underlying structures.
 
-In following sections, we will do on the implementation journey of SchemaPy, leveraging Docker for deployment, and employing a Snowflake database.
+In following sections, we will do on the implementation journey of **SchemaPy**, leveraging Docker for deployment, and employing a **Snowflake** database.
 
 ```{r  echo=FALSE}
 library("vembedr")
@@ -104,7 +104,13 @@ It's important to note that the implementation can be extended to other database
 
 ## Prerequisites
 
-Before you begin, ensure that you have the following installed: - 🐳 Docker - 🐙 Docker Compose - ❄️ Snowflake account (You can create an account with a 30-day free trial which includes \$400 worth of free usage.)
+Before you begin, ensure that you have the following installed:
+
+-    🐳 **Docker**
+
+-    🐙 **Docker Compose**
+
+-    ❄️ **Snowflake account** (You can create an account with a 30-day free trial which includes \$400 worth of free usage.)
 
 ------------------------------------------------------------------------
 
