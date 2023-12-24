@@ -25,9 +25,11 @@ editor_options:
 knitr::opts_chunk$set(echo = FALSE)
 ```
 
-![](https://i.ibb.co/4ZyFbqH/1200px-Rabbit-MQ-logo-svg.png)
+[![](https://img.shields.io/badge/Buy%20Me%20A%20Coffee-support%20my%20work-FFDD00?style=flat&labelColor=101010&logo=buy-me-a-coffee&logoColor=white){width="40%"}](https://www.buymeacoffee.com/r0mymendez)
 
 ## Introducción: ¿Que es RabbitMQ?
+
+![](https://i.ibb.co/4ZyFbqH/1200px-Rabbit-MQ-logo-svg.png)
 
 [RabbitMQ](https://www.rabbitmq.com/) es un sistema intermediario diseñado para facilitar la transferencia de mensajes entre productores y consumidores a través de la implementación de colas.
 

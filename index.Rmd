@@ -17,52 +17,51 @@ links:
 site: distill::distill_website
 output:
   postcards::trestles
+editor_options: 
+  markdown: 
+    wrap: 72
 ---
 
 <center>
-### About me 
+
+### About me
+
 </center>
-<br/>
-I'm **r0mymendez** , a Data Architect & Data Engineer 👩🔬, also serving as a lecturer at the [`Universidad de Belgrano`](http://www.ub.edu.ar/) and [`EANT`](https://eant.tech/). I find joy in contributing to projects during my free moments 🚀. If you're seeking collaboration on a specific project or need guidance on approaching a new venture, feel free to reach out to me through any of my social channels.
 
----
+<br>
 
-<br/>
+I'm **r0mymendez** , a Data Architect & Data Engineer 👩🔬, also serving
+as a lecturer at the [`Universidad de Belgrano`](http://www.ub.edu.ar/)
+and [`EANT`](https://eant.tech/). I find joy in contributing to projects
+during my free moments 🚀. If you're seeking collaboration on a specific
+project or need guidance on approaching a new venture, feel free to
+reach out to me through any of my social channels.
+
+------------------------------------------------------------------------
+
+[![Python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white)](https://www.python.org/)
+![](https://img.shields.io/badge/R-276DC3?style=flat&logo=r&logoColor=white)
+![](https://img.shields.io/badge/Go-00ADD8?style=flat&logo=go&logoColor=white)
+![](https://img.shields.io/badge/PySpark-E25A1C?style=flat&logo=apache-spark&logoColor=white)
+![](https://img.shields.io/badge/AWS-232F3E?style=flat&logo=amazon-aws&logoColor=white)
+![](https://img.shields.io/badge/GCP-4285F4?style=flat&logo=google-cloud&logoColor=white&labelColor=4285F4)
+![](https://img.shields.io/badge/Azure-0089D6?style=flat&logo=microsoft-azure&logoColor=white)
+![](https://img.shields.io/badge/PostgreSQL-336791?style=flat&logo=postgresql&logoColor=white)
+![](https://img.shields.io/badge/Snowflake-666666?style=flat&logo=snowflake&logoColor=white)
+![](https://img.shields.io/badge/MySQL-4479A1?style=flat&logo=mysql&logoColor=white)
+![](https://img.shields.io/badge/MongoDB-47A248?style=flat&logo=mongodb&logoColor=white)
+![](https://img.shields.io/badge/Neo4j-008CC1?style=flat&logo=neo4j&logoColor=white)
+![](https://img.shields.io/badge/Docker-2496ED?style=flat&logo=docker&logoColor=white)
+![](https://img.shields.io/badge/Kubernetes-326CE5?style=flat&logo=kubernetes&logoColor=white)
+![](https://img.shields.io/badge/Terraform-623CE4?style=flat&logo=terraform&logoColor=white)
+![](https://img.shields.io/badge/ApacheAirflow-007A88?style=flat&logo=apache-airflow&logoColor=white)
+![](https://img.shields.io/badge/dbt-F47500?style=flat&logo=dbt&logoColor=white)
+![](https://img.shields.io/badge/ScikitLearn-F7931E?style=flat&logo=scikit-learn&logoColor=white)
+
+------------------------------------------------------------------------
+
 <center>
-**Languages / Tools I Work With** 🙃
+
+[![](https://img.shields.io/badge/Buy%20Me%20A%20Coffee-support%20my%20work-FFDD00?style=flat&labelColor=101010&logo=buy-me-a-coffee&logoColor=white){style="text-align:right"}](https://www.buymeacoffee.com/r0mymendez)
+
 </center>
-<br/>
-[<img src="https://www.r-project.org/logo/Rlogo.svg" alt="R" width="40" height="40">
-](https://www.r-project.org/)
-[<img src="https://cursosdedesarrollo.com/wp-content/uploads/2019/08/Moby-logo.png" alt="docker" width="40" height="40">
-](https://www.docker.com/)
-[<img src="https://dist.neo4j.com/wp-content/uploads/neo4j_logo_globe1.png" alt="neo4j" width="40" height="40">
-](https://neo4j.com/)
-[<img src="https://cdn.iconscout.com/icon/free/png-512/hadoop-226007.png" alt="hadoop" width="40" height="40">
-](https://hadoop.apache.org/)
-[<img src="https://i.ibb.co/ZHPxSf1/80-803501-javascript-logo-logo-de-java-script-png.png" alt="javascript" width="40" height="40">
-](https://developer.mozilla.org/es/docs/Web/JavaScript)
-[<img src="https://i1.wp.com/www.inferencelab.com/wp-content/uploads/Python-logo-notext.svg_.png" alt="python" width="40" height="40">
-](https://www.python.org/)
-[<img src="https://upload.wikimedia.org/wikipedia/commons/0/05/Scikit_learn_logo_small.svg" alt="scikit_learn" width="40" height="40">
-](https://scikit-learn.org/stable/#)
-[<img src="https://avatars.githubusercontent.com/u/5997976?s=200&v=4" alt="dash plotly" width="40" height="40">
-](https://plotly.com/dash/)
-[<img src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg" alt="git" width="40" height="40">
-](https://git-scm.com/)
-[<img src="https://upload.wikimedia.org/wikipedia/commons/9/93/Amazon_Web_Services_Logo.svg" alt="aws" width="40" height="40">
-](https://aws.amazon.com/es/)
-[<img src="https://cdn.iconscout.com/icon/free/png-512/google-cloud-platform-2-569356.png" alt="google cloud" width="40" height="40">
-](https://cloud.google.com/?hl=es)
-[<img src="https://www.vhv.rs/dpng/d/518-5188627_apache-airflow-documentation-airflow-documentation-apache-airflow-logo.png" alt="airflow" width="40" height="40">
-](https://airflow.apache.org/docs/)
-[<img src="https://media.glassdoor.com/sqll/433703/mongodb-squarelogo-1564695792753.png" alt="mongodb" width="40" height="40">
-](https://www.mongodb.com/es)
-[<img src="https://upload.wikimedia.org/wikipedia/commons/2/29/Postgresql_elephant.svg" alt="Postgresql" width="40" height="40">
-](https://www.postgresql.org/)
-[<img src="https://pbs.twimg.com/profile_images/1123557710191001600/oMQc_xqN_400x400.png" alt="Red Hat" width="40" height="40">
-](https://www.postgresql.org/)
-[<img src="https://cdn-icons-png.flaticon.com/512/888/888879.png" alt="Ubuntu" width="40" height="40">
-](https://ubuntu.com/)
-
-

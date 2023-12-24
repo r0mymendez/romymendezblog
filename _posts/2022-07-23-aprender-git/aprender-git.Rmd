@@ -25,7 +25,7 @@ editor_options:
 knitr::opts_chunk$set(echo = FALSE)
 ```
 
-# 10 sitios para aprender [gratis] Git!
+[![](https://img.shields.io/badge/Buy%20Me%20A%20Coffee-support%20my%20work-FFDD00?style=flat&labelColor=101010&logo=buy-me-a-coffee&logoColor=white){width="40%"}](https://www.buymeacoffee.com/r0mymendez)
 
 Si quieres aprender Git aquí te dejo recursos para poder lograr este objetivo.
 

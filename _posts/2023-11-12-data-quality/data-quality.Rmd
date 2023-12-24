@@ -26,7 +26,7 @@ editor_options:
 knitr::opts_chunk$set(echo = FALSE)
 ```
 
-# Introducción
+[![](https://img.shields.io/badge/Buy%20Me%20A%20Coffee-support%20my%20work-FFDD00?style=flat&labelColor=101010&logo=buy-me-a-coffee&logoColor=white){width="40%"}](https://www.buymeacoffee.com/r0mymendez)
 
 En el entorno digital actual, la cantidad de datos disponibles es abrumadora.
 Sin embargo, la verdadera piedra angular para tomar decisiones informadas reside en la calidad de estos datos.
@@ -925,6 +925,6 @@ response = context.run_checkpoint(checkpoint_name=checkpoint_name)
 4.  [Data Quality Fundamentals Book O'relly](https://www.oreilly.com/library/view/data-quality-fundamentals/9781098112035/)
 5.  [Great Expectation Yoututbe Channel](https://www.youtube.com/@GreatExpectationsData)
 
----
+------------------------------------------------------------------------
 
-* Image preview reference: [Image by jcomp on Freepik](https://www.freepik.com/free-vector/big-isolated-employee-working-office-workplace-flat-illustration_13744784.htm#query=data%20illustration&position=18&from_view=keyword&track=ais&uuid=4f2852ad-8219-4c30-b366-2c92005bba7b)
+-   Image preview reference: [Image by jcomp on Freepik](https://www.freepik.com/free-vector/big-isolated-employee-working-office-workplace-flat-illustration_13744784.htm#query=data%20illustration&position=18&from_view=keyword&track=ais&uuid=4f2852ad-8219-4c30-b366-2c92005bba7b)

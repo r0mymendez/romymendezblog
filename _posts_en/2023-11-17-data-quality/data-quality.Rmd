@@ -26,7 +26,7 @@ editor_options:
 knitr::opts_chunk$set(echo = FALSE)
 ```
 
-# Introducción
+[![](https://img.shields.io/badge/Buy%20Me%20A%20Coffee-support%20my%20work-FFDD00?style=flat&labelColor=101010&logo=buy-me-a-coffee&logoColor=white){width="40%"}](https://www.buymeacoffee.com/r0mymendez)
 
 In the current digital environment, the amount of available data is overwhelming.
 However, the true cornerstone for making informed decisions lies in the quality of this data.
@@ -247,7 +247,7 @@ pip install pandas pandera
 
 3.  Now, let's create the schema object that contains all the validations we want to perform.
 
-    You can find additional validations that can be performed at the following link: [<https://pandera.readthedocs.io/en/stable/dtype_validation.html>](https://pandera.readthedocs.io/en/stable/dtype_validation.html){.uri}
+    You can find additional validations that can be performed at the following link: [\<https://pandera.readthedocs.io/en/stable/dtype_validation.html\>](https://pandera.readthedocs.io/en/stable/dtype_validation.html){.uri}
 
 ``` {.python}
 schema = pa.DataFrameSchema({
@@ -347,7 +347,7 @@ It helps maintain data quality and improve communication about data across teams
 
 ![](https://i.ibb.co/xHMwVmW/gx.png){width="694"}
 
-source : [<https://docs.greatexpectations.io/docs/>](https://docs.greatexpectations.io/docs/){.uri}
+source : [\<https://docs.greatexpectations.io/docs/\>](https://docs.greatexpectations.io/docs/){.uri}
 
 Therefore, we can describe Great Expectations as an open source tool designed to guarantee the quality and reliability of data in various sources, such as databases, tables, files and dataframes.
 Its operation is based on the creation of validation groups that specify the expectations or rules that the data must comply with.
@@ -851,9 +851,8 @@ context.add_checkpoint(**yaml.load(config_checkpoint))
 
 7.  Execute the checkpoint to validate all the configured expectations on the dataset
 
-```{=html}
 <!-- -->
-```
+
     response = context.run_checkpoint(checkpoint_name=checkpoint_name)
 
 8.  To observe the result obtained from the validations, it can be converted to JSON
@@ -918,7 +917,6 @@ context.add_checkpoint(**yaml.load(config_checkpoint))
 4.  [Data Quality Fundamentals Book O'relly](https://www.oreilly.com/library/view/data-quality-fundamentals/9781098112035/)
 5.  [Great Expectation Yoututbe Channel](https://www.youtube.com/@GreatExpectationsData)
 
----
+------------------------------------------------------------------------
 
-* Image preview reference: [Image by jcomp on Freepik](https://www.freepik.com/free-vector/big-isolated-employee-working-office-workplace-flat-illustration_13744784.htm#query=data%20illustration&position=18&from_view=keyword&track=ais&uuid=4f2852ad-8219-4c30-b366-2c92005bba7b)
-
+-   Image preview reference: [Image by jcomp on Freepik](https://www.freepik.com/free-vector/big-isolated-employee-working-office-workplace-flat-illustration_13744784.htm#query=data%20illustration&position=18&from_view=keyword&track=ais&uuid=4f2852ad-8219-4c30-b366-2c92005bba7b)

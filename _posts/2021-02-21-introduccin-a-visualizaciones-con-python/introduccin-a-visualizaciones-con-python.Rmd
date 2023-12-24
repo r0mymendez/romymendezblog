@@ -23,6 +23,8 @@ output:
 knitr::opts_chunk$set(echo = FALSE)
 ```
 
+[![](https://img.shields.io/badge/Buy%20Me%20A%20Coffee-support%20my%20work-FFDD00?style=flat&labelColor=101010&logo=buy-me-a-coffee&logoColor=white){width="40%"}](https://www.buymeacoffee.com/r0mymendez)
+
 La programación es una habilidad que puede ser adquirida de manera autodidacta, pero a veces uno no sabe como empezar. Por lo cual te dejo este curso online realizado en el 2020 📆 en conjunto con [EANT](https://eant.tech/escuela-de-ciencias-de-datos), el cual en solo **3 horas** ⏱️ podes dar tus primeros pasos en el desarrollo de visualizaciónes con **Python**🐍.
 
 # ¿Que es Python [<img src="https://i1.wp.com/www.inferencelab.com/wp-content/uploads/Python-logo-notext.svg_.png" alt="python" width="40" height="40"/>](https://www.python.org/)?

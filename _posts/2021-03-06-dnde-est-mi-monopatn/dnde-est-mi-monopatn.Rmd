@@ -19,43 +19,41 @@ output:
     toc: yes
 ---
 
-
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = FALSE)
 ```
 
+[![](https://img.shields.io/badge/Buy%20Me%20A%20Coffee-support%20my%20work-FFDD00?style=flat&labelColor=101010&logo=buy-me-a-coffee&logoColor=white){width="40%"}](https://www.buymeacoffee.com/r0mymendez)
 
 # GDG Buenos Aires: Women Techmakers Buenos Aires
 
 **Women Techmakers** es el programa global de **Google** que promueve un espacio de visibilidad, comunidad y recursos para fomentar la diversidad en tecnología.
 
 <center>
-<img src="https://secure.meetupstatic.com/photos/event/4/f/1/highres_489001265.jpeg" alt="Girl in a jacket" width="70%" height="70%">
+
+<img src="https://secure.meetupstatic.com/photos/event/4/f/1/highres_489001265.jpeg" alt="Girl in a jacket" width="70%" height="70%"/>
 
 </center>
 
-
-En el encuentro  **IWD2020** 👭 (International Womens Day), realizamos un Hands-on Labs online con [Kari Bartolome](https://github.com/karbartolome/) y [Aidin Rodriguez](https://github.com/AidinRodriguez) para enseñar a utilizar Google Colab con Python🐍 utilizando datos publicos, el problema resolver es: ¿Dónde está mi monopatín?
+En el encuentro **IWD2020** 👭 (International Womens Day), realizamos un Hands-on Labs online con [Kari Bartolome](https://github.com/karbartolome/) y [Aidin Rodriguez](https://github.com/AidinRodriguez) para enseñar a utilizar Google Colab con Python🐍 utilizando datos publicos, el problema resolver es: ¿Dónde está mi monopatín?
 
 <center>
+
 ![](https://media.giphy.com/media/kfuaMpvpElQP7ZQOCy/giphy.gif)
+
 </center>
 
+🔎 Si queres conocer más sobre **Google Colab** y **Python** podes ver el siguiente post: ["Introducción a visualizaciones con python"](https://r0mymendez.github.io/romymendezblog/posts/2021-02-21-introduccin-a-visualizaciones-con-python/)
 
-🔎 Si queres conocer más sobre **Google Colab** y **Python** podes ver el siguiente post:
-["Introducción a visualizaciones con python"](https://r0mymendez.github.io/romymendezblog/posts/2021-02-21-introduccin-a-visualizaciones-con-python/)
+-   **API DE TRANSPORTE**
 
+    -   Para realizar esta actividad es necesario contar con las credenciales de la API de transporte del Gobierno de la Ciudad de Buenos Aires, las mismas se pueden obtener las credenciales se debe ingresar a este link: <https://www.buenosaires.gob.ar/form/formulario-de-registro-api-transporte>
 
-* **API DE TRANSPORTE**
+    -   Una vez finalizada la carga del formulario, en unos minutos va recibir un correo con sus credenciales (controle si las mismas no llegan a su correo SPAM).
 
-  * Para realizar esta actividad es necesario contar con las credenciales de la API de transporte del Gobierno de la Ciudad de Buenos Aires, las mismas se pueden obtener las credenciales se debe ingresar a este link:
-https://www.buenosaires.gob.ar/form/formulario-de-registro-api-transporte
+    -   Para ver la documentación de la [API](https://www.buenosaires.gob.ar/desarrollourbano/transporte/apitransporte/api-doc)
 
-  * Una vez finalizada la carga del formulario, en unos minutos va recibir un correo con sus credenciales (controle si las mismas no llegan a su correo SPAM).
-
-  * Para ver la documentación de la [API](https://www.buenosaires.gob.ar/desarrollourbano/transporte/apitransporte/api-doc)
-
-----
+------------------------------------------------------------------------
 
 ## Recursos
 
@@ -65,5 +63,4 @@ En este 🔗 [link](https://www.youtube.com/watch?time_continue=326&v=F9enHwvJkZ
 
 📝 Aqui puedes encontrar las notebooks: 🔗[link](https://github.com/r0mymendez/Workshop-Mapas-Apis)
 
-![](https://i.ibb.co/df4Xqr9/mapa.png")
-
+![](https://i.ibb.co/df4Xqr9/mapa.png%22)

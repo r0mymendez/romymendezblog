@@ -26,6 +26,8 @@ library("reticulate")
 knitr::opts_chunk$set(python.reticulate=FALSE)
 ```
 
+[![](https://img.shields.io/badge/Buy%20Me%20A%20Coffee-support%20my%20work-FFDD00?style=flat&labelColor=101010&logo=buy-me-a-coffee&logoColor=white){width="40%"}](https://www.buymeacoffee.com/r0mymendez)
+
 # Que es Testing?
 
 El proceso de testing es la realización de pruebas tecnicas con el objetivo de poder conocer cual es la calidad de los artefactos o piezas de software.

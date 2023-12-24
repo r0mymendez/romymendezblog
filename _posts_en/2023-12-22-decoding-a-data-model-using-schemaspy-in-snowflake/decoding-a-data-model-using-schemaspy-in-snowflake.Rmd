@@ -28,6 +28,8 @@ editor_options:
 knitr::opts_chunk$set(echo = FALSE)
 ```
 
+[![](https://img.shields.io/badge/Buy%20Me%20A%20Coffee-support%20my%20work-FFDD00?style=flat&labelColor=101010&logo=buy-me-a-coffee&logoColor=white){width="40%"}](https://www.buymeacoffee.com/r0mymendez)
+
 In this article, we will delve into a comprehensive exploration of the intricacies of data modeling, spanning from its conceptual inception to its logical definition and eventual physical implementation.
 Understanding the life cycle of a data model is crucial for efficiently designing and managing databases.
 
@@ -49,7 +51,7 @@ This approach involves representing entities and relationships based on business
 The ability to generate these documents and understand how data is stored is essential knowledge for any data team.
 In this context, we will delve into the significance and process of data modeling, emphasizing how this practice becomes a valuable tool for the effective management and exploitation of information.
 
-![I](dm-dataModel.png)
+![](dm-dataModel.png)
 
 ------------------------------------------------------------------------
 
@@ -106,11 +108,11 @@ It's important to note that the implementation can be extended to other database
 
 Before you begin, ensure that you have the following installed:
 
--    🐳 **Docker**
+-   🐳 **Docker**
 
--    🐙 **Docker Compose**
+-   🐙 **Docker Compose**
 
--    ❄️ **Snowflake account** (You can create an account with a 30-day free trial which includes \$400 worth of free usage.)
+-   ❄️ **Snowflake account** (You can create an account with a 30-day free trial which includes \$400 worth of free usage.)
 
 ------------------------------------------------------------------------
 

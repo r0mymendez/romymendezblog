@@ -18,22 +18,24 @@ output:
     toc: yes
 ---
 
-
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = FALSE)
 ```
 
-Las cheetsheet son un conjunto de notas 🗒 que se utilizan como referencia rápida sobre alguna tematica.
-También son conocidos como los machetes en los cuales se registraban pequeños conceptos a recordar 😎.
+[![](https://img.shields.io/badge/Buy%20Me%20A%20Coffee-support%20my%20work-FFDD00?style=flat&labelColor=101010&logo=buy-me-a-coffee&logoColor=white){width="40%"}](https://www.buymeacoffee.com/r0mymendez)
+
+Las cheetsheet son un conjunto de notas 🗒 que se utilizan como referencia rápida sobre alguna tematica. También son conocidos como los machetes en los cuales se registraban pequeños conceptos a recordar 😎.
 
 <center>
+
 ![](https://media.giphy.com/media/IqFH0yMll9wl2/giphy.gif)
+
 </center>
----
+
+------------------------------------------------------------------------
 
 En el siguiente **pdf** podes encontrar la sintaxis basica para poder realizar consultas en **sql**
 
-<iframe src="https://drive.google.com/file/d/1uB3UQRuZDP05Rqa2TcPGMWMzOOsuKIig/preview" width="640" height="480"></iframe>
+<iframe src="https://drive.google.com/file/d/1uB3UQRuZDP05Rqa2TcPGMWMzOOsuKIig/preview" width="640" height="480">
 
-
-
+</iframe>

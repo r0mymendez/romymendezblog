@@ -17,46 +17,45 @@ output:
   distill::distill_article:
     self_contained: yes
     toc: yes
-
 ---
-
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = FALSE)
 ```
 
-La programación es una habilidad que puede ser adquirida de manera autodidacta, pero a veces uno no sabe como empezar.
-Por lo cual te dejo este curso online realizado en el 2020 📆 en conjunto con [EANT](https://eant.tech/escuela-de-ciencias-de-datos), el cual en solo **3 horas** ⏱️ podes dar tus primeros pasos en el desarrollo de visualizaciónes con **R**.
+[![](https://img.shields.io/badge/Buy%20Me%20A%20Coffee-support%20my%20work-FFDD00?style=flat&labelColor=101010&logo=buy-me-a-coffee&logoColor=white){width="40%"}](https://www.buymeacoffee.com/r0mymendez)
 
-# ¿Que es [<img src="https://www.r-project.org/logo/Rlogo.svg" alt="R" width="40" height="40">](https://www.r-project.org/)?
+La programación es una habilidad que puede ser adquirida de manera autodidacta, pero a veces uno no sabe como empezar. Por lo cual te dejo este curso online realizado en el 2020 📆 en conjunto con [EANT](https://eant.tech/escuela-de-ciencias-de-datos), el cual en solo **3 horas** ⏱️ podes dar tus primeros pasos en el desarrollo de visualizaciónes con **R**.
 
-**R** es uno de los lenguajes más populares que se utiliza para el procesamiento y analisis estadístico de datos.
-Este lenguaje es una reimplementación de otro lenguaje denominado S, aunque tambien tiene bases de lenguajes como C, C++ o Fortran.
-**R** es muy popular debido a que actualmente se lo utiliza para el desarrollo de modelos de machine learning, pero tambien con este lenguaje se puede realizar desarrollo de: sitio webs, APIs, procesamiento de datos y hasta puedes desarrollar tu CV.
+# ¿Que es [<img src="https://www.r-project.org/logo/Rlogo.svg" alt="R" width="40" height="40"/>](https://www.r-project.org/)?
+
+**R** es uno de los lenguajes más populares que se utiliza para el procesamiento y analisis estadístico de datos. Este lenguaje es una reimplementación de otro lenguaje denominado S, aunque tambien tiene bases de lenguajes como C, C++ o Fortran. **R** es muy popular debido a que actualmente se lo utiliza para el desarrollo de modelos de machine learning, pero tambien con este lenguaje se puede realizar desarrollo de: sitio webs, APIs, procesamiento de datos y hasta puedes desarrollar tu CV.
 
 Más información sobre [R](https://www.r-project.org/)
 
 # ¿Que es Rstudio ?
+
 <br/>
 
 <center>
-[<img src="https://i.ibb.co/BgQ3S89/images-1.png" alt="rstudiovlogo">](https://rstudio.com/)
+
+[<img src="https://i.ibb.co/BgQ3S89/images-1.png" alt="rstudiovlogo"/>](https://rstudio.com/)
+
 </center>
 
 <br/>
 
 **Rstudio** es una **IDE** (Entorno de desarrollo integrado) para poder progrmar en R, aunque actualmente soporta otros lenguajes tales como **Python** y **Javascript**.
 
-<br/>
-Esta IDE esta en constante evolución y es la más utilizada para desarrollar en R debido que posee una interfaz con ayuda en linea, autocompletado de codigo, la posibilidad de realizar una depuración del codigo de manera sencilla, visualización de directorios, entre otras.
+<br/> Esta IDE esta en constante evolución y es la más utilizada para desarrollar en R debido que posee una interfaz con ayuda en linea, autocompletado de codigo, la posibilidad de realizar una depuración del codigo de manera sencilla, visualización de directorios, entre otras.
 
-A continuación puede ver una linea de tiempo con la evolución de esta IDE en los ultimos años.[Un poco de historia sobre rstudio y su evolución. [^1]
-<br/>
+A continuación puede ver una linea de tiempo con la evolución de esta IDE en los ultimos años.[Un poco de historia sobre rstudio y su evolución. [^1] <br/>
+
+[^1]: [Rstudio TimeLine](https://rstudio.com/about/)
 
 ![](https://d33wubrfki0l68.cloudfront.net/db11a793584a9307185b4925aa17c966d04ba211/cdfee/assets/img/2020-timeline.png)
 
 <br/>
-
 
 ## Rstudio Cloud ☁️
 
@@ -64,41 +63,40 @@ A continuación puede ver una linea de tiempo con la evolución de esta IDE en l
 
 El [plan free](https://rstudio.cloud/plans/free) te permite:
 
-* Generar hasta 15 proyectos.
-* Un espacio compartido con 5 miembros y 10 proyectos como maximo.
-* 15 horas de proyectos por mes.
-* Hasta 1 GB de RAM por proyecto.
-* Hasta 1 CPU por proyecto
-* Hasta 1 hora de tiempo en ejecución en segundo plano.
-
-
-
+-   Generar hasta 15 proyectos.
+-   Un espacio compartido con 5 miembros y 10 proyectos como maximo.
+-   15 horas de proyectos por mes.
+-   Hasta 1 GB de RAM por proyecto.
+-   Hasta 1 CPU por proyecto
+-   Hasta 1 hora de tiempo en ejecución en segundo plano.
 
 # Temario
+
 En este workshop online vas a poder aprender sobre:
 
-* ✏️ Qué es **Data Analytics** y sus etapas de trabajo.
-* ✏️ El concepto del análisis exploratorio de datos (**EDA**).
-* ✏️ Qué es **R** y por qué es una de las herramientas más utilizadas en los ámbitos de trabajo de Data Science.
-* ✏️ Utilizar la interfaz de **Rstudio**.
-* ✏️ Dar primeros pasos en programación para la **manipulación** y **exploración** de Datos.
-* ✏️ Qué son y cómo utilizar **librerías** de código para realizar operaciones de análisis.
-* ✏️ Cómo realizar distintos análisis mediante gráficos y visualizaciones (**dataviz**).
-* ✏️ **Tips**, **recomendaciones** y **recursos útiles** para seguir aprendiendo!
+-   ✏️ Qué es **Data Analytics** y sus etapas de trabajo.
+-   ✏️ El concepto del análisis exploratorio de datos (**EDA**).
+-   ✏️ Qué es **R** y por qué es una de las herramientas más utilizadas en los ámbitos de trabajo de Data Science.
+-   ✏️ Utilizar la interfaz de **Rstudio**.
+-   ✏️ Dar primeros pasos en programación para la **manipulación** y **exploración** de Datos.
+-   ✏️ Qué son y cómo utilizar **librerías** de código para realizar operaciones de análisis.
+-   ✏️ Cómo realizar distintos análisis mediante gráficos y visualizaciones (**dataviz**).
+-   ✏️ **Tips**, **recomendaciones** y **recursos útiles** para seguir aprendiendo!
 
-## ¿Estas preparado para comenzar 🏃🏃? 
+## ¿Estas preparado para comenzar 🏃🏃?
+
 A continuación tienes todos los recursos para comenzar y hacer tus primeras visualización con datos 💪.
 
 ![](https://media.giphy.com/media/S8ToH7Zt8gZ4u2iClh/giphy.gif)
 
-----
+------------------------------------------------------------------------
 
 ## Recursos
 
-* Acceso al curso Online: [Workshop EANT](https://eant.tech/escuela-de-ciencias-de-datos/cursos/taller-introduccion-a-data-analytics-r)
+-   Acceso al curso Online: [Workshop EANT](https://eant.tech/escuela-de-ciencias-de-datos/cursos/taller-introduccion-a-data-analytics-r)
 
-* Presentación:
+-   Presentación:
 
-<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vRU23HJSUH9zRJq6jOmmtSKJqUYnkaRTnk4tjVpxza0uzDSmClEKcWdojeo0Zj_uA/embed?start=false&loop=false&delayms=60000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vRU23HJSUH9zRJq6jOmmtSKJqUYnkaRTnk4tjVpxza0uzDSmClEKcWdojeo0Zj_uA/embed?start=false&amp;loop=false&amp;delayms=60000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true">
 
-[^1]: [Rstudio TimeLine](https://rstudio.com/about/)
+</iframe>

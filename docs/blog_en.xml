@@ -13,137 +13,18 @@ on software, agile methodologies , data science and the professor life.
       <link>https://r0mymendez.github.io/</link>
     </image>
     <generator>Distill</generator>
-    <lastBuildDate>Thu, 21 Dec 2023 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 22 Dec 2023 00:00:00 +0000</lastBuildDate>
     <item>
       <title>Decoding a Data Model - Using SchemaSpy in Snowflake</title>
       <dc:creator>Romina Mendez</dc:creator>
       <link>https://r0mymendez.github.io/posts_en/2023-12-22-decoding-a-data-model-using-schemaspy-in-snowflake</link>
-      <description>
-
-
-&lt;p&gt;In this article, we will delve into a comprehensive exploration of the intricacies of data modeling, spanning from its conceptual inception to its logical definition and eventual physical implementation. Understanding the life cycle of a data model is crucial for efficiently designing and managing databases.&lt;/p&gt;
-&lt;p&gt;Furthermore, in real-world scenarios, existing databases often necessitate reverse engineering to unveil and comprehend their underlying structures.&lt;/p&gt;
-&lt;p&gt;In following sections, we will do on the implementation journey of &lt;strong&gt;SchemaPy&lt;/strong&gt;, leveraging Docker for deployment, and employing a &lt;strong&gt;Snowflake&lt;/strong&gt; database.&lt;/p&gt;
-&lt;div class="vembedr"&gt;
-&lt;div&gt;
-&lt;iframe src="https://www.youtube.com/embed/LVI1C1pQVjE" width="533" height="300" frameborder="0" allowfullscreen="" data-external="1"&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;hr /&gt;
-&lt;h1 id="data-model"&gt;Data Model&lt;/h1&gt;
-&lt;p&gt;Data modeling is a fundamental task that provides us with a clear understanding of data and the most efficient way to store it. This approach involves representing entities and relationships based on business processes, facilitating documentation and the efficient exploration of data. The ability to generate these documents and understand how data is stored is essential knowledge for any data team. In this context, we will delve into the significance and process of data modeling, emphasizing how this practice becomes a valuable tool for the effective management and exploitation of information.&lt;/p&gt;
-&lt;div class="figure"&gt;
-&lt;img src="https://r0mymendez.github.io//posts_en/2023-12-22-decoding-a-data-model-using-schemaspy-in-snowflake/dm-dataModel.png" alt="" /&gt;
-&lt;p class="caption"&gt;I&lt;/p&gt;
-&lt;/div&gt;
-&lt;hr /&gt;
-&lt;h2 id="conceptual-data-model-cdm"&gt;Conceptual Data Model (CDM)&lt;/h2&gt;
-&lt;p&gt;A &lt;strong&gt;conceptual data model (CDM)&lt;/strong&gt; operates at a high level and offers an organization’s data needs. It defines a broad and simplified view of the data and the purpose of conceptual data modeling is to establish a shared understanding of the business by capturing the essential concepts of a business process. The focus is on abstracting and representing key entities, relationships, and their interdependencies, fostering a common understanding among stakeholders about the fundamental aspects of the business and its data requirements.&lt;/p&gt;
-&lt;p&gt;Below is an example of a CDM&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://r0mymendez.github.io//posts_en/2023-12-22-decoding-a-data-model-using-schemaspy-in-snowflake/dm-conceptual.png" /&gt;&lt;/p&gt;
-&lt;hr /&gt;
-&lt;h2 id="logical-data-model-ldm"&gt;Logical Data Model (LDM)&lt;/h2&gt;
-&lt;p&gt;A &lt;strong&gt;logical data model (LDM)&lt;/strong&gt; extends the conceptual data model by providing a complete definition of relationships, incorporating details and the structure of essential entities. In summary the LDM encompasses specific attributes for each entity and the relationships between entities. Below is an example of a LDM&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://r0mymendez.github.io//posts_en/2023-12-22-decoding-a-data-model-using-schemaspy-in-snowflake/dm-logical.png" /&gt;&lt;/p&gt;
-&lt;hr /&gt;
-&lt;h2 id="physical-data-model"&gt;Physical data model&lt;/h2&gt;
-&lt;p&gt;A &lt;strong&gt;Physical Data Model (PDM)&lt;/strong&gt; outlines how the model will be translated into an actual database. The PDM incorporates all necessary physical specifications essential for constructing a database, providing a comprehensive guide for database construction, including tables, columns, data types, indexes, constraints, and other implementation details tailored to the chosen database management system.&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://r0mymendez.github.io//posts_en/2023-12-22-decoding-a-data-model-using-schemaspy-in-snowflake/dm-physical.png" /&gt;&lt;/p&gt;
-&lt;hr /&gt;
-&lt;h1 id="snowflake-schemaspy-docker-compose"&gt;❄️Snowflake SchemaSpy 🐳 Docker Compose&lt;/h1&gt;
-&lt;p&gt;In this following example, we will implement of &lt;a href="https://schemaspy.org/"&gt;SchemaSpy&lt;/a&gt; through a Docker image in a &lt;a href="https://www.snowflake.com/es/"&gt;Snowflake&lt;/a&gt; database. It’s important to note that the implementation can be extended to other databases such as: mysql, PostgreSQL, Oracle, SQL Server, DB2, H2, HSQLDB, SQLite, Firebird, Redshift and Informix.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;&lt;a href="https://schemaspy.org/"&gt;SchemaSpy&lt;/a&gt; is a tool that generates an HTML representation of a database schema’s relationships, providing insights into the database structure.&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;&lt;a href="https://www.snowflake.com/es/"&gt;Snowflake&lt;/a&gt; is a cloud-based data storage and processing service that provides a highly scalable and fully managed data storage environment. Its architecture is built on the separation of storage and computing, allowing elastic scalability and optimal performance.&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id="benefits-of-schemaspy"&gt;🚀 Benefits of SchemaSpy&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;Visual representation of the database schema.&lt;/li&gt;
-&lt;li&gt;Relationship insights between tables.&lt;/li&gt;
-&lt;li&gt;HTML report for easy sharing and documentation.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;hr /&gt;
-&lt;h2 id="prerequisites"&gt;Prerequisites&lt;/h2&gt;
-&lt;p&gt;Before you begin, ensure that you have the following installed:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;🐳 &lt;strong&gt;Docker&lt;/strong&gt;&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;🐙 &lt;strong&gt;Docker Compose&lt;/strong&gt;&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;❄️ &lt;strong&gt;Snowflake account&lt;/strong&gt; (You can create an account with a 30-day free trial which includes $400 worth of free usage.)&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;hr /&gt;
-&lt;h2 id="usage"&gt;Usage&lt;/h2&gt;
-&lt;h3 id="clone-this-repository"&gt;📁 Clone this repository&lt;/h3&gt;
-&lt;div class="figure"&gt;
-&lt;img src="https://r0mymendez.github.io//posts_en/2023-12-22-decoding-a-data-model-using-schemaspy-in-snowflake/repo.png" alt="" /&gt;
-&lt;p class="caption"&gt;source:&lt;a href="https://github.com/r0mymendez/schemaspy-snowflake"&gt;r0mymendez/schemaspy-snowflake&lt;/a&gt;&lt;/p&gt;
-&lt;/div&gt;
-&lt;pre class="bash"&gt;&lt;code&gt;git clone https://github.com/r0mymendez/schemaspy-snowflake.git
-cd schemaspy-snowflake&lt;/code&gt;&lt;/pre&gt;
-&lt;hr /&gt;
-&lt;h3 id="snowflake-configuration"&gt;❄️ Snowflake Configuration&lt;/h3&gt;
-&lt;p&gt;At this stage, you need to configure the configuration file located at the following path: config/snowflake.properties. This configuration will be used to establish the connection to Snowflake, so it is necessary to modify the &lt;strong&gt;account&lt;/strong&gt;, &lt;strong&gt;role&lt;/strong&gt;, &lt;strong&gt;warehouse&lt;/strong&gt;, &lt;strong&gt;schema&lt;/strong&gt;, and &lt;strong&gt;database&lt;/strong&gt; settings.&lt;/p&gt;
-&lt;pre class="bash"&gt;&lt;code&gt;schemaspy.t=snowflake
-schemaspy.u=&amp;lt;user&amp;gt;
-schemaspy.p=&amp;lt;password&amp;gt;
-schemaspy.account=&amp;lt;account&amp;gt;
-schemaspy.role=&amp;lt;role
-schemaspy.warehouse=&amp;lt;warehouse&amp;gt;
-schemaspy.db=&amp;lt;database&amp;gt;
-schemaspy.s=&amp;lt;schema&amp;gt;&lt;/code&gt;&lt;/pre&gt;
-&lt;hr /&gt;
-&lt;h3 id="snowflake-account"&gt;❄️ Snowflake Account&lt;/h3&gt;
-&lt;p&gt;Below is an example of an account URL. However, you only need to use a portion of it in the configuration:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Full account URL:&lt;/strong&gt; &lt;a href="https://%60nl1111.eu-west-3.aws" class="uri"&gt;https://%60nl1111.eu-west-3.aws&lt;/a&gt;`.snowflakecomputing.com&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Account to use in the configuration:&lt;/strong&gt; &lt;code&gt;nl1111.eu-west-3.aws&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;div class="figure"&gt;
-&lt;img src="https://r0mymendez.github.io//posts_en/2023-12-22-decoding-a-data-model-using-schemaspy-in-snowflake/dm-account.png" alt="" /&gt;
-&lt;p class="caption"&gt;Image description&lt;/p&gt;
-&lt;/div&gt;
-&lt;hr /&gt;
-&lt;h2 id="build-and-run-the-docker-compose-environment"&gt;🐙 Build and run the Docker Compose environment&lt;/h2&gt;
-&lt;p&gt;This command will build the Docker image and start the container.&lt;/p&gt;
-&lt;pre class="bash"&gt;&lt;code&gt;docker-compose -f docker-compose-snowflake.yaml up&lt;/code&gt;&lt;/pre&gt;
-&lt;hr /&gt;
-&lt;h1 id="schemapy"&gt;🔍 Schemapy&lt;/h1&gt;
-&lt;p&gt;After executing Docker Compose, you’ll find a web site in the output folder. This page features multiple tabs, each offering distinct functionalities, and below, we will explain them.&lt;/p&gt;
-&lt;hr /&gt;
-&lt;h2 id="functionality-tabs"&gt;Functionality Tabs&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Tables:&lt;/strong&gt; Provides an overview of all tables in the database schema.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Columns:&lt;/strong&gt; Displays detailed information about columns within each table.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Constraints:&lt;/strong&gt; Offers insights into constraints applied to the database.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Relationships:&lt;/strong&gt; Visualizes the relationships between different tables.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Orphan Tables:&lt;/strong&gt; Identifies tables without established relationships.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Anomalies:&lt;/strong&gt; Highlights any irregularities or anomalies in the schema.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Routines:&lt;/strong&gt; Presents information about stored routines or procedures.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;hr /&gt;
-&lt;h2 id="schemaspy-ui"&gt;SchemaSpy UI&lt;/h2&gt;
-&lt;p&gt;In the provided example, we showcase a demo utilizing a synthetic database called Synthea. Synthea is a state-of-the-art synthetic data generation tool designed for creating realistic, yet entirely fictitious, patient records and healthcare data. It enables the simulation of diverse medical scenarios, making it a valuable resource for testing and development purposes in the healthcare domain. Visit the following 👉&lt;a href="https://r0mymendez.github.io/schemaspy-snowflake"&gt;link to access a demo&lt;/a&gt;👈.&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://r0mymendez.github.io//posts_en/2023-12-22-decoding-a-data-model-using-schemaspy-in-snowflake/Schemapy-tables_summary.png" /&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://r0mymendez.github.io//posts_en/2023-12-22-decoding-a-data-model-using-schemaspy-in-snowflake/Schemapy-DER.png" /&gt;&lt;/p&gt;
-&lt;hr /&gt;
-&lt;h1 id="references"&gt;📚 References&lt;/h1&gt;
-&lt;p&gt;If you want to learn…&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://signup.snowflake.com/"&gt;Snowflake&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://quickstarts.snowflake.com/"&gt;Snowflake Free courses&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://schemaspy.org/"&gt;SchemaSpy&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://hub.docker.com/r/mnuessler/schemaspy/"&gt;SchemaSpy: Docker Image&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://synthea.mitre.org/"&gt;Synthea Project&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Other references:&lt;/p&gt;
-&lt;p&gt;- Image preview reference: [&lt;a href="https://www.freepik.com/free-vector/business-analyst-with-laptop-idea-lightbulb-waymark-decision-management-enterprise-analysis-decision-it-tool-decision-system-concept-illustration_11668547.htm#page=2&amp;amp;query=data%20model%20illustration&amp;amp;position=22&amp;amp;from_view=search&amp;amp;track=ais&amp;amp;uuid=e9448c6b-9693-4018-80bf-b7bcaa42732f"&gt;Imagen de vectorjuice en Freepik&lt;/a&gt;]&lt;/p&gt;
-&lt;pre class="r distill-force-highlighting-css"&gt;&lt;code&gt;&lt;/code&gt;&lt;/pre&gt;</description>
-      <distill:md5>3e62950b625ae308083ecaa76cf5217e</distill:md5>
+      <description>In following article, we will do on the implementation journey of SchemaPy, leveraging Docker for deployment, and employing a Snowflake database.</description>
       <category>Python</category>
       <category>SQL</category>
       <category>Database</category>
       <category>Data</category>
       <guid>https://r0mymendez.github.io/posts_en/2023-12-22-decoding-a-data-model-using-schemaspy-in-snowflake</guid>
-      <pubDate>Thu, 21 Dec 2023 00:00:00 +0000</pubDate>
+      <pubDate>Fri, 22 Dec 2023 00:00:00 +0000</pubDate>
       <media:content url="https://r0mymendez.github.io/posts_en/2023-12-22-decoding-a-data-model-using-schemaspy-in-snowflake/preview.jpg" medium="image" type="image/jpeg"/>
     </item>
     <item>

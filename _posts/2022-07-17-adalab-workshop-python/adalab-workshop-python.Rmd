@@ -21,6 +21,8 @@ output:
 knitr::opts_chunk$set(echo = FALSE)
 ```
 
+[![](https://img.shields.io/badge/Buy%20Me%20A%20Coffee-support%20my%20work-FFDD00?style=flat&labelColor=101010&logo=buy-me-a-coffee&logoColor=white){width="40%"}](https://www.buymeacoffee.com/r0mymendez)
+
 La programación es una habilidad que puede ser adquirida de manera autodidacta, pero a veces uno no sabe como empezar. Por lo cual realice un workshop de Python🐍 para la comunidad de [Adalab](https://adalab.es/) y el mismo fue realizado 📆26 de mayo de 2022 de forma online.
 
 ## Adalab

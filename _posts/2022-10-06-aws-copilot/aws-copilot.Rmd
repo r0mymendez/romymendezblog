@@ -25,7 +25,7 @@ editor_options:
 knitr::opts_chunk$set(echo = FALSE)
 ```
 
-# Introducción
+[![](https://img.shields.io/badge/Buy%20Me%20A%20Coffee-support%20my%20work-FFDD00?style=flat&labelColor=101010&logo=buy-me-a-coffee&logoColor=white){width="40%"}](https://www.buymeacoffee.com/r0mymendez)
 
 En el presente articulo te explico el uso del servicio **AWS Copilot**, pero para poder realizarlo es necesario que comencemos analizando que es y como funciona el servicio de **ECS** (AWS Elastic Container Service) y sus formas de implementación.
 Esto es necesario debido a que AWS copilot realiza la implementación y despliegue de una aplicación utilizando ECS.
@@ -199,6 +199,6 @@ Realizando un breve resumen de AWS copilot podemos destacar las siguientes carac
 
 4.  📚**Titulo**: Gentle Introduction to How AWS ECS Works with Example Tutorial, **Sitio:** Medium**, Autor:** [Tung Nguyen](https://medium.com/@tongueroo?source=post_page-----cea3d27ce63d--------------------------------) **, Url:** <https://medium.com/boltops/gentle-introduction-to-how-aws-ecs-works-with-example-tutorial-cea3d27ce63d>, **Fecha de consulta**: 2022-09-17
 
-----
+------------------------------------------------------------------------
 
-* Image preview reference: [Image by vectorjuice on Freepik](https://www.freepik.com/free-vector/engineer-developer-with-laptop-tablet-code-cross-platform-development-cross-platform-operating-systems-software-environments-concept-pinkish-coral-bluevector-isolated-illustration_11669400.htm#query=develop%20illustration&position=28&from_view=search&track=ais&uuid=60430892-2126-4b0b-8e3c-8cd2b277ecab)
+-   Image preview reference: [Image by vectorjuice on Freepik](https://www.freepik.com/free-vector/engineer-developer-with-laptop-tablet-code-cross-platform-development-cross-platform-operating-systems-software-environments-concept-pinkish-coral-bluevector-isolated-illustration_11669400.htm#query=develop%20illustration&position=28&from_view=search&track=ais&uuid=60430892-2126-4b0b-8e3c-8cd2b277ecab)

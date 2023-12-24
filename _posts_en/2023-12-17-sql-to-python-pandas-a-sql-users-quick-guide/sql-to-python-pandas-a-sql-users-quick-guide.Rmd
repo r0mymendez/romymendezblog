@@ -28,7 +28,7 @@ editor_options:
 knitr::opts_chunk$set(echo = FALSE)
 ```
 
-# SQL to Python Pandas: A SQL User's Quick Guide
+[![](https://img.shields.io/badge/Buy%20Me%20A%20Coffee-support%20my%20work-FFDD00?style=flat&labelColor=101010&logo=buy-me-a-coffee&logoColor=white){width="40%"}](https://www.buymeacoffee.com/r0mymendez)
 
 In this post, we will compare the implementation of Pandas and SQL for data queries.
 We'll explore how to use Pandas in a manner similar to SQL by translating SQL queries into Pandas operations.

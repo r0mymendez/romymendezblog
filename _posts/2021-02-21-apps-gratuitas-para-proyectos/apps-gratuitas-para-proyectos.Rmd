@@ -20,6 +20,8 @@ output:
 knitr::opts_chunk$set(echo = FALSE)
 ```
 
+[![](https://img.shields.io/badge/Buy%20Me%20A%20Coffee-support%20my%20work-FFDD00?style=flat&labelColor=101010&logo=buy-me-a-coffee&logoColor=white){width="40%"}](https://www.buymeacoffee.com/r0mymendez)
+
 La pandemia de coronavirus impulso el home office y muchos empleados se vieron obligados a transformar su forma de trabajar. Este contexto genero un cambio en la forma en la que nos relacionamos y desempeñamos nuestras tareas diarias.
 
 ![](https://image.freepik.com/free-vector/tiny-people-developers-laptop-customer-requirements-software-requirement-description-user-case-agile-tool-business-analysis-concept_335657-2433.jpg)
