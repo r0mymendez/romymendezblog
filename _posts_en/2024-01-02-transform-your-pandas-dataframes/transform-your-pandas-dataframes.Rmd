@@ -1,0 +1,483 @@
+---
+title: "Transform your Pandas Dataframes: Styles, 🎨 Colors, and 😎 Emojis"
+description: |
+  In the following article, we will explore a method to add colors and styles to Pandas DataFrames.
+categories:
+  - Python
+  - Data
+  - DataViz
+preview: "preview.jpg"
+twitter:
+  site: "@r0mymendez"
+  creator: "@r0mymendez"
+author:
+  - name: Romina Mendez
+    url: https://example.com/norajones
+date: 2024-01-02
+output:
+  distill::distill_article:
+    self_contained: yes
+    toc: yes
+editor_options: 
+  markdown: 
+    wrap: sentence
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+[![](https://img.shields.io/badge/Buy%20Me%20A%20Coffee-support%20my%20work-FFDD00?style=flat&labelColor=101010&logo=buy-me-a-coffee&logoColor=white){width="40%"}](https://www.buymeacoffee.com/r0mymendez)
+
+In the following section of this article, we will explore a method to add colors and styles to Pandas DataFrames.
+Our focus will be on the application of colors and emojis, utilizing approaches similar to the popular conditional formatting commonly employed in pivot tables within spreadsheets.
+Through this strategy, we aim to enhance the presentation of our data, making the exploration and understanding of information not only informative but also visually appealing
+
+------------------------------------------------------------------------
+
+![image generated using [partyrock](https://partyrock.aws/)](pandas_party_rock.png)
+
+------------------------------------------------------------------------
+
+# What is Pandas Style?
+
+**Pandas Styler** is a module within the Pandas library that provides methods for creating HTML-styled representations of DataFrames.
+This feature allows for the customization of the visual appearance of DataFrames during their visualization.
+The core functionality of Pandas Styler lies in the ability to highlight, color, and format cells based on specific conditions, facilitating the visual identification of patterns and trends in datasets.
+
+Also, Pandas Styler stands out for its capability to assist in the design of DataFrames or series by generating visual representations using HTML and CSS.
+This functionality simplifies the creation of attractive and customized data presentations, enhancing the visualization experience, and enabling a more intuitive interpretation of the information contained in the datasets.
+
+------------------------------------------------------------------------
+
+![](pandas_style.jpg)
+
+------------------------------------------------------------------------
+
+Next we have the code with we are going to create a pivot table using a set of data and from this you will begin to give it different styles and conditional formats such as can be seen in the previous image.
+
+------------------------------------------------------------------------
+
+## 🟣 Pivot Tables
+
+> The **pivot table** is a tabular data structure that provides a summarized overview of information from another table, organizing the data based on one variable and displaying values associated with another variable.
+> In this specific scenario, the pivot table organizes the data according to the 'smoker' column and presents the total sum of tips, categorized by the days on which clients consume in the restaurant
+
+------------------------------------------------------------------------
+
+### Example
+
+The following example shows the `pivot_table` method with the 'tips' DataFrame
+
+![](pivot_table.png)
+
+------------------------------------------------------------------------
+
+`python code`
+
+``` {.python}
+import pandas as pd
+import seaborn as sns
+
+# create the tips dataframe 
+data = sns.load_dataset('tips')
+data_pivot = pd.pivot_table(data,
+                    index='smoker',
+                    columns='day',
+                    values='total_bill',
+                    aggfunc='sum').reset_index()
+data_pivot
+```
+
+`ouput`
+
+| day | smoker | Thur   | Fri    | Sat    | Sun     |
+|-----|--------|--------|--------|--------|---------|
+| 0   | Yes    | 326.24 | 252.20 | 893.62 | 458.28  |
+| 1   | No     | 770.09 | 73.68  | 884.78 | 1168.88 |
+
+------------------------------------------------------------------------
+
+## 🟣 Dataframe: Apple Store apps
+
+In this analysis, we will use the **'🍎 Apple Store apps'** DataFrame to explore the creation of pivot tables and customization of table styles.
+This dataset provides detailed insights into Apple App Store applications, covering aspects from app names to specifics like size, price, and ratings.
+Our objective is to efficiently break down the information while applying styles that enhance the presentation and comprehension of data effectively.
+
+The dataset was downloaded from [Kaggle](https://www.kaggle.com/ramamet4/app-store-apple-data-set-10k-apps) and it contains more than 7000 Apple iOS mobile application details.
+It is important to note that the data was collected in July 2017.
+
+------------------------------------------------------------------------
+
+### Data Schema overview
+
++------------------+---------------------------------------------------------------------------------+
+| column_name      |  column description                                                             |
++==================+=================================================================================+
+| track_name       | the column contains the name of the app.                                        |
++------------------+---------------------------------------------------------------------------------+
+| size_bytes       | the column contains the size of the app in bytes.                               |
++------------------+---------------------------------------------------------------------------------+
+| currency         | the column contains the currency type.                                          |
++------------------+---------------------------------------------------------------------------------+
+| price            | the column contains the price of the app.                                       |
++------------------+---------------------------------------------------------------------------------+
+| rating_count_tot | the column contains the total number of ratings.                                |
++------------------+---------------------------------------------------------------------------------+
+| rating_count_ver | the column contains the number of ratings for the current version of the app.   |
++------------------+---------------------------------------------------------------------------------+
+| user_rating      | the column contains the average user rating for the app.                        |
++------------------+---------------------------------------------------------------------------------+
+| user_rating_ver  | the column contains the average user rating for the current version of the app. |
++------------------+---------------------------------------------------------------------------------+
+| ver              | the column contains the current version of the app.                             |
++------------------+---------------------------------------------------------------------------------+
+| cont_rating      | the column contains the content rating.                                         |
++------------------+---------------------------------------------------------------------------------+
+| prime_genre      | the column contains the primary genre.                                          |
++------------------+---------------------------------------------------------------------------------+
+| sup_devices.num  | the column contains the number of supported devices.                            |
++------------------+---------------------------------------------------------------------------------+
+| ipadSc_urls.num  | the column contains the number of screenshots showed for display.               |
++------------------+---------------------------------------------------------------------------------+
+| lang.num         | the column contains the number of supported languages.                          |
++------------------+---------------------------------------------------------------------------------+
+| vpp_lic          | the column contains the Vpp Device Based Licensing Enabled.                     |
++------------------+---------------------------------------------------------------------------------+
+
+------------------------------------------------------------------------
+
+## 🟣 Create Dataframe
+
+In the following code chunk, we will create a DataFrame by reading the CSV file.
+
+``` {.python}
+import pandas as pd
+import numpy as np
+import math
+import matplotlib.pyplot as plt
+import warnings
+
+# Deactivate pandas warning
+warnings.filterwarnings('ignore')
+
+
+print("Python Libraries version:")
+print('--'*20)
+print("Pandas version: ", pd.__version__)
+print("Numpy version: ", np.__version__)
+print("Matplotlib version: ", plt.matplotlib.__version__)
+```
+
+``` {.bash}
+Python Libraries version:
+----------------------------------------
+Pandas version:  2.1.3
+Numpy version:  1.26.1
+Matplotlib version:  3.8.1
+```
+
+``` {.python}
+# Create a dataframe from a csv file
+# You can download the file from the following link https://github.com/r0mymendez/pandas-styles
+path='data/AppleStore.csv'
+data =pd.read_csv(path,sep=';')
+```
+
+## 🟣 Pivot Table
+
+In the next step, we are going to create a pivot table from a DataFrame.
+
+``` {.python}
+# Pivot table
+
+# filter the data to keep only the top 15 genres
+top_genre = data.value_counts('prime_genre')[:15].index.tolist()
+tmp = data.loc[data['prime_genre'].isin(top_genre),['prime_genre','user_rating','price']]
+
+# create a new column with the rating rounded to the nearest integer
+tmp['user_rating'] = [f'rating_{str(math.trunc(item))}' for item in  tmp['user_rating']]
+
+# create a pivot table
+tmp_pivot = (
+        pd.pivot_table(
+            data = tmp,
+            columns='user_rating',
+            index='prime_genre',
+            values='price',
+            aggfunc='mean',
+            fill_value=0
+            ).reset_index().round(2)
+)
+# rename the columns
+tmp_pivot.columns.name=''
+# print the pivot table
+tmp_pivot
+```
+
+![](pandas_style_1.png)
+
+------------------------------------------------------------------------
+
+## 🟣 Styling with Pandas
+
+Now we will explore the `style` module in Pandas, that enables us to enhance the visual presentation of DataFrames.
+The `style` module provides a differents of options to modify the appearance of the data, allowing us to customize aspects such as:
+
+-   **Coloring Cells:** Apply different colors based on cell values or conditions.
+-   **Highlighting:** Emphasize specific rows, columns, or values.
+-   **Formatting:** Adjust the format of the displayed values, including precision and alignment.
+-   **Bar Charts:** Represent data with horizontal or vertical bar charts within cells.
+
+------------------------------------------------------------------------
+
+### 🎨 Styling: Setting Background Color for Headers
+
+In this section, we will apply styles to both the titles and the table.
+Therefore we use background colors to highlight the headers and the rest of the table.
+
+``` {.python}
+# Styling: Changing Background Color for Column Headers
+headers = {
+    'selector': 'th.col_heading',
+    'props': 'background-color: #5E17EB; color: white;'
+}
+
+index_style = {
+    'selector': 'th.index_name',
+    'props': 'background-color: #5E17EB; color: white;'
+}
+
+tmp_pivot_style = (
+    tmp_pivot
+        .style
+            .set_table_styles([headers,index_style])
+            .set_properties(**{'background-color': '#ECE3FF','color': 'black'})
+)
+
+tmp_pivot_style
+```
+
+![](pandas_style_2.png)
+
+------------------------------------------------------------------------
+
+### 🎨 Style: Setting the background color for a particular cell
+
+In following code snippet illustrates how to set a custom background color for a particular cell in our DataFrame using pandas styling.
+
+``` {.python}
+(
+    tmp_pivot
+        .style
+            .set_table_styles([headers, index_style])
+            .set_properties(**{'background-color': '#ECE3FF', 'color': 'black'})
+            .set_properties(**{'background-color': '#FD636B', 'color': 'white'},subset=pd.IndexSlice[4, 'rating_5'])
+)
+```
+
+![](pandas_style_3.png)
+
+------------------------------------------------------------------------
+
+### 🎨 Style: Setting the background color for max/min values in the dataframe
+
+Now, we will focus on highlighting the maximum and minimum values in our DataFrame.
+For this reason, we will assign distinctive background colors to these extreme values, facilitating a quicker and more intuitive understanding of the dataset.
+The code snippet below demonstrates how to implement this stylistic enhancement.
+
+``` {.python}
+# select the columns that start with 'rating_'
+columns = tmp_pivot.columns[tmp_pivot.columns.str.startswith('rating_')]
+
+# get the max and min values
+max_value = tmp_pivot[columns].max().max()
+min_value = tmp_pivot[columns].min().min()
+
+# Establecer el estilo para la celda con el valor máximo
+max_style = f'border: 4px solid #3BE8B0 !important;'
+
+# Establecer el estilo para la celda con el valor mínimo
+min_style = f'background-color: #FF66C4; '
+
+(
+    tmp_pivot
+        .style
+            .set_table_styles([headers, index_style])
+            .set_properties(**{'background-color': '#ECE3FF', 'color': 'black'})
+            .set_properties(**{'background-color': '#FD636B', 'color': 'white'}, subset=pd.IndexSlice[4, 'rating_5'])
+            .applymap(lambda x: max_style if x == max_value else '')
+            .applymap(lambda x: min_style if x == min_value else '', subset=columns)
+)
+```
+
+![](pandas_style_4.png)
+
+------------------------------------------------------------------------
+
+### 🎨 Style: Color Background Gradients
+
+In the upcoming section, we will delve into the concept of color maps, representing a spectrum of colors arranged in a gradient.
+A colormap, essentially a palette of colors, consists of distinctive denominations, with the most popular ones being **['viridis,' 'magma,' 'Greens,' 'Reds']**.
+
+The primary objective behind creating these color spectrums is to enhance the visual representation of data.
+Each color in the gradient carries specific nuances, contributing to a more nuanced data visualization experience.
+
+For an extensive array of color options, you can explore the [matplotlib colormaps](https://matplotlib.org/3.1.0/tutorials/colors/colormaps.html) link.
+
+``` {.python}
+import matplotlib.pyplot as plt
+import numpy as np
+
+# Define the colormap
+for cmap_item in ['viridis', 'magma','Greens','Reds']:
+    cmap = plt.get_cmap(cmap_item)
+    # Create a color gradient
+    gradient = np.linspace(0, 1, 256).reshape(1, -1)
+
+    # Display the color palette
+    plt.figure(figsize=(10, 0.2))
+    plt.imshow(gradient, aspect='auto', cmap=cmap)
+    plt.axis('off')
+    plt.title(f'{cmap_item.capitalize()} Color Palette', loc='left', fontsize=9)
+    plt.show()
+```
+
+![](pandas_style_5.png)
+
+> #### Viridis palette
+>
+> Now, we will apply a color gradient to our pivot table, allowing you to observe how it is colored using the Viridis palette.
+> In this context, lighter colors signify larger values within the distribution, while darker shades correspond to smaller values in the distribution.
+> This approach provides a visual representation that intuitively conveys the magnitude of the data, making it easier to discern patterns and variations across the dataset.
+
+``` {.python}
+plt.get_cmap('viridis',lut=20)
+```
+
+![](pandas_style_6.png)
+
+``` {.python}
+(
+    tmp_pivot
+        .style
+            .set_table_styles([headers, index_style])
+            .background_gradient(cmap='viridis',subset=columns)
+)
+```
+
+![](pandas_style_7.png)
+
+------------------------------------------------------------------------
+
+### 🎨 Style: Color Background in columns
+
+In the next code chunk, we will enhance the visual representation of our pivot table by introducing distinct color backgrounds to specific columns.
+This technique aids in better highlighting and categorizing data, making it easier to draw insights from the table.
+
+``` {.python}
+(
+    tmp_pivot
+        .style
+            .set_table_styles([headers, index_style])
+            .set_properties(**{'background-color': '#FFCFC9','color':'black'},subset=['rating_0','rating_1'])
+            .set_properties(**{'background-color': '#FFF1B0','color':'black'},subset=['rating_2','rating_3'])
+            .set_properties(**{'background-color': '#BEEAE5','color':'black'},subset=['rating_4','rating_5'])
+)
+```
+
+![I](pandas_style_8.png)
+
+------------------------------------------------------------------------
+
+### 🎨 Style: Color Bar
+
+In this section, we will implement the style.bar function to introduce a dynamic color bar into our DataFrame.
+The color bar provides a visual representation of data values, assigning varying colors to different data ranges.
+
+``` {.python}
+(
+    tmp_pivot
+        .style
+            .set_table_styles([headers, index_style])
+            .set_properties(**{'background-color': '#ECE3FF', 'color': 'black'})
+            .set_properties(**{'background-color': 'white','color':'black'},subset=columns)
+            .bar(color='#FFCFC9',subset=['rating_0','rating_1'])
+            .bar(color='#FFF1B0',subset=['rating_2','rating_3'])
+            .bar(color='#BEEAE5',subset=['rating_4','rating_5'])
+ )
+```
+
+![](pandas_style_9.png)
+
+------------------------------------------------------------------------
+
+### 🎨 Style: Image in Columns
+
+In this section, we explore the enhancement of data representation by adding an image to an additional column.
+This approach provides an alternative method to elevate the visual impact of the data being presented.
+These images can serve as icons, represent brands, or convey additional visual elements to captivate and engage the audience.
+
+``` {.python}
+# create a function to add an image to the dataframe depending on the genre
+def add_image(image_name):
+    img_url = f"img/icons/img_{image_name}.png"
+    width   = "width: 50px"
+    height  = "height: 50px"
+    text_align ="center"
+    return f'{width};{height}; content: url({img_url}); text-align:{text_align}'
+
+# apply the function to the dataframe
+styled_df = (
+    tmp_pivot
+        .head(5)
+        .reset_index()
+        .rename({'index': 'genre'}, axis=1)
+        .style.applymap(add_image, subset=pd.IndexSlice[:, ['genre']])
+        .set_table_styles([headers, index_style])
+        .set_properties(**{'background-color': '#ECE3FF', 'color': 'black'})
+)
+
+# display the dataframe with the images
+display(styled_df)
+```
+
+![](pandas_style_10.png)
+
+> **Disclaimer: Issues with Notebook Cache**
+>
+> During the creation of this content, I encountered difficulties related to the notebook cache.
+> Despite making changes to the images, the visualization did not update correctly.
+> Even after attempting to restart the kernel and clear the cell output, the problem persisted.
+> The only effective solution I found was to change the file names of the images, thus avoiding unexpected cache behavior.
+>
+> It's important to note that these issues may be specific to the Jupyter Notebooks environment and may not reflect inherent limitations in the code or libraries used.
+> While I tried to address this problem, I did not find a complete solution and opted for an alternative fix by changing the file names.
+>
+> If you have suggestions or additional solutions, I would be delighted to learn and improve this process.
+
+------------------------------------------------------------------------
+
+### 🎨 Style: Emoji Representation Based on Percentile Values
+
+In this section, we delve into the creative use of emojis based on percentile values, offering a distinctive approach to elevate data representation.
+By incorporating diverse emojis, we enhance the visual impact of the data.
+Specifically, we employ circles and squads as emojis to bring nuanced expressions to our data points.
+
+If you'd like to view the code for creating this style, it's available in my [GitHub repository](https://github.com/r0mymendez/pandas-styles/tree/main).
+Feel free to check it out and give it a star if you find it helpful!
+⭐️
+
+[![](pandas_style_github.png){width="603"}](https://github.com/r0mymendez/pandas-styles/)
+
+![](pandas_style_11.png)
+
+![](pandas_style_12.png)
+
+------------------------------------------------------------------------
+
+## 📚 References
+
+If you want to learn... \* [🐼 Pandas Style Documentation](https://pandas.pydata.org/docs/user_guide/style.html)
+
+Other references: \* Image preview reference: [[Imagen de vectorjuice en Freepik](https://www.freepik.es/vector-gratis/disenadores-estan-trabajando-diseno-pagina-web-diseno-web-interfaz-usuario-organizacion-contenido-experiencia-usuario_13450330.htm#query=design%20illustration&position=4&from_view=search&track=ais&uuid=3babc71b-d3aa-4572-a64a-69e28fb468f0)]
