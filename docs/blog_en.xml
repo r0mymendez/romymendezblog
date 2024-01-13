@@ -13,7 +13,265 @@ on software, agile methodologies , data science and the professor life.
       <link>https://r0mymendez.github.io/</link>
     </image>
     <generator>Distill</generator>
-    <lastBuildDate>Mon, 01 Jan 2024 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 12 Jan 2024 00:00:00 +0000</lastBuildDate>
+    <item>
+      <title>SQL Assistant: Text-to-SQL Application in Streamlit 🤖</title>
+      <dc:creator>Romina Mendez</dc:creator>
+      <link>https://r0mymendez.github.io/posts_en/2024-01-13-sql-assistant-text-to-sql-application-in-streamlit</link>
+      <description>
+
+
+&lt;p&gt;In this article, we will explore the application of &lt;strong&gt;Vanna.ai&lt;/strong&gt;, a 🐍 Python library specifically designed for training a model capable of processing natural language questions and &lt;strong&gt;generating SQL queries as responses&lt;/strong&gt;. This implementation will be integrated into a ✨Streamlit application, creating a 🤖chatbot that facilitates posing questions and provides explanations for the returned queries.&lt;/p&gt;
+&lt;div class="vembedr"&gt;
+&lt;div&gt;
+&lt;iframe src="https://www.youtube.com/embed/V08FCQMr8NE" width="533" height="300" frameborder="0" allowfullscreen="" data-external="1"&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;h1 id="text-to-sql-vanna.ai"&gt;🤖 Text-to-SQL &amp;amp; Vanna.ai&lt;/h1&gt;
+&lt;p&gt;&lt;strong&gt;&lt;code&gt;Text-to-SQL&lt;/code&gt;&lt;/strong&gt; is a tool that utilizes models to translate natural language queries into SQL queries, aiming to make it easy for users to generate SQL queries and interact with databases seamlessly.&lt;/p&gt;
+&lt;p&gt;The implementation of &lt;strong&gt;&lt;code&gt;Text-to-SQL&lt;/code&gt;&lt;/strong&gt; can be achieved through the use of &lt;a href="https://vanna.ai/"&gt;Vanna.AI&lt;/a&gt;, an open-source 🐍Python library that allows the training of an RAG model with queries, DDL, and documentation from a database.&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://r0mymendez.github.io//posts_en/2024-01-13-sql-assistant-text-to-sql-application-in-streamlit/Text-to-SQL.png" /&gt;&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h2 id="vanna.ai-output-possibilities"&gt;Vanna.AI: Output Possibilities&lt;/h2&gt;
+&lt;p&gt;The following are the possible outputs that can be generated with Vanna methods, facilitating diverse ways of interacting with the database using natural language.&lt;/p&gt;
+&lt;table&gt;
+&lt;colgroup&gt;
+&lt;col width="13%" /&gt;
+&lt;col width="86%" /&gt;
+&lt;/colgroup&gt;
+&lt;thead&gt;
+&lt;tr class="header"&gt;
+&lt;th&gt;Output&lt;/th&gt;
+&lt;th&gt;Description&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr class="odd"&gt;
+&lt;td&gt;&lt;strong&gt;📄 SQL&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;Vanna.AI can generate SQL queries from natural language questions. These SQL queries can be used to interact with a database.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class="even"&gt;
+&lt;td&gt;&lt;strong&gt;📁 DataFrame&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;After generating an SQL query, Vanna.AI can execute it in the database and return the results as a pandas DataFrame.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class="odd"&gt;
+&lt;td&gt;&lt;strong&gt;📊 Charts&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;Vanna.AI can generate plots using Plotly from the results of the SQL query.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class="even"&gt;
+&lt;td&gt;&lt;strong&gt;❓ Follow-up questions&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;Vanna.AI can generate follow-up questions based on the generated SQL query. These follow-up questions can help users refine their queries or explore the data in more detail.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class="odd"&gt;
+&lt;td&gt;&lt;strong&gt;🔍 Explanations queries&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;Vanna.AI can provide explanations for the generated SQL queries. These explanations can help users understand how their natural language question is interpreted into an SQL query.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;hr /&gt;
+&lt;h2 id="vanna.ai-features"&gt;Vanna.AI: Features&lt;/h2&gt;
+&lt;p&gt;The following table contains the key features available with Vanna.AI, enriching data interaction capabilities:&lt;/p&gt;
+&lt;table&gt;
+&lt;colgroup&gt;
+&lt;col width="20%" /&gt;
+&lt;col width="79%" /&gt;
+&lt;/colgroup&gt;
+&lt;thead&gt;
+&lt;tr class="header"&gt;
+&lt;th&gt;Feature&lt;/th&gt;
+&lt;th&gt;Description&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr class="odd"&gt;
+&lt;td&gt;&lt;strong&gt;🚀 Model Training&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;Train the RAG model on data sources, including Data Definition Language (DDL) statements, documentation, and SQL queries during the training process.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class="even"&gt;
+&lt;td&gt;&lt;strong&gt;🤖 User Query Handling&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;Users can pose questions in natural language, and Vanna.AI responds by generating SQL queries.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class="odd"&gt;
+&lt;td&gt;&lt;strong&gt;📚 Documentation&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;Extensive documentation, a dedicated website, and a support community on Discord are available to offer comprehensive assistance.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class="even"&gt;
+&lt;td&gt;&lt;strong&gt;🔌 Database Connections&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;Vanna allows connecting to multiple databases, enabling users not only to retrieve SQL queries but also to execute them by establishing connections to their respective databases.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class="odd"&gt;
+&lt;td&gt;&lt;strong&gt;🤔 AI-Generated Recommendation Questions&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;This framework includes a feature of generating AI-driven questions, offering suggestions for additional queries that the user could explore.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;hr /&gt;
+&lt;h1 id="simple-implementation"&gt;🛠️ Simple Implementation&lt;/h1&gt;
+&lt;p&gt;For this initial implementation, we will leverage an example provided by &lt;strong&gt;vanna.ai&lt;/strong&gt;, using the Chinook database. This database includes tables and data relevant to a music store, encompassing information about artists, albums, tracks, customers, orders, and various aspects associated with the management of an online music store.&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://r0mymendez.github.io//posts_en/2024-01-13-sql-assistant-text-to-sql-application-in-streamlit/chinook.png" /&gt;&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h2 id="install-vanna-ai"&gt;Install vanna-ai&lt;/h2&gt;
+&lt;p&gt;&lt;code&gt;!pip install vanna&lt;/code&gt;&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h2 id="implementation-steps"&gt;Implementation Steps&lt;/h2&gt;
+&lt;p&gt;Follow these steps to implement a straightforward example of text-to-SQL:&lt;/p&gt;
+&lt;ol style="list-style-type: decimal"&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;API Key Retrieval:&lt;/strong&gt; To initiate this example, acquire an API key by registering at &lt;a href="https://vanna.ai/" class="uri"&gt;https://vanna.ai/&lt;/a&gt;. Utilize your registered email to obtain the key.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;Setting API Key and Model:&lt;/strong&gt; Configure the API key obtained and specify the model to be used, in this instance, the pre-existing “chinook” model&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;Connecting to the Database:&lt;/strong&gt; Establish a connection with the database, utilizing an SQLite file available at &lt;a href="https://vanna.ai/Chinook.sqlite" class="uri"&gt;https://vanna.ai/Chinook.sqlite&lt;/a&gt;.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;Asking a Question:&lt;/strong&gt; Finally, pose a natural language question to extract specific information from the database. In this step, the result includes the SQL query, the DataFrame from the query execution, and a representative chart. The system also generates follow-up questions based on the dataset.&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre class="python"&gt;&lt;code&gt;import vanna as vn
+
+# STEP 01: This is a simple example of how to use the Vanna API
+api_key = vn.get_api_key(&amp;#39;your_email&amp;#39;)
+
+# Set the API key and the model
+vn.set_api_key(api_key)
+
+# STEP 02:  Set the model
+vn.set_model(&amp;#39;chinook&amp;#39;)
+
+# STEP 03:  Connect with the database
+vn.connect_to_sqlite(&amp;#39;https://vanna.ai/Chinook.sqlite&amp;#39;)
+
+# STEP 04:  Ask a question
+vn.ask(&amp;#39;What are the top 10 artists by sales?&amp;#39;)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;📃&lt;code&gt;sql query&lt;/code&gt;&lt;/p&gt;
+&lt;pre class="sql"&gt;&lt;code&gt;SELECT a.name,
+       sum(il.quantity) as totalsales
+FROM   artist a
+    INNER JOIN album al
+        ON a.artistid = al.artistid
+    INNER JOIN track t
+        ON al.albumid = t.albumid
+    INNER JOIN invoiceline il
+        ON t.trackid = il.trackid
+GROUP BY a.name
+ORDER BY totalsales desc limit 10;&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;📊&lt;code&gt;plotly chart&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://r0mymendez.github.io//posts_en/2024-01-13-sql-assistant-text-to-sql-application-in-streamlit/plotly.png" /&gt;&lt;/p&gt;
+&lt;p&gt;❓&lt;code&gt;New Questions&lt;/code&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;AI-generated follow-up questions:
+
+* Who is the artist with the highest sales?
+* What are the total sales for each artist?
+* Which genre has the highest sales?
+* Can you provide a breakdown of sales by album?
+* Which artist has the lowest sales?
+* What is the average sales per artist?
+* Can you provide a list of the top-selling albums?
+* Which genre has the least sales?
+* Can you provide a breakdown of sales by country?
+* What is the total sales for each genre?&lt;/code&gt;&lt;/pre&gt;
+&lt;hr /&gt;
+&lt;h1 id="model-training"&gt;🧪 Model Training&lt;/h1&gt;
+&lt;p&gt;To train your own model follow the following steps: 1. Log in to your account &lt;a href="https://vanna.ai/" class="uri"&gt;https://vanna.ai/&lt;/a&gt; and create a new model. 2. Next we will define how to train the model. In our next example we will use ddl (data definition language), documentation and queries.&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://r0mymendez.github.io//posts_en/2024-01-13-sql-assistant-text-to-sql-application-in-streamlit/ecommerce_database.png" /&gt;&lt;/p&gt;
+&lt;pre class="python"&gt;&lt;code&gt;# Check the models available in the account
+vn.get_models()&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class="bash"&gt;&lt;code&gt;[&amp;#39;ecommerce-test&amp;#39;, &amp;#39;demo-tpc-h&amp;#39;, &amp;#39;tpc&amp;#39;, &amp;#39;chinook&amp;#39;, &amp;#39;thelook&amp;#39;]&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class="python"&gt;&lt;code&gt;# Set the model
+vn.set_model(&amp;quot;ecommerce-test&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class="python"&gt;&lt;code&gt;# Get the ddl for training the model
+# Train the model with the ddl
+ddl = &amp;quot;&amp;quot;&amp;quot;
+CREATE TABLE if not exists stage.customers(
+    customer_id           INT NOT NULL PRIMARY KEY,
+    email_address         VARCHAR(50) NOT NULL,
+    name                  VARCHAR(50) NOT NULL,
+    business_type_id      INT NOT NULL,
+    site_code             VARCHAR(10) NOT NULL,
+    archived              BOOLEAN NOT NULL,
+    is_key_account        BOOLEAN NOT NULL,
+    date_updated          TIMESTAMP NOT NULL,
+    date_created          TIMESTAMP NOT NULL,
+    job_created_date  TIMESTAMP WITH TIME ZONE DEFAULT 
+        CURRENT_TIMESTAMP,
+    job_created_user  varchar(50) default null,
+    job_updated_date  TIMESTAMP default null,
+    job_updated_user  varchar(50) default null,
+    CONSTRAINT fk_business_type_id FOREIGN KEY(business_type_id) REFERENCES stage.business_types (business_type_id)
+);
+&amp;quot;&amp;quot;&amp;quot;
+vn.train(ddl=ddl)&lt;/code&gt;&lt;/pre&gt;
+&lt;blockquote&gt;
+&lt;p&gt;In &lt;a href="https://github.com/r0mymendez/text-to-sql/tree/main/src/db"&gt;my repository&lt;/a&gt;, you can find all the scripts, documentation, and queries to train the model and answer questions such as the following&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;pre class="python"&gt;&lt;code&gt;# Ask a question for generating the SQL
+question  =  &amp;quot;&amp;quot;&amp;quot;What is the total count of new clients who registered between October 1, 2020, and 
+January 1, 2022, and have made more than 10 purchases, each exceeding $20? Additionally,
+ could you provide their email addresses, the number of purchases made, and the date of their
+  most recent purchase?&amp;quot;&amp;quot;&amp;quot;
+
+print(vn.generate_sql(question=question))&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class="bash"&gt;&lt;code&gt;SELECT COUNT(*) AS total_count,
+       c.email_address,
+       COUNT(o.order_id) AS num_purchases,
+       MAX(o.order_date) AS most_recent_purchase_date
+FROM Customers c
+JOIN Orders o ON c.customer_id = o.customer_id
+WHERE c.registration_date &amp;gt;= &amp;#39;2020-10-01&amp;#39; AND c.registration_date &amp;lt;= &amp;#39;2022-01-01&amp;#39;
+  AND o.order_value &amp;gt; 20
+GROUP BY c.email_address
+HAVING COUNT(o.order_id) &amp;gt; 10;&lt;/code&gt;&lt;/pre&gt;
+&lt;hr /&gt;
+&lt;h1 id="streamlit-chatbot"&gt;💬 Streamlit Chatbot&lt;/h1&gt;
+&lt;div class="figure"&gt;
+&lt;img src="https://r0mymendez.github.io//posts_en/2024-01-13-sql-assistant-text-to-sql-application-in-streamlit/streamlit-vanna-ai.png" alt="" /&gt;
+&lt;p class="caption"&gt;streamlit - vanna-ai&lt;/p&gt;
+&lt;/div&gt;
+&lt;h2 id="description"&gt;Description&lt;/h2&gt;
+&lt;p&gt;In this section, we will implement a 🤖chatbot application using text-to-SQL capabilities with ✨Streamlit. This app will be developed through the integration of Vanna.AI and ✨Streamlit, providing a user-friendly interface for entering your username, selecting an avatar, and initiating a 💬chat.&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h2 id="quick-start"&gt;Quick Start&lt;/h2&gt;
+&lt;ol style="list-style-type: decimal"&gt;
+&lt;li&gt;Clone the Repository {% github r0mymendez/text-to-sql %}&lt;/li&gt;
+&lt;li&gt;Add your ddl scripts, documentation and sql queries in &lt;code&gt;src\db\&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Add your credentials in &lt;code&gt;src\.streamlit\secrets.toml&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Execute the Application&lt;/li&gt;
+&lt;/ol&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Detailed instructions on how to run the application and add credentials can be found in the repository’s &lt;code&gt;README.md&lt;/code&gt;.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;hr /&gt;
+&lt;h2 id="chatbot-preview"&gt;🤖 Chatbot Preview&lt;/h2&gt;
+&lt;p&gt;The application, crafted with Vanna.AI and ✨Streamlit, and you can see below a video of how it works, remember that all the explanations are in the &lt;code&gt;readme.md&lt;/code&gt; file of the &lt;a href="https://github.com/r0mymendez/text-to-sql/tree/main"&gt;repository&lt;/a&gt;. Feel free to check it out and give it a star if you find it helpful! ⭐️&lt;/p&gt;
+&lt;div class="vembedr"&gt;
+&lt;div&gt;
+&lt;iframe src="https://www.youtube.com/embed/V08FCQMr8NE" width="533" height="300" frameborder="0" allowfullscreen="" data-external="1"&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;&lt;img src="https://r0mymendez.github.io//posts_en/2024-01-13-sql-assistant-text-to-sql-application-in-streamlit/chatbot-1.png" alt="chatbot-1" /&gt; &lt;img src="https://r0mymendez.github.io//posts_en/2024-01-13-sql-assistant-text-to-sql-application-in-streamlit/chatbot-2.png" alt="chatbot-2" /&gt;&lt;/p&gt;
+&lt;div class="figure"&gt;
+&lt;img src="https://r0mymendez.github.io//posts_en/2024-01-13-sql-assistant-text-to-sql-application-in-streamlit/chatbot-3.png" alt="" /&gt;
+&lt;p class="caption"&gt;chatbot-3&lt;/p&gt;
+&lt;/div&gt;
+&lt;hr /&gt;
+&lt;h1 id="references"&gt;📚 References&lt;/h1&gt;
+&lt;p&gt;If you want to learn…&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href="https://github.com/vanna-ai/vanna"&gt;vanna-ai&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href="https://www.streamlit.io/"&gt;✨streamlit&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Other references:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Image preview reference: &lt;a href="https://www.freepik.es/vector-gratis/programadores-chatbot-que-procesan-lenguaje-natural-procesamiento-lenguaje-natural-lenguaje-natural-chatbot-concepto-ciencia-lenguaje-natural_11667683.htm#query=chatbot%20illustration&amp;amp;position=6&amp;amp;from_view=search&amp;amp;track=ais&amp;amp;uuid=ad9cfc95-8994-4854-ab1c-b2e9573d86ee"&gt;[Imagen de vectorjuice en Freepik]&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr /&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;em&gt;&lt;strong&gt;⚠️ Disclaimer&lt;/strong&gt;: Before proceeding with the use of your own data in the Vanna.AI application, it is recommended to review and validate the data protection policies established by Vanna.AI. Ensure a thorough understanding of how your personal data is handled and protected within the application framework. It is crucial to comply with privacy and security regulations before providing any sensitive information.&lt;/em&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;pre class="r distill-force-highlighting-css"&gt;&lt;code&gt;&lt;/code&gt;&lt;/pre&gt;</description>
+      <distill:md5>21ea0849a6f5c5b99ecaa63806b7d486</distill:md5>
+      <category>Python</category>
+      <category>Data</category>
+      <category>DataViz</category>
+      <category>AI</category>
+      <guid>https://r0mymendez.github.io/posts_en/2024-01-13-sql-assistant-text-to-sql-application-in-streamlit</guid>
+      <pubDate>Fri, 12 Jan 2024 00:00:00 +0000</pubDate>
+      <media:content url="https://r0mymendez.github.io/posts_en/2024-01-13-sql-assistant-text-to-sql-application-in-streamlit/preview.jpg" medium="image" type="image/jpeg"/>
+    </item>
     <item>
       <title>Transform your Pandas Dataframes: Styles, 🎨 Colors, and 😎 Emojis</title>
       <dc:creator>Romina Mendez</dc:creator>
@@ -403,7 +661,7 @@ display(styled_df)&lt;/code&gt;&lt;/pre&gt;
       <category>Data</category>
       <category>DataViz</category>
       <guid>https://r0mymendez.github.io/posts_en/2024-01-02-transform-your-pandas-dataframes</guid>
-      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
+      <pubDate>Tue, 02 Jan 2024 00:00:00 +0000</pubDate>
       <media:content url="https://r0mymendez.github.io/posts_en/2024-01-02-transform-your-pandas-dataframes/preview.jpg" medium="image" type="image/jpeg"/>
     </item>
     <item>
