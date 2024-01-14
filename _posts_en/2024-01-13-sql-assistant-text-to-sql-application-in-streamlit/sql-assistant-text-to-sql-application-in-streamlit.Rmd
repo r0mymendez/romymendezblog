@@ -28,6 +28,8 @@ editor_options:
 knitr::opts_chunk$set(echo = FALSE)
 ```
 
+[![](https://img.shields.io/badge/Buy%20Me%20A%20Coffee-support%20my%20work-FFDD00?style=flat&labelColor=101010&logo=buy-me-a-coffee&logoColor=white){width="40%"}](https://www.buymeacoffee.com/r0mymendez)
+
 In this article, we will explore the application of **Vanna.ai**, a 🐍 Python library specifically designed for training a model capable of processing natural language questions and **generating SQL queries as responses**.
 This implementation will be integrated into a ✨Streamlit application, creating a 🤖chatbot that facilitates posing questions and provides explanations for the returned queries.
 
@@ -50,19 +52,13 @@ The implementation of **`Text-to-SQL`** can be achieved through the use of [Vann
 
 The following are the possible outputs that can be generated with Vanna methods, facilitating diverse ways of interacting with the database using natural language.
 
-+----------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 | Output                     | Description                                                                                                                                                                         |
-+============================+=====================================================================================================================================================================================+
+|----------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | **📄 SQL**                  | Vanna.AI can generate SQL queries from natural language questions. These SQL queries can be used to interact with a database.                                                       |
-+----------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 | **📁 DataFrame**            | After generating an SQL query, Vanna.AI can execute it in the database and return the results as a pandas DataFrame.                                                                |
-+----------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 | **📊 Charts**               | Vanna.AI can generate plots using Plotly from the results of the SQL query.                                                                                                         |
-+----------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 | **❓ Follow-up questions**  | Vanna.AI can generate follow-up questions based on the generated SQL query. These follow-up questions can help users refine their queries or explore the data in more detail.       |
-+----------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 | **🔍 Explanations queries** | Vanna.AI can provide explanations for the generated SQL queries. These explanations can help users understand how their natural language question is interpreted into an SQL query. |
-+----------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 ------------------------------------------------------------------------
 
@@ -70,19 +66,13 @@ The following are the possible outputs that can be generated with Vanna methods,
 
 The following table contains the key features available with Vanna.AI, enriching data interaction capabilities:
 
-+---------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 | Feature                                     | Description                                                                                                                                                                        |
-+=============================================+====================================================================================================================================================================================+
+|---------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | **🚀 Model Training**                        | Train the RAG model on data sources, including Data Definition Language (DDL) statements, documentation, and SQL queries during the training process.                              |
-+---------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 | **🤖 User Query Handling**                   | Users can pose questions in natural language, and Vanna.AI responds by generating SQL queries.                                                                                     |
-+---------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 | **📚 Documentation**                         | Extensive documentation, a dedicated website, and a support community on Discord are available to offer comprehensive assistance.                                                  |
-+---------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 | **🔌 Database Connections**                  | Vanna allows connecting to multiple databases, enabling users not only to retrieve SQL queries but also to execute them by establishing connections to their respective databases. |
-+---------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 | **🤔 AI-Generated Recommendation Questions** | This framework includes a feature of generating AI-driven questions, offering suggestions for additional queries that the user could explore.                                      |
-+---------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 ------------------------------------------------------------------------
 
@@ -291,7 +281,7 @@ embed_url("https://www.youtube.com/watch?v=V08FCQMr8NE")
 
 If you want to learn...
 
--    [vanna-ai](https://github.com/vanna-ai/vanna)
+-   [vanna-ai](https://github.com/vanna-ai/vanna)
 
 -   [✨streamlit](https://www.streamlit.io/)
 

@@ -11,13 +11,13 @@ rss:
   full_content: true
 collections:
   posts:
-    feed_items_max: 50
+    feed_items_max: 5
     disqus:
       shortname: romimendezblog
       hidden: true
       share: [twitter, linkedin]
   posts_en:
-    feed_items_max: 50
+    feed_items_max: 5
     disqus:
       shortname: romimendezblog
       hidden: true
