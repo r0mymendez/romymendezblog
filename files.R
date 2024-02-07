@@ -21,5 +21,6 @@ create_post("SQL to Python Pandas: A SQL User's Quick Guide",collection ="posts_
 create_post("Decoding a Data Model - Using SchemaSpy in Snowflake",collection ="posts_en")
 create_post("Transform your Pandas Dataframes",collection ="posts_en")
 create_post("SQL-Assistant-Text-to-SQL-Application-in-Streamlit",collection ="posts_en")
+create_post("Transform your Pandas Dataframes in R",collection ="posts_en")
 
 

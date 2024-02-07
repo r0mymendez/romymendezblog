@@ -111,39 +111,23 @@ It is important to note that the data was collected in July 2017.
 
 ### Data Schema overview
 
-+------------------+---------------------------------------------------------------------------------+
 | column_name      |  column description                                                             |
-+==================+=================================================================================+
+|------------------|---------------------------------------------------------------------------------|
 | track_name       | the column contains the name of the app.                                        |
-+------------------+---------------------------------------------------------------------------------+
 | size_bytes       | the column contains the size of the app in bytes.                               |
-+------------------+---------------------------------------------------------------------------------+
 | currency         | the column contains the currency type.                                          |
-+------------------+---------------------------------------------------------------------------------+
 | price            | the column contains the price of the app.                                       |
-+------------------+---------------------------------------------------------------------------------+
 | rating_count_tot | the column contains the total number of ratings.                                |
-+------------------+---------------------------------------------------------------------------------+
 | rating_count_ver | the column contains the number of ratings for the current version of the app.   |
-+------------------+---------------------------------------------------------------------------------+
 | user_rating      | the column contains the average user rating for the app.                        |
-+------------------+---------------------------------------------------------------------------------+
 | user_rating_ver  | the column contains the average user rating for the current version of the app. |
-+------------------+---------------------------------------------------------------------------------+
 | ver              | the column contains the current version of the app.                             |
-+------------------+---------------------------------------------------------------------------------+
 | cont_rating      | the column contains the content rating.                                         |
-+------------------+---------------------------------------------------------------------------------+
 | prime_genre      | the column contains the primary genre.                                          |
-+------------------+---------------------------------------------------------------------------------+
 | sup_devices.num  | the column contains the number of supported devices.                            |
-+------------------+---------------------------------------------------------------------------------+
 | ipadSc_urls.num  | the column contains the number of screenshots showed for display.               |
-+------------------+---------------------------------------------------------------------------------+
 | lang.num         | the column contains the number of supported languages.                          |
-+------------------+---------------------------------------------------------------------------------+
 | vpp_lic          | the column contains the Vpp Device Based Licensing Enabled.                     |
-+------------------+---------------------------------------------------------------------------------+
 
 ------------------------------------------------------------------------
 

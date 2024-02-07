@@ -13,7 +13,19 @@ on software, agile methodologies , data science and the professor life.
       <link>https://r0mymendez.github.io/</link>
     </image>
     <generator>Distill</generator>
-    <lastBuildDate>Sat, 13 Jan 2024 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 21 Jan 2024 00:00:00 +0000</lastBuildDate>
+    <item>
+      <title>Transform your R Dataframes: Styles, 🎨 Colors, and 😎 Emojis </title>
+      <dc:creator>Romina Mendez</dc:creator>
+      <link>https://r0mymendez.github.io/posts_en/2024-01-14-transform-your-pandas-dataframes-in-r</link>
+      <description>In the following article, we will explore a method to add colors and styles to R DataFrames.</description>
+      <category>R</category>
+      <category>Data</category>
+      <category>DataViz</category>
+      <guid>https://r0mymendez.github.io/posts_en/2024-01-14-transform-your-pandas-dataframes-in-r</guid>
+      <pubDate>Sun, 21 Jan 2024 00:00:00 +0000</pubDate>
+      <media:content url="https://r0mymendez.github.io/posts_en/2024-01-14-transform-your-pandas-dataframes-in-r/preview.jpg" medium="image" type="image/jpeg"/>
+    </item>
     <item>
       <title>SQL Assistant: Text-to-SQL Application in Streamlit 🤖</title>
       <dc:creator>Romina Mendez</dc:creator>
@@ -64,16 +76,6 @@ on software, agile methodologies , data science and the professor life.
       <guid>https://r0mymendez.github.io/posts_en/2023-12-17-sql-to-python-pandas-a-sql-users-quick-guide</guid>
       <pubDate>Sun, 17 Dec 2023 00:00:00 +0000</pubDate>
       <media:content url="https://r0mymendez.github.io/posts_en/2023-12-17-sql-to-python-pandas-a-sql-users-quick-guide/preview.jpg" medium="image" type="image/jpeg"/>
-    </item>
-    <item>
-      <title>Code Quality - SonarQube</title>
-      <dc:creator>Romina Mendez</dc:creator>
-      <link>https://r0mymendez.github.io/posts_en/2023-12-10-code-quality-sonarqube</link>
-      <description>Code Quality, crucial for robust software, is upheld by tools like SonarQube.  This article explores its significance, implementation, and management.</description>
-      <category>Python</category>
-      <guid>https://r0mymendez.github.io/posts_en/2023-12-10-code-quality-sonarqube</guid>
-      <pubDate>Sun, 10 Dec 2023 00:00:00 +0000</pubDate>
-      <media:content url="https://r0mymendez.github.io/posts_en/2023-12-10-code-quality-sonarqube/preview.jpg" medium="image" type="image/jpeg"/>
     </item>
   </channel>
 </rss>
