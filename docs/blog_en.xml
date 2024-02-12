@@ -13,7 +13,297 @@ on software, agile methodologies , data science and the professor life.
       <link>https://r0mymendez.github.io/</link>
     </image>
     <generator>Distill</generator>
-    <lastBuildDate>Sun, 21 Jan 2024 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 11 Feb 2024 00:00:00 +0000</lastBuildDate>
+    <item>
+      <title>Learning AWS S3 on Localhost: Best Practices with Boto3 and LocalStack</title>
+      <dc:creator>Romina Mendez</dc:creator>
+      <link>https://r0mymendez.github.io/posts_en/2024-02-12-learning-aws-s3-on-localhost-best-practices-with-boto3-and-localstack</link>
+      <description>
+
+
+&lt;p&gt;In this article, you will discover new features of &lt;strong&gt;S3&lt;/strong&gt; and learn how to implement some of them using Boto3 in 🐍Python. Additionally, you will deploy a Localstack container to explore these functionalities without the need to use a credit card.&lt;/p&gt;
+&lt;div class="figure"&gt;
+&lt;img src="https://r0mymendez.github.io//posts_en/2024-02-12-learning-aws-s3-on-localhost-best-practices-with-boto3-and-localstack/s3-10.png" alt="" /&gt;
+&lt;p class="caption"&gt;I&lt;/p&gt;
+&lt;/div&gt;
+&lt;h1 id="what-is-aws-s3"&gt;🔸 What is AWS s3?&lt;/h1&gt;
+&lt;p&gt;&lt;strong&gt;AWS S3&lt;/strong&gt;, or &lt;code&gt;Simple Storage Service&lt;/code&gt;, is a core service of AWS that serves as a primary storage solution. While it is commonly known for storing objects, it offers a wide range of functionalities beyond basic storage. Understanding these features can significantly enhance the utilization of this service.&lt;/p&gt;
+&lt;p&gt;Some of the &lt;code&gt;main features&lt;/code&gt; of Amazon &lt;strong&gt;S3&lt;/strong&gt; include:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;🌐 Web accessibility via API or HTTPS, allowing for easy access and integration with web applications.&lt;/li&gt;
+&lt;li&gt;🔄 Object versioning, which enables the creation of copies of objects, providing additional data protection and recovery options.&lt;/li&gt;
+&lt;li&gt;🔒 Policy creation and application at the bucket level, enhancing security by controlling access to resources and defining permissions.&lt;/li&gt;
+&lt;li&gt;📉 Low storage costs and serverless architecture, providing cost-effective and scalable storage solutions with virtually unlimited capacity.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src="https://r0mymendez.github.io//posts_en/2024-02-12-learning-aws-s3-on-localhost-best-practices-with-boto3-and-localstack/s3-1.png" /&gt;&lt;/p&gt;
+&lt;hr /&gt;
+&lt;p&gt;# &lt;strong&gt;✨ Exploring 8 Key Features of Amazon S3&lt;/strong&gt;&lt;/p&gt;
+&lt;h2 id="multiple-use-cases-for-s3"&gt;📙 Multiple Use Cases for S3&lt;/h2&gt;
+&lt;p&gt;While &lt;strong&gt;S3&lt;/strong&gt; is commonly associated with file storage, such as CSV, JSON, or Parquet files, it offers a wide range of other use cases as well. These include hosting static websites, sharing files, storing data for machine learning models, application configuration, and logging purposes.&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://r0mymendez.github.io//posts_en/2024-02-12-learning-aws-s3-on-localhost-best-practices-with-boto3-and-localstack/s3-2.png" /&gt;&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h2 id="s3-storage-type"&gt;📙 S3 storage type&lt;/h2&gt;
+&lt;p&gt;In the following image, you can see the types of storage that &lt;strong&gt;S3&lt;/strong&gt; allows, which depend on the frequency of accessing the object. If you need to access objects frequently, it’s advisable to use the standard storage type. On the other hand, if access to objects is less frequent, it’s recommended to use &lt;strong&gt;S3&lt;/strong&gt; 🧊 Glacier services.&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://r0mymendez.github.io//posts_en/2024-02-12-learning-aws-s3-on-localhost-best-practices-with-boto3-and-localstack/s3-3.png" /&gt;&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h2 id="object-tagging"&gt;📙 Object tagging&lt;/h2&gt;
+&lt;p&gt;Another important feature of &lt;strong&gt;S3&lt;/strong&gt; is the ability to use tags, this tags are useful for classifying objects and managing costs. They also serve as a strategy for data protection, allowing you to label objects with categories such as confidentiality or sensitive data, and apply policies accordingly.&lt;/p&gt;
+&lt;p&gt;Additionally, &lt;strong&gt;S3&lt;/strong&gt; supports using tags to trigger Lambda functions, enabling you to perform various actions based on these labels.&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://r0mymendez.github.io//posts_en/2024-02-12-learning-aws-s3-on-localhost-best-practices-with-boto3-and-localstack/s3-4.png" /&gt;&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h2 id="s3-inventory"&gt;📙 S3 Inventory&lt;/h2&gt;
+&lt;p&gt;When managing an &lt;strong&gt;S3 bucket&lt;/strong&gt;, it’s common to accumulate a large number of files within the same bucket. To efficiently organize and manage these files, it’s often necessary to generate an inventory. In &lt;strong&gt;S3&lt;/strong&gt;, an inventory is a file that can be scheduled for updates and contains information about the objects stored in the bucket, including their type, size, and other metadata. This allows for better organization and management of objects within the bucket.&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://r0mymendez.github.io//posts_en/2024-02-12-learning-aws-s3-on-localhost-best-practices-with-boto3-and-localstack/s3-5.png" /&gt;&lt;/p&gt;
+&lt;hr /&gt;
+&lt;p&gt;## 📙 S3 Lifecycle configuration&lt;/p&gt;
+&lt;p&gt;Comprising a set of rules, the &lt;strong&gt;S3 lifecycle configuration&lt;/strong&gt; dictates actions applied by &lt;strong&gt;AWS S3&lt;/strong&gt; to a group of objects. In the following image, you can observe the typical actions that can be configured.&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://r0mymendez.github.io//posts_en/2024-02-12-learning-aws-s3-on-localhost-best-practices-with-boto3-and-localstack/s3-6.png" /&gt;&lt;/p&gt;
+&lt;hr /&gt;
+&lt;p&gt;## 📙 S3 Batch operators&lt;/p&gt;
+&lt;p&gt;It is a feature provided by &lt;strong&gt;S3&lt;/strong&gt; that allows users to perform operations on objects stored in buckets. With &lt;strong&gt;S3 Batch Operations&lt;/strong&gt;, users can automate tasks such as copying, tagging, deleting, and restoring objects. This feature is particularly useful for organizations managing large amounts of data in &lt;strong&gt;S3&lt;/strong&gt; and need to perform these operations at scale efficiently.&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://r0mymendez.github.io//posts_en/2024-02-12-learning-aws-s3-on-localhost-best-practices-with-boto3-and-localstack/s3-7.png" /&gt;&lt;/p&gt;
+&lt;hr /&gt;
+&lt;p&gt;## 📙 S3 Query Select&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;S3 Select&lt;/strong&gt; is a feature provided by S3 that enables users to find some data from objects stored in &lt;strong&gt;S3&lt;/strong&gt; buckets using simple SQL queries. With &lt;strong&gt;S3 Select&lt;/strong&gt;, users can efficiently query large datasets stored in various formats such as CSV, JSON, and Parquet, without the need to download and process the entire object. This feature is particularly useful for applications that require selective access to data stored in &lt;strong&gt;S3&lt;/strong&gt;, as it minimizes data transfer and processing overhead.&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://r0mymendez.github.io//posts_en/2024-02-12-learning-aws-s3-on-localhost-best-practices-with-boto3-and-localstack/s3-8.png" /&gt;&lt;/p&gt;
+&lt;hr /&gt;
+&lt;p&gt;## 📙 S3 Storage Lens&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;S3 Storage Lens&lt;/strong&gt; is a feature that offers a centralized dashboard with customizable reports and visualizations, allowing users to monitor key metrics such as storage usage, access patterns, and data transfer costs.&lt;/p&gt;
+&lt;p&gt;Also it provides detailed metrics, analytics, and recommendations to help organizations optimize their &lt;strong&gt;S3&lt;/strong&gt; storage resources, improve data security, and reduce costs.&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://r0mymendez.github.io//posts_en/2024-02-12-learning-aws-s3-on-localhost-best-practices-with-boto3-and-localstack/s3-9.png" /&gt;&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h1 id="what-is-boto3"&gt;📙 What is boto3?&lt;/h1&gt;
+&lt;p&gt;&lt;strong&gt;&lt;code&gt;Boto3&lt;/code&gt;&lt;/strong&gt; is a 🐍 Python library that allows the integration with AWS services, facilitating various tasks such as creation, management, and configuration of these services.&lt;/p&gt;
+&lt;p&gt;There are two primary implementations within Boto3: * &lt;strong&gt;Resource implementation&lt;/strong&gt;: provides a higher-level, object-oriented interface, abstracting away low-level details and offering simplified interactions with AWS services. * &lt;strong&gt;Client implementation&lt;/strong&gt;: offers a lower-level, service-oriented interface, providing more granular control and flexibility for interacting with AWS services directly.&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h1 id="what-is-localstack"&gt;📘 What is localstack?&lt;/h1&gt;
+&lt;p&gt;&lt;strong&gt;Localstack&lt;/strong&gt; is a platform that provides a local version of several cloud services, allowing you to simulate a development environment with AWS services. This allows you to debug and refine your code before deploying it to a production environment. For this reason, Localstack is a valuable tool for emulating essential AWS services such as object storage and message queues, among others.&lt;/p&gt;
+&lt;p&gt;Also, &lt;strong&gt;Localstack&lt;/strong&gt; serves as an effective tool for learning to implement and deploy services using a Docker container without the need for an AWS account or the use of your credit card. In this tutorial, we create a Localstack container to implement the main functionalities of &lt;strong&gt;S3&lt;/strong&gt; services.&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://r0mymendez.github.io//posts_en/2024-02-12-learning-aws-s3-on-localhost-best-practices-with-boto3-and-localstack/localstack.png" /&gt;&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h1 id="boto3-localstudio"&gt;📙 Boto3 &amp;amp; 📘 LocalStudio&lt;/h1&gt;
+&lt;p&gt;As mentioned earlier, LocalStudio provides a means to emulate a local environment for Amazon with some of the most popular services. This article will guide you through the process of creating a container using the LocalStudio image. Subsequently, it will demonstrate the utilization of &lt;strong&gt;Boto3&lt;/strong&gt; to create an &lt;strong&gt;S3&lt;/strong&gt; bucket and implement key functionalities within these services.&lt;/p&gt;
+&lt;p&gt;By the end of this tutorial, you’ll have a clearer understanding of how to seamlessly integrate Boto3 with LocalStudio, allowing you to simulate AWS services locally for development and testing purposes.&lt;/p&gt;
+&lt;h2 id="prerequisites"&gt;Prerequisites&lt;/h2&gt;
+&lt;p&gt;Before you begin, ensure that you have the following installed:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;🐳 Docker&lt;/li&gt;
+&lt;li&gt;🐙 Docker Compose&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr /&gt;
+&lt;h1 id="build-and-run-the-docker-compose-environment"&gt;🟣 Build and run the Docker Compose environment&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;ol style="list-style-type: decimal"&gt;
+&lt;li&gt;Clone the repository &amp;gt; Feel free to check it out and give it a star if you find it helpful! ⭐️&lt;/li&gt;
+&lt;/ol&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;{% github r0mymendez/LocalStack-boto3 %}&lt;/p&gt;
+&lt;pre class="bash"&gt;&lt;code&gt;git clone https://github.com/r0mymendez/LocalStack-boto3.git
+cd LocalStack-boto3&lt;/code&gt;&lt;/pre&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;ol start="2" style="list-style-type: decimal"&gt;
+&lt;li&gt;Build an run the docker compose&lt;/li&gt;
+&lt;/ol&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre class="bash"&gt;&lt;code&gt; docker-compose -f docker-compose.yaml up --build&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;Recreating localstack ... done
+Attaching to localstack
+localstack    | LocalStack supervisor: starting
+localstack    | LocalStack supervisor: localstack process (PID 16) starting
+localstack    | 
+localstack    | LocalStack version: 3.0.3.dev
+localstack    | LocalStack Docker container id: f313c21a96df
+localstack    | LocalStack build date: 2024-01-19
+localstack    | LocalStack build git hash: 553dd7e4&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;🥳&lt;code&gt;Now we have in Localtcak running in localhost!&lt;/code&gt;&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h3 id="using-localstack-with-boto3-a-step-by-step-guide"&gt;🚀 Using LocalStack with Boto3: A Step-by-Step Guide&lt;/h3&gt;
+&lt;h3 id="install-boto3"&gt;🛠️ Install Boto3&lt;/h3&gt;
+&lt;p&gt;&lt;code&gt;!pip install boto3&lt;/code&gt;&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h3 id="create-a-session-using-the-localstack-endpoint"&gt;🛠️ Create a session using the localstack endpoint&lt;/h3&gt;
+&lt;p&gt;The following code snippet initializes a client for accessing the S3 service using the LocalStack endpoint.&lt;/p&gt;
+&lt;pre class="python"&gt;&lt;code&gt;import boto3
+import json 
+import requests
+import pandas as pd
+from datetime import datetime
+import io
+import os
+
+
+s3 = boto3.client(
+    service_name=&amp;#39;s3&amp;#39;,
+    aws_access_key_id=&amp;#39;test&amp;#39;,
+    aws_secret_access_key=&amp;#39;test&amp;#39;,
+    endpoint_url=&amp;#39;http://localhost:4566&amp;#39;,
+)&lt;/code&gt;&lt;/pre&gt;
+&lt;hr /&gt;
+&lt;h3 id="create-new-buckets"&gt;🛠️ Create new buckets&lt;/h3&gt;
+&lt;p&gt;Below is the code snippet to create new buckets using the Boto3 library&lt;/p&gt;
+&lt;pre class="python"&gt;&lt;code&gt;# create buckets
+bucket_name_news = &amp;#39;news&amp;#39;
+bucket_name_config = &amp;#39;news-config&amp;#39;
+
+s3.create_bucket(Bucket= bucket_name_new )
+s3.create_bucket(Bucket=bucket_name_config)&lt;/code&gt;&lt;/pre&gt;
+&lt;hr /&gt;
+&lt;h3 id="list-all-buckets"&gt;📋 List all buckets&lt;/h3&gt;
+&lt;p&gt;After creating a bucket, you can use the following code to list all the buckets available at your endpoint.&lt;/p&gt;
+&lt;pre class="python"&gt;&lt;code&gt;# List all buckets
+response = s3.list_buckets()
+pd.json_normalize(response[&amp;#39;Buckets&amp;#39;])&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src="https://r0mymendez.github.io//posts_en/2024-02-12-learning-aws-s3-on-localhost-best-practices-with-boto3-and-localstack/boto3-1.png" /&gt;&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h3 id="upload-the-json-file-to-s3"&gt;📤 Upload the JSON file to s3&lt;/h3&gt;
+&lt;p&gt;Once we extract data from the API to gather information about news topics, the following code generates a JSON file and uploads it to the S3 bucket previously created.&lt;/p&gt;
+&lt;pre class="python"&gt;&lt;code&gt;# invoke the config news
+url = &amp;#39;https://ok.surf/api/v1/cors/news-section-names&amp;#39; 
+response = requests.get(url)
+if response.status_code==200:
+    data = response.json()
+    # ad json file to s3
+    print(&amp;#39;data&amp;#39;, data)
+    # upload the data to s3
+    s3.put_object(Bucket=bucket_name_config, Key=&amp;#39;news-section/data_config.json&amp;#39;, Body=json.dumps(data))&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;data [&amp;#39;US&amp;#39;, &amp;#39;World&amp;#39;, &amp;#39;Business&amp;#39;, &amp;#39;Technology&amp;#39;, &amp;#39;Entertainment&amp;#39;, &amp;#39;Sports&amp;#39;, &amp;#39;Science&amp;#39;, &amp;#39;Health&amp;#39;]&lt;/code&gt;&lt;/pre&gt;
+&lt;hr /&gt;
+&lt;h3 id="list-all-objects"&gt;📋 List all objects&lt;/h3&gt;
+&lt;p&gt;Now, let’s list all the objects stored in our bucket. Since we might have stored a JSON file in the previous step, we’ll include code to retrieve all objects from the bucket.&lt;/p&gt;
+&lt;pre class="python"&gt;&lt;code&gt;def list_objects(bucket_name):
+    response = s3.list_objects(Bucket=bucket_name)
+    return pd.json_normalize(response[&amp;#39;Contents&amp;#39;])
+
+# list all objects in the bucket
+list_objects(bucket_name=bucket_name_config)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src="https://r0mymendez.github.io//posts_en/2024-02-12-learning-aws-s3-on-localhost-best-practices-with-boto3-and-localstack/boto3-2.1.png" /&gt;&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h3 id="upload-multiple-csv-files-to-s3"&gt;📄 Upload multiple CSV files to s3&lt;/h3&gt;
+&lt;p&gt;In the following code snippet, we will request another method from the API to extract news for each topic. Subsequently, we will create different folders in the bucket to save CSV files containing the news for each topic. This code enables you to save multiple files in the same bucket while organizing them into folders based on the topic and the date of the data request.&lt;/p&gt;
+&lt;pre class="python"&gt;&lt;code&gt;# Request the news feed API Method
+url = &amp;#39;https://ok.surf/api/v1/news-feed&amp;#39; 
+response = requests.get(url)
+if response.status_code==200:
+    data = response.json()
+
+# Add the json file to s3
+folder_dt =  f&amp;#39;dt={datetime.now().strftime(&amp;quot;%Y%m%d&amp;quot;)}&amp;#39;
+
+for item in data.keys():
+    tmp = pd.json_normalize(data[item])
+    tmp[&amp;#39;section&amp;#39;] = item   
+    tmp[&amp;#39;download_date&amp;#39;] = datetime.now()
+    tmp[&amp;#39;date&amp;#39;] = pd.to_datetime(tmp[&amp;#39;download_date&amp;#39;]).dt.date
+    path = f&amp;quot;s3://{bucket_name_news}/{item}/{folder_dt}/data_{item}_news.csv&amp;quot;
+
+    # upload multiple files to s3
+    bytes_io = io.BytesIO()
+    tmp.to_csv(bytes_io, index=False)
+    bytes_io.seek(0)
+    s3.put_object(Bucket=bucket_name_news, Key=path, Body=bytes_io)
+
+# list all objects in the bucket
+list_objects(bucket_name=bucket_name_news)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src="https://r0mymendez.github.io//posts_en/2024-02-12-learning-aws-s3-on-localhost-best-practices-with-boto3-and-localstack/boto3-2.png" /&gt;&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h3 id="read-csv-file-from-s3"&gt;📄 Read csv file from s3&lt;/h3&gt;
+&lt;p&gt;In this section, we aim to read a file containing news about technology topics from S3. To accomplish this, we first retrieve the name of the file in the bucket. Then, we read this file and print the contents as a pandas dataframe.&lt;/p&gt;
+&lt;pre class="python"&gt;&lt;code&gt;# Get the technology file
+files = list_objects(bucket_name=bucket_name_news)
+technology_file = files[files[&amp;#39;Key&amp;#39;].str.find(&amp;#39;Technology&amp;#39;)&amp;gt;=0][&amp;#39;Key&amp;#39;].values[0]
+print(&amp;#39;file_name&amp;#39;,technology_file)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;file_name s3://news/Technology/dt=20240211/data_Technology_news.csv&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class="python"&gt;&lt;code&gt;# get the file from s3 using boto3
+obj = s3.get_object(Bucket=bucket_name_news, Key=technology_file)
+data_tech = pd.read_csv(obj[&amp;#39;Body&amp;#39;])
+
+data_tech&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src="https://r0mymendez.github.io//posts_en/2024-02-12-learning-aws-s3-on-localhost-best-practices-with-boto3-and-localstack/boto3-3.png" /&gt;&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h3 id="add-tags-to-the-bucket"&gt;🏷️ Add tags to the bucket&lt;/h3&gt;
+&lt;p&gt;When creating a resource in the cloud, it is considered a best practice to add tags for organizing resources, controlling costs, or applying security policies based on these labels. The following code demonstrates how to add tags to a bucket using a method from the boto3 library.&lt;/p&gt;
+&lt;pre class="python"&gt;&lt;code&gt;s3.put_bucket_tagging(
+    Bucket=bucket_name_news,
+    Tagging={
+        &amp;#39;TagSet&amp;#39;: [
+            {
+                &amp;#39;Key&amp;#39;: &amp;#39;Environment&amp;#39;,
+                &amp;#39;Value&amp;#39;: &amp;#39;Test&amp;#39;
+            },
+            {
+                &amp;#39;Key&amp;#39;: &amp;#39;Project&amp;#39;,
+                &amp;#39;Value&amp;#39;: &amp;#39;Localstack+Boto3&amp;#39;
+            }
+        ]
+    }
+)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class="python"&gt;&lt;code&gt;# get the tagging
+pd.json_normalize(s3.get_bucket_tagging(Bucket=bucket_name_news)[&amp;#39;TagSet&amp;#39;])&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src="https://r0mymendez.github.io//posts_en/2024-02-12-learning-aws-s3-on-localhost-best-practices-with-boto3-and-localstack/boto3-4.png" /&gt;&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h3 id="versioning-in-the-bucket"&gt;🔄 Versioning in the bucket&lt;/h3&gt;
+&lt;p&gt;Another good practice to apply is enabling versioning for your bucket. Versioning provides a way to recover and keep different versions of the same object. In the following code, we will create a file with the inventory of objects in the bucket and save the file twice.&lt;/p&gt;
+&lt;pre class="python"&gt;&lt;code&gt;# allow versioning in the bucket
+s3.put_bucket_versioning(
+    Bucket=bucket_name_news,
+    VersioningConfiguration={
+        &amp;#39;Status&amp;#39;: &amp;#39;Enabled&amp;#39;
+    }
+)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class="python"&gt;&lt;code&gt;# Add new file to the bucket
+
+# file name
+file_name = &amp;#39;inventory.csv&amp;#39;
+
+# list all objects in the bucket
+files = list_objects(bucket_name=bucket_name_news)
+bytes_io = io.BytesIO()
+files.to_csv(bytes_io, index=False)
+bytes_io.seek(0)
+# upload the data to s3
+s3.put_object(Bucket=bucket_name_news, Key=file_name, Body=bytes_io)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class="python"&gt;&lt;code&gt;# add again the same file
+s3.put_object(Bucket=bucket_name_news, Key=file_name, Body=bytes_io)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class="python"&gt;&lt;code&gt;# List all the version of the object
+versions = s3.list_object_versions(Bucket=bucket_name, Prefix=file_name)
+
+pd.json_normalize(versions[&amp;#39;Versions&amp;#39;])&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src="https://r0mymendez.github.io//posts_en/2024-02-12-learning-aws-s3-on-localhost-best-practices-with-boto3-and-localstack/boto3-6.png" /&gt;&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h3 id="create-a-static-site-using-s3-bucket"&gt;🗑️ Create a static site using s3 bucket&lt;/h3&gt;
+&lt;p&gt;In this section, we need to utilize a different command, which requires prior installation of the &lt;code&gt;awscli-local&lt;/code&gt; tool specifically designed for use with &lt;strong&gt;LocalStack&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;The &lt;code&gt;awscli-local&lt;/code&gt; tool facilitates developers in seamlessly engaging with the &lt;strong&gt;LocalStack&lt;/strong&gt; instance, because you can automatically redirecting commands to local endpoints instead of real AWS endpoints.&lt;/p&gt;
+&lt;pre class="python"&gt;&lt;code&gt;# install awslocal to use the cli to interact with localstack
+!pip3.11 install awscli-local&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class="python"&gt;&lt;code&gt;# the following command creates a static website in s3
+!awslocal s3api create-bucket --bucket docs-web
+# add the website configuration
+!awslocal s3 website s3://docs-web/ --index-document index.html --error-document error.html
+# syncronize the static site with the s3 bucket
+!awslocal s3 sync static-site s3://docs-web&lt;/code&gt;&lt;/pre&gt;
+&lt;blockquote&gt;
+&lt;p&gt;If you are using localstack, you can access the website using the following&lt;/p&gt;
+&lt;p&gt;Url: &lt;a href="http://docs-web.s3-website.localhost.localstack.cloud:4566/" class="uri"&gt;http://docs-web.s3-website.localhost.localstack.cloud:4566/&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;img src="https://r0mymendez.github.io//posts_en/2024-02-12-learning-aws-s3-on-localhost-best-practices-with-boto3-and-localstack/boto3-5.png" /&gt;&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h1 id="references"&gt;📚 References&lt;/h1&gt;
+&lt;p&gt;If you want to learn…&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://boto3.amazonaws.com/v1/documentation/api/latest/guide/quickstart.html#installation"&gt;AWS Boto3&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://docs.localstack.cloud/overview/"&gt;LocalStack&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://ok.surf/#endpoints"&gt;API:OkSurf News&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Other references:&lt;/p&gt;
+&lt;p&gt;- Image preview reference: [&lt;a href="https://www.freepik.es/vector-gratis/dos-usuarios-que-buscan-big-data-ilustracion-nube_10780409.htm#query=cloud%20computing%20illustration&amp;amp;position=30&amp;amp;from_view=search&amp;amp;track=ais&amp;amp;uuid=b1186de9-f6ea-4fc8-b662-f6655d2176a0"&gt;Imagen de vectorjuice en Freepik&lt;/a&gt;]&lt;/p&gt;
+&lt;pre class="r distill-force-highlighting-css"&gt;&lt;code&gt;&lt;/code&gt;&lt;/pre&gt;</description>
+      <distill:md5>43bc968104235832e88d54faee011457</distill:md5>
+      <category>Python</category>
+      <category>Cloud Computing</category>
+      <guid>https://r0mymendez.github.io/posts_en/2024-02-12-learning-aws-s3-on-localhost-best-practices-with-boto3-and-localstack</guid>
+      <pubDate>Sun, 11 Feb 2024 00:00:00 +0000</pubDate>
+      <media:content url="https://r0mymendez.github.io/posts_en/2024-02-12-learning-aws-s3-on-localhost-best-practices-with-boto3-and-localstack/preview.jpg" medium="image" type="image/jpeg"/>
+    </item>
     <item>
       <title>Transform your R Dataframes: Styles, 🎨 Colors, and 😎 Emojis </title>
       <dc:creator>Romina Mendez</dc:creator>
@@ -63,19 +353,6 @@ on software, agile methodologies , data science and the professor life.
       <guid>https://r0mymendez.github.io/posts_en/2023-12-22-decoding-a-data-model-using-schemaspy-in-snowflake</guid>
       <pubDate>Fri, 22 Dec 2023 00:00:00 +0000</pubDate>
       <media:content url="https://r0mymendez.github.io/posts_en/2023-12-22-decoding-a-data-model-using-schemaspy-in-snowflake/preview.jpg" medium="image" type="image/jpeg"/>
-    </item>
-    <item>
-      <title>SQL to Python Pandas: A SQL User's Quick Guide</title>
-      <dc:creator>Romina Mendez</dc:creator>
-      <link>https://r0mymendez.github.io/posts_en/2023-12-17-sql-to-python-pandas-a-sql-users-quick-guide</link>
-      <description>Unlock the essentials of translating your code from SQL to Python with this quick guide tailored for SQL users. Dive into key insights and streamline your data manipulation process.</description>
-      <category>Python</category>
-      <category>SQL</category>
-      <category>Database</category>
-      <category>Data</category>
-      <guid>https://r0mymendez.github.io/posts_en/2023-12-17-sql-to-python-pandas-a-sql-users-quick-guide</guid>
-      <pubDate>Sun, 17 Dec 2023 00:00:00 +0000</pubDate>
-      <media:content url="https://r0mymendez.github.io/posts_en/2023-12-17-sql-to-python-pandas-a-sql-users-quick-guide/preview.jpg" medium="image" type="image/jpeg"/>
     </item>
   </channel>
 </rss>
