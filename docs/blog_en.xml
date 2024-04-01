@@ -107,8 +107,8 @@ data = [ (customer.customer_id,
 &lt;p&gt;While &lt;strong&gt;Alembic&lt;/strong&gt; typically maintains only a table in the database with the &lt;code&gt;ID&lt;/code&gt; of the last applied migration and allows tracking files using the &lt;code&gt;history&lt;/code&gt; command, Audit Alembic goes a step further by creating an additional table that facilitates change tracking and enables the addition of metadata to applied transactions.&lt;/p&gt;
 &lt;table&gt;
 &lt;colgroup&gt;
-&lt;col width="25%" /&gt;
-&lt;col width="74%" /&gt;
+&lt;col width="26%" /&gt;
+&lt;col width="73%" /&gt;
 &lt;/colgroup&gt;
 &lt;thead&gt;
 &lt;tr class="header"&gt;
@@ -150,7 +150,7 @@ data = [ (customer.customer_id,
 &lt;hr /&gt;
 &lt;h1 id="alembic-tutorial"&gt;⚙️ Alembic Tutorial&lt;/h1&gt;
 &lt;p&gt;You can find the complete code with a step-by-step example in the 🐍 Python notebook in this &lt;a href="https://github.com/r0mymendez/database-migration/blob/main/alembic_tutorial.ipynb"&gt;link&lt;/a&gt;. However, I will provide a brief overview of the main commands in rest sections of this post. For detailed commands and the implementation of Audit Alembic, please refer to the notebook.&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://github.com/r0mymendez/database-migration"&gt;&lt;img src="https://r0mymendez.github.io//posts_en/2024-04-02-simplify-database-migrations-using-python-with-alembic/github.png" /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://github.com/r0mymendez/database-migration"&gt;&lt;img src="https://r0mymendez.github.io//posts_en/2024-04-02-simplify-database-migrations-using-python-with-alembic/github.png" width="550" /&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;Feel free to check it out and give it a star if you find it helpful! ⭐️&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -290,7 +290,6 @@ Path: /project/versions/2024_04_01_1718-784a7abb86b7_create_schema_ecommerce.py
 &lt;pre&gt;&lt;code&gt;alembic downgrade -1&lt;/code&gt;&lt;/pre&gt;
 &lt;hr /&gt;
 &lt;p&gt;As mentioned earlier, don’t forget to check out my &lt;a href="https://github.com/r0mymendez/database-migration"&gt;repository&lt;/a&gt; containing the step-by-step guide and the implementation of &lt;strong&gt;Audit Alembic&lt;/strong&gt;, allowing you to have a table with traceability of changes.&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://github.com/r0mymendez/database-migration"&gt;&lt;img src="https://r0mymendez.github.io//posts_en/2024-04-02-simplify-database-migrations-using-python-with-alembic/github.png" /&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;If you find it useful, you can leave a star ⭐️.&lt;/p&gt;
 &lt;p&gt;Remember, it’s always a good development practice to have a tool that &lt;strong&gt;applies changes&lt;/strong&gt; to your database, ensuring &lt;strong&gt;coherence&lt;/strong&gt;, &lt;strong&gt;avoiding manual tasks&lt;/strong&gt;, and &lt;strong&gt;enabling quick reproduction&lt;/strong&gt; of new environments.&lt;/p&gt;
 &lt;hr /&gt;
