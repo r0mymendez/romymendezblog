@@ -48,23 +48,15 @@ source: [DataCamp cheat sheet](https://www.datacamp.com/cheat-sheet/data-quality
 
 The following table highlights the various domains of data quality, from accuracy to fitness, providing an essential guide for assessing and enhancing the robustness of datasets:
 
-+--------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 | **Dimensions**     | **Description**                                                                                                                                                                                         |
-+====================+=========================================================================================================================================================================================================+
+|--------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | **🎯 Accuracy**     | Data accuracy, or how close data is to reality or truth. Accurate data is that which faithfully reflects the information it seeks to represent.                                                         |
-+--------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 | **🧩 Completeness** | Measures the entirety of the data. A complete dataset is one that has no missing values or significant gaps. Data integrity is crucial for gaining a comprehensive and accurate understanding.          |
-+--------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 | **✅ Validity**     | Indicates whether the data conforms to defined rules and standards. Valid data complies with the established constraints and criteria for a specific dataset..                                          |
-+--------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 | **🔄 Consistency**  | Refers to the uniformity of data over time and across different datasets. Consistent data does not exhibit contradictions or discrepancies when compared with each other                                |
-+--------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 | **📇 Uniqueness**   | Evaluates whether there are no duplicates in the data. Unique data ensures that each entity or element is represented only once in a dataset                                                            |
-+--------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 | **⌛Timeliness**    | Refers to the timeliness of data. Timely information is that which is available when needed, without unnecessary delays.                                                                                |
-+--------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 | **🏋️ Fitness**     | This aspect evaluates the relevance and usefulness of data for the intended purpose. Data should be suitable and applicable to the specific objectives of the organization or analysis being conducted. |
-+--------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 # Data quality dimensions - Use case
 
@@ -93,15 +85,11 @@ Next, we provide an example where some issues with an e-commerce-based use case 
 
 The following are some of the Python implementations carried out to perform data quality validations:
 
-+------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 | **Framework**                                                                      | **Descripción**                                                                                                                                                                                                               |
-+====================================================================================+===============================================================================================================================================================================================================================+
+|------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | [**Great Expectations**](https://github.com/great-expectations/great_expectations) | Great Expectations is an open-source library for data validation. It enables the definition, documentation, and validation of expectations about data, ensuring quality and consistency in data science and analysis projects |
-+------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 | [**Pandera**](https://github.com/unionai-oss/pandera)                              | Pandera is a data validation library for data structures in Python, specifically designed to work with pandas DataFrames. It allows you to define schemas and validation rules to ensure data conformity                      |
-+------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 | [**Dora**](https://github.com/NathanEpstein/Dora)                                  | Dora is a Python library designed to automate data exploration and perform exploratory data analysis.                                                                                                                         |
-+------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 Let's analyze some of the metrics that can be observed in their GitHub repositories, taking into account that the metrics were obtained on 2023-11-12.
 

@@ -48,7 +48,7 @@ This means that dynamics are required to help the team establish common goals an
 
 As mentioned earlier, "**Agile Inception**" consists of a set of 10 dynamics that help reduce uncertainty, mitigate risks, and establish common goals within the product development team.
 
-##  Why implement Agile Inception?
+## Why implement Agile Inception?
 
 At the beginning of a project, it is necessary to make decisions in uncertainty, and to do so, it is necessary to:
 

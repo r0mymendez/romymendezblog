@@ -22,5 +22,7 @@ create_post("Decoding a Data Model - Using SchemaSpy in Snowflake",collection ="
 create_post("Transform your Pandas Dataframes",collection ="posts_en")
 create_post("SQL-Assistant-Text-to-SQL-Application-in-Streamlit",collection ="posts_en")
 create_post("Transform your Pandas Dataframes in R",collection ="posts_en")
+create_post("Learning AWS S3 on Localhost: Best Practices with Boto3 and LocalStack",collection ="posts_en")
+create_post("Simplify Database Migrations using Python with Alembic",collection ="posts_en")
 
 

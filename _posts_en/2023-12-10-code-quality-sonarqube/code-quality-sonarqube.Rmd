@@ -99,25 +99,16 @@ image source:[sonarsource docs](https://docs.sonarsource.com/sonarqube/9.7/)
 
 ------------------------------------------------------------------------
 
-+----------------------------+-------------------------------------------------------------+--------------------------------------------------------------+
 | Feature                    | SonarQube                                                   | SonarLint                                                    |
-+============================+=============================================================+==============================================================+
+|----------------------------|-------------------------------------------------------------|--------------------------------------------------------------|
 | **Scope**                  | Server-based code analysis for entire projects/repositories | IDE-based code analysis for individual developers            |
-+----------------------------+-------------------------------------------------------------+--------------------------------------------------------------+
 | **Deployment**             | Requires a centralized server installation                  | Integrated directly into the developer's IDE                 |
-+----------------------------+-------------------------------------------------------------+--------------------------------------------------------------+
 | **Real-time Feedback**     | Provides feedback during continuous integration             | Offers real-time feedback within the developer's IDE         |
-+----------------------------+-------------------------------------------------------------+--------------------------------------------------------------+
 | **Code Analysis Depth**    | Offers in-depth static code analysis and metrics            | Provides on-the-fly code analysis with immediate feedback    |
-+----------------------------+-------------------------------------------------------------+--------------------------------------------------------------+
 | **Integration with CI/CD** | Integrates with CI/CD pipelines for automated analysis      | Supports local analysis as well as CI/CD integration         |
-+----------------------------+-------------------------------------------------------------+--------------------------------------------------------------+
 | **Rule Configurability**   | Highly configurable rules for code quality and security     | Limited rule configuration options within the IDE            |
-+----------------------------+-------------------------------------------------------------+--------------------------------------------------------------+
 | **Collaboration**          | Facilitates collaboration among development teams           | Focuses on individual developer experience and collaboration |
-+----------------------------+-------------------------------------------------------------+--------------------------------------------------------------+
 | **Use Case**               | Suitable for larger projects with centralized management    | Ideal for individual developers or smaller development teams |
-+----------------------------+-------------------------------------------------------------+--------------------------------------------------------------+
 
 ------------------------------------------------------------------------
 
@@ -150,21 +141,14 @@ Therefore, profiles allow you to customize which rules apply to a project and pr
 **Quality Gates** are sets of conditions that are applied to a project after running a static analysis of the code and applying the rules defined in the quality profiles.
 These conditions allow you to quantify and evaluate whether a project meets specific quality criteria, helping to determine if the code is acceptable for implementation.
 
-+----------------------------+---------------------------------------------------------------------------------------------------------------------------------+
 | Metric                     | Description                                                                                                                     |
-+============================+=================================================================================================================================+
+|----------------------------|---------------------------------------------------------------------------------------------------------------------------------|
 | Reliability Rating         | This indicator evaluates the reliability of the code, which means how prone the code is to contain errors or defects.           |
-+----------------------------+---------------------------------------------------------------------------------------------------------------------------------+
 | Security Rating            | This indicator evaluates the security level of the code, which means how prone the code is to contain security vulnerabilities. |
-+----------------------------+---------------------------------------------------------------------------------------------------------------------------------+
 | Security Hotspots Reviewed | This indicator evaluates whether all security points identified in the code have been reviewed.                                 |
-+----------------------------+---------------------------------------------------------------------------------------------------------------------------------+
 | Maintainability Rating     | This indicator evaluates the ease with which the code can be maintained and improved in the future                              |
-+----------------------------+---------------------------------------------------------------------------------------------------------------------------------+
 | Coverage                   | This indicator examines the % of code that has been executed.                                                                   |
-+----------------------------+---------------------------------------------------------------------------------------------------------------------------------+
 | Duplicated Lines (%)       | This flag checks for duplicate lines in the code                                                                                |
-+----------------------------+---------------------------------------------------------------------------------------------------------------------------------+
 
 ![](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/hj24kse5lryifxgduvxc.png)
 
@@ -203,21 +187,14 @@ docker run
    sonarqube:latest
 ```
 
-+---------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 | Command                                     | Description                                                                                                                                                                                    |
-+=============================================+================================================================================================================================================================================================+
+|---------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `docker run`                                | This is the command used to run a Docker container.                                                                                                                                            |
-+---------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 | `-d`                                        | This is a Docker run option that stands for "detached." It runs the container in the background, which means you get your terminal prompt back immediately after starting the container.       |
-+---------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 | `--name sonarqube`                          | This option allows you to specify a name for the container. In this case, the name "sonarqube" is given to the container, which makes it easier to reference the container later.              |
-+---------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 | `-e SONAR_ES_BOOTSTRAP_CHECKS_DISABLE=true` | This option is used to set an environment variable within the container. It disables Elasticsearch bootstrap checks when starting SonarQube.                                                   |
-+---------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 | `-p 9000:9000`                              | This option is used to map ports between the host and the container. It specifies that port 9000 on the host should be mapped to port 9000 inside the container, allowing access to SonarQube. |
-+---------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 | `sonarqube:latest`                          | This is the Docker image to run. It specifies the image named "sonarqube" and the "latest" tag, pulling the latest version from Docker Hub and creating a container from that image.           |
-+---------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 ------------------------------------------------------------------------
 
@@ -461,27 +438,17 @@ Upon completion of the code scan, you can view the results of the code analysis 
 The following table presents the metrics defined by SonarQube, which are objective indicators designed to evaluate the quality of the source code.
 These metrics allow a quantitative evaluation of various critical aspects of the code.
 
-+---------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 | Metric                    | Description                                                                                                                                                                                         |
-+===========================+=====================================================================================================================================================================================================+
+|---------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | **Reliability**           | The "Reliability" metric refers to the reliability of the code. It measures the number of issues related to software reliability, such as errors and failures.                                      |
-+---------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 | **Maintainability**       | The "Maintainability" metric in SonarQube assesses how easy it is to maintain and enhance the code over time. It measures code quality in terms of structure, readability, and ease of maintenance. |
-+---------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 | **New Code Smells**       | This metric indicates the number of new "code smells" introduced in the code recently. "Code smells" are design patterns or coding practices that may indicate issues with code quality.            |
-+---------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 | **Security**              | The "Security" metric in SonarQube evaluates code security for potential vulnerabilities. It measures the code's ability to resist attacks and protect data and systems.                            |
-+---------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 | **New Vulnerabilities**   | It indicates the number of new security vulnerabilities introduced in the code recently. Vulnerabilities are weaknesses that can be exploited by attackers.                                         |
-+---------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 | **Security Review**       | This metric in SonarQube assesses the quality of security reviews conducted on the code. It measures the effectiveness of reviews in detecting and correcting security issues.                      |
-+---------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 | **New Security Hotspots** | It signifies the number of new "security hotspots" introduced in the code recently. Security hotspots are areas of the code that require special attention due to potential security issues.        |
-+---------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 | **Coverage**              | The "Coverage" metric in SonarQube refers to code coverage. It measures the proportion of code that has been tested through unit tests or automated tests.                                          |
-+---------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 | **Duplications**          | This metric in SonarQube identifies sections of code that are duplicated in multiple places. Identifying and reducing duplications can improve code quality and maintainability.                    |
-+---------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 The result of the scan is the following
 

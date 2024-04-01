@@ -26,6 +26,8 @@ editor_options:
 knitr::opts_chunk$set(echo = FALSE)
 ```
 
+[![](https://img.shields.io/badge/Buy%20Me%20A%20Coffee-support%20my%20work-FFDD00?style=flat&labelColor=101010&logo=buy-me-a-coffee&logoColor=white){width="40%"}](https://www.buymeacoffee.com/r0mymendez)
+
 In this article, you will discover new features of **S3** and learn how to implement some of them using Boto3 in 🐍Python.
 Additionally, you will deploy a Localstack container to explore these functionalities without the need to use a credit card.
 

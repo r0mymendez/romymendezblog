@@ -66,13 +66,10 @@ This application, geared towards optimizing the delivery process, is responsible
 
 To achieve this implementation, we will undertake the following steps:
 
-+---------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 | Steps         | Descriptions                                                                                                                                                                                                                                     |
-+===============+==================================================================================================================================================================================================================================================+
+|---------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | **Producer:** | Develop a program that, like an efficient order-taker, generates and sends messages📝 to the RabbitMQ queue. These messages will contain valuable information about food orders.                                                                  |
-+---------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 | **Consumer:** | Create a program that acts as the receiver of these messages in the queue. The consumer will be responsible for processing these messages according to the system's needs, performing relevant actions, such as managing the delivery of orders. |
-+---------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 This structured and efficient approach ensures a clear and functional implementation, providing a robust foundation for systems managing information flows in dynamic environments.
 

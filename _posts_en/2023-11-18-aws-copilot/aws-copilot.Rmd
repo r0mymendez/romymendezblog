@@ -57,13 +57,10 @@ This service includes the following concepts:
 In this model, containers are deployed on [EC2](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/concepts.html) instances (VMs) created for the cluster.
 **ECS** manages them along with the tasks that are part of the task definition
 
-+------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------+
 | ✅ Advantages                                                                                   | ❌ Disadvantages                                                                                                                              |
-+================================================================================================+==============================================================================================================================================+
+|------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------|
 | \- Complete control over the type of EC2 instance used is provided.                            | \- When working with EC2, it's necessary for the administrator of this architecture to handle all security updates and scaling of instances. |
-+------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------+
 | \- It allows the use of instances that can be optimized depending on what you want to execute. | \- The cost is based on the type of EC2 instance running within the cluster and the VPC networks.                                            |
-+------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------+
 
 ------------------------------------------------------------------------
 
@@ -73,15 +70,11 @@ In this serverless configuration, the reliance on EC2 instances is eliminated, s
 Instead, you only need to specify the required CPU and memory combination.
 [AWS Fargate](https://docs.aws.amazon.com/AmazonECS/latest/userguide/what-is-fargate.html) allows for a fully managed and serverless container deployment experience.
 
-+--------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------+
 | ✅ Advantages                                                                                                                                     | ❌ Disadvantages                                                                                                               |
-+==================================================================================================================================================+===============================================================================================================================+
+|--------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------|
 | \- There are no servers to manage.                                                                                                               | \- ECS + Fargate supports only one network mode, and this limits control over the network layer.                              |
-+--------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------+
 | \- AWS is in charge of the availability and scalability of the containers.                                                                       | \- Cost is based on the CPU and memory you select. The number of CPU cores and GB determines the cost of running the cluster. |
-+--------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------+
 | \- Fargate Spot is a new capability that can run ECS tasks that are interruption-tolerant at up to a 70% discount compared to the Fargate price. |                                                                                                                               |
-+--------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------+
 
 ------------------------------------------------------------------------
 
@@ -98,23 +91,15 @@ Therefore, it's only necessary to provide an application container and minimal c
 
 The services will communicate with each other, so it is necessary to consider the following scenarios:
 
-+--------------------------------------------+---------------------------+------------------------+
-| Activities                                 | Without AWS-copilot       | With AWS-copilot       |
-+============================================+===========================+========================+
-| Application developmen                     | 📗 Development team        | 📗 Development team     |
-+--------------------------------------------+---------------------------+------------------------+
-| Container generation                       | 📗 Development team        | 📗 Development team     |
-+--------------------------------------------+---------------------------+------------------------+
-| Virtual Private Cloud (VPC) Subnets        | 📗 Development team        | 📙 AWS-Copilot          |
-+--------------------------------------------+---------------------------+------------------------+
-| Load balancers                             | 📗Development team         | 📙 AWS-Copilot          |
-+--------------------------------------------+---------------------------+------------------------+
-| Deployment flows (ci/cd)                   | 📗 Development team        | 📙 AWS-Copilot          |
-+--------------------------------------------+---------------------------+------------------------+
-| Persistent storage of your application     | 📗 Development team        | 📙 AWS-Copilot          |
-+--------------------------------------------+---------------------------+------------------------+
-| Synchronize deployment across environments | 📗 Development team        | 📙 AWS-Copilot          |
-+--------------------------------------------+---------------------------+------------------------+
+| Activities                                 | Without AWS-copilot | With AWS-copilot   |
+|--------------------------------------------|---------------------|--------------------|
+| Application developmen                     | 📗 Development team  | 📗 Development team |
+| Container generation                       | 📗 Development team  | 📗 Development team |
+| Virtual Private Cloud (VPC) Subnets        | 📗 Development team  | 📙 AWS-Copilot      |
+| Load balancers                             | 📗Development team   | 📙 AWS-Copilot      |
+| Deployment flows (ci/cd)                   | 📗 Development team  | 📙 AWS-Copilot      |
+| Persistent storage of your application     | 📗 Development team  | 📙 AWS-Copilot      |
+| Synchronize deployment across environments | 📗 Development team  | 📙 AWS-Copilot      |
 
 ------------------------------------------------------------------------
 
@@ -122,15 +107,11 @@ The services will communicate with each other, so it is necessary to consider th
 
 The following table contains the components that are configured when using the AWS Copilot service.
 
-+---------------------------------------------------------------------------------+------------------------------------------------------------------------+
 | **Component**                                                                   | **Description**                                                        |
-+=================================================================================+========================================================================+
+|---------------------------------------------------------------------------------|------------------------------------------------------------------------|
 | <strong><font style="background-color:#CDFECF;">**Application**</font></strong> | An application is a grouping mechanism for the pieces of your system.  |
-+---------------------------------------------------------------------------------+------------------------------------------------------------------------+
 | <strong><font style="background-color:#FFFFBC;">**Enviroment**</font></strong>  | An environment is a stage in the deployment of an application.         |
-+---------------------------------------------------------------------------------+------------------------------------------------------------------------+
 | <strong><font style="background-color:#D7EFFF;">**Service**</font></strong>     | A service is a single process of long-running code within a container. |
-+---------------------------------------------------------------------------------+------------------------------------------------------------------------+
 
 ------------------------------------------------------------------------
 

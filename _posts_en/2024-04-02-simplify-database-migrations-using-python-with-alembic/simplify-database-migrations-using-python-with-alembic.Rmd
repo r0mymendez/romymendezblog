@@ -1,0 +1,394 @@
+---
+title: "Simplify Database Migrations using Python with Alembic"
+description: |
+  In this article, you will discover how to use Alembic for database migration in 🐍Python.
+categories:
+  - Python
+  - Database
+preview: "preview.jpg"
+twitter:
+  site: "@r0mymendez"
+  creator: "@r0mymendez"
+author:
+  - name: Romina Mendez
+    url: https://example.com/norajones
+date: 2024-04-02
+output:
+  distill::distill_article:
+    self_contained: yes
+    toc: yes
+editor_options: 
+  markdown: 
+    wrap: sentence
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+[![](https://img.shields.io/badge/Buy%20Me%20A%20Coffee-support%20my%20work-FFDD00?style=flat&labelColor=101010&logo=buy-me-a-coffee&logoColor=white){width="40%"}](https://www.buymeacoffee.com/r0mymendez)
+
+The following article will discuss working with database migration using the popular Python library called Alembic.
+However, before diving into this tutorial, we'll mention some definitions that will help us better understand how Alembic works and the best way to implement database migration.
+
+------------------------------------------------------------------------
+
+# 🟣 ORM (Object Relational Mapping)
+
+The ORM (Object Relational Mapping) is a layer that allows connecting **object-oriented** programming with relational databases, abstracting the underlying SQL queries.
+
+![](sql-alchemy-orm.png)
+
+------------------------------------------------------------------------
+
+# 🟣 SQLAlchemy
+
+**SQLAlchemy** is a 🐍 python library that implements ORM and allows you to perform different actions on a related database.
+
+![](sql-alchemy.png)
+
+The following are the key components of SQLAlchemy to understand how it interacts with the database:
+
+-   **🟣 Engine**: It is the interface that allows interaction with the database.
+    It handles connections and executes queries.
+
+-   **🟣 Pool**: It is a collection of connections that allows reusing connections and improving query performance by reducing time.
+
+-   **🟣 Dialect**: It is the component that allows interaction with the database.
+    Each dialect is designed to interact and translate queries for a database; By default, this library has dialects for MySQL, MariaDB, PostgreSQL, SQL Server, and Oracle.
+    But there are external dialects, in which you should import other libraries, which you can see in the following image.
+
+-   **🟣 DBAPI**: It is the interface that provides methods to enable communication between Python and the database.
+
+![](sql-alchemydialects.png)
+
+------------------------------------------------------------------------
+
+Below is a simple example of how to execute a query in SQL and SQLAlchemy:
+
+``` {.sql}
+SELECT 
+    customer_id, 
+    customer_unique_id,
+    customer_zip_code_prefix, 
+    customer_city, 
+    customer_state 
+FROM ecommerce.customers 
+LIMIT 10;
+```
+
+``` {.python}
+from sqlalchemy import Column, Integer, String,create_engine
+from sqlalchemy.ext.declarative import declarative_base
+from sqlalchemy.orm import sessionmaker
+
+# Create a base class which allows us to define classes that map to tables
+Base = declarative_base()
+
+# Define the class that maps to the table
+class Customer(Base):
+    __tablename__ = 'customers'  # Cambia a minúsculas
+    __table_args__ = {'schema': 'ecommerce'}
+
+    customer_id = Column(Integer, primary_key=True)
+    customer_unique_id = Column(Integer)
+    customer_zip_code_prefix= Column(Integer)
+    customer_city= Column(String)
+    customer_state = Column(String)
+
+# Create an engine that connects to the PostgreSQL server
+conn ='postgresql://postgres:postgres@localhost/postgres'
+engine = create_engine(conn)
+
+# Create a session
+conn_session = sessionmaker(bind=engine)
+session = conn_session()
+
+# Execute the query
+customers = session.query(Customer).limit(10)
+
+# Extract the data and create a list of tuples
+data = [ (customer.customer_id,
+          customer.customer_unique_id,
+          customer.customer_zip_code_prefix,
+          customer.customer_city,
+          customer.customer_state) 
+    for customer in customers]
+```
+
+------------------------------------------------------------------------
+
+# 🟣 Database migrations
+
+A migration is the process that allows you to modify the structure of the database, these migrations are created to maintain consistency and integrity.
+
+### 🟣 What are the benefits of using migrations?
+
+![](benefits-migration.png)
+
+-   🟣 **Version Control**: Avoids manual intervention in the database by maintaining control over schema versions.
+
+-   🟣 **Environment Management**: Facilitates the creation of new environments through the application of migrations, enabling easy reproduction of specific configurations and maintaining coherence between them.
+
+-   🟣 **Upgrade & Downgrade**: Another benefit is the ability not only to apply changes but also to revert them.
+    This provides flexibility and security in database management.
+
+-   🟣 **Auditing**: Alembic-audit is another library that can be implemented to maintain a chronological record of changes made to the database, facilitating traceability.
+
+-   🟣 **CI/CD Integration**: Easily integrates into CI/CD pipelines to apply database changes automatically, streamlining and ensuring consistency in application deployment.
+
+-   🟣 **Standardization**: This implementation enables cleaner, structured, and coherent development for defining and applying changes to the database schema.
+    By using templates, script reuse is promoted, ensuring efficient and consistent management of database changes.
+
+# 🟣 What is Alembic?
+
+**Alembic** is a 🐍Python library that enables controlled and automated database migrations.
+This library utilizes `SQLAlchemy` and it allows for the management of changes in the database schema through **scripts**, which describe the modifications and can be applied automatically.
+
+![](alemic-flow.png)
+
+------------------------------------------------------------------------
+
+# 🟣 What is Audit alembic?
+
+ **Audit Alembic** is a 🐍Python library that complements Alembic by providing an audit table with a detailed record of applied changes.
+
+While **Alembic** typically maintains only a table in the database with the `ID` of the last applied migration and allows tracking files using the `history` command, Audit Alembic goes a step further by creating an additional table that facilitates change tracking and enables the addition of metadata to applied transactions.
+
+| column_name            | column_description                                                   |
+|------------------------|----------------------------------------------------------------------|
+| `id`                   | unique identifier                                                    |
+| `alembic_version`      | version of the migration                                             |
+| `prev_alembic_version` | previous version of the migration                                    |
+| `operation`            | "migration" or "rollback"                                            |
+| `operation_direction`  | type of operation (upgrade or downgrade)                             |
+| `user_verion`          | user version of the migration in our case we are using the timestamp |
+| `changed_at`           | timestamp of the migration                                           |
+
+------------------------------------------------------------------------
+
+# ⚙️ Alembic Tutorial
+
+You can find the complete code with a step-by-step example in the 🐍 Python notebook in this [link](https://github.com/r0mymendez/database-migration/blob/main/alembic_tutorial.ipynb).
+However, I will provide a brief overview of the main commands in rest sections of this post.
+For detailed commands and the implementation of Audit Alembic, please refer to the notebook.
+
+[![](github.png)](https://github.com/r0mymendez/database-migration)
+
+> Feel free to check it out and give it a star if you find it helpful!
+> ⭐️
+
+------------------------------------------------------------------------
+
+## 🔧 Prerequisites
+
+-   🐳 Docker
+-   🐙 Docker Compose
+-   🐍 Install python libraries: `!pip install alembic Audit-Alembic`
+
+------------------------------------------------------------------------
+
+# Quick Start
+
+## 🔧 Create a postgres database
+
+1️⃣ - Create docker-compose.yml file
+
+``` {.yml}
+    version: "3.7"
+    services:
+      db:
+        image: postgres:13.3-alpine
+        volumes:
+          - ./db_data:/var/lib/postgresql/data
+        environment:
+          POSTGRES_USER: postgres
+          POSTGRES_PASSWORD: postgres
+          POSTGRES_DB: postgres
+        ports:
+          - "5433:5432"
+
+    volumes:
+      db_data:
+```
+
+------------------------------------------------------------------------
+
+2️⃣ - Create postgres database Execute in the terminal: `docker-compose -f docker-compose.yml up --build`
+
+------------------------------------------------------------------------
+
+3️⃣ - Check if your container is running Execute in the terminal: `docker ps`
+
+``` {.bash}
+CONTAINER ID   IMAGE     COMMAND                  CREATED             STATUS             PORTS                                       NAMES
+edb1f7077e66   sqla_db   "docker-entrypoint.s…"   About an hour ago   Up About an hour   0.0.0.0:5433->5432/tcp, :::5433->5432/tcp   sqla_db_1
+```
+
+------------------------------------------------------------------------
+
+## 🔧 Alembic: Configuration
+
+1️⃣ - Create a new Alembic environment Now, we are going to create a new Alembic project.
+For this reason, we need to execute the following command, which will create a group of directories and files.
+
+``` {.bash}
+alembic init project
+```
+
+------------------------------------------------------------------------
+
+2️⃣ - Files & New directory
+
+| file_name                 | Description                                                                                                              |
+|---------------------------|--------------------------------------------------------------------------------------------------------------------------|
+| 📄`alembic.ini`            | This file is the main configuration file for Alembic, containing the configuration settings for the Alembic environment. |
+| 📁`project\verions`        | This directory is where the migration scripts will be stored.                                                            |
+| 📄`project\env.py`         | This Python script contains the function for executing the migration scripts.                                            |
+| 📄`project\script.py.mako` | This file is the template for generating new migration scripts.                                                          |
+| 📄`project\README`         | This file contains a short description of the directory.                                                                 |
+
+------------------------------------------------------------------------
+
+3️⃣ - Add the database connection In the alembic.ini file, add the database connection string to the sqlalchemy.url variable.
+The connection string should be in the format:
+
+``` {.python}
+ sqlalchemy.url = driver://user:pass@localhost/dbname 
+```
+
+In my case I need to configure the following connection \* driver: postgresql \* user: postgres \* password: postgres \* dbname: postgres
+
+``` {.python}
+sqlalchemy.url = postgresql://postgres:postgres@localhost:5433/postgres 
+```
+
+------------------------------------------------------------------------
+
+4️⃣ - File name template We can uncomment the following line in the `alembic.ini` file to change the name of the files created by Alembic, ensuring a chronological order of the files created.
+
+``` {.bash}
+file_template = %%(year)d_%%(month).2d_%%(day).2d_%%(hour).2d%%(minute).2d-%%(rev)s_%%(slug)s 
+```
+
+------------------------------------------------------------------------
+
+## 🔧 Alembic: Create our first migration
+
+1️⃣ - Create a migration script
+
+``` {.bash}
+alembic revision -m "create schema ecommerce"
+```
+
+Now you can see the new file created in the `project/version folder`, the file has the following name:
+
+`{current_timestamp}-{unique_identifier}_create_schema_ecommerce.py`
+
+-   current timestamp
+-   Unique identifier, in my case is `9ec3d7e4bde9`
+-   The message that I added in the command, only change the space for a underscore.
+
+------------------------------------------------------------------------
+
+2️⃣ - Modify the migration file In our case, we will create the schema for the ecommerce project.
+However, Alembic does not have a specific method for this task.
+Therefore, we will use the op.execute method to execute the SQL query that will create the schema.
+
+``` {.python}
+# alembic does not support creating schema directly and we need to use op.execute
+def upgrade() -> None:
+    op.execute('CREATE SCHEMA IF NOT EXISTS ecommerce_olist;')
+
+
+def downgrade() -> None:
+    op.execute('DROP SCHEMA IF EXISTS ecommerce_olist CASCADE;')
+```
+
+------------------------------------------------------------------------
+
+3️⃣ - Execute the migration The following command will execute the migration and create the schema in the database.
+If you see the message "Done," the migration was successful.
+You can also check the database to verify that the new schema was created and the Alembic version table was updated.
+
+``` {.bash}
+alembic upgrade head
+```
+
+------------------------------------------------------------------------
+
+4️⃣ - Check the migrations Now, we can verify the current migration that was executed.
+This can be controlled using the Alembic command or by checking the table created earlier.
+
+``` {.bash}
+alembic current
+```
+
+``` {.bash}
+INFO  [alembic.runtime.migration] Context impl PostgresqlImpl.
+INFO  [alembic.runtime.migration] Will assume transactional DDL.
+b1bc43e2f536 (head)
+```
+
+------------------------------------------------------------------------
+
+5️⃣ - History of migrations Additionally, we can check all the migrations that were executed in this project by using the following command.
+This will display a detailed history of the migrations, including revision IDs, parent revisions, paths to migration files, and descriptions of the changes made in each migration.
+
+``` {.bash}
+alembic history --verbose
+```
+
+``` {.bash}
+Rev: b1bc43e2f536 (head)
+Parent: 784a7abb86b7
+Path: /project/versions/2024_04_01_1719-b1bc43e2f536_create_table_customer.py
+
+    create table customer
+    
+    Revision ID: b1bc43e2f536
+    Revises: 784a7abb86b7
+    Create Date: 2024-04-01 17:19:09.844065
+
+Rev: 784a7abb86b7
+Parent: <base>
+Path: /project/versions/2024_04_01_1718-784a7abb86b7_create_schema_ecommerce.py
+
+    create schema ecommerce
+    
+    Revision ID: 784a7abb86b7
+    Revises: 
+    Create Date: 2024-04-01 17:18:06.680872
+```
+
+------------------------------------------------------------------------
+
+6️⃣ - Downgrade the migration The following code allows you to revert the changes made previously.
+
+    alembic downgrade -1
+
+------------------------------------------------------------------------
+
+As mentioned earlier, don't forget to check out my [repository](https://github.com/r0mymendez/database-migration) containing the step-by-step guide and the implementation of **Audit Alembic**, allowing you to have a table with traceability of changes.
+
+[![](github.png)](https://github.com/r0mymendez/database-migration)
+
+If you find it useful, you can leave a star ⭐️.
+
+Remember, it's always a good development practice to have a tool that **applies changes** to your database, ensuring **coherence**, **avoiding manual tasks**, and **enabling quick reproduction** of new environments.
+
+------------------------------------------------------------------------
+
+# 📚 References
+
+If you want to learn...
+
+1.[Alembic official documentation](https://alembic.sqlalchemy.org/en/latest/#)
+
+2.[sqlalchemy](https://www.sqlalchemy.org/)
+
+3.[Audit-Alembic](https://github.com/jpassaro/Audit-Alembic/tree/3f0d83cd9965933ee6779ca335fd0945aa853969)
+
+Other references:
+
+\- Image preview reference: [Imagen de [Freepik](https://www.freepik.com/free-vector/gradient-intranet-illustration_25225755.htm#fromView=search&page=1&position=44&uuid=0099f274-ed9f-4fc7-92a1-e9e1a2d37e58%22)]
