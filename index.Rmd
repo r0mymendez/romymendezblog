@@ -31,7 +31,7 @@ editor_options:
 <br>
 
 
-👋 Hello! I'm **Romina** ,  member of the AWS Community Builder program and a Data Architect passionate about data engineering 👩.  Additionally, I work as a professor at the [`Universidad de Belgrano`](http://www.ub.edu.ar/)
+👋 Hello! I'm **Romina** , member of the AWS Community Builder program and a Data Architect passionate about data engineering 👩.  Additionally, I work as a professor at the [`Universidad de Belgrano`](http://www.ub.edu.ar/)
 and [`EANT`](https://eant.tech/). I enjoy contributing to projects during my free time 🚀. If you're looking for collaboration on a specific project or need guidance on starting a new venture, feel free to contact me through any of my social channels.
 
 ------------------------------------------------------------------------
