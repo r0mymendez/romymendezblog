@@ -30,12 +30,9 @@ editor_options:
 
 <br>
 
-I'm **r0mymendez** , a Data Architect & Data Engineer 👩🔬, also serving
-as a lecturer at the [`Universidad de Belgrano`](http://www.ub.edu.ar/)
-and [`EANT`](https://eant.tech/). I find joy in contributing to projects
-during my free moments 🚀. If you're seeking collaboration on a specific
-project or need guidance on approaching a new venture, feel free to
-reach out to me through any of my social channels.
+
+👋 Hello! I'm **Romina** ,  member of the AWS Community Builder program and a Data Architect passionate about data engineering 👩.  Additionally, I work as a professor at the [`Universidad de Belgrano`](http://www.ub.edu.ar/)
+and [`EANT`](https://eant.tech/). I enjoy contributing to projects during my free time 🚀. If you're looking for collaboration on a specific project or need guidance on starting a new venture, feel free to contact me through any of my social channels.
 
 ------------------------------------------------------------------------
 
