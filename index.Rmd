@@ -1,5 +1,5 @@
 ---
-title: "Romy Mendez"
+title: "Romina Mendez"
 image: "image/profile/romi_profile.jpg"
 links:
   - label: '`r fontawesome::fa("linkedin", height = "25px")`'
