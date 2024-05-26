@@ -13,299 +13,351 @@ on software, agile methodologies , data science and the professor life.
       <link>https://r0mymendez.github.io/</link>
     </image>
     <generator>Distill</generator>
-    <lastBuildDate>Mon, 01 Apr 2024 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 25 May 2024 00:00:00 +0000</lastBuildDate>
     <item>
-      <title>Simplify Database Migrations using Python with Alembic</title>
+      <title>Python Projects with SQL: Strategies for Effective Query Management</title>
       <dc:creator>Romina Mendez</dc:creator>
-      <link>https://r0mymendez.github.io/posts_en/2024-04-02-simplify-database-migrations-using-python-with-alembic</link>
+      <link>https://r0mymendez.github.io/posts_en/2024-05-26-python-projects-with-sql-strategies-for-effective-query-management</link>
       <description>
 
 
-&lt;p&gt;&lt;a href="https://www.buymeacoffee.com/r0mymendez"&gt;&lt;img src="https://img.shields.io/badge/Buy%20Me%20A%20Coffee-support%20my%20work-FFDD00?style=flat&amp;amp;labelColor=101010&amp;amp;logo=buy-me-a-coffee&amp;amp;logoColor=white" style="width:40.0%" /&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;The following article will discuss working with database migration using the popular Python library called Alembic. However, before diving into this tutorial, we’ll mention some definitions that will help us better understand how Alembic works and the best way to implement database migration.&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://img.shields.io/badge/Buy%20Me%20A%20Coffee-support%20my%20work-FFDD00?style=flat&amp;amp;labelColor=101010&amp;amp;logo=buy-me-a-coffee&amp;amp;logoColor=white" style="width:40.0%" /&gt;&lt;/p&gt;
+&lt;p&gt;Many times, when programming in a project involving interaction with a database, we face the &lt;strong&gt;❓question of how to organize our queries and make them reusable&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;For this reason, some 🧑‍💻 developers &lt;code&gt;create functions&lt;/code&gt; where they concatenate strings to make the queries more dynamic and others prefer to &lt;code&gt;create variables&lt;/code&gt; where they define these queries. Although some more sophisticated developers also &lt;code&gt;use SQLAlchemy&lt;/code&gt; object declaration to define the queries, but this has a learning curve and can 📈complicate the development process, especially when dealing with more complex queries.&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://r0mymendez.github.io//posts_en/2024-05-26-python-projects-with-sql-strategies-for-effective-query-management/aiosql-question.png" /&gt;&lt;/p&gt;
+&lt;p&gt;One day, I found myself searching for a way to perform this in an &lt;code&gt;orderly&lt;/code&gt;, &lt;code&gt;organized&lt;/code&gt;, and &lt;code&gt;reusable&lt;/code&gt; manner without overly complicating my code, and I stumbled upon an interesting library called &lt;strong&gt;aiosql&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;In the following article, I will review how to use it and explained in its documentation and also I will share some approaches I used to implement it in other contexts.&lt;/p&gt;
 &lt;hr /&gt;
-&lt;h1 id="orm-object-relational-mapping"&gt;🟣 ORM (Object Relational Mapping)&lt;/h1&gt;
-&lt;p&gt;The ORM (Object Relational Mapping) is a layer that allows connecting &lt;strong&gt;object-oriented&lt;/strong&gt; programming with relational databases, abstracting the underlying SQL queries.&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://r0mymendez.github.io//posts_en/2024-04-02-simplify-database-migrations-using-python-with-alembic/sql-alchemy-orm.png" /&gt;&lt;/p&gt;
+&lt;h1 id="what-is-aiosql-library"&gt;⚙️ What is aiosql library?&lt;/h1&gt;
+&lt;p&gt;&lt;strong&gt;Aiosql&lt;/strong&gt; is a 🐍Python library that simplifies the writing of &lt;strong&gt;SQL queries&lt;/strong&gt; in separate files from your main Python project code. These queries, stored in SQL files, are then transformed into methods within a 🐍Python object.&lt;/p&gt;
+&lt;p&gt;Another notable feature of &lt;strong&gt;aiosql&lt;/strong&gt; is its ability to generate dynamic methods that accept parameters, enabling flexible query execution and effective interaction with the underlying database.&lt;/p&gt;
+&lt;p&gt;This separation of SQL queries from the main Python code promotes cleaner and more modular code, enhancing project readability and maintainability.&lt;/p&gt;
 &lt;hr /&gt;
-&lt;h1 id="sqlalchemy"&gt;🟣 SQLAlchemy&lt;/h1&gt;
-&lt;p&gt;&lt;strong&gt;SQLAlchemy&lt;/strong&gt; is a 🐍 python library that implements ORM and allows you to perform different actions on a related database.&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://r0mymendez.github.io//posts_en/2024-04-02-simplify-database-migrations-using-python-with-alembic/sql-alchemy.png" /&gt;&lt;/p&gt;
-&lt;p&gt;The following are the key components of SQLAlchemy to understand how it interacts with the database:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;&lt;strong&gt;🟣 Engine&lt;/strong&gt;: It is the interface that allows interaction with the database. It handles connections and executes queries.&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;&lt;strong&gt;🟣 Pool&lt;/strong&gt;: It is a collection of connections that allows reusing connections and improving query performance by reducing time.&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;&lt;strong&gt;🟣 Dialect&lt;/strong&gt;: It is the component that allows interaction with the database. Each dialect is designed to interact and translate queries for a database; By default, this library has dialects for MySQL, MariaDB, PostgreSQL, SQL Server, and Oracle. But there are external dialects, in which you should import other libraries, which you can see in the following image.&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;&lt;strong&gt;🟣 DBAPI&lt;/strong&gt;: It is the interface that provides methods to enable communication between Python and the database.&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;img src="https://r0mymendez.github.io//posts_en/2024-04-02-simplify-database-migrations-using-python-with-alembic/sql-alchemydialects.png" /&gt;&lt;/p&gt;
+&lt;h1 id="how-does-aiosql-work"&gt;⚙️ How Does aiosql Work?&lt;/h1&gt;
+&lt;p&gt;In the diagram, you can see that all the queries from an SQL file can be imported and used in Python code by invoking them with the name defined in the query header. Subsequently, you can execute the queries by passing the necessary parameters directly from your Python code, which makes the queries reusable and easier to maintain.&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://r0mymendez.github.io//posts_en/2024-05-26-python-projects-with-sql-strategies-for-effective-query-management/aiosql-0.png" /&gt;&lt;/p&gt;
 &lt;hr /&gt;
-&lt;p&gt;Below is a simple example of how to execute a query in SQL and SQLAlchemy:&lt;/p&gt;
-&lt;pre class="sql"&gt;&lt;code&gt;SELECT 
-    customer_id, 
-    customer_unique_id,
-    customer_zip_code_prefix, 
-    customer_city, 
-    customer_state 
-FROM ecommerce.customers 
-LIMIT 10;&lt;/code&gt;&lt;/pre&gt;
-&lt;pre class="python"&gt;&lt;code&gt;from sqlalchemy import Column, Integer, String,create_engine
-from sqlalchemy.ext.declarative import declarative_base
-from sqlalchemy.orm import sessionmaker
-
-# Create a base class which allows us to define classes that map to tables
-Base = declarative_base()
-
-# Define the class that maps to the table
-class Customer(Base):
-    __tablename__ = &amp;#39;customers&amp;#39;  # Cambia a minúsculas
-    __table_args__ = {&amp;#39;schema&amp;#39;: &amp;#39;ecommerce&amp;#39;}
-
-    customer_id = Column(Integer, primary_key=True)
-    customer_unique_id = Column(Integer)
-    customer_zip_code_prefix= Column(Integer)
-    customer_city= Column(String)
-    customer_state = Column(String)
-
-# Create an engine that connects to the PostgreSQL server
-conn =&amp;#39;postgresql://postgres:postgres@localhost/postgres&amp;#39;
-engine = create_engine(conn)
-
-# Create a session
-conn_session = sessionmaker(bind=engine)
-session = conn_session()
-
-# Execute the query
-customers = session.query(Customer).limit(10)
-
-# Extract the data and create a list of tuples
-data = [ (customer.customer_id,
-          customer.customer_unique_id,
-          customer.customer_zip_code_prefix,
-          customer.customer_city,
-          customer.customer_state) 
-    for customer in customers]&lt;/code&gt;&lt;/pre&gt;
+&lt;h1 id="key-features-of-aiosql-library"&gt;⚙️ Key Features of Aiosql Library&lt;/h1&gt;
+&lt;p&gt;Below, I will share a series of features that this library already has or can have based on its usage: * Provides &lt;strong&gt;CRUD functionality&lt;/strong&gt; (Create: Insert, Read: Select, Update , Delete) for database operations. * &lt;strong&gt;Separates Python code&lt;/strong&gt; from SQL code, making it easier to locate queries within projects with multiple databases. * Each query can be assigned a &lt;strong&gt;descriptive name and docstring&lt;/strong&gt;, similar to Python functions, enabling documentation of the query. * Facilitates the creation of &lt;strong&gt;a query catalog&lt;/strong&gt; within the project, aiding in identification based on entities, databases, or other grouping criteria. * Enables easy generation of &lt;strong&gt;dynamic queries&lt;/strong&gt; with the ability to pass dynamic values and modify them as needed.&lt;/p&gt;
+&lt;div class="figure"&gt;
+&lt;img src="https://dev-to-uploads.s3.amazonaws.com/uploads/articles/9jnau7uqjm31vp58ps29.png" alt="" /&gt;
+&lt;p class="caption"&gt;Image description&lt;/p&gt;
+&lt;/div&gt;
 &lt;hr /&gt;
-&lt;h1 id="database-migrations"&gt;🟣 Database migrations&lt;/h1&gt;
-&lt;p&gt;A migration is the process that allows you to modify the structure of the database, these migrations are created to maintain consistency and integrity.&lt;/p&gt;
-&lt;h3 id="what-are-the-benefits-of-using-migrations"&gt;🟣 What are the benefits of using migrations?&lt;/h3&gt;
-&lt;p&gt;&lt;img src="https://r0mymendez.github.io//posts_en/2024-04-02-simplify-database-migrations-using-python-with-alembic/benefits-migration.png" /&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;🟣 &lt;strong&gt;Version Control&lt;/strong&gt;: Avoids manual intervention in the database by maintaining control over schema versions.&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;🟣 &lt;strong&gt;Environment Management&lt;/strong&gt;: Facilitates the creation of new environments through the application of migrations, enabling easy reproduction of specific configurations and maintaining coherence between them.&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;🟣 &lt;strong&gt;Upgrade &amp;amp; Downgrade&lt;/strong&gt;: Another benefit is the ability not only to apply changes but also to revert them. This provides flexibility and security in database management.&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;🟣 &lt;strong&gt;Auditing&lt;/strong&gt;: Alembic-audit is another library that can be implemented to maintain a chronological record of changes made to the database, facilitating traceability.&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;🟣 &lt;strong&gt;CI/CD Integration&lt;/strong&gt;: Easily integrates into CI/CD pipelines to apply database changes automatically, streamlining and ensuring consistency in application deployment.&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;🟣 &lt;strong&gt;Standardization&lt;/strong&gt;: This implementation enables cleaner, structured, and coherent development for defining and applying changes to the database schema. By using templates, script reuse is promoted, ensuring efficient and consistent management of database changes.&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h1 id="what-is-alembic"&gt;🟣 What is Alembic?&lt;/h1&gt;
-&lt;p&gt;&lt;strong&gt;Alembic&lt;/strong&gt; is a 🐍Python library that enables controlled and automated database migrations. This library utilizes &lt;code&gt;SQLAlchemy&lt;/code&gt; and it allows for the management of changes in the database schema through &lt;strong&gt;scripts&lt;/strong&gt;, which describe the modifications and can be applied automatically.&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://r0mymendez.github.io//posts_en/2024-04-02-simplify-database-migrations-using-python-with-alembic/alemic-flow.png" /&gt;&lt;/p&gt;
-&lt;hr /&gt;
-&lt;h1 id="what-is-audit-alembic"&gt;🟣 What is Audit alembic?&lt;/h1&gt;
-&lt;p&gt; &lt;strong&gt;Audit Alembic&lt;/strong&gt; is a 🐍Python library that complements Alembic by providing an audit table with a detailed record of applied changes.&lt;/p&gt;
-&lt;p&gt;While &lt;strong&gt;Alembic&lt;/strong&gt; typically maintains only a table in the database with the &lt;code&gt;ID&lt;/code&gt; of the last applied migration and allows tracking files using the &lt;code&gt;history&lt;/code&gt; command, Audit Alembic goes a step further by creating an additional table that facilitates change tracking and enables the addition of metadata to applied transactions.&lt;/p&gt;
-&lt;table&gt;
-&lt;colgroup&gt;
-&lt;col width="26%" /&gt;
-&lt;col width="73%" /&gt;
-&lt;/colgroup&gt;
-&lt;thead&gt;
-&lt;tr class="header"&gt;
-&lt;th&gt;column_name&lt;/th&gt;
-&lt;th&gt;column_description&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr class="odd"&gt;
-&lt;td&gt;&lt;code&gt;id&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;unique identifier&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr class="even"&gt;
-&lt;td&gt;&lt;code&gt;alembic_version&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;version of the migration&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr class="odd"&gt;
-&lt;td&gt;&lt;code&gt;prev_alembic_version&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;previous version of the migration&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr class="even"&gt;
-&lt;td&gt;&lt;code&gt;operation&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;“migration” or “rollback”&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr class="odd"&gt;
-&lt;td&gt;&lt;code&gt;operation_direction&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;type of operation (upgrade or downgrade)&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr class="even"&gt;
-&lt;td&gt;&lt;code&gt;user_verion&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;user version of the migration in our case we are using the timestamp&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr class="odd"&gt;
-&lt;td&gt;&lt;code&gt;changed_at&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;timestamp of the migration&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-&lt;hr /&gt;
-&lt;h1 id="alembic-tutorial"&gt;⚙️ Alembic Tutorial&lt;/h1&gt;
-&lt;p&gt;You can find the complete code with a step-by-step example in the 🐍 Python notebook in this &lt;a href="https://github.com/r0mymendez/database-migration/blob/main/alembic_tutorial.ipynb"&gt;link&lt;/a&gt;. However, I will provide a brief overview of the main commands in rest sections of this post. For detailed commands and the implementation of Audit Alembic, please refer to the notebook.&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://github.com/r0mymendez/database-migration"&gt;&lt;img src="https://r0mymendez.github.io//posts_en/2024-04-02-simplify-database-migrations-using-python-with-alembic/github.png" width="550" /&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;Feel free to check it out and give it a star if you find it helpful! ⭐️&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;hr /&gt;
+&lt;h1 id="aiosql-tutorial"&gt;⚙️ Aiosql Tutorial&lt;/h1&gt;
 &lt;h2 id="prerequisites"&gt;🔧 Prerequisites&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;🐳 Docker&lt;/li&gt;
 &lt;li&gt;🐙 Docker Compose&lt;/li&gt;
-&lt;li&gt;🐍 Install python libraries: &lt;code&gt;!pip install alembic Audit-Alembic&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;🐍 Install python libraries: &lt;code&gt;pip install aiosql pandas&lt;/code&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;hr /&gt;
-&lt;h1 id="quick-start"&gt;Quick Start&lt;/h1&gt;
-&lt;h2 id="create-a-postgres-database"&gt;🔧 Create a postgres database&lt;/h2&gt;
-&lt;p&gt;1️⃣ - Create docker-compose.yml file&lt;/p&gt;
-&lt;pre class="yml"&gt;&lt;code&gt;    version: &amp;quot;3.7&amp;quot;
-    services:
-      db:
-        image: postgres:13.3-alpine
-        volumes:
-          - ./db_data:/var/lib/postgresql/data
-        environment:
-          POSTGRES_USER: postgres
-          POSTGRES_PASSWORD: postgres
-          POSTGRES_DB: postgres
-        ports:
-          - &amp;quot;5433:5432&amp;quot;
-
-    volumes:
-      db_data:&lt;/code&gt;&lt;/pre&gt;
-&lt;hr /&gt;
-&lt;p&gt;2️⃣ - Create postgres database Execute in the terminal: &lt;code&gt;docker-compose -f docker-compose.yml up --build&lt;/code&gt;&lt;/p&gt;
-&lt;hr /&gt;
-&lt;p&gt;3️⃣ - Check if your container is running Execute in the terminal: &lt;code&gt;docker ps&lt;/code&gt;&lt;/p&gt;
-&lt;pre class="bash"&gt;&lt;code&gt;CONTAINER ID   IMAGE     COMMAND                  CREATED             STATUS             PORTS                                       NAMES
-edb1f7077e66   sqla_db   &amp;quot;docker-entrypoint.s…&amp;quot;   About an hour ago   Up About an hour   0.0.0.0:5433-&amp;gt;5432/tcp, :::5433-&amp;gt;5432/tcp   sqla_db_1&lt;/code&gt;&lt;/pre&gt;
-&lt;hr /&gt;
-&lt;h2 id="alembic-configuration"&gt;🔧 Alembic: Configuration&lt;/h2&gt;
-&lt;p&gt;1️⃣ - Create a new Alembic environment Now, we are going to create a new Alembic project. For this reason, we need to execute the following command, which will create a group of directories and files.&lt;/p&gt;
-&lt;pre class="bash"&gt;&lt;code&gt;alembic init project&lt;/code&gt;&lt;/pre&gt;
-&lt;hr /&gt;
-&lt;p&gt;2️⃣ - Files &amp;amp; New directory&lt;/p&gt;
-&lt;table&gt;
-&lt;colgroup&gt;
-&lt;col width="18%" /&gt;
-&lt;col width="81%" /&gt;
-&lt;/colgroup&gt;
-&lt;thead&gt;
-&lt;tr class="header"&gt;
-&lt;th&gt;file_name&lt;/th&gt;
-&lt;th&gt;Description&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr class="odd"&gt;
-&lt;td&gt;📄&lt;code&gt;alembic.ini&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;This file is the main configuration file for Alembic, containing the configuration settings for the Alembic environment.&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr class="even"&gt;
-&lt;td&gt;📁&lt;code&gt;project\verions&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;This directory is where the migration scripts will be stored.&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr class="odd"&gt;
-&lt;td&gt;📄&lt;code&gt;project\env.py&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;This Python script contains the function for executing the migration scripts.&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr class="even"&gt;
-&lt;td&gt;📄&lt;code&gt;project\script.py.mako&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;This file is the template for generating new migration scripts.&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr class="odd"&gt;
-&lt;td&gt;📄&lt;code&gt;project\README&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;This file contains a short description of the directory.&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-&lt;hr /&gt;
-&lt;p&gt;3️⃣ - Add the database connection In the alembic.ini file, add the database connection string to the sqlalchemy.url variable. The connection string should be in the format:&lt;/p&gt;
-&lt;pre class="python"&gt;&lt;code&gt; sqlalchemy.url = driver://user:pass@localhost/dbname &lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;In my case I need to configure the following connection * driver: postgresql * user: postgres * password: postgres * dbname: postgres&lt;/p&gt;
-&lt;pre class="python"&gt;&lt;code&gt;sqlalchemy.url = postgresql://postgres:postgres@localhost:5433/postgres &lt;/code&gt;&lt;/pre&gt;
-&lt;hr /&gt;
-&lt;p&gt;4️⃣ - File name template We can uncomment the following line in the &lt;code&gt;alembic.ini&lt;/code&gt; file to change the name of the files created by Alembic, ensuring a chronological order of the files created.&lt;/p&gt;
-&lt;pre class="bash"&gt;&lt;code&gt;file_template = %%(year)d_%%(month).2d_%%(day).2d_%%(hour).2d%%(minute).2d-%%(rev)s_%%(slug)s &lt;/code&gt;&lt;/pre&gt;
-&lt;hr /&gt;
-&lt;h2 id="alembic-create-our-first-migration"&gt;🔧 Alembic: Create our first migration&lt;/h2&gt;
-&lt;p&gt;1️⃣ - Create a migration script&lt;/p&gt;
-&lt;pre class="bash"&gt;&lt;code&gt;alembic revision -m &amp;quot;create schema ecommerce&amp;quot;&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Now you can see the new file created in the &lt;code&gt;project/version folder&lt;/code&gt;, the file has the following name:&lt;/p&gt;
-&lt;p&gt;&lt;code&gt;{current_timestamp}-{unique_identifier}_create_schema_ecommerce.py&lt;/code&gt;&lt;/p&gt;
+&lt;h2 id="quick-start"&gt;🚀 Quick Start&lt;/h2&gt;
+&lt;h3 id="create-a-postgres-database"&gt;🛠️Create a postgres database&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;current timestamp&lt;/li&gt;
-&lt;li&gt;Unique identifier, in my case is &lt;code&gt;9ec3d7e4bde9&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;The message that I added in the command, only change the space for a underscore.&lt;/li&gt;
+&lt;li&gt;1️⃣ - &lt;strong&gt;Clone this &lt;a href="https://github.com/r0mymendez/aiosql-tutorial/tree/master"&gt;repository: aiosql-tutorial&lt;/a&gt;&lt;/strong&gt; →&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre class="bash"&gt;&lt;code&gt;    git clone https://github.com/r0mymendez/aiosql-tutorial.git&lt;/code&gt;&lt;/pre&gt;
+&lt;ul&gt;
+&lt;li&gt;2️⃣ - &lt;strong&gt;Change directory&lt;/strong&gt; to the ‘postgres’ folder →&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre class="bash"&gt;&lt;code&gt;    cd aiosql-tutorial/postgres&lt;/code&gt;&lt;/pre&gt;
+&lt;ul&gt;
+&lt;li&gt;3️⃣ - &lt;strong&gt;Create postgres database&lt;/strong&gt; → Execute in the terminal→&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre class="bash"&gt;&lt;code&gt;    docker-compose -f docker-compose.yml up --build&lt;/code&gt;&lt;/pre&gt;
+&lt;ul&gt;
+&lt;li&gt;4️⃣ - &lt;strong&gt;Check if your container is running&lt;/strong&gt; → Execute in the terminal →&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre class="bash"&gt;&lt;code&gt;      docker ps&lt;/code&gt;&lt;/pre&gt;
+&lt;ul&gt;
+&lt;li&gt;5️⃣ - &lt;strong&gt;Load the csv files&lt;/strong&gt; → Execute the following command for load the csv file in the container →&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre class="bash"&gt;&lt;code&gt;    cd src 
+    python3 etl.py&lt;/code&gt;&lt;/pre&gt;
+&lt;hr /&gt;
+&lt;h3 id="hospital-data"&gt;🏥 Hospital Data&lt;/h3&gt;
+&lt;p&gt;To implement aiosql, we will use the datasets from &lt;a href="https://synthea.mitre.org/"&gt;Synthea&lt;/a&gt;, which simulates a hospital database. These synthetic data are generated from a simulation considering various variables of a population in Massachusetts. From these datasets, we will use the tables: &lt;code&gt;conditions&lt;/code&gt;, &lt;code&gt;encounters&lt;/code&gt;, and &lt;code&gt;patients&lt;/code&gt;.&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h3 id="user-stories"&gt;👥 User stories&lt;/h3&gt;
+&lt;p&gt;To make this example more real we are going to make 3 use cases:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;1️⃣ - As a &lt;strong&gt;data analyst&lt;/strong&gt;, I want to be able to retrieve a list of patients whose visit count is above the 90th percentile, so that I can identify the most active patients in the clinic. Additionally, I want this percentile to be configurable for easy adjustment in the future.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;!-- --&gt;
+&lt;ul&gt;
+&lt;li&gt;2️⃣ - As a &lt;strong&gt;researcher or data analyst&lt;/strong&gt;, I want to access the data of patients who have been diagnosed with the 10 most frequent diagnoses in a period of time, in order to analyze trends and improve the quality of medical care.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;!-- --&gt;
+&lt;ul&gt;
+&lt;li&gt;3️⃣ - As a &lt;strong&gt;marketing analyst&lt;/strong&gt;, I want to create a table for patient satisfaction surveys, so that I can gather feedback on the quality of care and take measures to improve it.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;hr /&gt;
-&lt;p&gt;2️⃣ - Modify the migration file In our case, we will create the schema for the ecommerce project. However, Alembic does not have a specific method for this task. Therefore, we will use the op.execute method to execute the SQL query that will create the schema.&lt;/p&gt;
-&lt;pre class="python"&gt;&lt;code&gt;# alembic does not support creating schema directly and we need to use op.execute
-def upgrade() -&amp;gt; None:
-    op.execute(&amp;#39;CREATE SCHEMA IF NOT EXISTS ecommerce_olist;&amp;#39;)
+&lt;h3 id="implementation"&gt;🚀 Implementation&lt;/h3&gt;
+&lt;p&gt;Based on the user stories that we are going to create, we will define two files in which we will load the queries and scripts that we need to execute: * &lt;strong&gt;patients.sql&lt;/strong&gt;: where we have all the queries related to recovering patient data. * &lt;strong&gt;visits.sql&lt;/strong&gt;: where we have all the queries related to visits, such as surveys.&lt;/p&gt;
+&lt;p&gt;Therefore in our project we are going to have this structure of folders and files&lt;/p&gt;
+&lt;pre class="bash"&gt;&lt;code&gt;- 📁 db
+    - 📁 queries
+        - 📄 patients.sql
+        - 📄 visits.sql
+- 📄 main.ipynb&lt;/code&gt;&lt;/pre&gt;
+&lt;hr /&gt;
+&lt;p&gt;In this way we are isolating the python code from the sql code, in our case we are going to implement this &lt;strong&gt;🐍python code&lt;/strong&gt; in a notebook in such a way as to make its explanation easier.&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h4 id="import-python-libraries"&gt;1️⃣ - Import python libraries&lt;/h4&gt;
+&lt;pre class="python"&gt;&lt;code&gt;import aiosql
+import psycopg2
+import pandas as pd&lt;/code&gt;&lt;/pre&gt;
+&lt;h4 id="import-the-sql-queries-and-configure-the-database-driver"&gt;2️⃣ - Import the SQL queries and configure the database driver&lt;/h4&gt;
+&lt;blockquote&gt;
+&lt;p&gt;In this project, the SQL queries are located in the &lt;strong&gt;‘db/queries’&lt;/strong&gt; directory and &lt;strong&gt;‘psycopg2’&lt;/strong&gt; is the PostgreSQL database adapter.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;pre class="python"&gt;&lt;code&gt;sql = aiosql.from_path(&amp;#39;src/db/queries&amp;#39;, &amp;#39;psycopg2&amp;#39;)&lt;/code&gt;&lt;/pre&gt;
+&lt;h4 id="create-the-connection-to-the-postgresql-database."&gt;3️⃣ - Create the connection to the PostgreSQL database.&lt;/h4&gt;
+&lt;pre class="python"&gt;&lt;code&gt;postgres_secrets = {&amp;#39;host&amp;#39;: &amp;#39;localhost&amp;#39;,&amp;#39;port&amp;#39;: 5432, &amp;#39;user&amp;#39;: &amp;#39;postgres&amp;#39;, &amp;#39;password&amp;#39;: &amp;#39;postgres&amp;#39;, &amp;#39;dbname&amp;#39;: &amp;#39;postgres&amp;#39;}
+conn = psycopg2.connect(**postgres_secrets)
+conn.autocommit = True&lt;/code&gt;&lt;/pre&gt;
+&lt;hr /&gt;
+&lt;h3 id="user-story-i-static-values"&gt;👥 User story I: Static Values&lt;/h3&gt;
+&lt;blockquote&gt;
+&lt;p&gt;As a &lt;strong&gt;data analyst&lt;/strong&gt;, I want to be able to retrieve a &lt;code&gt;list of patients&lt;/code&gt; whose visit count is &lt;code&gt;above the 90th percentile&lt;/code&gt;, so that I can identify the most active patients in the clinic. Additionally, I want this &lt;strong&gt;percentile to be configurable&lt;/strong&gt; for easy adjustment in the future.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;hr /&gt;
+&lt;p&gt;Based on this user story, we will first create one that allows generating a query to retrieve the list of patients with a visit frequency above the 90th percentile.&lt;/p&gt;
+&lt;h4 id="in-the-sql-file-we-have-the-query-for-the-first-user-story"&gt;1️⃣ - In the sql file we have the query for the first user story&lt;/h4&gt;
+&lt;p&gt;The following are the three components that a SQL statement comprises in aiosq:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;📗 Name&lt;/strong&gt;: This is the descriptive name used to invoke the query from Python code. In the following example the name is &lt;code&gt;"fn_get_patients_adove_90th_percentile"&lt;/code&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;📗 Description&lt;/strong&gt;: It’s a detailed description used to generate a docstring. It provides a more comprehensive explanation of the purpose and context of the query. In the following example the description is &lt;code&gt;"get all the patients that have more visits than the 90th percentile of visits..."&lt;/code&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;📗 Query&lt;/strong&gt;: Here is the SQL query that will be executed in the database.&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;📄&lt;code&gt;sql:db/queries/patients.sql&lt;/code&gt;&lt;/p&gt;
+&lt;pre class="sql"&gt;&lt;code&gt;    -- name: fn_get_patients_adove_90th_percentile
+    -- get all the patients that have more visits than the 90th percentile of visits. All this data is stored in encounters table.
+    WITH patient_visits AS (
+        SELECT
+            patient,
+            COUNT(*) AS visit_count
+        FROM
+            hospital.encounters
+        GROUP BY
+            patient
+    ),
+    percentil_n AS (
+        SELECT
+            percentile_cont(0.9) WITHIN GROUP (ORDER BY visit_count) AS p_visits
+        FROM
+            patient_visits
+    )
+    SELECT 
+        pv.patient, 
+        pv.visit_count
+    FROM 
+        patient_visits pv
+    CROSS JOIN 
+        percentil_n  pn
+    WHERE 
+        pv.visit_count &amp;gt;= pn.p_visits;&lt;/code&gt;&lt;/pre&gt;
+&lt;h4 id="execute-the-fn_get_patients_above_90th_percentile-sql-function-using-the-database-connection-conn."&gt;2️⃣ - Execute the ‘fn_get_patients_above_90th_percentile’ SQL function using the database connection ‘conn’.&lt;/h4&gt;
+&lt;blockquote&gt;
+&lt;p&gt;The function returns a list of tuples representing patients whose visit count is above the 90th percentile.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;🐍&lt;code&gt;Python&lt;/code&gt;&lt;/p&gt;
+&lt;pre class="python"&gt;&lt;code&gt;response = sql.fn_get_patients_above_90th_percentile(conn)&lt;/code&gt;&lt;/pre&gt;
+&lt;h4 id="now-we-can-convert-the-response-object-into-a-pandas-dataframe-for-easier-data-manipulation"&gt;3️⃣ - Now we can convert the response object into a pandas DataFrame for easier data manipulation&lt;/h4&gt;
+&lt;blockquote&gt;
+&lt;p&gt;The column names (‘patient_id’ and ‘num_visit’) are added manually because aiosql only returns the query result as a list of tuples without column names.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;pre class="python"&gt;&lt;code&gt;data = pd.DataFrame([item for item in response], columns=[&amp;#39;patient_id&amp;#39;, &amp;#39;num_visit&amp;#39;])
+# Display the DataFrame.
+data&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src="https://r0mymendez.github.io//posts_en/2024-05-26-python-projects-with-sql-strategies-for-effective-query-management/user-story-1-1.png" /&gt;&lt;/p&gt;
+&lt;hr /&gt;
+&lt;blockquote&gt;
+&lt;p&gt;if we want to see the query, we can use the following code&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;pre class="python"&gt;&lt;code&gt;print(sql.fn_get_patients_adove_90th_percentile.sql)&lt;/code&gt;&lt;/pre&gt;
+&lt;hr /&gt;
+&lt;h3 id="user-story-i-dynamic-values"&gt;👥 User story I: Dynamic Values&lt;/h3&gt;
+&lt;blockquote&gt;
+&lt;p&gt;As a &lt;strong&gt;data analyst&lt;/strong&gt;, I want to be able to retrieve a &lt;code&gt;list of patients&lt;/code&gt; whose visit count is above the 90th percentile, so that I can identify the most active patients in the clinic. Additionally, &lt;code&gt;I want this percentile to be configurable&lt;/code&gt; for easy adjustment in the future.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;hr /&gt;
+&lt;p&gt;Now, we are going to create another query that allows us to accept different percentile values so that the query can be dynamically modified based on the values passed. In our case, we are going to provide an example of obtaining the list of patients that exceed the 75th percentile.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Notice that we now have a dynamic variable called &lt;strong&gt;percentile_value&lt;/strong&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;📄&lt;code&gt;sql&lt;/code&gt;&lt;/p&gt;
+&lt;pre class="sql"&gt;&lt;code&gt;-- name: fn_get_patients_above_n_percentile
+WITH patient_visits AS (
+    ...
+),
+percentil_n AS (
+    SELECT
+        percentile_cont(:percentil_value) WITHIN GROUP (ORDER BY visit_count) AS p_visits
+    FROM
+        patient_visits
+)
+SELECT ...;&lt;/code&gt;&lt;/pre&gt;
+&lt;h4 id="this-following-code-executes-a-dynamic-sql-query-that-accepts-different-percentile-values-as-input."&gt;1️⃣ - This following code executes a dynamic SQL query that accepts different percentile values as input.&lt;/h4&gt;
+&lt;p&gt;🐍&lt;code&gt;Python&lt;/code&gt;&lt;/p&gt;
+&lt;pre class="python"&gt;&lt;code&gt;# In this case, we&amp;#39;re getting patients above the 75th percentile.
+response = sql.fn_get_patients_above_n_percentile(conn, percentil_value=0.75)
+data = pd.DataFrame([item for item in response], columns=[&amp;#39;patient_id&amp;#39;, &amp;#39;num_visit&amp;#39;])&lt;/code&gt;&lt;/pre&gt;
+&lt;hr /&gt;
+&lt;h3 id="user-stories-ii"&gt;👥 User stories II&lt;/h3&gt;
+&lt;blockquote&gt;
+&lt;p&gt;As a &lt;strong&gt;researcher or data analyst&lt;/strong&gt;, I want to access the data of patients who have been diagnosed with the 10 most frequent diagnoses in a period of time, in order to analyze trends and improve the quality of medical care.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;hr /&gt;
+&lt;p&gt;To resolve this user story, we will create a query that retrieves patients with the most common conditions within a specified time period. This query will be dynamic, allowing for future variations in the number of conditions of interest. It will accept three parameters:&lt;/p&gt;
+&lt;p&gt;- &lt;strong&gt;‘num_condition’&lt;/strong&gt; will allow us to limit the number of conditions we’re interested in (e.g., the top 10 most common conditions).&lt;/p&gt;
+&lt;p&gt;- &lt;strong&gt;‘period_start_date’&lt;/strong&gt; and &lt;strong&gt;‘period_start_end’&lt;/strong&gt; will define the time window for which we want to retrieve data.&lt;/p&gt;
+&lt;p&gt;📄&lt;code&gt;sql&lt;/code&gt;&lt;/p&gt;
+&lt;pre class="sql"&gt;&lt;code&gt;-- name: fn_get_patients_top_conditions
+-- Get patients with top conditions for a given period of time, the patients are sorted by the number of days they had the condition and the source of the data is the hospital schema.
+with top_n_conditions as(
+SELECT  code, description, COUNT(*) 
+     FROM hospital.CONDITIONS 
+     GROUP BY  code,description 
+     ORDER BY COUNT(*) DESC 
+     LIMIT  :num_condition
+),
+top_n_condition_patients as (
+SELECT 
+    p.ID, 
+    p.FIRST, 
+    p.LAST, 
+    p.CITY, 
+    p.GENDER, 
+    EXTRACT(YEAR FROM AGE(p.BIRTHDATE)) AS age,
+    c.start condition_start_date,
+    c.stop condition_stop_date,
+    EXTRACT(DAY FROM (c.stop - c.start )) AS condition_days, 
+    c.encounter,
+    c.code,
+    c.description
+    from hospital.patients p 
+    inner join hospital.conditions c  on c.patient = p.id
+    inner join top_n_conditions t on t.code=c.code
+)
+select * 
+    from top_n_condition_patients
+    where condition_start_date between :period_start_date and :period_start_end;&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;🐍&lt;code&gt;Python&lt;/code&gt;&lt;/p&gt;
+&lt;pre class="python"&gt;&lt;code&gt;response = sql.fn_get_patients_top_conditions(conn, num_condition_days=10, 
+                                        period_start_date=&amp;#39;2022-01-01&amp;#39;, 
+                                        period_start_end=&amp;#39;2022-12-31&amp;#39;)
+
+column_name=[&amp;#39;id&amp;#39;, &amp;#39;first&amp;#39;,&amp;#39;last&amp;#39;,&amp;#39;city&amp;#39;,&amp;#39;gender&amp;#39;,
+&amp;#39;age&amp;#39;,&amp;#39;condition_start_date&amp;#39;,&amp;#39;condition_stop_date&amp;#39;,&amp;#39;condition_days&amp;#39;,&amp;#39;encounter&amp;#39;,&amp;#39;code&amp;#39;,&amp;#39;description&amp;#39;]
+
+data = pd.DataFrame([item for item in response], columns=column_name)
+data.head()&lt;/code&gt;&lt;/pre&gt;
+&lt;hr /&gt;
+&lt;h3 id="user-story-iii"&gt;👥 User story III&lt;/h3&gt;
+&lt;p&gt;As a &lt;strong&gt;marketing analyst&lt;/strong&gt;, I want to create a table for patient satisfaction surveys, so that I can gather feedback on the quality of care and take measures to improve it.&lt;/p&gt;
+&lt;hr /&gt;
+&lt;p&gt;Now we are going to create the table using aiosql, if you look at our code in SQL you will see that a # symbol is added, these symbols are used by aiosql to identify the different operations that must be performed.&lt;/p&gt;
+&lt;p&gt;📄&lt;code&gt;sql&lt;/code&gt;&lt;/p&gt;
+&lt;pre class="sql"&gt;&lt;code&gt;-- name: fn_create_survey_table#
+CREATE TABLE HOSPITAL.VISIT_SURVEY(
+    ID SERIAL PRIMARY KEY,
+    PATIENT_ID VARCHAR(50),
+    SURVEY_DATE TIMESTAMP,
+    RATING INT,
+    COMMENTS TEXT,
+    CREATED_AT TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src="https://r0mymendez.github.io//posts_en/2024-05-26-python-projects-with-sql-strategies-for-effective-query-management/aiosql-2.png" /&gt;&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h4 id="execute-the-fn_create_survey_table-sql-function-to-create-a-new-table-in-the-database."&gt;1️⃣ - Execute the ‘fn_create_survey_table’ SQL function to create a new table in the database.&lt;/h4&gt;
+&lt;p&gt;🐍&lt;code&gt;Python&lt;/code&gt;&lt;/p&gt;
+&lt;pre class="python"&gt;&lt;code&gt;sql.fn_create_survey_table(conn)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;code&gt;'CREATE TABLE'&lt;/code&gt;&lt;/p&gt;
+&lt;h4 id="once-the-table-is-created-we-are-going-to-use-the-following-insert-statement-to-be-able-to-insert-a-review-of-a-patient"&gt;2️⃣ - Once the table is created we are going to use the following insert statement to be able to insert a review of a patient&lt;/h4&gt;
+&lt;p&gt;📄&lt;code&gt;sql&lt;/code&gt;&lt;/p&gt;
+&lt;pre class="sql"&gt;&lt;code&gt;-- name: fn_add_one_visit_survey&amp;lt;!
+insert into HOSPITAL.VISIT_SURVEY(PATIENT_ID,SURVEY_DATE,RATING,COMMENTS) 
+    values (:patient_id, :survey_date, :rating,:comments) returning ID;&lt;/code&gt;&lt;/pre&gt;
+&lt;hr /&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;⚠️ Disclaimer&lt;/strong&gt;: During the coding of this tutorial, I used the insert statement without a return and encountered an error due to its absence. (The version of aiosql I am using is 10.1) This ‘returning ID’ allows us to retrieve the value assigned to the ‘id’ column within the ‘hospital_visit_survey’ table when the insert operation is performed.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;hr /&gt;
+&lt;p&gt;🐍&lt;code&gt;Python&lt;/code&gt;&lt;/p&gt;
+&lt;pre class="python"&gt;&lt;code&gt;# Add a new visit survey record 
+
+sql.fn_add_one_visit_survey(conn, 
+                            patient_id=&amp;#39;8b9a93f6-3df3-203d-932f-f456e00d2c01&amp;#39;, 
+                            survey_date=&amp;#39;2022-01-01&amp;#39;, 
+                            rating=5,
+                            comments=&amp;#39;This is a great hospital!&amp;#39; )&lt;/code&gt;&lt;/pre&gt;
+&lt;h4 id="now-we-will-utilize-a-new-insert-statement-to-load-multiple-reviews-which-are-stored-in-a-list-of-dictionaries-each-dictionary-in-python-corresponds-to-a-review.-to-accomplish-this-we-will-employ-a-similar-query-but-we-need-to-modify-its-name"&gt;3️⃣ - Now we will utilize a new insert statement to load multiple reviews, which are stored in a list of dictionaries (each dictionary in Python corresponds to a review). To accomplish this, we will employ a similar query but we need to modify its name&lt;/h4&gt;
+&lt;p&gt;📄&lt;code&gt;sql&lt;/code&gt;&lt;/p&gt;
+&lt;pre class="sql"&gt;&lt;code&gt;    -- name: fn_add_many_visit_survey*!
+    insert into HOSPITAL.VISIT_SURVEY(PATIENT_ID,SURVEY_DATE,RATING,COMMENTS) 
+        values (:patient_id, :survey_date, :rating ,:comments) returning ID;&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;🐍&lt;code&gt;Python&lt;/code&gt;&lt;/p&gt;
+&lt;pre class="python"&gt;&lt;code&gt;# Add several visit survey records
+response_survey = [
+    {
+        &amp;#39;patient_id&amp;#39;: &amp;#39;8b9a93f6-3df3-203d-932f-f456e00d2c01&amp;#39;,
+        &amp;#39;survey_date&amp;#39;: &amp;#39;2022-01-01&amp;#39;,
+        &amp;#39;rating&amp;#39;: 3,
+        &amp;#39;comments&amp;#39;: &amp;#39;The service was good. But the waiting time was a bit long.&amp;#39;
+    },
+    {
+        &amp;#39;patient_id&amp;#39;: &amp;#39;7c8a93f6-4df3-203d-932f-f456e00d2c02&amp;#39;,
+        &amp;#39;survey_date&amp;#39;: &amp;#39;2022-02-01&amp;#39;,
+        &amp;#39;rating&amp;#39;: 4,
+        &amp;#39;comments&amp;#39;: &amp;#39;The staff was very helpful!&amp;#39;
+    },
+    {
+        &amp;#39;patient_id&amp;#39;: &amp;#39;6b7a93f6-5ef3-203d-932f-f456e00d2c03&amp;#39;,
+        &amp;#39;survey_date&amp;#39;: &amp;#39;2022-03-01&amp;#39;,
+        &amp;#39;rating&amp;#39;: 3,
+        &amp;#39;comments&amp;#39;: &amp;#39;The waiting time was a bit long.&amp;#39;
+    }
+]
 
 
-def downgrade() -&amp;gt; None:
-    op.execute(&amp;#39;DROP SCHEMA IF EXISTS ecommerce_olist CASCADE;&amp;#39;)&lt;/code&gt;&lt;/pre&gt;
+sql.fn_add_many_visit_survey(conn, response_survey)&lt;/code&gt;&lt;/pre&gt;
 &lt;hr /&gt;
-&lt;p&gt;3️⃣ - Execute the migration The following command will execute the migration and create the schema in the database. If you see the message “Done,” the migration was successful. You can also check the database to verify that the new schema was created and the Alembic version table was updated.&lt;/p&gt;
-&lt;pre class="bash"&gt;&lt;code&gt;alembic upgrade head&lt;/code&gt;&lt;/pre&gt;
+&lt;h1 id="project-query-catalog"&gt;📚 Project query catalog&lt;/h1&gt;
+&lt;p&gt;At the beginning of the tutorial, I mentioned the possibility of creating a catalog of queries for your project. Although this library doesn’t provide this functionality directly, you can see how to do it and access the complete code and data for this tutorial in my GitHub repository.&lt;/p&gt;
+&lt;p&gt;If you find it useful, you can leave a star ⭐️ and follow me for recieve the notification of new articles, this will help me grow in the tech community and create more content.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://github.com/r0mymendez/aiosql-tutorial"&gt;&lt;img src="https://r0mymendez.github.io//posts_en/2024-05-26-python-projects-with-sql-strategies-for-effective-query-management/github.png" title="github: https://github.com/r0mymendez/aiosql-tutorial" alt="github: https://github.com/r0mymendez/aiosql-tutorial" /&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;hr /&gt;
-&lt;p&gt;4️⃣ - Check the migrations Now, we can verify the current migration that was executed. This can be controlled using the Alembic command or by checking the table created earlier.&lt;/p&gt;
-&lt;pre class="bash"&gt;&lt;code&gt;alembic current&lt;/code&gt;&lt;/pre&gt;
-&lt;pre class="bash"&gt;&lt;code&gt;INFO  [alembic.runtime.migration] Context impl PostgresqlImpl.
-INFO  [alembic.runtime.migration] Will assume transactional DDL.
-b1bc43e2f536 (head)&lt;/code&gt;&lt;/pre&gt;
-&lt;hr /&gt;
-&lt;p&gt;5️⃣ - History of migrations Additionally, we can check all the migrations that were executed in this project by using the following command. This will display a detailed history of the migrations, including revision IDs, parent revisions, paths to migration files, and descriptions of the changes made in each migration.&lt;/p&gt;
-&lt;pre class="bash"&gt;&lt;code&gt;alembic history --verbose&lt;/code&gt;&lt;/pre&gt;
-&lt;pre class="bash"&gt;&lt;code&gt;Rev: b1bc43e2f536 (head)
-Parent: 784a7abb86b7
-Path: /project/versions/2024_04_01_1719-b1bc43e2f536_create_table_customer.py
-
-    create table customer
-    
-    Revision ID: b1bc43e2f536
-    Revises: 784a7abb86b7
-    Create Date: 2024-04-01 17:19:09.844065
-
-Rev: 784a7abb86b7
-Parent: &amp;lt;base&amp;gt;
-Path: /project/versions/2024_04_01_1718-784a7abb86b7_create_schema_ecommerce.py
-
-    create schema ecommerce
-    
-    Revision ID: 784a7abb86b7
-    Revises: 
-    Create Date: 2024-04-01 17:18:06.680872&lt;/code&gt;&lt;/pre&gt;
-&lt;hr /&gt;
-&lt;p&gt;6️⃣ - Downgrade the migration The following code allows you to revert the changes made previously.&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;alembic downgrade -1&lt;/code&gt;&lt;/pre&gt;
-&lt;hr /&gt;
-&lt;p&gt;As mentioned earlier, don’t forget to check out my &lt;a href="https://github.com/r0mymendez/database-migration"&gt;repository&lt;/a&gt; containing the step-by-step guide and the implementation of &lt;strong&gt;Audit Alembic&lt;/strong&gt;, allowing you to have a table with traceability of changes.&lt;/p&gt;
-&lt;p&gt;If you find it useful, you can leave a star ⭐️.&lt;/p&gt;
-&lt;p&gt;Remember, it’s always a good development practice to have a tool that &lt;strong&gt;applies changes&lt;/strong&gt; to your database, ensuring &lt;strong&gt;coherence&lt;/strong&gt;, &lt;strong&gt;avoiding manual tasks&lt;/strong&gt;, and &lt;strong&gt;enabling quick reproduction&lt;/strong&gt; of new environments.&lt;/p&gt;
+&lt;h2 id="final-conclusions"&gt;🔍 Final Conclusions&lt;/h2&gt;
+&lt;ol style="list-style-type: decimal"&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;Versatility and Utility&lt;/strong&gt;: I believe aiosql is a useful library that allows you to implement queries from different projects efficiently. It provides a structured way to manage and execute SQL queries separately from your main codebase, enhancing readability and maintainability.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;Flexible Query Handling&lt;/strong&gt;: While aiosql enables direct execution of your queries using database connections, in the projects I work on, I primarily use the library to return the SQL code and execute it with classes that I have already set up in Python code.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;Other databases&lt;/strong&gt;: The ability to store and manage queries can extend beyond SQL databases. For example, this approach can also be applied to NoSQL databases such as Neo4j. By organizing and handling queries in a structured manner, you can optimize interactions with various types of databases.&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
 &lt;hr /&gt;
 &lt;h1 id="references"&gt;📚 References&lt;/h1&gt;
 &lt;p&gt;If you want to learn…&lt;/p&gt;
-&lt;p&gt;1.&lt;a href="https://alembic.sqlalchemy.org/en/latest/#"&gt;Alembic official documentation&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;2.&lt;a href="https://www.sqlalchemy.org/"&gt;sqlalchemy&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;3.&lt;a href="https://github.com/jpassaro/Audit-Alembic/tree/3f0d83cd9965933ee6779ca335fd0945aa853969"&gt;Audit-Alembic&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;1.&lt;a href="https://nackjicholson.github.io/aiosql/getting-started.html"&gt;aiosql official documentation&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Other references:&lt;/p&gt;
-&lt;p&gt;- Image preview reference: [Imagen de &lt;a href="https://www.freepik.com/free-vector/gradient-intranet-illustration_25225755.htm#fromView=search&amp;amp;page=1&amp;amp;position=44&amp;amp;uuid=0099f274-ed9f-4fc7-92a1-e9e1a2d37e58%22"&gt;Freepik&lt;/a&gt;]&lt;/p&gt;
+&lt;p&gt;- Image preview reference: [Imagen de &lt;a href="https://www.freepik.es/vector-gratis/usuarios-laptops-trabajando-base-datos-almacenamiento-organizacion-datos-acceso-gestion-informacion-concepto-proteccion-big-data-vector-ilustracion-aislada_11668632.htm#fromView=search&amp;amp;page=1&amp;amp;position=23&amp;amp;uuid=259d2c57-89fa-4abc-8455-39c842c1ddd1"&gt;Freepik&lt;/a&gt;]&lt;/p&gt;
 &lt;pre class="r distill-force-highlighting-css"&gt;&lt;code&gt;&lt;/code&gt;&lt;/pre&gt;</description>
-      <distill:md5>93fd244641100fe7ab188330352ce264</distill:md5>
+      <distill:md5>67dfa60172143fb789e8d4057ee380f7</distill:md5>
+      <category>Python</category>
+      <category>Database</category>
+      <guid>https://r0mymendez.github.io/posts_en/2024-05-26-python-projects-with-sql-strategies-for-effective-query-management</guid>
+      <pubDate>Sat, 25 May 2024 00:00:00 +0000</pubDate>
+      <media:content url="https://r0mymendez.github.io/posts_en/2024-05-26-python-projects-with-sql-strategies-for-effective-query-management/preview.jpg" medium="image" type="image/jpeg"/>
+    </item>
+    <item>
+      <title>Simplify Database Migrations using Python with Alembic</title>
+      <dc:creator>Romina Mendez</dc:creator>
+      <link>https://r0mymendez.github.io/posts_en/2024-04-02-simplify-database-migrations-using-python-with-alembic</link>
+      <description>In this article, you will discover how to use Alembic for database migration in 🐍Python.</description>
       <category>Python</category>
       <category>Database</category>
       <guid>https://r0mymendez.github.io/posts_en/2024-04-02-simplify-database-migrations-using-python-with-alembic</guid>
-      <pubDate>Mon, 01 Apr 2024 00:00:00 +0000</pubDate>
+      <pubDate>Tue, 02 Apr 2024 00:00:00 +0000</pubDate>
       <media:content url="https://r0mymendez.github.io/posts_en/2024-04-02-simplify-database-migrations-using-python-with-alembic/preview.jpg" medium="image" type="image/jpeg"/>
     </item>
     <item>
@@ -343,18 +395,6 @@ Path: /project/versions/2024_04_01_1718-784a7abb86b7_create_schema_ecommerce.py
       <guid>https://r0mymendez.github.io/posts_en/2024-01-13-sql-assistant-text-to-sql-application-in-streamlit</guid>
       <pubDate>Sat, 13 Jan 2024 00:00:00 +0000</pubDate>
       <media:content url="https://r0mymendez.github.io/posts_en/2024-01-13-sql-assistant-text-to-sql-application-in-streamlit/preview.jpg" medium="image" type="image/jpeg"/>
-    </item>
-    <item>
-      <title>Transform your Pandas Dataframes: Styles, 🎨 Colors, and 😎 Emojis</title>
-      <dc:creator>Romina Mendez</dc:creator>
-      <link>https://r0mymendez.github.io/posts_en/2024-01-02-transform-your-pandas-dataframes</link>
-      <description>In the following article, we will explore a method to add colors and styles to Pandas DataFrames.</description>
-      <category>Python</category>
-      <category>Data</category>
-      <category>DataViz</category>
-      <guid>https://r0mymendez.github.io/posts_en/2024-01-02-transform-your-pandas-dataframes</guid>
-      <pubDate>Tue, 02 Jan 2024 00:00:00 +0000</pubDate>
-      <media:content url="https://r0mymendez.github.io/posts_en/2024-01-02-transform-your-pandas-dataframes/preview.jpg" medium="image" type="image/jpeg"/>
     </item>
   </channel>
 </rss>
