@@ -25,5 +25,6 @@ create_post("Transform your Pandas Dataframes in R",collection ="posts_en")
 create_post("Learning AWS S3 on Localhost: Best Practices with Boto3 and LocalStack",collection ="posts_en")
 create_post("Simplify Database Migrations using Python with Alembic",collection ="posts_en")
 create_post("Python Projects with SQL: Strategies for Effective Query Management",collection ="posts_en")
+create_post("Employing AWS Comprehend Medical for Medical Data Extraction in Healthcare Analytics",collection ="posts_en")
 
 

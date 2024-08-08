@@ -13,7 +13,332 @@ on software, agile methodologies , data science and the professor life.
       <link>https://r0mymendez.github.io/</link>
     </image>
     <generator>Distill</generator>
-    <lastBuildDate>Sat, 25 May 2024 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 06 Aug 2024 00:00:00 +0000</lastBuildDate>
+    <item>
+      <title>Employing AWS Comprehend Medical for Medical Data Extraction in Healthcare Analytics</title>
+      <dc:creator>Romina Mendez</dc:creator>
+      <link>https://r0mymendez.github.io/posts_en/2024-08-07-employing-aws-comprehend-medical-for-medical-data-extraction-in-healthcare-analytics</link>
+      <description>
+
+
+&lt;p&gt;&lt;img src="https://img.shields.io/badge/Buy%20Me%20A%20Coffee-support%20my%20work-FFDD00?style=flat&amp;amp;labelColor=101010&amp;amp;logo=buy-me-a-coffee&amp;amp;logoColor=white" style="width:40.0%" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;A Step-by-Step Guide to Using Entities, RxNorm and SNOMED CT&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;The goal of this tutorial is to provide a guide on how to use Amazon Comprehend Medical for identifying medical entities and extracting information, including RxNorm codes, SNOMED CT concepts, and other attributes. We will cover the following key topics:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;🏷️ Dataset&lt;/strong&gt;: We will use a dataset from Kaggle related to the USMLE® Step 2 Clinical Skills examination.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;🏷️ Data Extraction and Preparation:&lt;/strong&gt; Preparation of the dataset to extract entities.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;🏷️ Real-Time Processing with AWS Comprehend Medical:&lt;/strong&gt; Explore how to use Amazon Comprehend Medical in real-time to analyze and extract medical information from unstructured text data.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;🏷️ Batch Processing with AWS Comprehend Medical:&lt;/strong&gt; Discover how to set up and execute batch processing jobs with Amazon Comprehend Medical.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr /&gt;
+&lt;h1 id="amazon-comprehend-medical"&gt;🩺 Amazon Comprehend Medical&lt;/h1&gt;
+&lt;p&gt;&lt;strong&gt;Amazon Comprehend Medical&lt;/strong&gt; is a service designed to extract information from unstructured medical texts using natural language processing model (NLP) while ensuring compliance with HIPAA requirements. This service provide the following outputs: * &lt;strong&gt;Entities&lt;/strong&gt;: Key medical elements identified in the text, such as medications, diagnoses, symptoms, and procedures. * &lt;strong&gt;RxNorm Codes&lt;/strong&gt;: These codes are derived from a medical ontology that provides normalized names for medications and drugs, ensuring consistent identification and categorization of medication-related information. * &lt;strong&gt;SNOMED CT&lt;/strong&gt;: This code set originates from a comprehensive medical ontology that represents clinical concepts such as diseases, procedures, and diagnoses, facilitating precise and interoperable health data.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;At the time of writing this article, only English texts can be processed usign this service.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;img src="https://r0mymendez.github.io//posts_en/2024-08-07-employing-aws-comprehend-medical-for-medical-data-extraction-in-healthcare-analytics/img/aws-comprehend-medical.png" /&gt;&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h2 id="what-is-hipaa"&gt;🛡️ What is HIPAA?&lt;/h2&gt;
+&lt;p&gt;The &lt;strong&gt;HIPAA (Health Insurance Portability and Accountability Act)&lt;/strong&gt; privacy rule sets national standards for the protection of individually identifiable health information in the United States.&lt;/p&gt;
+&lt;p&gt;This refers to data, including demographic information, that relates to: * The individual’s past, present, or future physical or mental health or condition. * The provision of healthcare to the individual. * The past, present, or future payment for healthcare provided to the individual, and that identifies the individual or can reasonably be used to identify them, where this includes common identifiers such as name, address, date of birth, and Social Security number.&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h3 id="what-are-the-vocabularies"&gt;📚 What are the vocabularies?&lt;/h3&gt;
+&lt;p&gt;“Vocabularies” refer to structured sets of standardized terms and codes used to capture, classify, and analyze patient data. These include controlled vocabularies, terminologies, hierarchies, and ontologies, and are essential for interoperability between healthcare systems, enabling data exchange and facilitating global research. This practice dates back to the 1660s, as shown in the image below.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;“Medical vocabularies date back to the Bills of Mortality in medieval London to manage outbreaks of plague and other diseases.” &lt;a href="https://ohdsi.github.io/TheBookOfOhdsi/StandardizedVocabularies.html"&gt;The Book Of Ohdsi&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;img src="https://r0mymendez.github.io//posts_en/2024-08-07-employing-aws-comprehend-medical-for-medical-data-extraction-in-healthcare-analytics/img/vocabularies.png" /&gt; Image source: &lt;a href="https://ohdsi.github.io/TheBookOfOhdsi/StandardizedVocabularies.html"&gt;The Book Of Ohdsi&lt;/a&gt;&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h3 id="aws-comprehend-medical-methods-for-data-extraction"&gt;🩺 AWS Comprehend Medical: Methods for Data Extraction&lt;/h3&gt;
+&lt;p&gt;After understanding the importance of medical vocabularies, we can explore how AWS Comprehend Medical leverages these vocabularies to extract and standardize medical data.&lt;/p&gt;
+&lt;p&gt;In the following sections, we will describe the specific methods used by AWS Comprehend Medical to process and analyze medical texts.&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h3 id="aws-comprehend-medical-detect-entities"&gt;🩺 AWS Comprehend Medical: Detect Entities&lt;/h3&gt;
+&lt;p&gt;The &lt;strong&gt;detect_entities_v2&lt;/strong&gt; method from AWS Comprehend Medical identifies and classifies various categories of medical information within a text. Below is an image illustrating the categories detected by this method.&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://r0mymendez.github.io//posts_en/2024-08-07-employing-aws-comprehend-medical-for-medical-data-extraction-in-healthcare-analytics/img/entity-1.png" width="768" /&gt;&lt;/p&gt;
+&lt;p&gt;For each of these classes, not only are the categories to which the entity belongs detected, but also other key values. These values include:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Type&lt;/strong&gt;: The specific type of entity within a category.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Attribute&lt;/strong&gt;: Relevant information about the entity, such as the dosage of a medication.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Trait&lt;/strong&gt;: Additional aspects that Amazon Comprehend Medical understands about an entity based on context, such as the NEGATION trait if a medication is not being administered to the patient.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Below, you can see the additional data that can be obtained for each category.&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://r0mymendez.github.io//posts_en/2024-08-07-employing-aws-comprehend-medical-for-medical-data-extraction-in-healthcare-analytics/img/entity-2-1.png" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://r0mymendez.github.io//posts_en/2024-08-07-employing-aws-comprehend-medical-for-medical-data-extraction-in-healthcare-analytics/img/entity-2-2.png" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://r0mymendez.github.io//posts_en/2024-08-07-employing-aws-comprehend-medical-for-medical-data-extraction-in-healthcare-analytics/img/entity-2-3.png" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://r0mymendez.github.io//posts_en/2024-08-07-employing-aws-comprehend-medical-for-medical-data-extraction-in-healthcare-analytics/img/entity-2-4.png" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://r0mymendez.github.io//posts_en/2024-08-07-employing-aws-comprehend-medical-for-medical-data-extraction-in-healthcare-analytics/img/entity-2-5.png" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://r0mymendez.github.io//posts_en/2024-08-07-employing-aws-comprehend-medical-for-medical-data-extraction-in-healthcare-analytics/img/entity-2-6.png" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://r0mymendez.github.io//posts_en/2024-08-07-employing-aws-comprehend-medical-for-medical-data-extraction-in-healthcare-analytics/img/entity-2-7.png" /&gt;&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h3 id="aws-comprehend-medical-rxnorm"&gt;🩺 AWS Comprehend Medical: RxNorm&lt;/h3&gt;
+&lt;p&gt;RxNorm is a standardized medical ontology that provides normalized names for clinical medications, and also It serves as a comprehensive resource for identifying and categorizing drugs and their various forms. RxNorm links these standardized names to many other drug vocabularies, ensuring consistency and interoperability across different healthcare systems.&lt;/p&gt;
+&lt;p&gt;Below is an example with a medication and the related concepts in &lt;strong&gt;RxNorm&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://r0mymendez.github.io//posts_en/2024-08-07-employing-aws-comprehend-medical-for-medical-data-extraction-in-healthcare-analytics/img/rnxorm-1.png" /&gt;&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h3 id="aws-comprehend-medical-snomed-ct-clinical-terms"&gt;🩺 AWS Comprehend Medical: SNOMED CT (Clinical Terms)&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;SNOMED CT&lt;/strong&gt; (Systematized Nomenclature of Medicine – Clinical Terms) is a comprehensive multilingual health terminology system. It provides a standardized set of codes, concepts, and synonyms to represent clinical information, including diseases, procedures, and diagnoses.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;SNOMED CT facilitates semantic interoperability by allowing mapping between different health vocabularies, such as &lt;code&gt;ICD-9&lt;/code&gt; and &lt;code&gt;ICD-10&lt;/code&gt;.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;img src="https://r0mymendez.github.io//posts_en/2024-08-07-employing-aws-comprehend-medical-for-medical-data-extraction-in-healthcare-analytics/img/snomed_concepts.png" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://r0mymendez.github.io//posts_en/2024-08-07-employing-aws-comprehend-medical-for-medical-data-extraction-in-healthcare-analytics/img/snomed_concepts_c1.png" /&gt;&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h2 id="dataset"&gt;🩺 Dataset&lt;/h2&gt;
+&lt;p&gt;For this tutorial, we will use a dataset from &lt;strong&gt;Kaggle&lt;/strong&gt; that is associated with the USMLE® Step 2 Clinical Skills examination, this licensing exam evaluates the examinee’s ability to recognize pertinent clinical facts during interactions with standardized patients.&lt;/p&gt;
+&lt;p&gt;We will use select medical notes from this dataset to process and analyze the results obtained using the AWS Comprehend Medical service.&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://r0mymendez.github.io//posts_en/2024-08-07-employing-aws-comprehend-medical-for-medical-data-extraction-in-healthcare-analytics/img/database_nbme.png" /&gt;&lt;/p&gt;
+&lt;p&gt;source: &lt;a href="https://www.kaggle.com/c/nbme-score-clinical-patient-notes/data"&gt;NBME - Score Clinical Patient Notes&lt;/a&gt;&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h3 id="prerequisites"&gt;🔧 Prerequisites&lt;/h3&gt;
+&lt;p&gt;To complete this tutorial, you need to meet the following prerequisites:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;AWS Credentials&lt;/strong&gt;: You must configure the &lt;code&gt;AWS_ACCESS_KEY&lt;/code&gt; and &lt;code&gt;AWS_SECRET_KEY&lt;/code&gt; credentials. These are crucial for authenticating and authorizing access to AWS services.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;S3 Bucket&lt;/strong&gt;: Create an S3 bucket to store your data. In this example, we will use a bucket named &lt;code&gt;dev-medical-notes&lt;/code&gt; located in the &lt;code&gt;us-east-1&lt;/code&gt; region.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Permissions&lt;/strong&gt;: Check the IAM folder in this repository for the necessary policies and permissions to apply.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;⚠️ If you’re not familiar with creating AWS credentials or setting up an S3 bucket, you can follow this guide: &lt;a href="https://docs.aws.amazon.com/AmazonS3/latest/userguide/creating-bucket.html"&gt;Create a Bucket&lt;/a&gt;.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;hr /&gt;
+&lt;p&gt;&lt;strong&gt;🔐 AWS Credentials&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;For this tutorial, AWS credentials (&lt;code&gt;AWS_ACCESS_KEY&lt;/code&gt; and &lt;code&gt;AWS_SECRET_KEY&lt;/code&gt;) are required, these credentials are essential for authenticating and authorizing access to AWS services and they can be generated using the &lt;strong&gt;IAM&lt;/strong&gt; (Identity and Access Management) service.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;⚠️ Remember to keep your credentials secure and avoid sharing them to prevent unauthorized access to your AWS account.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;hr /&gt;
+&lt;p&gt;&lt;strong&gt;🔐 IAM Policies and Role&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;For this tutorial, you need a role and a user with specific policies applied. In the &lt;a href="https://github.com/r0mymendez/aws-comprehend-medical/tree/main/iam"&gt;GitHub repository&lt;/a&gt;, you’ll find a folder containing the policies that need to be applied.&lt;/p&gt;
+&lt;hr /&gt;
+&lt;p&gt;&lt;strong&gt;📦 AWS Libraries&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;The main libraries we will use are:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;boto3&lt;/strong&gt;: This library allows us to connect programmatically to Amazon Web Services (AWS) services.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;awswrangler&lt;/strong&gt;: This open-source Python library integrates pandas with AWS, enabling seamless data manipulation and analysis within AWS services.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr /&gt;
+&lt;p&gt;&lt;strong&gt;🔧 Configuration Setup&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;To manage AWS credentials, we will use the python-dotenv library to handle environment variables. You need to create a file named .env in the root of the project and configure your AWS credentials there. Below, you will find the format for the file.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;File Name: &lt;code&gt;.env&lt;/code&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;pre class="yaml"&gt;&lt;code&gt;AWS_SECRET_KEY=&amp;#39;mySecretKey&amp;#39;
+AWS_ACCESS_KEY=&amp;#39;myAccessKey&amp;#39;
+AWS_ROLE=&amp;#39;arn:aws:iam::xxxx:role/role-name&amp;#39;&lt;/code&gt;&lt;/pre&gt;
+&lt;hr /&gt;
+&lt;p&gt;&lt;strong&gt;⚠️ Considerations&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;To simplify this tutorial and reduce the complexity of implementing a solution, two classes were created, which are as follows:&lt;/p&gt;
+&lt;p&gt;📦&lt;code&gt;S3bucket Class&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;To simplify the explanation of this tutorial and manage the files stored in an S3 bucket, I have created a class named S3bucket. This class will enable us to perform various common operations such as listing the files in a bucket, writing a JSON file, writing a Parquet file, and reading a JSON file.&lt;/p&gt;
+&lt;p&gt;📦&lt;code&gt;ComprehendMedical Class&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;To make it easier to use AWS Comprehend Medical and create DataFrames from the processed data, I have developed a class named ComprehendMedical. This class is designed to streamline interactions with the service’s methods, including detect_entities_v2, infer_rx_norm, and infer_snomed_ct. Below are the primary methods of this class and their functionalities:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;get_entities&lt;/strong&gt;: This method uses the detect_entities_v2 function from AWS Comprehend Medical to identify medical entities in a given text.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;get_rxnorm&lt;/strong&gt;: This method employs the infer_rx_norm function to extract medication-related information from the text.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;get_snomed&lt;/strong&gt;: This method uses the infer_snomedct function to identify and obtain information related to standardized medical terms in the SNOMED CT system.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;⚒️ Methods to Generate DataFrames&lt;/strong&gt; Each of the above methods also has a version that returns the results in DataFrame format using pandas. These DataFrames are then saved in Parquet format, which is efficient for storage and querying, and facilitates integration with other data processing tools. The Parquet files are stored in a new 📁 folder named “stage” within the same Amazon S3 bucket.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;hr /&gt;
+&lt;pre class="python"&gt;&lt;code&gt;# libraries for data processing
+import json, os,io,re,uuid
+from tqdm import tqdm
+from datetime import datetime
+from pprint import pprint
+import pandas as pd 
+import numpy as np
+
+# libraries for loading environment variables
+from dotenv import load_dotenv
+
+# aws libraries
+import boto3
+import awswrangler as wr
+
+# libraries for data visualization
+import seaborn as sns
+from matplotlib import pyplot as plt
+import matplotlib as mpl
+
+load_dotenv()
+AWS_ACCESS_KEY = os.getenv(&amp;quot;AWS_ACCESS_KEY&amp;quot;)
+AWS_SECRET_KEY = os.getenv(&amp;quot;AWS_SECRET_KEY&amp;quot;)
+AWS_ROLE = os.getenv(&amp;quot;AWS_ROLE&amp;quot;)
+AWS_REGION_NAME = &amp;#39;us-east-1&amp;#39;
+BUCKET_NAME = &amp;#39;dev-medical-notes&amp;#39;&lt;/code&gt;&lt;/pre&gt;
+&lt;hr /&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Here we are creating an object from the class called S3bucket and you can see the complete code in the following &lt;a href="https://github.com/r0mymendez/aws-comprehend-medical"&gt;link&lt;/a&gt; of this class&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;pre class="python"&gt;&lt;code&gt;# create an object of the class S3bucket for the bucket &amp;#39;dev-medical-notes&amp;#39;
+s3 = S3bucket(BUCKET_NAME, AWS_ACCESS_KEY, AWS_SECRET_KEY, AWS_REGION_NAME)&lt;/code&gt;&lt;/pre&gt;
+&lt;hr /&gt;
+&lt;h3 id="data-extraction-and-preparation"&gt;🟣 Data Extraction and Preparation&lt;/h3&gt;
+&lt;p&gt;The first step in the process is to extract a subset of medical notes and upload them to &lt;strong&gt;Amazon S3&lt;/strong&gt; in JSON &lt;strong&gt;{}&lt;/strong&gt; format. To facilitate the organization and management of these files, they will be stored in a 📁 folder named “raw,” which will be preceded by a 📅 date prefix (dt).&lt;/p&gt;
+&lt;p&gt;The 📁 “raw” folder will serve as the container for the original, unprocessed files, while the date prefix will help classify and manage the files based on when they were uploaded.&lt;/p&gt;
+&lt;pre class="python"&gt;&lt;code&gt;data = pd.read_csv(&amp;#39;data/patient_notes.csv&amp;#39;)
+data[&amp;#39;pn_history_len&amp;#39;]=data[&amp;#39;pn_history&amp;#39;].str.len()
+
+# Plotting the distribution of the number of characters in patient notes
+mpl.rcParams[&amp;#39;font.family&amp;#39;] = &amp;#39;serif&amp;#39;
+plt.figure(figsize=(12,4))
+sns.histplot(data[&amp;#39;pn_history_len&amp;#39;], color=sns.color_palette(&amp;#39;pastel&amp;#39;)[4])
+plt.title(&amp;#39;Distribution number of characters in patient notes&amp;#39;)
+plt.xlabel(&amp;#39;Number of characters&amp;#39;)
+plt.ylabel(&amp;#39;Frequency&amp;#39;)
+plt.show()&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src="https://r0mymendez.github.io//posts_en/2024-08-07-employing-aws-comprehend-medical-for-medical-data-extraction-in-healthcare-analytics/img/plot_nro_characters.png" /&gt;&lt;/p&gt;
+&lt;hr /&gt;
+&lt;p&gt;&lt;strong&gt;🔍 Analysis of Clinical Note Lengths&lt;/strong&gt;&lt;br&gt; In summary, there is significant variability in the length of clinical notes. However, most notes typically fall within a certain range. Below are the key points and future considerations for this analysis:&lt;/p&gt;
+&lt;ol style="list-style-type: decimal"&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;📊 Distribution of Note Lengths&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;The majority of notes are between &lt;code&gt;800&lt;/code&gt; and &lt;code&gt;1000&lt;/code&gt; characters.&lt;/li&gt;
+&lt;li&gt;Some notes are shorter, with &lt;code&gt;less than 200&lt;/code&gt; characters.&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;🧹 Data Cleaning&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;It is important to ensure that the notes do not contain unnecessary characters, such as repetitions or sequences of special symbols. It is recommended to perform a preliminary cleaning of the notes to remove these characters before processing.&lt;/li&gt;
+&lt;li&gt;It is recommended to perform a preliminary cleaning of the notes to &lt;code&gt;remove these characters&lt;/code&gt; before processing.&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;🔍 Future Research Questions&lt;/strong&gt; &lt;br&gt; Although some of these questions cannot be answered with our dataset, these are some questions we could consider for analyzing a similar dataset:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Type of Patients:&lt;/strong&gt; What &lt;code&gt;types of patients&lt;/code&gt; have the shortest and longest notes?&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Relation to Severity:&lt;/strong&gt; Is there a relationship between the length of the note and &lt;code&gt;the severity of the patient's condition&lt;/code&gt;?&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Temporal Evolution:&lt;/strong&gt; How has the average length of the notes &lt;code&gt;changed over time&lt;/code&gt;?&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Additionally, since AWS Comprehend Medical processes notes up to &lt;code&gt;10,000&lt;/code&gt; characters, performing this analysis is ideal for optimizing the usage of this service.&lt;/p&gt;
+&lt;hr /&gt;
+&lt;p&gt;&lt;strong&gt;Selecting Random Notes&lt;/strong&gt;&lt;/p&gt;
+&lt;pre class="python"&gt;&lt;code&gt;# seelcting random notes to test the function
+random_notes = [42141, 39049, 40593, 38851, 41068, 39457, 39152, 39665, 37830, 41717]
+
+# selecting the notes from the data
+data_test = data.reset_index().rename({&amp;#39;index&amp;#39;:&amp;#39;id&amp;#39;},axis=1).loc[random_notes,:].to_dict(&amp;#39;records&amp;#39;)
+# see the first 3 notes
+data_test[:3]&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class="json"&gt;&lt;code&gt;[{&amp;#39;id&amp;#39;: 42141,
+  &amp;#39;pn_num&amp;#39;: 95330,
+  &amp;#39;case_num&amp;#39;: 9,
+  &amp;#39;pn_history&amp;#39;: &amp;#39;Ms. Madden is a 20 yo female presenting w/ the worst HA of her life, unlike anything that she has had before. It is a dull + constant pain, it has gotten progressively worse, started yesterday morn. It is a diffuse pain felt around her head and is nonpulsating. She has photophobia but no phonophobia, has nausea, and vomited 3x yesterday. No sick contacts. Felt warm earlier. No chills, fatigue, CP, SOB, abd pain, or rashes. No sx before the onset of this HA. Ibuprofen, tylenol, sleep have not helped. Walking + bending over makes the pain worse. She has had HA before once or twice a yr but they are usually very mild. \r\nMeds: OCPs\r\nFH: mother w/ migraines, dad w/ HPL\r\nSocial alcohol use, 3 or 4 marijuana joints per week, no tobacco use\r\nPMH: none significant&amp;#39;,
+  &amp;#39;pn_history_len&amp;#39;: 765},
+ {&amp;#39;id&amp;#39;: 39049,
+  &amp;#39;pn_num&amp;#39;: 92131,
+  &amp;#39;case_num&amp;#39;: 9,
+  &amp;#39;pn_history&amp;#39;: &amp;#39;20 yo F, c/o headaches.\r\n- started yesterday, right after she woke up. 8/10, dull, constant headache, getting worse. \r\n- nothing makes it better. exacerbated by leaning forward and walking.\r\n- nausea and vomiting. vomited 3 times, green fluids, no blood. \r\n- photophobia. \r\n- mild fever. \r\nROS: none except above. occasional headaches.\r\nPMH: none. Meds: OCP. All: NKDA.\r\nPSH: none. \r\nFH: mother - migrain. father-  hyperlipidemia. \r\nSH: sexually active with boyfriend, using condoms and OCP. \r\nnot smoking, drinkes 2-3 a week. smoking marijuana 3-4 times a week.&amp;#39;,
+  &amp;#39;pn_history_len&amp;#39;: 562},
+ {&amp;#39;id&amp;#39;: 40593,
+  &amp;#39;pn_num&amp;#39;: 93723,
+  &amp;#39;case_num&amp;#39;: 9,
+  &amp;#39;pn_history&amp;#39;: &amp;#39;A 20 yo female presents to the clinic with c/o a headache since yesterday. Pt states headache is constant, progressive, and diffuse. Associaed with nausea, vomiting , and decreased appetite. Pain is 10/10 in intensity, non-radiating. Patient states she also felt warmer yesterday. Pt states muscle aches and runny nose.. Patient denies cough, chst pain, adbominal pain. Pt denies recent travel.\r\n\r\nAllergies: none\r\nmeds: OCPs\r\nPMHx:/PShx/hopsi: none\r\nFamily hx:amily hx (mother-migraine headache)\r\nsocial hx: \r\n&amp;#39;,
+  &amp;#39;pn_history_len&amp;#39;: 511}]&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class="python"&gt;&lt;code&gt;# write the data to the s3 bucket
+for record in tqdm(data_test):
+    dt =f&amp;quot;dt={datetime.now().strftime(&amp;#39;%Y%m%d&amp;#39;)}&amp;quot;
+    record_file_name = f&amp;quot;medical_record_noteId_{record[&amp;#39;id&amp;#39;]}.json&amp;quot;
+    s3.write_s3_json(data=record, filename=f&amp;quot;raw/{dt}/{record_file_name}&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class="bash"&gt;&lt;code&gt;100%|██████████| 10/10 [00:02&amp;lt;00:00,  3.48it/s]&lt;/code&gt;&lt;/pre&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;🧹 Retrieval and Cleaning of Notes&lt;/strong&gt;&lt;br&gt; We will retrieve note 42141 from the S3 bucket, specifically from the folder “raw”. Using these data, we will use the re module to replace the characters   and , which correspond to line breaks and tabs. &lt;br&gt; Next, we will review the dictionary with the note and proceed to modify these characters in the retrieved text.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;pre class="python"&gt;&lt;code&gt;# Read the data from the s3 bucket 
+note_id = 42141
+note = s3.read_s3_json(f&amp;#39;raw/dt=20240804/medical_record_noteId_{note_id}.json&amp;#39;)
+pprint(note)
+note_clean = re.sub(r&amp;#39;[\n\r\t]&amp;#39;, &amp;#39; &amp;#39;,note[&amp;#39;pn_history&amp;#39;])&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class="bash"&gt;&lt;code&gt;{&amp;#39;case_num&amp;#39;: 9,
+ &amp;#39;id&amp;#39;: 42141,
+ &amp;#39;pn_history&amp;#39;: &amp;#39;Ms. Madden is a 20 yo female presenting w/ the worst HA of her life, unlike anything that she has had before. It is a dull + constant pain, it has gotten progressively worse, started yesterday morn. It is a diffuse pain felt around her head and is nonpulsating. She has photophobia but no phonophobia, has nausea, and vomited 3x yesterday. No sick contacts. Felt warm earlier. No chills, fatigue, CP, SOB, abd pain, or rashes. No sx before the onset of this HA. Ibuprofen, tylenol, sleep have not helped. Walking + bending over makes the pain worse. She has had HA before once or twice a yr but they are usually very mild.   Meds: OCPs  FH: mother w/ migraines, dad w/ HPL  Social alcohol use, 3 or 4 marijuana joints per week, no tobacco use  PMH: none significant&amp;#39;,
+ &amp;#39;pn_history_len&amp;#39;: 765,
+ &amp;#39;pn_num&amp;#39;: 95330}&lt;/code&gt;&lt;/pre&gt;
+&lt;hr /&gt;
+&lt;h3 id="real-time-processing-with-aws-comprehend-medical"&gt;🟣 Real-Time Processing with AWS Comprehend Medical&lt;/h3&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Here we are creating an object from the class called ComprehendMedical and you can see the complete code in the following &lt;a href="https://github.com/r0mymendez/aws-comprehend-medical"&gt;link&lt;/a&gt; of this class&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;pre class="python"&gt;&lt;code&gt;# create an object of the class ComprehendMedical to use the comprehend medical service
+aws_comprehendMedical = ComprehendMedical(
+                        aws_region_name=AWS_REGION_NAME,
+                        aws_access_key=AWS_ACCESS_KEY,
+                        aws_secret_access=AWS_SECRET_KEY)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;strong&gt;🩺 AWS Comprehend Medical: Entities&lt;/strong&gt;&lt;/p&gt;
+&lt;pre class="python"&gt;&lt;code&gt;# get the entities from the note 
+tmp_entities = aws_comprehendMedical.get_entities_dataframe(text=note_clean)
+# With the function get_entities_dataframe we can get the mapped and unmapped entities
+mapped_df, unmapped_df = tmp_entities
+mapped_df.head(3)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src="https://r0mymendez.github.io//posts_en/2024-08-07-employing-aws-comprehend-medical-for-medical-data-extraction-in-healthcare-analytics/img/table_entities_mapped.png" /&gt;&lt;/p&gt;
+&lt;hr /&gt;
+&lt;pre class="python"&gt;&lt;code&gt;unmapped_df.head(3)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src="https://r0mymendez.github.io//posts_en/2024-08-07-employing-aws-comprehend-medical-for-medical-data-extraction-in-healthcare-analytics/img/table_entities_unmapped.png" /&gt;&lt;/p&gt;
+&lt;hr /&gt;
+&lt;pre class="python"&gt;&lt;code&gt;# write the mapped and unmapped entities to the s3 bucket
+dt =f&amp;quot;dt={datetime.now().strftime(&amp;#39;%Y%m%d&amp;#39;)}&amp;quot;
+s3.write_s3_parquet(data=mapped_df, filename=f&amp;#39;stage/{dt}/entites/mapped_entities_noteId_{note_id}.parquet&amp;#39;)
+s3.write_s3_parquet(data=unmapped_df, filename=f&amp;#39;stage/{dt}/entites/unmapped_entities_noteId_{note_id}.parquet&amp;#39;)&lt;/code&gt;&lt;/pre&gt;
+&lt;hr /&gt;
+&lt;p&gt;&lt;strong&gt;🩺 AWS Comprehend Medical: RxNorm&lt;/strong&gt;&lt;/p&gt;
+&lt;pre class="python"&gt;&lt;code&gt;# get the rxnorm entities from the note
+rxnorm_entities = aws_comprehendMedical.get_rxnorm_dataframe(text=note_clean)
+rxnorm_entities.head()&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src="https://r0mymendez.github.io//posts_en/2024-08-07-employing-aws-comprehend-medical-for-medical-data-extraction-in-healthcare-analytics/img/table_rxnorm.png" /&gt;&lt;/p&gt;
+&lt;pre class="python"&gt;&lt;code&gt;# Some of the entities are mapped to RxNorm
+for item in rxnorm_entities[&amp;#39;RxNormConcepts&amp;#39;][0]:
+    pprint(item)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class="bash"&gt;&lt;code&gt;{&amp;#39;Code&amp;#39;: &amp;#39;5640&amp;#39;, &amp;#39;Description&amp;#39;: &amp;#39;ibuprofen&amp;#39;, &amp;#39;Score&amp;#39;: 0.9967318773269653}
+{&amp;#39;Code&amp;#39;: &amp;#39;10255&amp;#39;, &amp;#39;Description&amp;#39;: &amp;#39;suprofen&amp;#39;, &amp;#39;Score&amp;#39;: 0.5894578695297241}
+{&amp;#39;Code&amp;#39;: &amp;#39;4331&amp;#39;, &amp;#39;Description&amp;#39;: &amp;#39;fenoprofen&amp;#39;, &amp;#39;Score&amp;#39;: 0.5856923460960388}
+{&amp;#39;Code&amp;#39;: &amp;#39;1312748&amp;#39;, &amp;#39;Description&amp;#39;: &amp;#39;truprofen&amp;#39;, &amp;#39;Score&amp;#39;: 0.574164867401123}
+{&amp;#39;Code&amp;#39;: &amp;#39;17387&amp;#39;, &amp;#39;Description&amp;#39;: &amp;#39;alminoprofen&amp;#39;, &amp;#39;Score&amp;#39;: 0.5531540513038635}&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class="python"&gt;&lt;code&gt;# Write the RxNorm entities to the s3 bucket
+dt =f&amp;quot;dt={datetime.now().strftime(&amp;#39;%Y%m%d&amp;#39;)}&amp;quot;
+s3.write_s3_parquet(data=rxnorm_entities, filename=f&amp;#39;stage/{dt}/rxnorm/rxnorm_entities_noteId_{note_id}.parquet&amp;#39;)&lt;/code&gt;&lt;/pre&gt;
+&lt;hr /&gt;
+&lt;p&gt;&lt;strong&gt;🩺 AWS Comprehend Medical: SNOMED CT (Clinical Terms)&lt;/strong&gt;&lt;/p&gt;
+&lt;pre class="python"&gt;&lt;code&gt;# create a dataframe with the snomed entities
+snomed_ct_entities = aws_comprehendMedical.get_snomed_dataframe(text=note_clean)
+snomed_ct_entities.head()&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src="https://r0mymendez.github.io//posts_en/2024-08-07-employing-aws-comprehend-medical-for-medical-data-extraction-in-healthcare-analytics/img/table_snomed.png" /&gt;&lt;/p&gt;
+&lt;pre class="python"&gt;&lt;code&gt;# Write the snomed-ct entities to the s3 bucket
+dt =f&amp;quot;dt={datetime.now().strftime(&amp;#39;%Y%m%d&amp;#39;)}&amp;quot;
+s3.write_s3_parquet(data=snomed_ct_entities, filename=f&amp;#39;stage/{dt}/snomed-ct/snomed_ct_noteId_{note_id}.parquet&amp;#39;)&lt;/code&gt;&lt;/pre&gt;
+&lt;hr /&gt;
+&lt;h3 id="batch-processing-with-aws-comprehend-medical"&gt;🟣 Batch Processing with AWS Comprehend Medical&lt;/h3&gt;
+&lt;p&gt;To perform batch processing, you’ll first need to store the notes as individual &lt;strong&gt;txt&lt;/strong&gt; files in an S3 bucket. These files will be processed, and the results will be saved in a new folder named &lt;strong&gt;output&lt;/strong&gt; within the same bucket.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;To view this section of the tutorial, you can check out my GitHub repository linked below.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;If you find this useful, please leave a star ⭐️ and follow me to receive notifications of new articles. This will help me grow in the tech community and create more content.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;{% github r0mymendez/aws-comprehend-medical %}&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h2 id="references"&gt;📚 References&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;[1] Amazon Comprehend Medical, Amazon Web Services, URL: &lt;a href="https://aws.amazon.com/es/comprehend/medical/" class="uri"&gt;https://aws.amazon.com/es/comprehend/medical/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;[2] Summary of the HIPAA Privacy Rule, U.S Deparment of health human services, URL: &lt;a href="https://www.hhs.gov/hipaa/for-professionals/privacy/laws-regulations/index.html" class="uri"&gt;https://www.hhs.gov/hipaa/for-professionals/privacy/laws-regulations/index.html&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;[3] Boto3 1.34.153 documentation, Amazon Web Services, URL: &lt;a href="https://boto3.amazonaws.com/v1/documentation/api/latest/index.html" class="uri"&gt;https://boto3.amazonaws.com/v1/documentation/api/latest/index.html&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;[4] AWS SDK for pandas (awswrangler),AWS Professional Service open source , URL: &lt;a href="https://aws-sdk-pandas.readthedocs.io/en/stable/" class="uri"&gt;https://aws-sdk-pandas.readthedocs.io/en/stable/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;[5] NBME - Score Clinical Patient Notes,Kaggle, URL: &lt;a href="https://www.kaggle.com/c/nbme-score-clinical-patient-notes/data?select=patient_notes.csv" class="uri"&gt;https://www.kaggle.com/c/nbme-score-clinical-patient-notes/data?select=patient_notes.csv&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;[6] Detect entities (Version 2), Amazon Web Services, URL: &lt;a href="https://docs.aws.amazon.com/comprehend-medical/latest/dev/textanalysis-entitiesv2.html" class="uri"&gt;https://docs.aws.amazon.com/comprehend-medical/latest/dev/textanalysis-entitiesv2.html&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;[7] RxNorm, National Library of Medicie, URL: &lt;a href="https://www.nlm.nih.gov/research/umls/rxnorm/index.html" class="uri"&gt;https://www.nlm.nih.gov/research/umls/rxnorm/index.html&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;[8] Overview of SNOMED CT, National Library of Medicie, URL: &lt;a href="https://www.nlm.nih.gov/healthit/snomedct/snomed_overview.html" class="uri"&gt;https://www.nlm.nih.gov/healthit/snomedct/snomed_overview.html&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;[9] The Book Of Ohdsi, Ohdsi, URL: &lt;a href="https://ohdsi.github.io/TheBookOfOhdsi/" class="uri"&gt;https://ohdsi.github.io/TheBookOfOhdsi/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="other-references"&gt;📚 Other references:&lt;/h2&gt;
+&lt;p&gt;- Image preview reference: [Image by jcomp on &lt;a href="https://www.freepik.com/free-vector/professional-pharmaceutical-science-pharmacist-checking-medicaments-pharmacy-store-pharmacy-business-medicine-drug-store-character-flat-cartoon-vector-illustration_24070650.htm#fromView=search&amp;amp;page=1&amp;amp;position=1&amp;amp;uuid=7b89ed63-b471-4e2a-8d63-2d023036a095"&gt;Freepik&lt;/a&gt;]&lt;/p&gt;
+&lt;pre class="r distill-force-highlighting-css"&gt;&lt;code&gt;&lt;/code&gt;&lt;/pre&gt;</description>
+      <distill:md5>bd66e70341c438917cbfb21c43a54bab</distill:md5>
+      <category>Python</category>
+      <category>Data</category>
+      <category>Cloud Computing</category>
+      <category>AI</category>
+      <guid>https://r0mymendez.github.io/posts_en/2024-08-07-employing-aws-comprehend-medical-for-medical-data-extraction-in-healthcare-analytics</guid>
+      <pubDate>Tue, 06 Aug 2024 00:00:00 +0000</pubDate>
+      <media:content url="https://r0mymendez.github.io/posts_en/2024-08-07-employing-aws-comprehend-medical-for-medical-data-extraction-in-healthcare-analytics/preview.jpg" medium="image" type="image/jpeg"/>
+    </item>
     <item>
       <title>Python Projects with SQL: Strategies for Effective Query Management</title>
       <dc:creator>Romina Mendez</dc:creator>
@@ -346,7 +671,7 @@ sql.fn_add_many_visit_survey(conn, response_survey)&lt;/code&gt;&lt;/pre&gt;
       <category>Python</category>
       <category>Database</category>
       <guid>https://r0mymendez.github.io/posts_en/2024-05-26-python-projects-with-sql-strategies-for-effective-query-management</guid>
-      <pubDate>Sat, 25 May 2024 00:00:00 +0000</pubDate>
+      <pubDate>Sun, 26 May 2024 00:00:00 +0000</pubDate>
       <media:content url="https://r0mymendez.github.io/posts_en/2024-05-26-python-projects-with-sql-strategies-for-effective-query-management/preview.jpg" medium="image" type="image/jpeg"/>
     </item>
     <item>
@@ -382,19 +707,6 @@ sql.fn_add_many_visit_survey(conn, response_survey)&lt;/code&gt;&lt;/pre&gt;
       <guid>https://r0mymendez.github.io/posts_en/2024-01-14-transform-your-pandas-dataframes-in-r</guid>
       <pubDate>Sun, 21 Jan 2024 00:00:00 +0000</pubDate>
       <media:content url="https://r0mymendez.github.io/posts_en/2024-01-14-transform-your-pandas-dataframes-in-r/preview.jpg" medium="image" type="image/jpeg"/>
-    </item>
-    <item>
-      <title>SQL Assistant: Text-to-SQL Application in Streamlit 🤖</title>
-      <dc:creator>Romina Mendez</dc:creator>
-      <link>https://r0mymendez.github.io/posts_en/2024-01-13-sql-assistant-text-to-sql-application-in-streamlit</link>
-      <description>In this article, we will explore the application of Vanna.ai, a Python library specifically designed for training a model capable of processing natural language questions and generating SQL queries as responses.</description>
-      <category>Python</category>
-      <category>Data</category>
-      <category>DataViz</category>
-      <category>AI</category>
-      <guid>https://r0mymendez.github.io/posts_en/2024-01-13-sql-assistant-text-to-sql-application-in-streamlit</guid>
-      <pubDate>Sat, 13 Jan 2024 00:00:00 +0000</pubDate>
-      <media:content url="https://r0mymendez.github.io/posts_en/2024-01-13-sql-assistant-text-to-sql-application-in-streamlit/preview.jpg" medium="image" type="image/jpeg"/>
     </item>
   </channel>
 </rss>
