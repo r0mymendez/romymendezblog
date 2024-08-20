@@ -132,17 +132,14 @@ From these datasets, we will use the tables: `conditions`, `encounters`, and `pa
 
 To make this example more real we are going to make 3 use cases:
 
--    1️⃣ - As a **data analyst**, I want to be able to retrieve a list of patients whose visit count is above the 90th percentile, so that I can identify the most active patients in the clinic.
-    Additionally, I want this percentile to be configurable for easy adjustment in the future.
+-   1️⃣ - As a **data analyst**, I want to be able to retrieve a list of patients whose visit count is above the 90th percentile, so that I can identify the most active patients in the clinic. Additionally, I want this percentile to be configurable for easy adjustment in the future.
 
-```{=html}
 <!-- -->
-```
--    2️⃣ - As a **researcher or data analyst**, I want to access the data of patients who have been diagnosed with the 10 most frequent diagnoses in a period of time, in order to analyze trends and improve the quality of medical care.
 
-```{=html}
+-   2️⃣ - As a **researcher or data analyst**, I want to access the data of patients who have been diagnosed with the 10 most frequent diagnoses in a period of time, in order to analyze trends and improve the quality of medical care.
+
 <!-- -->
-```
+
 -   3️⃣ - As a **marketing analyst**, I want to create a table for patient satisfaction surveys, so that I can gather feedback on the quality of care and take measures to improve it.
 
 ------------------------------------------------------------------------
@@ -210,7 +207,7 @@ The following are the three components that a SQL statement comprises in aiosq:
 -   **📗 Name**: This is the descriptive name used to invoke the query from Python code.
     In the following example the name is `"fn_get_patients_adove_90th_percentile"`
 
--    **📗 Description**: It's a detailed description used to generate a docstring.
+-   **📗 Description**: It's a detailed description used to generate a docstring.
     It provides a more comprehensive explanation of the purpose and context of the query.
     In the following example the description is `"get all the patients that have more visits than the 90th percentile of visits..."`
 

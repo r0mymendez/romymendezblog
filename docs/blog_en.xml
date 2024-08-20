@@ -13,661 +13,346 @@ on software, agile methodologies , data science and the professor life.
       <link>https://r0mymendez.github.io/</link>
     </image>
     <generator>Distill</generator>
-    <lastBuildDate>Tue, 06 Aug 2024 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 19 Aug 2024 00:00:00 +0000</lastBuildDate>
+    <item>
+      <title>My Preparation Journey for GitHub Fundamentals Certification</title>
+      <dc:creator>Romina Mendez</dc:creator>
+      <link>https://r0mymendez.github.io/posts_en/2024-08-20-my-preparation-journey-for-github-fundamentals-certification</link>
+      <description>
+
+
+&lt;p&gt;This month, I achieved the &lt;strong&gt;“GitHub Fundamentals”&lt;/strong&gt; certification, and in this article, I want to share how I did it, what new things I learned, and what I didn’t know before but wish I had known earlier so I could have implemented it sooner.&lt;/p&gt;
+&lt;h1 id="what-is-the-github-platform"&gt;What is the GitHub Platform?&lt;/h1&gt;
+&lt;p&gt;The &lt;strong&gt;GitHub&lt;/strong&gt; platform is a cloud-based solution built on &lt;strong&gt;Git&lt;/strong&gt;, a version control system. It facilitates collaboration and project management through a range of features and AI-powered tools, enabling efficient software development, while ensuring quality and secure deployment.&lt;/p&gt;
+&lt;div class="figure"&gt;
+&lt;img src="https://dev-to-uploads.s3.amazonaws.com/uploads/articles/yzgnfld0k305k3f2kpsd.png" alt="" /&gt;
+&lt;p class="caption"&gt;Image description&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;&lt;strong&gt;Some features we can highlight are as follows:&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;🤖 AI&lt;/strong&gt;: GitHub uses products like Copilot, which will be described later, to help develop and solve problems and perform automated security reviews. This enhances collaboration, productivity, and security.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;🤝 Collaboration&lt;/strong&gt;: GitHub facilitates efficient collaboration with tools such as Repositories, Issues, and Pull Requests. These features allow multidisciplinary teams to work together quickly, reduce approval times, and accelerate project delivery.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;⚙️ Productivity&lt;/strong&gt;: Automation through GitHub Actions enables developers to focus on creating solutions and avoid repetitive manual tasks.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;🔒 Security&lt;/strong&gt;: GitHub includes features like Dependabot and automated security reviews, ensuring that code remains private and protected within the organization.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;🌍 Scalability&lt;/strong&gt;: GitHub boasts the largest developer community in the world, with over 100 million developers and more than 330 million repositories.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;🔗 Integration&lt;/strong&gt;: Additionally, GitHub offers an API that allows for integrations and customization of workflows, as well as automation of tasks.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr /&gt;
+&lt;h1 id="github-functionalities-products"&gt;🟠 GitHub Functionalities &amp;amp; Products&lt;/h1&gt;
+&lt;p&gt;As mentioned initially, this post is intended to discuss what you need to know in order to pass the certification exam. Below, we have an image that represents each of the described entities and the topics you should study to successfully pass the certification exam, which consists of &lt;strong&gt;✏️ 75 multiple-choice questions&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;This mental map represents how I organized the key concepts needed to prepare for the certification, following the GitHub Foundation Learning Path, which I will explain next.&lt;/p&gt;
+&lt;div class="figure"&gt;
+&lt;img src="https://dev-to-uploads.s3.amazonaws.com/uploads/articles/zglcinhbzlze6u59qrl6.png" alt="" /&gt;
+&lt;p class="caption"&gt;Image description&lt;/p&gt;
+&lt;/div&gt;
+&lt;hr /&gt;
+&lt;h1 id="github-foundations-learning-path"&gt;🟠 GitHub Foundations Learning Path&lt;/h1&gt;
+&lt;p&gt;In order to effectively study and understand all the essential content for the certification, I completed the &lt;a href="https://learn.microsoft.com/en-us/collections/o1njfe825p602p"&gt;&lt;strong&gt;‘GitHub Foundations Learning Path’&lt;/strong&gt;&lt;/a&gt; provided by &lt;strong&gt;Microsoft Learn&lt;/strong&gt;. This path consists of 15 modules, totaling approximately ⌛ 10 hours, with each module averaging about ⌛ 35 minutes. The journey combines 📚 theoretical knowledge with ✏️hands-on exercises, enabling me to effectively learn and apply the concepts.&lt;/p&gt;
+&lt;h2 id="practices-with-github-actions"&gt;Practices with GitHub Actions&lt;/h2&gt;
+&lt;p&gt;The modules include ✏️ hands-on exercises solved in stages, using &lt;strong&gt;GitHub Actions&lt;/strong&gt; to validate each step of the process. This inspired me to develop similar tutorials for future posts.&lt;/p&gt;
+&lt;h2 id="interactive-console"&gt;Interactive Console&lt;/h2&gt;
+&lt;p&gt;Some modules, such as the first one, offer an interactive console that facilitates executing typical Git commands, further enhancing the learning experience.&lt;/p&gt;
+&lt;h2 id="knowledge-check"&gt;Knowledge Check&lt;/h2&gt;
+&lt;p&gt;Each unit includes a set of ✏️questions to validate what has been learned, similar to those found on the exam. &amp;gt; 🙌 I recommend completing and reviewing these questions to consolidate the knowledge acquired.&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h1 id="overview-of-units"&gt;🟠 Overview of Units&lt;/h1&gt;
+&lt;p&gt;With the foundational concepts established, I will now delve into a detailed description of each unit. Below, you will find explanations of the key elements and tools I studied, and how I organized them to effectively prepare for the certification.&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h2 id="code-management"&gt;🟠 Code Management&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;Code management on GitHub&lt;/strong&gt; is essential for productivity and effective collaboration within development teams. Below are the key tools that facilitate this management:&lt;/p&gt;
+&lt;div class="figure"&gt;
+&lt;img src="https://dev-to-uploads.s3.amazonaws.com/uploads/articles/d0xhxcgy6t30nmeei2pf.png" alt="" /&gt;
+&lt;p class="caption"&gt;Image description&lt;/p&gt;
+&lt;/div&gt;
+&lt;hr /&gt;
+&lt;h3 id="repository"&gt;📁 Repository&lt;/h3&gt;
+&lt;p&gt;The &lt;strong&gt;repository&lt;/strong&gt; is the core component of a project on GitHub, which is where the source code, along with its version history, documentation, and other relevant resources for the project, is stored.&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h3 id="pull-requests"&gt;🔄 Pull Requests&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Pull Requests (PRs)&lt;/strong&gt; are a fundamental tool for collaboration on GitHub. They allow developers to propose changes to the source code, which can then be reviewed and discussed by other team members before being merged into the base code.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Pull Request States&lt;/strong&gt; It is important to understand the possible states of a Pull Request (PR) on GitHub, which can be: * &lt;strong&gt;Draft&lt;/strong&gt;: PRs in draft status are still in development and not yet ready for formal review. This state allows collaborators to work on a proposal before requesting official feedback. * &lt;strong&gt;Open&lt;/strong&gt;: Open PRs are ready and available for review and discussion by project collaborators. This is where proposed changes are evaluated before deciding whether to integrate them into the base code. * &lt;strong&gt;Closed&lt;/strong&gt;: Closed PRs have not been accepted and therefore will not be merged into the project’s base code. This state may indicate that the proposal was rejected or that the author decided not to proceed with it. * &lt;strong&gt;Merged&lt;/strong&gt;: Merged PRs have been accepted, and the proposed changes have been successfully integrated with the main branch of the project. This is the final state of a successful PR.&lt;/p&gt;
+&lt;table&gt;
+&lt;tbody&gt;
+&lt;tr class="odd"&gt;
+&lt;td&gt;### 🔧 Issues&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class="even"&gt;
+&lt;td&gt;&lt;strong&gt;Issues&lt;/strong&gt; are tracking tickets used to report bugs, suggest improvements, or discuss new features. They are essential for planning and organizing work within a project, allowing teams to prioritize tasks and track progress.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h3 id="discussions"&gt;💬 Discussions&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Discussions on GitHub&lt;/strong&gt; provide a space where collaborators can engage in broader conversations about the project. These discussions can be organized into several categories:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;📢 Announcements:&lt;/strong&gt; For communicating important updates about the project.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;💬 General:&lt;/strong&gt; For general conversations that don’t fit into any other category.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;💡 Ideas:&lt;/strong&gt; For proposing and debating new ideas or improvements.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;🗳️ Polls:&lt;/strong&gt; For conducting surveys and gathering community opinions.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;🙏 Q&amp;amp;A:&lt;/strong&gt; For questions and answers about the project.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;🙌 Show and Tell:&lt;/strong&gt; For sharing achievements, demos, or use cases of the project.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr /&gt;
+&lt;h2 id="gists"&gt;📁 Gists&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;Gists&lt;/strong&gt; are a simple way to share snippets of code or text. They can be public, accessible to anyone, or private, visible only to the creator or those with whom the link is shared. Gists are useful for quickly sharing code examples, notes, or scripts among collaborators or with the broader community.&lt;/p&gt;
+&lt;hr /&gt;
+&lt;p&gt;## 🟠 Accounts This is one of the topics where you may encounter questions, and within the recommended learning path, you can find three types of accounts:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;👥Personal Account&lt;/strong&gt;: This is the basic account for individual users, allowing them to own and manage repositories, packages, and projects.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;🏢 Organization Account&lt;/strong&gt;: Allows multiple users to collaborate on shared projects.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;💼 Enterprise Account&lt;/strong&gt;: Designed for large companies, it enables centralized management of policies and billing for multiple organizations.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class="figure"&gt;
+&lt;img src="https://dev-to-uploads.s3.amazonaws.com/uploads/articles/y05ex70p6a2ftcpgt0fi.png" alt="" /&gt;
+&lt;p class="caption"&gt;Image description&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;Additionally, the existing plans are:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;GitHub Free:&lt;/strong&gt; Provides the essentials for individuals and organizations, with limited storage and GitHub Actions minutes.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;GitHub Pro:&lt;/strong&gt; Extends the features of GitHub Free with more GitHub Actions minutes, storage, and advanced tools for private repositories, ideal for individual developers.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;GitHub Team:&lt;/strong&gt; Similar to GitHub Pro but optimized for organizations, adding advanced team collaboration capabilities.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;GitHub Enterprise:&lt;/strong&gt; Offers premium support, enhanced security, compliance, and advanced authentication options, along with significantly increased resources and storage. There are two versions of this account type:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Cloud&lt;/strong&gt; (hosted by GitHub)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Server&lt;/strong&gt; (self-managed)&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr /&gt;
+&lt;h2 id="methodologies"&gt;🟠 Methodologies&lt;/h2&gt;
+&lt;p&gt;I’ve titled this section “Methodologies” because throughout different chapters of the learning path, I encountered several methodologies that you need to learn. Therefore, I decided to group them all under the same concept.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;⚠️ Remember that this is my approach to studying for the certification, and you might find that the learning path or other resources refer to these methodologies differently.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;div class="figure"&gt;
+&lt;img src="https://dev-to-uploads.s3.amazonaws.com/uploads/articles/c8v4lwqmgmlietu383k9.png" alt="" /&gt;
+&lt;p class="caption"&gt;Image description&lt;/p&gt;
+&lt;/div&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;🔀 GitHub Flow:&lt;/strong&gt; A workflow that utilizes specific components (branches, commits, and pull requests) to collaborate and experiment with new features or fixes in a software project.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;🔄 InnerSource:&lt;/strong&gt; Involves adopting open-source practices and principles, such as transparency and collaboration, within an organization. This means projects are shared internally, allowing any team member to access, modify, and contribute to the code, similar to an open-source project but within the organization.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;🛠️ Contributing to Projects:&lt;/strong&gt; I consider this a methodology because GitHub enables active participation in open-source projects through its platform. This practice is not only fundamental for collaborative software development but also promotes learning, innovation, and community building among developers. Key considerations include:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;📢 Identification and Communication:&lt;/strong&gt; Before making changes, it’s important to communicate your intentions with the project’s maintainers, whether you are addressing an existing issue or proposing a new feature.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;🔄 Creating a Pull Request:&lt;/strong&gt; Once changes are made, a pull request is created on GitHub, allowing others to review, discuss, and eventually merge it with the main codebase.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;🔎Review and Adjustments:&lt;/strong&gt; The pull request is reviewed by the project maintainers, who may request adjustments. It’s essential to be open to feedback and willing to make necessary changes for your contribution to be accepted.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;👥 Iteration and Ongoing Collaboration:&lt;/strong&gt; The review and discussion process around a pull request is iterative and collaborative, allowing for improved software quality and ensuring each contribution aligns with the project’s standards and goals.&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;❤️ Supporting Projects Financially&lt;/strong&gt;: In addition to contributing code and feedback, you can also support open-source projects financially. For this reason, GitHub Sponsors allows you to fund projects and individuals to help them continue their open-source work, while giving them the recognition they deserve. To support a project:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Identify Projects&lt;/strong&gt;: Explore and select projects you are passionate about.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Choose a Sponsorship Level&lt;/strong&gt;: Pick a tier that fits your budget and desired level of support, with varying benefits such as exclusive content or early access to new features.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Support and Recognition&lt;/strong&gt;: Find the Sponsor button on a project’s main page if it’s eligible for sponsorship. You can select the sponsorship tier and decide if you want your contribution to be public.&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src="https://dev-to-uploads.s3.amazonaws.com/uploads/articles/xc00933jcnkpg1c0xb4q.png" alt="Image description" /&gt; &amp;gt; source: &lt;a href="https://learn.microsoft.com/en-us/training/modules/contribute-open-source/2-identify"&gt;Identify where you can help&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://dev-to-uploads.s3.amazonaws.com/uploads/articles/2nmcv7bi8kyw98jd8aeu.png" alt="Image description" /&gt; &amp;gt; source: &lt;a href="https://learn.microsoft.com/en-us/training/modules/contribute-open-source/2-identify"&gt;Identify where you can help&lt;/a&gt;&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h2 id="communication"&gt;🟠 Communication&lt;/h2&gt;
+&lt;p&gt;Communication within a repository is essential and encompasses the detailed documentation of objectives, changes, methodologies, and rules to be applied. Below are the main tools and practices that facilitate this communication:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;📄 README File:&lt;/strong&gt; The README file is the first line of communication in a project. It should contain essential information about the project’s purpose, how to use it, how to set it up, and any other relevant details that users and collaborators need to know.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;📚 Wiki:&lt;/strong&gt; This section is designed to host more extensive and detailed documentation. Unlike the README, which is brief and direct, the Wiki is ideal for sharing content such as use cases, examples, design principles, technical details, and any other aspects that require a more in-depth explanation.&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class="figure"&gt;
+&lt;img src="https://dev-to-uploads.s3.amazonaws.com/uploads/articles/gbwrwdyfccvywl1nhzzt.png" alt="" /&gt;
+&lt;p class="caption"&gt;Image description&lt;/p&gt;
+&lt;/div&gt;
+&lt;h3 id="markdown"&gt;📝 Markdown&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Markdown is a markup language&lt;/strong&gt; that provides a simple and efficient way to format and style content in issues, README files, wikis, and any other textual documentation within a repository.&lt;/p&gt;
+&lt;p&gt;If you’re not familiar with Markdown, I recommend checking out the &lt;a href="https://www.datacamp.com/cheat-sheet/markdown-cheat-sheet-23"&gt;DataCamp CheatSheet&lt;/a&gt;, which summarizes everything you need to get started. Additionally, within the chapter, there’s an exercise titled &lt;a href="https://learn.microsoft.com/en-us/training/modules/communicate-using-markdown/3-communicating-using-markdown"&gt;“Exercise - Communicate using Markdown”&lt;/a&gt; that will allow you to apply and reinforce your practice using markdown.&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://dev-to-uploads.s3.amazonaws.com/uploads/articles/0dz4fszrs88sys70kj8q.png" alt="Image description" /&gt; &amp;gt; source: &lt;a href="https://www.datacamp.com/cheat-sheet/markdown-cheat-sheet-23"&gt;DataCamp CheatSheet&lt;/a&gt;&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h2 id="products"&gt;🟠 Products&lt;/h2&gt;
+&lt;p&gt;I have titled this section &lt;strong&gt;“Products”&lt;/strong&gt; as it includes two chapters dedicated to two key products. One of these products leverages AI, while the other focuses on enhancing productivity.&lt;/p&gt;
+&lt;div class="figure"&gt;
+&lt;img src="https://dev-to-uploads.s3.amazonaws.com/uploads/articles/iw6n4ksgt9fa4lwp6vhu.png" alt="" /&gt;
+&lt;p class="caption"&gt;Image description&lt;/p&gt;
+&lt;/div&gt;
+&lt;h3 id="github-copilot"&gt;🚀 GitHub Copilot&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;GitHub Copilot&lt;/strong&gt; is an AI-powered assistance tool for developers. Its main features include:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;💬 GitHub Copilot Chat&lt;/strong&gt;: Provides a chat within the editor for code analysis, generating unit tests, and fixing bugs.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;🔄 Copilot for Pull Requests&lt;/strong&gt;: Automatically adds labels to pull request descriptions using AI to facilitate review.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;📄 AI-Generated Documentation Answers&lt;/strong&gt;: Delivers AI-generated responses to questions about documentation and technologies.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;⚙️ Copilot for CLI&lt;/strong&gt;: Assists in creating complex commands and loops in the command line.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="github-codespaces"&gt;🚀 GitHub Codespaces&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;GitHub Codespaces&lt;/strong&gt; provides configurable development environments in the cloud, built on Docker container. Therefore every each Codespace operates within a 🐋 Docker container hosted on GitHub. Also, this container includes all the necessary tools and settings for your project, ensuring a consistent and reproducible environment for all project contributors.&lt;/p&gt;
+&lt;p&gt;Here’s an overview of the key functionalities and states of a Codespace:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;🛠️ Creating Codespaces:&lt;/strong&gt; You can create a Codespace from templates, repository branches, open pull requests, or historical commits. By default, each Codespace is based on an Ubuntu Linux image, but you can customize it with any Linux distribution to meet your specific needs. This provides a complete development environment running inside a Docker container on a virtual machine. You can create multiple Codespaces per repository or branch, though there is a limit on the number of simultaneous Codespaces.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;📥 Saving Changes:&lt;/strong&gt; Changes made within a Codespace are automatically saved when connected through the web. To avoid losing work if the Codespace is deleted, it is crucial to commit and push changes to a remote repository.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;🔄 Reopening and Using Codespaces:&lt;/strong&gt; You can reopen active or stopped Codespaces from GitHub.com, Visual Studio Code, JetBrains IDE, or GitHub CLI. When connected, you access the Docker container of the Codespace, ensuring a consistent development environment accessible from anywhere.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;⏱️ Timeout and Internet Connection:&lt;/strong&gt; Codespaces automatically stop after 30 minutes of inactivity. They require an internet connection, and any uncommitted changes are saved to prevent data loss.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;🔧 Closing, Stopping, or Rebuilding a Codespace:&lt;/strong&gt; You can stop or restart a Codespace to apply configuration changes or troubleshoot issues. You can also rebuild the Codespace to update the Docker container configuration.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;🗑️ Deleting a Codespace:&lt;/strong&gt; You can delete a Codespace after committing your changes. Inactive Codespaces are automatically deleted after 30 days, though this period can be adjusted. Using Docker containers ensures that your development environment is consistent and reproducible, making it easier to collaborate and maintain projects.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr /&gt;
+&lt;h2 id="project"&gt;🟠 Project&lt;/h2&gt;
+&lt;p&gt;GitHub has introduced new types of projects that significantly enhance productivity and project management. While previously existing projects focused primarily on code management, the new GitHub Projects integrate key elements that allow you to manage not only the code but also the broader aspects of project management within a single tool.&lt;/p&gt;
+&lt;p&gt;This new approach aims to streamline workflows, provide more comprehensive tracking, and improve collaboration. It’s important to note that there may be questions about the differences between the previous project types and these new ones. In the following sections, I’ll highlight the functionalities and benefits of the new project types, helping you understand how they differ from the old ones and how they can be utilized to optimize project management.&lt;/p&gt;
+&lt;div class="figure"&gt;
+&lt;img src="https://dev-to-uploads.s3.amazonaws.com/uploads/articles/tke86h7pa4nbw8i1p9ac.png" alt="" /&gt;
+&lt;p class="caption"&gt;Image description&lt;/p&gt;
+&lt;/div&gt;
+&lt;h3 id="view"&gt;📋 View&lt;/h3&gt;
+&lt;p&gt;In GitHub Projects, tasks are represented as issues and can include key details such as title, description, assignee, start date, and complexity. These issues can be customized with various field types like text, number, date, single selection (for dropdown lists), or iteration to better suit your needs.&lt;/p&gt;
+&lt;p&gt;The types of views that can be generated are:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;📄 Table&lt;/strong&gt;: A &lt;code&gt;tabular view&lt;/code&gt; that organizes issues in a table format. This view is primarily used to view and manage detailed information on multiple issues simultaneously, facilitating comparison and bulk editing of data.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class="figure"&gt;
+&lt;img src="https://dev-to-uploads.s3.amazonaws.com/uploads/articles/x5co16lpvjngf3wxz50k.png" alt="" /&gt;
+&lt;p class="caption"&gt;Image description&lt;/p&gt;
+&lt;/div&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;📋 Board&lt;/strong&gt;: A &lt;code&gt;card-based view&lt;/code&gt; where issues are organized into columns, typically by status or category. This view is primarily used to visualize the workflow of issues through different stages, aiding task management and progress tracking.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class="figure"&gt;
+&lt;img src="https://dev-to-uploads.s3.amazonaws.com/uploads/articles/utdpk9bbsg02m63n11pl.png" alt="" /&gt;
+&lt;p class="caption"&gt;Image description&lt;/p&gt;
+&lt;/div&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;⌛ Roadmap&lt;/strong&gt;: A graphical view that shows a timeline of issues and the associated milestones. This view is primarily used for planning and visualizing the long-term evolution of projects, helping to identify dependencies and delivery schedules.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class="figure"&gt;
+&lt;img src="https://dev-to-uploads.s3.amazonaws.com/uploads/articles/miggcki6v4cgbnsw76j4.png" alt="" /&gt;
+&lt;p class="caption"&gt;Image description&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;### 📊 Insights &lt;strong&gt;Insights in Projects&lt;/strong&gt; allows you to &lt;code&gt;visualize&lt;/code&gt;, &lt;code&gt;create&lt;/code&gt;, and &lt;code&gt;customize&lt;/code&gt; &lt;code&gt;charts&lt;/code&gt; using the elements added to your Project as data sources. When creating a chart, you can define filters, the type of chart, and the information to be displayed. The generated charts are available to anyone with access to the Project.&lt;/p&gt;
+&lt;p&gt;These charts enable you to analyze and manage the project, enhancing your ability to plan, control, and assess the project’s progress.&lt;/p&gt;
+&lt;div class="figure"&gt;
+&lt;img src="https://dev-to-uploads.s3.amazonaws.com/uploads/articles/w5hiqzb4jsacglm3pcgf.png" alt="" /&gt;
+&lt;p class="caption"&gt;Image description&lt;/p&gt;
+&lt;/div&gt;
+&lt;hr /&gt;
+&lt;h3 id="task-automation"&gt;🤖 Task Automation&lt;/h3&gt;
+&lt;p&gt;Task automation on GitHub is important for improving efficiency and consistency in project management. The following are the key tools that facilitate this automation:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Workflows:&lt;/strong&gt; Workflows are the simplest way to automate project management on GitHub. These workflows allow you to automate repetitive processes such as &lt;code&gt;updating task statuses&lt;/code&gt;, &lt;code&gt;running tests&lt;/code&gt;, &lt;code&gt;deployments&lt;/code&gt;, and &lt;code&gt;other actions&lt;/code&gt; defined in YAML files. Integrated workflows in GitHub Projects streamline automation without the need for complex configurations.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;GraphQL API:&lt;/strong&gt; The GraphQL API offers more granular control over project automation. With GraphQL, you can customize how you interact with your project data, enabling advanced automations tailored to your team’s specific needs.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;GitHub Actions:&lt;/strong&gt; GitHub Actions provides a powerful platform for further customizing automation in your projects. With GitHub Actions, you can create pipelines that respond to specific events, such as the creation of issues or changes in task statuses, ensuring that all activities in your project are executed consistently and automatically.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr /&gt;
+&lt;h2 id="security"&gt;🟠 Security&lt;/h2&gt;
+&lt;p&gt;Security is a fundamental aspect within GitHub, which provides a range of tools and best practices to enhance security in software development.&lt;/p&gt;
+&lt;div class="figure"&gt;
+&lt;img src="https://dev-to-uploads.s3.amazonaws.com/uploads/articles/l3fwc8ebhvaz1ecszvfk.png" alt="" /&gt;
+&lt;p class="caption"&gt;Image description&lt;/p&gt;
+&lt;/div&gt;
+&lt;h3 id="authentication-access-controls"&gt;🔐 Authentication &amp;amp; Access Controls&lt;/h3&gt;
+&lt;p&gt;Access to your GitHub account can be enhanced with advanced authentication methods that validate user identity more securely. * &lt;strong&gt;SAML SSO Authentication&lt;/strong&gt;: Allows user authentication through a centralized Identity Provider (IdP), enhancing security and access control. * &lt;strong&gt;Multifactor Authentication (2FA)&lt;/strong&gt;: Adds an extra layer of security through two-step authentication, which may include physical security keys and time-based one-time password (TOTP) applications.&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h3 id="vulnerability-alerts"&gt;⚠️ Vulnerability Alerts&lt;/h3&gt;
+&lt;p&gt;GitHub offers vulnerability alerts to help you identify and address security issues in your repositories.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Dependabot Alerts&lt;/strong&gt;: Detects and notifies you about vulnerable dependencies in your project, helping you keep your libraries and packages up to date.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src="https://dev-to-uploads.s3.amazonaws.com/uploads/articles/bioc57da3wh2i1fyqwdc.png" alt="Image description" /&gt; &amp;gt; source:&lt;a href="https://learn.microsoft.com/en-us/training/modules/maintain-secure-repository-github/3-security-automation"&gt;Automated security&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Code Scanning&lt;/strong&gt;: Analyzes your code for vulnerabilities and errors. It can be customized using CodeQL, allowing you to detect and fix security issues before they become risks. Integration with other tools like SonarQube or Policy Validator for Terraform by Amazon Web Services is also possible.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Secret Scanning&lt;/strong&gt;: Automatically scans the repository for exposed credentials or secrets, helping to prevent misuse of sensitive information.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="reporting"&gt;📊 Reporting&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Security Policy&lt;/strong&gt;: The security policy for your project should be documented in a &lt;code&gt;SECURITY.md&lt;/code&gt; file, detailing how to responsibly report vulnerabilities.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="best-practices"&gt;🚀 Best Practices&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Keep Sensitive Information Secure&lt;/strong&gt;: It’s crucial to protect sensitive information by ensuring it is not included in commits. Use &lt;code&gt;.gitignore&lt;/code&gt; to exclude critical files and carefully review changes before committing them.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Branch Protection Rules&lt;/strong&gt;: Set up protection rules for key branches like &lt;code&gt;master&lt;/code&gt; or &lt;code&gt;develop&lt;/code&gt;, requiring approved reviews before allowing merges. This ensures that only secure and reviewed code is integrated into the main branches.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr /&gt;
+&lt;h2 id="types-of-search-on-github"&gt;🟠 Types of Search on GitHub&lt;/h2&gt;
+&lt;p&gt;On GitHub, you can use advanced search to efficiently navigate repositories, find issues, review pull requests, and join discussions. Here are some practical examples to enhance your search capabilities and collaboration on projects:&lt;/p&gt;
+&lt;div class="figure"&gt;
+&lt;img src="https://dev-to-uploads.s3.amazonaws.com/uploads/articles/qxrio1hx44a3of7e07d5.png" alt="" /&gt;
+&lt;p class="caption"&gt;Image description&lt;/p&gt;
+&lt;/div&gt;
+&lt;h3 id="search-examples"&gt;Search Examples&lt;/h3&gt;
+&lt;h4 id="repositories"&gt;🔎 Repositories&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Description&lt;/strong&gt;: Finds repositories related to “machine learning” with more than 1000 stars.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Use&lt;/strong&gt;: Ideal for locating popular projects in a specific area of interest.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;!-- --&gt;
+&lt;pre&gt;&lt;code&gt;topic:machine-learning stars:&amp;gt;1000&lt;/code&gt;&lt;/pre&gt;
+&lt;h4 id="issues-in-a-specific-repository"&gt;🔎 Issues in a Specific Repository&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Description&lt;/strong&gt;: Searches for closed issues within the &lt;code&gt;r0mymendez/datapp&lt;/code&gt; repository.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Use&lt;/strong&gt;: Useful for reviewing the history of resolved issues in a particular repository.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;!-- --&gt;
+&lt;pre&gt;&lt;code&gt;repo:r0mymendez/datapp is:issue is:closed&lt;/code&gt;&lt;/pre&gt;
+&lt;h4 id="issues-with-labels-and-status"&gt;🔎 Issues with Labels and Status&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Description&lt;/strong&gt;: Finds open issues tagged with “help-wanted” in projects using Python.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Use&lt;/strong&gt;: Perfect for finding opportunities to contribute to Python projects where maintainers are seeking help.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;!-- --&gt;
+&lt;pre&gt;&lt;code&gt;is:issue language:python is:open label:help-wanted&lt;/code&gt;&lt;/pre&gt;
+&lt;h4 id="pull-requests-1"&gt;🔎 Pull Requests&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Description&lt;/strong&gt;: Shows all pull requests where a review has been requested from you.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Use&lt;/strong&gt;: Ideal for managing your code review responsibilities.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;!-- --&gt;
+&lt;pre&gt;&lt;code&gt;is:pr review-requested:@m&lt;/code&gt;&lt;/pre&gt;
+&lt;h4 id="discussions-1"&gt;🔎 Discussions&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Description&lt;/strong&gt;: Finds open discussions in repositories related to the Python language.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Use&lt;/strong&gt;: Useful for participating in relevant conversations or searching for open topics in a specific programming language.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;!-- --&gt;
+&lt;pre&gt;&lt;code&gt;in:discussions is:open language:python&lt;/code&gt;&lt;/pre&gt;
+&lt;h4 id="issues-with-specific-combinations"&gt;Issues with Specific Combinations&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Description&lt;/strong&gt;: Searches for open issues in repositories related to “machine learning” with more than 1000 stars, tagged with “help-wanted,” and using Python.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Use&lt;/strong&gt;: Ideal for finding open issues in popular machine learning projects that are seeking help in Python.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;!-- --&gt;
+&lt;pre&gt;&lt;code&gt;topic:machine-learning stars:&amp;gt;1000 is:issue label:help-wanted language:python is:open&lt;/code&gt;&lt;/pre&gt;
+&lt;hr /&gt;
+&lt;h2 id="summary"&gt;🟠 Summary&lt;/h2&gt;
+&lt;div class="figure"&gt;
+&lt;img src="https://dev-to-uploads.s3.amazonaws.com/uploads/articles/jc3y99y7tyv9r2dny6p7.png" alt="" /&gt;
+&lt;p class="caption"&gt;Image description&lt;/p&gt;
+&lt;/div&gt;
+&lt;hr /&gt;
+&lt;h2 id="references"&gt;📚 References&lt;/h2&gt;
+&lt;p&gt;The following references were used to create this article, with the first being the primary resource and the other materials were utilized to practice and simulate the exam.&lt;/p&gt;
+&lt;ol style="list-style-type: decimal"&gt;
+&lt;li&gt;&lt;strong&gt;GitHub Foundations Learning Path&lt;/strong&gt;: &lt;a href="https://learn.microsoft.com/en-us/collections/o1njfe825p602p"&gt;GitHub Foundations Learning Path&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;GitHub Foundations Practice Test&lt;/strong&gt;: Contains a series of multiple-choice questions for exam simulation. &lt;a href="https://ghcertified.com/practice_tests/foundations/"&gt;GitHub Foundations Practice Test&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Study Guide GitHub Foundations&lt;/strong&gt;: A PDF guide for studying and preparing for the exam. &lt;a href="https://assets.ctfassets.net/wfutmusr1t3h/1kmMx7AwI4qH8yIZgOmQlP/79e6ff1dfdee589d84a24dd763b1eef7/github-foundations-exam-study-guide__1_.pdf"&gt;Study Guide GitHub Foundations&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;GitHub Foundations Certification – Exam Prep Guide&lt;/strong&gt;: This is a post in FreeCodeCamp blog and it is content very helpful, and this post provides a good summary of everything you should know for exam preparation. &lt;a href="https://www.freecodecamp.org/news/github-foundations-certified-exam-prep-guide/"&gt;GitHub Foundations Certification – Exam Prep Guide&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre class="r distill-force-highlighting-css"&gt;&lt;code&gt;&lt;/code&gt;&lt;/pre&gt;</description>
+      <distill:md5>676c6f23c55726e59407c6fcfbb81e9c</distill:md5>
+      <category>DevOps</category>
+      <category>GIT</category>
+      <category>Methodologies</category>
+      <guid>https://r0mymendez.github.io/posts_en/2024-08-20-my-preparation-journey-for-github-fundamentals-certification</guid>
+      <pubDate>Mon, 19 Aug 2024 00:00:00 +0000</pubDate>
+      <media:content url="https://r0mymendez.github.io/posts_en/2024-08-20-my-preparation-journey-for-github-fundamentals-certification/preview.jpg" medium="image" type="image/jpeg"/>
+    </item>
     <item>
       <title>Employing AWS Comprehend Medical for Medical Data Extraction in Healthcare Analytics</title>
       <dc:creator>Romina Mendez</dc:creator>
       <link>https://r0mymendez.github.io/posts_en/2024-08-07-employing-aws-comprehend-medical-for-medical-data-extraction-in-healthcare-analytics</link>
-      <description>
-
-
-&lt;p&gt;&lt;img src="https://img.shields.io/badge/Buy%20Me%20A%20Coffee-support%20my%20work-FFDD00?style=flat&amp;amp;labelColor=101010&amp;amp;logo=buy-me-a-coffee&amp;amp;logoColor=white" style="width:40.0%" /&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;A Step-by-Step Guide to Using Entities, RxNorm and SNOMED CT&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;The goal of this tutorial is to provide a guide on how to use Amazon Comprehend Medical for identifying medical entities and extracting information, including RxNorm codes, SNOMED CT concepts, and other attributes. We will cover the following key topics:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;🏷️ Dataset&lt;/strong&gt;: We will use a dataset from Kaggle related to the USMLE® Step 2 Clinical Skills examination.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;🏷️ Data Extraction and Preparation:&lt;/strong&gt; Preparation of the dataset to extract entities.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;🏷️ Real-Time Processing with AWS Comprehend Medical:&lt;/strong&gt; Explore how to use Amazon Comprehend Medical in real-time to analyze and extract medical information from unstructured text data.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;🏷️ Batch Processing with AWS Comprehend Medical:&lt;/strong&gt; Discover how to set up and execute batch processing jobs with Amazon Comprehend Medical.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;hr /&gt;
-&lt;h1 id="amazon-comprehend-medical"&gt;🩺 Amazon Comprehend Medical&lt;/h1&gt;
-&lt;p&gt;&lt;strong&gt;Amazon Comprehend Medical&lt;/strong&gt; is a service designed to extract information from unstructured medical texts using natural language processing model (NLP) while ensuring compliance with HIPAA requirements. This service provide the following outputs: * &lt;strong&gt;Entities&lt;/strong&gt;: Key medical elements identified in the text, such as medications, diagnoses, symptoms, and procedures. * &lt;strong&gt;RxNorm Codes&lt;/strong&gt;: These codes are derived from a medical ontology that provides normalized names for medications and drugs, ensuring consistent identification and categorization of medication-related information. * &lt;strong&gt;SNOMED CT&lt;/strong&gt;: This code set originates from a comprehensive medical ontology that represents clinical concepts such as diseases, procedures, and diagnoses, facilitating precise and interoperable health data.&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;At the time of writing this article, only English texts can be processed usign this service.&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;&lt;img src="https://r0mymendez.github.io//posts_en/2024-08-07-employing-aws-comprehend-medical-for-medical-data-extraction-in-healthcare-analytics/img/aws-comprehend-medical.png" /&gt;&lt;/p&gt;
-&lt;hr /&gt;
-&lt;h2 id="what-is-hipaa"&gt;🛡️ What is HIPAA?&lt;/h2&gt;
-&lt;p&gt;The &lt;strong&gt;HIPAA (Health Insurance Portability and Accountability Act)&lt;/strong&gt; privacy rule sets national standards for the protection of individually identifiable health information in the United States.&lt;/p&gt;
-&lt;p&gt;This refers to data, including demographic information, that relates to: * The individual’s past, present, or future physical or mental health or condition. * The provision of healthcare to the individual. * The past, present, or future payment for healthcare provided to the individual, and that identifies the individual or can reasonably be used to identify them, where this includes common identifiers such as name, address, date of birth, and Social Security number.&lt;/p&gt;
-&lt;hr /&gt;
-&lt;h3 id="what-are-the-vocabularies"&gt;📚 What are the vocabularies?&lt;/h3&gt;
-&lt;p&gt;“Vocabularies” refer to structured sets of standardized terms and codes used to capture, classify, and analyze patient data. These include controlled vocabularies, terminologies, hierarchies, and ontologies, and are essential for interoperability between healthcare systems, enabling data exchange and facilitating global research. This practice dates back to the 1660s, as shown in the image below.&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;“Medical vocabularies date back to the Bills of Mortality in medieval London to manage outbreaks of plague and other diseases.” &lt;a href="https://ohdsi.github.io/TheBookOfOhdsi/StandardizedVocabularies.html"&gt;The Book Of Ohdsi&lt;/a&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;&lt;img src="https://r0mymendez.github.io//posts_en/2024-08-07-employing-aws-comprehend-medical-for-medical-data-extraction-in-healthcare-analytics/img/vocabularies.png" /&gt; Image source: &lt;a href="https://ohdsi.github.io/TheBookOfOhdsi/StandardizedVocabularies.html"&gt;The Book Of Ohdsi&lt;/a&gt;&lt;/p&gt;
-&lt;hr /&gt;
-&lt;h3 id="aws-comprehend-medical-methods-for-data-extraction"&gt;🩺 AWS Comprehend Medical: Methods for Data Extraction&lt;/h3&gt;
-&lt;p&gt;After understanding the importance of medical vocabularies, we can explore how AWS Comprehend Medical leverages these vocabularies to extract and standardize medical data.&lt;/p&gt;
-&lt;p&gt;In the following sections, we will describe the specific methods used by AWS Comprehend Medical to process and analyze medical texts.&lt;/p&gt;
-&lt;hr /&gt;
-&lt;h3 id="aws-comprehend-medical-detect-entities"&gt;🩺 AWS Comprehend Medical: Detect Entities&lt;/h3&gt;
-&lt;p&gt;The &lt;strong&gt;detect_entities_v2&lt;/strong&gt; method from AWS Comprehend Medical identifies and classifies various categories of medical information within a text. Below is an image illustrating the categories detected by this method.&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://r0mymendez.github.io//posts_en/2024-08-07-employing-aws-comprehend-medical-for-medical-data-extraction-in-healthcare-analytics/img/entity-1.png" width="768" /&gt;&lt;/p&gt;
-&lt;p&gt;For each of these classes, not only are the categories to which the entity belongs detected, but also other key values. These values include:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Type&lt;/strong&gt;: The specific type of entity within a category.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Attribute&lt;/strong&gt;: Relevant information about the entity, such as the dosage of a medication.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Trait&lt;/strong&gt;: Additional aspects that Amazon Comprehend Medical understands about an entity based on context, such as the NEGATION trait if a medication is not being administered to the patient.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Below, you can see the additional data that can be obtained for each category.&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://r0mymendez.github.io//posts_en/2024-08-07-employing-aws-comprehend-medical-for-medical-data-extraction-in-healthcare-analytics/img/entity-2-1.png" /&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://r0mymendez.github.io//posts_en/2024-08-07-employing-aws-comprehend-medical-for-medical-data-extraction-in-healthcare-analytics/img/entity-2-2.png" /&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://r0mymendez.github.io//posts_en/2024-08-07-employing-aws-comprehend-medical-for-medical-data-extraction-in-healthcare-analytics/img/entity-2-3.png" /&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://r0mymendez.github.io//posts_en/2024-08-07-employing-aws-comprehend-medical-for-medical-data-extraction-in-healthcare-analytics/img/entity-2-4.png" /&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://r0mymendez.github.io//posts_en/2024-08-07-employing-aws-comprehend-medical-for-medical-data-extraction-in-healthcare-analytics/img/entity-2-5.png" /&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://r0mymendez.github.io//posts_en/2024-08-07-employing-aws-comprehend-medical-for-medical-data-extraction-in-healthcare-analytics/img/entity-2-6.png" /&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://r0mymendez.github.io//posts_en/2024-08-07-employing-aws-comprehend-medical-for-medical-data-extraction-in-healthcare-analytics/img/entity-2-7.png" /&gt;&lt;/p&gt;
-&lt;hr /&gt;
-&lt;h3 id="aws-comprehend-medical-rxnorm"&gt;🩺 AWS Comprehend Medical: RxNorm&lt;/h3&gt;
-&lt;p&gt;RxNorm is a standardized medical ontology that provides normalized names for clinical medications, and also It serves as a comprehensive resource for identifying and categorizing drugs and their various forms. RxNorm links these standardized names to many other drug vocabularies, ensuring consistency and interoperability across different healthcare systems.&lt;/p&gt;
-&lt;p&gt;Below is an example with a medication and the related concepts in &lt;strong&gt;RxNorm&lt;/strong&gt;.&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://r0mymendez.github.io//posts_en/2024-08-07-employing-aws-comprehend-medical-for-medical-data-extraction-in-healthcare-analytics/img/rnxorm-1.png" /&gt;&lt;/p&gt;
-&lt;hr /&gt;
-&lt;h3 id="aws-comprehend-medical-snomed-ct-clinical-terms"&gt;🩺 AWS Comprehend Medical: SNOMED CT (Clinical Terms)&lt;/h3&gt;
-&lt;p&gt;&lt;strong&gt;SNOMED CT&lt;/strong&gt; (Systematized Nomenclature of Medicine – Clinical Terms) is a comprehensive multilingual health terminology system. It provides a standardized set of codes, concepts, and synonyms to represent clinical information, including diseases, procedures, and diagnoses.&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;SNOMED CT facilitates semantic interoperability by allowing mapping between different health vocabularies, such as &lt;code&gt;ICD-9&lt;/code&gt; and &lt;code&gt;ICD-10&lt;/code&gt;.&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;&lt;img src="https://r0mymendez.github.io//posts_en/2024-08-07-employing-aws-comprehend-medical-for-medical-data-extraction-in-healthcare-analytics/img/snomed_concepts.png" /&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://r0mymendez.github.io//posts_en/2024-08-07-employing-aws-comprehend-medical-for-medical-data-extraction-in-healthcare-analytics/img/snomed_concepts_c1.png" /&gt;&lt;/p&gt;
-&lt;hr /&gt;
-&lt;h2 id="dataset"&gt;🩺 Dataset&lt;/h2&gt;
-&lt;p&gt;For this tutorial, we will use a dataset from &lt;strong&gt;Kaggle&lt;/strong&gt; that is associated with the USMLE® Step 2 Clinical Skills examination, this licensing exam evaluates the examinee’s ability to recognize pertinent clinical facts during interactions with standardized patients.&lt;/p&gt;
-&lt;p&gt;We will use select medical notes from this dataset to process and analyze the results obtained using the AWS Comprehend Medical service.&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://r0mymendez.github.io//posts_en/2024-08-07-employing-aws-comprehend-medical-for-medical-data-extraction-in-healthcare-analytics/img/database_nbme.png" /&gt;&lt;/p&gt;
-&lt;p&gt;source: &lt;a href="https://www.kaggle.com/c/nbme-score-clinical-patient-notes/data"&gt;NBME - Score Clinical Patient Notes&lt;/a&gt;&lt;/p&gt;
-&lt;hr /&gt;
-&lt;h3 id="prerequisites"&gt;🔧 Prerequisites&lt;/h3&gt;
-&lt;p&gt;To complete this tutorial, you need to meet the following prerequisites:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;AWS Credentials&lt;/strong&gt;: You must configure the &lt;code&gt;AWS_ACCESS_KEY&lt;/code&gt; and &lt;code&gt;AWS_SECRET_KEY&lt;/code&gt; credentials. These are crucial for authenticating and authorizing access to AWS services.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;S3 Bucket&lt;/strong&gt;: Create an S3 bucket to store your data. In this example, we will use a bucket named &lt;code&gt;dev-medical-notes&lt;/code&gt; located in the &lt;code&gt;us-east-1&lt;/code&gt; region.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Permissions&lt;/strong&gt;: Check the IAM folder in this repository for the necessary policies and permissions to apply.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;blockquote&gt;
-&lt;p&gt;⚠️ If you’re not familiar with creating AWS credentials or setting up an S3 bucket, you can follow this guide: &lt;a href="https://docs.aws.amazon.com/AmazonS3/latest/userguide/creating-bucket.html"&gt;Create a Bucket&lt;/a&gt;.&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;hr /&gt;
-&lt;p&gt;&lt;strong&gt;🔐 AWS Credentials&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;For this tutorial, AWS credentials (&lt;code&gt;AWS_ACCESS_KEY&lt;/code&gt; and &lt;code&gt;AWS_SECRET_KEY&lt;/code&gt;) are required, these credentials are essential for authenticating and authorizing access to AWS services and they can be generated using the &lt;strong&gt;IAM&lt;/strong&gt; (Identity and Access Management) service.&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;⚠️ Remember to keep your credentials secure and avoid sharing them to prevent unauthorized access to your AWS account.&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;hr /&gt;
-&lt;p&gt;&lt;strong&gt;🔐 IAM Policies and Role&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;For this tutorial, you need a role and a user with specific policies applied. In the &lt;a href="https://github.com/r0mymendez/aws-comprehend-medical/tree/main/iam"&gt;GitHub repository&lt;/a&gt;, you’ll find a folder containing the policies that need to be applied.&lt;/p&gt;
-&lt;hr /&gt;
-&lt;p&gt;&lt;strong&gt;📦 AWS Libraries&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;The main libraries we will use are:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;boto3&lt;/strong&gt;: This library allows us to connect programmatically to Amazon Web Services (AWS) services.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;awswrangler&lt;/strong&gt;: This open-source Python library integrates pandas with AWS, enabling seamless data manipulation and analysis within AWS services.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;hr /&gt;
-&lt;p&gt;&lt;strong&gt;🔧 Configuration Setup&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;To manage AWS credentials, we will use the python-dotenv library to handle environment variables. You need to create a file named .env in the root of the project and configure your AWS credentials there. Below, you will find the format for the file.&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;File Name: &lt;code&gt;.env&lt;/code&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;pre class="yaml"&gt;&lt;code&gt;AWS_SECRET_KEY=&amp;#39;mySecretKey&amp;#39;
-AWS_ACCESS_KEY=&amp;#39;myAccessKey&amp;#39;
-AWS_ROLE=&amp;#39;arn:aws:iam::xxxx:role/role-name&amp;#39;&lt;/code&gt;&lt;/pre&gt;
-&lt;hr /&gt;
-&lt;p&gt;&lt;strong&gt;⚠️ Considerations&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;To simplify this tutorial and reduce the complexity of implementing a solution, two classes were created, which are as follows:&lt;/p&gt;
-&lt;p&gt;📦&lt;code&gt;S3bucket Class&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;To simplify the explanation of this tutorial and manage the files stored in an S3 bucket, I have created a class named S3bucket. This class will enable us to perform various common operations such as listing the files in a bucket, writing a JSON file, writing a Parquet file, and reading a JSON file.&lt;/p&gt;
-&lt;p&gt;📦&lt;code&gt;ComprehendMedical Class&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;To make it easier to use AWS Comprehend Medical and create DataFrames from the processed data, I have developed a class named ComprehendMedical. This class is designed to streamline interactions with the service’s methods, including detect_entities_v2, infer_rx_norm, and infer_snomed_ct. Below are the primary methods of this class and their functionalities:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;get_entities&lt;/strong&gt;: This method uses the detect_entities_v2 function from AWS Comprehend Medical to identify medical entities in a given text.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;get_rxnorm&lt;/strong&gt;: This method employs the infer_rx_norm function to extract medication-related information from the text.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;get_snomed&lt;/strong&gt;: This method uses the infer_snomedct function to identify and obtain information related to standardized medical terms in the SNOMED CT system.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;blockquote&gt;
-&lt;p&gt;&lt;strong&gt;⚒️ Methods to Generate DataFrames&lt;/strong&gt; Each of the above methods also has a version that returns the results in DataFrame format using pandas. These DataFrames are then saved in Parquet format, which is efficient for storage and querying, and facilitates integration with other data processing tools. The Parquet files are stored in a new 📁 folder named “stage” within the same Amazon S3 bucket.&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;hr /&gt;
-&lt;pre class="python"&gt;&lt;code&gt;# libraries for data processing
-import json, os,io,re,uuid
-from tqdm import tqdm
-from datetime import datetime
-from pprint import pprint
-import pandas as pd 
-import numpy as np
-
-# libraries for loading environment variables
-from dotenv import load_dotenv
-
-# aws libraries
-import boto3
-import awswrangler as wr
-
-# libraries for data visualization
-import seaborn as sns
-from matplotlib import pyplot as plt
-import matplotlib as mpl
-
-load_dotenv()
-AWS_ACCESS_KEY = os.getenv(&amp;quot;AWS_ACCESS_KEY&amp;quot;)
-AWS_SECRET_KEY = os.getenv(&amp;quot;AWS_SECRET_KEY&amp;quot;)
-AWS_ROLE = os.getenv(&amp;quot;AWS_ROLE&amp;quot;)
-AWS_REGION_NAME = &amp;#39;us-east-1&amp;#39;
-BUCKET_NAME = &amp;#39;dev-medical-notes&amp;#39;&lt;/code&gt;&lt;/pre&gt;
-&lt;hr /&gt;
-&lt;blockquote&gt;
-&lt;p&gt;Here we are creating an object from the class called S3bucket and you can see the complete code in the following &lt;a href="https://github.com/r0mymendez/aws-comprehend-medical"&gt;link&lt;/a&gt; of this class&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;pre class="python"&gt;&lt;code&gt;# create an object of the class S3bucket for the bucket &amp;#39;dev-medical-notes&amp;#39;
-s3 = S3bucket(BUCKET_NAME, AWS_ACCESS_KEY, AWS_SECRET_KEY, AWS_REGION_NAME)&lt;/code&gt;&lt;/pre&gt;
-&lt;hr /&gt;
-&lt;h3 id="data-extraction-and-preparation"&gt;🟣 Data Extraction and Preparation&lt;/h3&gt;
-&lt;p&gt;The first step in the process is to extract a subset of medical notes and upload them to &lt;strong&gt;Amazon S3&lt;/strong&gt; in JSON &lt;strong&gt;{}&lt;/strong&gt; format. To facilitate the organization and management of these files, they will be stored in a 📁 folder named “raw,” which will be preceded by a 📅 date prefix (dt).&lt;/p&gt;
-&lt;p&gt;The 📁 “raw” folder will serve as the container for the original, unprocessed files, while the date prefix will help classify and manage the files based on when they were uploaded.&lt;/p&gt;
-&lt;pre class="python"&gt;&lt;code&gt;data = pd.read_csv(&amp;#39;data/patient_notes.csv&amp;#39;)
-data[&amp;#39;pn_history_len&amp;#39;]=data[&amp;#39;pn_history&amp;#39;].str.len()
-
-# Plotting the distribution of the number of characters in patient notes
-mpl.rcParams[&amp;#39;font.family&amp;#39;] = &amp;#39;serif&amp;#39;
-plt.figure(figsize=(12,4))
-sns.histplot(data[&amp;#39;pn_history_len&amp;#39;], color=sns.color_palette(&amp;#39;pastel&amp;#39;)[4])
-plt.title(&amp;#39;Distribution number of characters in patient notes&amp;#39;)
-plt.xlabel(&amp;#39;Number of characters&amp;#39;)
-plt.ylabel(&amp;#39;Frequency&amp;#39;)
-plt.show()&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src="https://r0mymendez.github.io//posts_en/2024-08-07-employing-aws-comprehend-medical-for-medical-data-extraction-in-healthcare-analytics/img/plot_nro_characters.png" /&gt;&lt;/p&gt;
-&lt;hr /&gt;
-&lt;p&gt;&lt;strong&gt;🔍 Analysis of Clinical Note Lengths&lt;/strong&gt;&lt;br&gt; In summary, there is significant variability in the length of clinical notes. However, most notes typically fall within a certain range. Below are the key points and future considerations for this analysis:&lt;/p&gt;
-&lt;ol style="list-style-type: decimal"&gt;
-&lt;li&gt;&lt;p&gt;&lt;strong&gt;📊 Distribution of Note Lengths&lt;/strong&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;The majority of notes are between &lt;code&gt;800&lt;/code&gt; and &lt;code&gt;1000&lt;/code&gt; characters.&lt;/li&gt;
-&lt;li&gt;Some notes are shorter, with &lt;code&gt;less than 200&lt;/code&gt; characters.&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;&lt;strong&gt;🧹 Data Cleaning&lt;/strong&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;It is important to ensure that the notes do not contain unnecessary characters, such as repetitions or sequences of special symbols. It is recommended to perform a preliminary cleaning of the notes to remove these characters before processing.&lt;/li&gt;
-&lt;li&gt;It is recommended to perform a preliminary cleaning of the notes to &lt;code&gt;remove these characters&lt;/code&gt; before processing.&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;&lt;strong&gt;🔍 Future Research Questions&lt;/strong&gt; &lt;br&gt; Although some of these questions cannot be answered with our dataset, these are some questions we could consider for analyzing a similar dataset:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Type of Patients:&lt;/strong&gt; What &lt;code&gt;types of patients&lt;/code&gt; have the shortest and longest notes?&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Relation to Severity:&lt;/strong&gt; Is there a relationship between the length of the note and &lt;code&gt;the severity of the patient's condition&lt;/code&gt;?&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Temporal Evolution:&lt;/strong&gt; How has the average length of the notes &lt;code&gt;changed over time&lt;/code&gt;?&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;Additionally, since AWS Comprehend Medical processes notes up to &lt;code&gt;10,000&lt;/code&gt; characters, performing this analysis is ideal for optimizing the usage of this service.&lt;/p&gt;
-&lt;hr /&gt;
-&lt;p&gt;&lt;strong&gt;Selecting Random Notes&lt;/strong&gt;&lt;/p&gt;
-&lt;pre class="python"&gt;&lt;code&gt;# seelcting random notes to test the function
-random_notes = [42141, 39049, 40593, 38851, 41068, 39457, 39152, 39665, 37830, 41717]
-
-# selecting the notes from the data
-data_test = data.reset_index().rename({&amp;#39;index&amp;#39;:&amp;#39;id&amp;#39;},axis=1).loc[random_notes,:].to_dict(&amp;#39;records&amp;#39;)
-# see the first 3 notes
-data_test[:3]&lt;/code&gt;&lt;/pre&gt;
-&lt;pre class="json"&gt;&lt;code&gt;[{&amp;#39;id&amp;#39;: 42141,
-  &amp;#39;pn_num&amp;#39;: 95330,
-  &amp;#39;case_num&amp;#39;: 9,
-  &amp;#39;pn_history&amp;#39;: &amp;#39;Ms. Madden is a 20 yo female presenting w/ the worst HA of her life, unlike anything that she has had before. It is a dull + constant pain, it has gotten progressively worse, started yesterday morn. It is a diffuse pain felt around her head and is nonpulsating. She has photophobia but no phonophobia, has nausea, and vomited 3x yesterday. No sick contacts. Felt warm earlier. No chills, fatigue, CP, SOB, abd pain, or rashes. No sx before the onset of this HA. Ibuprofen, tylenol, sleep have not helped. Walking + bending over makes the pain worse. She has had HA before once or twice a yr but they are usually very mild. \r\nMeds: OCPs\r\nFH: mother w/ migraines, dad w/ HPL\r\nSocial alcohol use, 3 or 4 marijuana joints per week, no tobacco use\r\nPMH: none significant&amp;#39;,
-  &amp;#39;pn_history_len&amp;#39;: 765},
- {&amp;#39;id&amp;#39;: 39049,
-  &amp;#39;pn_num&amp;#39;: 92131,
-  &amp;#39;case_num&amp;#39;: 9,
-  &amp;#39;pn_history&amp;#39;: &amp;#39;20 yo F, c/o headaches.\r\n- started yesterday, right after she woke up. 8/10, dull, constant headache, getting worse. \r\n- nothing makes it better. exacerbated by leaning forward and walking.\r\n- nausea and vomiting. vomited 3 times, green fluids, no blood. \r\n- photophobia. \r\n- mild fever. \r\nROS: none except above. occasional headaches.\r\nPMH: none. Meds: OCP. All: NKDA.\r\nPSH: none. \r\nFH: mother - migrain. father-  hyperlipidemia. \r\nSH: sexually active with boyfriend, using condoms and OCP. \r\nnot smoking, drinkes 2-3 a week. smoking marijuana 3-4 times a week.&amp;#39;,
-  &amp;#39;pn_history_len&amp;#39;: 562},
- {&amp;#39;id&amp;#39;: 40593,
-  &amp;#39;pn_num&amp;#39;: 93723,
-  &amp;#39;case_num&amp;#39;: 9,
-  &amp;#39;pn_history&amp;#39;: &amp;#39;A 20 yo female presents to the clinic with c/o a headache since yesterday. Pt states headache is constant, progressive, and diffuse. Associaed with nausea, vomiting , and decreased appetite. Pain is 10/10 in intensity, non-radiating. Patient states she also felt warmer yesterday. Pt states muscle aches and runny nose.. Patient denies cough, chst pain, adbominal pain. Pt denies recent travel.\r\n\r\nAllergies: none\r\nmeds: OCPs\r\nPMHx:/PShx/hopsi: none\r\nFamily hx:amily hx (mother-migraine headache)\r\nsocial hx: \r\n&amp;#39;,
-  &amp;#39;pn_history_len&amp;#39;: 511}]&lt;/code&gt;&lt;/pre&gt;
-&lt;pre class="python"&gt;&lt;code&gt;# write the data to the s3 bucket
-for record in tqdm(data_test):
-    dt =f&amp;quot;dt={datetime.now().strftime(&amp;#39;%Y%m%d&amp;#39;)}&amp;quot;
-    record_file_name = f&amp;quot;medical_record_noteId_{record[&amp;#39;id&amp;#39;]}.json&amp;quot;
-    s3.write_s3_json(data=record, filename=f&amp;quot;raw/{dt}/{record_file_name}&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
-&lt;pre class="bash"&gt;&lt;code&gt;100%|██████████| 10/10 [00:02&amp;lt;00:00,  3.48it/s]&lt;/code&gt;&lt;/pre&gt;
-&lt;blockquote&gt;
-&lt;p&gt;&lt;strong&gt;🧹 Retrieval and Cleaning of Notes&lt;/strong&gt;&lt;br&gt; We will retrieve note 42141 from the S3 bucket, specifically from the folder “raw”. Using these data, we will use the re module to replace the characters   and , which correspond to line breaks and tabs. &lt;br&gt; Next, we will review the dictionary with the note and proceed to modify these characters in the retrieved text.&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;pre class="python"&gt;&lt;code&gt;# Read the data from the s3 bucket 
-note_id = 42141
-note = s3.read_s3_json(f&amp;#39;raw/dt=20240804/medical_record_noteId_{note_id}.json&amp;#39;)
-pprint(note)
-note_clean = re.sub(r&amp;#39;[\n\r\t]&amp;#39;, &amp;#39; &amp;#39;,note[&amp;#39;pn_history&amp;#39;])&lt;/code&gt;&lt;/pre&gt;
-&lt;pre class="bash"&gt;&lt;code&gt;{&amp;#39;case_num&amp;#39;: 9,
- &amp;#39;id&amp;#39;: 42141,
- &amp;#39;pn_history&amp;#39;: &amp;#39;Ms. Madden is a 20 yo female presenting w/ the worst HA of her life, unlike anything that she has had before. It is a dull + constant pain, it has gotten progressively worse, started yesterday morn. It is a diffuse pain felt around her head and is nonpulsating. She has photophobia but no phonophobia, has nausea, and vomited 3x yesterday. No sick contacts. Felt warm earlier. No chills, fatigue, CP, SOB, abd pain, or rashes. No sx before the onset of this HA. Ibuprofen, tylenol, sleep have not helped. Walking + bending over makes the pain worse. She has had HA before once or twice a yr but they are usually very mild.   Meds: OCPs  FH: mother w/ migraines, dad w/ HPL  Social alcohol use, 3 or 4 marijuana joints per week, no tobacco use  PMH: none significant&amp;#39;,
- &amp;#39;pn_history_len&amp;#39;: 765,
- &amp;#39;pn_num&amp;#39;: 95330}&lt;/code&gt;&lt;/pre&gt;
-&lt;hr /&gt;
-&lt;h3 id="real-time-processing-with-aws-comprehend-medical"&gt;🟣 Real-Time Processing with AWS Comprehend Medical&lt;/h3&gt;
-&lt;blockquote&gt;
-&lt;p&gt;Here we are creating an object from the class called ComprehendMedical and you can see the complete code in the following &lt;a href="https://github.com/r0mymendez/aws-comprehend-medical"&gt;link&lt;/a&gt; of this class&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;pre class="python"&gt;&lt;code&gt;# create an object of the class ComprehendMedical to use the comprehend medical service
-aws_comprehendMedical = ComprehendMedical(
-                        aws_region_name=AWS_REGION_NAME,
-                        aws_access_key=AWS_ACCESS_KEY,
-                        aws_secret_access=AWS_SECRET_KEY)&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;strong&gt;🩺 AWS Comprehend Medical: Entities&lt;/strong&gt;&lt;/p&gt;
-&lt;pre class="python"&gt;&lt;code&gt;# get the entities from the note 
-tmp_entities = aws_comprehendMedical.get_entities_dataframe(text=note_clean)
-# With the function get_entities_dataframe we can get the mapped and unmapped entities
-mapped_df, unmapped_df = tmp_entities
-mapped_df.head(3)&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src="https://r0mymendez.github.io//posts_en/2024-08-07-employing-aws-comprehend-medical-for-medical-data-extraction-in-healthcare-analytics/img/table_entities_mapped.png" /&gt;&lt;/p&gt;
-&lt;hr /&gt;
-&lt;pre class="python"&gt;&lt;code&gt;unmapped_df.head(3)&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src="https://r0mymendez.github.io//posts_en/2024-08-07-employing-aws-comprehend-medical-for-medical-data-extraction-in-healthcare-analytics/img/table_entities_unmapped.png" /&gt;&lt;/p&gt;
-&lt;hr /&gt;
-&lt;pre class="python"&gt;&lt;code&gt;# write the mapped and unmapped entities to the s3 bucket
-dt =f&amp;quot;dt={datetime.now().strftime(&amp;#39;%Y%m%d&amp;#39;)}&amp;quot;
-s3.write_s3_parquet(data=mapped_df, filename=f&amp;#39;stage/{dt}/entites/mapped_entities_noteId_{note_id}.parquet&amp;#39;)
-s3.write_s3_parquet(data=unmapped_df, filename=f&amp;#39;stage/{dt}/entites/unmapped_entities_noteId_{note_id}.parquet&amp;#39;)&lt;/code&gt;&lt;/pre&gt;
-&lt;hr /&gt;
-&lt;p&gt;&lt;strong&gt;🩺 AWS Comprehend Medical: RxNorm&lt;/strong&gt;&lt;/p&gt;
-&lt;pre class="python"&gt;&lt;code&gt;# get the rxnorm entities from the note
-rxnorm_entities = aws_comprehendMedical.get_rxnorm_dataframe(text=note_clean)
-rxnorm_entities.head()&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src="https://r0mymendez.github.io//posts_en/2024-08-07-employing-aws-comprehend-medical-for-medical-data-extraction-in-healthcare-analytics/img/table_rxnorm.png" /&gt;&lt;/p&gt;
-&lt;pre class="python"&gt;&lt;code&gt;# Some of the entities are mapped to RxNorm
-for item in rxnorm_entities[&amp;#39;RxNormConcepts&amp;#39;][0]:
-    pprint(item)&lt;/code&gt;&lt;/pre&gt;
-&lt;pre class="bash"&gt;&lt;code&gt;{&amp;#39;Code&amp;#39;: &amp;#39;5640&amp;#39;, &amp;#39;Description&amp;#39;: &amp;#39;ibuprofen&amp;#39;, &amp;#39;Score&amp;#39;: 0.9967318773269653}
-{&amp;#39;Code&amp;#39;: &amp;#39;10255&amp;#39;, &amp;#39;Description&amp;#39;: &amp;#39;suprofen&amp;#39;, &amp;#39;Score&amp;#39;: 0.5894578695297241}
-{&amp;#39;Code&amp;#39;: &amp;#39;4331&amp;#39;, &amp;#39;Description&amp;#39;: &amp;#39;fenoprofen&amp;#39;, &amp;#39;Score&amp;#39;: 0.5856923460960388}
-{&amp;#39;Code&amp;#39;: &amp;#39;1312748&amp;#39;, &amp;#39;Description&amp;#39;: &amp;#39;truprofen&amp;#39;, &amp;#39;Score&amp;#39;: 0.574164867401123}
-{&amp;#39;Code&amp;#39;: &amp;#39;17387&amp;#39;, &amp;#39;Description&amp;#39;: &amp;#39;alminoprofen&amp;#39;, &amp;#39;Score&amp;#39;: 0.5531540513038635}&lt;/code&gt;&lt;/pre&gt;
-&lt;pre class="python"&gt;&lt;code&gt;# Write the RxNorm entities to the s3 bucket
-dt =f&amp;quot;dt={datetime.now().strftime(&amp;#39;%Y%m%d&amp;#39;)}&amp;quot;
-s3.write_s3_parquet(data=rxnorm_entities, filename=f&amp;#39;stage/{dt}/rxnorm/rxnorm_entities_noteId_{note_id}.parquet&amp;#39;)&lt;/code&gt;&lt;/pre&gt;
-&lt;hr /&gt;
-&lt;p&gt;&lt;strong&gt;🩺 AWS Comprehend Medical: SNOMED CT (Clinical Terms)&lt;/strong&gt;&lt;/p&gt;
-&lt;pre class="python"&gt;&lt;code&gt;# create a dataframe with the snomed entities
-snomed_ct_entities = aws_comprehendMedical.get_snomed_dataframe(text=note_clean)
-snomed_ct_entities.head()&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src="https://r0mymendez.github.io//posts_en/2024-08-07-employing-aws-comprehend-medical-for-medical-data-extraction-in-healthcare-analytics/img/table_snomed.png" /&gt;&lt;/p&gt;
-&lt;pre class="python"&gt;&lt;code&gt;# Write the snomed-ct entities to the s3 bucket
-dt =f&amp;quot;dt={datetime.now().strftime(&amp;#39;%Y%m%d&amp;#39;)}&amp;quot;
-s3.write_s3_parquet(data=snomed_ct_entities, filename=f&amp;#39;stage/{dt}/snomed-ct/snomed_ct_noteId_{note_id}.parquet&amp;#39;)&lt;/code&gt;&lt;/pre&gt;
-&lt;hr /&gt;
-&lt;h3 id="batch-processing-with-aws-comprehend-medical"&gt;🟣 Batch Processing with AWS Comprehend Medical&lt;/h3&gt;
-&lt;p&gt;To perform batch processing, you’ll first need to store the notes as individual &lt;strong&gt;txt&lt;/strong&gt; files in an S3 bucket. These files will be processed, and the results will be saved in a new folder named &lt;strong&gt;output&lt;/strong&gt; within the same bucket.&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;To view this section of the tutorial, you can check out my GitHub repository linked below.&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;blockquote&gt;
-&lt;p&gt;If you find this useful, please leave a star ⭐️ and follow me to receive notifications of new articles. This will help me grow in the tech community and create more content.&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;{% github r0mymendez/aws-comprehend-medical %}&lt;/p&gt;
-&lt;hr /&gt;
-&lt;h2 id="references"&gt;📚 References&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;[1] Amazon Comprehend Medical, Amazon Web Services, URL: &lt;a href="https://aws.amazon.com/es/comprehend/medical/" class="uri"&gt;https://aws.amazon.com/es/comprehend/medical/&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;[2] Summary of the HIPAA Privacy Rule, U.S Deparment of health human services, URL: &lt;a href="https://www.hhs.gov/hipaa/for-professionals/privacy/laws-regulations/index.html" class="uri"&gt;https://www.hhs.gov/hipaa/for-professionals/privacy/laws-regulations/index.html&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;[3] Boto3 1.34.153 documentation, Amazon Web Services, URL: &lt;a href="https://boto3.amazonaws.com/v1/documentation/api/latest/index.html" class="uri"&gt;https://boto3.amazonaws.com/v1/documentation/api/latest/index.html&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;[4] AWS SDK for pandas (awswrangler),AWS Professional Service open source , URL: &lt;a href="https://aws-sdk-pandas.readthedocs.io/en/stable/" class="uri"&gt;https://aws-sdk-pandas.readthedocs.io/en/stable/&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;[5] NBME - Score Clinical Patient Notes,Kaggle, URL: &lt;a href="https://www.kaggle.com/c/nbme-score-clinical-patient-notes/data?select=patient_notes.csv" class="uri"&gt;https://www.kaggle.com/c/nbme-score-clinical-patient-notes/data?select=patient_notes.csv&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;[6] Detect entities (Version 2), Amazon Web Services, URL: &lt;a href="https://docs.aws.amazon.com/comprehend-medical/latest/dev/textanalysis-entitiesv2.html" class="uri"&gt;https://docs.aws.amazon.com/comprehend-medical/latest/dev/textanalysis-entitiesv2.html&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;[7] RxNorm, National Library of Medicie, URL: &lt;a href="https://www.nlm.nih.gov/research/umls/rxnorm/index.html" class="uri"&gt;https://www.nlm.nih.gov/research/umls/rxnorm/index.html&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;[8] Overview of SNOMED CT, National Library of Medicie, URL: &lt;a href="https://www.nlm.nih.gov/healthit/snomedct/snomed_overview.html" class="uri"&gt;https://www.nlm.nih.gov/healthit/snomedct/snomed_overview.html&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;[9] The Book Of Ohdsi, Ohdsi, URL: &lt;a href="https://ohdsi.github.io/TheBookOfOhdsi/" class="uri"&gt;https://ohdsi.github.io/TheBookOfOhdsi/&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id="other-references"&gt;📚 Other references:&lt;/h2&gt;
-&lt;p&gt;- Image preview reference: [Image by jcomp on &lt;a href="https://www.freepik.com/free-vector/professional-pharmaceutical-science-pharmacist-checking-medicaments-pharmacy-store-pharmacy-business-medicine-drug-store-character-flat-cartoon-vector-illustration_24070650.htm#fromView=search&amp;amp;page=1&amp;amp;position=1&amp;amp;uuid=7b89ed63-b471-4e2a-8d63-2d023036a095"&gt;Freepik&lt;/a&gt;]&lt;/p&gt;
-&lt;pre class="r distill-force-highlighting-css"&gt;&lt;code&gt;&lt;/code&gt;&lt;/pre&gt;</description>
-      <distill:md5>bd66e70341c438917cbfb21c43a54bab</distill:md5>
+      <description>The goal of this tutorial is to provide a guide on how to use Amazon Comprehend Medical for identifying medical entities and extracting information, including RxNorm codes, SNOMED CT concepts, and other attributes.</description>
       <category>Python</category>
       <category>Data</category>
       <category>Cloud Computing</category>
       <category>AI</category>
       <guid>https://r0mymendez.github.io/posts_en/2024-08-07-employing-aws-comprehend-medical-for-medical-data-extraction-in-healthcare-analytics</guid>
-      <pubDate>Tue, 06 Aug 2024 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 07 Aug 2024 00:00:00 +0000</pubDate>
       <media:content url="https://r0mymendez.github.io/posts_en/2024-08-07-employing-aws-comprehend-medical-for-medical-data-extraction-in-healthcare-analytics/preview.jpg" medium="image" type="image/jpeg"/>
     </item>
     <item>
       <title>Python Projects with SQL: Strategies for Effective Query Management</title>
       <dc:creator>Romina Mendez</dc:creator>
       <link>https://r0mymendez.github.io/posts_en/2024-05-26-python-projects-with-sql-strategies-for-effective-query-management</link>
-      <description>
-
-
-&lt;p&gt;&lt;img src="https://img.shields.io/badge/Buy%20Me%20A%20Coffee-support%20my%20work-FFDD00?style=flat&amp;amp;labelColor=101010&amp;amp;logo=buy-me-a-coffee&amp;amp;logoColor=white" style="width:40.0%" /&gt;&lt;/p&gt;
-&lt;p&gt;Many times, when programming in a project involving interaction with a database, we face the &lt;strong&gt;❓question of how to organize our queries and make them reusable&lt;/strong&gt;.&lt;/p&gt;
-&lt;p&gt;For this reason, some 🧑‍💻 developers &lt;code&gt;create functions&lt;/code&gt; where they concatenate strings to make the queries more dynamic and others prefer to &lt;code&gt;create variables&lt;/code&gt; where they define these queries. Although some more sophisticated developers also &lt;code&gt;use SQLAlchemy&lt;/code&gt; object declaration to define the queries, but this has a learning curve and can 📈complicate the development process, especially when dealing with more complex queries.&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://r0mymendez.github.io//posts_en/2024-05-26-python-projects-with-sql-strategies-for-effective-query-management/aiosql-question.png" /&gt;&lt;/p&gt;
-&lt;p&gt;One day, I found myself searching for a way to perform this in an &lt;code&gt;orderly&lt;/code&gt;, &lt;code&gt;organized&lt;/code&gt;, and &lt;code&gt;reusable&lt;/code&gt; manner without overly complicating my code, and I stumbled upon an interesting library called &lt;strong&gt;aiosql&lt;/strong&gt;.&lt;/p&gt;
-&lt;p&gt;In the following article, I will review how to use it and explained in its documentation and also I will share some approaches I used to implement it in other contexts.&lt;/p&gt;
-&lt;hr /&gt;
-&lt;h1 id="what-is-aiosql-library"&gt;⚙️ What is aiosql library?&lt;/h1&gt;
-&lt;p&gt;&lt;strong&gt;Aiosql&lt;/strong&gt; is a 🐍Python library that simplifies the writing of &lt;strong&gt;SQL queries&lt;/strong&gt; in separate files from your main Python project code. These queries, stored in SQL files, are then transformed into methods within a 🐍Python object.&lt;/p&gt;
-&lt;p&gt;Another notable feature of &lt;strong&gt;aiosql&lt;/strong&gt; is its ability to generate dynamic methods that accept parameters, enabling flexible query execution and effective interaction with the underlying database.&lt;/p&gt;
-&lt;p&gt;This separation of SQL queries from the main Python code promotes cleaner and more modular code, enhancing project readability and maintainability.&lt;/p&gt;
-&lt;hr /&gt;
-&lt;h1 id="how-does-aiosql-work"&gt;⚙️ How Does aiosql Work?&lt;/h1&gt;
-&lt;p&gt;In the diagram, you can see that all the queries from an SQL file can be imported and used in Python code by invoking them with the name defined in the query header. Subsequently, you can execute the queries by passing the necessary parameters directly from your Python code, which makes the queries reusable and easier to maintain.&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://r0mymendez.github.io//posts_en/2024-05-26-python-projects-with-sql-strategies-for-effective-query-management/aiosql-0.png" /&gt;&lt;/p&gt;
-&lt;hr /&gt;
-&lt;h1 id="key-features-of-aiosql-library"&gt;⚙️ Key Features of Aiosql Library&lt;/h1&gt;
-&lt;p&gt;Below, I will share a series of features that this library already has or can have based on its usage: * Provides &lt;strong&gt;CRUD functionality&lt;/strong&gt; (Create: Insert, Read: Select, Update , Delete) for database operations. * &lt;strong&gt;Separates Python code&lt;/strong&gt; from SQL code, making it easier to locate queries within projects with multiple databases. * Each query can be assigned a &lt;strong&gt;descriptive name and docstring&lt;/strong&gt;, similar to Python functions, enabling documentation of the query. * Facilitates the creation of &lt;strong&gt;a query catalog&lt;/strong&gt; within the project, aiding in identification based on entities, databases, or other grouping criteria. * Enables easy generation of &lt;strong&gt;dynamic queries&lt;/strong&gt; with the ability to pass dynamic values and modify them as needed.&lt;/p&gt;
-&lt;div class="figure"&gt;
-&lt;img src="https://dev-to-uploads.s3.amazonaws.com/uploads/articles/9jnau7uqjm31vp58ps29.png" alt="" /&gt;
-&lt;p class="caption"&gt;Image description&lt;/p&gt;
-&lt;/div&gt;
-&lt;hr /&gt;
-&lt;h1 id="aiosql-tutorial"&gt;⚙️ Aiosql Tutorial&lt;/h1&gt;
-&lt;h2 id="prerequisites"&gt;🔧 Prerequisites&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;🐳 Docker&lt;/li&gt;
-&lt;li&gt;🐙 Docker Compose&lt;/li&gt;
-&lt;li&gt;🐍 Install python libraries: &lt;code&gt;pip install aiosql pandas&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;hr /&gt;
-&lt;h2 id="quick-start"&gt;🚀 Quick Start&lt;/h2&gt;
-&lt;h3 id="create-a-postgres-database"&gt;🛠️Create a postgres database&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;1️⃣ - &lt;strong&gt;Clone this &lt;a href="https://github.com/r0mymendez/aiosql-tutorial/tree/master"&gt;repository: aiosql-tutorial&lt;/a&gt;&lt;/strong&gt; →&lt;/li&gt;
-&lt;/ul&gt;
-&lt;pre class="bash"&gt;&lt;code&gt;    git clone https://github.com/r0mymendez/aiosql-tutorial.git&lt;/code&gt;&lt;/pre&gt;
-&lt;ul&gt;
-&lt;li&gt;2️⃣ - &lt;strong&gt;Change directory&lt;/strong&gt; to the ‘postgres’ folder →&lt;/li&gt;
-&lt;/ul&gt;
-&lt;pre class="bash"&gt;&lt;code&gt;    cd aiosql-tutorial/postgres&lt;/code&gt;&lt;/pre&gt;
-&lt;ul&gt;
-&lt;li&gt;3️⃣ - &lt;strong&gt;Create postgres database&lt;/strong&gt; → Execute in the terminal→&lt;/li&gt;
-&lt;/ul&gt;
-&lt;pre class="bash"&gt;&lt;code&gt;    docker-compose -f docker-compose.yml up --build&lt;/code&gt;&lt;/pre&gt;
-&lt;ul&gt;
-&lt;li&gt;4️⃣ - &lt;strong&gt;Check if your container is running&lt;/strong&gt; → Execute in the terminal →&lt;/li&gt;
-&lt;/ul&gt;
-&lt;pre class="bash"&gt;&lt;code&gt;      docker ps&lt;/code&gt;&lt;/pre&gt;
-&lt;ul&gt;
-&lt;li&gt;5️⃣ - &lt;strong&gt;Load the csv files&lt;/strong&gt; → Execute the following command for load the csv file in the container →&lt;/li&gt;
-&lt;/ul&gt;
-&lt;pre class="bash"&gt;&lt;code&gt;    cd src 
-    python3 etl.py&lt;/code&gt;&lt;/pre&gt;
-&lt;hr /&gt;
-&lt;h3 id="hospital-data"&gt;🏥 Hospital Data&lt;/h3&gt;
-&lt;p&gt;To implement aiosql, we will use the datasets from &lt;a href="https://synthea.mitre.org/"&gt;Synthea&lt;/a&gt;, which simulates a hospital database. These synthetic data are generated from a simulation considering various variables of a population in Massachusetts. From these datasets, we will use the tables: &lt;code&gt;conditions&lt;/code&gt;, &lt;code&gt;encounters&lt;/code&gt;, and &lt;code&gt;patients&lt;/code&gt;.&lt;/p&gt;
-&lt;hr /&gt;
-&lt;h3 id="user-stories"&gt;👥 User stories&lt;/h3&gt;
-&lt;p&gt;To make this example more real we are going to make 3 use cases:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;1️⃣ - As a &lt;strong&gt;data analyst&lt;/strong&gt;, I want to be able to retrieve a list of patients whose visit count is above the 90th percentile, so that I can identify the most active patients in the clinic. Additionally, I want this percentile to be configurable for easy adjustment in the future.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;!-- --&gt;
-&lt;ul&gt;
-&lt;li&gt;2️⃣ - As a &lt;strong&gt;researcher or data analyst&lt;/strong&gt;, I want to access the data of patients who have been diagnosed with the 10 most frequent diagnoses in a period of time, in order to analyze trends and improve the quality of medical care.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;!-- --&gt;
-&lt;ul&gt;
-&lt;li&gt;3️⃣ - As a &lt;strong&gt;marketing analyst&lt;/strong&gt;, I want to create a table for patient satisfaction surveys, so that I can gather feedback on the quality of care and take measures to improve it.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;hr /&gt;
-&lt;h3 id="implementation"&gt;🚀 Implementation&lt;/h3&gt;
-&lt;p&gt;Based on the user stories that we are going to create, we will define two files in which we will load the queries and scripts that we need to execute: * &lt;strong&gt;patients.sql&lt;/strong&gt;: where we have all the queries related to recovering patient data. * &lt;strong&gt;visits.sql&lt;/strong&gt;: where we have all the queries related to visits, such as surveys.&lt;/p&gt;
-&lt;p&gt;Therefore in our project we are going to have this structure of folders and files&lt;/p&gt;
-&lt;pre class="bash"&gt;&lt;code&gt;- 📁 db
-    - 📁 queries
-        - 📄 patients.sql
-        - 📄 visits.sql
-- 📄 main.ipynb&lt;/code&gt;&lt;/pre&gt;
-&lt;hr /&gt;
-&lt;p&gt;In this way we are isolating the python code from the sql code, in our case we are going to implement this &lt;strong&gt;🐍python code&lt;/strong&gt; in a notebook in such a way as to make its explanation easier.&lt;/p&gt;
-&lt;hr /&gt;
-&lt;h4 id="import-python-libraries"&gt;1️⃣ - Import python libraries&lt;/h4&gt;
-&lt;pre class="python"&gt;&lt;code&gt;import aiosql
-import psycopg2
-import pandas as pd&lt;/code&gt;&lt;/pre&gt;
-&lt;h4 id="import-the-sql-queries-and-configure-the-database-driver"&gt;2️⃣ - Import the SQL queries and configure the database driver&lt;/h4&gt;
-&lt;blockquote&gt;
-&lt;p&gt;In this project, the SQL queries are located in the &lt;strong&gt;‘db/queries’&lt;/strong&gt; directory and &lt;strong&gt;‘psycopg2’&lt;/strong&gt; is the PostgreSQL database adapter.&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;pre class="python"&gt;&lt;code&gt;sql = aiosql.from_path(&amp;#39;src/db/queries&amp;#39;, &amp;#39;psycopg2&amp;#39;)&lt;/code&gt;&lt;/pre&gt;
-&lt;h4 id="create-the-connection-to-the-postgresql-database."&gt;3️⃣ - Create the connection to the PostgreSQL database.&lt;/h4&gt;
-&lt;pre class="python"&gt;&lt;code&gt;postgres_secrets = {&amp;#39;host&amp;#39;: &amp;#39;localhost&amp;#39;,&amp;#39;port&amp;#39;: 5432, &amp;#39;user&amp;#39;: &amp;#39;postgres&amp;#39;, &amp;#39;password&amp;#39;: &amp;#39;postgres&amp;#39;, &amp;#39;dbname&amp;#39;: &amp;#39;postgres&amp;#39;}
-conn = psycopg2.connect(**postgres_secrets)
-conn.autocommit = True&lt;/code&gt;&lt;/pre&gt;
-&lt;hr /&gt;
-&lt;h3 id="user-story-i-static-values"&gt;👥 User story I: Static Values&lt;/h3&gt;
-&lt;blockquote&gt;
-&lt;p&gt;As a &lt;strong&gt;data analyst&lt;/strong&gt;, I want to be able to retrieve a &lt;code&gt;list of patients&lt;/code&gt; whose visit count is &lt;code&gt;above the 90th percentile&lt;/code&gt;, so that I can identify the most active patients in the clinic. Additionally, I want this &lt;strong&gt;percentile to be configurable&lt;/strong&gt; for easy adjustment in the future.&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;hr /&gt;
-&lt;p&gt;Based on this user story, we will first create one that allows generating a query to retrieve the list of patients with a visit frequency above the 90th percentile.&lt;/p&gt;
-&lt;h4 id="in-the-sql-file-we-have-the-query-for-the-first-user-story"&gt;1️⃣ - In the sql file we have the query for the first user story&lt;/h4&gt;
-&lt;p&gt;The following are the three components that a SQL statement comprises in aiosq:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;&lt;strong&gt;📗 Name&lt;/strong&gt;: This is the descriptive name used to invoke the query from Python code. In the following example the name is &lt;code&gt;"fn_get_patients_adove_90th_percentile"&lt;/code&gt;&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;&lt;strong&gt;📗 Description&lt;/strong&gt;: It’s a detailed description used to generate a docstring. It provides a more comprehensive explanation of the purpose and context of the query. In the following example the description is &lt;code&gt;"get all the patients that have more visits than the 90th percentile of visits..."&lt;/code&gt;&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;&lt;strong&gt;📗 Query&lt;/strong&gt;: Here is the SQL query that will be executed in the database.&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;📄&lt;code&gt;sql:db/queries/patients.sql&lt;/code&gt;&lt;/p&gt;
-&lt;pre class="sql"&gt;&lt;code&gt;    -- name: fn_get_patients_adove_90th_percentile
-    -- get all the patients that have more visits than the 90th percentile of visits. All this data is stored in encounters table.
-    WITH patient_visits AS (
-        SELECT
-            patient,
-            COUNT(*) AS visit_count
-        FROM
-            hospital.encounters
-        GROUP BY
-            patient
-    ),
-    percentil_n AS (
-        SELECT
-            percentile_cont(0.9) WITHIN GROUP (ORDER BY visit_count) AS p_visits
-        FROM
-            patient_visits
-    )
-    SELECT 
-        pv.patient, 
-        pv.visit_count
-    FROM 
-        patient_visits pv
-    CROSS JOIN 
-        percentil_n  pn
-    WHERE 
-        pv.visit_count &amp;gt;= pn.p_visits;&lt;/code&gt;&lt;/pre&gt;
-&lt;h4 id="execute-the-fn_get_patients_above_90th_percentile-sql-function-using-the-database-connection-conn."&gt;2️⃣ - Execute the ‘fn_get_patients_above_90th_percentile’ SQL function using the database connection ‘conn’.&lt;/h4&gt;
-&lt;blockquote&gt;
-&lt;p&gt;The function returns a list of tuples representing patients whose visit count is above the 90th percentile.&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;🐍&lt;code&gt;Python&lt;/code&gt;&lt;/p&gt;
-&lt;pre class="python"&gt;&lt;code&gt;response = sql.fn_get_patients_above_90th_percentile(conn)&lt;/code&gt;&lt;/pre&gt;
-&lt;h4 id="now-we-can-convert-the-response-object-into-a-pandas-dataframe-for-easier-data-manipulation"&gt;3️⃣ - Now we can convert the response object into a pandas DataFrame for easier data manipulation&lt;/h4&gt;
-&lt;blockquote&gt;
-&lt;p&gt;The column names (‘patient_id’ and ‘num_visit’) are added manually because aiosql only returns the query result as a list of tuples without column names.&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;pre class="python"&gt;&lt;code&gt;data = pd.DataFrame([item for item in response], columns=[&amp;#39;patient_id&amp;#39;, &amp;#39;num_visit&amp;#39;])
-# Display the DataFrame.
-data&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src="https://r0mymendez.github.io//posts_en/2024-05-26-python-projects-with-sql-strategies-for-effective-query-management/user-story-1-1.png" /&gt;&lt;/p&gt;
-&lt;hr /&gt;
-&lt;blockquote&gt;
-&lt;p&gt;if we want to see the query, we can use the following code&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;pre class="python"&gt;&lt;code&gt;print(sql.fn_get_patients_adove_90th_percentile.sql)&lt;/code&gt;&lt;/pre&gt;
-&lt;hr /&gt;
-&lt;h3 id="user-story-i-dynamic-values"&gt;👥 User story I: Dynamic Values&lt;/h3&gt;
-&lt;blockquote&gt;
-&lt;p&gt;As a &lt;strong&gt;data analyst&lt;/strong&gt;, I want to be able to retrieve a &lt;code&gt;list of patients&lt;/code&gt; whose visit count is above the 90th percentile, so that I can identify the most active patients in the clinic. Additionally, &lt;code&gt;I want this percentile to be configurable&lt;/code&gt; for easy adjustment in the future.&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;hr /&gt;
-&lt;p&gt;Now, we are going to create another query that allows us to accept different percentile values so that the query can be dynamically modified based on the values passed. In our case, we are going to provide an example of obtaining the list of patients that exceed the 75th percentile.&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;Notice that we now have a dynamic variable called &lt;strong&gt;percentile_value&lt;/strong&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;📄&lt;code&gt;sql&lt;/code&gt;&lt;/p&gt;
-&lt;pre class="sql"&gt;&lt;code&gt;-- name: fn_get_patients_above_n_percentile
-WITH patient_visits AS (
-    ...
-),
-percentil_n AS (
-    SELECT
-        percentile_cont(:percentil_value) WITHIN GROUP (ORDER BY visit_count) AS p_visits
-    FROM
-        patient_visits
-)
-SELECT ...;&lt;/code&gt;&lt;/pre&gt;
-&lt;h4 id="this-following-code-executes-a-dynamic-sql-query-that-accepts-different-percentile-values-as-input."&gt;1️⃣ - This following code executes a dynamic SQL query that accepts different percentile values as input.&lt;/h4&gt;
-&lt;p&gt;🐍&lt;code&gt;Python&lt;/code&gt;&lt;/p&gt;
-&lt;pre class="python"&gt;&lt;code&gt;# In this case, we&amp;#39;re getting patients above the 75th percentile.
-response = sql.fn_get_patients_above_n_percentile(conn, percentil_value=0.75)
-data = pd.DataFrame([item for item in response], columns=[&amp;#39;patient_id&amp;#39;, &amp;#39;num_visit&amp;#39;])&lt;/code&gt;&lt;/pre&gt;
-&lt;hr /&gt;
-&lt;h3 id="user-stories-ii"&gt;👥 User stories II&lt;/h3&gt;
-&lt;blockquote&gt;
-&lt;p&gt;As a &lt;strong&gt;researcher or data analyst&lt;/strong&gt;, I want to access the data of patients who have been diagnosed with the 10 most frequent diagnoses in a period of time, in order to analyze trends and improve the quality of medical care.&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;hr /&gt;
-&lt;p&gt;To resolve this user story, we will create a query that retrieves patients with the most common conditions within a specified time period. This query will be dynamic, allowing for future variations in the number of conditions of interest. It will accept three parameters:&lt;/p&gt;
-&lt;p&gt;- &lt;strong&gt;‘num_condition’&lt;/strong&gt; will allow us to limit the number of conditions we’re interested in (e.g., the top 10 most common conditions).&lt;/p&gt;
-&lt;p&gt;- &lt;strong&gt;‘period_start_date’&lt;/strong&gt; and &lt;strong&gt;‘period_start_end’&lt;/strong&gt; will define the time window for which we want to retrieve data.&lt;/p&gt;
-&lt;p&gt;📄&lt;code&gt;sql&lt;/code&gt;&lt;/p&gt;
-&lt;pre class="sql"&gt;&lt;code&gt;-- name: fn_get_patients_top_conditions
--- Get patients with top conditions for a given period of time, the patients are sorted by the number of days they had the condition and the source of the data is the hospital schema.
-with top_n_conditions as(
-SELECT  code, description, COUNT(*) 
-     FROM hospital.CONDITIONS 
-     GROUP BY  code,description 
-     ORDER BY COUNT(*) DESC 
-     LIMIT  :num_condition
-),
-top_n_condition_patients as (
-SELECT 
-    p.ID, 
-    p.FIRST, 
-    p.LAST, 
-    p.CITY, 
-    p.GENDER, 
-    EXTRACT(YEAR FROM AGE(p.BIRTHDATE)) AS age,
-    c.start condition_start_date,
-    c.stop condition_stop_date,
-    EXTRACT(DAY FROM (c.stop - c.start )) AS condition_days, 
-    c.encounter,
-    c.code,
-    c.description
-    from hospital.patients p 
-    inner join hospital.conditions c  on c.patient = p.id
-    inner join top_n_conditions t on t.code=c.code
-)
-select * 
-    from top_n_condition_patients
-    where condition_start_date between :period_start_date and :period_start_end;&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;🐍&lt;code&gt;Python&lt;/code&gt;&lt;/p&gt;
-&lt;pre class="python"&gt;&lt;code&gt;response = sql.fn_get_patients_top_conditions(conn, num_condition_days=10, 
-                                        period_start_date=&amp;#39;2022-01-01&amp;#39;, 
-                                        period_start_end=&amp;#39;2022-12-31&amp;#39;)
-
-column_name=[&amp;#39;id&amp;#39;, &amp;#39;first&amp;#39;,&amp;#39;last&amp;#39;,&amp;#39;city&amp;#39;,&amp;#39;gender&amp;#39;,
-&amp;#39;age&amp;#39;,&amp;#39;condition_start_date&amp;#39;,&amp;#39;condition_stop_date&amp;#39;,&amp;#39;condition_days&amp;#39;,&amp;#39;encounter&amp;#39;,&amp;#39;code&amp;#39;,&amp;#39;description&amp;#39;]
-
-data = pd.DataFrame([item for item in response], columns=column_name)
-data.head()&lt;/code&gt;&lt;/pre&gt;
-&lt;hr /&gt;
-&lt;h3 id="user-story-iii"&gt;👥 User story III&lt;/h3&gt;
-&lt;p&gt;As a &lt;strong&gt;marketing analyst&lt;/strong&gt;, I want to create a table for patient satisfaction surveys, so that I can gather feedback on the quality of care and take measures to improve it.&lt;/p&gt;
-&lt;hr /&gt;
-&lt;p&gt;Now we are going to create the table using aiosql, if you look at our code in SQL you will see that a # symbol is added, these symbols are used by aiosql to identify the different operations that must be performed.&lt;/p&gt;
-&lt;p&gt;📄&lt;code&gt;sql&lt;/code&gt;&lt;/p&gt;
-&lt;pre class="sql"&gt;&lt;code&gt;-- name: fn_create_survey_table#
-CREATE TABLE HOSPITAL.VISIT_SURVEY(
-    ID SERIAL PRIMARY KEY,
-    PATIENT_ID VARCHAR(50),
-    SURVEY_DATE TIMESTAMP,
-    RATING INT,
-    COMMENTS TEXT,
-    CREATED_AT TIMESTAMP DEFAULT CURRENT_TIMESTAMP
-);&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src="https://r0mymendez.github.io//posts_en/2024-05-26-python-projects-with-sql-strategies-for-effective-query-management/aiosql-2.png" /&gt;&lt;/p&gt;
-&lt;hr /&gt;
-&lt;h4 id="execute-the-fn_create_survey_table-sql-function-to-create-a-new-table-in-the-database."&gt;1️⃣ - Execute the ‘fn_create_survey_table’ SQL function to create a new table in the database.&lt;/h4&gt;
-&lt;p&gt;🐍&lt;code&gt;Python&lt;/code&gt;&lt;/p&gt;
-&lt;pre class="python"&gt;&lt;code&gt;sql.fn_create_survey_table(conn)&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;code&gt;'CREATE TABLE'&lt;/code&gt;&lt;/p&gt;
-&lt;h4 id="once-the-table-is-created-we-are-going-to-use-the-following-insert-statement-to-be-able-to-insert-a-review-of-a-patient"&gt;2️⃣ - Once the table is created we are going to use the following insert statement to be able to insert a review of a patient&lt;/h4&gt;
-&lt;p&gt;📄&lt;code&gt;sql&lt;/code&gt;&lt;/p&gt;
-&lt;pre class="sql"&gt;&lt;code&gt;-- name: fn_add_one_visit_survey&amp;lt;!
-insert into HOSPITAL.VISIT_SURVEY(PATIENT_ID,SURVEY_DATE,RATING,COMMENTS) 
-    values (:patient_id, :survey_date, :rating,:comments) returning ID;&lt;/code&gt;&lt;/pre&gt;
-&lt;hr /&gt;
-&lt;blockquote&gt;
-&lt;p&gt;&lt;strong&gt;⚠️ Disclaimer&lt;/strong&gt;: During the coding of this tutorial, I used the insert statement without a return and encountered an error due to its absence. (The version of aiosql I am using is 10.1) This ‘returning ID’ allows us to retrieve the value assigned to the ‘id’ column within the ‘hospital_visit_survey’ table when the insert operation is performed.&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;hr /&gt;
-&lt;p&gt;🐍&lt;code&gt;Python&lt;/code&gt;&lt;/p&gt;
-&lt;pre class="python"&gt;&lt;code&gt;# Add a new visit survey record 
-
-sql.fn_add_one_visit_survey(conn, 
-                            patient_id=&amp;#39;8b9a93f6-3df3-203d-932f-f456e00d2c01&amp;#39;, 
-                            survey_date=&amp;#39;2022-01-01&amp;#39;, 
-                            rating=5,
-                            comments=&amp;#39;This is a great hospital!&amp;#39; )&lt;/code&gt;&lt;/pre&gt;
-&lt;h4 id="now-we-will-utilize-a-new-insert-statement-to-load-multiple-reviews-which-are-stored-in-a-list-of-dictionaries-each-dictionary-in-python-corresponds-to-a-review.-to-accomplish-this-we-will-employ-a-similar-query-but-we-need-to-modify-its-name"&gt;3️⃣ - Now we will utilize a new insert statement to load multiple reviews, which are stored in a list of dictionaries (each dictionary in Python corresponds to a review). To accomplish this, we will employ a similar query but we need to modify its name&lt;/h4&gt;
-&lt;p&gt;📄&lt;code&gt;sql&lt;/code&gt;&lt;/p&gt;
-&lt;pre class="sql"&gt;&lt;code&gt;    -- name: fn_add_many_visit_survey*!
-    insert into HOSPITAL.VISIT_SURVEY(PATIENT_ID,SURVEY_DATE,RATING,COMMENTS) 
-        values (:patient_id, :survey_date, :rating ,:comments) returning ID;&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;🐍&lt;code&gt;Python&lt;/code&gt;&lt;/p&gt;
-&lt;pre class="python"&gt;&lt;code&gt;# Add several visit survey records
-response_survey = [
-    {
-        &amp;#39;patient_id&amp;#39;: &amp;#39;8b9a93f6-3df3-203d-932f-f456e00d2c01&amp;#39;,
-        &amp;#39;survey_date&amp;#39;: &amp;#39;2022-01-01&amp;#39;,
-        &amp;#39;rating&amp;#39;: 3,
-        &amp;#39;comments&amp;#39;: &amp;#39;The service was good. But the waiting time was a bit long.&amp;#39;
-    },
-    {
-        &amp;#39;patient_id&amp;#39;: &amp;#39;7c8a93f6-4df3-203d-932f-f456e00d2c02&amp;#39;,
-        &amp;#39;survey_date&amp;#39;: &amp;#39;2022-02-01&amp;#39;,
-        &amp;#39;rating&amp;#39;: 4,
-        &amp;#39;comments&amp;#39;: &amp;#39;The staff was very helpful!&amp;#39;
-    },
-    {
-        &amp;#39;patient_id&amp;#39;: &amp;#39;6b7a93f6-5ef3-203d-932f-f456e00d2c03&amp;#39;,
-        &amp;#39;survey_date&amp;#39;: &amp;#39;2022-03-01&amp;#39;,
-        &amp;#39;rating&amp;#39;: 3,
-        &amp;#39;comments&amp;#39;: &amp;#39;The waiting time was a bit long.&amp;#39;
-    }
-]
-
-
-sql.fn_add_many_visit_survey(conn, response_survey)&lt;/code&gt;&lt;/pre&gt;
-&lt;hr /&gt;
-&lt;h1 id="project-query-catalog"&gt;📚 Project query catalog&lt;/h1&gt;
-&lt;p&gt;At the beginning of the tutorial, I mentioned the possibility of creating a catalog of queries for your project. Although this library doesn’t provide this functionality directly, you can see how to do it and access the complete code and data for this tutorial in my GitHub repository.&lt;/p&gt;
-&lt;p&gt;If you find it useful, you can leave a star ⭐️ and follow me for recieve the notification of new articles, this will help me grow in the tech community and create more content.&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://github.com/r0mymendez/aiosql-tutorial"&gt;&lt;img src="https://r0mymendez.github.io//posts_en/2024-05-26-python-projects-with-sql-strategies-for-effective-query-management/github.png" title="github: https://github.com/r0mymendez/aiosql-tutorial" alt="github: https://github.com/r0mymendez/aiosql-tutorial" /&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;hr /&gt;
-&lt;h2 id="final-conclusions"&gt;🔍 Final Conclusions&lt;/h2&gt;
-&lt;ol style="list-style-type: decimal"&gt;
-&lt;li&gt;&lt;p&gt;&lt;strong&gt;Versatility and Utility&lt;/strong&gt;: I believe aiosql is a useful library that allows you to implement queries from different projects efficiently. It provides a structured way to manage and execute SQL queries separately from your main codebase, enhancing readability and maintainability.&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;&lt;strong&gt;Flexible Query Handling&lt;/strong&gt;: While aiosql enables direct execution of your queries using database connections, in the projects I work on, I primarily use the library to return the SQL code and execute it with classes that I have already set up in Python code.&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;&lt;strong&gt;Other databases&lt;/strong&gt;: The ability to store and manage queries can extend beyond SQL databases. For example, this approach can also be applied to NoSQL databases such as Neo4j. By organizing and handling queries in a structured manner, you can optimize interactions with various types of databases.&lt;/p&gt;&lt;/li&gt;
-&lt;/ol&gt;
-&lt;hr /&gt;
-&lt;h1 id="references"&gt;📚 References&lt;/h1&gt;
-&lt;p&gt;If you want to learn…&lt;/p&gt;
-&lt;p&gt;1.&lt;a href="https://nackjicholson.github.io/aiosql/getting-started.html"&gt;aiosql official documentation&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;Other references:&lt;/p&gt;
-&lt;p&gt;- Image preview reference: [Imagen de &lt;a href="https://www.freepik.es/vector-gratis/usuarios-laptops-trabajando-base-datos-almacenamiento-organizacion-datos-acceso-gestion-informacion-concepto-proteccion-big-data-vector-ilustracion-aislada_11668632.htm#fromView=search&amp;amp;page=1&amp;amp;position=23&amp;amp;uuid=259d2c57-89fa-4abc-8455-39c842c1ddd1"&gt;Freepik&lt;/a&gt;]&lt;/p&gt;
-&lt;pre class="r distill-force-highlighting-css"&gt;&lt;code&gt;&lt;/code&gt;&lt;/pre&gt;</description>
-      <distill:md5>67dfa60172143fb789e8d4057ee380f7</distill:md5>
+      <description>In this article, you will discover how to use aiosql and I will review how to use it and explained in its documentation.</description>
       <category>Python</category>
       <category>Database</category>
       <guid>https://r0mymendez.github.io/posts_en/2024-05-26-python-projects-with-sql-strategies-for-effective-query-management</guid>
@@ -695,18 +380,6 @@ sql.fn_add_many_visit_survey(conn, response_survey)&lt;/code&gt;&lt;/pre&gt;
       <guid>https://r0mymendez.github.io/posts_en/2024-02-12-learning-aws-s3-on-localhost-best-practices-with-boto3-and-localstack</guid>
       <pubDate>Mon, 12 Feb 2024 00:00:00 +0000</pubDate>
       <media:content url="https://r0mymendez.github.io/posts_en/2024-02-12-learning-aws-s3-on-localhost-best-practices-with-boto3-and-localstack/preview.jpg" medium="image" type="image/jpeg"/>
-    </item>
-    <item>
-      <title>Transform your R Dataframes: Styles, 🎨 Colors, and 😎 Emojis </title>
-      <dc:creator>Romina Mendez</dc:creator>
-      <link>https://r0mymendez.github.io/posts_en/2024-01-14-transform-your-pandas-dataframes-in-r</link>
-      <description>In the following article, we will explore a method to add colors and styles to R DataFrames.</description>
-      <category>R</category>
-      <category>Data</category>
-      <category>DataViz</category>
-      <guid>https://r0mymendez.github.io/posts_en/2024-01-14-transform-your-pandas-dataframes-in-r</guid>
-      <pubDate>Sun, 21 Jan 2024 00:00:00 +0000</pubDate>
-      <media:content url="https://r0mymendez.github.io/posts_en/2024-01-14-transform-your-pandas-dataframes-in-r/preview.jpg" medium="image" type="image/jpeg"/>
     </item>
   </channel>
 </rss>
