@@ -433,3 +433,7 @@ The following references were used to create this article, with the first being 
 2.  **GitHub Foundations Practice Test**: Contains a series of multiple-choice questions for exam simulation. [GitHub Foundations Practice Test](https://ghcertified.com/practice_tests/foundations/)
 3.  **Study Guide GitHub Foundations**: A PDF guide for studying and preparing for the exam. [Study Guide GitHub Foundations](https://assets.ctfassets.net/wfutmusr1t3h/1kmMx7AwI4qH8yIZgOmQlP/79e6ff1dfdee589d84a24dd763b1eef7/github-foundations-exam-study-guide__1_.pdf)
 4.  **GitHub Foundations Certification -- Exam Prep Guide**: This is a post in FreeCodeCamp blog and it is content very helpful, and this post provides a good summary of everything you should know for exam preparation. [GitHub Foundations Certification -- Exam Prep Guide](https://www.freecodecamp.org/news/github-foundations-certified-exam-prep-guide/)
+
+## 📚 Other references:
+
+\- Image preview reference: [Image by vectorjuice on [Freepik](https://www.freepik.com/free-vector/programmers-working-project-website-development-methodology-technical-support_11669314.htm#fromView=search&page=1&position=19&uuid=d3423d69-fdaf-4caf-91b0-02a45b445cf5)]
