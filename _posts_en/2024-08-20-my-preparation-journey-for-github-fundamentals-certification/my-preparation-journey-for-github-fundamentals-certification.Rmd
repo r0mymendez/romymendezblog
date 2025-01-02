@@ -6,7 +6,7 @@ categories:
   - DevOps
   - GIT
   - Methodologies
-preview: "preview.jpg"
+preview: "preview.png"
 twitter:
   site: "@r0mymendez"
   creator: "@r0mymendez"
@@ -34,7 +34,7 @@ This month, I achieved the **"GitHub Fundamentals"** certification, and in this 
 The **GitHub** platform is a cloud-based solution built on **Git**, a version control system.
 It facilitates collaboration and project management through a range of features and AI-powered tools, enabling efficient software development, while ensuring quality and secure deployment.
 
-![Image description](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/yzgnfld0k305k3f2kpsd.png)
+![](img/img-1.png)
 
 **Some features we can highlight are as follows:**
 
@@ -54,7 +54,7 @@ Below, we have an image that represents each of the described entities and the t
 
 This mental map represents how I organized the key concepts needed to prepare for the certification, following the GitHub Foundation Learning Path, which I will explain next.
 
-![Image description](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/zglcinhbzlze6u59qrl6.png)
+![](img/img-2.png)
 
 ------------------------------------------------------------------------
 
@@ -92,7 +92,7 @@ Below, you will find explanations of the key elements and tools I studied, and h
 **Code management on GitHub** is essential for productivity and effective collaboration within development teams.
 Below are the key tools that facilitate this management:
 
-![Image description](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/d0xhxcgy6t30nmeei2pf.png)
+![](img/img-11.png)
 
 ------------------------------------------------------------------------
 
@@ -107,19 +107,28 @@ The **repository** is the core component of a project on GitHub, which is where 
 **Pull Requests (PRs)** are a fundamental tool for collaboration on GitHub.
 They allow developers to propose changes to the source code, which can then be reviewed and discussed by other team members before being merged into the base code.
 
-**Pull Request States** It is important to understand the possible states of a Pull Request (PR) on GitHub, which can be: \* **Draft**: PRs in draft status are still in development and not yet ready for formal review.
-This state allows collaborators to work on a proposal before requesting official feedback.
-\* **Open**: Open PRs are ready and available for review and discussion by project collaborators.
-This is where proposed changes are evaluated before deciding whether to integrate them into the base code.
-\* **Closed**: Closed PRs have not been accepted and therefore will not be merged into the project's base code.
-This state may indicate that the proposal was rejected or that the author decided not to proceed with it.
-\* **Merged**: Merged PRs have been accepted, and the proposed changes have been successfully integrated with the main branch of the project.
-This is the final state of a successful PR.
+**Pull Request States** It is important to understand the possible states of a Pull Request (PR) on GitHub, which can be:
 
----
+-   **Draft**: PRs in draft status are still in development and not yet ready for formal review.
+    This state allows collaborators to work on a proposal before requesting official feedback.
+
+-   **Open**: Open PRs are ready and available for review and discussion by project collaborators.
+    This is where proposed changes are evaluated before deciding whether to integrate them into the base code.
+
+-   **Closed**: Closed PRs have not been accepted and therefore will not be merged into the project's base code.
+    This state may indicate that the proposal was rejected or that the author decided not to proceed with it.
+
+-   **Merged**: Merged PRs have been accepted, and the proposed changes have been successfully integrated with the main branch of the project.
+    This is the final state of a successful PR.
+
+------------------------------------------------------------------------
+
 ### 🔧 Issues
-**Issues** are tracking tickets used to report bugs, suggest improvements, or discuss new features. They are essential for planning and organizing work within a project, allowing teams to prioritize tasks and track progress.
----
+
+**Issues** are tracking tickets used to report bugs, suggest improvements, or discuss new features.
+They are essential for planning and organizing work within a project, allowing teams to prioritize tasks and track progress.
+
+------------------------------------------------------------------------
 
 ### 💬 Discussions
 
@@ -143,13 +152,15 @@ Gists are useful for quickly sharing code examples, notes, or scripts among coll
 
 ------------------------------------------------------------------------
 
-\#\# 🟠 Accounts This is one of the topics where you may encounter questions, and within the recommended learning path, you can find three types of accounts:
+### 🟠 Accounts 
+
+This is one of the topics where you may encounter questions, and within the recommended learning path, you can find three types of accounts:
 
 -   **👥Personal Account**: This is the basic account for individual users, allowing them to own and manage repositories, packages, and projects.
 -   **🏢 Organization Account**: Allows multiple users to collaborate on shared projects.
 -   **💼 Enterprise Account**: Designed for large companies, it enables centralized management of policies and billing for multiple organizations.
 
-![Image description](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/y05ex70p6a2ftcpgt0fi.png)
+![](img/img-3.png)
 
 Additionally, the existing plans are:
 
@@ -159,7 +170,8 @@ Additionally, the existing plans are:
 
 -   **GitHub Team:** Similar to GitHub Pro but optimized for organizations, adding advanced team collaboration capabilities.
 
--   **GitHub Enterprise:** Offers premium support, enhanced security, compliance, and advanced authentication options, along with significantly increased resources and storage. There are two versions of this account type:
+-   **GitHub Enterprise:** Offers premium support, enhanced security, compliance, and advanced authentication options, along with significantly increased resources and storage.
+    There are two versions of this account type:
 
     -   **Cloud** (hosted by GitHub)
     -   **Server** (self-managed)
@@ -173,7 +185,7 @@ Therefore, I decided to group them all under the same concept.
 
 > ⚠️ Remember that this is my approach to studying for the certification, and you might find that the learning path or other resources refer to these methodologies differently.
 
-![Image description](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/c8v4lwqmgmlietu383k9.png)
+![](img/img-4.png)
 
 -   **🔀 GitHub Flow:** A workflow that utilizes specific components (branches, commits, and pull requests) to collaborate and experiment with new features or fixes in a software project.
 
@@ -197,9 +209,11 @@ Therefore, I decided to group them all under the same concept.
     -   **Choose a Sponsorship Level**: Pick a tier that fits your budget and desired level of support, with varying benefits such as exclusive content or early access to new features.
     -   **Support and Recognition**: Find the Sponsor button on a project's main page if it's eligible for sponsorship. You can select the sponsorship tier and decide if you want your contribution to be public.
 
-![Image description](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/xc00933jcnkpg1c0xb4q.png) \> source: [Identify where you can help](https://learn.microsoft.com/en-us/training/modules/contribute-open-source/2-identify)
+![](img/github-sponsor.png)
 
-![Image description](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/2nmcv7bi8kyw98jd8aeu.png) \> source: [Identify where you can help](https://learn.microsoft.com/en-us/training/modules/contribute-open-source/2-identify)
+> source: [Identify where you can help](https://learn.microsoft.com/en-us/training/modules/contribute-open-source/2-identify)
+>
+> ![source: [Identify where you can help](https://learn.microsoft.com/en-us/training/modules/contribute-open-source/2-identify)](img/github-tier.png)
 
 ------------------------------------------------------------------------
 
@@ -214,7 +228,7 @@ Below are the main tools and practices that facilitate this communication:
 -   **📚 Wiki:** This section is designed to host more extensive and detailed documentation.
     Unlike the README, which is brief and direct, the Wiki is ideal for sharing content such as use cases, examples, design principles, technical details, and any other aspects that require a more in-depth explanation.
 
-![Image description](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/gbwrwdyfccvywl1nhzzt.png)
+![](img/img-5.png)
 
 ### 📝 Markdown
 
@@ -223,7 +237,7 @@ Below are the main tools and practices that facilitate this communication:
 If you're not familiar with Markdown, I recommend checking out the [DataCamp CheatSheet](https://www.datacamp.com/cheat-sheet/markdown-cheat-sheet-23), which summarizes everything you need to get started.
 Additionally, within the chapter, there's an exercise titled ["Exercise - Communicate using Markdown"](https://learn.microsoft.com/en-us/training/modules/communicate-using-markdown/3-communicating-using-markdown) that will allow you to apply and reinforce your practice using markdown.
 
-![Image description](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/0dz4fszrs88sys70kj8q.png) \> source: [DataCamp CheatSheet](https://www.datacamp.com/cheat-sheet/markdown-cheat-sheet-23)
+![source: [DataCamp CheatSheet](https://www.datacamp.com/cheat-sheet/markdown-cheat-sheet-23)](img/makdown-datacamp.png){width="576"}
 
 ------------------------------------------------------------------------
 
@@ -232,7 +246,7 @@ Additionally, within the chapter, there's an exercise titled ["Exercise - Commun
 I have titled this section **"Products"** as it includes two chapters dedicated to two key products.
 One of these products leverages AI, while the other focuses on enhancing productivity.
 
-![Image description](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/iw6n4ksgt9fa4lwp6vhu.png)
+![](img/img-6.png)
 
 ### 🚀 GitHub Copilot
 
@@ -270,7 +284,7 @@ This new approach aims to streamline workflows, provide more comprehensive track
 It's important to note that there may be questions about the differences between the previous project types and these new ones.
 In the following sections, I'll highlight the functionalities and benefits of the new project types, helping you understand how they differ from the old ones and how they can be utilized to optimize project management.
 
-![Image description](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/tke86h7pa4nbw8i1p9ac.png)
+![](img/img-7.png)
 
 ### 📋 View
 
@@ -281,23 +295,25 @@ The types of views that can be generated are:
 
 -   **📄 Table**: A `tabular view` that organizes issues in a table format. This view is primarily used to view and manage detailed information on multiple issues simultaneously, facilitating comparison and bulk editing of data.
 
-![Image description](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/x5co16lpvjngf3wxz50k.png)
+![](img/github-project-table.png)
 
 -   **📋 Board**: A `card-based view` where issues are organized into columns, typically by status or category. This view is primarily used to visualize the workflow of issues through different stages, aiding task management and progress tracking.
 
-![Image description](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/utdpk9bbsg02m63n11pl.png)
+![](img/github-project-board.png)
 
 -   **⌛ Roadmap**: A graphical view that shows a timeline of issues and the associated milestones. This view is primarily used for planning and visualizing the long-term evolution of projects, helping to identify dependencies and delivery schedules.
 
-![Image description](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/miggcki6v4cgbnsw76j4.png)
+![](img/github-project-roadmap.png)
 
-\#\#\# 📊 Insights **Insights in Projects** allows you to `visualize`, `create`, and `customize` `charts` using the elements added to your Project as data sources.
+### 📊 Insights
+
+**Insights in Projects** allows you to `visualize`, `create`, and `customize` `charts` using the elements added to your Project as data sources.
 When creating a chart, you can define filters, the type of chart, and the information to be displayed.
 The generated charts are available to anyone with access to the Project.
 
 These charts enable you to analyze and manage the project, enhancing your ability to plan, control, and assess the project's progress.
 
-![Image description](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/w5hiqzb4jsacglm3pcgf.png)
+![](img/github-insights.png)
 
 ------------------------------------------------------------------------
 
@@ -316,7 +332,7 @@ The following are the key tools that facilitate this automation:
 
 Security is a fundamental aspect within GitHub, which provides a range of tools and best practices to enhance security in software development.
 
-![Image description](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/l3fwc8ebhvaz1ecszvfk.png)
+![](img/img-8.png)
 
 ### 🔐 Authentication & Access Controls
 
@@ -332,7 +348,7 @@ GitHub offers vulnerability alerts to help you identify and address security iss
 
 -   **Dependabot Alerts**: Detects and notifies you about vulnerable dependencies in your project, helping you keep your libraries and packages up to date.
 
-![Image description](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/bioc57da3wh2i1fyqwdc.png) \> source:[Automated security](https://learn.microsoft.com/en-us/training/modules/maintain-secure-repository-github/3-security-automation)
+![Image description](img/github-dependabot-alerts.png) \> source:[Automated security](https://learn.microsoft.com/en-us/training/modules/maintain-secure-repository-github/3-security-automation)
 
 -   **Code Scanning**: Analyzes your code for vulnerabilities and errors. It can be customized using CodeQL, allowing you to detect and fix security issues before they become risks. Integration with other tools like SonarQube or Policy Validator for Terraform by Amazon Web Services is also possible.
 -   **Secret Scanning**: Automatically scans the repository for exposed credentials or secrets, helping to prevent misuse of sensitive information.
@@ -353,7 +369,7 @@ GitHub offers vulnerability alerts to help you identify and address security iss
 On GitHub, you can use advanced search to efficiently navigate repositories, find issues, review pull requests, and join discussions.
 Here are some practical examples to enhance your search capabilities and collaboration on projects:
 
-![Image description](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/qxrio1hx44a3of7e07d5.png)
+![](img/img-9.png)
 
 ### Search Examples
 
@@ -421,7 +437,7 @@ Here are some practical examples to enhance your search capabilities and collabo
 
 ## 🟠 Summary
 
-![Image description](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/jc3y99y7tyv9r2dny6p7.png)
+![](img/img-10.png)
 
 ------------------------------------------------------------------------
 
@@ -434,6 +450,4 @@ The following references were used to create this article, with the first being 
 3.  **Study Guide GitHub Foundations**: A PDF guide for studying and preparing for the exam. [Study Guide GitHub Foundations](https://assets.ctfassets.net/wfutmusr1t3h/1kmMx7AwI4qH8yIZgOmQlP/79e6ff1dfdee589d84a24dd763b1eef7/github-foundations-exam-study-guide__1_.pdf)
 4.  **GitHub Foundations Certification -- Exam Prep Guide**: This is a post in FreeCodeCamp blog and it is content very helpful, and this post provides a good summary of everything you should know for exam preparation. [GitHub Foundations Certification -- Exam Prep Guide](https://www.freecodecamp.org/news/github-foundations-certified-exam-prep-guide/)
 
-## 📚 Other references:
-
-\- Image preview reference: [Image by vectorjuice on [Freepik](https://www.freepik.com/free-vector/programmers-working-project-website-development-methodology-technical-support_11669314.htm#fromView=search&page=1&position=19&uuid=d3423d69-fdaf-4caf-91b0-02a45b445cf5)]
+## 

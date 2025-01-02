@@ -24,10 +24,7 @@ on software, agile methodologies , data science and the professor life.
 &lt;p&gt;This month, I achieved the &lt;strong&gt;“GitHub Fundamentals”&lt;/strong&gt; certification, and in this article, I want to share how I did it, what new things I learned, and what I didn’t know before but wish I had known earlier so I could have implemented it sooner.&lt;/p&gt;
 &lt;h1 id="what-is-the-github-platform"&gt;What is the GitHub Platform?&lt;/h1&gt;
 &lt;p&gt;The &lt;strong&gt;GitHub&lt;/strong&gt; platform is a cloud-based solution built on &lt;strong&gt;Git&lt;/strong&gt;, a version control system. It facilitates collaboration and project management through a range of features and AI-powered tools, enabling efficient software development, while ensuring quality and secure deployment.&lt;/p&gt;
-&lt;div class="figure"&gt;
-&lt;img src="https://dev-to-uploads.s3.amazonaws.com/uploads/articles/yzgnfld0k305k3f2kpsd.png" alt="" /&gt;
-&lt;p class="caption"&gt;Image description&lt;/p&gt;
-&lt;/div&gt;
+&lt;p&gt;&lt;img src="https://r0mymendez.github.io//posts_en/2024-08-20-my-preparation-journey-for-github-fundamentals-certification/img/img-1.png" /&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Some features we can highlight are as follows:&lt;/strong&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;🤖 AI&lt;/strong&gt;: GitHub uses products like Copilot, which will be described later, to help develop and solve problems and perform automated security reviews. This enhances collaboration, productivity, and security.&lt;/li&gt;
@@ -41,10 +38,7 @@ on software, agile methodologies , data science and the professor life.
 &lt;h1 id="github-functionalities-products"&gt;🟠 GitHub Functionalities &amp;amp; Products&lt;/h1&gt;
 &lt;p&gt;As mentioned initially, this post is intended to discuss what you need to know in order to pass the certification exam. Below, we have an image that represents each of the described entities and the topics you should study to successfully pass the certification exam, which consists of &lt;strong&gt;✏️ 75 multiple-choice questions&lt;/strong&gt;.&lt;/p&gt;
 &lt;p&gt;This mental map represents how I organized the key concepts needed to prepare for the certification, following the GitHub Foundation Learning Path, which I will explain next.&lt;/p&gt;
-&lt;div class="figure"&gt;
-&lt;img src="https://dev-to-uploads.s3.amazonaws.com/uploads/articles/zglcinhbzlze6u59qrl6.png" alt="" /&gt;
-&lt;p class="caption"&gt;Image description&lt;/p&gt;
-&lt;/div&gt;
+&lt;p&gt;&lt;img src="https://r0mymendez.github.io//posts_en/2024-08-20-my-preparation-journey-for-github-fundamentals-certification/img/img-2.png" /&gt;&lt;/p&gt;
 &lt;hr /&gt;
 &lt;h1 id="github-foundations-learning-path"&gt;🟠 GitHub Foundations Learning Path&lt;/h1&gt;
 &lt;p&gt;In order to effectively study and understand all the essential content for the certification, I completed the &lt;a href="https://learn.microsoft.com/en-us/collections/o1njfe825p602p"&gt;&lt;strong&gt;‘GitHub Foundations Learning Path’&lt;/strong&gt;&lt;/a&gt; provided by &lt;strong&gt;Microsoft Learn&lt;/strong&gt;. This path consists of 15 modules, totaling approximately ⌛ 10 hours, with each module averaging about ⌛ 35 minutes. The journey combines 📚 theoretical knowledge with ✏️hands-on exercises, enabling me to effectively learn and apply the concepts.&lt;/p&gt;
@@ -60,27 +54,24 @@ on software, agile methodologies , data science and the professor life.
 &lt;hr /&gt;
 &lt;h2 id="code-management"&gt;🟠 Code Management&lt;/h2&gt;
 &lt;p&gt;&lt;strong&gt;Code management on GitHub&lt;/strong&gt; is essential for productivity and effective collaboration within development teams. Below are the key tools that facilitate this management:&lt;/p&gt;
-&lt;div class="figure"&gt;
-&lt;img src="https://dev-to-uploads.s3.amazonaws.com/uploads/articles/d0xhxcgy6t30nmeei2pf.png" alt="" /&gt;
-&lt;p class="caption"&gt;Image description&lt;/p&gt;
-&lt;/div&gt;
+&lt;p&gt;&lt;img src="https://r0mymendez.github.io//posts_en/2024-08-20-my-preparation-journey-for-github-fundamentals-certification/img/img-11.png" /&gt;&lt;/p&gt;
 &lt;hr /&gt;
 &lt;h3 id="repository"&gt;📁 Repository&lt;/h3&gt;
 &lt;p&gt;The &lt;strong&gt;repository&lt;/strong&gt; is the core component of a project on GitHub, which is where the source code, along with its version history, documentation, and other relevant resources for the project, is stored.&lt;/p&gt;
 &lt;hr /&gt;
 &lt;h3 id="pull-requests"&gt;🔄 Pull Requests&lt;/h3&gt;
 &lt;p&gt;&lt;strong&gt;Pull Requests (PRs)&lt;/strong&gt; are a fundamental tool for collaboration on GitHub. They allow developers to propose changes to the source code, which can then be reviewed and discussed by other team members before being merged into the base code.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Pull Request States&lt;/strong&gt; It is important to understand the possible states of a Pull Request (PR) on GitHub, which can be: * &lt;strong&gt;Draft&lt;/strong&gt;: PRs in draft status are still in development and not yet ready for formal review. This state allows collaborators to work on a proposal before requesting official feedback. * &lt;strong&gt;Open&lt;/strong&gt;: Open PRs are ready and available for review and discussion by project collaborators. This is where proposed changes are evaluated before deciding whether to integrate them into the base code. * &lt;strong&gt;Closed&lt;/strong&gt;: Closed PRs have not been accepted and therefore will not be merged into the project’s base code. This state may indicate that the proposal was rejected or that the author decided not to proceed with it. * &lt;strong&gt;Merged&lt;/strong&gt;: Merged PRs have been accepted, and the proposed changes have been successfully integrated with the main branch of the project. This is the final state of a successful PR.&lt;/p&gt;
-&lt;table&gt;
-&lt;tbody&gt;
-&lt;tr class="odd"&gt;
-&lt;td&gt;### 🔧 Issues&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr class="even"&gt;
-&lt;td&gt;&lt;strong&gt;Issues&lt;/strong&gt; are tracking tickets used to report bugs, suggest improvements, or discuss new features. They are essential for planning and organizing work within a project, allowing teams to prioritize tasks and track progress.&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
+&lt;p&gt;&lt;strong&gt;Pull Request States&lt;/strong&gt; It is important to understand the possible states of a Pull Request (PR) on GitHub, which can be:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;Draft&lt;/strong&gt;: PRs in draft status are still in development and not yet ready for formal review. This state allows collaborators to work on a proposal before requesting official feedback.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;Open&lt;/strong&gt;: Open PRs are ready and available for review and discussion by project collaborators. This is where proposed changes are evaluated before deciding whether to integrate them into the base code.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;Closed&lt;/strong&gt;: Closed PRs have not been accepted and therefore will not be merged into the project’s base code. This state may indicate that the proposal was rejected or that the author decided not to proceed with it.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;Merged&lt;/strong&gt;: Merged PRs have been accepted, and the proposed changes have been successfully integrated with the main branch of the project. This is the final state of a successful PR.&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr /&gt;
+&lt;h3 id="issues"&gt;🔧 Issues&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Issues&lt;/strong&gt; are tracking tickets used to report bugs, suggest improvements, or discuss new features. They are essential for planning and organizing work within a project, allowing teams to prioritize tasks and track progress.&lt;/p&gt;
+&lt;hr /&gt;
 &lt;h3 id="discussions"&gt;💬 Discussions&lt;/h3&gt;
 &lt;p&gt;&lt;strong&gt;Discussions on GitHub&lt;/strong&gt; provide a space where collaborators can engage in broader conversations about the project. These discussions can be organized into several categories:&lt;/p&gt;
 &lt;ul&gt;
@@ -95,16 +86,14 @@ on software, agile methodologies , data science and the professor life.
 &lt;h2 id="gists"&gt;📁 Gists&lt;/h2&gt;
 &lt;p&gt;&lt;strong&gt;Gists&lt;/strong&gt; are a simple way to share snippets of code or text. They can be public, accessible to anyone, or private, visible only to the creator or those with whom the link is shared. Gists are useful for quickly sharing code examples, notes, or scripts among collaborators or with the broader community.&lt;/p&gt;
 &lt;hr /&gt;
-&lt;p&gt;## 🟠 Accounts This is one of the topics where you may encounter questions, and within the recommended learning path, you can find three types of accounts:&lt;/p&gt;
+&lt;h3 id="accounts"&gt;🟠 Accounts&lt;/h3&gt;
+&lt;p&gt;This is one of the topics where you may encounter questions, and within the recommended learning path, you can find three types of accounts:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;👥Personal Account&lt;/strong&gt;: This is the basic account for individual users, allowing them to own and manage repositories, packages, and projects.&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;🏢 Organization Account&lt;/strong&gt;: Allows multiple users to collaborate on shared projects.&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;💼 Enterprise Account&lt;/strong&gt;: Designed for large companies, it enables centralized management of policies and billing for multiple organizations.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;div class="figure"&gt;
-&lt;img src="https://dev-to-uploads.s3.amazonaws.com/uploads/articles/y05ex70p6a2ftcpgt0fi.png" alt="" /&gt;
-&lt;p class="caption"&gt;Image description&lt;/p&gt;
-&lt;/div&gt;
+&lt;p&gt;&lt;img src="https://r0mymendez.github.io//posts_en/2024-08-20-my-preparation-journey-for-github-fundamentals-certification/img/img-3.png" /&gt;&lt;/p&gt;
 &lt;p&gt;Additionally, the existing plans are:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;p&gt;&lt;strong&gt;GitHub Free:&lt;/strong&gt; Provides the essentials for individuals and organizations, with limited storage and GitHub Actions minutes.&lt;/p&gt;&lt;/li&gt;
@@ -122,10 +111,7 @@ on software, agile methodologies , data science and the professor life.
 &lt;blockquote&gt;
 &lt;p&gt;⚠️ Remember that this is my approach to studying for the certification, and you might find that the learning path or other resources refer to these methodologies differently.&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;div class="figure"&gt;
-&lt;img src="https://dev-to-uploads.s3.amazonaws.com/uploads/articles/c8v4lwqmgmlietu383k9.png" alt="" /&gt;
-&lt;p class="caption"&gt;Image description&lt;/p&gt;
-&lt;/div&gt;
+&lt;p&gt;&lt;img src="https://r0mymendez.github.io//posts_en/2024-08-20-my-preparation-journey-for-github-fundamentals-certification/img/img-4.png" /&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;p&gt;&lt;strong&gt;🔀 GitHub Flow:&lt;/strong&gt; A workflow that utilizes specific components (branches, commits, and pull requests) to collaborate and experiment with new features or fixes in a software project.&lt;/p&gt;&lt;/li&gt;
 &lt;li&gt;&lt;p&gt;&lt;strong&gt;🔄 InnerSource:&lt;/strong&gt; Involves adopting open-source practices and principles, such as transparency and collaboration, within an organization. This means projects are shared internally, allowing any team member to access, modify, and contribute to the code, similar to an open-source project but within the organization.&lt;/p&gt;&lt;/li&gt;
@@ -143,8 +129,14 @@ on software, agile methodologies , data science and the professor life.
 &lt;li&gt;&lt;strong&gt;Support and Recognition&lt;/strong&gt;: Find the Sponsor button on a project’s main page if it’s eligible for sponsorship. You can select the sponsorship tier and decide if you want your contribution to be public.&lt;/li&gt;
 &lt;/ul&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;img src="https://dev-to-uploads.s3.amazonaws.com/uploads/articles/xc00933jcnkpg1c0xb4q.png" alt="Image description" /&gt; &amp;gt; source: &lt;a href="https://learn.microsoft.com/en-us/training/modules/contribute-open-source/2-identify"&gt;Identify where you can help&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://dev-to-uploads.s3.amazonaws.com/uploads/articles/2nmcv7bi8kyw98jd8aeu.png" alt="Image description" /&gt; &amp;gt; source: &lt;a href="https://learn.microsoft.com/en-us/training/modules/contribute-open-source/2-identify"&gt;Identify where you can help&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://r0mymendez.github.io//posts_en/2024-08-20-my-preparation-journey-for-github-fundamentals-certification/img/github-sponsor.png" /&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;source: &lt;a href="https://learn.microsoft.com/en-us/training/modules/contribute-open-source/2-identify"&gt;Identify where you can help&lt;/a&gt;&lt;/p&gt;
+&lt;div class="figure"&gt;
+&lt;img src="https://r0mymendez.github.io//posts_en/2024-08-20-my-preparation-journey-for-github-fundamentals-certification/img/github-tier.png" alt="" /&gt;
+&lt;p class="caption"&gt;source: &lt;a href="https://learn.microsoft.com/en-us/training/modules/contribute-open-source/2-identify"&gt;Identify where you can help&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;/blockquote&gt;
 &lt;hr /&gt;
 &lt;h2 id="communication"&gt;🟠 Communication&lt;/h2&gt;
 &lt;p&gt;Communication within a repository is essential and encompasses the detailed documentation of objectives, changes, methodologies, and rules to be applied. Below are the main tools and practices that facilitate this communication:&lt;/p&gt;
@@ -152,21 +144,18 @@ on software, agile methodologies , data science and the professor life.
 &lt;li&gt;&lt;p&gt;&lt;strong&gt;📄 README File:&lt;/strong&gt; The README file is the first line of communication in a project. It should contain essential information about the project’s purpose, how to use it, how to set it up, and any other relevant details that users and collaborators need to know.&lt;/p&gt;&lt;/li&gt;
 &lt;li&gt;&lt;p&gt;&lt;strong&gt;📚 Wiki:&lt;/strong&gt; This section is designed to host more extensive and detailed documentation. Unlike the README, which is brief and direct, the Wiki is ideal for sharing content such as use cases, examples, design principles, technical details, and any other aspects that require a more in-depth explanation.&lt;/p&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;div class="figure"&gt;
-&lt;img src="https://dev-to-uploads.s3.amazonaws.com/uploads/articles/gbwrwdyfccvywl1nhzzt.png" alt="" /&gt;
-&lt;p class="caption"&gt;Image description&lt;/p&gt;
-&lt;/div&gt;
+&lt;p&gt;&lt;img src="https://r0mymendez.github.io//posts_en/2024-08-20-my-preparation-journey-for-github-fundamentals-certification/img/img-5.png" /&gt;&lt;/p&gt;
 &lt;h3 id="markdown"&gt;📝 Markdown&lt;/h3&gt;
 &lt;p&gt;&lt;strong&gt;Markdown is a markup language&lt;/strong&gt; that provides a simple and efficient way to format and style content in issues, README files, wikis, and any other textual documentation within a repository.&lt;/p&gt;
 &lt;p&gt;If you’re not familiar with Markdown, I recommend checking out the &lt;a href="https://www.datacamp.com/cheat-sheet/markdown-cheat-sheet-23"&gt;DataCamp CheatSheet&lt;/a&gt;, which summarizes everything you need to get started. Additionally, within the chapter, there’s an exercise titled &lt;a href="https://learn.microsoft.com/en-us/training/modules/communicate-using-markdown/3-communicating-using-markdown"&gt;“Exercise - Communicate using Markdown”&lt;/a&gt; that will allow you to apply and reinforce your practice using markdown.&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://dev-to-uploads.s3.amazonaws.com/uploads/articles/0dz4fszrs88sys70kj8q.png" alt="Image description" /&gt; &amp;gt; source: &lt;a href="https://www.datacamp.com/cheat-sheet/markdown-cheat-sheet-23"&gt;DataCamp CheatSheet&lt;/a&gt;&lt;/p&gt;
+&lt;div class="figure"&gt;
+&lt;img src="https://r0mymendez.github.io//posts_en/2024-08-20-my-preparation-journey-for-github-fundamentals-certification/img/makdown-datacamp.png" width="576" alt="" /&gt;
+&lt;p class="caption"&gt;source: &lt;a href="https://www.datacamp.com/cheat-sheet/markdown-cheat-sheet-23"&gt;DataCamp CheatSheet&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
 &lt;hr /&gt;
 &lt;h2 id="products"&gt;🟠 Products&lt;/h2&gt;
 &lt;p&gt;I have titled this section &lt;strong&gt;“Products”&lt;/strong&gt; as it includes two chapters dedicated to two key products. One of these products leverages AI, while the other focuses on enhancing productivity.&lt;/p&gt;
-&lt;div class="figure"&gt;
-&lt;img src="https://dev-to-uploads.s3.amazonaws.com/uploads/articles/iw6n4ksgt9fa4lwp6vhu.png" alt="" /&gt;
-&lt;p class="caption"&gt;Image description&lt;/p&gt;
-&lt;/div&gt;
+&lt;p&gt;&lt;img src="https://r0mymendez.github.io//posts_en/2024-08-20-my-preparation-journey-for-github-fundamentals-certification/img/img-6.png" /&gt;&lt;/p&gt;
 &lt;h3 id="github-copilot"&gt;🚀 GitHub Copilot&lt;/h3&gt;
 &lt;p&gt;&lt;strong&gt;GitHub Copilot&lt;/strong&gt; is an AI-powered assistance tool for developers. Its main features include:&lt;/p&gt;
 &lt;ul&gt;
@@ -190,40 +179,26 @@ on software, agile methodologies , data science and the professor life.
 &lt;h2 id="project"&gt;🟠 Project&lt;/h2&gt;
 &lt;p&gt;GitHub has introduced new types of projects that significantly enhance productivity and project management. While previously existing projects focused primarily on code management, the new GitHub Projects integrate key elements that allow you to manage not only the code but also the broader aspects of project management within a single tool.&lt;/p&gt;
 &lt;p&gt;This new approach aims to streamline workflows, provide more comprehensive tracking, and improve collaboration. It’s important to note that there may be questions about the differences between the previous project types and these new ones. In the following sections, I’ll highlight the functionalities and benefits of the new project types, helping you understand how they differ from the old ones and how they can be utilized to optimize project management.&lt;/p&gt;
-&lt;div class="figure"&gt;
-&lt;img src="https://dev-to-uploads.s3.amazonaws.com/uploads/articles/tke86h7pa4nbw8i1p9ac.png" alt="" /&gt;
-&lt;p class="caption"&gt;Image description&lt;/p&gt;
-&lt;/div&gt;
+&lt;p&gt;&lt;img src="https://r0mymendez.github.io//posts_en/2024-08-20-my-preparation-journey-for-github-fundamentals-certification/img/img-7.png" /&gt;&lt;/p&gt;
 &lt;h3 id="view"&gt;📋 View&lt;/h3&gt;
 &lt;p&gt;In GitHub Projects, tasks are represented as issues and can include key details such as title, description, assignee, start date, and complexity. These issues can be customized with various field types like text, number, date, single selection (for dropdown lists), or iteration to better suit your needs.&lt;/p&gt;
 &lt;p&gt;The types of views that can be generated are:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;📄 Table&lt;/strong&gt;: A &lt;code&gt;tabular view&lt;/code&gt; that organizes issues in a table format. This view is primarily used to view and manage detailed information on multiple issues simultaneously, facilitating comparison and bulk editing of data.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;div class="figure"&gt;
-&lt;img src="https://dev-to-uploads.s3.amazonaws.com/uploads/articles/x5co16lpvjngf3wxz50k.png" alt="" /&gt;
-&lt;p class="caption"&gt;Image description&lt;/p&gt;
-&lt;/div&gt;
+&lt;p&gt;&lt;img src="https://r0mymendez.github.io//posts_en/2024-08-20-my-preparation-journey-for-github-fundamentals-certification/img/github-project-table.png" /&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;📋 Board&lt;/strong&gt;: A &lt;code&gt;card-based view&lt;/code&gt; where issues are organized into columns, typically by status or category. This view is primarily used to visualize the workflow of issues through different stages, aiding task management and progress tracking.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;div class="figure"&gt;
-&lt;img src="https://dev-to-uploads.s3.amazonaws.com/uploads/articles/utdpk9bbsg02m63n11pl.png" alt="" /&gt;
-&lt;p class="caption"&gt;Image description&lt;/p&gt;
-&lt;/div&gt;
+&lt;p&gt;&lt;img src="https://r0mymendez.github.io//posts_en/2024-08-20-my-preparation-journey-for-github-fundamentals-certification/img/github-project-board.png" /&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;⌛ Roadmap&lt;/strong&gt;: A graphical view that shows a timeline of issues and the associated milestones. This view is primarily used for planning and visualizing the long-term evolution of projects, helping to identify dependencies and delivery schedules.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;div class="figure"&gt;
-&lt;img src="https://dev-to-uploads.s3.amazonaws.com/uploads/articles/miggcki6v4cgbnsw76j4.png" alt="" /&gt;
-&lt;p class="caption"&gt;Image description&lt;/p&gt;
-&lt;/div&gt;
-&lt;p&gt;### 📊 Insights &lt;strong&gt;Insights in Projects&lt;/strong&gt; allows you to &lt;code&gt;visualize&lt;/code&gt;, &lt;code&gt;create&lt;/code&gt;, and &lt;code&gt;customize&lt;/code&gt; &lt;code&gt;charts&lt;/code&gt; using the elements added to your Project as data sources. When creating a chart, you can define filters, the type of chart, and the information to be displayed. The generated charts are available to anyone with access to the Project.&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://r0mymendez.github.io//posts_en/2024-08-20-my-preparation-journey-for-github-fundamentals-certification/img/github-project-roadmap.png" /&gt;&lt;/p&gt;
+&lt;h3 id="insights"&gt;📊 Insights&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Insights in Projects&lt;/strong&gt; allows you to &lt;code&gt;visualize&lt;/code&gt;, &lt;code&gt;create&lt;/code&gt;, and &lt;code&gt;customize&lt;/code&gt; &lt;code&gt;charts&lt;/code&gt; using the elements added to your Project as data sources. When creating a chart, you can define filters, the type of chart, and the information to be displayed. The generated charts are available to anyone with access to the Project.&lt;/p&gt;
 &lt;p&gt;These charts enable you to analyze and manage the project, enhancing your ability to plan, control, and assess the project’s progress.&lt;/p&gt;
-&lt;div class="figure"&gt;
-&lt;img src="https://dev-to-uploads.s3.amazonaws.com/uploads/articles/w5hiqzb4jsacglm3pcgf.png" alt="" /&gt;
-&lt;p class="caption"&gt;Image description&lt;/p&gt;
-&lt;/div&gt;
+&lt;p&gt;&lt;img src="https://r0mymendez.github.io//posts_en/2024-08-20-my-preparation-journey-for-github-fundamentals-certification/img/github-insights.png" /&gt;&lt;/p&gt;
 &lt;hr /&gt;
 &lt;h3 id="task-automation"&gt;🤖 Task Automation&lt;/h3&gt;
 &lt;p&gt;Task automation on GitHub is important for improving efficiency and consistency in project management. The following are the key tools that facilitate this automation:&lt;/p&gt;
@@ -235,10 +210,7 @@ on software, agile methodologies , data science and the professor life.
 &lt;hr /&gt;
 &lt;h2 id="security"&gt;🟠 Security&lt;/h2&gt;
 &lt;p&gt;Security is a fundamental aspect within GitHub, which provides a range of tools and best practices to enhance security in software development.&lt;/p&gt;
-&lt;div class="figure"&gt;
-&lt;img src="https://dev-to-uploads.s3.amazonaws.com/uploads/articles/l3fwc8ebhvaz1ecszvfk.png" alt="" /&gt;
-&lt;p class="caption"&gt;Image description&lt;/p&gt;
-&lt;/div&gt;
+&lt;p&gt;&lt;img src="https://r0mymendez.github.io//posts_en/2024-08-20-my-preparation-journey-for-github-fundamentals-certification/img/img-8.png" /&gt;&lt;/p&gt;
 &lt;h3 id="authentication-access-controls"&gt;🔐 Authentication &amp;amp; Access Controls&lt;/h3&gt;
 &lt;p&gt;Access to your GitHub account can be enhanced with advanced authentication methods that validate user identity more securely. * &lt;strong&gt;SAML SSO Authentication&lt;/strong&gt;: Allows user authentication through a centralized Identity Provider (IdP), enhancing security and access control. * &lt;strong&gt;Multifactor Authentication (2FA)&lt;/strong&gt;: Adds an extra layer of security through two-step authentication, which may include physical security keys and time-based one-time password (TOTP) applications.&lt;/p&gt;
 &lt;hr /&gt;
@@ -247,7 +219,7 @@ on software, agile methodologies , data science and the professor life.
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;Dependabot Alerts&lt;/strong&gt;: Detects and notifies you about vulnerable dependencies in your project, helping you keep your libraries and packages up to date.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;img src="https://dev-to-uploads.s3.amazonaws.com/uploads/articles/bioc57da3wh2i1fyqwdc.png" alt="Image description" /&gt; &amp;gt; source:&lt;a href="https://learn.microsoft.com/en-us/training/modules/maintain-secure-repository-github/3-security-automation"&gt;Automated security&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://r0mymendez.github.io//posts_en/2024-08-20-my-preparation-journey-for-github-fundamentals-certification/img/github-dependabot-alerts.png" alt="Image description" /&gt; &amp;gt; source:&lt;a href="https://learn.microsoft.com/en-us/training/modules/maintain-secure-repository-github/3-security-automation"&gt;Automated security&lt;/a&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;Code Scanning&lt;/strong&gt;: Analyzes your code for vulnerabilities and errors. It can be customized using CodeQL, allowing you to detect and fix security issues before they become risks. Integration with other tools like SonarQube or Policy Validator for Terraform by Amazon Web Services is also possible.&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;Secret Scanning&lt;/strong&gt;: Automatically scans the repository for exposed credentials or secrets, helping to prevent misuse of sensitive information.&lt;/li&gt;
@@ -264,10 +236,7 @@ on software, agile methodologies , data science and the professor life.
 &lt;hr /&gt;
 &lt;h2 id="types-of-search-on-github"&gt;🟠 Types of Search on GitHub&lt;/h2&gt;
 &lt;p&gt;On GitHub, you can use advanced search to efficiently navigate repositories, find issues, review pull requests, and join discussions. Here are some practical examples to enhance your search capabilities and collaboration on projects:&lt;/p&gt;
-&lt;div class="figure"&gt;
-&lt;img src="https://dev-to-uploads.s3.amazonaws.com/uploads/articles/qxrio1hx44a3of7e07d5.png" alt="" /&gt;
-&lt;p class="caption"&gt;Image description&lt;/p&gt;
-&lt;/div&gt;
+&lt;p&gt;&lt;img src="https://r0mymendez.github.io//posts_en/2024-08-20-my-preparation-journey-for-github-fundamentals-certification/img/img-9.png" /&gt;&lt;/p&gt;
 &lt;h3 id="search-examples"&gt;Search Examples&lt;/h3&gt;
 &lt;h4 id="repositories"&gt;🔎 Repositories&lt;/h4&gt;
 &lt;ul&gt;
@@ -313,10 +282,7 @@ on software, agile methodologies , data science and the professor life.
 &lt;pre&gt;&lt;code&gt;topic:machine-learning stars:&amp;gt;1000 is:issue label:help-wanted language:python is:open&lt;/code&gt;&lt;/pre&gt;
 &lt;hr /&gt;
 &lt;h2 id="summary"&gt;🟠 Summary&lt;/h2&gt;
-&lt;div class="figure"&gt;
-&lt;img src="https://dev-to-uploads.s3.amazonaws.com/uploads/articles/jc3y99y7tyv9r2dny6p7.png" alt="" /&gt;
-&lt;p class="caption"&gt;Image description&lt;/p&gt;
-&lt;/div&gt;
+&lt;p&gt;&lt;img src="https://r0mymendez.github.io//posts_en/2024-08-20-my-preparation-journey-for-github-fundamentals-certification/img/img-10.png" /&gt;&lt;/p&gt;
 &lt;hr /&gt;
 &lt;h2 id="references"&gt;📚 References&lt;/h2&gt;
 &lt;p&gt;The following references were used to create this article, with the first being the primary resource and the other materials were utilized to practice and simulate the exam.&lt;/p&gt;
@@ -326,6 +292,7 @@ on software, agile methodologies , data science and the professor life.
 &lt;li&gt;&lt;strong&gt;Study Guide GitHub Foundations&lt;/strong&gt;: A PDF guide for studying and preparing for the exam. &lt;a href="https://assets.ctfassets.net/wfutmusr1t3h/1kmMx7AwI4qH8yIZgOmQlP/79e6ff1dfdee589d84a24dd763b1eef7/github-foundations-exam-study-guide__1_.pdf"&gt;Study Guide GitHub Foundations&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;GitHub Foundations Certification – Exam Prep Guide&lt;/strong&gt;: This is a post in FreeCodeCamp blog and it is content very helpful, and this post provides a good summary of everything you should know for exam preparation. &lt;a href="https://www.freecodecamp.org/news/github-foundations-certified-exam-prep-guide/"&gt;GitHub Foundations Certification – Exam Prep Guide&lt;/a&gt;&lt;/li&gt;
 &lt;/ol&gt;
+&lt;h2 id="section"&gt;&lt;/h2&gt;
 &lt;pre class="r distill-force-highlighting-css"&gt;&lt;code&gt;&lt;/code&gt;&lt;/pre&gt;</description>
       <distill:md5>676c6f23c55726e59407c6fcfbb81e9c</distill:md5>
       <category>DevOps</category>
@@ -333,7 +300,7 @@ on software, agile methodologies , data science and the professor life.
       <category>Methodologies</category>
       <guid>https://r0mymendez.github.io/posts_en/2024-08-20-my-preparation-journey-for-github-fundamentals-certification</guid>
       <pubDate>Mon, 19 Aug 2024 00:00:00 +0000</pubDate>
-      <media:content url="https://r0mymendez.github.io/posts_en/2024-08-20-my-preparation-journey-for-github-fundamentals-certification/preview.jpg" medium="image" type="image/jpeg"/>
+      <media:content url="https://r0mymendez.github.io/posts_en/2024-08-20-my-preparation-journey-for-github-fundamentals-certification/preview.png" medium="image" type="image/png" width="3386" height="1301"/>
     </item>
     <item>
       <title>Employing AWS Comprehend Medical for Medical Data Extraction in Healthcare Analytics</title>
