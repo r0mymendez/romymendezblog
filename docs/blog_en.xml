@@ -13,7 +13,223 @@ on software, agile methodologies , data science and the professor life.
       <link>https://r0mymendez.github.io/</link>
     </image>
     <generator>Distill</generator>
-    <lastBuildDate>Wed, 01 Jan 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 09 Jan 2025 00:00:00 +0000</lastBuildDate>
+    <item>
+      <title>Diagram-as-Code: Creating Dynamic and Interactive Documentation for Visual Content</title>
+      <dc:creator>Romina Mendez</dc:creator>
+      <link>https://r0mymendez.github.io/posts_en/2025-01-10-diagram-as-code-creating-dynamic-and-interactive-documentation-for-visual-content</link>
+      <description>
+
+
+&lt;h1 id="diagram-as-code"&gt;🎨 Diagram as code&lt;/h1&gt;
+&lt;p&gt;&lt;strong&gt;Diagram as Code&lt;/strong&gt; is an approach that allows you to create diagrams through code instead of traditional graphic tools. Instead of manually building diagrams, you can write code in a text file to define the structure, components, and connections of your diagrams.&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://r0mymendez.github.io//posts_en/2025-01-10-diagram-as-code-creating-dynamic-and-interactive-documentation-for-visual-content/preview.png" /&gt;&lt;/p&gt;
+&lt;p&gt;This code is then translated into graphical images, making it easier to integrate and document in software projects, where it is especially useful for creating and updating architectural and flow diagrams programmatically.&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h1 id="what-is-diagrams"&gt;What is Diagrams?&lt;/h1&gt;
+&lt;p&gt;&lt;strong&gt;Diagrams&lt;/strong&gt; is a &lt;strong&gt;🐍Python library&lt;/strong&gt; that implements the Diagram as Code approach, enabling you to create architectural infrastructure diagrams and other types of diagrams through code. With Diagrams, you can easily define cloud infrastructure components (such as &lt;code&gt;AWS&lt;/code&gt;, &lt;code&gt;Azure&lt;/code&gt;, and &lt;code&gt;GCP&lt;/code&gt;), network elements, software services, and more, all with just a few lines of code.&lt;/p&gt;
+&lt;h3 id="benefits-of-diagram-as-code"&gt;🎉 Benefits of Diagram-as-Code&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;📝 &lt;strong&gt;Representation of Diagrams as Code&lt;/strong&gt;: Create and update diagrams directly from code, ensuring maintainability in agile projects.&lt;/li&gt;
+&lt;li&gt;📑 &lt;strong&gt;Automated Documentation&lt;/strong&gt;: Generate visuals from code, keeping diagrams aligned with the current architecture.&lt;/li&gt;
+&lt;li&gt;🔄 &lt;strong&gt;Change Control&lt;/strong&gt;: Track diagram modifications over time.&lt;/li&gt;
+&lt;li&gt;🔍 &lt;strong&gt;Enhanced Clarity&lt;/strong&gt;: Improve understanding of complex systems with clear, shared visuals.&lt;/li&gt;
+&lt;li&gt;✏️ &lt;strong&gt;Customizable&lt;/strong&gt;: Represent cloud infrastructures, workflows, or data pipelines with flexible and tailored visuals.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr /&gt;
+&lt;h1 id="tutorial"&gt;Tutorial&lt;/h1&gt;
+&lt;h2 id="library-installation"&gt;🐍 Library Installation&lt;/h2&gt;
+&lt;p&gt;I was currently using version &lt;code&gt;'0.23.4'&lt;/code&gt; for this tutorial.&lt;/p&gt;
+&lt;pre class="python"&gt;&lt;code&gt;!pip install diagrams==&amp;#39;0.23.4&amp;#39;&lt;/code&gt;&lt;/pre&gt;
+&lt;hr /&gt;
+&lt;h1 id="diagrams-nodes"&gt;🎨 Diagrams: Nodes&lt;/h1&gt;
+&lt;p&gt;The library allows you to create architectural diagrams programmatically, using nodes to represent different infrastructure components and services.&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h2 id="node-types"&gt;Node Types&lt;/h2&gt;
+&lt;p&gt;Nodes in Diagrams represent components from different cloud service providers as well as other architectural elements. Here are the main categories of available nodes:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;☁️ &lt;strong&gt;Cloud Providers&lt;/strong&gt;: AWS (Amazon Web Services), Azure, GCP, IBM Cloud, Alibaba Cloud, Oracle Cloud, DigitalOcean, among others.&lt;/li&gt;
+&lt;li&gt;🏢 &lt;strong&gt;On-Premise&lt;/strong&gt;: Represents the infrastructure physically located on the company’s premises.&lt;/li&gt;
+&lt;li&gt;🚢 &lt;strong&gt;Kubernetes (K8S)&lt;/strong&gt;: Container orchestration system to automate the deployment, scaling, and management of containerized applications (represented by a ship’s wheel, symbolizing control and navigation).&lt;/li&gt;
+&lt;li&gt;🖥️ &lt;strong&gt;OpenStack&lt;/strong&gt;: Open-source software platform for creating and managing public and private clouds.&lt;/li&gt;
+&lt;li&gt;🔧 &lt;strong&gt;Generic&lt;/strong&gt;: Generic nodes that can represent any component not specifically covered by provider-specific nodes (crossed tools, representing different tools in one category).&lt;/li&gt;
+&lt;li&gt;☁️ &lt;strong&gt;SaaS (Software as a Service)&lt;/strong&gt;: Represents applications delivered as a service over the internet, such as Snowflake, chat services (Slack, Teams, Telegram, among others), security (e.g., Okta), or social networks (crossed out phone and cloud for the SaaS concept).&lt;/li&gt;
+&lt;li&gt;🔧 &lt;strong&gt;Custom&lt;/strong&gt;: Allows users to customize their diagrams using PNG icons stored in a specific folder. This is useful for representing infrastructure components not covered by the default nodes (crossed-out custom tools).&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr /&gt;
+&lt;h2 id="programming-languages"&gt;💻 Programming Languages&lt;/h2&gt;
+&lt;p&gt;The &lt;strong&gt;Diagrams&lt;/strong&gt; library allows you to use different nodes to represent various programming languages. These nodes are helpful for indicating in your diagrams if any part of your architecture utilizes scripts or components developed in a specific programming language.&lt;/p&gt;
+&lt;p&gt;Below, we will showcase all the available languages in the library. If any language is missing, you can add custom nodes by uploading the corresponding logo into a specific folder.&lt;/p&gt;
+&lt;pre class="python"&gt;&lt;code&gt;# Create the diagram object
+with diagrams.Diagram(&amp;quot;Programming Languages&amp;quot;, show=False, filename=&amp;quot;languages&amp;quot;):
+    # Get all the languages available in this library
+    languages = [item for item in dir(diagrams.programming.language) if item[0] != &amp;#39;_&amp;#39;]
+
+    # Divide the representation in two lines
+    mid_index = len(languages) // 2
+    first_line = languages[:mid_index]
+    second_line = languages[mid_index:]
+
+    # Add nodes in the first row
+    prev_node = None
+
+    for language in first_line:
+        current_node = eval(f&amp;quot;diagrams.programming.language.{language}(language)&amp;quot;)
+        if prev_node is not None:
+            prev_node &amp;gt;&amp;gt; current_node
+        prev_node = current_node
+
+    # Add nodes in the second row
+    prev_node = None
+
+    for language in second_line:
+        current_node = eval(f&amp;quot;diagrams.programming.language.{language}(language)&amp;quot;)
+        if prev_node is not None:
+            prev_node &amp;gt;&amp;gt; current_node
+        prev_node = current_node
+
+Image(&amp;quot;languages.png&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src="https://r0mymendez.github.io//posts_en/2025-01-10-diagram-as-code-creating-dynamic-and-interactive-documentation-for-visual-content/img/language.png" /&gt;&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h2 id="aws-amazon-web-services"&gt;☁️ AWS (Amazon Web Services)&lt;/h2&gt;
+&lt;p&gt;We can use Amazon nodes, which are organized into several categories, such as:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Analytics and Business&lt;/strong&gt;: aws.analytics, aws.business&lt;br /&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Compute and Storage&lt;/strong&gt;: aws.compute, aws.storage, aws.cost&lt;br /&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Database and DevTools&lt;/strong&gt;: aws.database, aws.devtools&lt;br /&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Integration and Management&lt;/strong&gt;: aws.integration, aws.management&lt;br /&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Machine Learning and Mobile&lt;/strong&gt;: aws.ml, aws.mobile&lt;br /&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Networking and Security&lt;/strong&gt;: aws.network, aws.security&lt;br /&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Others&lt;/strong&gt;: aws.blockchain, aws.enduser, aws.engagement, aws.game, aws.general, aws.iot, aws.media, aws.migration, aws.quantum, aws.robotics, aws.satellite&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Next, we will represent one of these categories to visualize the available nodes within &lt;code&gt;aws.database&lt;/code&gt;.&lt;/p&gt;
+&lt;pre class="python"&gt;&lt;code&gt;from diagrams import Diagram
+from IPython.display import Image
+import diagrams.aws.database as aws_database
+
+
+database_components = []
+for item in dir(aws_database):
+    if item[0] != &amp;#39;_&amp;#39;:
+        if not any(comp.startswith(item) or item.startswith(comp) for comp in database_components):
+            database_components.append(item)
+
+
+with Diagram(&amp;quot;AWS Database&amp;quot;, show=False, filename=&amp;quot;aws_database&amp;quot;):
+    mid_index = len(database_components) // 2
+    first_line = database_components[:mid_index]
+    second_line = database_components[mid_index:]
+
+
+    prev_node = None
+    for item_database in first_line:
+        current_node = eval(f&amp;quot;aws_database.{item_database}(item_database)&amp;quot;)
+        if prev_node is not None:
+            prev_node &amp;gt;&amp;gt; current_node
+        prev_node = current_node
+
+
+    prev_node = None
+    for item_database in second_line:
+        current_node = eval(f&amp;quot;aws_database.{item_database}(item_database)&amp;quot;)
+        if prev_node is not None:
+            prev_node &amp;gt;&amp;gt; current_node
+        prev_node = current_node
+
+Image(&amp;quot;aws_database.png&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src="https://r0mymendez.github.io//posts_en/2025-01-10-diagram-as-code-creating-dynamic-and-interactive-documentation-for-visual-content/img/database.jpeg" /&gt;&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h2 id="use-case"&gt;☁️ Use Case&lt;/h2&gt;
+&lt;p&gt;Now, let’s create a simple blueprint that corresponds to importing a dataset and training a machine learning model on &lt;strong&gt;AWS&lt;/strong&gt;.&lt;/p&gt;
+&lt;pre class="python"&gt;&lt;code&gt;from diagrams import Diagram, Cluster
+from diagrams.aws.storage import S3
+from diagrams.aws.analytics import Glue, Athena
+import diagrams.aws.ml as ml
+from diagrams.aws.integration import StepFunctions
+from diagrams.aws.compute import Lambda
+from diagrams.aws.network import APIGateway
+from IPython.display import Image
+
+with Diagram(&amp;quot;AWS Data Processing Pipeline&amp;quot;, show=False):
+
+    lambda_raw = Lambda(&amp;#39;Get Raw Data&amp;#39;)
+    # Buckets de S3
+    with Cluster(&amp;quot;Data Lake&amp;quot;):
+        s3_rawData = S3(&amp;quot;raw_data&amp;quot;)
+        s3_stage = S3(&amp;quot;staging_data&amp;quot;)
+        s3_data_capture = S3(&amp;quot;data_capture&amp;quot;)
+
+
+    athena = Athena(&amp;quot;Athena&amp;quot;)
+    s3_rawData &amp;gt;&amp;gt; athena
+    s3_stage &amp;gt;&amp;gt; athena
+    s3_data_capture &amp;gt;&amp;gt; athena
+
+    #  Step Functions Pipeline
+    with Cluster(&amp;quot;Data Processing Pipeline&amp;quot;):
+        step_functions = StepFunctions(&amp;quot;Pipeline&amp;quot;)
+
+        # Glue Jobs in Step Functions
+        with Cluster(&amp;quot;Glue Jobs&amp;quot;):
+            data_quality = Glue(&amp;quot;job_data_quality&amp;quot;)
+            transform = Glue(&amp;quot;job_data_transform&amp;quot;)
+            dataset_preparation = Glue(&amp;quot;job_dataset_model&amp;quot;)
+
+        # Define Step Functions Flows
+        step_functions &amp;gt;&amp;gt; data_quality &amp;gt;&amp;gt; transform &amp;gt;&amp;gt; dataset_preparation
+        s3_rawData &amp;gt;&amp;gt; data_quality
+
+    # SageMaker for model training and deployment
+    with Cluster(&amp;quot;SageMaker Model Deployment&amp;quot;):
+        train_model = ml.SagemakerTrainingJob(&amp;quot;job_train_model&amp;quot;)
+        eval_model = ml.SagemakerGroundTruth(&amp;quot;job_evaluate_model&amp;quot;)
+        endpoint = ml.SagemakerModel(&amp;quot;model_enpoint&amp;quot;)
+
+    # API Gateway and Lambda for the endpoint
+    api_gateway = APIGateway(&amp;quot;API_gateway&amp;quot;)
+    lambda_fn = Lambda(&amp;quot;invoke_endpoint&amp;quot;)
+
+    # Connection
+    lambda_raw &amp;gt;&amp;gt; s3_rawData
+    s3_stage &amp;gt;&amp;gt; train_model &amp;gt;&amp;gt; eval_model &amp;gt;&amp;gt; endpoint
+    endpoint &amp;gt;&amp;gt; lambda_fn &amp;gt;&amp;gt; api_gateway
+    endpoint &amp;gt;&amp;gt; s3_data_capture
+    dataset_preparation &amp;gt;&amp;gt; train_model
+
+
+Image(&amp;quot;aws_data_processing_pipeline.png&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
+&lt;div class="figure"&gt;
+&lt;img src="https://r0mymendez.github.io//posts_en/2025-01-10-diagram-as-code-creating-dynamic-and-interactive-documentation-for-visual-content/img/architecture.png" alt="" /&gt;
+&lt;p class="caption"&gt;Image description&lt;/p&gt;
+&lt;/div&gt;
+&lt;hr /&gt;
+&lt;h1 id="repository"&gt;Repository&lt;/h1&gt;
+&lt;p&gt;Below are the link to all the code, if you find it useful, you can leave a star ⭐️ and follow me to receive notifications of new articles. This will help me grow in the tech community and create more content.&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://r0mymendez.github.io//posts_en/2025-01-10-diagram-as-code-creating-dynamic-and-interactive-documentation-for-visual-content/img/github.png" /&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;If you want to see how to implement a documentation site using this pipeline you can read the article I published in the following &lt;a href="https://dev.to/r0mymendez/deploying-docs-as-code-on-aws-building-dynamic-documentation-sites-in-mkdocs-and-docusaurus-3516"&gt;link&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;hr /&gt;
+&lt;h1 id="references"&gt;📚 References&lt;/h1&gt;
+&lt;ol style="list-style-type: decimal"&gt;
+&lt;li&gt;&lt;strong&gt;Diagrams:&lt;/strong&gt; &lt;a href="https://diagrams.mingrammer.com/" class="uri"&gt;https://diagrams.mingrammer.com/&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre class="r distill-force-highlighting-css"&gt;&lt;code&gt;&lt;/code&gt;&lt;/pre&gt;</description>
+      <distill:md5>3d75e92d56a59f2769d531e7e03e1d7b</distill:md5>
+      <category>Data</category>
+      <category>Python</category>
+      <category>Cloud Computing</category>
+      <category>AWS</category>
+      <guid>https://r0mymendez.github.io/posts_en/2025-01-10-diagram-as-code-creating-dynamic-and-interactive-documentation-for-visual-content</guid>
+      <pubDate>Thu, 09 Jan 2025 00:00:00 +0000</pubDate>
+      <media:content url="https://r0mymendez.github.io/posts_en/2025-01-10-diagram-as-code-creating-dynamic-and-interactive-documentation-for-visual-content/preview.png" medium="image" type="image/png" width="800" height="466"/>
+    </item>
     <item>
       <title>Efficiently Querying JSON Data in Python: Exploring the MET Museum's Artworks</title>
       <dc:creator>Romina Mendez</dc:creator>
@@ -385,7 +601,7 @@ echo &amp;quot;$json_output&amp;quot; &amp;gt; output.json&lt;/code&gt;&lt;/pre&
       <category>Cloud Computing</category>
       <category>AWS</category>
       <guid>https://r0mymendez.github.io/posts_en/2025-01-02-efficiently-querying-json-data-in-python-exploring-the-met-museums-artworks</guid>
-      <pubDate>Wed, 01 Jan 2025 00:00:00 +0000</pubDate>
+      <pubDate>Thu, 02 Jan 2025 00:00:00 +0000</pubDate>
       <media:content url="https://r0mymendez.github.io/posts_en/2025-01-02-efficiently-querying-json-data-in-python-exploring-the-met-museums-artworks/preview.png" medium="image" type="image/png" width="1333" height="580"/>
     </item>
     <item>
@@ -699,17 +915,6 @@ echo &amp;quot;$json_output&amp;quot; &amp;gt; output.json&lt;/code&gt;&lt;/pre&
       <guid>https://r0mymendez.github.io/posts_en/2024-05-26-python-projects-with-sql-strategies-for-effective-query-management</guid>
       <pubDate>Sun, 26 May 2024 00:00:00 +0000</pubDate>
       <media:content url="https://r0mymendez.github.io/posts_en/2024-05-26-python-projects-with-sql-strategies-for-effective-query-management/preview.jpg" medium="image" type="image/jpeg"/>
-    </item>
-    <item>
-      <title>Simplify Database Migrations using Python with Alembic</title>
-      <dc:creator>Romina Mendez</dc:creator>
-      <link>https://r0mymendez.github.io/posts_en/2024-04-02-simplify-database-migrations-using-python-with-alembic</link>
-      <description>In this article, you will discover how to use Alembic for database migration in 🐍Python.</description>
-      <category>Python</category>
-      <category>Database</category>
-      <guid>https://r0mymendez.github.io/posts_en/2024-04-02-simplify-database-migrations-using-python-with-alembic</guid>
-      <pubDate>Tue, 02 Apr 2024 00:00:00 +0000</pubDate>
-      <media:content url="https://r0mymendez.github.io/posts_en/2024-04-02-simplify-database-migrations-using-python-with-alembic/preview.jpg" medium="image" type="image/jpeg"/>
     </item>
   </channel>
 </rss>
