@@ -13,7 +13,381 @@ on software, agile methodologies , data science and the professor life.
       <link>https://r0mymendez.github.io/</link>
     </image>
     <generator>Distill</generator>
-    <lastBuildDate>Mon, 19 Aug 2024 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 01 Jan 2025 00:00:00 +0000</lastBuildDate>
+    <item>
+      <title>Efficiently Querying JSON Data in Python: Exploring the MET Museum's Artworks</title>
+      <dc:creator>Romina Mendez</dc:creator>
+      <link>https://r0mymendez.github.io/posts_en/2025-01-02-efficiently-querying-json-data-in-python-exploring-the-met-museums-artworks</link>
+      <description>
+
+
+&lt;p&gt;While working on several projects that required processing complex and nested &lt;strong&gt;JSON&lt;/strong&gt; data in &lt;strong&gt;🐍Python&lt;/strong&gt;, I explored various methods for handling these structures. I eventually discovered the &lt;strong&gt;JMESPath&lt;/strong&gt; library, which aims to simplify querying and filtering JSON structures.&lt;/p&gt;
+&lt;p&gt;In this article, I demonstrate how to use the &lt;strong&gt;JMESPath&lt;/strong&gt; library to query and filter &lt;strong&gt;JSON&lt;/strong&gt; data. To find a suitable dataset for these examples, I thought about one of my favorite activities when I travel: visiting museums. The 🏛️ &lt;strong&gt;Metropolitan Museum of Art (MET)&lt;/strong&gt;, one of the largest and most prestigious museums in the world, seemed like a perfect choice, as it offers an &lt;strong&gt;API&lt;/strong&gt; that provides access to a vast collection of artwork. In this article, we’ll focus on the works of &lt;strong&gt;Vincent van Gogh&lt;/strong&gt; and the collections of European painters to explore the potential of &lt;strong&gt;JMESPath&lt;/strong&gt; for effectively handling JSON data.&lt;/p&gt;
+&lt;p&gt;Additionally, I will showcase how to use &lt;strong&gt;AWS CLI&lt;/strong&gt; to interact with the data stored in a 🪣 bucket that contains the downloaded &lt;strong&gt;JSON files&lt;/strong&gt; from the MET API.&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://r0mymendez.github.io//posts_en/2025-01-02-efficiently-querying-json-data-in-python-exploring-the-met-museums-artworks/img/flow.png" /&gt;&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h2 id="met-museum-of-new-york"&gt;🏛️ MET Museum of New York&lt;/h2&gt;
+&lt;p&gt;The &lt;strong&gt;Metropolitan Museum of Art (MET)&lt;/strong&gt;, founded in &lt;code&gt;1870&lt;/code&gt; and situated in Manhattan, 🗽 New York City, stands as one of the world’s most prestigious cultural institutions. Spanning over &lt;code&gt;186,000&lt;/code&gt; square meters, the museum houses a diverse collection that encompasses more than 🖼️&lt;code&gt;5,000 years&lt;/code&gt; of art history. Through its public API, the MET offers detailed insights into its &lt;code&gt;19 departments&lt;/code&gt;, featuring an extensive array of works that range from ancient Egyptian, Greek, and Roman art to masterpieces by renowned artists such as Monet, Van Gogh, and Raphael.&lt;/p&gt;
+&lt;p&gt;The following 📊 plot illustrates the distribution of artworks across these various departments, using data retrieved from the MET’s public API.&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://r0mymendez.github.io//posts_en/2025-01-02-efficiently-querying-json-data-in-python-exploring-the-met-museums-artworks/img/met.png" /&gt;&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h2 id="introduction-to-jmespath"&gt;📄 Introduction to JMESPath&lt;/h2&gt;
+&lt;h3 id="what-is-jmespath"&gt;What is JMESPath?&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;JMESPath&lt;/strong&gt; is a query language for JSON that allows you to search, extract, and manipulate elements from a JSON document. This query language can be implemented with the Azure and AWS CLIs, where it simplifies filtering and transforming JSON data.&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://r0mymendez.github.io//posts_en/2025-01-02-efficiently-querying-json-data-in-python-exploring-the-met-museums-artworks/img/preview_flow.png" /&gt;&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h3 id="installation-of-jmespath"&gt;Installation of JMESPath&lt;/h3&gt;
+&lt;p&gt;To get started, you need to install the &lt;strong&gt;JMESPath&lt;/strong&gt; library. The version used in this tutorial is &lt;code&gt;'0.10.0'&lt;/code&gt;. Simply run the following command:&lt;/p&gt;
+&lt;pre class="bash"&gt;&lt;code&gt;pip install jmespath&lt;/code&gt;&lt;/pre&gt;
+&lt;hr /&gt;
+&lt;h2 id="json-data-structure"&gt;📄 JSON Data Structure&lt;/h2&gt;
+&lt;p&gt;JSON, or JavaScript Object Notation, is a lightweight data format commonly used for data interchange between a server and a client. Here are key elements of JSON structure:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;🏷️ Main Object:&lt;/strong&gt; The JSON object starts and ends with {}, encapsulating all data.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;🏷️ Key-Value Pair:&lt;/strong&gt; Each element is a key-value pair, where the key is a string, and the value can be any data type (e.g., string, number, boolean, array, object).&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;🏷️ Nested JSON Object:&lt;/strong&gt; JSON objects can contain other objects within them, forming nested structures for complex data.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;🏷️ Array of Objects:&lt;/strong&gt; Arrays [ ] hold lists of values, including other objects, useful for grouping similar elements.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src="https://r0mymendez.github.io//posts_en/2025-01-02-efficiently-querying-json-data-in-python-exploring-the-met-museums-artworks/img/json.png" style="display: block;   margin-left: auto;   margin-right: auto;   width: 50%;" width="602" /&gt;&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h2 id="met-museum-api-exploring-van-goghs-masterpieces"&gt;🏛️ MET Museum API: Exploring Van Gogh’s Masterpieces&lt;/h2&gt;
+&lt;p&gt;The following example will focus on one of &lt;strong&gt;Vincent van Gogh’s&lt;/strong&gt; most renowned works, “Self-Portrait with a Straw Hat (obverse: The Potato Peeler).” Painted in &lt;code&gt;1887&lt;/code&gt;, this piece is part of the MET’s European Paintings collection and reflects Van Gogh’s evolving artistic style, influenced by both Impressionism and Neo-Impressionism.&lt;/p&gt;
+&lt;div class="figure"&gt;
+&lt;img src="https://collectionapi.metmuseum.org/api/collection/v1/iiif/436532/1671316/main-image" style="display: block;   margin-left: auto;   margin-right: auto;   width: 50%;" style="width:35.0%" alt="" /&gt;
+&lt;p class="caption"&gt;object_436532 - &lt;strong&gt;Van Gogh, V. (1887)&lt;/strong&gt;. Self-Portrait with a Straw Hat (obverse: The Potato Peeler)&lt;br /&gt;
+&lt;a href="https://www.metmuseum.org/art/collection/search/436532"&gt;Oil on canvas. The Metropolitan Museum of Art&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;hr /&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Next, we will make a request to the Met Museum API to retrieve data, but firstly we will define a function to handle the request, as shown in the following code.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;pre class="python"&gt;&lt;code&gt;def get_met_museum_data(method:str,url:str = &amp;#39;https://collectionapi.metmuseum.org/&amp;#39;)-&amp;gt;json:
+    # get the data from the Met Museum API
+    response = requests.get(f&amp;quot;{url}{method}&amp;quot;)
+    if response.status_code == 200:
+        return response.json()
+    else:
+        return f&amp;quot;❌ Error getting data from Met Museum API, status_code: {response.status_code&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class="python"&gt;&lt;code&gt;URL = &amp;#39;public/collection/v1/objects/436532&amp;#39;
+response = get_met_museum_data(method = URL)
+response&lt;/code&gt;&lt;/pre&gt;
+&lt;blockquote&gt;
+&lt;p&gt;This request returns a dictionary that has 57 keys and 4 lists of nested dictionaries.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;hr /&gt;
+&lt;h3 id="selecting-keys-from-a-json-object"&gt;Selecting Keys from a JSON Object&lt;/h3&gt;
+&lt;h3 id="accessing-lists-of-objects"&gt;Accessing Lists of Objects&lt;/h3&gt;
+&lt;p&gt;When working with JSON data, it’s common to encounter lists of objects, each containing multiple keys and values. Often, you may want to extract only specific pieces of information that are relevant to your analysis from these objects.&lt;/p&gt;
+&lt;p&gt;Let’s examine an example using the 🏛️ MET Museum API’s response for object ID &lt;code&gt;436532&lt;/code&gt;, which corresponds to 🖼️ &lt;strong&gt;“Self-Portrait with a Straw Hat (obverse: The Potato Peeler)”&lt;/strong&gt;. Here, we’ll extract key information like the title, year, artist, and tags related to the artwork.&lt;/p&gt;
+&lt;pre class="python"&gt;&lt;code&gt;# Get the following keys from the JSON response obtained from the Met Museum API for object ID 436532: title, year, artist, and tags
+
+# Define the keys to be extracted
+query = &amp;quot;[title,objectBeginDate,constituents[0].name,tags[*].term]&amp;quot;
+
+# Use JMESPath to search and extract the selected keys
+result = jmespath.search(query, response)
+
+# Display the result
+result&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class="bash"&gt;&lt;code&gt;[&amp;#39;Self-Portrait with a Straw Hat (obverse: The Potato Peeler)&amp;#39;,
+ 1887,
+ &amp;#39;Vincent van Gogh&amp;#39;,
+ [&amp;#39;Men&amp;#39;, &amp;#39;Self-portraits&amp;#39;]]&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;In this example, we are selecting the following keys from the JSON response:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;🖼️ Title&lt;/strong&gt;: The title of the artwork.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;📅 Year&lt;/strong&gt;: The year the artwork was created (&lt;code&gt;objectBeginDate&lt;/code&gt;).&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;👨‍🎨 Artist&lt;/strong&gt;: The name of the artist (&lt;code&gt;constituents[0].name&lt;/code&gt;).&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;🏷️ Tags&lt;/strong&gt;: Terms related to the artwork (&lt;code&gt;tags[*].term&lt;/code&gt;).&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The resulting &lt;code&gt;result&lt;/code&gt; variable will contain only the specified fields, allowing us to focus on the desired information without needing to manually parse through the entire JSON object.&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h4 id="customizing-the-output-with-key-aliases"&gt;Customizing the Output with Key Aliases&lt;/h4&gt;
+&lt;p&gt;In some cases, you may want to rename keys or adjust the output structure for clarity. With &lt;strong&gt;JMESPath&lt;/strong&gt;, you can create aliases for keys to produce a more descriptive result, especially useful when dealing with nested data or similarly named fields.&lt;/p&gt;
+&lt;p&gt;We can extend the previous example by assigning aliases to each field, making the output more readable and aligned with our analysis needs:&lt;/p&gt;
+&lt;pre class="python"&gt;&lt;code&gt;query = &amp;quot;&amp;quot;&amp;quot;{ 
+      title_name: title,
+      date: objectBeginDate,
+      artist_name: constituents[0].name,
+      tags_name: tags[*].term
+}&amp;quot;&amp;quot;&amp;quot;
+result = jmespath.search(query, response)
+result &lt;/code&gt;&lt;/pre&gt;
+&lt;hr /&gt;
+&lt;h4 id="some-other-queries-we-can-make"&gt;Some Other Queries We Can Make&lt;/h4&gt;
+&lt;p&gt;&lt;strong&gt;To retrieve a list of element measurements from the 🖼️ artworks.&lt;/strong&gt; &amp;gt; In this query, [*] allows us to iterate over each object in the measurements list, enabling the extraction of the elementMeasurements field from each object.&lt;/p&gt;
+&lt;pre class="python"&gt;&lt;code&gt;# Retrieve the &amp;#39;elementMeasurements&amp;#39; field from each object in the &amp;#39;measurements&amp;#39; list
+query = &amp;quot;measurements[*].elementMeasurements&amp;quot;
+result = jmespath.search(query, response)
+result &lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;strong&gt;The following query returns detailed measurements of each artwork&lt;/strong&gt; &amp;gt; Here, [] allows us to navigate through the array of measurements, while .* retrieves all elements from the nested elementMeasurements, providing a comprehensive output of measurement details.&lt;/p&gt;
+&lt;pre class="python"&gt;&lt;code&gt;# Example (assuming nested structure):
+query = &amp;quot;measurements[].elementMeasurements[].*&amp;quot;
+result = jmespath.search(query, response)
+result &lt;/code&gt;&lt;/pre&gt;
+&lt;pre class="bash"&gt;&lt;code&gt;[[40.6, 31.8], [6.0325, 52.7051, 43.1801]]&lt;/code&gt;&lt;/pre&gt;
+&lt;hr /&gt;
+&lt;h2 id="processing-van-goghs-artworks"&gt;🖼️ Processing Van Gogh’s Artworks&lt;/h2&gt;
+&lt;p&gt;In this section, we will retrieve and process data for a collection of Van Gogh’s artworks using their unique IDs. Below is a list of object IDs corresponding to various paintings by Vincent van Gogh available through the &lt;strong&gt;MET Museum API&lt;/strong&gt;.&lt;/p&gt;
+&lt;pre class="python"&gt;&lt;code&gt;ids_objects = [335538, 436527, 436530, 436532, 436529, 436525, 436534, 336318, 436526,437998, 436533, 436531, 436535, 849056, 335537, 336327, 849055, 437980, 436528, 459193, 437984, 335536, 459123, 436524, 436536, 438722, 849054, 849052]
+
+response_vg_art = []
+
+for id_object in tqdm(ids_objects):
+    response = get_met_museum_data(method = f&amp;#39;public/collection/v1/objects/{id_object}&amp;#39;)
+    response_vg_art.append(response)&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id="use-cases"&gt;Use Cases&lt;/h3&gt;
+&lt;p&gt;Next, we will discuss a series of use cases that will allow us to implement code using &lt;strong&gt;JMESPath&lt;/strong&gt; and perform queries on Van Gogh artworks retrieved from the API data.&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://r0mymendez.github.io//posts_en/2025-01-02-efficiently-querying-json-data-in-python-exploring-the-met-museums-artworks/img/use-cases.png" /&gt;&lt;/p&gt;
+&lt;h4 id="case-1-artworks-from-1888-onwards"&gt;🎨 Case 1: Artworks from 1888 onwards&lt;/h4&gt;
+&lt;p&gt;From &lt;code&gt;1888&lt;/code&gt; onwards, when &lt;strong&gt;Van Gogh&lt;/strong&gt; moved to the south of France, his artistic production increased dramatically. During this period, he created some of his most iconic works, such as &lt;strong&gt;“Sunflowers”&lt;/strong&gt;, &lt;strong&gt;“The Yellow House”&lt;/strong&gt; and &lt;strong&gt;“The Starry Night”&lt;/strong&gt;. Let’s take a look at his works created from this year onwards.&lt;/p&gt;
+&lt;pre class="python"&gt;&lt;code&gt;query = &amp;quot;[?objectEndDate&amp;gt;=`1888`].[title, objectEndDate]&amp;quot;
+result = jmespath.search(query, response_vg_art)
+result&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class="bash"&gt;&lt;code&gt;[[&amp;#39;The Flowering Orchard&amp;#39;, 1888],
+ [&amp;#39;Oleanders&amp;#39;, 1888],
+ [&amp;quot;L&amp;#39;Arlésienne: Madame Joseph-Michel Ginoux (Marie Julien, 1848–1911)&amp;quot;, 1889],
+ [&amp;#39;Bouquet of Flowers in a Vase&amp;#39;, 1890],
+ [&amp;#39;Roses&amp;#39;, 1890],
+ [&amp;#39;Street in Saintes-Maries-de-la-Mer&amp;#39;, 1888],
+ [&amp;#39;First Steps, after Millet&amp;#39;, 1890],
+ [&amp;#39;Olive Trees&amp;#39;, 1890],
+ [&amp;#39;Shoes&amp;#39;, 1888],
+ [&amp;#39;Wheat Field with Cypresses&amp;#39;, 1889],
+ [&amp;#39;Portrait of Doctor Gachet or Man with a Pipe&amp;#39;, 1890],
+ [&amp;#39;Wheat Field&amp;#39;, 1888],
+ [&amp;#39;Corridor in the Asylum&amp;#39;, 1889],
+ [&amp;#39;Cypresses&amp;#39;, 1889],
+ [&amp;#39;Irises&amp;#39;, 1890],
+ [&amp;#39;La Berceuse (Woman Rocking a Cradle; Augustine-Alix Pellicot Roulin, 1851–1930)&amp;#39;,
+  1889],
+ [&amp;#39;The Zouave&amp;#39;, 1888],
+ [&amp;#39;Madame Roulin and Her Baby&amp;#39;, 1888],
+ [&amp;#39;Women Picking Olives&amp;#39;, 1889]]&lt;/code&gt;&lt;/pre&gt;
+&lt;hr /&gt;
+&lt;h4 id="case-2-sorting-van-goghs-works-by-year"&gt;🎨 Case 2: Sorting Van Gogh’s Works by Year&lt;/h4&gt;
+&lt;p&gt;If we want to display Van Gogh’s works created from &lt;code&gt;1888&lt;/code&gt; onwards, sorted by the year of creation, we can use the sort_by function in &lt;strong&gt;JMESPath&lt;/strong&gt;. This function allows us to sort the results based on a specific field.&lt;/p&gt;
+&lt;pre class="python"&gt;&lt;code&gt;# JMESPath query to filter and sort artworks created in or after 1888 by year
+query = &amp;quot;sort_by([?objectEndDate &amp;gt;= `1888`], &amp;amp;objectEndDate)[].[title, objectEndDate]&amp;quot;
+
+# Applying the query to get sorted results
+result = jmespath.search(query, response_vg_art)
+
+# Display the sorted results
+result&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;strong&gt;Explanation:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;- &lt;strong&gt;&lt;code&gt;sort_by&lt;/code&gt;&lt;/strong&gt;: This function sorts the list of artworks based on the specified key, in this case, &lt;code&gt;objectEndDate&lt;/code&gt;. The &lt;code&gt;&amp;amp;&lt;/code&gt; symbol is used to indicate the sorting key.&lt;/p&gt;
+&lt;p&gt;- &lt;strong&gt;&lt;code&gt;[?objectEndDate &amp;gt;=&lt;/code&gt;1888&lt;code&gt;]&lt;/code&gt;&lt;/strong&gt;: This part filters the artworks to include only those created in or after &lt;code&gt;1888&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;- &lt;strong&gt;&lt;code&gt;[].[title, objectEndDate]&lt;/code&gt;&lt;/strong&gt;: Finally, this projects the results to show only the &lt;strong&gt;title&lt;/strong&gt; and &lt;strong&gt;year&lt;/strong&gt; of each artwork.&lt;/p&gt;
+&lt;p&gt;By using this query, we can efficiently retrieve and display Van Gogh’s works from the specified period in chronological order, allowing for better analysis and understanding of his artistic output during these significant years.&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h4 id="case-3-identifying-important-works-by-vincent-van-gogh"&gt;🎨 Case 3: Identifying Important Works by Vincent van Gogh&lt;/h4&gt;
+&lt;p&gt;Let’s imagine that we are digital curators at the &lt;strong&gt;Metropolitan Museum of Art (MET)&lt;/strong&gt; and we have been tasked with identifying the most important works by Van Gogh for marketing campaigns and educational programs. To do so, we will use the isHighlight key from the artwork data.&lt;/p&gt;
+&lt;p&gt;The &lt;code&gt;isHighlight&lt;/code&gt; field indicates whether a work is considered one of the most significant pieces in the collection. When the field is set to true, it means that the work is highlighted for its importance.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;Note:&lt;/strong&gt; When querying for boolean values in JMESPath, we need to use lowercase &lt;code&gt;true&lt;/code&gt; or &lt;code&gt;false&lt;/code&gt; to ensure the query functions correctly.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;To find the highlighted works, we can use the following query:&lt;/p&gt;
+&lt;pre class="python"&gt;&lt;code&gt;# JMESPath query to filter and retrieve important Van Gogh artworks
+query = &amp;quot;[?isHighlight == `true`].[title, objectEndDate]&amp;quot;
+
+# Applying the query to the collected response data
+result = jmespath.search(query, response_vg_art)
+
+# Display the identified important artworks
+result&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class="bash"&gt;&lt;code&gt;[[&amp;#39;Self-Portrait with a Straw Hat (obverse: The Potato Peeler)&amp;#39;, 1887],
+ [&amp;#39;Wheat Field with Cypresses&amp;#39;, 1889],
+ [&amp;#39;Corridor in the Asylum&amp;#39;, 1889],
+ [&amp;#39;Irises&amp;#39;, 1890],
+ [&amp;#39;Road in Etten&amp;#39;, 1881],
+ [&amp;#39;Madame Roulin and Her Baby&amp;#39;, 1888]]&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;strong&gt;Explanation:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;- &lt;strong&gt;&lt;code&gt;[?isHighlight ==&lt;/code&gt;true&lt;code&gt;]&lt;/code&gt;&lt;/strong&gt;: This filter retrieves only the artworks where &lt;code&gt;isHighlight&lt;/code&gt; is &lt;code&gt;true&lt;/code&gt;, meaning they are considered significant.&lt;/p&gt;
+&lt;p&gt;- &lt;strong&gt;&lt;code&gt;.[title, objectEndDate]&lt;/code&gt;&lt;/strong&gt;: This part projects the results to show only the &lt;strong&gt;title&lt;/strong&gt; and &lt;strong&gt;year&lt;/strong&gt; of each highlighted artwork.&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h4 id="case-4-filtering-by-date-and-classification"&gt;🎨 Case 4: Filtering by Date and Classification&lt;/h4&gt;
+&lt;p&gt;In this case, we will analyze the works of Vincent van Gogh to understand how his themes and styles evolved before 1886. We seek to create a list of works that meet the following conditions:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;📅 Creation Date:&lt;/strong&gt; Works created before 1886.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;🏷️ Classification:&lt;/strong&gt; Exclude works classified as “Paintings.”&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;During his early years, Van Gogh’s artistic focus encompassed diverse forms of expression, including works in media such as drawing, printmaking, and watercolor. Also, the following bar chart represents the various tags associated with Van Gogh’s works from this period and allows us to explore the themes prevalent in his art, highlighting how they changed over time.&lt;/p&gt;
+&lt;pre class="python"&gt;&lt;code&gt;query = &amp;quot;[?(objectEndDate&amp;lt;=`1886`) &amp;amp;&amp;amp; (classification!=&amp;#39;painting&amp;#39;)].{title: title, year: objectEndDate, tags: tags[*].term}&amp;quot;
+result = jmespath.search(query, response_vg_art)
+data = pd.json_normalize(result)
+data = data.explode(&amp;#39;tags&amp;#39;)
+
+plt.figure(figsize=(12,5))
+sns.catplot(data = data.groupby([&amp;#39;year&amp;#39;,&amp;#39;tags&amp;#39;],as_index=False)[&amp;#39;title&amp;#39;].count(), 
+            y = &amp;#39;tags&amp;#39;,
+            x = &amp;#39;title&amp;#39;,
+            color = &amp;#39;#6387FD&amp;#39;, 
+            edgecolor=&amp;#39;black&amp;#39;,
+            kind=&amp;#39;bar&amp;#39;, col=&amp;#39;year&amp;#39;)
+plt.show()&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src="https://r0mymendez.github.io//posts_en/2025-01-02-efficiently-querying-json-data-in-python-exploring-the-met-museums-artworks/img/output-plot-1.png" /&gt;&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h4 id="case-5-filtered-by-date-and-technique"&gt;🎨 Case 5: Filtered by Date and Technique&lt;/h4&gt;
+&lt;p&gt;In this case, we will analyze the techniques used by Van Gogh, including the combination of different materials and styles, which are key aspects of his artistic evolution.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Conditions:&lt;/strong&gt; * &lt;strong&gt;📅 Creation Date:&lt;/strong&gt; Works created before 1886 or those made with ink (the medium contains “ink”). * &lt;strong&gt;🏷️ Tags:&lt;/strong&gt; In addition, the selected works must have tags related to women to observe the influence of such representations on his art.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;The objective is to explore how the techniques used by Van Gogh and the themes related to women influenced his style and artistic development.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;pre class="python"&gt;&lt;code&gt;query = &amp;quot;&amp;quot;&amp;quot;[?(
+               ( objectBeginDate &amp;lt;= `1886` || 
+                contains(not_null(medium, &amp;#39;&amp;#39;), &amp;#39;ink&amp;#39;))   &amp;amp;&amp;amp;
+                contains(not_null(tags[*].term, &amp;#39;&amp;#39;), &amp;#39;Women&amp;#39;)
+            )]
+                .{title: title, year: objectEndDate, medium: medium, tags: tags[*].term}&amp;quot;&amp;quot;&amp;quot;
+
+result = jmespath.search(query, response_vg_art)
+
+data = pd.json_normalize(result)
+data&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src="https://r0mymendez.github.io//posts_en/2025-01-02-efficiently-querying-json-data-in-python-exploring-the-met-museums-artworks/img/output-table-1.png" /&gt;&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h4 id="case-6-using-custom-functions-in-jmespath"&gt;🎨 Case 6: Using Custom Functions in JMESPath&lt;/h4&gt;
+&lt;p&gt;In this case, we have a large dataset from the museum’s “Drawings and Prints” department, containing over 100,000 works of art, many of which belong to Vincent Van Gogh. To manipulate this data more effectively, we implemented two custom functions:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;**🛠️ Conversion to Lowercase (_func_to_lower)**: This function allows us to convert any string of text to lowercase, which is useful for standardizing comparisons between values.&lt;/li&gt;
+&lt;li&gt;**🛠️ Search with Regular Expressions (_func_contains_regex)**: With this function, we can search for patterns within text strings using regular expressions. This is particularly helpful when we want to identify artworks that contain specific terms or patterns in their descriptions, titles, or tags.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;JMESPath&lt;/strong&gt; is a powerful query language for JSON, but it has certain limitations in its native functions. Therefore, the following code will provide a good way to implement these functionalities when needed.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;pre class="python"&gt;&lt;code&gt;import re
+import jmespath
+from jmespath import functions
+
+class CustomFunctions(functions.Functions):
+    # Function to convert text to lowercase
+    @functions.signature({&amp;#39;types&amp;#39;: [&amp;#39;string&amp;#39;]})
+    def _func_to_lower(self, s):
+        if isinstance(s, str):
+            return s.lower()
+        raise TypeError(&amp;quot;Expected a string argument&amp;quot;)
+
+    # Function to search with regular expressions
+    @functions.signature({&amp;#39;types&amp;#39;: [&amp;#39;array&amp;#39;]})
+    def _func_contains_regex(self, args):
+        if len(args) != 2:
+            raise TypeError(&amp;quot;Expected a list with exactly 2 items: [string, pattern]&amp;quot;)
+        s, str_pattern = args
+        if isinstance(s, str) and isinstance(str_pattern, str):
+            pattern = re.compile(str_pattern, re.IGNORECASE)
+            return bool(pattern.search(s))
+        raise TypeError(&amp;quot;Expected two string arguments in the list&amp;quot;)
+
+# Registering custom functions
+options = jmespath.Options(custom_functions=CustomFunctions())&lt;/code&gt;&lt;/pre&gt;
+&lt;blockquote&gt;
+&lt;p&gt;After registering the custom functions, we will query the dataset. I previously downloaded 📄&lt;strong&gt;JSON files&lt;/strong&gt; for each object I queried from the API and created individual 📄&lt;strong&gt;JSON files&lt;/strong&gt;. Subsequently, I will select 1,000 random files, all of which come from the “Drawings and Prints” department.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;pre class="python"&gt;&lt;code&gt;num_files = 1000
+# Get the list of files in the directory
+random.seed(123)
+random_files = random.sample(os.listdir(&amp;#39;data/objects&amp;#39;), num_files)
+
+# Read the data from the files
+data_random_files = []
+for file in tqdm(random_files):
+    with open(f&amp;#39;data/objects/{file}&amp;#39;) as f:
+        data_tmp = json.load(f)
+    data_random_files.append(data_tmp)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class="bash"&gt;&lt;code&gt;100%|██████████| 1000/1000 [00:00&amp;lt;00:00, 1922.73it/s]&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;With the data loaded, we can now use a &lt;strong&gt;JMESPath&lt;/strong&gt; query to find artworks related to women by applying the custom to_lower function within the query:&lt;/p&gt;
+&lt;pre class="python"&gt;&lt;code&gt;query = &amp;quot;&amp;quot;&amp;quot;[?( contains(to_lower(title), &amp;#39;women&amp;#39;))] .{title: title, year: objectEndDate, medium: medium,artist_name: artistDisplayName, tags: tags[*].term}&amp;quot;&amp;quot;&amp;quot;
+result = jmespath.search(query, data_random_files, options=options)
+pd.json_normalize(result)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;The output shows a list of works with titles that include the term “women,” providing insights into Van Gogh’s representation of women in his art.&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://r0mymendez.github.io//posts_en/2025-01-02-efficiently-querying-json-data-in-python-exploring-the-met-museums-artworks/img/output-table-2.png" /&gt;&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h4 id="case-7-importing-and-querying-a-large-number-of-json-files"&gt;🎨 Case 7: Importing and Querying a Large Number of JSON Files&lt;/h4&gt;
+&lt;p&gt;In the previous case, we defined a sample of 1,000 randomly selected entries. Now, we will conduct a performance test by running a query across all 176,000 JSON entries in the “Drawings and Prints” department.&lt;/p&gt;
+&lt;p&gt;For this scenario, we’ll reapply Use Cases 5 and 6, which were initially tailored for Vincent Van Gogh’s artworks. However, this time we’ll execute the same queries on the entire dataset, expanding our analysis to encompass all available artworks.&lt;/p&gt;
+&lt;p&gt;You can find the complete code and dataset for this tutorial in my GitHub repository. I’d appreciate it if you could star ⭐️ the repo if you find it helpful, and consider following me for updates on new tutorials and articles. Your support helps me grow within the tech community and allows me to continue creating more content.&lt;/p&gt;
+&lt;div class="figure"&gt;
+&lt;img src="https://r0mymendez.github.io//posts_en/2025-01-02-efficiently-querying-json-data-in-python-exploring-the-met-museums-artworks/img/github-repo.png" style="display: block;   margin-left: auto;   margin-right: auto;" style="width:50.0%" alt="" /&gt;
+&lt;p class="caption"&gt;&lt;a href="https://github.com/r0mymendez/json-query/tree/master" class="uri"&gt;https://github.com/r0mymendez/json-query/tree/master&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;hr /&gt;
+&lt;h2 id="aws-cli-json-querying"&gt;🎛️ AWS CLI JSON Querying&lt;/h2&gt;
+&lt;p&gt;JMESPath is a query language for JSON, integrated into &lt;strong&gt;AWS CLI&lt;/strong&gt;, that lets you filter and transform JSON data directly in the command line. However, while &lt;strong&gt;JMESPath&lt;/strong&gt; is excellent for simple queries directly within &lt;strong&gt;AWS CLI&lt;/strong&gt;, tools like jq offer extended capabilities for more complex data manipulation.&lt;/p&gt;
+&lt;p&gt;For instance, &lt;code&gt;jp&lt;/code&gt; is a 🔍command-line tool based on &lt;strong&gt;JMESPath&lt;/strong&gt;, which offers a similar query syntax, providing an alternative for filtering &lt;strong&gt;JSON&lt;/strong&gt; data quickly. In this tutorial, however, we use &lt;code&gt;jq&lt;/code&gt; for its advanced formatting and processing capabilities, which are ideal when working with downloaded &lt;strong&gt;JSON&lt;/strong&gt; files.&lt;/p&gt;
+&lt;p&gt;In the examples below, we demonstrate how jq can be used alongside &lt;strong&gt;AWS CLI&lt;/strong&gt; to handle &lt;strong&gt;JSON&lt;/strong&gt; data , enabling us to extract specific elements from API responses and transform them as needed.&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h3 id="use-cases-1"&gt;Use Cases&lt;/h3&gt;
+&lt;h4 id="case-1-total-artworks-in-the-european-painters-department-validate-the-number-of-artworks-corresponding-to-department-9-which-is-the-department-for-painters-and-european-artists."&gt;🎨 Case 1: Total Artworks in the European Painters Department Validate the number of artworks corresponding to department 9, which is the department for painters and European artists.&lt;/h4&gt;
+&lt;pre class="bash"&gt;&lt;code&gt;aws s3 cp s3://data-met-api/raw-objects-by-deparments/objects_by_departmentId_9.json - | jq &amp;#39;{total_arts: .total}&amp;#39;&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class="bash"&gt;&lt;code&gt;{
+  &amp;quot;total_arts&amp;quot;: 176075
+}&lt;/code&gt;&lt;/pre&gt;
+&lt;hr /&gt;
+&lt;h4 id="case-2-extract-specific-keys-from-van-goghs-artwork-in-this-case-we-will-revisit-a-previous-exercise-where-we-wanted-to-extract-specific-keys-from-a-file.-we-will-take-the-json-files-corresponding-to-the-artwork-of-vincent-van-gogh."&gt;🎨 Case 2: Extract Specific Keys from Van Gogh’s Artwork In this case, we will revisit a previous exercise where we wanted to extract specific keys from a file. We will take the 📄&lt;strong&gt;JSON files&lt;/strong&gt; corresponding to the artwork of Vincent van Gogh.&lt;/h4&gt;
+&lt;pre class="bash"&gt;&lt;code&gt;aws s3 cp s3://data-met-api/raw-objects/object_id_436532.json - | jq -c &amp;#39;{ title_name: .title, date: .objectBeginDate, artist_name: .constituents[0].name, tags_name: [.tags[].term] }&amp;#39;&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;{&amp;quot;title_name&amp;quot;:&amp;quot;Self-Portrait with a Straw Hat (obverse: The Potato Peeler)&amp;quot;,&amp;quot;date&amp;quot;:1887,&amp;quot;artist_name&amp;quot;:&amp;quot;Vincent van Gogh&amp;quot;,&amp;quot;tags_name&amp;quot;:[&amp;quot;Men&amp;quot;,&amp;quot;Self-portraits&amp;quot;]}&lt;/code&gt;&lt;/pre&gt;
+&lt;hr /&gt;
+&lt;h4 id="caso-3-extracting-and-filtering-data-from-multiple-files-to-implement-one-of-the-more-complex-cases-of-iterating-through-multiple-files-and-filtering-data-we-will-create-a-shell-script.-below-we-will-generate-a-script-similar-to-one-of-the-previously-solved-cases-but-we-will-use-a-selection-query-to-apply-filters."&gt;🎨 Caso 3: Extracting and Filtering Data from Multiple Files To implement one of the more complex cases of iterating through multiple files and filtering data, we will create a shell script. Below, we will generate a script similar to one of the previously solved cases, but we will use a selection query to apply filters.&lt;/h4&gt;
+&lt;pre class="bash"&gt;&lt;code&gt;#!/bin/bash
+bucket_name=&amp;quot;data-met-api&amp;quot;
+path=&amp;quot;raw-objects&amp;quot;
+
+# List of object IDs
+ids_objects=(335538 436527 436530 436532 436529 436525 436534 336318 436526 437998 436533 436531 436535 335537 336327 437980 436528 459193 437984 335536 459123 436524 436536 438722)
+total_objects=${#ids_objects[@]}
+
+# Query
+query=&amp;#39; select(.objectEndDate &amp;gt;= 1888) | {title_name: .title, date: .objectBeginDate, artist_name: .constituents[0].name, tags_name: [.tags[].term] }&amp;#39;
+json_output=&amp;quot;&amp;quot; 
+
+# Imprimir los IDs de objetos
+for (( i=0; i&amp;lt;total_objects; i++ )); do
+    id=${ids_objects[$i]}
+    # Download the JSON file from S3 and extract the required fields
+    response=$(aws s3 cp s3://$bucket_name/$path/object_id_$id.json - 2&amp;gt;/dev/null | jq &amp;quot;$query&amp;quot;)  # Capturar la salida correctamente
+    
+    # Validate the json_output variable is empty and add the response 
+    if [ ! -z &amp;quot;$response&amp;quot; ]; then
+        if [ -z &amp;quot;$json_output&amp;quot; ]; then
+            json_output=&amp;quot;$response&amp;quot;
+        else
+            json_output+=&amp;quot;, $response&amp;quot;
+        fi
+    else
+        echo &amp;quot;Warning: No valid data found for ID $id&amp;quot;
+    fi
+
+    progress=$(( (i + 1) * 100 / total_objects ))
+    printf &amp;quot;\rProgress: [%-50s] %d%%&amp;quot; &amp;quot;$(printf &amp;#39;#%.0s&amp;#39; $(seq 1 $((progress / 2))))&amp;quot; &amp;quot;$progress&amp;quot;
+    
+done
+
+# Create JSON array
+json_output=&amp;quot;[$json_output]&amp;quot;
+
+# Create the output.json file
+echo &amp;quot;$json_output&amp;quot; &amp;gt; output.json&lt;/code&gt;&lt;/pre&gt;
+&lt;hr /&gt;
+&lt;h1 id="references"&gt;📚 References&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;[1] - The Metropolitan Museum of Art Collection API, URL:&lt;a href="https://metmuseum.github.io/" class="uri"&gt;https://metmuseum.github.io/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;[2] - The MET, URL: &lt;a href="https://www.metmuseum.org/" class="uri"&gt;https://www.metmuseum.org/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;[3] - JmesPath Documentation, URL: &lt;a href="https://jmespath.org/" class="uri"&gt;https://jmespath.org/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;[4] - JmesPath Python library, URL: &lt;a href="https://github.com/jmespath/jmespath.py" class="uri"&gt;https://github.com/jmespath/jmespath.py&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;[5] - AWS Command Line Interface: Filtering output in the AWS CLI, URL: &lt;a href="https://docs.aws.amazon.com/cli/v1/userguide/cli-usage-filter.html" class="uri"&gt;https://docs.aws.amazon.com/cli/v1/userguide/cli-usage-filter.html&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;[6] - Github jp, URL: &lt;a href="https://github.com/jmespath/jp" class="uri"&gt;https://github.com/jmespath/jp&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre class="r distill-force-highlighting-css"&gt;&lt;code&gt;&lt;/code&gt;&lt;/pre&gt;</description>
+      <distill:md5>9114b093cde2978de2b8ef51c92c4927</distill:md5>
+      <category>Data</category>
+      <category>Python</category>
+      <category>Cloud Computing</category>
+      <category>AWS</category>
+      <guid>https://r0mymendez.github.io/posts_en/2025-01-02-efficiently-querying-json-data-in-python-exploring-the-met-museums-artworks</guid>
+      <pubDate>Wed, 01 Jan 2025 00:00:00 +0000</pubDate>
+      <media:content url="https://r0mymendez.github.io/posts_en/2025-01-02-efficiently-querying-json-data-in-python-exploring-the-met-museums-artworks/preview.png" medium="image" type="image/png" width="1995" height="691"/>
+    </item>
     <item>
       <title>My Preparation Journey for GitHub Fundamentals Certification</title>
       <dc:creator>Romina Mendez</dc:creator>
@@ -299,7 +673,7 @@ on software, agile methodologies , data science and the professor life.
       <category>GIT</category>
       <category>Methodologies</category>
       <guid>https://r0mymendez.github.io/posts_en/2024-08-20-my-preparation-journey-for-github-fundamentals-certification</guid>
-      <pubDate>Mon, 19 Aug 2024 00:00:00 +0000</pubDate>
+      <pubDate>Tue, 20 Aug 2024 00:00:00 +0000</pubDate>
       <media:content url="https://r0mymendez.github.io/posts_en/2024-08-20-my-preparation-journey-for-github-fundamentals-certification/preview.png" medium="image" type="image/png" width="3386" height="1301"/>
     </item>
     <item>
@@ -336,17 +710,6 @@ on software, agile methodologies , data science and the professor life.
       <guid>https://r0mymendez.github.io/posts_en/2024-04-02-simplify-database-migrations-using-python-with-alembic</guid>
       <pubDate>Tue, 02 Apr 2024 00:00:00 +0000</pubDate>
       <media:content url="https://r0mymendez.github.io/posts_en/2024-04-02-simplify-database-migrations-using-python-with-alembic/preview.jpg" medium="image" type="image/jpeg"/>
-    </item>
-    <item>
-      <title>Learning AWS S3 on Localhost: Best Practices with Boto3 and LocalStack</title>
-      <dc:creator>Romina Mendez</dc:creator>
-      <link>https://r0mymendez.github.io/posts_en/2024-02-12-learning-aws-s3-on-localhost-best-practices-with-boto3-and-localstack</link>
-      <description>In this article, you will discover new features of **S3** and learn how to implement some of them using Boto3 in 🐍Python.</description>
-      <category>Python</category>
-      <category>Cloud Computing</category>
-      <guid>https://r0mymendez.github.io/posts_en/2024-02-12-learning-aws-s3-on-localhost-best-practices-with-boto3-and-localstack</guid>
-      <pubDate>Mon, 12 Feb 2024 00:00:00 +0000</pubDate>
-      <media:content url="https://r0mymendez.github.io/posts_en/2024-02-12-learning-aws-s3-on-localhost-best-practices-with-boto3-and-localstack/preview.jpg" medium="image" type="image/jpeg"/>
     </item>
   </channel>
 </rss>
