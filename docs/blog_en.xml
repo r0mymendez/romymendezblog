@@ -13,7 +13,206 @@ on software, agile methodologies , data science and the professor life.
       <link>https://r0mymendez.github.io/</link>
     </image>
     <generator>Distill</generator>
-    <lastBuildDate>Fri, 10 Jan 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 11 Jan 2025 00:00:00 +0000</lastBuildDate>
+    <item>
+      <title>22 Resources for Developers: Boost Your Productivity, Creativity, and Code</title>
+      <dc:creator>Romina Mendez</dc:creator>
+      <link>https://r0mymendez.github.io/posts_en/2025-01-11-22-resources-for-developers-boost-your-productivity-creativity-and-code</link>
+      <description>
+
+
+&lt;p&gt;In this article, I’m sharing 22 essential tools that I’ve incorporated into my daily routine as a developer. These tools cover everything from organization 📅 and documentation 📄 to design 🖌️, productivity 🚀, and programming 💻. I’ve organized them into 8 categories so you can easily find the ones that best suit your needs.&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://r0mymendez.github.io//posts_en/2025-01-11-22-resources-for-developers-boost-your-productivity-creativity-and-code/preview.png" /&gt;&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h1 id="documentation-and-organization"&gt;📄 Documentation and Organization&lt;/h1&gt;
+&lt;h3 id="notion"&gt;&lt;a href="https://www.notion.so/"&gt;Notion&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;Notion is a widely known tool, yet surprisingly, there are still people who haven’t tried it. It’s excellent for creating technical documentation 📄, managing publishing calendars, and organizing tasks. Additionally, it has an active community that shares reusable templates like Kanban boards and 📆 calendars, making it even more user-friendly.&lt;br /&gt;
+- &lt;strong&gt;Why use it&lt;/strong&gt;: It centralizes all your information in one place and offers the flexibility to customize it according to your specific needs.&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://r0mymendez.github.io//posts_en/2025-01-11-22-resources-for-developers-boost-your-productivity-creativity-and-code/img/img-1.png" alt="Image description" /&gt; 🖼️ Image source: &lt;a href="https://www.notion.com/es-es/help/notion-for-desktop" class="uri"&gt;https://www.notion.com/es-es/help/notion-for-desktop&lt;/a&gt;&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h3 id="miro"&gt;&lt;a href="https://miro.com/es/"&gt;Miro&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;Miro is a virtual whiteboard designed for creating mind maps, diagrams, and workflows collaboratively.&lt;br /&gt;
+- &lt;strong&gt;Why use it&lt;/strong&gt;: It’s an ideal tool for team sessions such as brainstorming, design thinking, or agile planning. Its real-time collaboration feature makes it perfect for dynamic projects involving multiple team members.&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://r0mymendez.github.io//posts_en/2025-01-11-22-resources-for-developers-boost-your-productivity-creativity-and-code/img/img-2.png" alt="Image description" /&gt; 🖼️ Image source: &lt;a href="https://miro.com/es/lluvia-de-ideas/" class="uri"&gt;https://miro.com/es/lluvia-de-ideas/&lt;/a&gt;&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h1 id="drawings-diagrams"&gt;✏️ Drawings &amp;amp; Diagrams&lt;/h1&gt;
+&lt;h3 id="excalidraw"&gt;&lt;a href="https://excalidraw.com/"&gt;Excalidraw&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;Excalidraw is an excellent alternative to tools like draw.io, offering attractive graphics with a minimalist design. It provides a user-friendly interface and libraries with icons for ☁️cloud services, programming languages, and more, allowing you to create blueprints effortlessly.&lt;br /&gt;
+- &lt;strong&gt;Why use it&lt;/strong&gt;: Easy to use with a visually appealing style, Excalidraw adds a personal touch to your diagrams, and its libraries make creating detailed blueprints faster and simpler.&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://r0mymendez.github.io//posts_en/2025-01-11-22-resources-for-developers-boost-your-productivity-creativity-and-code/img/img-3.png" alt="Image description" /&gt; 🖼️ Image source: &lt;a href="https://github.com/excalidraw/excalidraw" class="uri"&gt;https://github.com/excalidraw/excalidraw&lt;/a&gt;&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h3 id="draw.io"&gt;&lt;a href="https://app.diagrams.net/"&gt;Draw.io&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;Draw.io is a popular tool for creating UML diagrams, process flows, and more. It integrates seamlessly with Google Drive, allowing you to work directly within your account or offline.&lt;br /&gt;
+- &lt;strong&gt;Why use it&lt;/strong&gt;: It offers advanced options for creating detailed diagrams and is easily accessible through Google Drive or as a desktop version.&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h3 id="wireflow"&gt;&lt;a href="https://app.wireflow.co/"&gt;Wireflow&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;Wireflow lets you create flowcharts with illustrative icons, offering modern and easy-to-use graphics that make designing detailed flow diagrams a breeze.&lt;br /&gt;
+&amp;gt; The Wireflow concept is a popular UX and UI design method that combines the best aspects of wireframes and user flows to document user interactions in apps or websites.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Why use it&lt;/strong&gt;: Its intuitive and visually appealing design is perfect for presenting workflows to clients or teams, providing a user-friendly interface and stunning visuals.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class="figure"&gt;
+&lt;img src="https://r0mymendez.github.io//posts_en/2025-01-11-22-resources-for-developers-boost-your-productivity-creativity-and-code/img/img-4.png" alt="" /&gt;
+&lt;p class="caption"&gt;Image description&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;🖼️ Image source: &lt;a href="https://wireflow.co/" class="uri"&gt;https://wireflow.co/&lt;/a&gt;&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h3 id="lorem-ipsum-generator"&gt;&lt;a href="https://loremipsum.io/es"&gt;Lorem Ipsum Generator&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;Lorem Ipsum Generator creates placeholder text used in graphic design, typography demos, and design drafts. It allows you to visualize the layout before inserting final content.&lt;br /&gt;
+- &lt;strong&gt;Why use it&lt;/strong&gt;: It saves time by generating temporary content, a must-have when designing in tools like Figma, and is helpful for quickly filling in text blocks during mockups.&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://r0mymendez.github.io//posts_en/2025-01-11-22-resources-for-developers-boost-your-productivity-creativity-and-code/img/img-5.png" alt="Image description" /&gt; 🖼️ Image source: &lt;a href="https://loremipsum.io/es" class="uri"&gt;https://loremipsum.io/es&lt;/a&gt;&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h1 id="api-queries"&gt;🛠 API Queries&lt;/h1&gt;
+&lt;h3 id="postman"&gt;&lt;a href="https://web.postman.co/"&gt;Postman&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;Postman is one of the most complete and advanced tools for testing and developing APIs. It offers features such as automated testing, response simulation, and the ability to share test collections among teams, making it ideal for collaborative and complex projects.&lt;br /&gt;
+- &lt;strong&gt;Why use it&lt;/strong&gt;: Perfect for complex scenarios and team collaboration, Postman allows you to design, test, and monitor APIs efficiently, with powerful features for automation, monitoring, and documentation.&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h3 id="hoppscotch"&gt;&lt;a href="https://hoppscotch.io/"&gt;Hoppscotch&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;Hoppscotch is a lightweight, online alternative to Postman for quickly testing and querying APIs. While it doesn’t offer all the advanced features of Postman, it excels in simplicity and ease of use, particularly for quick API testing on the go.&lt;br /&gt;
+- &lt;strong&gt;Why use it&lt;/strong&gt;: Hoppscotch provides a clean and intuitive interface directly in your browser, making it an excellent choice for developers who need a fast, no-frills tool for testing APIs without the need for installation or complex setup.&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h1 id="regular-expressions"&gt;🔍 Regular Expressions&lt;/h1&gt;
+&lt;h3 id="regex101"&gt;&lt;a href="https://regex101.com/"&gt;Regex101&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;Regex101 simplifies the creation and &lt;strong&gt;testing of regular expressions&lt;/strong&gt; across multiple programming languages. It offers a detailed explanation of each regex component, making it easier to understand how your expressions work.&lt;br /&gt;
+- &lt;strong&gt;Why use it&lt;/strong&gt;: Save time by validating and tweaking your regular expressions without the need to run them in a development environment. You can also share your regex tests with others, making it a great tool for collaboration.&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h3 id="regexr"&gt;&lt;a href="https://regexr.com/"&gt;Regexr&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;Regexr is another option for &lt;strong&gt;learning&lt;/strong&gt;, &lt;strong&gt;creating&lt;/strong&gt;, and &lt;strong&gt;testing regular expressions&lt;/strong&gt; with real-time examples. It provides helpful syntax highlighting and a community-driven library of regular expressions.&lt;br /&gt;
+- &lt;strong&gt;Why use it&lt;/strong&gt;: Its interactive and beginner-friendly interface makes it ideal for those starting to learn regular expressions, offering instant feedback and useful regex examples.&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h1 id="languages-databases-sql"&gt;🗄️ Languages &amp;amp; Databases &amp;amp; SQL&lt;/h1&gt;
+&lt;h3 id="onecompiler"&gt;&lt;a href="https://onecompiler.com/postgresql"&gt;OneCompiler&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;OneCompiler allows you to &lt;strong&gt;test code&lt;/strong&gt; without the need for installation, offering an easy way to run examples. It supports over 60 programming languages, including PostgreSQL.&lt;br /&gt;
+- &lt;strong&gt;Why use it&lt;/strong&gt;: It’s perfect for practicing or verifying SQL queries without having to set up a local development environment.&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h3 id="explain-dalibo"&gt;&lt;a href="https://explain.dalibo.com/"&gt;Explain Dalibo&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;Sometimes, it’s unclear why certain SQL queries in &lt;strong&gt;postgres&lt;/strong&gt; take a long time to execute or consume too many resources. This tool helps visualize and analyze &lt;strong&gt;SQL execution plans&lt;/strong&gt; interactively.&lt;br /&gt;
+- &lt;strong&gt;Why use it&lt;/strong&gt;: It’s useful for optimizing your database performance by providing insights into query execution plans.&lt;/p&gt;
+&lt;p&gt;Here’s a quick example of how to use it:&lt;/p&gt;
+&lt;ol style="list-style-type: decimal"&gt;
+&lt;li&gt;Suppose you have a query that’s taking a long time to execute and you want to analyze it.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre class="sql"&gt;&lt;code&gt;SELECT 
+    e.name AS employee_name,
+    d.name AS department_name,
+    AVG(s.amount) AS avg_salary
+FROM 
+    employees e
+JOIN  departments d ON e.department_id = d.id
+JOIN  salaries s ON e.id = s.employee_id
+WHERE 
+    d.budget &amp;gt; 1000000
+    AND s.amount &amp;gt; (s.amount * 0.10 + LAG(s.amount) OVER (PARTITION BY e.id ORDER BY s.date))
+GROUP BY 
+    e.name, d.name
+ORDER BY 
+    avg_salary DESC;&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;You can add the &lt;code&gt;EXPLAIN&lt;/code&gt; keyword at the beginning of your query:&lt;/p&gt;
+&lt;pre class="sql"&gt;&lt;code&gt;EXPLAIN
+   SELECT .../* Here goes the rest of your query */
+;&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;This will return an execution plan like the following:&lt;/p&gt;
+&lt;pre class="bash"&gt;&lt;code&gt;Sort  (cost=50233.24..50233.75 rows=204 width=96)
+  Sort Key: (avg(s.amount)) DESC
+  -&amp;gt;  HashAggregate  (cost=50230.40..50231.40 rows=204 width=96)
+        Group Key: e.name, d.name
+        -&amp;gt;  WindowAgg  (cost=40230.00..40230.40 rows=50000 width=64)
+              -&amp;gt;  Hash Join  (cost=20000.00..30000.00 rows=50000 width=64)
+                    Hash Cond: (s.employee_id = e.id)
+                    -&amp;gt;  Seq Scan on salaries s  (cost=0.00..8000.00 rows=50000 width=32)
+                    -&amp;gt;  Hash  (cost=10000.00..10000.00 rows=10000 width=64)
+                          -&amp;gt;  Hash Join  (cost=5000.00..10000.00 rows=10000 width=64)
+                                Hash Cond: (e.department_id = d.id)
+                                -&amp;gt;  Seq Scan on employees e  (cost=0.00..4000.00 rows=10000 width=32)
+                                -&amp;gt;  Hash  (cost=3000.00..3000.00 rows=1000 width=32)
+                                      -&amp;gt;  Seq Scan on departments d  (cost=0.00..3000.00 rows=1000 width=32)
+                                            Filter: (budget &amp;gt; 1000000)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Once you have this output, you can paste it into &lt;a href="https://explain.dalibo.com/"&gt;Explain Dalibo&lt;/a&gt;, submit it, and the tool will display the execution analysis in a graphical format, making it easier to identify performance issues.&lt;/p&gt;
+&lt;div class="figure"&gt;
+&lt;img src="https://r0mymendez.github.io//posts_en/2025-01-11-22-resources-for-developers-boost-your-productivity-creativity-and-code/img/img-6.png" alt="" /&gt;
+&lt;p class="caption"&gt;Execution Plan Example&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="figure"&gt;
+&lt;img src="https://r0mymendez.github.io//posts_en/2025-01-11-22-resources-for-developers-boost-your-productivity-creativity-and-code/img/img-7.png" alt="" /&gt;
+&lt;p class="caption"&gt;Execution Plan Graph&lt;/p&gt;
+&lt;/div&gt;
+&lt;blockquote&gt;
+&lt;p&gt;As with any data shared online, always check retention policies and security measures. Be sure not to upload any sensitive or confidential data.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;If you’re not familiar with the execution plan output, here’s a helpful guide to understand it: &lt;a href="http://tatiyants.com/postgres-query-plan-visualization/"&gt;Postgres Query Plan Visualization&lt;/a&gt;.&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h3 id="sqliteonline"&gt;&lt;a href="https://sqliteonline.com/"&gt;SQLiteOnline&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;If you want to quickly run &lt;strong&gt;SQL queries examples&lt;/strong&gt;, validate or practice exercises from a tutorial, this is a great solution for development.&lt;br /&gt;
+- &lt;strong&gt;Why use it&lt;/strong&gt;: It offers convenience and speed without the need to install any software.&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h1 id="productivity-and-personal-organization"&gt;⏰ Productivity and Personal Organization&lt;/h1&gt;
+&lt;p&gt;Sometimes we focus solely on tools that improve our coding efficiency, but it’s equally important to have tools that &lt;code&gt;help optimize our time&lt;/code&gt;, &lt;code&gt;enhance our professional presence&lt;/code&gt;, or &lt;code&gt;simply allow us to unwind&lt;/code&gt;.&lt;/p&gt;
+&lt;h3 id="pomofocus"&gt;&lt;a href="https://pomofocus.io/"&gt;Pomofocus&lt;/a&gt;&lt;/h3&gt;
+&lt;div class="figure"&gt;
+&lt;img src="https://r0mymendez.github.io//posts_en/2025-01-11-22-resources-for-developers-boost-your-productivity-creativity-and-code/img/img-8.png" alt="" /&gt;
+&lt;p class="caption"&gt;Pomofocus Screenshot&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;If you struggle to concentrate and complete tasks, this tool is a great way to adopt the &lt;code&gt;Pomodoro technique&lt;/code&gt;. It encourages focus by working in &lt;strong&gt;⏳ 25-minute intervals&lt;/strong&gt; followed by short breaks. This web-based timer helps schedule these cycles, making it easier to stay productive and focused.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Why use it&lt;/strong&gt;: Perfect for boosting productivity and maintaining focus by breaking work into manageable intervals.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr /&gt;
+&lt;h3 id="mynoise"&gt;&lt;a href="https://mynoise.net/"&gt;MyNoise&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;A customizable generator of relaxing 🎧 sounds with a wide variety of ambient noise options to choose from.&lt;br /&gt;
+- &lt;strong&gt;Why use it&lt;/strong&gt;: Helps maintain focus and concentration, even in noisy environments.&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h3 id="github-profile-readme-generator"&gt;&lt;a href="https://rahuldkjain.github.io/gh-profile-readme-generator/"&gt;GitHub Profile Readme Generator&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;GitHub has become our professional 📁 portfolio, so having an updated and appealing profile is essential. This tool helps you generate a personalized README file for your GitHub profile.&lt;br /&gt;
+- &lt;strong&gt;Why use it&lt;/strong&gt;: Adds a professional and unique touch to your GitHub profile.&lt;/p&gt;
+&lt;div class="figure"&gt;
+&lt;img src="https://r0mymendez.github.io//posts_en/2025-01-11-22-resources-for-developers-boost-your-productivity-creativity-and-code/img/img-9.png" alt="" /&gt;
+&lt;p class="caption"&gt;GitHub Profile Screenshot&lt;/p&gt;
+&lt;/div&gt;
+&lt;hr /&gt;
+&lt;h1 id="design-and-visualization"&gt;✏️ Design and Visualization&lt;/h1&gt;
+&lt;h3 id="coolors"&gt;&lt;a href="https://coolors.co/"&gt;Coolors&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;Generate color 🎨 palettes for design projects. It’s similar to Adobe Colors, another tool I often use to explore palettes created by the community.&lt;br /&gt;
+- &lt;strong&gt;Why use it&lt;/strong&gt;: Simplifies the process of selecting harmonious and visually appealing color schemes.&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h3 id="carbon"&gt;&lt;a href="https://carbon.now.sh/"&gt;Carbon&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;Create beautifully styled screenshots of code snippets.&lt;br /&gt;
+- &lt;strong&gt;Why use it&lt;/strong&gt;: Ideal for sharing code snippets on social media, documentation, or presentations.&lt;/p&gt;
+&lt;div class="figure"&gt;
+&lt;img src="https://r0mymendez.github.io//posts_en/2025-01-11-22-resources-for-developers-boost-your-productivity-creativity-and-code/img/img-10.png" alt="" /&gt;
+&lt;p class="caption"&gt;Carbon Screenshot&lt;/p&gt;
+&lt;/div&gt;
+&lt;hr /&gt;
+&lt;h3 id="remove.bg"&gt;&lt;a href="https://www.remove.bg/es/upload"&gt;Remove.bg&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;This tool automatically removes backgrounds from 🖼️ images, perfect for when you need a clean image for presentations or design work.&lt;br /&gt;
+- &lt;strong&gt;Why use it&lt;/strong&gt;: Saves time on quick design tasks.&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h1 id="icons-and-visual-resources"&gt;🎨 Icons and Visual Resources&lt;/h1&gt;
+&lt;h3 id="svgrepo"&gt;&lt;a href="https://www.svgrepo.com/"&gt;SVGRepo&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;If you’re looking for icons to use in your diagrams, presentations, or websites, SVGRepo is a fantastic tool. This site offers hundreds of free SVG icons, many of which can be customized to fit your needs. - &lt;strong&gt;Why use it&lt;/strong&gt;: Provides quick access to high-quality, customizable icons for your web and graphic design projects.&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://r0mymendez.github.io//posts_en/2025-01-11-22-resources-for-developers-boost-your-productivity-creativity-and-code/img/img-11.png" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://r0mymendez.github.io//posts_en/2025-01-11-22-resources-for-developers-boost-your-productivity-creativity-and-code/img/img-12.png" /&gt;&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h3 id="google-fonts-icons"&gt;&lt;a href="https://fonts.google.com/icons"&gt;Google Fonts Icons&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;A comprehensive catalog of icons that integrate seamlessly with the Google Fonts ecosystem. These material design icons are modern, user-friendly, and versatile, created following Google’s design guidelines.&lt;br /&gt;
+- &lt;strong&gt;Why use it&lt;/strong&gt;: Compatibility with Google Fonts and ease of use for web integration.&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h3 id="feather-icons"&gt;&lt;a href="https://feathericons.com/"&gt;Feather Icons&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;Another excellent tool featuring minimalist icons that can be customized freely to suit your design needs.&lt;br /&gt;
+- &lt;strong&gt;Why use it&lt;/strong&gt;: Ideal for creating sleek, modern interfaces with customizable visuals.&lt;/p&gt;
+&lt;hr /&gt;
+&lt;p&gt;&lt;img src="https://r0mymendez.github.io//posts_en/2025-01-11-22-resources-for-developers-boost-your-productivity-creativity-and-code/img/img-13.png" /&gt;&lt;/p&gt;
+&lt;hr /&gt;
+&lt;p&gt;If you know of other tools, feel free to share them in the 💬comments to foster community collaboration.&lt;/p&gt;
+&lt;pre class="r distill-force-highlighting-css"&gt;&lt;code&gt;&lt;/code&gt;&lt;/pre&gt;</description>
+      <distill:md5>1145ff34f2729c13bdf22d8a7d8c642e</distill:md5>
+      <category>Agile</category>
+      <category>Tools</category>
+      <category>Cloud Computing</category>
+      <category>Methodology</category>
+      <guid>https://r0mymendez.github.io/posts_en/2025-01-11-22-resources-for-developers-boost-your-productivity-creativity-and-code</guid>
+      <pubDate>Sat, 11 Jan 2025 00:00:00 +0000</pubDate>
+      <media:content url="https://r0mymendez.github.io/posts_en/2025-01-11-22-resources-for-developers-boost-your-productivity-creativity-and-code/preview.png" medium="image" type="image/png" width="800" height="449"/>
+    </item>
     <item>
       <title>Diagram-as-Code: Creating Dynamic and Interactive Documentation for Visual Content</title>
       <dc:creator>Romina Mendez</dc:creator>
@@ -689,203 +888,94 @@ You can deploy a static site to &lt;strong&gt;S3&lt;/strong&gt;, reducing deploy
       <media:content url="https://r0mymendez.github.io/posts_en/2025-01-10-deploying-docs-as-code-on-aws-building-dynamic-documentation-sites-in-mkdocs-and-docusaurus/preview.png" medium="image" type="image/png" width="800" height="464"/>
     </item>
     <item>
-      <title>22 Resources for Developers: Boost Your Productivity, Creativity, and Code</title>
+      <title>INSIDE LVMH Certification: A Journey through UX, Technology, Innovation, and Supply Chain in Luxury</title>
       <dc:creator>Romina Mendez</dc:creator>
-      <link>https://r0mymendez.github.io/posts_en/2025-01-11-22-resources-for-developers-boost-your-productivity-creativity-and-code</link>
+      <link>https://r0mymendez.github.io/posts_en/2025-01-11-inside-lvmh-certification-a-journey-through-ux-technology-innovation-and-supply-chain-in-luxury</link>
       <description>
 
 
-&lt;p&gt;In this article, I’m sharing 22 essential tools that I’ve incorporated into my daily routine as a developer. These tools cover everything from organization 📅 and documentation 📄 to design 🖌️, productivity 🚀, and programming 💻. I’ve organized them into 8 categories so you can easily find the ones that best suit your needs.&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://r0mymendez.github.io//posts_en/2025-01-11-22-resources-for-developers-boost-your-productivity-creativity-and-code/preview.png" /&gt;&lt;/p&gt;
-&lt;hr /&gt;
-&lt;h1 id="documentation-and-organization"&gt;📄 Documentation and Organization&lt;/h1&gt;
-&lt;h3 id="notion"&gt;&lt;a href="https://www.notion.so/"&gt;Notion&lt;/a&gt;&lt;/h3&gt;
-&lt;p&gt;Notion is a widely known tool, yet surprisingly, there are still people who haven’t tried it. It’s excellent for creating technical documentation 📄, managing publishing calendars, and organizing tasks. Additionally, it has an active community that shares reusable templates like Kanban boards and 📆 calendars, making it even more user-friendly.&lt;br /&gt;
-- &lt;strong&gt;Why use it&lt;/strong&gt;: It centralizes all your information in one place and offers the flexibility to customize it according to your specific needs.&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://r0mymendez.github.io//posts_en/2025-01-11-22-resources-for-developers-boost-your-productivity-creativity-and-code/img/img-1.png" alt="Image description" /&gt; 🖼️ Image source: &lt;a href="https://www.notion.com/es-es/help/notion-for-desktop" class="uri"&gt;https://www.notion.com/es-es/help/notion-for-desktop&lt;/a&gt;&lt;/p&gt;
-&lt;hr /&gt;
-&lt;h3 id="miro"&gt;&lt;a href="https://miro.com/es/"&gt;Miro&lt;/a&gt;&lt;/h3&gt;
-&lt;p&gt;Miro is a virtual whiteboard designed for creating mind maps, diagrams, and workflows collaboratively.&lt;br /&gt;
-- &lt;strong&gt;Why use it&lt;/strong&gt;: It’s an ideal tool for team sessions such as brainstorming, design thinking, or agile planning. Its real-time collaboration feature makes it perfect for dynamic projects involving multiple team members.&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://r0mymendez.github.io//posts_en/2025-01-11-22-resources-for-developers-boost-your-productivity-creativity-and-code/img/img-2.png" alt="Image description" /&gt; 🖼️ Image source: &lt;a href="https://miro.com/es/lluvia-de-ideas/" class="uri"&gt;https://miro.com/es/lluvia-de-ideas/&lt;/a&gt;&lt;/p&gt;
-&lt;hr /&gt;
-&lt;h1 id="drawings-diagrams"&gt;✏️ Drawings &amp;amp; Diagrams&lt;/h1&gt;
-&lt;h3 id="excalidraw"&gt;&lt;a href="https://excalidraw.com/"&gt;Excalidraw&lt;/a&gt;&lt;/h3&gt;
-&lt;p&gt;Excalidraw is an excellent alternative to tools like draw.io, offering attractive graphics with a minimalist design. It provides a user-friendly interface and libraries with icons for ☁️cloud services, programming languages, and more, allowing you to create blueprints effortlessly.&lt;br /&gt;
-- &lt;strong&gt;Why use it&lt;/strong&gt;: Easy to use with a visually appealing style, Excalidraw adds a personal touch to your diagrams, and its libraries make creating detailed blueprints faster and simpler.&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://r0mymendez.github.io//posts_en/2025-01-11-22-resources-for-developers-boost-your-productivity-creativity-and-code/img/img-3.png" alt="Image description" /&gt; 🖼️ Image source: &lt;a href="https://github.com/excalidraw/excalidraw" class="uri"&gt;https://github.com/excalidraw/excalidraw&lt;/a&gt;&lt;/p&gt;
-&lt;hr /&gt;
-&lt;h3 id="draw.io"&gt;&lt;a href="https://app.diagrams.net/"&gt;Draw.io&lt;/a&gt;&lt;/h3&gt;
-&lt;p&gt;Draw.io is a popular tool for creating UML diagrams, process flows, and more. It integrates seamlessly with Google Drive, allowing you to work directly within your account or offline.&lt;br /&gt;
-- &lt;strong&gt;Why use it&lt;/strong&gt;: It offers advanced options for creating detailed diagrams and is easily accessible through Google Drive or as a desktop version.&lt;/p&gt;
-&lt;hr /&gt;
-&lt;h3 id="wireflow"&gt;&lt;a href="https://app.wireflow.co/"&gt;Wireflow&lt;/a&gt;&lt;/h3&gt;
-&lt;p&gt;Wireflow lets you create flowcharts with illustrative icons, offering modern and easy-to-use graphics that make designing detailed flow diagrams a breeze.&lt;br /&gt;
-&amp;gt; The Wireflow concept is a popular UX and UI design method that combines the best aspects of wireframes and user flows to document user interactions in apps or websites.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Why use it&lt;/strong&gt;: Its intuitive and visually appealing design is perfect for presenting workflows to clients or teams, providing a user-friendly interface and stunning visuals.&lt;/li&gt;
-&lt;/ul&gt;
+&lt;h1 id="what-is-lvmh"&gt;What is LVMH?&lt;/h1&gt;
+&lt;p&gt;LVMH (Louis Vuitton Moët Hennessy) is the global leader in luxury products and services. Formed in 1987 after the merger of two major names, the fashion house Louis Vuitton and the wines and spirits house Moët Hennessy, this conglomerate has become a symbol of excellence and sophistication. With more than 75 iconic brands under its umbrella, LVMH spans diverse sectors, including fashion, perfumes, jewelry, wines, hospitality, and art.&lt;/p&gt;
 &lt;div class="figure"&gt;
-&lt;img src="https://r0mymendez.github.io//posts_en/2025-01-11-22-resources-for-developers-boost-your-productivity-creativity-and-code/img/img-4.png" alt="" /&gt;
+&lt;img src="https://r0mymendez.github.io//posts_en/2025-01-11-inside-lvmh-certification-a-journey-through-ux-technology-innovation-and-supply-chain-in-luxury/preview.png" alt="" /&gt;
 &lt;p class="caption"&gt;Image description&lt;/p&gt;
 &lt;/div&gt;
-&lt;p&gt;🖼️ Image source: &lt;a href="https://wireflow.co/" class="uri"&gt;https://wireflow.co/&lt;/a&gt;&lt;/p&gt;
-&lt;hr /&gt;
-&lt;h3 id="lorem-ipsum-generator"&gt;&lt;a href="https://loremipsum.io/es"&gt;Lorem Ipsum Generator&lt;/a&gt;&lt;/h3&gt;
-&lt;p&gt;Lorem Ipsum Generator creates placeholder text used in graphic design, typography demos, and design drafts. It allows you to visualize the layout before inserting final content.&lt;br /&gt;
-- &lt;strong&gt;Why use it&lt;/strong&gt;: It saves time by generating temporary content, a must-have when designing in tools like Figma, and is helpful for quickly filling in text blocks during mockups.&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://r0mymendez.github.io//posts_en/2025-01-11-22-resources-for-developers-boost-your-productivity-creativity-and-code/img/img-5.png" alt="Image description" /&gt; 🖼️ Image source: &lt;a href="https://loremipsum.io/es" class="uri"&gt;https://loremipsum.io/es&lt;/a&gt;&lt;/p&gt;
-&lt;hr /&gt;
-&lt;h1 id="api-queries"&gt;🛠 API Queries&lt;/h1&gt;
-&lt;h3 id="postman"&gt;&lt;a href="https://web.postman.co/"&gt;Postman&lt;/a&gt;&lt;/h3&gt;
-&lt;p&gt;Postman is one of the most complete and advanced tools for testing and developing APIs. It offers features such as automated testing, response simulation, and the ability to share test collections among teams, making it ideal for collaborative and complex projects.&lt;br /&gt;
-- &lt;strong&gt;Why use it&lt;/strong&gt;: Perfect for complex scenarios and team collaboration, Postman allows you to design, test, and monitor APIs efficiently, with powerful features for automation, monitoring, and documentation.&lt;/p&gt;
-&lt;hr /&gt;
-&lt;h3 id="hoppscotch"&gt;&lt;a href="https://hoppscotch.io/"&gt;Hoppscotch&lt;/a&gt;&lt;/h3&gt;
-&lt;p&gt;Hoppscotch is a lightweight, online alternative to Postman for quickly testing and querying APIs. While it doesn’t offer all the advanced features of Postman, it excels in simplicity and ease of use, particularly for quick API testing on the go.&lt;br /&gt;
-- &lt;strong&gt;Why use it&lt;/strong&gt;: Hoppscotch provides a clean and intuitive interface directly in your browser, making it an excellent choice for developers who need a fast, no-frills tool for testing APIs without the need for installation or complex setup.&lt;/p&gt;
-&lt;hr /&gt;
-&lt;h1 id="regular-expressions"&gt;🔍 Regular Expressions&lt;/h1&gt;
-&lt;h3 id="regex101"&gt;&lt;a href="https://regex101.com/"&gt;Regex101&lt;/a&gt;&lt;/h3&gt;
-&lt;p&gt;Regex101 simplifies the creation and &lt;strong&gt;testing of regular expressions&lt;/strong&gt; across multiple programming languages. It offers a detailed explanation of each regex component, making it easier to understand how your expressions work.&lt;br /&gt;
-- &lt;strong&gt;Why use it&lt;/strong&gt;: Save time by validating and tweaking your regular expressions without the need to run them in a development environment. You can also share your regex tests with others, making it a great tool for collaboration.&lt;/p&gt;
-&lt;hr /&gt;
-&lt;h3 id="regexr"&gt;&lt;a href="https://regexr.com/"&gt;Regexr&lt;/a&gt;&lt;/h3&gt;
-&lt;p&gt;Regexr is another option for &lt;strong&gt;learning&lt;/strong&gt;, &lt;strong&gt;creating&lt;/strong&gt;, and &lt;strong&gt;testing regular expressions&lt;/strong&gt; with real-time examples. It provides helpful syntax highlighting and a community-driven library of regular expressions.&lt;br /&gt;
-- &lt;strong&gt;Why use it&lt;/strong&gt;: Its interactive and beginner-friendly interface makes it ideal for those starting to learn regular expressions, offering instant feedback and useful regex examples.&lt;/p&gt;
-&lt;hr /&gt;
-&lt;h1 id="languages-databases-sql"&gt;🗄️ Languages &amp;amp; Databases &amp;amp; SQL&lt;/h1&gt;
-&lt;h3 id="onecompiler"&gt;&lt;a href="https://onecompiler.com/postgresql"&gt;OneCompiler&lt;/a&gt;&lt;/h3&gt;
-&lt;p&gt;OneCompiler allows you to &lt;strong&gt;test code&lt;/strong&gt; without the need for installation, offering an easy way to run examples. It supports over 60 programming languages, including PostgreSQL.&lt;br /&gt;
-- &lt;strong&gt;Why use it&lt;/strong&gt;: It’s perfect for practicing or verifying SQL queries without having to set up a local development environment.&lt;/p&gt;
-&lt;hr /&gt;
-&lt;h3 id="explain-dalibo"&gt;&lt;a href="https://explain.dalibo.com/"&gt;Explain Dalibo&lt;/a&gt;&lt;/h3&gt;
-&lt;p&gt;Sometimes, it’s unclear why certain SQL queries in &lt;strong&gt;postgres&lt;/strong&gt; take a long time to execute or consume too many resources. This tool helps visualize and analyze &lt;strong&gt;SQL execution plans&lt;/strong&gt; interactively.&lt;br /&gt;
-- &lt;strong&gt;Why use it&lt;/strong&gt;: It’s useful for optimizing your database performance by providing insights into query execution plans.&lt;/p&gt;
-&lt;p&gt;Here’s a quick example of how to use it:&lt;/p&gt;
-&lt;ol style="list-style-type: decimal"&gt;
-&lt;li&gt;Suppose you have a query that’s taking a long time to execute and you want to analyze it.&lt;/li&gt;
-&lt;/ol&gt;
-&lt;pre class="sql"&gt;&lt;code&gt;SELECT 
-    e.name AS employee_name,
-    d.name AS department_name,
-    AVG(s.amount) AS avg_salary
-FROM 
-    employees e
-JOIN  departments d ON e.department_id = d.id
-JOIN  salaries s ON e.id = s.employee_id
-WHERE 
-    d.budget &amp;gt; 1000000
-    AND s.amount &amp;gt; (s.amount * 0.10 + LAG(s.amount) OVER (PARTITION BY e.id ORDER BY s.date))
-GROUP BY 
-    e.name, d.name
-ORDER BY 
-    avg_salary DESC;&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;You can add the &lt;code&gt;EXPLAIN&lt;/code&gt; keyword at the beginning of your query:&lt;/p&gt;
-&lt;pre class="sql"&gt;&lt;code&gt;EXPLAIN
-   SELECT .../* Here goes the rest of your query */
-;&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;This will return an execution plan like the following:&lt;/p&gt;
-&lt;pre class="bash"&gt;&lt;code&gt;Sort  (cost=50233.24..50233.75 rows=204 width=96)
-  Sort Key: (avg(s.amount)) DESC
-  -&amp;gt;  HashAggregate  (cost=50230.40..50231.40 rows=204 width=96)
-        Group Key: e.name, d.name
-        -&amp;gt;  WindowAgg  (cost=40230.00..40230.40 rows=50000 width=64)
-              -&amp;gt;  Hash Join  (cost=20000.00..30000.00 rows=50000 width=64)
-                    Hash Cond: (s.employee_id = e.id)
-                    -&amp;gt;  Seq Scan on salaries s  (cost=0.00..8000.00 rows=50000 width=32)
-                    -&amp;gt;  Hash  (cost=10000.00..10000.00 rows=10000 width=64)
-                          -&amp;gt;  Hash Join  (cost=5000.00..10000.00 rows=10000 width=64)
-                                Hash Cond: (e.department_id = d.id)
-                                -&amp;gt;  Seq Scan on employees e  (cost=0.00..4000.00 rows=10000 width=32)
-                                -&amp;gt;  Hash  (cost=3000.00..3000.00 rows=1000 width=32)
-                                      -&amp;gt;  Seq Scan on departments d  (cost=0.00..3000.00 rows=1000 width=32)
-                                            Filter: (budget &amp;gt; 1000000)&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Once you have this output, you can paste it into &lt;a href="https://explain.dalibo.com/"&gt;Explain Dalibo&lt;/a&gt;, submit it, and the tool will display the execution analysis in a graphical format, making it easier to identify performance issues.&lt;/p&gt;
-&lt;div class="figure"&gt;
-&lt;img src="https://r0mymendez.github.io//posts_en/2025-01-11-22-resources-for-developers-boost-your-productivity-creativity-and-code/img/img-6.png" alt="" /&gt;
-&lt;p class="caption"&gt;Execution Plan Example&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="figure"&gt;
-&lt;img src="https://r0mymendez.github.io//posts_en/2025-01-11-22-resources-for-developers-boost-your-productivity-creativity-and-code/img/img-7.png" alt="" /&gt;
-&lt;p class="caption"&gt;Execution Plan Graph&lt;/p&gt;
-&lt;/div&gt;
+&lt;p&gt;&lt;strong&gt;✨ Among the most recognized brands are:&lt;/strong&gt; * 💼 &lt;strong&gt;Fashion and leather goods:&lt;/strong&gt; Louis Vuitton, Dior, Fendi, Celine, and Loewe. * 💄 &lt;strong&gt;Perfumes and cosmetics:&lt;/strong&gt; Guerlain, Fenty Beauty, Acqua di Parma. * ⌚ &lt;strong&gt;Watches and jewelry:&lt;/strong&gt; Bulgari, Tag Heuer, Tiffany &amp;amp; Co. * 🍇 &lt;strong&gt;Wines and spirits:&lt;/strong&gt; Moët &amp;amp; Chandon, Dom Pérignon, Hennessy. * 🏨 &lt;strong&gt;Hotels and cultural experiences:&lt;/strong&gt; Cheval Blanc, Bulgari Hotels, Fondation Louis Vuitton.&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;As with any data shared online, always check retention policies and security measures. Be sure not to upload any sensitive or confidential data.&lt;/p&gt;
+&lt;p&gt;The concept of luxury not only offers exceptional products but also creates unique experiences that combine tradition and modernity. Its commitment to innovation, sustainability, and cultural heritage has allowed LVMH to maintain its position as a global benchmark.&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;p&gt;If you’re not familiar with the execution plan output, here’s a helpful guide to understand it: &lt;a href="http://tatiyants.com/postgres-query-plan-visualization/"&gt;Postgres Query Plan Visualization&lt;/a&gt;.&lt;/p&gt;
 &lt;hr /&gt;
-&lt;h3 id="sqliteonline"&gt;&lt;a href="https://sqliteonline.com/"&gt;SQLiteOnline&lt;/a&gt;&lt;/h3&gt;
-&lt;p&gt;If you want to quickly run &lt;strong&gt;SQL queries examples&lt;/strong&gt;, validate or practice exercises from a tutorial, this is a great solution for development.&lt;br /&gt;
-- &lt;strong&gt;Why use it&lt;/strong&gt;: It offers convenience and speed without the need to install any software.&lt;/p&gt;
+&lt;h1 id="the-inside-lvmh-certification"&gt;The INSIDE LVMH Certification&lt;/h1&gt;
+&lt;p&gt;The &lt;strong&gt;INSIDE LVMH certification&lt;/strong&gt; is a &lt;strong&gt;free and exclusive&lt;/strong&gt; educational program offering an immersion into the luxury industry. Designed in collaboration with renowned institutions such as &lt;code&gt;HEC Paris&lt;/code&gt;, &lt;code&gt;Central Saint Martins&lt;/code&gt;, &lt;code&gt;Università Bocconi&lt;/code&gt;, and &lt;code&gt;Harvard&lt;/code&gt;, this course explores the &lt;code&gt;LVMH ecosystem&lt;/code&gt; through four modules.&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://r0mymendez.github.io//posts_en/2025-01-11-inside-lvmh-certification-a-journey-through-ux-technology-innovation-and-supply-chain-in-luxury/img/img-1.png" /&gt;&lt;/p&gt;
+&lt;h1 id="certification-modules"&gt;Certification Modules&lt;/h1&gt;
+&lt;h2 id="lvmh-the-luxury-industry"&gt;📚 1- LVMH &amp;amp; The Luxury Industry&lt;/h2&gt;
+&lt;p&gt;This module provides a comprehensive overview of LVMH’s history, its business sectors, and iconic Maisons. It also analyzes the ongoing evolution of the luxury industry, highlighting key trends such as sustainability, digital transformation, and the growing relevance of the Asian market.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Topics covered include:&lt;/strong&gt; * 🎯 Current market trends. * 🔍 Digital transformation and personalization.&lt;/p&gt;
 &lt;hr /&gt;
-&lt;h1 id="productivity-and-personal-organization"&gt;⏰ Productivity and Personal Organization&lt;/h1&gt;
-&lt;p&gt;Sometimes we focus solely on tools that improve our coding efficiency, but it’s equally important to have tools that &lt;code&gt;help optimize our time&lt;/code&gt;, &lt;code&gt;enhance our professional presence&lt;/code&gt;, or &lt;code&gt;simply allow us to unwind&lt;/code&gt;.&lt;/p&gt;
-&lt;h3 id="pomofocus"&gt;&lt;a href="https://pomofocus.io/"&gt;Pomofocus&lt;/a&gt;&lt;/h3&gt;
-&lt;div class="figure"&gt;
-&lt;img src="https://r0mymendez.github.io//posts_en/2025-01-11-22-resources-for-developers-boost-your-productivity-creativity-and-code/img/img-8.png" alt="" /&gt;
-&lt;p class="caption"&gt;Pomofocus Screenshot&lt;/p&gt;
-&lt;/div&gt;
-&lt;p&gt;If you struggle to concentrate and complete tasks, this tool is a great way to adopt the &lt;code&gt;Pomodoro technique&lt;/code&gt;. It encourages focus by working in &lt;strong&gt;⏳ 25-minute intervals&lt;/strong&gt; followed by short breaks. This web-based timer helps schedule these cycles, making it easier to stay productive and focused.&lt;/p&gt;
+&lt;h2 id="luxury-society"&gt;🌱 2- Luxury &amp;amp; Society&lt;/h2&gt;
+&lt;p&gt;This module focuses on LVMH’s commitment to environmental and social sustainability. Strategies for minimizing environmental impact and fostering positive social impact are explored, demonstrating how sustainability is deeply integrated into luxury brands.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Topics covered include:&lt;/strong&gt; * 🌐 The relationship between luxury and society. * 🌳 Environmental policies implemented for over 30 years. * 🤝 Positive social impact through inclusion and corporate responsibility. (Personally, I found this topic fascinating in how they classify and address inclusion within the group’s companies.)&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h2 id="creation-branding"&gt;🎨 3- Creation &amp;amp; Branding&lt;/h2&gt;
+&lt;p&gt;This module delves into the creative process behind luxury products and the strategic management of brands. Professors and LVMH talents shared insights on how iconic brands like Bulgari, Dior, and Tiffany &amp;amp; Co. leverage their DNA and heritage to design timeless products and exceptional experiences. &lt;strong&gt;Topics covered include:&lt;/strong&gt; * 🧬 Brand DNA and codes. * 🤝 Strategies for collaborations and creating experiences. * 🌟 Practical examples of brand management in Bulgari, Dior, and Tiffany &amp;amp; Co.&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h2 id="retail-customer-experience"&gt;🛍️ 4- Retail &amp;amp; Customer Experience&lt;/h2&gt;
+&lt;p&gt;This final module explores the role of retail in the luxury industry and how LVMH Maisons create immersive experiences for customers through omnichannel strategies and personalized relationships.&lt;/p&gt;
+&lt;p&gt;It also examines how these brands integrate data and innovative technologies, such as blockchain and NFTs, to deliver seamless experiences, ensure product traceability, and enhance excellence. &lt;strong&gt;Topics covered include:&lt;/strong&gt; * 🔗 Omnichannel strategies and data use. * 💡 Integration of advanced technologies like blockchain and machine learning.&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h2 id="extra-módulo-operations-supply-chain"&gt;🚚 5- Extra Módulo: Operations &amp;amp; Supply Chain&lt;/h2&gt;
+&lt;p&gt;While the original certification consists of four modules, I decided to take this additional fifth module on the supply chain (⚖Supply Chain) in the 💎luxury industry, and I honestly think it was the most impactful. This module explained in detail what Supply Chain means within luxury brands and how this process varies depending on the types of products offered. From production and logistics to distribution, the module showed how these brands orchestrate each stage to meet the expectations of the most demanding clients. &lt;strong&gt;Topics covered include:&lt;/strong&gt; * 🧩 Definition and scope of operations in luxury: A 360° view of key processes, from manufacturing to distribution. * 📈 Performance indicators (KPIs): Methods to measure and improve supply chain efficiency, with practical examples and formulas. * 🌱 Sustainability in the Supply Chain: How luxury brands integrate sustainable practices at all stages, from sourcing to transportation.&lt;/p&gt;
+&lt;p&gt;This module allowed me to understand how luxury brands manage complex systems of &lt;code&gt;production&lt;/code&gt; and &lt;code&gt;distribution&lt;/code&gt; while maintaining quality standards. The most interesting part was learning about the differentiation of processes &lt;code&gt;according to the products&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Additionally, it addressed product traceability from &lt;strong&gt;material sourcing&lt;/strong&gt; to &lt;strong&gt;final delivery&lt;/strong&gt;, demonstrating an integral, sustainable, and client-focused approach&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h1 id="my-experience-and-learnings"&gt;My Experience and Learnings&lt;/h1&gt;
+&lt;p&gt;Currently, I work on Big Data and Advanced Analytics projects, and this certification allowed me to develop a broader perspective on key aspects that connect technology and innovation in the luxury industry:&lt;/p&gt;
+&lt;h3 id="technological-strategies-and-traceability"&gt;🧩 Technological strategies and traceability&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Why use it&lt;/strong&gt;: Perfect for boosting productivity and maintaining focus by breaking work into manageable intervals.&lt;/li&gt;
+&lt;li&gt;Advanced technologies such as blockchain and predictive analytics models are essential for supply chain traceability.&lt;/li&gt;
+&lt;li&gt;These tools not only strengthen operations but also build consumer trust and optimize logistics processes.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="creative-process-and-innovation"&gt;🎨 Creative process and innovation&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Although I work on IT and consultancy projects, I found parallels with the creation of luxury collections: from service personalization to designing scalable architectures.&lt;/li&gt;
+&lt;li&gt;This creative process requires prototypes, iterations, approvals, and regulations, reflecting the importance of continuously documenting and adjusting to align with client needs.&lt;/li&gt;
+&lt;li&gt;Learning from processes in other industries broadens the ability to innovate and personalize solutions in the technological field.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="understanding-the-client-360-client-centric"&gt;👥 Understanding the client (360 client-centric)&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;The importance of metrics and models to measure customer satisfaction is a cornerstone in personalization.&lt;/li&gt;
+&lt;li&gt;This industry stands out for its focus on creating unique experiences, requiring data-driven strategies that segment audiences and predict behaviors.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="culture-and-tradition"&gt;🏛️ Culture and tradition&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Inspiration from brands like Louis Vuitton, founded in 1854, which balance artisanal practices with technological advances.&lt;/li&gt;
+&lt;li&gt;Technology is a key bridge to integrate into creative, operational, logistical, and post-sale processes, but it must maintain a balance that preserves the identity and personalization of brands while evolving alongside modern market demands.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;hr /&gt;
-&lt;h3 id="mynoise"&gt;&lt;a href="https://mynoise.net/"&gt;MyNoise&lt;/a&gt;&lt;/h3&gt;
-&lt;p&gt;A customizable generator of relaxing 🎧 sounds with a wide variety of ambient noise options to choose from.&lt;br /&gt;
-- &lt;strong&gt;Why use it&lt;/strong&gt;: Helps maintain focus and concentration, even in noisy environments.&lt;/p&gt;
+&lt;h3 id="personal-reflections"&gt;&lt;strong&gt;Personal Reflections&lt;/strong&gt;&lt;/h3&gt;
+&lt;p&gt;The &lt;strong&gt;INSIDE LVMH certification&lt;/strong&gt; is an opportunity to learn about the luxury industry and understand how brands in this sector operate.&lt;/p&gt;
+&lt;p&gt;In my case, it allowed me to reflect on the &lt;strong&gt;creative process&lt;/strong&gt; and how to identify the tools designers and artists need to bring their ideas to life. As software developers, we often forget that our solutions are created for end users who, in turn, serve other potential clients seeking &lt;strong&gt;unique experiences&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;This learning reinforces the importance of designing with personalization in mind and maintaining a balance between innovation and brand identity.&lt;/p&gt;
 &lt;hr /&gt;
-&lt;h3 id="github-profile-readme-generator"&gt;&lt;a href="https://rahuldkjain.github.io/gh-profile-readme-generator/"&gt;GitHub Profile Readme Generator&lt;/a&gt;&lt;/h3&gt;
-&lt;p&gt;GitHub has become our professional 📁 portfolio, so having an updated and appealing profile is essential. This tool helps you generate a personalized README file for your GitHub profile.&lt;br /&gt;
-- &lt;strong&gt;Why use it&lt;/strong&gt;: Adds a professional and unique touch to your GitHub profile.&lt;/p&gt;
-&lt;div class="figure"&gt;
-&lt;img src="https://r0mymendez.github.io//posts_en/2025-01-11-22-resources-for-developers-boost-your-productivity-creativity-and-code/img/img-9.png" alt="" /&gt;
-&lt;p class="caption"&gt;GitHub Profile Screenshot&lt;/p&gt;
-&lt;/div&gt;
+&lt;h1 id="take-advantage-of-the-opportunity"&gt;Take Advantage of the Opportunity&lt;/h1&gt;
+&lt;p&gt;I highly recommend taking the &lt;strong&gt;INSIDE LVMH certification&lt;/strong&gt;, which is offered 📆 twice a year. This platform not only provides this course but also offers a wide range of resources designed by group employees, industry leaders, and academic experts.&lt;/p&gt;
+&lt;p&gt;Registering for &lt;strong&gt;INSIDE LVMH&lt;/strong&gt; is not limited to obtaining the certificate; it also provides regular access to exclusive content.&lt;/p&gt;
 &lt;hr /&gt;
-&lt;h1 id="design-and-visualization"&gt;✏️ Design and Visualization&lt;/h1&gt;
-&lt;h3 id="coolors"&gt;&lt;a href="https://coolors.co/"&gt;Coolors&lt;/a&gt;&lt;/h3&gt;
-&lt;p&gt;Generate color 🎨 palettes for design projects. It’s similar to Adobe Colors, another tool I often use to explore palettes created by the community.&lt;br /&gt;
-- &lt;strong&gt;Why use it&lt;/strong&gt;: Simplifies the process of selecting harmonious and visually appealing color schemes.&lt;/p&gt;
-&lt;hr /&gt;
-&lt;h3 id="carbon"&gt;&lt;a href="https://carbon.now.sh/"&gt;Carbon&lt;/a&gt;&lt;/h3&gt;
-&lt;p&gt;Create beautifully styled screenshots of code snippets.&lt;br /&gt;
-- &lt;strong&gt;Why use it&lt;/strong&gt;: Ideal for sharing code snippets on social media, documentation, or presentations.&lt;/p&gt;
-&lt;div class="figure"&gt;
-&lt;img src="https://r0mymendez.github.io//posts_en/2025-01-11-22-resources-for-developers-boost-your-productivity-creativity-and-code/img/img-10.png" alt="" /&gt;
-&lt;p class="caption"&gt;Carbon Screenshot&lt;/p&gt;
-&lt;/div&gt;
-&lt;hr /&gt;
-&lt;h3 id="remove.bg"&gt;&lt;a href="https://www.remove.bg/es/upload"&gt;Remove.bg&lt;/a&gt;&lt;/h3&gt;
-&lt;p&gt;This tool automatically removes backgrounds from 🖼️ images, perfect for when you need a clean image for presentations or design work.&lt;br /&gt;
-- &lt;strong&gt;Why use it&lt;/strong&gt;: Saves time on quick design tasks.&lt;/p&gt;
-&lt;hr /&gt;
-&lt;h1 id="icons-and-visual-resources"&gt;🎨 Icons and Visual Resources&lt;/h1&gt;
-&lt;h3 id="svgrepo"&gt;&lt;a href="https://www.svgrepo.com/"&gt;SVGRepo&lt;/a&gt;&lt;/h3&gt;
-&lt;p&gt;If you’re looking for icons to use in your diagrams, presentations, or websites, SVGRepo is a fantastic tool. This site offers hundreds of free SVG icons, many of which can be customized to fit your needs. - &lt;strong&gt;Why use it&lt;/strong&gt;: Provides quick access to high-quality, customizable icons for your web and graphic design projects.&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://r0mymendez.github.io//posts_en/2025-01-11-22-resources-for-developers-boost-your-productivity-creativity-and-code/img/img-11.png" /&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://r0mymendez.github.io//posts_en/2025-01-11-22-resources-for-developers-boost-your-productivity-creativity-and-code/img/img-12.png" /&gt;&lt;/p&gt;
-&lt;hr /&gt;
-&lt;h3 id="google-fonts-icons"&gt;&lt;a href="https://fonts.google.com/icons"&gt;Google Fonts Icons&lt;/a&gt;&lt;/h3&gt;
-&lt;p&gt;A comprehensive catalog of icons that integrate seamlessly with the Google Fonts ecosystem. These material design icons are modern, user-friendly, and versatile, created following Google’s design guidelines.&lt;br /&gt;
-- &lt;strong&gt;Why use it&lt;/strong&gt;: Compatibility with Google Fonts and ease of use for web integration.&lt;/p&gt;
-&lt;hr /&gt;
-&lt;h3 id="feather-icons"&gt;&lt;a href="https://feathericons.com/"&gt;Feather Icons&lt;/a&gt;&lt;/h3&gt;
-&lt;p&gt;Another excellent tool featuring minimalist icons that can be customized freely to suit your design needs.&lt;br /&gt;
-- &lt;strong&gt;Why use it&lt;/strong&gt;: Ideal for creating sleek, modern interfaces with customizable visuals.&lt;/p&gt;
-&lt;hr /&gt;
-&lt;p&gt;&lt;img src="https://r0mymendez.github.io//posts_en/2025-01-11-22-resources-for-developers-boost-your-productivity-creativity-and-code/img/img-13.png" /&gt;&lt;/p&gt;
-&lt;hr /&gt;
-&lt;p&gt;If you know of other tools, feel free to share them in the 💬comments to foster community collaboration.&lt;/p&gt;
+&lt;h1 id="referencias"&gt;📚 Referencias&lt;/h1&gt;
+&lt;ol style="list-style-type: decimal"&gt;
+&lt;li&gt;&lt;strong&gt;Inside LVMH&lt;/strong&gt; :&lt;a href="https://www.insidelvmh.com" class="uri"&gt;https://www.insidelvmh.com&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;LVMH&lt;/strong&gt;: &lt;a href="https://www.lvmh.com/en" class="uri"&gt;https://www.lvmh.com/en&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
 &lt;pre class="r distill-force-highlighting-css"&gt;&lt;code&gt;&lt;/code&gt;&lt;/pre&gt;</description>
-      <distill:md5>1145ff34f2729c13bdf22d8a7d8c642e</distill:md5>
+      <distill:md5>b406650295afe4d2fa4da21f94b5b6f6</distill:md5>
       <category>Agile</category>
       <category>Tools</category>
-      <category>Cloud Computing</category>
       <category>Methodology</category>
-      <guid>https://r0mymendez.github.io/posts_en/2025-01-11-22-resources-for-developers-boost-your-productivity-creativity-and-code</guid>
+      <category>Supply chain</category>
+      <guid>https://r0mymendez.github.io/posts_en/2025-01-11-inside-lvmh-certification-a-journey-through-ux-technology-innovation-and-supply-chain-in-luxury</guid>
       <pubDate>Fri, 10 Jan 2025 00:00:00 +0000</pubDate>
-      <media:content url="https://r0mymendez.github.io/posts_en/2025-01-11-22-resources-for-developers-boost-your-productivity-creativity-and-code/preview.png" medium="image" type="image/png" width="800" height="449"/>
+      <media:content url="https://r0mymendez.github.io/posts_en/2025-01-11-inside-lvmh-certification-a-journey-through-ux-technology-innovation-and-supply-chain-in-luxury/preview.png" medium="image" type="image/png" width="800" height="509"/>
     </item>
     <item>
       <title>Efficiently Querying JSON Data in Python: Exploring the MET Museum's Artworks</title>
@@ -1260,294 +1350,6 @@ echo &amp;quot;$json_output&amp;quot; &amp;gt; output.json&lt;/code&gt;&lt;/pre&
       <guid>https://r0mymendez.github.io/posts_en/2025-01-02-efficiently-querying-json-data-in-python-exploring-the-met-museums-artworks</guid>
       <pubDate>Thu, 02 Jan 2025 00:00:00 +0000</pubDate>
       <media:content url="https://r0mymendez.github.io/posts_en/2025-01-02-efficiently-querying-json-data-in-python-exploring-the-met-museums-artworks/preview.png" medium="image" type="image/png" width="1333" height="580"/>
-    </item>
-    <item>
-      <title>My Preparation Journey for GitHub Fundamentals Certification</title>
-      <dc:creator>Romina Mendez</dc:creator>
-      <link>https://r0mymendez.github.io/posts_en/2024-08-20-my-preparation-journey-for-github-fundamentals-certification</link>
-      <description>
-
-
-&lt;p&gt;This month, I achieved the &lt;strong&gt;“GitHub Fundamentals”&lt;/strong&gt; certification, and in this article, I want to share how I did it, what new things I learned, and what I didn’t know before but wish I had known earlier so I could have implemented it sooner.&lt;/p&gt;
-&lt;h1 id="what-is-the-github-platform"&gt;What is the GitHub Platform?&lt;/h1&gt;
-&lt;p&gt;The &lt;strong&gt;GitHub&lt;/strong&gt; platform is a cloud-based solution built on &lt;strong&gt;Git&lt;/strong&gt;, a version control system. It facilitates collaboration and project management through a range of features and AI-powered tools, enabling efficient software development, while ensuring quality and secure deployment.&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://r0mymendez.github.io//posts_en/2024-08-20-my-preparation-journey-for-github-fundamentals-certification/img/img-1.png" /&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Some features we can highlight are as follows:&lt;/strong&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;🤖 AI&lt;/strong&gt;: GitHub uses products like Copilot, which will be described later, to help develop and solve problems and perform automated security reviews. This enhances collaboration, productivity, and security.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;🤝 Collaboration&lt;/strong&gt;: GitHub facilitates efficient collaboration with tools such as Repositories, Issues, and Pull Requests. These features allow multidisciplinary teams to work together quickly, reduce approval times, and accelerate project delivery.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;⚙️ Productivity&lt;/strong&gt;: Automation through GitHub Actions enables developers to focus on creating solutions and avoid repetitive manual tasks.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;🔒 Security&lt;/strong&gt;: GitHub includes features like Dependabot and automated security reviews, ensuring that code remains private and protected within the organization.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;🌍 Scalability&lt;/strong&gt;: GitHub boasts the largest developer community in the world, with over 100 million developers and more than 330 million repositories.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;🔗 Integration&lt;/strong&gt;: Additionally, GitHub offers an API that allows for integrations and customization of workflows, as well as automation of tasks.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;hr /&gt;
-&lt;h1 id="github-functionalities-products"&gt;🟠 GitHub Functionalities &amp;amp; Products&lt;/h1&gt;
-&lt;p&gt;As mentioned initially, this post is intended to discuss what you need to know in order to pass the certification exam. Below, we have an image that represents each of the described entities and the topics you should study to successfully pass the certification exam, which consists of &lt;strong&gt;✏️ 75 multiple-choice questions&lt;/strong&gt;.&lt;/p&gt;
-&lt;p&gt;This mental map represents how I organized the key concepts needed to prepare for the certification, following the GitHub Foundation Learning Path, which I will explain next.&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://r0mymendez.github.io//posts_en/2024-08-20-my-preparation-journey-for-github-fundamentals-certification/img/img-2.png" /&gt;&lt;/p&gt;
-&lt;hr /&gt;
-&lt;h1 id="github-foundations-learning-path"&gt;🟠 GitHub Foundations Learning Path&lt;/h1&gt;
-&lt;p&gt;In order to effectively study and understand all the essential content for the certification, I completed the &lt;a href="https://learn.microsoft.com/en-us/collections/o1njfe825p602p"&gt;&lt;strong&gt;‘GitHub Foundations Learning Path’&lt;/strong&gt;&lt;/a&gt; provided by &lt;strong&gt;Microsoft Learn&lt;/strong&gt;. This path consists of 15 modules, totaling approximately ⌛ 10 hours, with each module averaging about ⌛ 35 minutes. The journey combines 📚 theoretical knowledge with ✏️hands-on exercises, enabling me to effectively learn and apply the concepts.&lt;/p&gt;
-&lt;h2 id="practices-with-github-actions"&gt;Practices with GitHub Actions&lt;/h2&gt;
-&lt;p&gt;The modules include ✏️ hands-on exercises solved in stages, using &lt;strong&gt;GitHub Actions&lt;/strong&gt; to validate each step of the process. This inspired me to develop similar tutorials for future posts.&lt;/p&gt;
-&lt;h2 id="interactive-console"&gt;Interactive Console&lt;/h2&gt;
-&lt;p&gt;Some modules, such as the first one, offer an interactive console that facilitates executing typical Git commands, further enhancing the learning experience.&lt;/p&gt;
-&lt;h2 id="knowledge-check"&gt;Knowledge Check&lt;/h2&gt;
-&lt;p&gt;Each unit includes a set of ✏️questions to validate what has been learned, similar to those found on the exam. &amp;gt; 🙌 I recommend completing and reviewing these questions to consolidate the knowledge acquired.&lt;/p&gt;
-&lt;hr /&gt;
-&lt;h1 id="overview-of-units"&gt;🟠 Overview of Units&lt;/h1&gt;
-&lt;p&gt;With the foundational concepts established, I will now delve into a detailed description of each unit. Below, you will find explanations of the key elements and tools I studied, and how I organized them to effectively prepare for the certification.&lt;/p&gt;
-&lt;hr /&gt;
-&lt;h2 id="code-management"&gt;🟠 Code Management&lt;/h2&gt;
-&lt;p&gt;&lt;strong&gt;Code management on GitHub&lt;/strong&gt; is essential for productivity and effective collaboration within development teams. Below are the key tools that facilitate this management:&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://r0mymendez.github.io//posts_en/2024-08-20-my-preparation-journey-for-github-fundamentals-certification/img/img-11.png" /&gt;&lt;/p&gt;
-&lt;hr /&gt;
-&lt;h3 id="repository"&gt;📁 Repository&lt;/h3&gt;
-&lt;p&gt;The &lt;strong&gt;repository&lt;/strong&gt; is the core component of a project on GitHub, which is where the source code, along with its version history, documentation, and other relevant resources for the project, is stored.&lt;/p&gt;
-&lt;hr /&gt;
-&lt;h3 id="pull-requests"&gt;🔄 Pull Requests&lt;/h3&gt;
-&lt;p&gt;&lt;strong&gt;Pull Requests (PRs)&lt;/strong&gt; are a fundamental tool for collaboration on GitHub. They allow developers to propose changes to the source code, which can then be reviewed and discussed by other team members before being merged into the base code.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Pull Request States&lt;/strong&gt; It is important to understand the possible states of a Pull Request (PR) on GitHub, which can be:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;&lt;strong&gt;Draft&lt;/strong&gt;: PRs in draft status are still in development and not yet ready for formal review. This state allows collaborators to work on a proposal before requesting official feedback.&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;&lt;strong&gt;Open&lt;/strong&gt;: Open PRs are ready and available for review and discussion by project collaborators. This is where proposed changes are evaluated before deciding whether to integrate them into the base code.&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;&lt;strong&gt;Closed&lt;/strong&gt;: Closed PRs have not been accepted and therefore will not be merged into the project’s base code. This state may indicate that the proposal was rejected or that the author decided not to proceed with it.&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;&lt;strong&gt;Merged&lt;/strong&gt;: Merged PRs have been accepted, and the proposed changes have been successfully integrated with the main branch of the project. This is the final state of a successful PR.&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;hr /&gt;
-&lt;h3 id="issues"&gt;🔧 Issues&lt;/h3&gt;
-&lt;p&gt;&lt;strong&gt;Issues&lt;/strong&gt; are tracking tickets used to report bugs, suggest improvements, or discuss new features. They are essential for planning and organizing work within a project, allowing teams to prioritize tasks and track progress.&lt;/p&gt;
-&lt;hr /&gt;
-&lt;h3 id="discussions"&gt;💬 Discussions&lt;/h3&gt;
-&lt;p&gt;&lt;strong&gt;Discussions on GitHub&lt;/strong&gt; provide a space where collaborators can engage in broader conversations about the project. These discussions can be organized into several categories:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;📢 Announcements:&lt;/strong&gt; For communicating important updates about the project.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;💬 General:&lt;/strong&gt; For general conversations that don’t fit into any other category.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;💡 Ideas:&lt;/strong&gt; For proposing and debating new ideas or improvements.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;🗳️ Polls:&lt;/strong&gt; For conducting surveys and gathering community opinions.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;🙏 Q&amp;amp;A:&lt;/strong&gt; For questions and answers about the project.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;🙌 Show and Tell:&lt;/strong&gt; For sharing achievements, demos, or use cases of the project.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;hr /&gt;
-&lt;h2 id="gists"&gt;📁 Gists&lt;/h2&gt;
-&lt;p&gt;&lt;strong&gt;Gists&lt;/strong&gt; are a simple way to share snippets of code or text. They can be public, accessible to anyone, or private, visible only to the creator or those with whom the link is shared. Gists are useful for quickly sharing code examples, notes, or scripts among collaborators or with the broader community.&lt;/p&gt;
-&lt;hr /&gt;
-&lt;h3 id="accounts"&gt;🟠 Accounts&lt;/h3&gt;
-&lt;p&gt;This is one of the topics where you may encounter questions, and within the recommended learning path, you can find three types of accounts:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;👥Personal Account&lt;/strong&gt;: This is the basic account for individual users, allowing them to own and manage repositories, packages, and projects.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;🏢 Organization Account&lt;/strong&gt;: Allows multiple users to collaborate on shared projects.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;💼 Enterprise Account&lt;/strong&gt;: Designed for large companies, it enables centralized management of policies and billing for multiple organizations.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;img src="https://r0mymendez.github.io//posts_en/2024-08-20-my-preparation-journey-for-github-fundamentals-certification/img/img-3.png" /&gt;&lt;/p&gt;
-&lt;p&gt;Additionally, the existing plans are:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;&lt;strong&gt;GitHub Free:&lt;/strong&gt; Provides the essentials for individuals and organizations, with limited storage and GitHub Actions minutes.&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;&lt;strong&gt;GitHub Pro:&lt;/strong&gt; Extends the features of GitHub Free with more GitHub Actions minutes, storage, and advanced tools for private repositories, ideal for individual developers.&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;&lt;strong&gt;GitHub Team:&lt;/strong&gt; Similar to GitHub Pro but optimized for organizations, adding advanced team collaboration capabilities.&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;&lt;strong&gt;GitHub Enterprise:&lt;/strong&gt; Offers premium support, enhanced security, compliance, and advanced authentication options, along with significantly increased resources and storage. There are two versions of this account type:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Cloud&lt;/strong&gt; (hosted by GitHub)&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Server&lt;/strong&gt; (self-managed)&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;hr /&gt;
-&lt;h2 id="methodologies"&gt;🟠 Methodologies&lt;/h2&gt;
-&lt;p&gt;I’ve titled this section “Methodologies” because throughout different chapters of the learning path, I encountered several methodologies that you need to learn. Therefore, I decided to group them all under the same concept.&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;⚠️ Remember that this is my approach to studying for the certification, and you might find that the learning path or other resources refer to these methodologies differently.&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;&lt;img src="https://r0mymendez.github.io//posts_en/2024-08-20-my-preparation-journey-for-github-fundamentals-certification/img/img-4.png" /&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;&lt;strong&gt;🔀 GitHub Flow:&lt;/strong&gt; A workflow that utilizes specific components (branches, commits, and pull requests) to collaborate and experiment with new features or fixes in a software project.&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;&lt;strong&gt;🔄 InnerSource:&lt;/strong&gt; Involves adopting open-source practices and principles, such as transparency and collaboration, within an organization. This means projects are shared internally, allowing any team member to access, modify, and contribute to the code, similar to an open-source project but within the organization.&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;&lt;strong&gt;🛠️ Contributing to Projects:&lt;/strong&gt; I consider this a methodology because GitHub enables active participation in open-source projects through its platform. This practice is not only fundamental for collaborative software development but also promotes learning, innovation, and community building among developers. Key considerations include:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;📢 Identification and Communication:&lt;/strong&gt; Before making changes, it’s important to communicate your intentions with the project’s maintainers, whether you are addressing an existing issue or proposing a new feature.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;🔄 Creating a Pull Request:&lt;/strong&gt; Once changes are made, a pull request is created on GitHub, allowing others to review, discuss, and eventually merge it with the main codebase.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;🔎Review and Adjustments:&lt;/strong&gt; The pull request is reviewed by the project maintainers, who may request adjustments. It’s essential to be open to feedback and willing to make necessary changes for your contribution to be accepted.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;👥 Iteration and Ongoing Collaboration:&lt;/strong&gt; The review and discussion process around a pull request is iterative and collaborative, allowing for improved software quality and ensuring each contribution aligns with the project’s standards and goals.&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;&lt;strong&gt;❤️ Supporting Projects Financially&lt;/strong&gt;: In addition to contributing code and feedback, you can also support open-source projects financially. For this reason, GitHub Sponsors allows you to fund projects and individuals to help them continue their open-source work, while giving them the recognition they deserve. To support a project:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Identify Projects&lt;/strong&gt;: Explore and select projects you are passionate about.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Choose a Sponsorship Level&lt;/strong&gt;: Pick a tier that fits your budget and desired level of support, with varying benefits such as exclusive content or early access to new features.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Support and Recognition&lt;/strong&gt;: Find the Sponsor button on a project’s main page if it’s eligible for sponsorship. You can select the sponsorship tier and decide if you want your contribution to be public.&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;img src="https://r0mymendez.github.io//posts_en/2024-08-20-my-preparation-journey-for-github-fundamentals-certification/img/github-sponsor.png" /&gt;&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;source: &lt;a href="https://learn.microsoft.com/en-us/training/modules/contribute-open-source/2-identify"&gt;Identify where you can help&lt;/a&gt;&lt;/p&gt;
-&lt;div class="figure"&gt;
-&lt;img src="https://r0mymendez.github.io//posts_en/2024-08-20-my-preparation-journey-for-github-fundamentals-certification/img/github-tier.png" alt="" /&gt;
-&lt;p class="caption"&gt;source: &lt;a href="https://learn.microsoft.com/en-us/training/modules/contribute-open-source/2-identify"&gt;Identify where you can help&lt;/a&gt;&lt;/p&gt;
-&lt;/div&gt;
-&lt;/blockquote&gt;
-&lt;hr /&gt;
-&lt;h2 id="communication"&gt;🟠 Communication&lt;/h2&gt;
-&lt;p&gt;Communication within a repository is essential and encompasses the detailed documentation of objectives, changes, methodologies, and rules to be applied. Below are the main tools and practices that facilitate this communication:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;&lt;strong&gt;📄 README File:&lt;/strong&gt; The README file is the first line of communication in a project. It should contain essential information about the project’s purpose, how to use it, how to set it up, and any other relevant details that users and collaborators need to know.&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;&lt;strong&gt;📚 Wiki:&lt;/strong&gt; This section is designed to host more extensive and detailed documentation. Unlike the README, which is brief and direct, the Wiki is ideal for sharing content such as use cases, examples, design principles, technical details, and any other aspects that require a more in-depth explanation.&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;img src="https://r0mymendez.github.io//posts_en/2024-08-20-my-preparation-journey-for-github-fundamentals-certification/img/img-5.png" /&gt;&lt;/p&gt;
-&lt;h3 id="markdown"&gt;📝 Markdown&lt;/h3&gt;
-&lt;p&gt;&lt;strong&gt;Markdown is a markup language&lt;/strong&gt; that provides a simple and efficient way to format and style content in issues, README files, wikis, and any other textual documentation within a repository.&lt;/p&gt;
-&lt;p&gt;If you’re not familiar with Markdown, I recommend checking out the &lt;a href="https://www.datacamp.com/cheat-sheet/markdown-cheat-sheet-23"&gt;DataCamp CheatSheet&lt;/a&gt;, which summarizes everything you need to get started. Additionally, within the chapter, there’s an exercise titled &lt;a href="https://learn.microsoft.com/en-us/training/modules/communicate-using-markdown/3-communicating-using-markdown"&gt;“Exercise - Communicate using Markdown”&lt;/a&gt; that will allow you to apply and reinforce your practice using markdown.&lt;/p&gt;
-&lt;div class="figure"&gt;
-&lt;img src="https://r0mymendez.github.io//posts_en/2024-08-20-my-preparation-journey-for-github-fundamentals-certification/img/makdown-datacamp.png" width="576" alt="" /&gt;
-&lt;p class="caption"&gt;source: &lt;a href="https://www.datacamp.com/cheat-sheet/markdown-cheat-sheet-23"&gt;DataCamp CheatSheet&lt;/a&gt;&lt;/p&gt;
-&lt;/div&gt;
-&lt;hr /&gt;
-&lt;h2 id="products"&gt;🟠 Products&lt;/h2&gt;
-&lt;p&gt;I have titled this section &lt;strong&gt;“Products”&lt;/strong&gt; as it includes two chapters dedicated to two key products. One of these products leverages AI, while the other focuses on enhancing productivity.&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://r0mymendez.github.io//posts_en/2024-08-20-my-preparation-journey-for-github-fundamentals-certification/img/img-6.png" /&gt;&lt;/p&gt;
-&lt;h3 id="github-copilot"&gt;🚀 GitHub Copilot&lt;/h3&gt;
-&lt;p&gt;&lt;strong&gt;GitHub Copilot&lt;/strong&gt; is an AI-powered assistance tool for developers. Its main features include:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;💬 GitHub Copilot Chat&lt;/strong&gt;: Provides a chat within the editor for code analysis, generating unit tests, and fixing bugs.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;🔄 Copilot for Pull Requests&lt;/strong&gt;: Automatically adds labels to pull request descriptions using AI to facilitate review.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;📄 AI-Generated Documentation Answers&lt;/strong&gt;: Delivers AI-generated responses to questions about documentation and technologies.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;⚙️ Copilot for CLI&lt;/strong&gt;: Assists in creating complex commands and loops in the command line.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id="github-codespaces"&gt;🚀 GitHub Codespaces&lt;/h3&gt;
-&lt;p&gt;&lt;strong&gt;GitHub Codespaces&lt;/strong&gt; provides configurable development environments in the cloud, built on Docker container. Therefore every each Codespace operates within a 🐋 Docker container hosted on GitHub. Also, this container includes all the necessary tools and settings for your project, ensuring a consistent and reproducible environment for all project contributors.&lt;/p&gt;
-&lt;p&gt;Here’s an overview of the key functionalities and states of a Codespace:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;🛠️ Creating Codespaces:&lt;/strong&gt; You can create a Codespace from templates, repository branches, open pull requests, or historical commits. By default, each Codespace is based on an Ubuntu Linux image, but you can customize it with any Linux distribution to meet your specific needs. This provides a complete development environment running inside a Docker container on a virtual machine. You can create multiple Codespaces per repository or branch, though there is a limit on the number of simultaneous Codespaces.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;📥 Saving Changes:&lt;/strong&gt; Changes made within a Codespace are automatically saved when connected through the web. To avoid losing work if the Codespace is deleted, it is crucial to commit and push changes to a remote repository.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;🔄 Reopening and Using Codespaces:&lt;/strong&gt; You can reopen active or stopped Codespaces from GitHub.com, Visual Studio Code, JetBrains IDE, or GitHub CLI. When connected, you access the Docker container of the Codespace, ensuring a consistent development environment accessible from anywhere.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;⏱️ Timeout and Internet Connection:&lt;/strong&gt; Codespaces automatically stop after 30 minutes of inactivity. They require an internet connection, and any uncommitted changes are saved to prevent data loss.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;🔧 Closing, Stopping, or Rebuilding a Codespace:&lt;/strong&gt; You can stop or restart a Codespace to apply configuration changes or troubleshoot issues. You can also rebuild the Codespace to update the Docker container configuration.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;🗑️ Deleting a Codespace:&lt;/strong&gt; You can delete a Codespace after committing your changes. Inactive Codespaces are automatically deleted after 30 days, though this period can be adjusted. Using Docker containers ensures that your development environment is consistent and reproducible, making it easier to collaborate and maintain projects.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;hr /&gt;
-&lt;h2 id="project"&gt;🟠 Project&lt;/h2&gt;
-&lt;p&gt;GitHub has introduced new types of projects that significantly enhance productivity and project management. While previously existing projects focused primarily on code management, the new GitHub Projects integrate key elements that allow you to manage not only the code but also the broader aspects of project management within a single tool.&lt;/p&gt;
-&lt;p&gt;This new approach aims to streamline workflows, provide more comprehensive tracking, and improve collaboration. It’s important to note that there may be questions about the differences between the previous project types and these new ones. In the following sections, I’ll highlight the functionalities and benefits of the new project types, helping you understand how they differ from the old ones and how they can be utilized to optimize project management.&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://r0mymendez.github.io//posts_en/2024-08-20-my-preparation-journey-for-github-fundamentals-certification/img/img-7.png" /&gt;&lt;/p&gt;
-&lt;h3 id="view"&gt;📋 View&lt;/h3&gt;
-&lt;p&gt;In GitHub Projects, tasks are represented as issues and can include key details such as title, description, assignee, start date, and complexity. These issues can be customized with various field types like text, number, date, single selection (for dropdown lists), or iteration to better suit your needs.&lt;/p&gt;
-&lt;p&gt;The types of views that can be generated are:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;📄 Table&lt;/strong&gt;: A &lt;code&gt;tabular view&lt;/code&gt; that organizes issues in a table format. This view is primarily used to view and manage detailed information on multiple issues simultaneously, facilitating comparison and bulk editing of data.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;img src="https://r0mymendez.github.io//posts_en/2024-08-20-my-preparation-journey-for-github-fundamentals-certification/img/github-project-table.png" /&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;📋 Board&lt;/strong&gt;: A &lt;code&gt;card-based view&lt;/code&gt; where issues are organized into columns, typically by status or category. This view is primarily used to visualize the workflow of issues through different stages, aiding task management and progress tracking.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;img src="https://r0mymendez.github.io//posts_en/2024-08-20-my-preparation-journey-for-github-fundamentals-certification/img/github-project-board.png" /&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;⌛ Roadmap&lt;/strong&gt;: A graphical view that shows a timeline of issues and the associated milestones. This view is primarily used for planning and visualizing the long-term evolution of projects, helping to identify dependencies and delivery schedules.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;img src="https://r0mymendez.github.io//posts_en/2024-08-20-my-preparation-journey-for-github-fundamentals-certification/img/github-project-roadmap.png" /&gt;&lt;/p&gt;
-&lt;h3 id="insights"&gt;📊 Insights&lt;/h3&gt;
-&lt;p&gt;&lt;strong&gt;Insights in Projects&lt;/strong&gt; allows you to &lt;code&gt;visualize&lt;/code&gt;, &lt;code&gt;create&lt;/code&gt;, and &lt;code&gt;customize&lt;/code&gt; &lt;code&gt;charts&lt;/code&gt; using the elements added to your Project as data sources. When creating a chart, you can define filters, the type of chart, and the information to be displayed. The generated charts are available to anyone with access to the Project.&lt;/p&gt;
-&lt;p&gt;These charts enable you to analyze and manage the project, enhancing your ability to plan, control, and assess the project’s progress.&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://r0mymendez.github.io//posts_en/2024-08-20-my-preparation-journey-for-github-fundamentals-certification/img/github-insights.png" /&gt;&lt;/p&gt;
-&lt;hr /&gt;
-&lt;h3 id="task-automation"&gt;🤖 Task Automation&lt;/h3&gt;
-&lt;p&gt;Task automation on GitHub is important for improving efficiency and consistency in project management. The following are the key tools that facilitate this automation:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Workflows:&lt;/strong&gt; Workflows are the simplest way to automate project management on GitHub. These workflows allow you to automate repetitive processes such as &lt;code&gt;updating task statuses&lt;/code&gt;, &lt;code&gt;running tests&lt;/code&gt;, &lt;code&gt;deployments&lt;/code&gt;, and &lt;code&gt;other actions&lt;/code&gt; defined in YAML files. Integrated workflows in GitHub Projects streamline automation without the need for complex configurations.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;GraphQL API:&lt;/strong&gt; The GraphQL API offers more granular control over project automation. With GraphQL, you can customize how you interact with your project data, enabling advanced automations tailored to your team’s specific needs.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;GitHub Actions:&lt;/strong&gt; GitHub Actions provides a powerful platform for further customizing automation in your projects. With GitHub Actions, you can create pipelines that respond to specific events, such as the creation of issues or changes in task statuses, ensuring that all activities in your project are executed consistently and automatically.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;hr /&gt;
-&lt;h2 id="security"&gt;🟠 Security&lt;/h2&gt;
-&lt;p&gt;Security is a fundamental aspect within GitHub, which provides a range of tools and best practices to enhance security in software development.&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://r0mymendez.github.io//posts_en/2024-08-20-my-preparation-journey-for-github-fundamentals-certification/img/img-8.png" /&gt;&lt;/p&gt;
-&lt;h3 id="authentication-access-controls"&gt;🔐 Authentication &amp;amp; Access Controls&lt;/h3&gt;
-&lt;p&gt;Access to your GitHub account can be enhanced with advanced authentication methods that validate user identity more securely. * &lt;strong&gt;SAML SSO Authentication&lt;/strong&gt;: Allows user authentication through a centralized Identity Provider (IdP), enhancing security and access control. * &lt;strong&gt;Multifactor Authentication (2FA)&lt;/strong&gt;: Adds an extra layer of security through two-step authentication, which may include physical security keys and time-based one-time password (TOTP) applications.&lt;/p&gt;
-&lt;hr /&gt;
-&lt;h3 id="vulnerability-alerts"&gt;⚠️ Vulnerability Alerts&lt;/h3&gt;
-&lt;p&gt;GitHub offers vulnerability alerts to help you identify and address security issues in your repositories.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Dependabot Alerts&lt;/strong&gt;: Detects and notifies you about vulnerable dependencies in your project, helping you keep your libraries and packages up to date.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;img src="https://r0mymendez.github.io//posts_en/2024-08-20-my-preparation-journey-for-github-fundamentals-certification/img/github-dependabot-alerts.png" alt="Image description" /&gt; &amp;gt; source:&lt;a href="https://learn.microsoft.com/en-us/training/modules/maintain-secure-repository-github/3-security-automation"&gt;Automated security&lt;/a&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Code Scanning&lt;/strong&gt;: Analyzes your code for vulnerabilities and errors. It can be customized using CodeQL, allowing you to detect and fix security issues before they become risks. Integration with other tools like SonarQube or Policy Validator for Terraform by Amazon Web Services is also possible.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Secret Scanning&lt;/strong&gt;: Automatically scans the repository for exposed credentials or secrets, helping to prevent misuse of sensitive information.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id="reporting"&gt;📊 Reporting&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Security Policy&lt;/strong&gt;: The security policy for your project should be documented in a &lt;code&gt;SECURITY.md&lt;/code&gt; file, detailing how to responsibly report vulnerabilities.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id="best-practices"&gt;🚀 Best Practices&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Keep Sensitive Information Secure&lt;/strong&gt;: It’s crucial to protect sensitive information by ensuring it is not included in commits. Use &lt;code&gt;.gitignore&lt;/code&gt; to exclude critical files and carefully review changes before committing them.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Branch Protection Rules&lt;/strong&gt;: Set up protection rules for key branches like &lt;code&gt;master&lt;/code&gt; or &lt;code&gt;develop&lt;/code&gt;, requiring approved reviews before allowing merges. This ensures that only secure and reviewed code is integrated into the main branches.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;hr /&gt;
-&lt;h2 id="types-of-search-on-github"&gt;🟠 Types of Search on GitHub&lt;/h2&gt;
-&lt;p&gt;On GitHub, you can use advanced search to efficiently navigate repositories, find issues, review pull requests, and join discussions. Here are some practical examples to enhance your search capabilities and collaboration on projects:&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://r0mymendez.github.io//posts_en/2024-08-20-my-preparation-journey-for-github-fundamentals-certification/img/img-9.png" /&gt;&lt;/p&gt;
-&lt;h3 id="search-examples"&gt;Search Examples&lt;/h3&gt;
-&lt;h4 id="repositories"&gt;🔎 Repositories&lt;/h4&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Description&lt;/strong&gt;: Finds repositories related to “machine learning” with more than 1000 stars.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Use&lt;/strong&gt;: Ideal for locating popular projects in a specific area of interest.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;!-- --&gt;
-&lt;pre&gt;&lt;code&gt;topic:machine-learning stars:&amp;gt;1000&lt;/code&gt;&lt;/pre&gt;
-&lt;h4 id="issues-in-a-specific-repository"&gt;🔎 Issues in a Specific Repository&lt;/h4&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Description&lt;/strong&gt;: Searches for closed issues within the &lt;code&gt;r0mymendez/datapp&lt;/code&gt; repository.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Use&lt;/strong&gt;: Useful for reviewing the history of resolved issues in a particular repository.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;!-- --&gt;
-&lt;pre&gt;&lt;code&gt;repo:r0mymendez/datapp is:issue is:closed&lt;/code&gt;&lt;/pre&gt;
-&lt;h4 id="issues-with-labels-and-status"&gt;🔎 Issues with Labels and Status&lt;/h4&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Description&lt;/strong&gt;: Finds open issues tagged with “help-wanted” in projects using Python.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Use&lt;/strong&gt;: Perfect for finding opportunities to contribute to Python projects where maintainers are seeking help.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;!-- --&gt;
-&lt;pre&gt;&lt;code&gt;is:issue language:python is:open label:help-wanted&lt;/code&gt;&lt;/pre&gt;
-&lt;h4 id="pull-requests-1"&gt;🔎 Pull Requests&lt;/h4&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Description&lt;/strong&gt;: Shows all pull requests where a review has been requested from you.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Use&lt;/strong&gt;: Ideal for managing your code review responsibilities.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;!-- --&gt;
-&lt;pre&gt;&lt;code&gt;is:pr review-requested:@m&lt;/code&gt;&lt;/pre&gt;
-&lt;h4 id="discussions-1"&gt;🔎 Discussions&lt;/h4&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Description&lt;/strong&gt;: Finds open discussions in repositories related to the Python language.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Use&lt;/strong&gt;: Useful for participating in relevant conversations or searching for open topics in a specific programming language.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;!-- --&gt;
-&lt;pre&gt;&lt;code&gt;in:discussions is:open language:python&lt;/code&gt;&lt;/pre&gt;
-&lt;h4 id="issues-with-specific-combinations"&gt;Issues with Specific Combinations&lt;/h4&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Description&lt;/strong&gt;: Searches for open issues in repositories related to “machine learning” with more than 1000 stars, tagged with “help-wanted,” and using Python.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Use&lt;/strong&gt;: Ideal for finding open issues in popular machine learning projects that are seeking help in Python.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;!-- --&gt;
-&lt;pre&gt;&lt;code&gt;topic:machine-learning stars:&amp;gt;1000 is:issue label:help-wanted language:python is:open&lt;/code&gt;&lt;/pre&gt;
-&lt;hr /&gt;
-&lt;h2 id="summary"&gt;🟠 Summary&lt;/h2&gt;
-&lt;p&gt;&lt;img src="https://r0mymendez.github.io//posts_en/2024-08-20-my-preparation-journey-for-github-fundamentals-certification/img/img-10.png" /&gt;&lt;/p&gt;
-&lt;hr /&gt;
-&lt;h2 id="references"&gt;📚 References&lt;/h2&gt;
-&lt;p&gt;The following references were used to create this article, with the first being the primary resource and the other materials were utilized to practice and simulate the exam.&lt;/p&gt;
-&lt;ol style="list-style-type: decimal"&gt;
-&lt;li&gt;&lt;strong&gt;GitHub Foundations Learning Path&lt;/strong&gt;: &lt;a href="https://learn.microsoft.com/en-us/collections/o1njfe825p602p"&gt;GitHub Foundations Learning Path&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;GitHub Foundations Practice Test&lt;/strong&gt;: Contains a series of multiple-choice questions for exam simulation. &lt;a href="https://ghcertified.com/practice_tests/foundations/"&gt;GitHub Foundations Practice Test&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Study Guide GitHub Foundations&lt;/strong&gt;: A PDF guide for studying and preparing for the exam. &lt;a href="https://assets.ctfassets.net/wfutmusr1t3h/1kmMx7AwI4qH8yIZgOmQlP/79e6ff1dfdee589d84a24dd763b1eef7/github-foundations-exam-study-guide__1_.pdf"&gt;Study Guide GitHub Foundations&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;GitHub Foundations Certification – Exam Prep Guide&lt;/strong&gt;: This is a post in FreeCodeCamp blog and it is content very helpful, and this post provides a good summary of everything you should know for exam preparation. &lt;a href="https://www.freecodecamp.org/news/github-foundations-certified-exam-prep-guide/"&gt;GitHub Foundations Certification – Exam Prep Guide&lt;/a&gt;&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h2 id="section"&gt;&lt;/h2&gt;
-&lt;pre class="r distill-force-highlighting-css"&gt;&lt;code&gt;&lt;/code&gt;&lt;/pre&gt;</description>
-      <distill:md5>676c6f23c55726e59407c6fcfbb81e9c</distill:md5>
-      <category>DevOps</category>
-      <category>GIT</category>
-      <category>Methodologies</category>
-      <guid>https://r0mymendez.github.io/posts_en/2024-08-20-my-preparation-journey-for-github-fundamentals-certification</guid>
-      <pubDate>Tue, 20 Aug 2024 00:00:00 +0000</pubDate>
-      <media:content url="https://r0mymendez.github.io/posts_en/2024-08-20-my-preparation-journey-for-github-fundamentals-certification/preview.png" medium="image" type="image/png" width="3386" height="1301"/>
     </item>
   </channel>
 </rss>
