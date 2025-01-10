@@ -685,8 +685,207 @@ You can deploy a static site to &lt;strong&gt;S3&lt;/strong&gt;, reducing deploy
       <category>Cloud Computing</category>
       <category>AWS</category>
       <guid>https://r0mymendez.github.io/posts_en/2025-01-10-deploying-docs-as-code-on-aws-building-dynamic-documentation-sites-in-mkdocs-and-docusaurus</guid>
-      <pubDate>Thu, 09 Jan 2025 00:00:00 +0000</pubDate>
+      <pubDate>Fri, 10 Jan 2025 00:00:00 +0000</pubDate>
       <media:content url="https://r0mymendez.github.io/posts_en/2025-01-10-deploying-docs-as-code-on-aws-building-dynamic-documentation-sites-in-mkdocs-and-docusaurus/preview.png" medium="image" type="image/png" width="800" height="464"/>
+    </item>
+    <item>
+      <title>22 Resources for Developers: Boost Your Productivity, Creativity, and Code</title>
+      <dc:creator>Romina Mendez</dc:creator>
+      <link>https://r0mymendez.github.io/posts_en/2025-01-11-22-resources-for-developers-boost-your-productivity-creativity-and-code</link>
+      <description>
+
+
+&lt;p&gt;In this article, I’m sharing 22 essential tools that I’ve incorporated into my daily routine as a developer. These tools cover everything from organization 📅 and documentation 📄 to design 🖌️, productivity 🚀, and programming 💻. I’ve organized them into 8 categories so you can easily find the ones that best suit your needs.&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://r0mymendez.github.io//posts_en/2025-01-11-22-resources-for-developers-boost-your-productivity-creativity-and-code/preview.png" /&gt;&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h1 id="documentation-and-organization"&gt;📄 Documentation and Organization&lt;/h1&gt;
+&lt;h3 id="notion"&gt;&lt;a href="https://www.notion.so/"&gt;Notion&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;Notion is a widely known tool, yet surprisingly, there are still people who haven’t tried it. It’s excellent for creating technical documentation 📄, managing publishing calendars, and organizing tasks. Additionally, it has an active community that shares reusable templates like Kanban boards and 📆 calendars, making it even more user-friendly.&lt;br /&gt;
+- &lt;strong&gt;Why use it&lt;/strong&gt;: It centralizes all your information in one place and offers the flexibility to customize it according to your specific needs.&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://r0mymendez.github.io//posts_en/2025-01-11-22-resources-for-developers-boost-your-productivity-creativity-and-code/img/img-1.png" alt="Image description" /&gt; 🖼️ Image source: &lt;a href="https://www.notion.com/es-es/help/notion-for-desktop" class="uri"&gt;https://www.notion.com/es-es/help/notion-for-desktop&lt;/a&gt;&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h3 id="miro"&gt;&lt;a href="https://miro.com/es/"&gt;Miro&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;Miro is a virtual whiteboard designed for creating mind maps, diagrams, and workflows collaboratively.&lt;br /&gt;
+- &lt;strong&gt;Why use it&lt;/strong&gt;: It’s an ideal tool for team sessions such as brainstorming, design thinking, or agile planning. Its real-time collaboration feature makes it perfect for dynamic projects involving multiple team members.&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://r0mymendez.github.io//posts_en/2025-01-11-22-resources-for-developers-boost-your-productivity-creativity-and-code/img/img-2.png" alt="Image description" /&gt; 🖼️ Image source: &lt;a href="https://miro.com/es/lluvia-de-ideas/" class="uri"&gt;https://miro.com/es/lluvia-de-ideas/&lt;/a&gt;&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h1 id="drawings-diagrams"&gt;✏️ Drawings &amp;amp; Diagrams&lt;/h1&gt;
+&lt;h3 id="excalidraw"&gt;&lt;a href="https://excalidraw.com/"&gt;Excalidraw&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;Excalidraw is an excellent alternative to tools like draw.io, offering attractive graphics with a minimalist design. It provides a user-friendly interface and libraries with icons for ☁️cloud services, programming languages, and more, allowing you to create blueprints effortlessly.&lt;br /&gt;
+- &lt;strong&gt;Why use it&lt;/strong&gt;: Easy to use with a visually appealing style, Excalidraw adds a personal touch to your diagrams, and its libraries make creating detailed blueprints faster and simpler.&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://r0mymendez.github.io//posts_en/2025-01-11-22-resources-for-developers-boost-your-productivity-creativity-and-code/img/img-3.png" alt="Image description" /&gt; 🖼️ Image source: &lt;a href="https://github.com/excalidraw/excalidraw" class="uri"&gt;https://github.com/excalidraw/excalidraw&lt;/a&gt;&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h3 id="draw.io"&gt;&lt;a href="https://app.diagrams.net/"&gt;Draw.io&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;Draw.io is a popular tool for creating UML diagrams, process flows, and more. It integrates seamlessly with Google Drive, allowing you to work directly within your account or offline.&lt;br /&gt;
+- &lt;strong&gt;Why use it&lt;/strong&gt;: It offers advanced options for creating detailed diagrams and is easily accessible through Google Drive or as a desktop version.&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h3 id="wireflow"&gt;&lt;a href="https://app.wireflow.co/"&gt;Wireflow&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;Wireflow lets you create flowcharts with illustrative icons, offering modern and easy-to-use graphics that make designing detailed flow diagrams a breeze.&lt;br /&gt;
+&amp;gt; The Wireflow concept is a popular UX and UI design method that combines the best aspects of wireframes and user flows to document user interactions in apps or websites.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Why use it&lt;/strong&gt;: Its intuitive and visually appealing design is perfect for presenting workflows to clients or teams, providing a user-friendly interface and stunning visuals.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class="figure"&gt;
+&lt;img src="https://r0mymendez.github.io//posts_en/2025-01-11-22-resources-for-developers-boost-your-productivity-creativity-and-code/img/img-4.png" alt="" /&gt;
+&lt;p class="caption"&gt;Image description&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;🖼️ Image source: &lt;a href="https://wireflow.co/" class="uri"&gt;https://wireflow.co/&lt;/a&gt;&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h3 id="lorem-ipsum-generator"&gt;&lt;a href="https://loremipsum.io/es"&gt;Lorem Ipsum Generator&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;Lorem Ipsum Generator creates placeholder text used in graphic design, typography demos, and design drafts. It allows you to visualize the layout before inserting final content.&lt;br /&gt;
+- &lt;strong&gt;Why use it&lt;/strong&gt;: It saves time by generating temporary content, a must-have when designing in tools like Figma, and is helpful for quickly filling in text blocks during mockups.&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://r0mymendez.github.io//posts_en/2025-01-11-22-resources-for-developers-boost-your-productivity-creativity-and-code/img/img-5.png" alt="Image description" /&gt; 🖼️ Image source: &lt;a href="https://loremipsum.io/es" class="uri"&gt;https://loremipsum.io/es&lt;/a&gt;&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h1 id="api-queries"&gt;🛠 API Queries&lt;/h1&gt;
+&lt;h3 id="postman"&gt;&lt;a href="https://web.postman.co/"&gt;Postman&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;Postman is one of the most complete and advanced tools for testing and developing APIs. It offers features such as automated testing, response simulation, and the ability to share test collections among teams, making it ideal for collaborative and complex projects.&lt;br /&gt;
+- &lt;strong&gt;Why use it&lt;/strong&gt;: Perfect for complex scenarios and team collaboration, Postman allows you to design, test, and monitor APIs efficiently, with powerful features for automation, monitoring, and documentation.&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h3 id="hoppscotch"&gt;&lt;a href="https://hoppscotch.io/"&gt;Hoppscotch&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;Hoppscotch is a lightweight, online alternative to Postman for quickly testing and querying APIs. While it doesn’t offer all the advanced features of Postman, it excels in simplicity and ease of use, particularly for quick API testing on the go.&lt;br /&gt;
+- &lt;strong&gt;Why use it&lt;/strong&gt;: Hoppscotch provides a clean and intuitive interface directly in your browser, making it an excellent choice for developers who need a fast, no-frills tool for testing APIs without the need for installation or complex setup.&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h1 id="regular-expressions"&gt;🔍 Regular Expressions&lt;/h1&gt;
+&lt;h3 id="regex101"&gt;&lt;a href="https://regex101.com/"&gt;Regex101&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;Regex101 simplifies the creation and &lt;strong&gt;testing of regular expressions&lt;/strong&gt; across multiple programming languages. It offers a detailed explanation of each regex component, making it easier to understand how your expressions work.&lt;br /&gt;
+- &lt;strong&gt;Why use it&lt;/strong&gt;: Save time by validating and tweaking your regular expressions without the need to run them in a development environment. You can also share your regex tests with others, making it a great tool for collaboration.&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h3 id="regexr"&gt;&lt;a href="https://regexr.com/"&gt;Regexr&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;Regexr is another option for &lt;strong&gt;learning&lt;/strong&gt;, &lt;strong&gt;creating&lt;/strong&gt;, and &lt;strong&gt;testing regular expressions&lt;/strong&gt; with real-time examples. It provides helpful syntax highlighting and a community-driven library of regular expressions.&lt;br /&gt;
+- &lt;strong&gt;Why use it&lt;/strong&gt;: Its interactive and beginner-friendly interface makes it ideal for those starting to learn regular expressions, offering instant feedback and useful regex examples.&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h1 id="languages-databases-sql"&gt;🗄️ Languages &amp;amp; Databases &amp;amp; SQL&lt;/h1&gt;
+&lt;h3 id="onecompiler"&gt;&lt;a href="https://onecompiler.com/postgresql"&gt;OneCompiler&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;OneCompiler allows you to &lt;strong&gt;test code&lt;/strong&gt; without the need for installation, offering an easy way to run examples. It supports over 60 programming languages, including PostgreSQL.&lt;br /&gt;
+- &lt;strong&gt;Why use it&lt;/strong&gt;: It’s perfect for practicing or verifying SQL queries without having to set up a local development environment.&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h3 id="explain-dalibo"&gt;&lt;a href="https://explain.dalibo.com/"&gt;Explain Dalibo&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;Sometimes, it’s unclear why certain SQL queries in &lt;strong&gt;postgres&lt;/strong&gt; take a long time to execute or consume too many resources. This tool helps visualize and analyze &lt;strong&gt;SQL execution plans&lt;/strong&gt; interactively.&lt;br /&gt;
+- &lt;strong&gt;Why use it&lt;/strong&gt;: It’s useful for optimizing your database performance by providing insights into query execution plans.&lt;/p&gt;
+&lt;p&gt;Here’s a quick example of how to use it:&lt;/p&gt;
+&lt;ol style="list-style-type: decimal"&gt;
+&lt;li&gt;Suppose you have a query that’s taking a long time to execute and you want to analyze it.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre class="sql"&gt;&lt;code&gt;SELECT 
+    e.name AS employee_name,
+    d.name AS department_name,
+    AVG(s.amount) AS avg_salary
+FROM 
+    employees e
+JOIN  departments d ON e.department_id = d.id
+JOIN  salaries s ON e.id = s.employee_id
+WHERE 
+    d.budget &amp;gt; 1000000
+    AND s.amount &amp;gt; (s.amount * 0.10 + LAG(s.amount) OVER (PARTITION BY e.id ORDER BY s.date))
+GROUP BY 
+    e.name, d.name
+ORDER BY 
+    avg_salary DESC;&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;You can add the &lt;code&gt;EXPLAIN&lt;/code&gt; keyword at the beginning of your query:&lt;/p&gt;
+&lt;pre class="sql"&gt;&lt;code&gt;EXPLAIN
+   SELECT .../* Here goes the rest of your query */
+;&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;This will return an execution plan like the following:&lt;/p&gt;
+&lt;pre class="bash"&gt;&lt;code&gt;Sort  (cost=50233.24..50233.75 rows=204 width=96)
+  Sort Key: (avg(s.amount)) DESC
+  -&amp;gt;  HashAggregate  (cost=50230.40..50231.40 rows=204 width=96)
+        Group Key: e.name, d.name
+        -&amp;gt;  WindowAgg  (cost=40230.00..40230.40 rows=50000 width=64)
+              -&amp;gt;  Hash Join  (cost=20000.00..30000.00 rows=50000 width=64)
+                    Hash Cond: (s.employee_id = e.id)
+                    -&amp;gt;  Seq Scan on salaries s  (cost=0.00..8000.00 rows=50000 width=32)
+                    -&amp;gt;  Hash  (cost=10000.00..10000.00 rows=10000 width=64)
+                          -&amp;gt;  Hash Join  (cost=5000.00..10000.00 rows=10000 width=64)
+                                Hash Cond: (e.department_id = d.id)
+                                -&amp;gt;  Seq Scan on employees e  (cost=0.00..4000.00 rows=10000 width=32)
+                                -&amp;gt;  Hash  (cost=3000.00..3000.00 rows=1000 width=32)
+                                      -&amp;gt;  Seq Scan on departments d  (cost=0.00..3000.00 rows=1000 width=32)
+                                            Filter: (budget &amp;gt; 1000000)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Once you have this output, you can paste it into &lt;a href="https://explain.dalibo.com/"&gt;Explain Dalibo&lt;/a&gt;, submit it, and the tool will display the execution analysis in a graphical format, making it easier to identify performance issues.&lt;/p&gt;
+&lt;div class="figure"&gt;
+&lt;img src="https://r0mymendez.github.io//posts_en/2025-01-11-22-resources-for-developers-boost-your-productivity-creativity-and-code/img/img-6.png" alt="" /&gt;
+&lt;p class="caption"&gt;Execution Plan Example&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="figure"&gt;
+&lt;img src="https://r0mymendez.github.io//posts_en/2025-01-11-22-resources-for-developers-boost-your-productivity-creativity-and-code/img/img-7.png" alt="" /&gt;
+&lt;p class="caption"&gt;Execution Plan Graph&lt;/p&gt;
+&lt;/div&gt;
+&lt;blockquote&gt;
+&lt;p&gt;As with any data shared online, always check retention policies and security measures. Be sure not to upload any sensitive or confidential data.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;If you’re not familiar with the execution plan output, here’s a helpful guide to understand it: &lt;a href="http://tatiyants.com/postgres-query-plan-visualization/"&gt;Postgres Query Plan Visualization&lt;/a&gt;.&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h3 id="sqliteonline"&gt;&lt;a href="https://sqliteonline.com/"&gt;SQLiteOnline&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;If you want to quickly run &lt;strong&gt;SQL queries examples&lt;/strong&gt;, validate or practice exercises from a tutorial, this is a great solution for development.&lt;br /&gt;
+- &lt;strong&gt;Why use it&lt;/strong&gt;: It offers convenience and speed without the need to install any software.&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h1 id="productivity-and-personal-organization"&gt;⏰ Productivity and Personal Organization&lt;/h1&gt;
+&lt;p&gt;Sometimes we focus solely on tools that improve our coding efficiency, but it’s equally important to have tools that &lt;code&gt;help optimize our time&lt;/code&gt;, &lt;code&gt;enhance our professional presence&lt;/code&gt;, or &lt;code&gt;simply allow us to unwind&lt;/code&gt;.&lt;/p&gt;
+&lt;h3 id="pomofocus"&gt;&lt;a href="https://pomofocus.io/"&gt;Pomofocus&lt;/a&gt;&lt;/h3&gt;
+&lt;div class="figure"&gt;
+&lt;img src="https://r0mymendez.github.io//posts_en/2025-01-11-22-resources-for-developers-boost-your-productivity-creativity-and-code/img/img-8.png" alt="" /&gt;
+&lt;p class="caption"&gt;Pomofocus Screenshot&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;If you struggle to concentrate and complete tasks, this tool is a great way to adopt the &lt;code&gt;Pomodoro technique&lt;/code&gt;. It encourages focus by working in &lt;strong&gt;⏳ 25-minute intervals&lt;/strong&gt; followed by short breaks. This web-based timer helps schedule these cycles, making it easier to stay productive and focused.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Why use it&lt;/strong&gt;: Perfect for boosting productivity and maintaining focus by breaking work into manageable intervals.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr /&gt;
+&lt;h3 id="mynoise"&gt;&lt;a href="https://mynoise.net/"&gt;MyNoise&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;A customizable generator of relaxing 🎧 sounds with a wide variety of ambient noise options to choose from.&lt;br /&gt;
+- &lt;strong&gt;Why use it&lt;/strong&gt;: Helps maintain focus and concentration, even in noisy environments.&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h3 id="github-profile-readme-generator"&gt;&lt;a href="https://rahuldkjain.github.io/gh-profile-readme-generator/"&gt;GitHub Profile Readme Generator&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;GitHub has become our professional 📁 portfolio, so having an updated and appealing profile is essential. This tool helps you generate a personalized README file for your GitHub profile.&lt;br /&gt;
+- &lt;strong&gt;Why use it&lt;/strong&gt;: Adds a professional and unique touch to your GitHub profile.&lt;/p&gt;
+&lt;div class="figure"&gt;
+&lt;img src="https://r0mymendez.github.io//posts_en/2025-01-11-22-resources-for-developers-boost-your-productivity-creativity-and-code/img/img-9.png" alt="" /&gt;
+&lt;p class="caption"&gt;GitHub Profile Screenshot&lt;/p&gt;
+&lt;/div&gt;
+&lt;hr /&gt;
+&lt;h1 id="design-and-visualization"&gt;✏️ Design and Visualization&lt;/h1&gt;
+&lt;h3 id="coolors"&gt;&lt;a href="https://coolors.co/"&gt;Coolors&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;Generate color 🎨 palettes for design projects. It’s similar to Adobe Colors, another tool I often use to explore palettes created by the community.&lt;br /&gt;
+- &lt;strong&gt;Why use it&lt;/strong&gt;: Simplifies the process of selecting harmonious and visually appealing color schemes.&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h3 id="carbon"&gt;&lt;a href="https://carbon.now.sh/"&gt;Carbon&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;Create beautifully styled screenshots of code snippets.&lt;br /&gt;
+- &lt;strong&gt;Why use it&lt;/strong&gt;: Ideal for sharing code snippets on social media, documentation, or presentations.&lt;/p&gt;
+&lt;div class="figure"&gt;
+&lt;img src="https://r0mymendez.github.io//posts_en/2025-01-11-22-resources-for-developers-boost-your-productivity-creativity-and-code/img/img-10.png" alt="" /&gt;
+&lt;p class="caption"&gt;Carbon Screenshot&lt;/p&gt;
+&lt;/div&gt;
+&lt;hr /&gt;
+&lt;h3 id="remove.bg"&gt;&lt;a href="https://www.remove.bg/es/upload"&gt;Remove.bg&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;This tool automatically removes backgrounds from 🖼️ images, perfect for when you need a clean image for presentations or design work.&lt;br /&gt;
+- &lt;strong&gt;Why use it&lt;/strong&gt;: Saves time on quick design tasks.&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h1 id="icons-and-visual-resources"&gt;🎨 Icons and Visual Resources&lt;/h1&gt;
+&lt;h3 id="svgrepo"&gt;&lt;a href="https://www.svgrepo.com/"&gt;SVGRepo&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;If you’re looking for icons to use in your diagrams, presentations, or websites, SVGRepo is a fantastic tool. This site offers hundreds of free SVG icons, many of which can be customized to fit your needs. - &lt;strong&gt;Why use it&lt;/strong&gt;: Provides quick access to high-quality, customizable icons for your web and graphic design projects.&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://r0mymendez.github.io//posts_en/2025-01-11-22-resources-for-developers-boost-your-productivity-creativity-and-code/img/img-11.png" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://r0mymendez.github.io//posts_en/2025-01-11-22-resources-for-developers-boost-your-productivity-creativity-and-code/img/img-12.png" /&gt;&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h3 id="google-fonts-icons"&gt;&lt;a href="https://fonts.google.com/icons"&gt;Google Fonts Icons&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;A comprehensive catalog of icons that integrate seamlessly with the Google Fonts ecosystem. These material design icons are modern, user-friendly, and versatile, created following Google’s design guidelines.&lt;br /&gt;
+- &lt;strong&gt;Why use it&lt;/strong&gt;: Compatibility with Google Fonts and ease of use for web integration.&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h3 id="feather-icons"&gt;&lt;a href="https://feathericons.com/"&gt;Feather Icons&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;Another excellent tool featuring minimalist icons that can be customized freely to suit your design needs.&lt;br /&gt;
+- &lt;strong&gt;Why use it&lt;/strong&gt;: Ideal for creating sleek, modern interfaces with customizable visuals.&lt;/p&gt;
+&lt;hr /&gt;
+&lt;p&gt;&lt;img src="https://r0mymendez.github.io//posts_en/2025-01-11-22-resources-for-developers-boost-your-productivity-creativity-and-code/img/img-13.png" /&gt;&lt;/p&gt;
+&lt;hr /&gt;
+&lt;p&gt;If you know of other tools, feel free to share them in the 💬comments to foster community collaboration.&lt;/p&gt;
+&lt;pre class="r distill-force-highlighting-css"&gt;&lt;code&gt;&lt;/code&gt;&lt;/pre&gt;</description>
+      <distill:md5>1145ff34f2729c13bdf22d8a7d8c642e</distill:md5>
+      <category>Agile</category>
+      <category>Tools</category>
+      <category>Cloud Computing</category>
+      <category>Methodology</category>
+      <guid>https://r0mymendez.github.io/posts_en/2025-01-11-22-resources-for-developers-boost-your-productivity-creativity-and-code</guid>
+      <pubDate>Fri, 10 Jan 2025 00:00:00 +0000</pubDate>
+      <media:content url="https://r0mymendez.github.io/posts_en/2025-01-11-22-resources-for-developers-boost-your-productivity-creativity-and-code/preview.png" medium="image" type="image/png" width="800" height="449"/>
     </item>
     <item>
       <title>Efficiently Querying JSON Data in Python: Exploring the MET Museum's Artworks</title>
@@ -1349,19 +1548,6 @@ echo &amp;quot;$json_output&amp;quot; &amp;gt; output.json&lt;/code&gt;&lt;/pre&
       <guid>https://r0mymendez.github.io/posts_en/2024-08-20-my-preparation-journey-for-github-fundamentals-certification</guid>
       <pubDate>Tue, 20 Aug 2024 00:00:00 +0000</pubDate>
       <media:content url="https://r0mymendez.github.io/posts_en/2024-08-20-my-preparation-journey-for-github-fundamentals-certification/preview.png" medium="image" type="image/png" width="3386" height="1301"/>
-    </item>
-    <item>
-      <title>Employing AWS Comprehend Medical for Medical Data Extraction in Healthcare Analytics</title>
-      <dc:creator>Romina Mendez</dc:creator>
-      <link>https://r0mymendez.github.io/posts_en/2024-08-07-employing-aws-comprehend-medical-for-medical-data-extraction-in-healthcare-analytics</link>
-      <description>The goal of this tutorial is to provide a guide on how to use Amazon Comprehend Medical for identifying medical entities and extracting information, including RxNorm codes, SNOMED CT concepts, and other attributes.</description>
-      <category>Python</category>
-      <category>Data</category>
-      <category>Cloud Computing</category>
-      <category>AI</category>
-      <guid>https://r0mymendez.github.io/posts_en/2024-08-07-employing-aws-comprehend-medical-for-medical-data-extraction-in-healthcare-analytics</guid>
-      <pubDate>Wed, 07 Aug 2024 00:00:00 +0000</pubDate>
-      <media:content url="https://r0mymendez.github.io/posts_en/2024-08-07-employing-aws-comprehend-medical-for-medical-data-extraction-in-healthcare-analytics/preview.jpg" medium="image" type="image/jpeg"/>
     </item>
   </channel>
 </rss>
