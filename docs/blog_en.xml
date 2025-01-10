@@ -13,7 +13,7 @@ on software, agile methodologies , data science and the professor life.
       <link>https://r0mymendez.github.io/</link>
     </image>
     <generator>Distill</generator>
-    <lastBuildDate>Thu, 09 Jan 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 10 Jan 2025 00:00:00 +0000</lastBuildDate>
     <item>
       <title>Diagram-as-Code: Creating Dynamic and Interactive Documentation for Visual Content</title>
       <dc:creator>Romina Mendez</dc:creator>
@@ -227,8 +227,466 @@ Image(&amp;quot;aws_data_processing_pipeline.png&amp;quot;)&lt;/code&gt;&lt;/pre
       <category>Cloud Computing</category>
       <category>AWS</category>
       <guid>https://r0mymendez.github.io/posts_en/2025-01-10-diagram-as-code-creating-dynamic-and-interactive-documentation-for-visual-content</guid>
-      <pubDate>Thu, 09 Jan 2025 00:00:00 +0000</pubDate>
+      <pubDate>Fri, 10 Jan 2025 00:00:00 +0000</pubDate>
       <media:content url="https://r0mymendez.github.io/posts_en/2025-01-10-diagram-as-code-creating-dynamic-and-interactive-documentation-for-visual-content/preview.png" medium="image" type="image/png" width="800" height="466"/>
+    </item>
+    <item>
+      <title>Deploying Docs-as-Code on AWS: Building Dynamic Documentation Sites in MkDocs and Docusaurus</title>
+      <dc:creator>Romina Mendez</dc:creator>
+      <link>https://r0mymendez.github.io/posts_en/2025-01-10-deploying-docs-as-code-on-aws-building-dynamic-documentation-sites-in-mkdocs-and-docusaurus</link>
+      <description>
+
+
+&lt;p&gt;The solution includes support for &lt;code&gt;charts&lt;/code&gt; and &lt;code&gt;diagrams&lt;/code&gt;, continuous integration &lt;code&gt;(CI/CD)&lt;/code&gt; using a simple workflow in &lt;code&gt;GitHub Actions&lt;/code&gt;, and automatic deployment using &lt;code&gt;Terraform&lt;/code&gt;. Let’s get started!&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://r0mymendez.github.io//posts_en/2025-01-10-deploying-docs-as-code-on-aws-building-dynamic-documentation-sites-in-mkdocs-and-docusaurus/preview.png" /&gt;&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h1 id="what-is-documentation-as-code"&gt;What is Documentation as Code?&lt;/h1&gt;
+&lt;p&gt;Documentation and its updates are an important process in many companies that develop software, often carried out using different tools, many of which are paid solutions.&lt;br /&gt;
+Therefore, in recent times, the concept of &lt;strong&gt;“doc as code”&lt;/strong&gt; has emerged. This means using the same tools and workflows used in software development to &lt;code&gt;manage&lt;/code&gt;, &lt;code&gt;version&lt;/code&gt;, and &lt;code&gt;deploy&lt;/code&gt; documentation.&lt;br /&gt;
+This approach not only allows for better tracking of the documentation but also facilitates its maintenance and ensures alignment with the same best practices used in software development, not just in the code but also in the documentation .&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://r0mymendez.github.io//posts_en/2025-01-10-deploying-docs-as-code-on-aws-building-dynamic-documentation-sites-in-mkdocs-and-docusaurus/img/img-1.png" /&gt;&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h2 id="tools-for-documentation-as-code"&gt;Tools for Documentation as Code&lt;/h2&gt;
+&lt;p&gt;For the development of these sites, it is essential to understand some practices and tools that allow us to implement this approach. Below is a detailed list of the most important aspects to cover in this tutorial.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;📝 &lt;strong&gt;Markdown&lt;/strong&gt;: The most common markup language for writing documentation due to its simplicity and integration with version control platforms and static site generators.&lt;/li&gt;
+&lt;li&gt;🗂️ &lt;strong&gt;Git&lt;/strong&gt;: Git allows versioning of documentation just like code. Thanks to Git, every change in the documentation is recorded, enabling teams to track edits, revert changes, and collaborate more efficiently.&lt;/li&gt;
+&lt;li&gt;🔄 &lt;strong&gt;Gitflow&lt;/strong&gt;: This methodology provides a structured workflow to manage versions and revisions of documentation, ensuring that changes are approved and tested before reaching production. Gitflow also facilitates collaboration between teams, allowing for safe and organized change management.&lt;/li&gt;
+&lt;li&gt;☁️ &lt;strong&gt;Cloud Services&lt;/strong&gt;: Using services like AWS S3, Netlify, or GitHub Pages, you can deploy documentation at a low cost. These services allow the creation of fast, secure, and easily accessible static sites.&lt;/li&gt;
+&lt;li&gt;🌐 &lt;strong&gt;Static Site Generators&lt;/strong&gt;: Tools like Docusaurus, Jekyll, or Hugo convert Markdown documentation into a navigable website, allowing you to create rich and organized documentation without a server.&lt;/li&gt;
+&lt;li&gt;🚀 &lt;strong&gt;Continuous Integration (CI/CD)&lt;/strong&gt;: CI/CD pipelines (e.g., GitHub Actions, GitLab CI, or Jenkins) allow you to automatically deploy documentation when a new version is merged or modifications are approved. This ensures the documentation is always up-to-date.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src="https://r0mymendez.github.io//posts_en/2025-01-10-deploying-docs-as-code-on-aws-building-dynamic-documentation-sites-in-mkdocs-and-docusaurus/img/img-2.png" /&gt;&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h2 id="advantages-of-docs-as-code"&gt;Advantages of Docs-as-Code&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;✅ Consistency and Quality&lt;/strong&gt;: By using version control and change reviews, the documentation remains consistent and of high quality.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;⚙️ Automation&lt;/strong&gt;: CI/CD tools enable automation of documentation deployment, reducing update times and minimizing errors.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;🤝 Efficient Collaboration&lt;/strong&gt;: With tools like Git, teams can collaborate on creating and maintaining documentation without conflicts.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;🔧 Simplified Maintenance&lt;/strong&gt;: Maintaining documentation is integrated into the development workflow, making updates easier as the code evolves.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr /&gt;
+&lt;h2 id="mkdocs"&gt;📄 MkDocs&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;MkDocs&lt;/strong&gt; is a static site generator written in &lt;strong&gt;🐍Python,&lt;/strong&gt; designed specifically for documenting projects. Its goal is to simplify creating documentation using Markdown files, which are easy to write and read.&lt;/p&gt;
+&lt;p&gt;With minimal configuration, &lt;strong&gt;MkDocs&lt;/strong&gt; converts Markdown files into a navigable and well-structured documentation website, making it ideal for developers and teams who want to keep their documentation up to date.&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h2 id="mkdocs-material"&gt;✏️ MkDocs Material&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;MkDocs Material&lt;/strong&gt; is an advanced theme for &lt;strong&gt;MkDocs&lt;/strong&gt; that follows Google’s Material Design guidelines.&lt;/p&gt;
+&lt;h3 id="key-features-include"&gt;🚀 Key features include:&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;📱 &lt;strong&gt;Responsive Design&lt;/strong&gt;: Automatically adapts to any screen size.&lt;br /&gt;
+&lt;/li&gt;
+&lt;li&gt;🎨 &lt;strong&gt;Customization&lt;/strong&gt;: Easily modify colors, fonts, favicon, and logo to match your project’s visual identity.&lt;br /&gt;
+&lt;/li&gt;
+&lt;li&gt;🔍 &lt;strong&gt;Search Interface&lt;/strong&gt;: Advanced search groups results and highlights searched terms, helping users find the information they need.&lt;br /&gt;
+&lt;/li&gt;
+&lt;li&gt;⚡ &lt;strong&gt;Lazy Loading&lt;/strong&gt;: Implements lazy loading for search results, improving performance and reducing load times.&lt;br /&gt;
+&lt;/li&gt;
+&lt;li&gt;🔗 &lt;strong&gt;Integrations&lt;/strong&gt;: Compatible with Google Analytics, Disqus, and GitHub, facilitating traffic analysis, user feedback, and direct connection to the project repository.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr /&gt;
+&lt;h2 id="mermaid"&gt;✏️ Mermaid&lt;/h2&gt;
+&lt;p&gt;Mermaid is a **JavaScript** library for creating diagrams and charts from text. By integrating with MkDocs Material, Mermaid allows you to generate visualizations such as flowcharts, entity-relationship diagrams, and other charts within the documentation without external tools.&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://r0mymendez.github.io//posts_en/2025-01-10-deploying-docs-as-code-on-aws-building-dynamic-documentation-sites-in-mkdocs-and-docusaurus/img/img-3.png" /&gt;&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h2 id="dynamic-page-jinja"&gt;🧩 Dynamic Page: Jinja&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;Jinja&lt;/strong&gt; is a library that allows embedding variables and data from Python dictionaries into HTML, making web pages dynamic. This library is commonly used for generating dynamic HTML and sending personalized emails.&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h2 id="docusaurus-overview"&gt;🦖 Docusaurus Overview&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;Docusaurus&lt;/strong&gt; is an open-source project developed by Meta in 2007 that simplifies the creation, deployment, and maintenance of documentation websites in a fast and efficient way. It allows the use of Markdown and MDX to write content, while its core built on React enables full customization of the styles to fit the specific needs of the project.&lt;/p&gt;
+&lt;p&gt;Additionally, Docusaurus supports Mermaid through the &lt;code&gt;@docusaurus/theme-mermaid&lt;/code&gt; plugin, enabling the inclusion of charts and diagrams directly within the documentation.&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h1 id="diagram-as-code"&gt;🎨 Diagram as Code&lt;/h1&gt;
+&lt;p&gt;&lt;strong&gt;Diagram as Code&lt;/strong&gt; is an approach that allows you to create diagrams through code, rather than using traditional graphic tools. Instead of manually building diagrams, you write code in a text file to define the structure, components, and connections of your diagrams.&lt;/p&gt;
+&lt;p&gt;This code is then translated into graphical images, making it easier to integrate and document in software projects. It’s especially useful for creating and updating architectural and flow diagrams programmatically.&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h2 id="diagram-as-code-example-of-creating-cloud-diagrams"&gt;🎨 Diagram as Code: Example of Creating Cloud Diagrams&lt;/h2&gt;
+&lt;p&gt;As previously mentioned, &lt;strong&gt;Diagrams&lt;/strong&gt; allows you to generate blueprints using the icons of major cloud technologies. The representation of these diagrams is done through nodes, and in our example, we’ll use all cloud-related nodes and AWS services.&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://r0mymendez.github.io//posts_en/2025-01-10-deploying-docs-as-code-on-aws-building-dynamic-documentation-sites-in-mkdocs-and-docusaurus/img/img-4.png" /&gt;&lt;/p&gt;
+&lt;p&gt;For more details on how I created this, you can read my article about &lt;a href="https://dev.to/r0mymendez/doc-as-diagrams-2ci5-temp-slug-2900884?preview=41df4c1f39f0ebe2634f376408ef3ef751cc09bff3c487f9ab7e7b364f729767da9709796b1bff2fc1e2fc925e62087ad52a19c3cd2e0a28d5a4b68d"&gt;Diagram as Code&lt;/a&gt;, and the full implementation can be found in this repository:&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://r0mymendez.github.io//posts_en/2025-01-10-deploying-docs-as-code-on-aws-building-dynamic-documentation-sites-in-mkdocs-and-docusaurus/img/github.png" /&gt;&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h1 id="use-case-creating-a-documentation-site-for-a-machine-learning-project"&gt;📚 Use Case: Creating a Documentation Site for a Machine Learning Project&lt;/h1&gt;
+&lt;p&gt;In this use case, I will create a &lt;code&gt;documentation site&lt;/code&gt; for a &lt;strong&gt;machine learning project&lt;/strong&gt; involving 🏥 hospital data. The goal is to build an interactive documentation site using &lt;strong&gt;MkDocs&lt;/strong&gt; initially and later migrate it to &lt;strong&gt;Docusaurus&lt;/strong&gt;. The site will include both static and dynamic components to meet specific requirements, such as embedding visual diagrams and updating data dynamically from a SQLite database.&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h2 id="key-features-of-the-documentation-site"&gt;🚀 Key Features of the Documentation Site&lt;/h2&gt;
+&lt;ol style="list-style-type: decimal"&gt;
+&lt;li&gt;&lt;strong&gt;Visual Representations&lt;/strong&gt;: I will embed diagrams created with &lt;strong&gt;Diagrams&lt;/strong&gt; (&lt;code&gt;Diagram as Code&lt;/code&gt;) to illustrate the architecture of the machine learning pipeline effectively.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Dynamic Data Updates&lt;/strong&gt;: The documentation will display the version and last update date dynamically, pulling this information from a &lt;strong&gt;SQLite database&lt;/strong&gt; to ensure accuracy and relevance.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Sample of data&lt;/strong&gt;: The documentation will include a sample from the Synthea patient table, showcasing synthetic data as an example.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;hr /&gt;
+&lt;h2 id="pages-of-the-site"&gt;📄 Pages of the Site&lt;/h2&gt;
+&lt;p&gt;For this reason our documentation site will have the following pages:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;📄 Home&lt;/strong&gt;: The homepage of the documentation.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;📄 Tables&lt;/strong&gt;:Explanation of the Synthea data tables and their uses.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;📄 Architecture&lt;/strong&gt;:A detailed overview of the data processing architecture, hosted on AWS.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;📄 Glossary&lt;/strong&gt;: A glossary of terms used throughout the project&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr /&gt;
+&lt;h2 id="mkdocs-implementation"&gt;MkDocs Implementation&lt;/h2&gt;
+&lt;p&gt;In this section, we’ll walk through the steps to set up a documentation project using &lt;strong&gt;MkDocs&lt;/strong&gt; from scratch and explain its organized directory structure.&lt;/p&gt;
+&lt;h3 id="prerequisites-for-mkdocs"&gt;🔧 Prerequisites for MkDocs&lt;/h3&gt;
+&lt;p&gt;To get started, you’ll need to install the following &lt;strong&gt;🐍Python&lt;/strong&gt; libraries:&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Install MkDocs and the Material&lt;/strong&gt; &lt;code&gt;bash   pip install mkdocs mkdocs-material&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Install additional libraries to enable dynamic content updating&lt;/strong&gt; &lt;code&gt;bash   pip install aiosql pandas sqlite3 jinja2 shutil&lt;/code&gt; —&lt;/p&gt;
+&lt;h3 id="mkdocs-project-setting-up"&gt;🔧 Mkdocs: Project Setting Up&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Initialize the Project&lt;/strong&gt;&lt;br /&gt;
+Start by creating a new MkDocs project. Run the following commands in your terminal:&lt;br /&gt;
+&lt;code&gt;bash    mkdocs new mkdocs    cd mkdocs&lt;/code&gt; This command creates a basic MkDocs project with a default structure .&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Explore the Directory Structure&lt;/strong&gt;&lt;br /&gt;
+Once the MkDocs site is created, you need to add the following files and folders, as they are not included by default.   Remember, the links to the repository are provided at the end of this post for your reference, and each component will be explained in detail below.&lt;/p&gt;
+&lt;pre class="plaintext"&gt;&lt;code&gt;📁 docs/
+  ├── 📁 img/
+  ├── `architecture.md`
+  ├── `glossary.md`
+  ├── `index.md`
+  ├── `tables.md`
+  ├── 📁 template/
+  │   ├── 📁 db/
+  │   │   ├── 📁 data/
+  │   │   │   ├── hospital.db
+  │   │   ├── 📁 queries/
+  │   ├── `architecture.md`
+  │   ├── `glossary.md`
+  │   ├── `index.md`
+  │   ├── `tables.md`
+  │   └── `update.py`
+📁 infraestructure/
+📁 github/
+  ├── 📁 workflows/
+  │   ├── main.yml
+📄 mkdocs.yml&lt;/code&gt;&lt;/pre&gt;
+&lt;hr /&gt;
+&lt;h3 id="mkdocs-component-overview"&gt;📂Mkdocs: Component Overview&lt;/h3&gt;
+&lt;table&gt;
+&lt;colgroup&gt;
+&lt;col width="11%" /&gt;
+&lt;col width="5%" /&gt;
+&lt;col width="83%" /&gt;
+&lt;/colgroup&gt;
+&lt;thead&gt;
+&lt;tr class="header"&gt;
+&lt;th&gt;&lt;strong&gt;Component&lt;/strong&gt;&lt;/th&gt;
+&lt;th&gt;&lt;strong&gt;Directory&lt;/strong&gt;&lt;/th&gt;
+&lt;th&gt;&lt;strong&gt;Description&lt;/strong&gt;&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr class="odd"&gt;
+&lt;td&gt;&lt;strong&gt;Database (&lt;code&gt;db&lt;/code&gt;)&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;db&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;Contains the SQLite database (&lt;code&gt;hospital.db&lt;/code&gt;) and queries (&lt;code&gt;metadata.sql&lt;/code&gt;, &lt;code&gt;person.sql&lt;/code&gt;) to manage dynamic data. Learn more about managing SQL queries in Python in my previous article: &lt;a href="https://dev.to/r0mymendez/python-projects-with-sql-strategies-for-effective-query-management-2n5k"&gt;Python Projects with SQL&lt;/a&gt;.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class="even"&gt;
+&lt;td&gt;🖋️ &lt;strong&gt;Templates &amp;amp; Pages&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;template&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;Markdown templates: &lt;code&gt;index.md&lt;/code&gt;, &lt;code&gt;tables.md&lt;/code&gt;, &lt;code&gt;architecture.md&lt;/code&gt;, &lt;code&gt;glossary.md&lt;/code&gt;. Supports Mermaid diagrams, embedded images, and database-driven content.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class="odd"&gt;
+&lt;td&gt;🖼️ &lt;strong&gt;Static Content (&lt;code&gt;docs&lt;/code&gt;)&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;docs&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;Final site generated by &lt;code&gt;update.py&lt;/code&gt;, including images (&lt;code&gt;img/&lt;/code&gt;) and dynamic content populated from &lt;code&gt;template&lt;/code&gt;.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class="even"&gt;
+&lt;td&gt;🌐 &lt;strong&gt;Infrastructure (&lt;code&gt;infraestructure&lt;/code&gt;)&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;infraestructure&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;Terraform scripts (&lt;code&gt;main.tf&lt;/code&gt;, &lt;code&gt;variables.tf&lt;/code&gt;) to deploy an S3 bucket for documentation hosting.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;hr /&gt;
+&lt;h3 id="mkdocs-1"&gt;📄 Mkdocs&lt;/h3&gt;
+&lt;p&gt;Configuring &lt;code&gt;mkdocs.yml&lt;/code&gt; Once we have our project structure set up, we will configure it step by step, starting with the &lt;code&gt;mkdocs.yml file&lt;/code&gt;. This file defines the structure and settings for your documentation site. Here’s how it should be structured:&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;&lt;code&gt;mkdocs.yml&lt;/code&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;pre class="yaml"&gt;&lt;code&gt;site_name: Hospital Documentation  
+nav:
+  - Home: index.md
+  - Synthea Tables: tables.md
+  - AWS Architectur: architecture.md
+  - Glossary: glossary.md
+markdown_extensions:
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+theme:
+  name: material                &lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;In this &lt;strong&gt;configuration file&lt;/strong&gt;, you can primarily see in the &lt;strong&gt;nav&lt;/strong&gt; section the pages that will be accessible from the menu. Then, we specify the &lt;code&gt;Mermaid&lt;/code&gt; extension, which will be explained in the next section. Finally, the &lt;strong&gt;theme&lt;/strong&gt; section applies the &lt;code&gt;Material theme&lt;/code&gt;, enabling styling and components available within this library.&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h3 id="mkdocs-mermaid-extension"&gt;✏️ Mkdocs: Mermaid Extension&lt;/h3&gt;
+&lt;p&gt;As mentioned earlier, &lt;strong&gt;Mermaid&lt;/strong&gt; is a &lt;strong&gt;JavaScript&lt;/strong&gt; library for creating diagrams and charts from text. Below, we will see some examples. In our case, we will use it to generate an Entity Relationship Diagram (ERD) on the &lt;strong&gt;tables&lt;/strong&gt; page of the documentation.&lt;/p&gt;
+&lt;div class="figure"&gt;
+&lt;img src="https://r0mymendez.github.io//posts_en/2025-01-10-deploying-docs-as-code-on-aws-building-dynamic-documentation-sites-in-mkdocs-and-docusaurus/img/img-5.png" alt="" /&gt;
+&lt;p class="caption"&gt;Image description&lt;/p&gt;
+&lt;/div&gt;
+&lt;blockquote&gt;
+&lt;p&gt;In the repository, you will be able to see how to construct this code based on the Entity Relationship Diagram (ERD) found in the official Synthea documentation. You can also check the example of the tables page in the following link: &lt;a href="https://github.com/r0mymendez/doc-as-code-mkdocs/blob/main/docs/template/tables.md?plain=1"&gt;tables.md&lt;/a&gt;.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;hr /&gt;
+&lt;h3 id="mkdocs-dynamic-content-with-jinja"&gt;⚙️ Mkdocs: Dynamic Content with Jinja&lt;/h3&gt;
+&lt;p&gt;To enable dynamic content generation for our documentation site, we’ll use &lt;strong&gt;Jinja&lt;/strong&gt; to process templates and replace placeholders with actual data. Below is a step-by-step breakdown:&lt;/p&gt;
+&lt;ol style="list-style-type: decimal"&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;Set Up a &lt;code&gt;templates&lt;/code&gt; Folder&lt;/strong&gt;&lt;br /&gt;
+Create a folder named &lt;code&gt;templates&lt;/code&gt; to store all Markdown files for the site. These files should include placeholders. For instance, in &lt;code&gt;index.md&lt;/code&gt;, you might have placeholders like &lt;code&gt;{{database.version_date}}&lt;/code&gt; and &lt;code&gt;{{database.version}}&lt;/code&gt;.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;Utilize Placeholders&lt;/strong&gt;&lt;br /&gt;
+Placeholders are dynamic variables in the Markdown files. These variables will be updated automatically using Python dictionaries to inject relevant data.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;Generate Dynamic Content with &lt;code&gt;update.py&lt;/code&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;Prepare your Markdown templates by identifying the sections where dynamic data is required.&lt;br /&gt;
+&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Use a Python script (&lt;code&gt;update.py&lt;/code&gt;), available in my repository, to process the templates. The script performs the following tasks:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Database Connection&lt;/strong&gt;: Connects to a SQLite database to fetch the latest values.&lt;br /&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Template Rendering&lt;/strong&gt;: Uses the Jinja library to substitute placeholders with data from the database.&lt;br /&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;File Generation&lt;/strong&gt;: Outputs updated Markdown files to the &lt;code&gt;docs&lt;/code&gt; folder, ready for rendering in MkDocs.&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src="https://r0mymendez.github.io//posts_en/2025-01-10-deploying-docs-as-code-on-aws-building-dynamic-documentation-sites-in-mkdocs-and-docusaurus/img/img-6.png" /&gt;&lt;/p&gt;
+&lt;pre class="python"&gt;&lt;code&gt;from jinja2 import Template
+def render_template(template_str, data):
+    &amp;quot;&amp;quot;&amp;quot;Render the template with the data.&amp;quot;&amp;quot;&amp;quot;
+    template = Template(template_str)
+    return template.render(data)
+# Data structure
+data_dict = {
+    &amp;#39;database&amp;#39;: {
+        &amp;#39;version&amp;#39;: 1,
+        &amp;#39;version_date&amp;#39;: &amp;#39;2024-01-01&amp;#39;
+    }
+}
+# Render the template
+rendered_content = render_template(&amp;quot;Data updated to {{database.version_date}}&amp;quot;, data_dict)
+print(rendered_content) &lt;/code&gt;&lt;/pre&gt;
+&lt;pre class="bash"&gt;&lt;code&gt;Data updated to  2024-10-01 10:20:30&lt;/code&gt;&lt;/pre&gt;
+&lt;blockquote&gt;
+&lt;p&gt;By following these steps, you can automate the updating process for your documentation site, ensuring the content remains dynamic and relevant without manual edits.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;hr /&gt;
+&lt;h3 id="dynamic-update-of-data-tables"&gt;Dynamic Update of Data Tables&lt;/h3&gt;
+&lt;p&gt;In the next example, we will update the content in the &lt;code&gt;tables.md&lt;/code&gt; file to show an example of the &lt;strong&gt;&lt;code&gt;persons&lt;/code&gt;&lt;/strong&gt; table from the database. To do this, we will create a placeholder &lt;code&gt;{{table.person}}&lt;/code&gt; within the Markdown file. The idea is to dynamically fetch the data from the &lt;strong&gt;&lt;code&gt;persons&lt;/code&gt;&lt;/strong&gt; table, and then use the Jinja library along with pandas to convert the query results into a Markdown table format.&lt;/p&gt;
+&lt;p&gt;Here’s an example of how the &lt;code&gt;tables.md&lt;/code&gt; file looks with the placeholder:&lt;/p&gt;
+&lt;pre class="markdown"&gt;&lt;code&gt;#### Example Person Table
+## Person Table
+{{table.person}}&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;The process is as follows:&lt;/p&gt;
+&lt;ol style="list-style-type: decimal"&gt;
+&lt;li&gt;&lt;strong&gt;Query the Database&lt;/strong&gt;: The script will query the &lt;strong&gt;&lt;code&gt;persons&lt;/code&gt;&lt;/strong&gt; table in the SQLite database to fetch relevant records.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Convert to Markdown&lt;/strong&gt;: Using &lt;strong&gt;pandas&lt;/strong&gt;, the results of the query will be converted into a Markdown table format.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Replace the Placeholder&lt;/strong&gt;: The &lt;code&gt;{{table.person}}&lt;/code&gt; placeholder in the &lt;code&gt;tables.md&lt;/code&gt; file will be replaced by the generated Markdown table.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre class="python"&gt;&lt;code&gt;import sqlite3
+import pandas as pd
+import aiosql
+
+
+def get_queries():
+    sql = aiosql.from_path(&amp;#39;template/db/queries&amp;#39;, &amp;#39;sqlite3&amp;#39;)
+    return sql
+
+def get_table_person(db_name):
+    &amp;quot;&amp;quot;&amp;quot;Get a DataFrame from the PATIENTS table.&amp;quot;&amp;quot;&amp;quot;
+    query = get_queries().get_example_patients.sql 
+    connection = sqlite3.connect(db_name)
+
+    df = pd.read_sql_query(query, connection)
+    connection.close()
+    return df
+
+def update_tables_file(template_path, output_dir, db_name):
+    &amp;quot;&amp;quot;&amp;quot;Update the tables.md file&amp;quot;&amp;quot;&amp;quot;
+    df = get_table_person(db_name)
+    # Convert the dataframe in markdown format
+    data_dict = {
+        &amp;#39;table&amp;#39;: {
+            &amp;#39;person&amp;#39;: df.to_markdown(index=False)  
+        }
+    }
+
+
+print(get_table_person(&amp;quot;hospital.db&amp;quot;))  &lt;/code&gt;&lt;/pre&gt;
+&lt;blockquote&gt;
+&lt;p&gt;This way, the documentation always reflects up-to-date data, displaying dynamic examples based on the actual content from the database.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;hr /&gt;
+&lt;h3 id="mkdocs-final-workflow"&gt;⚙️ Mkdocs: Final Workflow&lt;/h3&gt;
+&lt;ol style="list-style-type: decimal"&gt;
+&lt;li&gt;&lt;strong&gt;Create Templates&lt;/strong&gt;: Develop your pages in the &lt;code&gt;docs/template&lt;/code&gt; directory.&lt;br /&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Run &lt;code&gt;update.py&lt;/code&gt;&lt;/strong&gt;: Populate dynamic content and generate the final files in &lt;code&gt;docs/output&lt;/code&gt;.&lt;br /&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Preview Locally&lt;/strong&gt;: Use &lt;code&gt;mkdocs serve&lt;/code&gt; to preview the site on localhost.&lt;br /&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Build for Deployment&lt;/strong&gt;: Use &lt;code&gt;mkdocs build&lt;/code&gt; to generate a static site in the &lt;code&gt;docs/&lt;/code&gt; folder.&lt;br /&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Deploy&lt;/strong&gt;: Use Terraform to deploy the site to an AWS S3 bucket. Refer to the deployment section of this post for detailed instructions.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src="https://r0mymendez.github.io//posts_en/2025-01-10-deploying-docs-as-code-on-aws-building-dynamic-documentation-sites-in-mkdocs-and-docusaurus/img/img-7.png" /&gt;&lt;/p&gt;
+&lt;div class="figure"&gt;
+&lt;img src="https://r0mymendez.github.io//posts_en/2025-01-10-deploying-docs-as-code-on-aws-building-dynamic-documentation-sites-in-mkdocs-and-docusaurus/img/img-8.png" alt="" /&gt;
+&lt;p class="caption"&gt;I&lt;/p&gt;
+&lt;/div&gt;
+&lt;hr /&gt;
+&lt;h2 id="docusaurus-implementation"&gt;🦖 Docusaurus Implementation&lt;/h2&gt;
+&lt;p&gt;In the following sections, I will provide detailed steps and insights on how to implement a documentation site using &lt;strong&gt;Docusaurus&lt;/strong&gt;. This includes setup, customization, and deployment options.&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h3 id="key-features-of-docusaurus"&gt;🚀 Key Features of Docusaurus&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;📶 &lt;strong&gt;Mermaid Support&lt;/strong&gt;: Similar to MkDocs, Docusaurus supports Mermaid for embedding diagrams.&lt;br /&gt;
+&lt;/li&gt;
+&lt;li&gt;⚛️ &lt;strong&gt;React Components&lt;/strong&gt;: Built on React, Docusaurus enables the integration of dynamic components into your documentation.&lt;br /&gt;
+&lt;/li&gt;
+&lt;li&gt;🔄 &lt;strong&gt;Dynamic Content&lt;/strong&gt;: Leverages Python scripts to fetch and update content dynamically from an SQLite database.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr /&gt;
+&lt;h3 id="docusaurus-setup-from-scratch"&gt;🔧 Docusaurus Setup: From Scratch&lt;/h3&gt;
+&lt;p&gt;To get started with Docusaurus, we follow a quick setup process, which is very similar to the steps we used for MkDocs but with different tools.&lt;/p&gt;
+&lt;ol style="list-style-type: decimal"&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;Create a New Docusaurus Project:&lt;/strong&gt; First, install Node.js and run the following command to create a new Docusaurus site:&lt;/p&gt;
+&lt;pre class="bash"&gt;&lt;code&gt;npx create-docusaurus@latest my-website classic&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;Install Mermaid Package&lt;/strong&gt;: To enable Mermaid diagrams, install the required package:&lt;/p&gt;
+&lt;pre class="bash"&gt;&lt;code&gt;npm install @docusaurus/theme-mermaid&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;Run the Development Server&lt;/strong&gt;: Once installed, navigate to your project directory and run the development server:&lt;/p&gt;
+&lt;pre class="bash"&gt;&lt;code&gt;cd my-website
+npx docusaurus start&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;Visit the Site&lt;/strong&gt;: Your site will be live locally at: &lt;code&gt;http://localhost:3000&lt;/code&gt;.&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;hr /&gt;
+&lt;h3 id="docusaurus-customization-configuration"&gt;🔧 Docusaurus Customization: Configuration&lt;/h3&gt;
+&lt;p&gt;The configuration file &lt;code&gt;docusaurus.config.js&lt;/code&gt; is where we customize the title, theme, navigation, and enable features like Mermaid for diagram rendering. Example snippet for enabling Mermaid:&lt;/p&gt;
+&lt;pre class="js"&gt;&lt;code&gt;module.exports = {
+  title: &amp;#39;Hospital Documentation&amp;#39;,
+  tagline: &amp;#39;Documentation for Hospital Data ML Project&amp;#39;,
+  favicon: &amp;#39;img/favicon.ico&amp;#39;,
+  url: &amp;#39;https://your-site-url.com&amp;#39;,
+  markdown: {
+    mermaid: true,  // Enable Mermaid diagrams
+  },
+  themeConfig: {
+    navbar: {
+      title: &amp;#39;Hospital Docs&amp;#39;,
+      items: [
+        { to: &amp;#39;docs/&amp;#39;, label: &amp;#39;Home&amp;#39;, position: &amp;#39;left&amp;#39; },
+        { to: &amp;#39;docs/tables&amp;#39;, label: &amp;#39;Tables&amp;#39;, position: &amp;#39;left&amp;#39; },
+        { to: &amp;#39;docs/architecture&amp;#39;, label: &amp;#39;Architecture&amp;#39;, position: &amp;#39;left&amp;#39; },
+        { to: &amp;#39;docs/glossary&amp;#39;, label: &amp;#39;Glossary&amp;#39;, position: &amp;#39;left&amp;#39; },
+      ],
+    },
+    footer: {
+      style: &amp;#39;dark&amp;#39;,
+      links: [
+        { label: &amp;#39;GitHub&amp;#39;, href: &amp;#39;https://github.com/your-repo&amp;#39; },
+      ],
+    },
+  },
+};&lt;/code&gt;&lt;/pre&gt;
+&lt;hr /&gt;
+&lt;h3 id="docusaurus-customizing-the-homepage"&gt;🔧 Docusaurus Customizing the Homepage&lt;/h3&gt;
+&lt;p&gt;To customize the homepage, we modify the &lt;code&gt;src/components/HomepageFeatures/index.js&lt;/code&gt; file. Here, you can adjust the &lt;strong&gt;FeatureList&lt;/strong&gt; object to update the features displayed on the homepage.&lt;/p&gt;
+&lt;div class="figure"&gt;
+&lt;img src="https://r0mymendez.github.io//posts_en/2025-01-10-deploying-docs-as-code-on-aws-building-dynamic-documentation-sites-in-mkdocs-and-docusaurus/img/img-9.png" alt="" /&gt;
+&lt;p class="caption"&gt;Image description&lt;/p&gt;
+&lt;/div&gt;
+&lt;hr /&gt;
+&lt;h3 id="docusaurus-content-organization-and-structure"&gt;📂 Docusaurus Content Organization and Structure&lt;/h3&gt;
+&lt;p&gt;Just like in &lt;strong&gt;MkDocs&lt;/strong&gt;, Docusaurus supports &lt;strong&gt;Markdown files&lt;/strong&gt; for content, and we organize the structure as follows: 1. &lt;strong&gt;Template Folder&lt;/strong&gt;: Store your Markdown files in the &lt;code&gt;docs/template&lt;/code&gt; directory, and create a Python script (similar to &lt;code&gt;update.py&lt;/code&gt;) to fetch and populate dynamic data into these templates. 2. &lt;strong&gt;Category File (&lt;code&gt;__category__.json&lt;/code&gt;)&lt;/strong&gt;: To manage the order of documents in the sidebar, create a &lt;code&gt;__category__.json&lt;/code&gt; file in each folder. For example:&lt;/p&gt;
+&lt;pre class="bash"&gt;&lt;code&gt;Architecture
+  ├── architecture.md
+  ├── img
+  └── __category__.json&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;strong&gt;&lt;code&gt;__category__.json&lt;/code&gt; Example&lt;/strong&gt;: &lt;code&gt;json    {      "label": "Architecture",      "position": 2,      "link": {        "type": "generated-index",        "description": "AWS Data Processing Blueprint"      }    }&lt;/code&gt;&lt;/p&gt;
+&lt;div class="figure"&gt;
+&lt;img src="https://r0mymendez.github.io//posts_en/2025-01-10-deploying-docs-as-code-on-aws-building-dynamic-documentation-sites-in-mkdocs-and-docusaurus/img/img-10.png" alt="" /&gt;
+&lt;p class="caption"&gt;Image description&lt;/p&gt;
+&lt;/div&gt;
+&lt;hr /&gt;
+&lt;h3 id="dynamic-data-with-jinja"&gt;⚙️ Dynamic Data with Jinja&lt;/h3&gt;
+&lt;p&gt;To incorporate dynamic content, such as database tables, we use a &lt;strong&gt;🐍Python&lt;/strong&gt; script named &lt;code&gt;update.py&lt;/code&gt;, which you can find in the repository.&lt;/p&gt;
+&lt;p&gt;This script fetches data from a &lt;strong&gt;SQLite&lt;/strong&gt; database and processes the Markdown files stored in the &lt;code&gt;templates&lt;/code&gt; folder. It then updates these files with the fetched data and copies them into the &lt;code&gt;docs&lt;/code&gt; folder, preparing them for site rendering.&lt;/p&gt;
+&lt;p&gt;This workflow ensures that the content remains up-to-date and ready for deployment, following a similar approach to what we implemented with MkDocs.&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h3 id="docusaurus-final-workflow"&gt;⚙️ Docusaurus: Final Workflow&lt;/h3&gt;
+&lt;ol style="list-style-type: decimal"&gt;
+&lt;li&gt;&lt;strong&gt;Create Templates&lt;/strong&gt;: Develop your Markdown files within the &lt;code&gt;docs/template&lt;/code&gt; directory.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Run Python Script&lt;/strong&gt;: Use the script to dynamically populate data into the templates.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Preview Locally&lt;/strong&gt;: Run &lt;code&gt;npx docusaurus start&lt;/code&gt; to preview the site.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Build for Deployment&lt;/strong&gt;: Once ready, use &lt;code&gt;npx docusaurus build&lt;/code&gt; to generate the static site.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Deploy&lt;/strong&gt;: Host the static files on your preferred platform, such as AWS S3.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class="figure"&gt;
+&lt;img src="https://r0mymendez.github.io//posts_en/2025-01-10-deploying-docs-as-code-on-aws-building-dynamic-documentation-sites-in-mkdocs-and-docusaurus/img/img-11.png" alt="" /&gt;
+&lt;p class="caption"&gt;Image description&lt;/p&gt;
+&lt;/div&gt;
+&lt;hr /&gt;
+&lt;h2 id="deployment"&gt;🚀 Deployment&lt;/h2&gt;
+&lt;p&gt;In this section, we will cover the &lt;strong&gt;deployment process&lt;/strong&gt; for both &lt;strong&gt;MkDocs&lt;/strong&gt; and &lt;strong&gt;Docusaurus&lt;/strong&gt; using &lt;strong&gt;AWS S3&lt;/strong&gt; for hosting. While the deployment steps are the same for both tools, the installation processes differ, with &lt;strong&gt;MkDocs&lt;/strong&gt; being Python-based and &lt;strong&gt;Docusaurus&lt;/strong&gt; being JavaScript-based.&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h3 id="infrastructure-setup-with-terraform"&gt;Infrastructure Setup with Terraform&lt;/h3&gt;
+&lt;p&gt;To deploy a static documentation site to &lt;strong&gt;AWS S3&lt;/strong&gt;, we use Terraform to provision and configure the required resources. The setup defines the S3 bucket, enables static website hosting, and configures public access with a bucket policy to allow read-only access. You can find the &lt;strong&gt;&lt;code&gt;main.tf&lt;/code&gt;&lt;/strong&gt; file in the repository.&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h3 id="key-components-for-s3-deployment"&gt;🚀 Key Components for S3 Deployment&lt;/h3&gt;
+&lt;ol style="list-style-type: decimal"&gt;
+&lt;li&gt;&lt;strong&gt;S3 Bucket Creation&lt;/strong&gt;: The resource to create the S3 bucket where the documentation will be hosted.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Static Website Hosting&lt;/strong&gt;: Configuration for static web hosting, setting the &lt;code&gt;index.html&lt;/code&gt; and &lt;code&gt;error.html&lt;/code&gt; as the main and error documents.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Public Access Configuration&lt;/strong&gt;: Manages public access to the S3 bucket, ensuring it is configured for read-only access.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Bucket Policy&lt;/strong&gt;: Allows public access to retrieve the documentation content from the S3 bucket.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;You can access the complete &lt;strong&gt;Terraform file&lt;/strong&gt; and the corresponding configurations for deploying the site in the repository:&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Terraform Configuration File&lt;/strong&gt;: * &lt;a href="https://github.com/r0mymendez/doc-as-code-mkdocs/tree/main/infraestructure"&gt;mkdocs file&lt;/a&gt; * &lt;a href="https://github.com/r0mymendez/doc-as-code-docusaurus/tree/main/infraestructure"&gt;docusaurus file&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;GitHub Action Workflow for Automatic Deployment&lt;/strong&gt;: A CI/CD pipeline to automate the deployment process is also included in the repository. * &lt;a href="https://github.com/r0mymendez/doc-as-code-mkdocs/blob/main/.github/workflows/main.yml"&gt;mkdocs file&lt;/a&gt; * &lt;a href="https://github.com/r0mymendez/doc-as-code-docusaurus/blob/main/.github/workflows/main.yml"&gt;docusaurus file&lt;/a&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;GitHub Actions Configuration&lt;/strong&gt; Make sure to configure your AWS credentials in the &lt;strong&gt;GitHub repository secrets&lt;/strong&gt; under &lt;strong&gt;Settings&lt;/strong&gt; &amp;gt; &lt;strong&gt;Secrets&lt;/strong&gt; &amp;gt; &lt;strong&gt;Actions&lt;/strong&gt;. This will allow GitHub Actions to securely access your AWS account and perform actions like uploading files to S3 when you push changes to the &lt;code&gt;main&lt;/code&gt; branch.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;hr /&gt;
+&lt;h3 id="repositories"&gt;Repositories&lt;/h3&gt;
+&lt;p&gt;Below are the links to all the code to deploy your documentation site. If you find it useful, you can leave a star ⭐️ and follow me to receive notifications of new articles. This will help me grow in the tech community and create more content.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;MkDocs Deployment&lt;/strong&gt;: &lt;a href="https://github.com/r0mymendez/doc-as-code-mkdocs"&gt;GitHub Repository for MkDocs&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src="https://r0mymendez.github.io//posts_en/2025-01-10-deploying-docs-as-code-on-aws-building-dynamic-documentation-sites-in-mkdocs-and-docusaurus/img/github-1.png" /&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Docusaurus Deployment&lt;/strong&gt;: &lt;a href="https://github.com/r0mymendez/doc-as-code-docusaurus"&gt;GitHub Repository for Docusaurus&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src="https://r0mymendez.github.io//posts_en/2025-01-10-deploying-docs-as-code-on-aws-building-dynamic-documentation-sites-in-mkdocs-and-docusaurus/img/github-2.png" /&gt;&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h2 id="final-conclusions-mkdocs-vs.-docusaurus"&gt;🔍 Final Conclusions: MkDocs vs. Docusaurus&lt;/h2&gt;
+&lt;p&gt;Both solutions are easy to implement, but in the following items, we can explore some differences, and what is the best solution depends on the context, knowledge, and complexity you may need to implement.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;💻 &lt;strong&gt;Language &amp;amp; Customization&lt;/strong&gt;:&lt;br /&gt;
+&lt;strong&gt;MkDocs&lt;/strong&gt; is Python-based, with simple YAML configurations and templates, ideal for quick setups. On the other hand, &lt;strong&gt;Docusaurus&lt;/strong&gt; is React-based, offering advanced customization and interactive components, making it more suitable for users needing more control over visuals.&lt;/li&gt;
+&lt;li&gt;📑 &lt;strong&gt;Markdown &amp;amp; Rendering&lt;/strong&gt;:&lt;br /&gt;
+Both use Markdown, but &lt;strong&gt;Docusaurus&lt;/strong&gt; allows for interactive elements, making it better for dynamic content.&lt;/li&gt;
+&lt;li&gt;⚙️ &lt;strong&gt;Complexity&lt;/strong&gt;:&lt;br /&gt;
+&lt;strong&gt;Docusaurus&lt;/strong&gt; is better for complex documentation applications, such as those with login systems. &lt;strong&gt;MkDocs&lt;/strong&gt; is simpler but &lt;strong&gt;Docusaurus&lt;/strong&gt; offers more flexibility for styling and features.&lt;/li&gt;
+&lt;li&gt;👥 &lt;strong&gt;Community&lt;/strong&gt;:&lt;br /&gt;
+&lt;strong&gt;Docusaurus&lt;/strong&gt; has a strong community with Discord and 74 plugins, while &lt;strong&gt;MkDocs&lt;/strong&gt; relies on GitHub discussions for community support.&lt;/li&gt;
+&lt;li&gt;☁️ &lt;strong&gt;Amazon Deployment&lt;/strong&gt;:&lt;br /&gt;
+You can deploy a static site to &lt;strong&gt;S3&lt;/strong&gt;, reducing deployment costs, and also use CI/CD for automatic deployment.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr /&gt;
+&lt;h1 id="references"&gt;📚 References&lt;/h1&gt;
+&lt;ol style="list-style-type: decimal"&gt;
+&lt;li&gt;&lt;strong&gt;Mkdocs&lt;/strong&gt;: &lt;a href="https://www.mkdocs.org/" class="uri"&gt;https://www.mkdocs.org/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Mkdocs-Material&lt;/strong&gt;: &lt;a href="https://squidfunk.github.io/mkdocs-material/" class="uri"&gt;https://squidfunk.github.io/mkdocs-material/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Diagrams&lt;/strong&gt;: &lt;a href="https://diagrams.mingrammer.com/" class="uri"&gt;https://diagrams.mingrammer.com/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Docusaurus&lt;/strong&gt;: &lt;a href="https://docusaurus.io/" class="uri"&gt;https://docusaurus.io/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Jinja&lt;/strong&gt;: &lt;a href="https://jinja.palletsprojects.com/en/stable/" class="uri"&gt;https://jinja.palletsprojects.com/en/stable/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Git Book - What is doc as code&lt;/strong&gt;: &lt;a href="https://www.gitbook.com/blog/what-is-docs-as-code" class="uri"&gt;https://www.gitbook.com/blog/what-is-docs-as-code&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Write the docs&lt;/strong&gt;: &lt;a href="https://www.writethedocs.org/guide/docs-as-code/" class="uri"&gt;https://www.writethedocs.org/guide/docs-as-code/&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre class="r distill-force-highlighting-css"&gt;&lt;code&gt;&lt;/code&gt;&lt;/pre&gt;</description>
+      <distill:md5>5903a0294c1d6b46fd2712d4c045765b</distill:md5>
+      <category>Data</category>
+      <category>Python</category>
+      <category>Cloud Computing</category>
+      <category>AWS</category>
+      <guid>https://r0mymendez.github.io/posts_en/2025-01-10-deploying-docs-as-code-on-aws-building-dynamic-documentation-sites-in-mkdocs-and-docusaurus</guid>
+      <pubDate>Thu, 09 Jan 2025 00:00:00 +0000</pubDate>
+      <media:content url="https://r0mymendez.github.io/posts_en/2025-01-10-deploying-docs-as-code-on-aws-building-dynamic-documentation-sites-in-mkdocs-and-docusaurus/preview.png" medium="image" type="image/png" width="800" height="464"/>
     </item>
     <item>
       <title>Efficiently Querying JSON Data in Python: Exploring the MET Museum's Artworks</title>
@@ -904,17 +1362,6 @@ echo &amp;quot;$json_output&amp;quot; &amp;gt; output.json&lt;/code&gt;&lt;/pre&
       <guid>https://r0mymendez.github.io/posts_en/2024-08-07-employing-aws-comprehend-medical-for-medical-data-extraction-in-healthcare-analytics</guid>
       <pubDate>Wed, 07 Aug 2024 00:00:00 +0000</pubDate>
       <media:content url="https://r0mymendez.github.io/posts_en/2024-08-07-employing-aws-comprehend-medical-for-medical-data-extraction-in-healthcare-analytics/preview.jpg" medium="image" type="image/jpeg"/>
-    </item>
-    <item>
-      <title>Python Projects with SQL: Strategies for Effective Query Management</title>
-      <dc:creator>Romina Mendez</dc:creator>
-      <link>https://r0mymendez.github.io/posts_en/2024-05-26-python-projects-with-sql-strategies-for-effective-query-management</link>
-      <description>In this article, you will discover how to use aiosql and I will review how to use it and explained in its documentation.</description>
-      <category>Python</category>
-      <category>Database</category>
-      <guid>https://r0mymendez.github.io/posts_en/2024-05-26-python-projects-with-sql-strategies-for-effective-query-management</guid>
-      <pubDate>Sun, 26 May 2024 00:00:00 +0000</pubDate>
-      <media:content url="https://r0mymendez.github.io/posts_en/2024-05-26-python-projects-with-sql-strategies-for-effective-query-management/preview.jpg" medium="image" type="image/jpeg"/>
     </item>
   </channel>
 </rss>
