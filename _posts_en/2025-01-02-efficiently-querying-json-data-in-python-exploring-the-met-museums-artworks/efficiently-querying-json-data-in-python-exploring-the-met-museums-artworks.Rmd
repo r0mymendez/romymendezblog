@@ -481,7 +481,7 @@ You can find the complete code and dataset for this tutorial in my GitHub reposi
 I'd appreciate it if you could star ⭐️ the repo if you find it helpful, and consider following me for updates on new tutorials and articles.
 Your support helps me grow within the tech community and allows me to continue creating more content.
 
-![https://github.com/r0mymendez/json-query/tree/master](img/github-repo.png){style="display: block;   margin-left: auto;   margin-right: auto;" width="50%"}
+![<https://github.com/r0mymendez/json-query/tree/master>](img/github-repo.png){style="display: block;   margin-left: auto;   margin-right: auto;" width="50%"}
 
 ------------------------------------------------------------------------
 
